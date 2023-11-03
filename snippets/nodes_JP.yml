@@ -8,7 +8,7 @@ proxies:
   servername: jp04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 42173023-a90e-4bf3-9650-293e01d7cb9c
+  uuid: fa8b3db3-66c7-420a-bea1-b5c8831096f6
 - alterId: 0
   cipher: auto
   name: 9|🇯🇵日本05
@@ -18,7 +18,7 @@ proxies:
   servername: jp05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 42173023-a90e-4bf3-9650-293e01d7cb9c
+  uuid: fa8b3db3-66c7-420a-bea1-b5c8831096f6
 - alterId: 0
   cipher: auto
   name: 9|🇯🇵日本06
@@ -28,7 +28,7 @@ proxies:
   servername: jp06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 42173023-a90e-4bf3-9650-293e01d7cb9c
+  uuid: fa8b3db3-66c7-420a-bea1-b5c8831096f6
 - alterId: 0
   cipher: auto
   name: 12|日本 001
@@ -119,7 +119,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 548055a4-1352-4e84-b5f9-81cc5e95b792
+  uuid: dbfd77b3-0fbc-4c26-b194-96b22edb5053
 - alterId: 0
   cipher: auto
   name: 13|日本 05  | 1x JP
@@ -129,7 +129,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 548055a4-1352-4e84-b5f9-81cc5e95b792
+  uuid: dbfd77b3-0fbc-4c26-b194-96b22edb5053
 - alterId: 0
   cipher: auto
   name: 13|日本 06  | 1x JP
@@ -139,7 +139,7 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 548055a4-1352-4e84-b5f9-81cc5e95b792
+  uuid: dbfd77b3-0fbc-4c26-b194-96b22edb5053
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 14|🇯🇵 日本KT|@ripaojiedian
@@ -172,14 +172,23 @@ proxies:
   server: 183.232.170.32
   tfo: false
   type: ss
-- cipher: aes-128-gcm
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  name: 14|🇯🇵 日本1|@ripaojiedian
-  password: 1a4067a2-4789-4dee-b4a8-bf4771bef2b7
-  port: 12086
-  server: bit-jp.kunlun-three.com
+  name: 14,15|日本2|@ripaojiedian
+  network: ws
+  port: '80'
+  server: mlscdn.ccccdn.tk
+  servername: ''
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: 65da50e6-89c0-4d10-b7cf-16404dae0879
+  ws-opts:
+    headers:
+      Host: riben.chisi.link
+    path: /wo.img
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 14|🇯🇵 日本4|@ripaojiedian
@@ -188,58 +197,3 @@ proxies:
   server: 193.182.144.65
   tfo: false
   type: ss
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 14|🇯🇵 日本5|@ripaojiedian
-  network: ws
-  port: 443
-  server: 137.220.130.51
-  servername: www.90015096.xyz
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vmess
-  uuid: 78e1c35c-7f45-4998-b45a-578cef59a5cf
-  ws-opts:
-    headers:
-      Host: www.90015096.xyz
-    path: /path/143534141104
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 14|🇯🇵 日本特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 52.196.125.189
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 14|🇯🇵 东京特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 52.195.228.10
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 14|🇯🇵 日本特殊2|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 3.112.73.77
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 15|日本2|@ripaojiedian
-  network: ws
-  port: '80'
-  server: mlscdn.ccccdn.tk
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 65da50e6-89c0-4d10-b7cf-16404dae0879
-  ws-opts:
-    headers:
-      Host: riben.chisi.link
-    path: /wo.img
