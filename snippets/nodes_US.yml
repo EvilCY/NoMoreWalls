@@ -1,11 +1,12 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0,6,11|github.com/freefq - 美国  1
+  name: 0,1,2,3,4,6,11|github.com/freefq - 美国  1
   network: ws
   port: 443
   server: 216.73.158.35
   servername: vmess-rs-us01.globalssh.xyz
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 186b8bd9-6f05-48bc-80dc-f36e84ffa601
@@ -15,7 +16,7 @@ proxies:
     path: /vmess-ws
 - alterId: 0
   cipher: auto
-  name: 0,3,6,19|🇺🇸_US_美国->🇬🇧_GB_英国_由快嘴科技提供：kkz...
+  name: 0,2,3,4,6,19|🇺🇸_US_美国->🇬🇧_GB_英国_由快嘴科技提供：kkz...
   network: ws
   port: 80
   server: ld2.shabijichang.com
@@ -28,7 +29,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0,6,12,19|🇺🇸_US_美国_3_由快嘴科技提供：kkzui.com2
+  name: 0,2,3,4,6,12,19|🇺🇸_US_美国_3_由快嘴科技提供：kkzui.com2
   network: ws
   port: 80
   server: cf-lt.sharecentre.online
@@ -55,18 +56,45 @@ proxies:
     path: /path/1699193100388
 - alterId: 0
   cipher: auto
-  name: '1,2,4|🇺🇸_US_美国 #3'
+  name: 1,11|github.com/freefq - 美国CloudFla...
   network: ws
-  port: 443
-  server: 216.73.158.35
+  port: 80
+  server: ld2.shabijichang.com
+  servername: ''
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
-  uuid: 186b8bd9-6f05-48bc-80dc-f36e84ffa601
-  ws-opts: {}
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- name: 1|_US__3
+  network: tcp
+  password: 29ea82cf-f956-42b2-a5dc-35feea39e7ff
+  port: 443
+  server: 141.193.68.81
+  skip-cert-verify: true
+  sni: glc-us3.windowsupdatea.com
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 1|_US__4
+  network: ws
+  port: 80
+  server: cf-lt.sharecentre.online
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 3d761afc-6dfd-49d9-9d0f-b79341391f26
+  ws-opts:
+    headers:
+      host: ssrsub.v005.ssrsub.com
+    path: /api/v3/download.getFile
 - alterId: 64
   cipher: auto
-  name: 1|_US__2
+  name: 1|_US__5
   network: ws
   port: 30000
   server: 45.58.152.70
@@ -78,44 +106,6 @@ proxies:
     headers:
       host: www.54964745.xyz
     path: /path/1699193100388
-- alterId: 0
-  cipher: auto
-  name: '1,2,4|🇺🇸_US_美国 #5'
-  network: ws
-  port: 443
-  server: 56c5d2b1-575f-4718-ad37-4cb1fb0d44dc.asoul-diana.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: '3|🇺🇸 _US_美国 #4'
-  network: ws
-  port: '443'
-  server: es1.531131.xyz
-  tls: true
-  type: vmess
-  uuid: 14caeaaa-b5ec-4acb-8cdb-1726004c800d
-  ws-opts:
-    headers:
-      Host: es1.531131.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 3,12,19|🇺🇸_US_美国_3_55
-  network: ws
-  port: 2096
-  server: 162.159.135.232
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: c58c0655-d722-4ad1-8ad5-2452c77a753a
-  ws-opts:
-    headers:
-      Host: stiyUs6usw.pouriya.cf
-    path: /Amsterdam
 - alterId: 0
   cipher: auto
   name: '7,8|🇺🇸 United States 01 @nodpai #1'
@@ -133,6 +123,16 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 9,19|🇨🇳_CN_中国->🇺🇸_US_美国_2_42
+  network: tcp
+  port: 36501
+  server: 3u1s04.abzoones.xyz
+  servername: us04.abpilot.xyz
+  tls: true
+  type: vmess
+  uuid: 65c20525-4858-41aa-ab29-cdbcc1edad20
+- alterId: 0
+  cipher: auto
   name: 9|🇺🇸美国05
   network: tcp
   port: '36506'
@@ -140,21 +140,30 @@ proxies:
   servername: us05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 3aa10ba6-0705-42cf-a974-a7f8539e7255
+  uuid: a1bddc23-f943-4fe4-adcc-ddd6879604a5
 - alterId: 0
   cipher: auto
-  name: 11|github.com/freefq - 美国CloudFla...
-  network: ws
-  port: 80
-  server: ld2.shabijichang.com
-  servername: ''
-  tls: false
+  name: 9,19|🇨🇳_CN_中国->🇺🇸_US_美国_3_43
+  network: tcp
+  port: 36511
+  server: 3u1s06.abzoones.xyz
+  servername: us06.abpilot.xyz
+  tls: true
   type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  uuid: 65c20525-4858-41aa-ab29-cdbcc1edad20
+- alterId: 64
+  cipher: auto
+  name: 11,12,19|🇺🇸_US_美国->🇳🇱_NL_荷兰_由快嘴科技提供：kkz...
+  network: ws
+  port: 30000
+  server: 45.199.138.146
+  tls: true
+  type: vmess
+  uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf
   ws-opts:
     headers:
-      Host: ''
-    path: /
+      Host: www.19229362.xyz
+    path: /path/1699193100388
 - alterId: 0
   cipher: auto
   name: '11|github.com/freefq - 美国CloudFla... #2'
@@ -1019,6 +1028,20 @@ proxies:
     path: /11201
 - alterId: 0
   cipher: auto
+  name: 12,19|🇺🇸_US_美国_3_55
+  network: ws
+  port: 2096
+  server: 162.159.135.232
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: c58c0655-d722-4ad1-8ad5-2452c77a753a
+  ws-opts:
+    headers:
+      Host: stiyUs6usw.pouriya.cf
+    path: /Amsterdam
+- alterId: 0
+  cipher: auto
   name: 12|US_youtube@资源分享师_133
   network: ws
   port: 2096
@@ -1106,7 +1129,7 @@ proxies:
   servername: us04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 95c9bc6e-3fbd-4c06-a381-2a1eaab5e476
+  uuid: 39a8727c-1c84-40c4-8941-2ab9e87ef57b
 - alterId: 0
   cipher: auto
   name: 13|美国 05 | 1x US
@@ -1116,7 +1139,7 @@ proxies:
   servername: us05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 95c9bc6e-3fbd-4c06-a381-2a1eaab5e476
+  uuid: 39a8727c-1c84-40c4-8941-2ab9e87ef57b
 - alterId: 0
   cipher: auto
   name: 13|美国 06 | 1x US
@@ -1126,7 +1149,7 @@ proxies:
   servername: us06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 95c9bc6e-3fbd-4c06-a381-2a1eaab5e476
+  uuid: 39a8727c-1c84-40c4-8941-2ab9e87ef57b
 - cipher: aes-256-gcm
   name: 14|🇺🇸 美国3|@ripaojiedian 2
   password: 5c8b210a-2f00-4292-964b-05281c7ad5d1
