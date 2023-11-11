@@ -59,19 +59,19 @@ CLASH_SSR_OBFS = "plain http_simple http_post random_head tls1.2_ticket_auth tls
 CLASH_SSR_PROTOCOL = "origin auth_sha1_v4 auth_aes128_md5 auth_aes128_sha1 auth_chain_a auth_chain_b".split()
 
 ABFURLS = (
-    "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/ChineseFilter/sections/adservers.txt",
-    "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/ChineseFilter/sections/adservers_firstparty.txt",
-    "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt",
-    "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-ag.txt",
-    "https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt",
-    "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt",
-    "https://anti-ad.net/adguard.txt",
-    "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Adblock-Rule/main/AWAvenue-Adblock-Rule.txt",
-    "https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.adblock",
-    "https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt",
-    "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/light.txt",
-    "https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt",
-    "https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/DD-AD.txt",
+    # "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/ChineseFilter/sections/adservers.txt",
+    # "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/ChineseFilter/sections/adservers_firstparty.txt",
+    # "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt",
+    # "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-ag.txt",
+    # "https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt",
+    # "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt",
+    # "https://anti-ad.net/adguard.txt",
+    # "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Adblock-Rule/main/AWAvenue-Adblock-Rule.txt",
+    # "https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.adblock",
+    # "https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt",
+    # "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/light.txt",
+    # "https://raw.githubusercontent.com/uniartisan/adblock_list/master/adblock_lite.txt",
+    # "https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/DD-AD.txt",
     # "https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/domain.txt",
 )
 
