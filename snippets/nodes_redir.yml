@@ -1,21 +1,21 @@
 proxies:
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: '0,1,2,3,4,6|🇮🇷_IR_伊朗->🇫🇷_FR_法国 #2'
+  name: 0,1,2,3,4,6,10,11,12,15,18|🇨🇳_CN_中国->🇬🇧_GB_英国_24
   network: tcp
-  port: 46585
-  server: 78.39.56.6
+  port: 49223
+  server: 112.29.94.23
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 05af75d7-4c45-4222-b245-d36c5618135d
+  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
 - alterId: 0
   cipher: auto
-  name: 0,3,6,11,19|🇺🇸_US_美国->🇮🇳_IN_印度_20
+  name: 0,3,6,18|🇺🇸_US_美国->🇮🇳_IN_印度_20
   network: ws
   port: 80
   server: mm2.shabijichang.com
-  servername: ''
   tls: false
   type: vmess
   uuid: c458695d-6908-45c3-9512-e0c46418454c
@@ -25,7 +25,33 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0,2,3,4,6,10,19|🇺🇸_US_美国->🇬🇧_GB_英国_4
+  name: '0,6|🇺🇸_US_美国->🇬🇧_GB_英国 #2'
+  network: ws
+  port: 80
+  server: mrb2.shabijichang.com
+  tls: false
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers:
+      Host: mrb2.shabijichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 0|🇺🇸 _US_美国->🇮🇷_IR_伊朗
+  network: ws
+  port: '2053'
+  server: 104.26.13.8
+  tls: true
+  type: vmess
+  uuid: a4089f68-2bb1-4734-d77a-8b049a80ae8c
+  ws-opts:
+    headers:
+      Host: BAmIlo.ONlINeviSioNsTore.sITE
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 0,2,3,4,6,10,18|🇺🇸_US_美国->🇬🇧_GB_英国_4
   network: ws
   port: 80
   server: ld2.shabijichang.com
@@ -36,26 +62,19 @@ proxies:
     headers:
       Host: ld2.shabijichang.com
     path: /
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 0,1,2,3,4,10,11,15,19|🇨🇳_CN_中国->🇬🇧_GB_英国_24
-  network: tcp
-  port: 49223
-  server: 112.29.94.23
-  servername: ''
-  skip-cert-verify: true
-  tls: false
+  name: 0|🇺🇸 _US_美国->🇫🇷_FR_法国
+  network: ws
+  port: '2096'
+  server: web.parspack.com
+  tls: true
   type: vmess
-  uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875
-- alterId: 64
-  cipher: auto
-  name: '0,3|🇩🇪 _CN_中国->🇩🇪_DE_德国 #1'
-  network: tcp
-  port: '50707'
-  server: 183.237.20.148
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: a98626c1-88ee-47db-ad1d-a8bd15910a83
+  ws-opts:
+    headers:
+      Host: tElEWebIOn.onlIneVIsioNStorE.sITE
+    path: /?ed=2048
 - name: 1|_CN_->_US__1
   network: tcp
   password: b1169481-07ac-4eff-91f2-4306aa1c545c
@@ -65,6 +84,16 @@ proxies:
   sni: alibaba-node.cn
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: '1,2,3,4|🇮🇷_IR_伊朗->🇫🇷_FR_法国 #1'
+  network: tcp
+  port: 46585
+  server: 78.39.56.6
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 05af75d7-4c45-4222-b245-d36c5618135d
 - name: 1|_CN_->_US__2
   network: tcp
   password: b1169481-07ac-4eff-91f2-4306aa1c545c
@@ -115,3 +144,12 @@ proxies:
     headers:
       host: ld2.shabijichang.com
     path: /
+- alterId: 64
+  cipher: auto
+  name: 3|🇩🇪 _CN_中国->🇩🇪_DE_德国
+  network: tcp
+  port: '50707'
+  server: 183.237.20.148
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
