@@ -1,9 +1,9 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0|🇺🇸 _US_美国->🇬🇧_GB_英国
+  name: '0,2,3,4|🇺🇸_US_美国->🇬🇧_GB_英国 #3'
   network: ws
-  port: '2052'
+  port: 2052
   server: 104.21.33.130
   tls: false
   type: vmess
@@ -14,7 +14,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,12|US美国(mibei77.com 米贝节点分享) #1'
+  name: '0,2,3,4,12|US美国(mibei77.com 米贝节点分享) #1'
   network: ws
   port: '2052'
   server: family.mgtajhiz.ir
@@ -28,7 +28,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0,2,3,4,10,19|🇺🇸_US_美国->🇬🇧_GB_英国_22
+  name: 0,2,3,4,19|🇺🇸_US_美国->🇬🇧_GB_英国_22
   network: ws
   port: 80
   server: ld2.shabijichang.com
@@ -41,7 +41,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0,6|🇺🇸_US_美国->🇫🇷_FR_法国
+  name: '0,2,3,4,6|🇺🇸_US_美国->🇫🇷_FR_法国 #2'
   network: ws
   port: 2082
   server: fr-01.jikuai.xyz
@@ -54,7 +54,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0,6,10,11|github.com/freefq - 亚太地区  27
+  name: 0,2,3,4,6,10,11|github.com/freefq - 亚太地区  27
   network: ws
   port: 80
   server: cm1.xn-w1yu8o.xyz
@@ -67,21 +67,35 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1|_US_->_DE__1
+  name: 1|_US_->_GB__1
   network: ws
-  port: 2082
-  server: 104.21.4.8
+  port: 2052
+  server: 104.21.33.130
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 566b5797-cc52-4417-e25e-25a9fb15e7d4
+  uuid: 544f2e93-51b0-4d47-fd72-e7d858021bbd
   ws-opts:
     headers:
-      host: al.zmV2ray.site
-    path: /LOCKEY_VPN
+      host: family.mgtajhiz.ir
+    path: /
 - alterId: 0
   cipher: auto
-  name: 1|_US_->_GB_
+  name: 1|_US_->_GB__2
+  network: ws
+  port: 2052
+  server: family.mgtajhiz.ir
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 544f2e93-51b0-4d47-fd72-e7d858021bbd
+  ws-opts:
+    headers:
+      host: family.mgtajhiz.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1|_US_->_GB__3
   network: ws
   port: 80
   server: ld2.shabijichang.com
@@ -95,40 +109,24 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '1,2,4|🇮🇷_IR_伊朗->🇩🇪_DE_德国 #1'
+  name: 1|_US_->_FR_
   network: ws
-  port: 20440
-  server: 158.58.188.21
+  port: 2082
+  server: fr-01.jikuai.xyz
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 13f80f39-4724-473d-aed0-8331b133ae2c
+  uuid: 5d3e67f9-b611-4076-9136-cc64fd234806
   ws-opts:
+    headers:
+      host: fr-01.jikuai.xyz
     path: /
-- name: 1|_CN_->_US__1
-  network: tcp
-  password: 6deb9e24-4041-41e3-827b-392b16aa496e
-  port: 10850
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- name: 1|_CN_->_US__2
-  network: tcp
-  password: 6deb9e24-4041-41e3-827b-392b16aa496e
-  port: 10837
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 1|_HK_->_US_
   network: ws
   port: 80
-  server: nice2.xn-w1yu8o.xyz
+  server: cm1.xn-w1yu8o.xyz
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -137,66 +135,3 @@ proxies:
     headers:
       host: icu2.mac2win.top
     path: /
-- name: 1|_CN_->_US__3
-  network: tcp
-  password: 6deb9e24-4041-41e3-827b-392b16aa496e
-  port: 10838
-  server: other.kunlun-ppg.com
-  skip-cert-verify: true
-  sni: alibaba-node.cn
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 1|_US_->_DE__2
-  network: ws
-  port: 8880
-  server: 104.18.202.232
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e4831af7-c578-45b5-b9b6-a8bbd6d019c9
-  ws-opts:
-    headers:
-      host: gr-allnetwork.whaleproject.tech
-    path: /@vpn_whal,@vpn_whal
-- alterId: 0
-  cipher: auto
-  name: '2,3,4|🇺🇸_US_美国->🇩🇪_DE_德国 #2'
-  network: ws
-  port: 2082
-  server: 104.21.4.8
-  tls: false
-  type: vmess
-  uuid: 566b5797-cc52-4417-e25e-25a9fb15e7d4
-  ws-opts:
-    headers:
-      Host: al.zmV2ray.site
-    path: /LOCKEY_VPN
-- alterId: 0
-  cipher: auto
-  name: 2,4,10|印度 v2rayfree.eu.org
-  network: ws
-  port: '80'
-  server: nice2.xn-w1yu8o.xyz
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a5319baa-e846-43c7-91c2-d67a1e307c8b
-  ws-opts:
-    headers:
-      Host: icu2.mac2win.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '2,4|🇺🇸_US_美国->🇩🇪_DE_德国 #3'
-  network: ws
-  port: 8880
-  server: 104.18.202.232
-  tls: false
-  type: vmess
-  uuid: e4831af7-c578-45b5-b9b6-a8bbd6d019c9
-  ws-opts:
-    headers:
-      Host: gr-allnetwork.whaleproject.tech
-    path: /@vpn_whal,@vpn_whal
