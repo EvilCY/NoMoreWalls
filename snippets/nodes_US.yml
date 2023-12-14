@@ -1,9 +1,9 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,3|🇺🇸 _US_美国 #1'
+  name: '0,2,3,4|🇺🇸_US_美国 #1'
   network: ws
-  port: '80'
+  port: 80
   server: ns1.v2-vip.fun
   tls: false
   type: vmess
@@ -12,26 +12,21 @@ proxies:
     headers:
       Host: ssrsub.v03.ssrsub.com
     path: /api/v3/download.getFile
-- name: 1|_US__1
-  network: tcp
-  password: d56cb8dc-e932-4d57-bd90-1381a1245f90
-  port: 20352
-  server: UNLK2.LVWF8N-HH8E-2300-NMOO-D2E9NAOBEACN.9D8F269F96B25232-759CBB36D6548597.KAUFEN
-  skip-cert-verify: true
-  sni: 206.237.5.220
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
-  name: '1,2,4|🇺🇸_US_美国 #1'
-  network: http
-  port: 56333
-  server: 3.129.250.63
+  name: 1|_US__1
+  network: ws
+  port: 80
+  server: ns1.v2-vip.fun
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 610fcb1f-ffa6-4819-d313-cd530be44a3c
-- name: 1|_US__3
+  uuid: b1e30339-a603-47d1-b31c-1d0ceb59952e
+  ws-opts:
+    headers:
+      host: ssrsub.v03.ssrsub.com
+    path: /api/v3/download.getFile
+- name: 1|_US__2
   network: ws
   password: d2698cf9-c47e-455c-8384-12e642cbba15
   port: 443
@@ -42,6 +37,29 @@ proxies:
   udp: true
   ws-opts:
     path: /pq/us3
+- grpc-opts:
+    grpc-service-name: '@apt_mahdi'
+  name: 1|_US__3
+  network: grpc
+  password: 8Ka1hu4r3g@cf.network383.online:8443?type=grpc&sni=ams-trojan-grpc.carfin.tech&allowInsecure=1&serviceName=
+  port: 8443
+  server: 8Ka1hu4r3g@cf.network383.online:8443?type=grpc&sni=ams-trojan-grpc.carfin.tech&allowInsecure=1&serviceName=@apt_mahdi
+  skip-cert-verify: true
+  sni: ams-trojan-grpc.carfin.tech
+  tls: true
+  type: trojan
+  udp: true
+- name: 1|_US__4
+  network: ws
+  password: d2698cf9-c47e-455c-8384-12e642cbba15
+  port: 443
+  server: 89.116.180.179
+  skip-cert-verify: true
+  sni: p6us4.pqjc.buzz
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /pq/us4
 - alterId: 0
   cipher: auto
   name: '8|🇺🇸_US_美国 #2'
@@ -92,7 +110,7 @@ proxies:
   servername: us04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7a3705e8-de2c-441e-b73b-673636801209
+  uuid: e52541c3-d133-4ad2-b16d-1ce3dfe676e0
 - alterId: 0
   cipher: auto
   name: 11|🇺🇸美国05
@@ -102,7 +120,7 @@ proxies:
   servername: us05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7a3705e8-de2c-441e-b73b-673636801209
+  uuid: e52541c3-d133-4ad2-b16d-1ce3dfe676e0
 - alterId: 0
   cipher: auto
   name: 11|🇺🇸美国06
@@ -112,10 +130,10 @@ proxies:
   servername: us06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7a3705e8-de2c-441e-b73b-673636801209
+  uuid: e52541c3-d133-4ad2-b16d-1ce3dfe676e0
 - alterId: 0
   cipher: auto
-  name: '12,13|github.com/freefq - 美国CloudFla... #1'
+  name: '12,13|github.com/freefq - 美国CloudFla... #6'
   network: ws
   port: '80'
   server: singapore.com
@@ -143,7 +161,7 @@ proxies:
     path: /api/v3/download.getFile
 - alterId: 0
   cipher: auto
-  name: 12,14|🔒 VM-WS-TLS 🏴‍☠️ NA-104.21.16....
+  name: 12,13,14|🔒 VM-WS-TLS 🏴‍☠️ NA-104.21.16....
   network: ws
   port: '2083'
   server: 104.21.16.201
@@ -157,7 +175,7 @@ proxies:
     path: /foryourtestmyfriends2083
 - alterId: 0
   cipher: auto
-  name: 12,13|github.com/freefq - 美国CloudFla...
+  name: '12,13|github.com/freefq - 美国CloudFla... #5'
   network: ws
   port: '8080'
   server: scadn.yydsii.com
@@ -171,7 +189,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '12,13|github.com/freefq - 美国CloudFla... #2'
+  name: '12,13|github.com/freefq - 美国CloudFla... #3'
   network: ws
   port: 443
   server: hexsen.com
@@ -185,7 +203,7 @@ proxies:
     path: /argo-vmess?ed=2048
 - alterId: 0
   cipher: auto
-  name: '12,13|github.com/freefq - 美国CloudFla... #3'
+  name: '12,13|github.com/freefq - 美国CloudFla... #7'
   network: ws
   port: '8080'
   server: cloudflare.cfgo.cc
@@ -198,112 +216,111 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 14|【TG：@ccbaohe}定时更新节点订阅  美国02119...
+  name: 13,14|🇺🇸|US|美国|@wxgqlfx|32
   network: ws
-  port: 2095
-  server: amstdheaa.76898102.xyz
+  port: 21378
+  server: 146.190.99.71
   servername: ''
   tls: false
   type: vmess
-  uuid: 78fd41e5-346a-3bf4-b942-be0fad711979
+  uuid: f9819b76-b627-4635-a9c5-c54c46a9db10
   ws-opts:
     headers:
-      Host: amstdheac.76898102.xyz
-    path: /funsdfrh
+      Host: media-exp1.licdn.com
+    path: /Shalana
 - alterId: 0
   cipher: auto
-  name: 14|🔒 VM-TCP-NA 🇺🇸 US-157.254.231....
-  network: tcp
-  port: '38461'
-  server: 157.254.231.45
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 8f53d96b-cb13-4197-cd44-37db95809de5
-- alterId: 0
-  cipher: auto
-  name: 14|🔒 VM-WS-NA 🇺🇸 US-144.202.81.12...
+  name: 13,14|加拿大 243
   network: ws
-  port: '25514'
-  server: 144.202.81.122
+  port: 80
+  server: 172.67.229.14
   servername: ''
   tls: false
   type: vmess
-  uuid: 13bf827e-55cd-4b46-e9f1-b7f9ffbe7955
+  uuid: 617c9bc4-4116-41c6-99e0-ace49a38fcdb
   ws-opts:
     headers:
-      Host: ''
-    path: /
+      Host: fr9.tehme100.fun
+    path: /Jnv8ViZOUVgijjOh0p5uGjHnXIiY
 - alterId: 0
   cipher: auto
-  name: 14|🔒 VM-WS-NA 🇺🇸 US-20.127.216.16...
+  name: 13,14|@ZDYZ2_279
   network: ws
-  port: 65513
-  server: 20.127.216.167
+  port: 80
+  server: 104.21.3.4
   servername: ''
   tls: false
   type: vmess
-  uuid: 2ba901d9-4c22-46da-def8-9c4008a22fd2
+  uuid: c97cf46e-1554-36cb-8b36-c3556b883dc4
   ws-opts:
     headers:
-      Host: ''
-    path: /
+      Host: v118a.ai88888.top
+    path: /526-dekDP6Otf
 - alterId: 0
   cipher: auto
-  name: 14|🔒 VM-WS-NA 🇺🇸 US-132.145.132.2...
+  name: 14|US美国(mibei77.com 米贝节点分享)
   network: ws
-  port: 37121
-  server: 132.145.132.227
+  port: '2095'
+  server: XXX153.FORWARDV2RAYTELEGRAMCHANNEL.FUN
   servername: ''
   tls: false
   type: vmess
-  uuid: 93845b50-26f6-4203-f5ad-4d231d4e8f45
+  uuid: d59aa585-8da0-40b6-8720-0f76f1357a65
   ws-opts:
     headers:
       Host: ''
-    path: ''
+    path: /@FORWARDV2RAY
 - alterId: 0
   cipher: auto
-  name: 14|美国【TG：@ccbaohe】定时更新节点订阅 2
+  name: 14|韩国01（1x） - 快狗云〖电报：@ccbaohe】免费节...
   network: ws
   port: 8080
-  server: cf.openxai.link
+  server: kr-01.gujuji.top
   servername: ''
   tls: false
   type: vmess
-  uuid: e2695bd0-945f-4476-aac5-0e37bcdbd7fc
+  uuid: e786f10c-b797-47fe-b669-8eb3cd0fb969
   ws-opts:
     headers:
-      Host: eu5.openxai.link
+      Host: kr-01.gujuji.top
     path: /
 - alterId: 0
   cipher: auto
-  name: 14|美国【TG：@ccbaohe】定时更新节点订阅
+  name: 14|🔒 VM-TCP-NA 🇺🇸 US-23.27.168.64...
+  network: tcp
+  port: '21426'
+  server: 23.27.168.64
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 716f1ed3-2b94-480f-9897-b3d297463c58
+- alterId: 0
+  cipher: auto
+  name: '14|US美国(mibei77.com 米贝节点分享) #1'
   network: ws
-  port: 443
-  server: www.wto.org
+  port: '2096'
+  server: www.speedtest.net
   servername: ''
   tls: true
   type: vmess
-  uuid: 539d1f3c-619c-4180-9603-d23e2b4db62f
+  uuid: 37dc5b2d-0cff-44cc-a9ab-9be1123c62f5
   ws-opts:
     headers:
-      Host: copies-bandwidth-harold-tops.trycloudflare.com
-    path: 539d1f3c-619c-4180-9603-d23e2b4db62f-vm
+      Host: freenodeWLF13.freedns.site
+    path: /@womanlifefreedom13?ed=2048
 - alterId: 0
-  cipher: chacha20-poly1305
-  name: 14|🔒 VM-WS-NA 🇺🇸 US-172.67.229.13...
+  cipher: auto
+  name: 14|🇺🇸|US|美国|@wxgqlfx|52
   network: ws
-  port: '80'
-  server: 172.67.229.13
-  servername: ''
+  port: 8080
+  server: us-new04.gujuji.top
   tls: false
   type: vmess
-  uuid: 7300c5af-8657-48ea-ba35-4cc1176c5220
+  uuid: 927a0bb0-4428-4086-9700-a23f81d4d75e
   ws-opts:
     headers:
-      Host: de55.v2-teh.fun
-    path: /RO4vpgRqVSLPRRQi97uOJujdeO
+      Host: us-new04.gujuji.top
+    path: /
 - alterId: 0
   cipher: auto
   name: 14|🔒 VM-WS-TLS 🇺🇸 US-172.67.215.2...
@@ -320,39 +337,196 @@ proxies:
     path: /foryourtestmyfriends2083
 - alterId: 0
   cipher: auto
-  name: 14|🇺🇸|US|美国|@wxgqlfx|44
+  name: '14|US美国(mibei77.com 米贝节点分享) #2'
   network: ws
-  port: 8080
-  server: cloud.dragonrzm.sbs
+  port: '2052'
+  server: family.mgtajhiz.ir
+  servername: ''
   tls: false
   type: vmess
-  uuid: ce0d5151-7734-4189-b6ae-eb58e9af5603
+  uuid: 544f2e93-51b0-4d47-fd72-e7d858021bbd
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
-  name: 14|美国 009
+  name: '14|US美国(mibei77.com 米贝节点分享) #3'
   network: ws
-  port: 80
-  server: 104.31.16.28
+  port: '8880'
+  server: XXX174.FORWARDV2RAYTELEGRAMCHANNEL.FUN
   servername: ''
   tls: false
   type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  uuid: 245eacd2-497e-4a3b-a16f-cf04797d1dc6
   ws-opts:
     headers:
-      Host: ca4.tehme2.fun
-    path: /IOebhLMhl1CTbFHbL95myfRX2
+      Host: ''
+    path: /@FORWARDV2RAY
 - alterId: 0
   cipher: auto
-  name: 14|🔒 VM-TCP-NA 🇺🇸 US-104.237.128....
-  network: tcp
-  port: '14432'
-  server: 104.237.128.72
+  name: 14|美国new02优选（1x） - 快狗云〖电报：@ccbaoh...
+  network: ws
+  port: 8080
+  server: go.gujuji.top
   servername: ''
   tls: false
   type: vmess
-  uuid: 4c09b776-6f83-4bf2-f7f7-4e286dbbb6da
+  uuid: e786f10c-b797-47fe-b669-8eb3cd0fb969
+  ws-opts:
+    headers:
+      Host: us-new02.gujuji.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '14|US美国(mibei77.com 米贝节点分享) #4'
+  network: ws
+  port: '80'
+  server: XXX101.FORWARDV2RAYTELEGRAMCHANNEL.FUN
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0c61cea2-4906-4901-86c2-c0988af7b0a3
+  ws-opts:
+    headers:
+      Host: ''
+    path: /@FORWARDV2RAY
+- alterId: 0
+  cipher: auto
+  name: 14|美国(yudou66.com 玉豆免费节点)
+  network: ws
+  port: '8880'
+  server: XXX126.FORWARDV2RAYTELEGRAMCHANNEL.FUN
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 245eacd2-497e-4a3b-a16f-cf04797d1dc6
+  ws-opts:
+    headers:
+      Host: ''
+    path: /@FORWARDV2RAY
+- alterId: 0
+  cipher: auto
+  name: 14|【TG：@ccbaohe}定时更新节点订阅  美国02119...
+  network: ws
+  port: 2095
+  server: amstdheaa.76898102.xyz
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 78fd41e5-346a-3bf4-b942-be0fad711979
+  ws-opts:
+    headers:
+      Host: amstdheac.76898102.xyz
+    path: /funsdfrh
+- alterId: 0
+  cipher: auto
+  name: '14|US美国(mibei77.com 米贝节点分享) #5'
+  network: ws
+  port: '2086'
+  server: XXX128.FORWARDV2RAYTELEGRAMCHANNEL.FUN
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5e2b8412-ae02-4279-b13a-af3972952287
+  ws-opts:
+    headers:
+      Host: ''
+    path: /@FORWARDV2RAY
+- alterId: 0
+  cipher: auto
+  name: '14|🇺🇸美国02 #1'
+  network: ws
+  port: '2095'
+  server: dl6.doushimeng.com
+  tls: false
+  type: vmess
+  uuid: cbdc5a4d-1544-459b-b3fb-4b493b4cb5de
+  ws-opts:
+    headers:
+      Host: cf-usss.doushimeng.com
+    path: /asdas
+- alterId: 0
+  cipher: auto
+  name: 14|【电报：@ccbaohe|免费机场节点 4
+  network: ws
+  port: 8080
+  server: us-new03.gujuji.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: dba20da9-40e7-48ba-8c99-e24ec84836a0
+  ws-opts:
+    headers:
+      Host: us-new03.gujuji.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 14|🔒 VM-WS-NA 🇺🇸 US-144.202.81.12...
+  network: ws
+  port: '25514'
+  server: 144.202.81.122
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 13bf827e-55cd-4b46-e9f1-b7f9ffbe7955
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 14|德国new01（1x） - 快狗云〖电报：@ccbaohe】...
+  network: ws
+  port: 8080
+  server: de-new01.gujuji.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e786f10c-b797-47fe-b669-8eb3cd0fb969
+  ws-opts:
+    headers:
+      Host: de-new01.gujuji.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '14|US美国(mibei77.com 米贝节点分享) #6'
+  network: ws
+  port: '80'
+  server: XXX185.FORWARDV2RAYTELEGRAMCHANNEL.FUN
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0c61cea2-4906-4901-86c2-c0988af7b0a3
+  ws-opts:
+    headers:
+      Host: ''
+    path: /@FORWARDV2RAY
+- alterId: 0
+  cipher: auto
+  name: 14|🔒 VM-WS-NA 🇺🇸 US-20.127.216.16...
+  network: ws
+  port: 65513
+  server: 20.127.216.167
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2ba901d9-4c22-46da-def8-9c4008a22fd2
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 14|US_youtube@资源分享师_7
+  network: ws
+  port: 8880
+  server: XXX186.FORWARDV2RAYTELEGRAMCHANNEL.FUN
+  tls: false
+  type: vmess
+  uuid: 245eacd2-497e-4a3b-a16f-cf04797d1dc6
+  ws-opts:
+    path: /@FORWARDV2RAY
 - alterId: 0
   cipher: auto
   name: 14|美国
@@ -369,6 +543,243 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 14|🔒 VM-TCP-NA 🇺🇸 US-172.233.188....
+  network: tcp
+  port: '11397'
+  server: 172.233.188.166
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 20e0d67d-f7aa-4bb1-daae-b7f217306bba
+- alterId: 0
+  cipher: auto
+  name: 14|美国new01（1x） - 快狗云〖电报：@ccbaohe】...
+  network: ws
+  port: 8080
+  server: us-new01.gujuji.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e786f10c-b797-47fe-b669-8eb3cd0fb969
+  ws-opts:
+    headers:
+      Host: us-new01.gujuji.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '14|US美国(mibei77.com 米贝节点分享) #7'
+  network: ws
+  port: '80'
+  server: XXX149.FORWARDV2RAYTELEGRAMCHANNEL.FUN
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0c61cea2-4906-4901-86c2-c0988af7b0a3
+  ws-opts:
+    headers:
+      Host: ''
+    path: /@FORWARDV2RAY
+- alterId: 0
+  cipher: auto
+  name: 14|美国new02（1x） - 快狗云〖电报：@ccbaohe】...
+  network: ws
+  port: 8080
+  server: us-new02.gujuji.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e786f10c-b797-47fe-b669-8eb3cd0fb969
+  ws-opts:
+    headers:
+      Host: us-new02.gujuji.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '14|美国(yudou66.com 玉豆免费节点) #1'
+  network: ws
+  port: '2095'
+  server: XXX105.FORWARDV2RAYTELEGRAMCHANNEL.FUN
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d59aa585-8da0-40b6-8720-0f76f1357a65
+  ws-opts:
+    headers:
+      Host: ''
+    path: /@FORWARDV2RAY
+- alterId: 0
+  cipher: auto
+  name: '14|US美国(mibei77.com 米贝节点分享) #8'
+  network: ws
+  port: '2086'
+  server: XXX104.FORWARDV2RAYTELEGRAMCHANNEL.FUN
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5e2b8412-ae02-4279-b13a-af3972952287
+  ws-opts:
+    headers:
+      Host: ''
+    path: /@FORWARDV2RAY
+- alterId: 0
+  cipher: auto
+  name: 14|🔒 VM-WS-NA 🇺🇸 US-38.54.104.191...
+  network: ws
+  port: '54033'
+  server: 38.54.104.191
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4e67a298-bf2e-4211-bc9a-dccd0fe3320d
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '14|US美国(mibei77.com 米贝节点分享) #9'
+  network: ws
+  port: '8080'
+  server: XXX139.FORWARDV2RAYTELEGRAMCHANNEL.FUN
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a99463e1-c0f4-4b35-a5f1-72de43029f27
+  ws-opts:
+    headers:
+      Host: ''
+    path: /@FORWARDV2RAY
+- alterId: 0
+  cipher: auto
+  name: '14|US美国(mibei77.com 米贝节点分享) #10'
+  network: ws
+  port: '2086'
+  server: XXX10.FORWARDV2RAYTELEGRAMCHANNEL.FUN
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5e2b8412-ae02-4279-b13a-af3972952287
+  ws-opts:
+    headers:
+      Host: ''
+    path: /@FORWARDV2RAY
+- alterId: 0
+  cipher: auto
+  name: 14|🇺🇸|US|美国|@wxgqlfx|51
+  network: ws
+  port: 8080
+  server: us-new02.gujuji.top
+  tls: false
+  type: vmess
+  uuid: dba20da9-40e7-48ba-8c99-e24ec84836a0
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '14|US美国(mibei77.com 米贝节点分享) #11'
+  network: ws
+  port: '2096'
+  server: XXX112.FORWARDV2RAYTELEGRAMCHANNEL.FUN
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 1797383f-0203-40a4-a213-95403b2f7794
+  ws-opts:
+    headers:
+      Host: ''
+    path: /@FORWARDV2RAY
+- alterId: 0
+  cipher: auto
+  name: 14|US_youtube@资源分享师_202
+  network: ws
+  port: 80
+  server: scadn.yydsii.com
+  tls: false
+  type: vmess
+  uuid: f32fb637-67eb-48be-9f29-4523c4720de7
+  ws-opts:
+    headers:
+      Host: yxtw.651568.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 14|US_youtube@资源分享师_89
+  network: ws
+  port: 2095
+  server: XXX189.FORWARDV2RAYTELEGRAMCHANNEL.FUN
+  tls: false
+  type: vmess
+  uuid: d59aa585-8da0-40b6-8720-0f76f1357a65
+  ws-opts:
+    path: /@FORWARDV2RAY
+- alterId: 0
+  cipher: auto
+  name: 14|加拿大new01（1x） - 快狗云〖电报：@ccbaohe...
+  network: ws
+  port: 8080
+  server: ca-new01.gujuji.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e786f10c-b797-47fe-b669-8eb3cd0fb969
+  ws-opts:
+    headers:
+      Host: ca-new01.gujuji.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 14|US_youtube@资源分享师_65
+  network: ws
+  port: 8880
+  server: XXX66.FORWARDV2RAYTELEGRAMCHANNEL.FUN
+  tls: false
+  type: vmess
+  uuid: 245eacd2-497e-4a3b-a16f-cf04797d1dc6
+  ws-opts:
+    path: /@FORWARDV2RAY
+- alterId: 0
+  cipher: auto
+  name: '14|US美国(mibei77.com 米贝节点分享) #12'
+  network: ws
+  port: '2083'
+  server: XXX110.FORWARDV2RAYTELEGRAMCHANNEL.FUN
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 56c8c4f4-1ff7-4ca5-b5c2-42c719ba917e
+  ws-opts:
+    headers:
+      Host: ''
+    path: /@FORWARDV2RAY
+- alterId: 0
+  cipher: auto
+  name: '14|US美国(mibei77.com 米贝节点分享) #13'
+  network: ws
+  port: '8080'
+  server: XXX187.FORWARDV2RAYTELEGRAMCHANNEL.FUN
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a99463e1-c0f4-4b35-a5f1-72de43029f27
+  ws-opts:
+    headers:
+      Host: ''
+    path: /@FORWARDV2RAY
+- alterId: 0
+  cipher: auto
+  name: 14|US_youtube@资源分享师_6
+  network: ws
+  port: 80
+  server: 172.64.199.171
+  tls: false
+  type: vmess
+  uuid: e8f5f189-97c7-4845-8cfa-08bf9836c1ce
+  ws-opts:
+    headers:
+      Host: fr2-vmess.sshmax.xyz
+    path: /vmess
+- alterId: 0
+  cipher: auto
   name: 15|【BGP】美国 04 | 1x US
   network: tcp
   port: '31501'
@@ -376,7 +787,7 @@ proxies:
   servername: us04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 93285c7c-92d4-4b9a-bad7-e87cfbd10a48
+  uuid: 1bb9dc5b-ca7d-4228-9b0f-fd344b9c925f
 - alterId: 0
   cipher: auto
   name: 15|【BGP】美国 05 | 1x US
@@ -386,7 +797,7 @@ proxies:
   servername: us05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 93285c7c-92d4-4b9a-bad7-e87cfbd10a48
+  uuid: 1bb9dc5b-ca7d-4228-9b0f-fd344b9c925f
 - alterId: 0
   cipher: auto
   name: 15|【BGP】美国 06 | 1x US
@@ -396,7 +807,7 @@ proxies:
   servername: us06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 93285c7c-92d4-4b9a-bad7-e87cfbd10a48
+  uuid: 1bb9dc5b-ca7d-4228-9b0f-fd344b9c925f
 - cipher: chacha20-ietf-poly1305
   name: 16|🇺🇸 美国5|频道:@ripaojiedian
   password: d89ca371-e94b-4dfe-ad6f-02bd13edf7c4
@@ -435,7 +846,7 @@ proxies:
   server: gdct003.jcnode.top
   tls: false
   type: vmess
-  uuid: 08eb140c-68e5-4893-9573-e89d8488ec03
+  uuid: 15419ae5-a185-4e89-a79a-ad6309795ed9
   ws-opts:
     headers:
       Host: ''
@@ -448,7 +859,7 @@ proxies:
   server: gdct002.jcnode.top
   tls: false
   type: vmess
-  uuid: 08eb140c-68e5-4893-9573-e89d8488ec03
+  uuid: 15419ae5-a185-4e89-a79a-ad6309795ed9
   ws-opts:
     headers:
       Host: ''
@@ -461,7 +872,7 @@ proxies:
   server: gdct001.jcnode.top
   tls: false
   type: vmess
-  uuid: 08eb140c-68e5-4893-9573-e89d8488ec03
+  uuid: 15419ae5-a185-4e89-a79a-ad6309795ed9
   ws-opts:
     headers:
       Host: ''
@@ -474,7 +885,7 @@ proxies:
   server: gdct003.jcnode.top
   tls: false
   type: vmess
-  uuid: 08eb140c-68e5-4893-9573-e89d8488ec03
+  uuid: 15419ae5-a185-4e89-a79a-ad6309795ed9
   ws-opts:
     headers:
       Host: ''
@@ -487,7 +898,7 @@ proxies:
   server: gdct002.jcnode.top
   tls: false
   type: vmess
-  uuid: 08eb140c-68e5-4893-9573-e89d8488ec03
+  uuid: 15419ae5-a185-4e89-a79a-ad6309795ed9
   ws-opts:
     headers:
       Host: ''
@@ -500,7 +911,7 @@ proxies:
   server: gdct001.jcnode.top
   tls: false
   type: vmess
-  uuid: 08eb140c-68e5-4893-9573-e89d8488ec03
+  uuid: 15419ae5-a185-4e89-a79a-ad6309795ed9
   ws-opts:
     headers:
       Host: ''
