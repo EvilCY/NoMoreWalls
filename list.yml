@@ -6,18 +6,19 @@ mode: rule
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0|🇩🇪 _DE_德国
+  name: '0,1,2,3,4|🇩🇪_DE_德国 #1'
   network: http
-  port: '2082'
+  port: 2082
   server: arshatheroad8pippahotelsinestra.irandarkpro.gq
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 37eb0303-8420-4691-a773-54ae4a009d36
 - alterId: 0
   cipher: auto
-  name: 0|🇺🇸 _US_美国
+  name: '0,2,3,4|🇺🇸_US_美国 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 162.159.192.244
   tls: true
   type: vmess
@@ -26,33 +27,50 @@ proxies:
     headers:
       Host: cowochtmtrkers.turbo021.link
     path: /673ba378-840f-4928-81f2-203148d07350
-- alterId: 0
-  cipher: auto
-  name: '1,2,4,12|🇨🇦_CA_加拿大 #5'
-  network: ws
-  port: 26006
-  server: 142.171.136.39
+- name: 1|_DE__2
+  network: tcp
+  password: 81cd0143-601c-44dc-b479-6f28b3b71c64
+  port: 443
+  server: 5.104.108.120
   skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: d8c4b4ce-be77-4e66-cb05-cffeffa634a3
-  ws-opts:
-    path: /d8c4b4ce
-- grpc-opts:
-    grpc-service-name: '@apt_mahdi'
-  name: 1|_US__1
-  network: grpc
-  password: 8Ka1hu4r3g@cf.network383.online:8443?type=grpc&sni=ams-trojan-grpc.carfin.tech&allowInsecure=1&serviceName=
-  port: 8443
-  server: 8Ka1hu4r3g@cf.network383.online:8443?type=grpc&sni=ams-trojan-grpc.carfin.tech&allowInsecure=1&serviceName=@apt_mahdi
-  skip-cert-verify: true
-  sni: ams-trojan-grpc.carfin.tech
-  tls: true
+  sni: 20-24-33-134.nhost.00cdn.com
   type: trojan
   udp: true
-- name: 1|_US__2
+- alterId: 0
+  cipher: auto
+  name: 1|_US__1
   network: ws
-  password: 097f6b5f-bcf9-4a24-9f0d-d1feaa638d86
+  port: 443
+  server: 162.159.192.244
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 673ba378-840f-4928-81f2-203148d07350
+  ws-opts:
+    headers:
+      host: cowochtmtrkers.turbo021.link
+    path: /673ba378-840f-4928-81f2-203148d07350
+- name: 1|_US__2
+  network: tcp
+  password: ff981c01-9f9a-4b27-bb09-0d98b7a4b7fa
+  port: 443
+  server: us1.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen
+  skip-cert-verify: true
+  sni: 206.237.5.220
+  type: trojan
+  udp: true
+- name: 1|_US__3
+  network: tcp
+  password: ff981c01-9f9a-4b27-bb09-0d98b7a4b7fa
+  port: 443
+  server: sg1.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen
+  skip-cert-verify: true
+  sni: 206.237.5.220
+  type: trojan
+  udp: true
+- name: 1|_US__4
+  network: ws
+  password: 81cd0143-601c-44dc-b479-6f28b3b71c64
   port: 443
   server: 89.116.180.158
   skip-cert-verify: true
@@ -63,112 +81,9 @@ proxies:
     headers:
       host: 3us2.pqjc.buzz
     path: /pq/us2
-- alterId: 0
-  cipher: auto
-  name: 1|_US_->_DE_
+- name: 1|_US__5
   network: ws
-  port: 2087
-  server: 104.19.154.92
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 8fada9c0-c348-4465-aade-ff0311454178
-  ws-opts:
-    headers:
-      host: pAnel159.moOkomeILz.homes
-    path: /kqlqqv
-- alterId: 0
-  cipher: auto
-  name: 1|_US__3
-  network: ws
-  port: 80
-  server: ns1.v2-vip.fun
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: b1e30339-a603-47d1-b31c-1d0ceb59952e
-  ws-opts:
-    headers:
-      host: ssrsub.v03.ssrsub.com
-    path: /api/v3/download.getFile
-- name: 1|_US__4
-  network: ws
-  password: 097f6b5f-bcf9-4a24-9f0d-d1feaa638d86
-  port: 443
-  server: 89.116.161.133
-  skip-cert-verify: true
-  sni: p1us1.pqjc.buzz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: p1us1.pqjc.buzz
-    path: /pq/us1
-- name: 1|_DE__1
-  network: tcp
-  password: 097f6b5f-bcf9-4a24-9f0d-d1feaa638d86
-  port: 443
-  server: 5.104.108.120
-  skip-cert-verify: true
-  sni: 20-24-33-134.nhost.00cdn.com
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 1|_US__5
-  network: ws
-  port: 80
-  server: 104.21.75.246
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers:
-      host: sbl2.shabijichang.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 1|_CA__2
-  network: ws
-  port: 8080
-  server: 23.227.39.84
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 969f1909-c0d3-4c30-813d-3aec5c838b7d
-  ws-opts:
-    headers:
-      host: dongtaiwang13.dtku47.xyz
-    path: /1IKYjV0r/
-- alterId: 0
-  cipher: auto
-  name: 1,2,4,12|关注电报https://t.me/mftizi
-  network: ws
-  port: '51904'
-  server: 23.166.24.63
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ee25f36d-8501-4f94-d3f6-07baae27cc13
-  ws-opts:
-    headers:
-      Host: ''
-    path: /ee25f36d
-- alterId: 0
-  cipher: auto
-  name: 1,2,3,4,6,18|🇺🇸_US_美国_4_34
-  network: http
-  port: 56333
-  server: 3.129.250.63
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 610fcb1f-ffa6-4819-d313-cd530be44a3c
-- name: 1|_US__8
-  network: ws
-  password: 097f6b5f-bcf9-4a24-9f0d-d1feaa638d86
+  password: 81cd0143-601c-44dc-b479-6f28b3b71c64
   port: 443
   server: 89.116.180.179
   skip-cert-verify: true
@@ -179,9 +94,27 @@ proxies:
     headers:
       host: p6us4.pqjc.buzz
     path: /pq/us4
-- name: 1|_US__9
+- name: 1|_US__6
+  network: tcp
+  password: ff981c01-9f9a-4b27-bb09-0d98b7a4b7fa
+  port: 443
+  server: jp1.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen
+  skip-cert-verify: true
+  sni: 13-231-155-134.nhost.00cdn.com
+  type: trojan
+  udp: true
+- name: 1|_DE__3
+  network: tcp
+  password: 81cd0143-601c-44dc-b479-6f28b3b71c64
+  port: 443
+  server: 5.104.108.109
+  skip-cert-verify: true
+  sni: 20-24-33-134.nhost.00cdn.com
+  type: trojan
+  udp: true
+- name: 1|_US__7
   network: ws
-  password: 097f6b5f-bcf9-4a24-9f0d-d1feaa638d86
+  password: 81cd0143-601c-44dc-b479-6f28b3b71c64
   port: 443
   server: 167.68.5.183
   skip-cert-verify: true
@@ -192,61 +125,30 @@ proxies:
     headers:
       host: 6us3.pqjc.buzz
     path: /pq/us3
-- name: 1|_DE__2
-  network: tcp
-  password: 097f6b5f-bcf9-4a24-9f0d-d1feaa638d86
-  port: 443
-  server: 5.104.108.109
+- grpc-opts:
+    grpc-service-name: '@apt_mahdi'
+  name: 1|_US__8
+  network: grpc
+  password: 8Ka1hu4r3g@cf.network383.online:8443?type=grpc&sni=ams-trojan-grpc.carfin.tech&allowInsecure=1&serviceName=
+  port: 8443
+  server: 8Ka1hu4r3g@cf.network383.online:8443?type=grpc&sni=ams-trojan-grpc.carfin.tech&allowInsecure=1&serviceName=@apt_mahdi
   skip-cert-verify: true
-  sni: 20-24-33-134.nhost.00cdn.com
+  sni: ams-trojan-grpc.carfin.tech
+  tls: true
   type: trojan
   udp: true
-- cipher: chacha20-ietf
-  name: '2,4|未命名 #3'
-  obfs: plain
-  obfs-param: ZmZjOWM1MDkxNi5taWNyb3NvZnQuY29t
-  password: jFa4F1
-  port: '7702'
-  protocol: auth_aes128_sha1
-  protocol-param: ''
-  server: cm01.newcome.xyz
-  type: ssr
-- cipher: chacha20-ietf
-  name: '2,4|未命名 #4'
-  obfs: plain
-  obfs-param: ZmZjOWM1MDkxNi5taWNyb3NvZnQuY29t
-  password: jFa4F1
-  port: '7705'
-  protocol: auth_aes128_sha1
-  protocol-param: ''
-  server: cm01.newcome.xyz
-  type: ssr
-- cipher: chacha20-ietf
-  name: '2,4|未命名 #5'
-  obfs: plain
-  obfs-param: ZmZjOWM1MDkxNi5taWNyb3NvZnQuY29t
-  password: jFa4F1
-  port: '7709'
-  protocol: auth_aes128_sha1
-  protocol-param: ''
-  server: cm01.newcome.xyz
-  type: ssr
 - alterId: 0
   cipher: auto
-  name: '2,4|🇺🇸_US_美国->🇩🇪_DE_德国 #1'
-  network: ws
-  port: 2087
-  server: 104.19.154.92
-  tls: true
+  name: 6,18|🇺🇸_US_美国_4_34
+  network: http
+  port: 56333
+  server: 3.129.250.63
+  tls: false
   type: vmess
-  uuid: 8fada9c0-c348-4465-aade-ff0311454178
-  ws-opts:
-    headers:
-      Host: pAnel159.moOkomeILz.homes
-    path: /kqlqqv
+  uuid: 610fcb1f-ffa6-4819-d313-cd530be44a3c
 - alterId: 0
   cipher: auto
-  name: 2,3,4,6,18|🇺🇸_US_美国_由快嘴科技提供：kkzui.com2_55
+  name: 6,18|🇺🇸_US_美国_由快嘴科技提供：kkzui.com2_55
   network: ws
   port: 80
   server: ns1.v2-vip.fun
@@ -259,7 +161,7 @@ proxies:
     path: /api/v3/download.getFile
 - alterId: 0
   cipher: auto
-  name: 2,3,4,6,18|🇺🇸_US_美国_由快嘴科技提供：kkzui.com3_56
+  name: 6,18|🇺🇸_US_美国_由快嘴科技提供：kkzui.com3_56
   network: ws
   port: 80
   server: 104.21.75.246
@@ -270,19 +172,6 @@ proxies:
     headers:
       Host: sbl2.shabijichang.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: '2,4,12|🇨🇦_CA_加拿大 #4'
-  network: ws
-  port: 8080
-  server: 23.227.39.84
-  tls: false
-  type: vmess
-  uuid: 969f1909-c0d3-4c30-813d-3aec5c838b7d
-  ws-opts:
-    headers:
-      Host: dongtaiwang13.dtku47.xyz
-    path: /1IKYjV0r/
 - alterId: 0
   cipher: auto
   name: '7,8|🇺🇸 United States 01 @nodpai #1'
@@ -583,10 +472,10 @@ proxies:
   uuid: a759293e-2c47-4a58-ab37-374fe8b42b99
 - alterId: 0
   cipher: auto
-  name: 10|四川省 联通数据上网公共出口
+  name: 10,11|github.com/freefq - 湖南省联通 9
   network: ws
   port: '16616'
-  server: t.cnmjcn.cyou
+  server: yes.cnmjcn.net
   servername: ''
   tls: false
   type: vmess
@@ -595,6 +484,102 @@ proxies:
     headers:
       Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
     path: /
+- alterId: 0
+  cipher: auto
+  name: 10,14,15|新加坡2|@ripaojiedian
+  network: ws
+  port: '16618'
+  server: yes.cnmjcn.net
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
+  ws-opts:
+    headers:
+      Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 10,12|加拿大 215
+  network: ws
+  port: 2086
+  server: 172.67.229.34
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    headers:
+      Host: ca6.tehme100.fun
+    path: /IOebhLMhl1CTbFHbL95myfRX2
+- alterId: 64
+  cipher: auto
+  name: 10,15|香港1|@ripaojiedian
+  network: tcp
+  port: '46602'
+  server: 112.28.208.10
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 10,12|@ZDYZ2_655
+  network: ws
+  port: 80
+  server: 47.88.87.39
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 18351862-d953-4ab9-afae-4998dcd56f8b
+  ws-opts:
+    headers:
+      Host: ''
+    path: /wRDYyXAgH6oASzMKs65VUYw
+- alterId: 0
+  cipher: auto
+  name: 10|台湾省 中华电信(HiNet)数据中心
+  network: ws
+  port: '443'
+  server: b13.ntbq.dynu.net
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 14327f86-7734-4d5b-9561-b58ad95cbcfb
+  ws-opts:
+    headers:
+      Host: b13.ntbq.dynu.net
+    path: /b13
+- alterId: 0
+  cipher: auto
+  name: 10,11|github.com/freefq - 台湾省中华电信(Hi...
+  network: ws
+  port: '443'
+  server: b11.ntbq.dynu.net
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 14327f86-7734-4d5b-9561-b58ad95cbcfb
+  ws-opts:
+    headers:
+      Host: b11.ntbq.dynu.net
+    path: /b11
+- alterId: 0
+  cipher: auto
+  name: 10,11|github.com/freefq - 美国CloudFla...
+  network: ws
+  port: '80'
+  server: cf-lt.sharecentre.online
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b1e30339-a603-47d1-b31c-1d0ceb59952e
+  ws-opts:
+    headers:
+      Host: ssrsub.v004.ssrsub.com
+    path: /api/v3/download.getFile
 - alterId: 0
   cipher: auto
   name: '10,11|github.com/freefq - 美国CloudFla... #1'
@@ -611,37 +596,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '10|美国 CloudFlare节点 #1'
-  network: ws
-  port: 8080
-  server: fr-new01.gujuji.top
-  tls: false
-  type: vmess
-  uuid: 19de9747-b4b0-4b6c-9697-26cb1310f2cf
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 10,12|🔒 VM-TCP-NA 🇺🇸 US-168.235.72.2...
-  network: tcp
-  port: 15551
-  server: 168.235.72.221
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 69510633-6acb-4291-a98e-0cdcc9bd5c51
-- alterId: 0
-  cipher: auto
-  name: 10|广东省佛山市 移动
-  network: tcp
-  port: 45800
-  server: 183.232.195.146
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7ad68894-08cc-494a-9cdf-1e5e967f6da0
-- alterId: 0
-  cipher: auto
   name: '10,11|github.com/freefq - 美国CloudFla... #2'
   network: ws
   port: '2082'
@@ -652,124 +606,6 @@ proxies:
   ws-opts:
     headers:
       Host: us-02.jikuai.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '10|美国 CloudFlare节点 #4'
-  network: ws
-  port: 8080
-  server: ca-new01.gujuji.top
-  tls: false
-  type: vmess
-  uuid: 2dbd709e-ba48-4bb3-8181-40995c18fa1f
-  ws-opts:
-    headers:
-      Host: ca-new01.gujuji.top
-    path: /
-- alterId: 64
-  cipher: auto
-  name: 10,12|美国(yudou66.com 玉豆免费节点)
-  network: ws
-  port: '30000'
-  server: 38.54.185.113
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.73664999.xyz
-    path: /path/1702215223320
-- alterId: 0
-  cipher: auto
-  name: 10,11|github.com/freefq - 湖南省联通 9
-  network: ws
-  port: '16616'
-  server: yes.cnmjcn.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
-  ws-opts:
-    headers:
-      Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 10|美国CloudFlare节点 1
-  network: ws
-  port: '2052'
-  server: 162.159.138.110
-  tls: false
-  type: vmess
-  uuid: fe823d74-fa7e-4dc1-b16b-480bc201a153
-  ws-opts:
-    headers:
-      Host: mg_cdn.yunjisuan.cf
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 10|台湾省中华电信(HiNet)数据中心 2
-  network: ws
-  port: 443
-  server: nb24.ntbq.dynu.net
-  tls: true
-  type: vmess
-  uuid: 14327f86-7734-4d5b-9561-b58ad95cbcfb
-  ws-opts:
-    headers:
-      Host: nb24.ntbq.dynu.net
-    path: /b24
-- alterId: 0
-  cipher: auto
-  name: 10|广东省佛山市移动 3
-  network: tcp
-  port: 45803
-  server: 183.232.195.146
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7ad68894-08cc-494a-9cdf-1e5e967f6da0
-- alterId: 0
-  cipher: auto
-  name: 10|台湾省中华电信(HiNet)数据中心 4
-  network: ws
-  port: 443
-  server: b37.ntbq.dynu.net
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 14327f86-7734-4d5b-9561-b58ad95cbcfb
-  ws-opts:
-    headers:
-      Host: b37.ntbq.dynu.net
-    path: /b37
-- alterId: 0
-  cipher: auto
-  name: 10|美国CloudFlare公司CDN节点 5
-  network: ws
-  port: 8080
-  server: us-new01.gujuji.top
-  tls: false
-  type: vmess
-  uuid: 2dbd709e-ba48-4bb3-8181-40995c18fa1f
-  ws-opts:
-    headers:
-      Host: us-new01.gujuji.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 10,12|🔒 VM-WS-NA 🇵🇭 PH-154.90.34.148...
-  network: ws
-  port: '33890'
-  server: 154.90.34.148
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f5c49819-07c3-4fb5-b7ca-395303d83417
-  ws-opts:
-    headers:
-      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -785,34 +621,6 @@ proxies:
     headers:
       Host: eu4.openxai.link
     path: /
-- alterId: 0
-  cipher: auto
-  name: 11|github.com/freefq - 台湾省中华电信(Hi...
-  network: ws
-  port: '443'
-  server: b11.ntbq.dynu.net
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 14327f86-7734-4d5b-9561-b58ad95cbcfb
-  ws-opts:
-    headers:
-      Host: b11.ntbq.dynu.net
-    path: /b11
-- alterId: 0
-  cipher: auto
-  name: 11|github.com/freefq - 美国CloudFla...
-  network: ws
-  port: '80'
-  server: cf-lt.sharecentre.online
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b1e30339-a603-47d1-b31c-1d0ceb59952e
-  ws-opts:
-    headers:
-      Host: ssrsub.v004.ssrsub.com
-    path: /api/v3/download.getFile
 - alterId: 0
   cipher: auto
   name: 12|@ZDYZ2_229
@@ -1123,20 +931,20 @@ proxies:
   tls: false
   type: vmess
   uuid: d9dc506b-9bcf-497e-ea11-53c369e2b343
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: 12|加拿大 215
+  name: 12|美国(yudou66.com 玉豆免费节点)
   network: ws
-  port: 2086
-  server: 172.67.229.34
+  port: '30000'
+  server: 38.54.185.113
   servername: ''
-  tls: false
+  tls: true
   type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts:
     headers:
-      Host: ca6.tehme100.fun
-    path: /IOebhLMhl1CTbFHbL95myfRX2
+      Host: www.73664999.xyz
+    path: /path/1702215223320
 - alterId: 0
   cipher: auto
   name: 12|🔒 VM-WS-NA 🇯🇵 JP-183.181.36.19...
@@ -1274,6 +1082,19 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 12|🇨🇦_CA_加拿大
+  network: ws
+  port: 8080
+  server: 23.227.39.84
+  tls: false
+  type: vmess
+  uuid: 969f1909-c0d3-4c30-813d-3aec5c838b7d
+  ws-opts:
+    headers:
+      Host: dongtaiwang13.dtku47.xyz
+    path: /1IKYjV0r/
+- alterId: 0
+  cipher: auto
   name: 12|🔒 VM-TCP-NA 🇫🇮 FI-65.108.27.21...
   network: tcp
   port: '809'
@@ -1326,20 +1147,6 @@ proxies:
   protocol-param: NDU2NDE6MTExOV9qRTE2NXQ%3D
   server: cm03.newcome.xyz
   type: ssr
-- alterId: 0
-  cipher: auto
-  name: 12|@ZDYZ2_655
-  network: ws
-  port: 80
-  server: 47.88.87.39
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 18351862-d953-4ab9-afae-4998dcd56f8b
-  ws-opts:
-    headers:
-      Host: ''
-    path: /wRDYyXAgH6oASzMKs65VUYw
 - alterId: 0
   cipher: auto
   name: 12|@ZDYZ2_659
@@ -1652,6 +1459,20 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 12|🔒 VM-WS-NA 🇵🇭 PH-154.90.34.148...
+  network: ws
+  port: '33890'
+  server: 154.90.34.148
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f5c49819-07c3-4fb5-b7ca-395303d83417
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
   name: 12|🔒 VM-WS-NA 🇰🇷 KR-38.60.220.214...
   network: ws
   port: '42040'
@@ -1945,6 +1766,16 @@ proxies:
   uuid: d9a7c529-f98b-429b-eb26-c90979c910a3
 - alterId: 0
   cipher: auto
+  name: 12|🔒 VM-TCP-NA 🇺🇸 US-168.235.72.2...
+  network: tcp
+  port: 15551
+  server: 168.235.72.221
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 69510633-6acb-4291-a98e-0cdcc9bd5c51
+- alterId: 0
+  cipher: auto
   name: 12|🟪22@oneclickvpnkeys
   network: ws
   port: '443'
@@ -2071,6 +1902,17 @@ proxies:
     headers:
       Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  name: '12|🇨🇦_CA_加拿大 #1'
+  network: ws
+  port: 26006
+  server: 142.171.136.39
+  tls: false
+  type: vmess
+  uuid: d8c4b4ce-be77-4e66-cb05-cffeffa634a3
+  ws-opts:
+    path: /d8c4b4ce
 - alterId: 0
   cipher: auto
   name: 12|🔒 VM-TCP-NA 🇺🇸 US-104.237.128....
@@ -2531,6 +2373,20 @@ proxies:
   uuid: 2bf900ac-909a-4610-dc18-86a3a136b286
 - alterId: 0
   cipher: auto
+  name: 12|关注电报https://t.me/mftizi
+  network: ws
+  port: '51904'
+  server: 23.166.24.63
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ee25f36d-8501-4f94-d3f6-07baae27cc13
+  ws-opts:
+    headers:
+      Host: ''
+    path: /ee25f36d
+- alterId: 0
+  cipher: auto
   name: 12|@ZDYZ2_777
   network: ws
   port: 58300
@@ -2962,22 +2818,6 @@ proxies:
     headers:
       Host: nb23.ntbq.dynu.net
     path: /b23
-- alterId: 0
-  cipher: auto
-  name: 14,15|新加坡2|@ripaojiedian
-  network: ws
-  port: '16618'
-  server: yes.cnmjcn.net
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: c2c76420-257f-492a-b20f-6560f3bfa78d
-  ws-opts:
-    headers:
-      Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com
-    path: /
 - cipher: aes-256-cfb
   name: 14|🇯🇵 日本特殊2|@ripaojiedian
   password: amazonskr05
@@ -3012,16 +2852,6 @@ proxies:
   network: tcp
   port: '52629'
   server: 120.233.43.37
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 15|香港1|@ripaojiedian
-  network: tcp
-  port: '46602'
-  server: 112.28.208.10
   servername: ''
   tls: false
   type: vmess
@@ -3143,275 +2973,262 @@ proxy-groups:
 - interval: 300
   name: 🎯 负载均衡
   proxies: &id001
-  - '10,11|github.com/freefq - 美国CloudFla... #2'
-  - 11|github.com/freefq - 台湾省中华电信(Hi...
-  - '2,4|未命名 #3'
-  - 12|@ZDYZ2_432
-  - 9|🇯🇵日本06
-  - 12|@ZDYZ2_255
-  - '1,2,4,12|🇨🇦_CA_加拿大 #5'
-  - 12|加拿大 046
-  - 9|🇦🇷阿根廷04
-  - 12|🟪22@oneclickvpnkeys
-  - 10|四川省 联通数据上网公共出口
-  - 0|🇩🇪 _DE_德国
-  - 12|🔒 VM-TCP-NA 🇯🇵 JP-64.176.58.15...
-  - 13|【BGP】新加坡 05 | 1x SG
-  - 12|@ZDYZ2_177
-  - 9|🇸🇬新加坡04
-  - 12|🔒 VM-WS-NA 🇰🇷 KR-38.60.220.214...
-  - 12|@ZDYZ2_228
-  - 10|广东省佛山市移动 3
-  - 12|5pel5pysIC0g5Lic5LqsIC0gRGF0YW...
-  - 12|🟪20@oneclickvpnkeys
-  - 14|🇰🇷 韩国|@ripaojiedian
-  - 9|🇻🇳越南04
-  - 1|_DE__2
-  - 9|🇭🇺匈牙利04
-  - '10|美国 CloudFlare节点 #4'
-  - 12|🔒 VM-TCP-NA 🇯🇵 JP-64.176.39.31...
-  - 13|【BGP】韩国 02 | 1x KR
-  - 12|加拿大 052
-  - 15|香港3|@ripaojiedian
-  - 12|🔒 VM-WS-NA 🇳🇱 NL-79.132.128.60...
-  - 12|6aaZ5riv4p2kSEvinqQxMURpcmVjdC...
-  - 10|美国CloudFlare节点 1
-  - 12|🔒 VM-TCP-NA 🇷🇺 RU-46.29.166.23...
-  - 12|5Lit5Zu9IC0g6aaZ5rivIC0gQWthcm...
-  - 9|🇵🇭菲律宾04
-  - '10,11|github.com/freefq - 美国CloudFla... #3'
-  - 12|🔒 VM-TCP-NA 🇭🇰 HK-115.126.50.1...
-  - 1|_US__1
-  - 12|5paw5Yqg5Z2hIC0g5paw5Yqg5Z2hIC...
-  - 12|5Lit5Zu9IC0g5Y%2Bw5rm%2BIC0gQ2...
-  - 10|美国CloudFlare公司CDN节点 5
-  - 14|🇭🇰 香港KT2|@ripaojiedian
-  - 14|🇯🇵 日本特殊2|@ripaojiedian
-  - 14|🇯🇵 东京特殊|@ripaojiedian
-  - 9|🇧🇷巴西04
-  - '2,4,12|🇨🇦_CA_加拿大 #4'
-  - 9|🇩🇪德国04
-  - 14|🇯🇵 日本KT2|@ripaojiedian
-  - 12|@ZDYZ2_179
-  - 12|@ZDYZ2_663
-  - 12|🔒 VM-WS-NA 🇵🇭 PH-38.54.36.74:4...
-  - 16|JCBB_ 美国02_1【vip1】
-  - 9|🇺🇸美国04
-  - 9|🇨🇦加拿大04
-  - 12|加拿大 044
-  - 12|@ZDYZ2_833
-  - 9|🇮🇳印度04
-  - 12|🔒 VM-TCP-NA 🇺🇸 US-156.251.190....
-  - 9|🇷🇺俄罗斯04
-  - 9|🇹🇷土耳其04
-  - 12|🔒 VM-TCP-NA 🇯🇵 JP-64.176.37.21...
-  - 12|🔒 VM-TCP-NA 🇺🇸 US-23.27.168.64...
-  - 12|🔒 VM-WS-NA 🇯🇵 JP-183.181.36.19...
-  - 9|🇺🇸美国05
-  - 12|@ZDYZ2_768
-  - 12|🔒 VM-TCP-NONE 🇯🇵 JP-140.83.63....
-  - 12|@ZDYZ2_765
-  - 10,12|🔒 VM-WS-NA 🇵🇭 PH-154.90.34.148...
-  - 12|@ZDYZ2_502
-  - 12|🔒 VM-TCP-NA 🇫🇷 FR-51.77.103.10...
-  - 12|🔒 VM-TCP-NA 🇯🇵 JP-64.176.58.7:...
-  - 16|JCBB_ 美国01【vip1】
-  - 2,3,4,6,18|🇺🇸_US_美国_由快嘴科技提供：kkzui.com3_56
-  - 9|🇺🇦乌克兰04
-  - 12|@ZDYZ2_657
-  - 12|🔒 VM-WS-NA 🇺🇸 US-38.54.104.191...
-  - 14|🇭🇰 香港KT1|@ripaojiedian
-  - 12|法国 - 巴黎 - Online S.A.S.
-  - 9|🇺🇸美国06
-  - 12|🟪23@oneclickvpnkeys
-  - 9|🇰🇷韩国04
-  - 0|🇺🇸 _US_美国
+  - 14|🇭🇰 香港5|@ripaojiedian
   - 9|🇹🇭泰国04
-  - 12|@ZDYZ2_258
-  - 13|【BGP】加拿大 02 | 1x CA
-  - 13|【BGP】泰国 04 | 1x TH
-  - 9|🇲🇾马来西亚04
-  - 12|@ZDYZ2_617
-  - '12|5paw5Yqg5Z2hIC0g5paw5Yqg5Z2hIC... #3'
-  - 12|@ZDYZ2_165
-  - '7,8|🇺🇸 United States 01 @nodpai #1'
-  - 9|🇯🇵日本05
-  - 1,2,3,4,6,18|🇺🇸_US_美国_4_34
-  - 12|@ZDYZ2_210
-  - 12|@ZDYZ2_699
-  - 12|🔒 VM-WS-NA 🇮🇹 IT-149.62.189.23...
-  - 12|🔒 VM-WS-NA 🇦🇪 AE-89.36.162.35:...
-  - 13|【BGP】澳大利亚 04 | 1x AU
-  - 12|🔒 VM-TCP-NA 🇨🇦 CA-167.99.179.2...
-  - 12|@ZDYZ2_233
-  - 14|🇹🇼 台湾3|@ripaojiedian
-  - '12|5paw5Yqg5Z2hIC0g5paw5Yqg5Z2hIC... #1'
-  - 12|@ZDYZ2_660
-  - 10|台湾省中华电信(HiNet)数据中心 4
-  - '10,11|github.com/freefq - 美国CloudFla... #1'
-  - 13|【BGP】西班牙 02 | 1x ES
-  - 16|JCBB_ 美国 04【vip1】
-  - 12|@ZDYZ2_504
-  - 12|🔒 VM-WS-NA 🇸🇬 SG-146.190.99.71...
-  - 13|【BGP】美国 06 | 1x US
-  - 12|🔒 VM-WS-TLS 🏴‍☠️ NA-104.21.30....
-  - 12|@ZDYZ2_659
-  - 12|@ZDYZ2_230
-  - 14|🇰🇷 韩国特殊|@ripaojiedian
-  - 2,3,4,6,18|🇺🇸_US_美国_由快嘴科技提供：kkzui.com2_55
-  - 10|台湾省中华电信(HiNet)数据中心 2
-  - '12|🔒 VM-WS-TLS 🏴‍☠️ NA-104.21.30.... #1'
-  - 1,2,4,12|关注电报https://t.me/mftizi
-  - 12|🔒 VM-TCP-NA 🇺🇸 US-129.146.46.1...
-  - '10|美国 CloudFlare节点 #1'
-  - 10,11|github.com/freefq - 湖南省联通 9
-  - '2,4|未命名 #4'
-  - 12|@ZDYZ2_455
-  - '12|美国(yudou66.com 玉豆免费节点) #1'
-  - 12|@ZDYZ2_458
-  - 12|@ZDYZ2_770
-  - 12|英国 002
-  - 13|【BGP】巴西 04 | 1x BR
-  - 12|🔒 VM-TCP-NA 🇫🇮 FI-65.108.27.21...
-  - 13|【BGP】日本 05  | 1x JP
-  - 12|加拿大 045
-  - 14|🇳🇱 荷兰|@ripaojiedian
-  - 12|🔒 VM-WS-NA 🇸🇬 SG-146.190.109.2...
-  - 12|🇺🇸|US|美国|@wxgqlfx|9
-  - 13|【BGP】匈牙利 04 | 1x HU
-  - 12|@ZDYZ2_655
-  - 12|🔒 VM-TCP-NA 🇺🇸 US-104.237.128....
-  - '12|US美国(mibei77.com 米贝节点分享) #1'
-  - 12|-0565-TW【ccbaohe.com〗 永久免费节点机场
-  - 12|🔒 VM-WS-NA 🇸🇬 SG-207.148.77.21...
-  - 14|🇭🇰 香港2|@ripaojiedian
-  - 14|🇹🇼 台湾2|@ripaojiedian
-  - 12|@ZDYZ2_482
-  - 12|@ZDYZ2_135
-  - 12|@ZDYZ2_224
-  - 10|广东省佛山市 移动
-  - 12|加拿大 174
-  - 13|【BGP】美国 04 | 1x US
-  - 13|【BGP】德国 04 | 1x AU
-  - 12|🔒 VM-TCP-NA 🇫🇷 FR-146.59.147.2...
-  - 13|【BGP】美国 05 | 1x US
-  - 13|【BGP】土耳其 04 | 1x TR
-  - 9|🇸🇬新加坡06
-  - 14|🇯🇵 日本特殊|@ripaojiedian
-  - 12|@ZDYZ2_245
-  - 12|🟪21@oneclickvpnkeys
-  - 9|🇦🇺澳大利亚04
-  - 12|@ZDYZ2_512
-  - 12|加拿大 215
-  - 12|@ZDYZ2_209
-  - 12|🔒 VM-WS-NA 🇵🇭 PH-154.90.34.225...
-  - 12|🔒 VM-TCP-NA 🇹🇼 TW-45.121.48.19...
-  - 15|香港1|@ripaojiedian
-  - 12|QFpEWVoyXzUyMg%3D%3D
-  - 12|@ZDYZ2_234
-  - 12|@ZDYZ2_775
-  - 1|_US__4
-  - 12|@ZDYZ2_225
-  - 13|【BGP】日本 06  | 1x JP
-  - 12|@ZDYZ2_772
-  - 12|🔒 VM-TCP-NA 🇮🇩 ID-113.20.28.10...
-  - 12|@ZDYZ2_597
-  - 12|@ZDYZ2_435
-  - 13|【BGP】俄罗斯 04 | 1x RU
-  - 10,12|🔒 VM-TCP-NA 🇺🇸 US-168.235.72.2...
-  - 13|【BGP】阿根廷 04 | 1x AR
-  - 14|🇯🇵 日本|@ripaojiedian
-  - 12|🔒 VM-TCP-NA 🇯🇵 JP-64.176.47.20...
-  - 1|_CA__2
-  - 12|@ZDYZ2_790
-  - 12|@ZDYZ2_547
-  - 12|@ZDYZ2_554
+  - 1|_DE__3
   - 12|VPN招代理电报联系@xiaoying229
-  - 12|@ZDYZ2_478
-  - 14,15|新加坡2|@ripaojiedian
-  - 16|JCBB_ 美国 04_1【vip1】
-  - '12|5Lit5Zu9IC0g6aaZ5rivIC0gQWthcm... #1'
-  - '12|5Lit5Zu9IC0g6aaZ5rivIC0gQWthcm... #2'
-  - 12|@ZDYZ2_777
-  - 12|🔒 VM-TCP-NA 🇺🇸 US-172.234.17.3...
-  - 1|_US__3
-  - '2,4|未命名 #5'
-  - 12|@ZDYZ2_837
-  - 14|🇸🇬 新加坡|@ripaojiedian
+  - 12|🔒 VM-TCP-NA 🇺🇸 US-38.6.227.31:...
   - 18|🇺🇸_US_美国->🇳🇱_NL_荷兰_由快嘴科技提供：kkz...
-  - 12|🔒 VM-WS-NA 🇵🇭 PH-38.54.36.99:1...
-  - 12|@ZDYZ2_183
+  - 13|【BGP】韩国 02 | 1x KR
+  - 12|🔒 VM-TCP-NA 🇻🇳 VN-38.54.14.118...
+  - 9|🇯🇵日本05
+  - 12|@ZDYZ2_152
+  - 12|🟪22@oneclickvpnkeys
+  - 12|@ZDYZ2_547
+  - 1|_US__7
+  - 12|🔒 VM-TCP-NA 🇸🇬 SG-158.178.227....
+  - 12|@ZDYZ2_230
+  - 16|JCBB_ 美国 03【vip1】
+  - 12|🔒 VM-WS-NA 🇳🇱 NL-79.132.128.60...
+  - 9|🇺🇦乌克兰04
+  - 14|🇯🇵 日本特殊|@ripaojiedian
+  - 9|🇯🇵日本04
+  - 1|_US__6
+  - 12|🔒 VM-WS-TLS 🇺🇸 US-38.54.185.11...
+  - 12|加拿大 274
+  - 12|🟪20@oneclickvpnkeys
+  - 12|🔒 VM-WS-NA 🇸🇬 SG-146.190.99.71...
+  - 12|5Lit5Zu9IC0g6aaZ5rivIC0gQWthcm...
   - 13|【BGP】新加坡 06 | 1x SG
+  - 10,12|@ZDYZ2_655
+  - 12|@ZDYZ2_177
+  - 12|@ZDYZ2_435
+  - '12|5paw5Yqg5Z2hIC0g5paw5Yqg5Z2hIC... #2'
+  - 12|@ZDYZ2_258
+  - 12|@ZDYZ2_454
+  - 12|🔒 VM-WS-NA 🇮🇹 IT-149.62.189.23...
+  - 12|🔒 VM-TCP-NA 🇯🇵 JP-64.176.39.31...
+  - '12|5paw5Yqg5Z2hIC0g5paw5Yqg5Z2hIC... #1'
+  - 12|🔒 VM-TCP-NA 🇺🇸 US-104.237.128....
+  - 13|【BGP】葡萄牙 04 | 1x PT
+  - 12|@ZDYZ2_657
+  - 12|@ZDYZ2_444
+  - 9|🇻🇳越南04
+  - 9|🇺🇸美国05
+  - 13|【BGP】俄罗斯 04 | 1x RU
+  - 15|香港3|@ripaojiedian
+  - 9|🇦🇺澳大利亚04
+  - 1|_US__8
+  - '10,11|github.com/freefq - 美国CloudFla... #3'
+  - 12|加拿大 044
+  - 12|@ZDYZ2_432
+  - 9|🇺🇸美国06
+  - 12|加拿大 045
+  - 12|@ZDYZ2_245
+  - 12|🔒 VM-TCP-NA 🇺🇸 US-23.27.168.64...
+  - 13|【BGP】英国 04 | 1x UK
+  - 16|JCBB_ 美国01【vip1】
+  - 12|@ZDYZ2_673
+  - 13|【BGP】日本 05  | 1x JP
+  - 14|🇭🇰 香港KT2|@ripaojiedian
   - 9|🇪🇸西班牙04
-  - 12|🔒 VM-TCP-NA 🇩🇪 DE-116.202.22.1...
+  - 10|台湾省 中华电信(HiNet)数据中心
+  - 12|@ZDYZ2_837
+  - 12|5paw5Yqg5Z2hIC0g5paw5Yqg5Z2hIC...
+  - 12|🔒 VM-TCP-NA 🇯🇵 JP-64.176.58.7:...
+  - '12|🔒 VM-WS-TLS 🏴‍☠️ NA-104.21.30.... #1'
+  - 14|🇸🇬 新加坡|@ripaojiedian
+  - '12|🇨🇦_CA_加拿大 #1'
+  - '12|5Lit5Zu9IC0g6aaZ5rivIC0gQWthcm... #1'
+  - 12|🔒 VM-TCP-NA 🇮🇩 ID-113.20.28.10...
+  - 9|🇦🇷阿根廷04
+  - 12|@ZDYZ2_223
+  - 13|【BGP】匈牙利 04 | 1x HU
+  - '12|US美国(mibei77.com 米贝节点分享) #1'
+  - 13|【BGP】越南 04 | 1x VN
+  - 14|🇯🇵 日本特殊2|@ripaojiedian
+  - 9|🇨🇦加拿大04
+  - 12|@ZDYZ2_750
+  - 12|@ZDYZ2_504
+  - 12|加拿大 238
+  - 13|【BGP】土耳其 04 | 1x TR
+  - 12|@ZDYZ2_659
+  - '12|🔒 VM-TCP-NA 🇺🇸 US-172.233.188.... #1'
+  - 12|🔒 VM-TCP-NA 🇯🇵 JP-64.176.47.20...
+  - 12|🔒 VM-TCP-NA 🇫🇷 FR-51.77.103.10...
+  - 12|@ZDYZ2_224
+  - 12|英国 002
+  - 12|美国(yudou66.com 玉豆免费节点)
+  - 12|关注电报https://t.me/mftizi
+  - '10,11|github.com/freefq - 美国CloudFla... #1'
+  - 12|@ZDYZ2_597
+  - 6,18|🇺🇸_US_美国_由快嘴科技提供：kkzui.com2_55
+  - 12|@ZDYZ2_663
+  - 13|【BGP】日本 04  | 1x JP
+  - 14|🇰🇷 韩国|@ripaojiedian
+  - 12|@ZDYZ2_164
+  - 9|🇺🇸美国04
+  - 12|@ZDYZ2_300
+  - 12|@ZDYZ2_833
+  - 14|🇰🇷 韩国特殊|@ripaojiedian
+  - '10,11|github.com/freefq - 美国CloudFla... #2'
+  - 12|@ZDYZ2_234
+  - 12|🔒 VM-TCP-NA 🇯🇵 JP-64.176.37.21...
+  - 9|🇲🇾马来西亚04
+  - 12|@ZDYZ2_233
+  - 10,14,15|新加坡2|@ripaojiedian
+  - 12|@ZDYZ2_455
+  - 12|加拿大 174
+  - 12|🔒 VM-WS-NA 🇸🇬 SG-8.219.59.222:...
+  - 13|【BGP】美国 05 | 1x US
+  - 12|🔒 VM-TCP-NA 🇺🇸 US-168.235.72.2...
+  - 12|@ZDYZ2_260
+  - 12|@ZDYZ2_255
+  - 12|加拿大 192
   - 13|【BGP】菲律宾 04 | 1x PH
-  - 13|【BGP】印度 04 | 1x IN
+  - '12|美国(yudou66.com 玉豆免费节点) #1'
+  - 15|台湾2|@ripaojiedian
+  - 12|🔒 VM-WS-NA 🇵🇭 PH-154.90.34.225...
+  - 14|🇭🇰 香港2|@ripaojiedian
+  - 12|🔒 VM-WS-NA 🇺🇸 US-144.202.81.12...
+  - 12|@ZDYZ2_228
+  - 9|🇭🇺匈牙利04
+  - 12|@ZDYZ2_209
+  - 10,11|github.com/freefq - 湖南省联通 9
+  - 9|🇮🇳印度04
+  - 13|【BGP】巴西 04 | 1x BR
+  - 12|🔒 VM-WS-NA 🇵🇭 PH-38.54.36.74:4...
+  - 12|@ZDYZ2_437
+  - 12|@ZDYZ2_512
+  - 12|🔒 VM-WS-NA 🇰🇷 KR-38.60.220.214...
+  - 12|@ZDYZ2_790
+  - 12|🔒 VM-TCP-NA 🇯🇵 JP-64.176.42.13...
+  - 9|🇯🇵日本06
+  - 12|🔒 VM-TCP-NA 🇹🇼 TW-45.121.48.19...
+  - 12|@ZDYZ2_179
+  - 12|🔒 VM-WS-TLS 🏴‍☠️ NA-104.21.30....
+  - 12|5pel5pysIC0g5Lic5LqsIC0gRGF0YW...
+  - 12|🔒 VM-TCP-NA 🇩🇪 DE-130.61.111.1...
+  - 12|@ZDYZ2_482
+  - 14|🇯🇵 日本|@ripaojiedian
+  - 12|🔒 VM-TCP-NA 🇫🇷 FR-146.59.147.2...
+  - 14|🇹🇼 台湾3|@ripaojiedian
+  - 12|🔒 VM-TCP-NA 🇫🇮 FI-65.108.27.21...
+  - 12|🔒 VM-TCP-NA 🇺🇸 US-172.234.17.3...
+  - 12|@ZDYZ2_775
+  - '12|5Lit5Zu9IC0g6aaZ5rivIC0gQWthcm... #2'
+  - 12|加拿大 039
+  - 13|【BGP】日本 06  | 1x JP
+  - 13|【BGP】泰国 04 | 1x TH
+  - 13|【BGP】乌克兰 04 | 1x UA
+  - 13|【BGP】美国 04 | 1x US
+  - 12|6aaZ5riv4p2kSEvinqQxMURpcmVjdC...
+  - 12|@ZDYZ2_699
+  - 12|🔒 VM-WS-NA 🇵🇭 PH-154.90.34.148...
+  - 9|🇸🇬新加坡05
+  - 12|@ZDYZ2_660
+  - 10,15|香港1|@ripaojiedian
+  - 12|-0565-TW【ccbaohe.com〗 永久免费节点机场
+  - 13|【BGP】加拿大 02 | 1x CA
+  - '12|5paw5Yqg5Z2hIC0g5paw5Yqg5Z2hIC... #3'
+  - 13|【BGP】澳大利亚 04 | 1x AU
+  - 12|🔒 VM-TCP-NA 🇺🇸 US-172.233.188....
+  - 1|_US__1
+  - 1|_DE__2
+  - 12|加拿大 046
+  - 10,11|github.com/freefq - 美国CloudFla...
+  - 12|@ZDYZ2_674
+  - 13|【BGP】德国 04 | 1x AU
+  - 13|【BGP】西班牙 02 | 1x ES
+  - 12|🔒 VM-WS-NA 🇺🇸 US-132.145.132.2...
+  - 13|【BGP】美国 06 | 1x US
+  - 9|🇸🇬新加坡06
+  - 9|🇩🇪德国04
+  - 12|加拿大 368
+  - 12|@ZDYZ2_554
+  - 12|🇨🇦_CA_加拿大
+  - 12|🔒 VM-TCP-NA 🇭🇰 HK-38.6.224.204...
+  - 12|@ZDYZ2_225
+  - 12|@ZDYZ2_768
+  - 9|🇬🇧英国04
+  - 12|🔒 VM-WS-NA 🇦🇪 AE-89.36.162.35:...
+  - 12|@ZDYZ2_165
+  - 12|🔒 VM-TCP-NA 🇺🇸 US-129.146.247....
+  - '7,8|🇺🇸 United States 01 @nodpai #1'
+  - 14|🇩🇪 德国|频道:@ripaojiedian
+  - 1|_US__5
+  - 13|【BGP】新加坡 05 | 1x SG
+  - 1|_US__4
+  - 12|🔒 VM-WS-NA 🇺🇸 US-38.54.104.191...
+  - 12|@ZDYZ2_458
+  - 12|🔒 VM-TCP-NONE 🇯🇵 JP-140.83.63....
+  - 12|🔒 VM-TCP-NA 🇺🇸 US-129.146.46.1...
+  - 12|🔒 VM-TCP-NA 🇨🇦 CA-167.99.179.2...
+  - 12|法国 - 巴黎 - Online S.A.S.
+  - 14|🇳🇱 荷兰|@ripaojiedian
+  - 12|@ZDYZ2_213
+  - 12|🔒 VM-TCP-NA 🇺🇸 US-156.251.190....
+  - 12|@ZDYZ2_478
+  - 12|@ZDYZ2_183
+  - 12|🔒 VM-TCP-NA 🇩🇪 DE-116.202.22.1...
+  - 10,11|github.com/freefq - 台湾省中华电信(Hi...
+  - 12|🔒 VM-WS-NA 🇵🇭 PH-38.54.36.99:1...
+  - 10,12|加拿大 215
+  - 12|🔒 VM-WS-NA 🇸🇬 SG-146.190.109.2...
+  - 12|🔒 VM-TCP-NA 🇭🇰 HK-115.126.50.1...
+  - 12|US美国(mibei77.com 米贝节点分享)
+  - 12|🔒 VM-WS-NA 🇸🇬 SG-207.148.77.21...
+  - 14|🇯🇵 日本KT|@ripaojiedian
+  - 12|🟪21@oneclickvpnkeys
+  - 14|🇹🇼 台湾2|@ripaojiedian
+  - 12|5Lit5Zu9IC0g5Y%2Bw5rm%2BIC0gQ2...
+  - 12|@ZDYZ2_502
+  - 12|@ZDYZ2_777
+  - 1|_US__3
+  - 9|🇵🇭菲律宾04
+  - 12|🔒 VM-TCP-NA 🇸🇬 SG-47.236.22.3:...
+  - 9|🇷🇺俄罗斯04
   - 16|JCBB_ 美国02【vip1】
   - 12|@ZDYZ2_558
-  - 12|🔒 VM-TCP-NA 🇻🇳 VN-38.54.14.118...
-  - 12|🔒 VM-WS-TLS 🇺🇸 US-38.54.185.11...
-  - 12|🔒 VM-TCP-NA 🇺🇸 US-172.233.188....
-  - 13|【BGP】葡萄牙 04 | 1x PT
-  - 12|@ZDYZ2_229
-  - 12|🔒 VM-TCP-NA 🇺🇸 US-129.146.247....
-  - 12|🔒 VM-TCP-NA 🇸🇬 SG-47.236.22.3:...
-  - 12|-1252-TW【ccbaohe.com〗 永久免费节点机场
-  - 12|🔒 VM-TCP-NA 🇸🇬 SG-158.178.227....
-  - 11|github.com/freefq - 美国CloudFla...
-  - '7,8|🇬🇧 United Kingdom 01 @nodpai #1'
-  - 12|@ZDYZ2_750
-  - 1|_US__9
-  - '12|5paw5Yqg5Z2hIC0g5paw5Yqg5Z2hIC... #2'
-  - 1|_US__8
-  - 12|加拿大 238
-  - 12|🔒 VM-WS-NA 🇺🇸 US-144.202.81.12...
-  - 12|@ZDYZ2_437
-  - 1|_DE__1
-  - 12|US美国(mibei77.com 米贝节点分享)
-  - 12|@ZDYZ2_548
-  - 12|🔒 VM-WS-NA 🇸🇬 SG-8.219.59.222:...
-  - 13|【BGP】新加坡 04 | 1x SG
-  - '2,4|🇺🇸_US_美国->🇩🇪_DE_德国 #1'
-  - 13|【BGP】越南 04 | 1x VN
-  - 16|JCBB_ 美国 03【vip1】
-  - 12|🔒 VM-TCP-NA 🇭🇰 HK-38.6.224.204...
-  - 12|@ZDYZ2_152
-  - 1|_US__2
-  - 12|@ZDYZ2_164
-  - 12|加拿大 192
-  - 12|@ZDYZ2_300
-  - 12|加拿大 368
-  - 12|🔒 VM-TCP-NA 🇺🇸 US-38.6.227.31:...
-  - 14|🇯🇵 日本KT|@ripaojiedian
   - 13|【BGP】马来西亚 04 | 1x MY
-  - 12|@ZDYZ2_673
-  - 14|🇭🇰 香港5|@ripaojiedian
-  - 15|台湾2|@ripaojiedian
-  - 9|🇯🇵日本04
-  - 14|🇩🇪 德国|频道:@ripaojiedian
-  - 13|【BGP】乌克兰 04 | 1x UA
-  - 12|@ZDYZ2_260
-  - 12|@ZDYZ2_223
-  - '12|🔒 VM-TCP-NA 🇺🇸 US-172.233.188.... #1'
-  - 12|🟪24@oneclickvpnkeys
-  - 1|_US__5
-  - 12|🔒 VM-TCP-NA 🇩🇪 DE-130.61.111.1...
-  - 12|@ZDYZ2_454
-  - 9|🇬🇧英国04
-  - 12|@ZDYZ2_474
-  - 12|🔒 VM-TCP-NA 🇯🇵 JP-64.176.42.13...
-  - 12|@ZDYZ2_444
-  - 12|加拿大 039
-  - 12|@ZDYZ2_213
-  - 12|@ZDYZ2_674
-  - 9|🇸🇬新加坡05
-  - 13|【BGP】日本 04  | 1x JP
-  - 12|🔒 VM-WS-NA 🇺🇸 US-132.145.132.2...
-  - 1|_US_->_DE_
+  - 6,18|🇺🇸_US_美国_由快嘴科技提供：kkzui.com3_56
+  - 9|🇸🇬新加坡04
+  - 12|@ZDYZ2_548
+  - 12|@ZDYZ2_229
+  - 12|🔒 VM-TCP-NA 🇷🇺 RU-46.29.166.23...
+  - 9|🇧🇷巴西04
   - 9|🇵🇹葡萄牙04
-  - 12|加拿大 274
-  - 13|【BGP】英国 04 | 1x UK
-  - 10,12|美国(yudou66.com 玉豆免费节点)
+  - 14|🇯🇵 东京特殊|@ripaojiedian
+  - '0,2,3,4|🇺🇸_US_美国 #1'
+  - 14|🇯🇵 日本KT2|@ripaojiedian
+  - 14|🇭🇰 香港KT1|@ripaojiedian
+  - 13|【BGP】阿根廷 04 | 1x AR
+  - 12|加拿大 052
+  - 12|@ZDYZ2_765
+  - '7,8|🇬🇧 United Kingdom 01 @nodpai #1'
+  - 16|JCBB_ 美国02_1【vip1】
+  - 12|QFpEWVoyXzUyMg%3D%3D
+  - 12|-1252-TW【ccbaohe.com〗 永久免费节点机场
+  - 12|🟪24@oneclickvpnkeys
+  - 12|@ZDYZ2_772
+  - 6,18|🇺🇸_US_美国_4_34
+  - 12|@ZDYZ2_135
+  - 12|@ZDYZ2_474
+  - 9|🇰🇷韩国04
+  - 12|🇺🇸|US|美国|@wxgqlfx|9
+  - 12|🔒 VM-WS-NA 🇯🇵 JP-183.181.36.19...
+  - 1|_US__2
+  - 12|🟪23@oneclickvpnkeys
+  - 12|@ZDYZ2_770
+  - 13|【BGP】新加坡 04 | 1x SG
+  - 16|JCBB_ 美国 04【vip1】
+  - 9|🇹🇷土耳其04
+  - 12|🔒 VM-TCP-NA 🇯🇵 JP-64.176.58.15...
+  - 16|JCBB_ 美国 04_1【vip1】
+  - 12|@ZDYZ2_617
+  - '0,1,2,3,4|🇩🇪_DE_德国 #1'
+  - 12|@ZDYZ2_210
+  - 13|【BGP】印度 04 | 1x IN
   type: load-balance
   url: https://www.google.com/
 - interval: 300
@@ -3484,35 +3301,32 @@ proxy-groups:
 - interval: 300
   name: 🇺🇸 美国
   proxies:
-  - 0|🇺🇸 _US_美国
+  - '0,2,3,4|🇺🇸_US_美国 #1'
   - 1|_US__1
   - 1|_US__2
   - 1|_US__3
   - 1|_US__4
   - 1|_US__5
-  - 1,2,4,12|关注电报https://t.me/mftizi
-  - 1,2,3,4,6,18|🇺🇸_US_美国_4_34
+  - 1|_US__6
+  - 1|_US__7
   - 1|_US__8
-  - 1|_US__9
-  - 2,3,4,6,18|🇺🇸_US_美国_由快嘴科技提供：kkzui.com2_55
-  - 2,3,4,6,18|🇺🇸_US_美国_由快嘴科技提供：kkzui.com3_56
+  - 6,18|🇺🇸_US_美国_4_34
+  - 6,18|🇺🇸_US_美国_由快嘴科技提供：kkzui.com2_55
+  - 6,18|🇺🇸_US_美国_由快嘴科技提供：kkzui.com3_56
   - '7,8|🇺🇸 United States 01 @nodpai #1'
   - 9|🇺🇸美国04
   - 9|🇺🇸美国05
   - 9|🇺🇸美国06
+  - 10,12|加拿大 215
+  - 10,12|@ZDYZ2_655
+  - 10,11|github.com/freefq - 美国CloudFla...
   - '10,11|github.com/freefq - 美国CloudFla... #1'
-  - '10|美国 CloudFlare节点 #1'
-  - 10,12|🔒 VM-TCP-NA 🇺🇸 US-168.235.72.2...
   - '10,11|github.com/freefq - 美国CloudFla... #2'
-  - '10|美国 CloudFlare节点 #4'
-  - 10,12|美国(yudou66.com 玉豆免费节点)
-  - 10|美国CloudFlare节点 1
-  - 10|美国CloudFlare公司CDN节点 5
   - '10,11|github.com/freefq - 美国CloudFla... #3'
-  - 11|github.com/freefq - 美国CloudFla...
   - 12|🔒 VM-TCP-NA 🇺🇸 US-23.27.168.64...
   - 12|🔒 VM-WS-TLS 🇺🇸 US-38.54.185.11...
   - 12|🇺🇸|US|美国|@wxgqlfx|9
+  - 12|美国(yudou66.com 玉豆免费节点)
   - 12|🔒 VM-TCP-NA 🇺🇸 US-129.146.247....
   - 12|🔒 VM-WS-NA 🇺🇸 US-132.145.132.2...
   - 12|🔒 VM-TCP-NA 🇺🇸 US-172.233.188....
@@ -3522,6 +3336,7 @@ proxy-groups:
   - '12|🔒 VM-TCP-NA 🇺🇸 US-172.233.188.... #1'
   - 12|🔒 VM-TCP-NA 🇺🇸 US-129.146.46.1...
   - 12|🔒 VM-TCP-NA 🇺🇸 US-172.234.17.3...
+  - 12|🔒 VM-TCP-NA 🇺🇸 US-168.235.72.2...
   - 12|🔒 VM-WS-NA 🇺🇸 US-144.202.81.12...
   - 12|🔒 VM-TCP-NA 🇺🇸 US-104.237.128....
   - '12|US美国(mibei77.com 米贝节点分享) #1'
@@ -3544,30 +3359,26 @@ proxy-groups:
 - interval: 300
   name: 🇨🇳 中国
   proxies:
-  - 10|广东省佛山市 移动
-  - 10|广东省佛山市移动 3
+  - REJECT
   tolerance: 20
   type: url-test
   url: https://www.google.com/
 - interval: 300
   name: 🇭🇰 香港
   proxies:
-  - 10,12|🔒 VM-WS-NA 🇵🇭 PH-154.90.34.148...
   - 12|🔒 VM-TCP-NA 🇭🇰 HK-115.126.50.1...
   - 12|🔒 VM-TCP-NA 🇭🇰 HK-38.6.224.204...
   - 14|🇭🇰 香港KT1|@ripaojiedian
   - 14|🇭🇰 香港KT2|@ripaojiedian
   - 14|🇭🇰 香港2|@ripaojiedian
-  - 15|香港1|@ripaojiedian
   tolerance: 20
   type: url-test
   url: https://www.google.com/
 - interval: 300
   name: ❔ 台湾
   proxies:
-  - 10|台湾省中华电信(HiNet)数据中心 2
-  - 10|台湾省中华电信(HiNet)数据中心 4
-  - 11|github.com/freefq - 台湾省中华电信(Hi...
+  - 10|台湾省 中华电信(HiNet)数据中心
+  - 10,11|github.com/freefq - 台湾省中华电信(Hi...
   - 12|-1252-TW【ccbaohe.com〗 永久免费节点机场
   - 12|-0565-TW【ccbaohe.com〗 永久免费节点机场
   - 12|🔒 VM-TCP-NA 🇹🇼 TW-45.121.48.19...
@@ -3580,18 +3391,16 @@ proxy-groups:
 - interval: 300
   name: 🇨🇦 加拿大
   proxies:
-  - '1,2,4,12|🇨🇦_CA_加拿大 #5'
-  - 1|_CA__2
-  - '2,4,12|🇨🇦_CA_加拿大 #4'
   - 9|🇨🇦加拿大04
   - 12|🔒 VM-TCP-NA 🇨🇦 CA-167.99.179.2...
-  - 12|加拿大 215
   - 12|加拿大 368
   - 12|加拿大 045
+  - 12|🇨🇦_CA_加拿大
   - 12|加拿大 274
   - 12|加拿大 044
   - 12|加拿大 192
   - 12|加拿大 039
+  - '12|🇨🇦_CA_加拿大 #1'
   - 12|加拿大 052
   - 12|加拿大 174
   - 12|加拿大 046
@@ -3625,7 +3434,6 @@ proxy-groups:
   - 13|【BGP】新加坡 05 | 1x SG
   - 13|【BGP】新加坡 06 | 1x SG
   - 14|🇸🇬 新加坡|@ripaojiedian
-  - 14,15|新加坡2|@ripaojiedian
   tolerance: 20
   type: url-test
   url: https://www.google.com/
