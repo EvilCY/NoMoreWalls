@@ -288,11 +288,10 @@ proxies:
     path: /api/v3/download.getFile
 - alterId: 0
   cipher: auto
-  name: '3,7,11,17|🇺🇸_US_美国->🇫🇷_FR_法国 #3'
+  name: '3,7,17|🇺🇸_US_美国->🇫🇷_FR_法国 #3'
   network: ws
   port: 2082
   server: 172.67.130.140
-  servername: ''
   tls: false
   type: vmess
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
@@ -315,7 +314,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '3|🇺🇸_US_美国->🇩🇪_DE_德国 #2'
+  name: '3,11|美国 CloudFlare节点 #1'
   network: ws
   port: 2095
   server: 172.67.204.84
@@ -755,44 +754,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 11,16|日本3|@ripaojiedian
-  network: tcp
-  port: '61002'
-  server: 183.232.170.47
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
-- alterId: 0
-  cipher: auto
   name: 11|美国 CloudFlare节点
   network: ws
-  port: 8080
-  server: 104.19.47.178
-  tls: false
-  type: vmess
-  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
-  ws-opts:
-    headers:
-      Host: oiictw.yydsii.com
-    path: /?ed=2048&Telegram🇨🇳 @WangCai2
-- alterId: 0
-  cipher: auto
-  name: '11|广东省佛山市 移动 #1'
-  network: tcp
-  port: '21006'
-  server: 183.232.199.61
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
-- alterId: 0
-  cipher: auto
-  name: '11|美国 CloudFlare节点 #2'
-  network: ws
-  port: 2052
+  port: '2052'
   server: web.com
-  servername: ''
   tls: false
   type: vmess
   uuid: a1ec3211-b1ff-4e53-a729-e5b7b55567eb
@@ -800,6 +765,34 @@ proxies:
     headers:
       Host: aliyun_hk1.cn2.free.hr
     path: /
+- alterId: 0
+  cipher: auto
+  name: 11,12|github.com/freefq - 印度  10
+  network: ws
+  port: 443
+  server: 202.78.162.5
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 716eded6-2201-4dbd-9d63-1638c9e8e677
+  ws-opts:
+    headers:
+      Host: pendar.onthewifi.com
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 11,13|未知1280 1.5MB/s
+  network: ws
+  port: '80'
+  server: 172.67.204.84
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1886c4a7-c395-4aee-a1a2-a816722f5d29
+  ws-opts:
+    headers:
+      Host: Pl2.vmess.site.
+    path: /vmess#DONT-FORGET-TO-SUPPORT-SSHMAX.NET-TO-KEEP-THIS-SERVER-ALIVE
 - alterId: 0
   cipher: auto
   name: 11,12|github.com/freefq - 印度  2
@@ -883,20 +876,6 @@ proxies:
     headers:
       Host: server26.beheshtbaneh.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: 11,12|github.com/freefq - 印度  10
-  network: ws
-  port: 443
-  server: 202.78.162.5
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 716eded6-2201-4dbd-9d63-1638c9e8e677
-  ws-opts:
-    headers:
-      Host: pendar.onthewifi.com
-    path: /@forwardv2ray
 - alterId: 0
   cipher: auto
   name: 11,12|github.com/freefq - 美国Fastly全球...
@@ -1268,20 +1247,6 @@ proxies:
     headers:
       Host: oiictw.yydsii.com
     path: /?ed=2048&Telegram🇨🇳 @WangCai2
-- alterId: 0
-  cipher: auto
-  name: 13|未知1280 1.5MB/s
-  network: ws
-  port: '80'
-  server: 172.67.204.84
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1886c4a7-c395-4aee-a1a2-a816722f5d29
-  ws-opts:
-    headers:
-      Host: Pl2.vmess.site.
-    path: /vmess#DONT-FORGET-TO-SUPPORT-SSHMAX.NET-TO-KEEP-THIS-SERVER-ALIVE
 - alterId: 0
   cipher: auto
   name: 13|🔒 VM-WS-TLS 🏴‍☠️ NA-104.16.60....
@@ -2071,6 +2036,16 @@ proxies:
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
+  name: 16|日本3|@ripaojiedian
+  network: tcp
+  port: '61002'
+  server: 183.232.170.47
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+- alterId: 0
+  cipher: auto
   name: 16|日本5|@ripaojiedian
   network: tcp
   port: '38997'
@@ -2124,176 +2099,174 @@ proxy-groups:
 - interval: 300
   name: 🎯 负载均衡
   proxies: &id001
-  - '3|🇺🇸_US_美国 #3'
-  - '7|🇺🇸_US_美国 #17'
-  - 1|_US_->_CA__2
-  - 13|%F0%9F%87%AE%F0%9F%87%B3%20Ind...
-  - '11|广东省佛山市 移动 #1'
-  - 13|Ⓜ️20@oneclickvpnkeys
-  - 3|🇷🇺_RU_俄罗斯联邦
-  - '6,7,17|🇺🇸_US_美国 #30'
   - '6,7|🇺🇸_US_美国 #26'
-  - 13|%F0%9F%87%AB%F0%9F%87%B7%20Fra...
-  - 1|_US_->_CA__1
-  - '13|%F0%9F%87%BA%F0%9F%87%B8%20Uni... #2'
-  - '13|@Hope_Net-join-us-on-Telegram #2'
-  - '3,7,17|🇺🇸_US_美国->🇫🇷_FR_法国 #4'
-  - '13|%F0%9F%87%B8%F0%9F%87%AC%20Sin... #2'
-  - 15|🇭🇰 香港KT|@ripaojiedian
-  - 13|🔒 VM-WS-TLS 🏴‍☠️ NA-104.16.68....
-  - '13|[🇨🇦]t.me/ConfigsHub #3'
-  - 3|🇺🇸_US_美国->🇩🇪_DE_德国
-  - 13|%F0%9F%87%B8%F0%9F%87%AC%20Sin...
-  - 1|_US_->_AU_
-  - '13|@Hope_Net-join-us-on-Telegram #3'
-  - 1|_RU__3
-  - 11,12|github.com/freefq - 印度  2
-  - 1|_RU__1
-  - 11,12|github.com/freefq - 印度  3
-  - 13|美国|【付费用户】油管秒开4K/8K|更多地区接入|GPT+...
-  - 15|🇯🇵 日本特殊|@ripaojiedian
-  - '6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5'
-  - '3|🇺🇸_US_美国->🇩🇪_DE_德国 #4'
+  - '13|%F0%9F%87%AF%F0%9F%87%B5%20Jap... #1'
+  - 1|_US_->_CA__2
+  - 15|🇭🇰 香港R|@ripaojiedian
   - 13|🔒 VM-TCP-NA 🇹🇷 TR-213.142.149....
-  - 3|🇭🇰_HK_香港
-  - 13|🔒 VM-WS-TLS 🏴‍☠️ NA-104.16.60....
-  - 15|🇭🇰 香港2|@ripaojiedian
-  - 13|未知833 87.8MB/s
-  - '13|%F0%9F%87%AF%F0%9F%87%B5%20Jap... #2'
-  - '3|🇺🇸_US_美国->🇩🇪_DE_德国 #3'
-  - 15,16|韩国2|@ripaojiedian
-  - 13|未知399 9.9MB/s
-  - '17|🇺🇸_US_美国 #34'
-  - '6,7,17|🇱🇺_LU_卢森堡 #5'
-  - 13|%F0%9F%87%B3%F0%9F%87%B1%20The...
-  - 15|🇺🇸 美国R|@ripaojiedian
-  - 13|%F0%9F%87%A6%F0%9F%87%BA%20Aus...
-  - 13,15,16|美国2|@ripaojiedian
-  - 3|🇺🇸_US_美国->🇫🇷_FR_法国
-  - 1|_FR_
-  - '11|美国 CloudFlare节点 #2'
-  - 13|%F0%9F%87%BA%F0%9F%87%B8%20Uni...
-  - 13|%F0%9F%87%A9%F0%9F%87%AA%20Ger...
-  - 13|🔒 VM-TCP-NA 🇺🇸 US-107.148.192....
-  - 1|_DE_
-  - 13|🔒 VM-WS-NA 🇬🇧 GB-45.14.244.133...
-  - 15|🇸🇬 狮城特殊|@ripaojiedian
-  - '6|🇺🇸_US_美国 #16'
-  - 16|新加坡2|@ripaojiedian
-  - 13|🔒 VM-TCP-NA 🇺🇸 US-174.136.205....
-  - 13|🇺🇸US-23.154.136.2-0327
-  - 15,16|新加坡3|@ripaojiedian
-  - '3|🇺🇸_US_美国->🇩🇪_DE_德国 #2'
-  - 13|%F0%9F%87%B3%F0%9F%87%B1%20Net...
+  - '3|🇺🇸_US_美国->🇩🇪_DE_德国 #1'
+  - '6,7,17|🇺🇸_US_美国 #29'
+  - '6,17|🇫🇷_FR_法国 #1'
+  - '6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5'
   - 3|🇨🇦_CA_加拿大
+  - 13|美国|【公共订阅】动态速率油管最低720P保证|GPT+流媒...
+  - 13|🔒 VM-WS-TLS 🏴‍☠️ NA-104.16.60....
+  - 13|Ⓜ️36@oneclickvpnkeys
+  - '6,17|🇺🇸_US_美国 #32'
+  - '3,7,17|🇺🇸_US_美国->🇫🇷_FR_法国 #3'
+  - 13|%F0%9F%87%A8%F0%9F%87%A6%20Can...
+  - 15|🇭🇰 香港KT|@ripaojiedian
+  - 16|香港3|@ripaojiedian
+  - 1|_RU__3
+  - '6,7,17|🇨🇦_CA_加拿大 #7'
+  - '13|%F0%9F%87%AE%F0%9F%87%B3%20Ind... #1'
+  - 13|🇺🇸US-23.154.136.2-0327
+  - 13|超时等5 分钟更新订阅
+  - '3|🇺🇸_US_美国->🇩🇪_DE_德国 #3'
+  - 13|[🇨🇦]t.me/ConfigsHub
+  - 13|%F0%9F%87%AE%F0%9F%87%A9%20Ind...
+  - 1,13|🇨🇦CA-158.51.121.36-0062
+  - '7|🇺🇸_US_美国 #20'
+  - '6,7|🇺🇸_US_美国 #21'
+  - 13|%F0%9F%87%B3%F0%9F%87%B1%20The...
+  - 13|%F0%9F%87%AE%F0%9F%87%B3%20Ind...
+  - '6,7|🇺🇸_US_美国 #24'
+  - '3,7,17|🇺🇸_US_美国->🇫🇷_FR_法国 #4'
+  - 16|日本5|@ripaojiedian
+  - '13|%F0%9F%87%BA%F0%9F%87%B8%20Uni... #1'
+  - 1|_RU__1
+  - 1|_SE_
+  - 13|US63
+  - '13|%F0%9F%87%A8%F0%9F%87%A6%20Can... #1'
+  - '11,12|github.com/freefq - 美国CloudFla... #3'
+  - 13|%F0%9F%87%BA%F0%9F%87%B8%20Uni...
+  - 13|美国|【付费用户】油管秒开4K/8K|更多地区接入|GPT+...
+  - 15,16|新加坡3|@ripaojiedian
+  - 1,3|🇺🇸_US_美国
+  - '3|🇺🇸_US_美国->🇩🇪_DE_德国 #4'
+  - 3|🇷🇺_RU_俄罗斯联邦
+  - 1|_US_->_AU_
+  - 13|未知399 9.9MB/s
+  - 13|@Hope_Net-join-us-on-Telegram
+  - 13|美国【TG：@ccbaohe】定时更新节点订阅 11
+  - 13|AL_youtube@资源分享师_10
+  - '13|[🇨🇦]t.me/ConfigsHub #2'
+  - 15|🇺🇸 美国R|@ripaojiedian
+  - '3,13|🇳🇱_NL_荷兰 #1'
+  - 13|%F0%9F%87%AA%F0%9F%87%B8%20Spa...
+  - '13|美国|【付费用户】油管秒开4K/8K|更多地区接入|GPT+... #1'
+  - 3|🇺🇸_US_美国->🇫🇷_FR_法国
+  - '6,7,17|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #2'
+  - 11,12|github.com/freefq - 美国CloudFla...
+  - 13|🚩CF | 🟢 | vmess | @customv2ray...
+  - '13|%F0%9F%87%B8%F0%9F%87%AC%20Sin... #2'
+  - '13|%F0%9F%87%B8%F0%9F%87%AC%20Sin... #1'
+  - 13|✅سرورهایبیشتردرکانال:prrofile_...
+  - 1,13|🇨🇦_CA_加拿大_1
+  - 15|🇰🇷 韩国|@ripaojiedian
+  - 13|🔒 VM-WS-NA 🏴‍☠️ NA-172.67.144....
+  - 13|🔒 VM-TCP-NA 🇹🇷 TR-45.89.52.114...
+  - 1|_US__2
+  - 13|🔒 VM-TCP-NA 🇨🇱 CL-64.176.15.74...
+  - '6,17|🇺🇸_US_美国 #33'
+  - 13|🔒 VM-TCP-NA 🇺🇸 US-107.148.192....
+  - 13|🔒 VM-TCP-NA 🇺🇸 US-174.136.205....
+  - 16|香港8|@ripaojiedian
+  - 15,16|日本2|@ripaojiedian
+  - 13,15,16|美国2|@ripaojiedian
+  - '13|@Hope_Net-join-us-on-Telegram #3'
+  - '3|🇺🇸_US_美国 #5'
+  - '13|[🇨🇦]t.me/ConfigsHub #1'
+  - 16|日本3|@ripaojiedian
+  - 13|%F0%9F%87%AF%F0%9F%87%B5%20Jap...
+  - 11,12|github.com/freefq - 印度  10
+  - 16|新加坡2|@ripaojiedian
+  - '11,12|github.com/freefq - 美国CloudFla... #2'
+  - '6|🇺🇸_US_美国 #16'
+  - 15,16|香港6|@ripaojiedian
+  - '6|🇺🇸_US_美国 #8'
+  - 13|%F0%9F%87%AD%F0%9F%87%B0%20Hon...
+  - '7|🇺🇸_US_美国 #23'
+  - 16|香港5|@ripaojiedian
+  - '6,7|🇺🇸_US_美国 #19'
+  - 13|🔒 VM-TCP-NA 🇺🇸 US-129.146.46.1...
+  - 3|🇺🇸_US_美国->🇧🇷_BR_巴西
+  - 15|🇺🇸 美国5|@ripaojiedian
+  - 6,7|🇨🇦_CA_加拿大->🇺🇸_US_美国
+  - '13|@Hope_Net-join-us-on-Telegram #2'
+  - 13|🔒 VM-WS-NONE 🇷🇺 RU-45.147.200....
+  - 1|_GB_
+  - '13|@Hope_Net-join-us-on-Telegram #1'
+  - 11,12|github.com/freefq - 印度  3
+  - 16|美国|@ripaojiedian
+  - '6,7|🇺🇸_US_美国 #22'
+  - 13|%F0%9F%87%A6%F0%9F%87%BA%20Aus...
+  - '6|🇨🇦_CA_加拿大 #3'
+  - '17|🇺🇸_US_美国 #34'
+  - 1|_US__1
+  - 13|套餐到期：2025-05-14
+  - 13|%F0%9F%87%B9%F0%9F%87%B7%20T%C...
+  - 1|_US_->_SE_
+  - '6,7,17|🇱🇺_LU_卢森堡 #4'
+  - 13|美国|【使用前请更新订阅】每日会变更节点密码|GPT+流媒体...
+  - '13|%F0%9F%87%BA%F0%9F%87%B8%20Uni... #3'
+  - 15|🇯🇵 日本特殊|@ripaojiedian
+  - '6,7,17|🇺🇸_US_美国 #30'
+  - '3|🇺🇸_US_美国 #2'
+  - 3|🇺🇸_US_美国->🇩🇪_DE_德国
+  - '6,7,17|🇱🇺_LU_卢森堡 #5'
+  - 1|_CN_->_TR_
+  - 13|%F0%9F%87%B3%F0%9F%87%B1%20Net...
+  - '7|🇺🇸_US_美国 #27'
+  - '6,17|🇨🇦_CA_加拿大->🇺🇸_US_美国 #1'
+  - 15|🇭🇰 香港2|@ripaojiedian
+  - 1|_FR_
+  - 13|%F0%9F%87%AB%F0%9F%87%B7%20Fra...
+  - 13|🔒 VM-WS-TLS 🏴‍☠️ NA-104.16.68....
+  - 13|🔒 VM-WS-TLS 🇲🇴 MO-202.86.138.5...
+  - 15|🇰🇷 韩国特殊|@ripaojiedian
+  - 16|香港|@ripaojiedian
+  - 15|🇸🇬 狮城特殊|@ripaojiedian
   - 13|🚩CF | 🟢 | vmess | @vless_vmess...
   - 11,12|github.com/freefq - 广东省移动 7
-  - 13|%F0%9F%87%AF%F0%9F%87%B5%20Jap...
-  - '3|🇺🇸_US_美国 #5'
-  - 1|_SE_
-  - '7|🇺🇸_US_美国 #27'
-  - 13|%F0%9F%87%A8%F0%9F%87%A6%20Can...
-  - 15|🇭🇰 香港R|@ripaojiedian
-  - 13|🔒 VM-WS-NA 🇿🇦 ZA-129.151.164.1...
-  - '6,7|🇺🇸_US_美国 #19'
-  - '6|🇺🇸_US_美国 #12'
-  - '11,12|github.com/freefq - 美国CloudFla... #3'
-  - 11,12|github.com/freefq - 印度  10
-  - 13|[🇨🇦]t.me/ConfigsHub
-  - 16|日本5|@ripaojiedian
-  - '7|🇺🇸_US_美国 #20'
-  - '6,17|🇺🇸_US_美国 #32'
-  - 6,7|🇨🇦_CA_加拿大->🇺🇸_US_美国
-  - 11,12|github.com/freefq - 美国CloudFla...
-  - 13|超时等5 分钟更新订阅
-  - 16|香港8|@ripaojiedian
-  - 13|美国【TG：@ccbaohe】定时更新节点订阅 11
-  - '3,7,11,17|🇺🇸_US_美国->🇫🇷_FR_法国 #3'
-  - 13|%F0%9F%87%AA%F0%9F%87%B8%20Spa...
-  - 15|🇰🇷 韩国特殊|@ripaojiedian
-  - 13|%F0%9F%87%AE%F0%9F%87%A9%20Ind...
-  - 15,16|日本2|@ripaojiedian
-  - 11,12|github.com/freefq - 美国Fastly全球...
-  - '3|🇺🇸_US_美国 #2'
-  - 1|_GB_
-  - '13|%F0%9F%87%AE%F0%9F%87%B3%20Ind... #1'
-  - 13|🚩CF | 🟢 | vmess | @customv2ray...
-  - 1,13|🇨🇦_CA_加拿大_1
-  - '6,7,17|🇦🇪_AE_阿联酋->🇬🇧_GB_英国 #2'
-  - 13|美国|【公共订阅】动态速率油管最低720P保证|GPT+流媒...
-  - '13|[🇨🇦]t.me/ConfigsHub #1'
-  - '6|🇨🇦_CA_加拿大 #3'
-  - '13|%F0%9F%87%BA%F0%9F%87%B8%20Uni... #3'
-  - '13|🔒 VM-TCP-NA 🇺🇸 US-107.148.192.... #1'
-  - 13|🔒 VM-WS-NONE 🇷🇺 RU-45.147.200....
-  - '11,12|github.com/freefq - 美国CloudFla... #2'
-  - 13|未知1280 1.5MB/s
-  - 13|🔒 VM-TCP-NA 🇹🇷 TR-45.89.52.114...
-  - 13|%F0%9F%87%AD%F0%9F%87%B0%20Hon...
-  - 13|✅سرورهایبیشتردرکانال:prrofile_...
-  - '13|%F0%9F%87%A8%F0%9F%87%A6%20Can... #1'
-  - 1|_US__2
-  - '6,17|🇨🇦_CA_加拿大->🇺🇸_US_美国 #1'
-  - 13|Ⓜ️36@oneclickvpnkeys
-  - 13|%F0%9F%87%AC%F0%9F%87%A7%20Uni...
-  - 13|US63
-  - 13|🔒 VM-TCP-NA 🇺🇸 US-129.146.247....
-  - 15|🇰🇷 韩国|@ripaojiedian
-  - '11,12|github.com/freefq - 美国CloudFla... #1'
-  - 16|香港|@ripaojiedian
-  - 1|_US__1
-  - 1|_RU__2
-  - '6,7,17|🇱🇺_LU_卢森堡 #4'
-  - '6,7|🇺🇸_US_美国 #21'
-  - 16|香港5|@ripaojiedian
-  - 15|🇯🇵 日本R|@ripaojiedian
-  - '13|美国|【公共订阅】动态速率油管最低720P保证|GPT+流媒... #1'
-  - '6,17|🇫🇷_FR_法国 #1'
-  - '7|🇺🇸_US_美国 #23'
-  - 13|@Hope_Net-join-us-on-Telegram
-  - 1|_CN_->_TR_
-  - 1,3|🇺🇸_US_美国
-  - 13|🔒 VM-TCP-NA 🇺🇸 US-129.146.46.1...
-  - 13|🔒 VM-WS-NONE 🇸🇬 SG-54.169.158....
-  - '6,17|🇺🇸_US_美国 #33'
-  - '13|%F0%9F%87%BA%F0%9F%87%B8%20Uni... #1'
-  - '6|🇺🇸_US_美国 #8'
-  - 13|🇺🇸US-155.138.242.207-0097
-  - 16|香港3|@ripaojiedian
-  - 11|美国 CloudFlare节点
-  - 13|🇺🇸US | 🟢 | vmess | @oneclickvp...
-  - '13|@Hope_Net-join-us-on-Telegram #1'
-  - '3,13|🇳🇱_NL_荷兰 #1'
+  - 1|_DE_
   - '6,17|🇺🇸_US_美国 #31'
-  - 13|%F0%9F%87%B9%F0%9F%87%B7%20T%C...
-  - '6,7|🇺🇸_US_美国 #22'
-  - 13|🔒 VM-WS-TLS 🇲🇴 MO-202.86.138.5...
-  - 1,13|🇨🇦CA-158.51.121.36-0062
-  - 13|AL_youtube@资源分享师_10
-  - 3|🇺🇸_US_美国->🇧🇷_BR_巴西
-  - '6|🇨🇦_CA_加拿大 #1'
-  - '6,7|🇺🇸_US_美国 #25'
-  - 13|套餐到期：2025-05-14
-  - 1|_US_->_SE_
-  - 13|美国|【使用前请更新订阅】每日会变更节点密码|GPT+流媒体...
-  - '13|%F0%9F%87%AF%F0%9F%87%B5%20Jap... #1'
-  - 16|美国|@ripaojiedian
-  - '13|美国|【付费用户】油管秒开4K/8K|更多地区接入|GPT+... #1'
-  - 15,16|香港6|@ripaojiedian
-  - 13|日本2〖电报：@ccbaohe】免费节点定时更新
-  - 13|🔒 VM-WS-NA 🏴‍☠️ NA-172.67.144....
-  - '13|[🇨🇦]t.me/ConfigsHub #2'
-  - 16|香港7|@ripaojiedian
-  - '3|🇺🇸_US_美国->🇩🇪_DE_德国 #1'
-  - '6,7|🇺🇸_US_美国 #24'
+  - '13|[🇨🇦]t.me/ConfigsHub #3'
+  - '3,11|美国 CloudFlare节点 #1'
+  - 11|美国 CloudFlare节点
   - 13|美国|最低35%-aff招募进行中|共享 - 大白
-  - 15|🇺🇸 美国5|@ripaojiedian
-  - '6,7,17|🇨🇦_CA_加拿大 #7'
-  - '13|%F0%9F%87%B8%F0%9F%87%AC%20Sin... #1'
-  - '6,7,17|🇺🇸_US_美国 #29'
-  - 11,16|日本3|@ripaojiedian
+  - 3|🇭🇰_HK_香港
+  - '11,12|github.com/freefq - 美国CloudFla... #1'
+  - '6,7|🇺🇸_US_美国 #25'
+  - 13|🇺🇸US-155.138.242.207-0097
+  - 13|🔒 VM-WS-NONE 🇸🇬 SG-54.169.158....
+  - 13|🇺🇸US | 🟢 | vmess | @oneclickvp...
+  - '13|%F0%9F%87%BA%F0%9F%87%B8%20Uni... #2'
+  - 11,12|github.com/freefq - 美国Fastly全球...
+  - 1|_RU__2
+  - 1|_US_->_CA__1
+  - '6|🇺🇸_US_美国 #12'
+  - '13|🔒 VM-TCP-NA 🇺🇸 US-107.148.192.... #1'
+  - 13|%F0%9F%87%B8%F0%9F%87%AC%20Sin...
+  - 13|%F0%9F%87%A9%F0%9F%87%AA%20Ger...
+  - 15|🇯🇵 日本R|@ripaojiedian
   - '7|🇺🇸_US_美国 #28'
-  - 13|🔒 VM-TCP-NA 🇨🇱 CL-64.176.15.74...
+  - 11,13|未知1280 1.5MB/s
+  - 13|%F0%9F%87%AC%F0%9F%87%A7%20Uni...
+  - '13|%F0%9F%87%AF%F0%9F%87%B5%20Jap... #2'
+  - 13|日本2〖电报：@ccbaohe】免费节点定时更新
+  - '13|美国|【公共订阅】动态速率油管最低720P保证|GPT+流媒... #1'
+  - '7|🇺🇸_US_美国 #17'
+  - 15,16|韩国2|@ripaojiedian
+  - 13|未知833 87.8MB/s
+  - 13|🔒 VM-WS-NA 🇿🇦 ZA-129.151.164.1...
+  - '3|🇺🇸_US_美国 #3'
+  - 16|香港7|@ripaojiedian
+  - 11,12|github.com/freefq - 印度  2
+  - 13|🔒 VM-TCP-NA 🇺🇸 US-129.146.247....
+  - '6|🇨🇦_CA_加拿大 #1'
+  - 13|🔒 VM-WS-NA 🇬🇧 GB-45.14.244.133...
+  - 13|Ⓜ️20@oneclickvpnkeys
   type: load-balance
   url: https://www.google.com/
 - interval: 300
@@ -2347,6 +2320,7 @@ proxy-groups:
   - 15,16|日本2|@ripaojiedian
   - 15|🇯🇵 日本R|@ripaojiedian
   - 15|🇯🇵 日本特殊|@ripaojiedian
+  - 16|日本3|@ripaojiedian
   - 16|日本5|@ripaojiedian
   tolerance: 20
   type: url-test
@@ -2360,7 +2334,7 @@ proxy-groups:
   - '3,7,17|🇺🇸_US_美国->🇫🇷_FR_法国 #4'
   - '3|🇺🇸_US_美国 #2'
   - '3|🇺🇸_US_美国 #3'
-  - '3,7,11,17|🇺🇸_US_美国->🇫🇷_FR_法国 #3'
+  - '3,7,17|🇺🇸_US_美国->🇫🇷_FR_法国 #3'
   - '3|🇺🇸_US_美国 #5'
   - '6,7|🇺🇸_US_美国 #19'
   - '6,17|🇺🇸_US_美国 #33'
@@ -2379,7 +2353,7 @@ proxy-groups:
   - '7|🇺🇸_US_美国 #27'
   - '7|🇺🇸_US_美国 #28'
   - 11|美国 CloudFlare节点
-  - '11|美国 CloudFlare节点 #2'
+  - 11,13|未知1280 1.5MB/s
   - 11,12|github.com/freefq - 美国CloudFla...
   - '11,12|github.com/freefq - 美国CloudFla... #1'
   - '11,12|github.com/freefq - 美国CloudFla... #2'
@@ -2410,8 +2384,6 @@ proxy-groups:
 - interval: 300
   name: 🇨🇳 中国
   proxies:
-  - 11,16|日本3|@ripaojiedian
-  - '11|广东省佛山市 移动 #1'
   - 11,12|github.com/freefq - 广东省移动 7
   tolerance: 20
   type: url-test
