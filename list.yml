@@ -690,7 +690,7 @@ proxies:
   server: ftq.ink
   tls: true
   type: http
-- alterId: 64
+- alterId: 0
   cipher: auto
   client-fingerprint: chrome
   name: 15|🇺🇸 美国|@ripaojiedian
@@ -702,45 +702,21 @@ proxies:
   tfo: false
   tls: false
   type: trojan
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-gcm
+  uuid: 6ba78aee-1390-4bbe-9fca-a07c736948cd
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 15|🇭🇰 香港8|@ripaojiedian
-  password: QDMKYVHZQVM77KA8
-  port: 15013
-  server: 8tv68qhq.slashdevslashnetslashtun.net
+  name: 15|🇭🇰 香港4|@ripaojiedian
+  password: Gjg2ojDksj45yDPZCiHai4mkxAhAeBpP82RS94fYPoQ=
+  port: 44320
+  server: wxh111.icu
   tfo: false
   type: ss
-- cipher: aes-256-gcm
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 15|🇭🇰 香港9|@ripaojiedian
-  password: WEL8AJ5ROLX2DH05
-  port: 15003
-  server: qh62onjn.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 15|🇯🇵 日本|@ripaojiedian
-  password: V86WNPYR4ORBV2LH
-  port: 18001
-  server: 8tv68qhq.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 15|🇯🇵 日本2|@ripaojiedian
-  password: PUYELFF4VNSZ7OYX
-  port: 18003
-  server: qh62onjn.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 15|🇰🇷 韩国|@ripaojiedian
-  password: qwerREWQ@@
-  port: 58368
-  server: p199.panda003.net
+  name: 15|🇭🇰 香港6|@ripaojiedian
+  password: 54f4e2f4-f0e1-4a15-a0cf-3a3234ab58fb
+  port: 11001
+  server: 183.232.229.164
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
@@ -751,20 +727,12 @@ proxies:
   server: ctmm.gscloud.bond
   tfo: false
   type: ss
-- cipher: aes-256-gcm
+- cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 15|🇸🇬 新加坡4|@ripaojiedian
-  password: LBNV7AS85Y44SFN6
-  port: 16008
-  server: w72tapyb.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 15|🇺🇸 美国2|@ripaojiedian
-  password: YRCK2D16NISDAPEV
-  port: 17004
-  server: w72tapyb.slashdevslashnetslashtun.net
+  name: 15|🇸🇬 狮城特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 52.195.182.124
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -772,7 +740,7 @@ proxies:
   name: 15|🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 34.218.246.187
+  server: 54.95.214.175
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -780,17 +748,19 @@ proxies:
   name: 15|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 52.79.247.162
+  server: 3.35.17.138
   tfo: false
   type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 15|🇸🇬 狮城特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 54.169.246.29
-  tfo: false
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 16|香港8|@ripaojiedian
+  network: tcp
+  port: '23782'
+  server: 38.147.189.188
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6ba78aee-1390-4bbe-9fca-a07c736948cd
 proxy-groups:
 - name: 🚀 选择代理
   proxies:
@@ -803,83 +773,79 @@ proxy-groups:
 - interval: 300
   name: 🎯 负载均衡
   proxies: &id001
-  - 15|🇯🇵 日本|@ripaojiedian
-  - '3,17|🇺🇸_US_美国 #20'
-  - '12|github.com/freefq - 美国CloudFla... #2'
-  - '3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #3'
-  - '3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3'
-  - 15|🇰🇷 韩国|@ripaojiedian
-  - 2|🇺🇸_US_美国->🇸🇬_SG_新加坡
-  - 15|🇸🇬 新加坡|@ripaojiedian
-  - 15|🇯🇵 日本特殊|@ripaojiedian
-  - '1,6|🇺🇸_US_美国 #14'
-  - '3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #3'
-  - 2|🇷🇺_RU_俄罗斯联邦
-  - 15|🇸🇬 狮城特殊|@ripaojiedian
-  - '1,6|🇺🇸_US_美国 #16'
   - 11,16|香港5|@ripaojiedian
-  - 15|🇸🇬 新加坡4|@ripaojiedian
-  - 12|github.com/freefq - 美国CloudFla...
-  - 12|github.com/freefq - 印度  2
-  - '3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11'
-  - 15|tg频道:@ripaojiedian
-  - '2|🇺🇸_US_美国 #2'
-  - '1,6|🇺🇸_US_美国 #10'
-  - 15|🇯🇵 日本2|@ripaojiedian
-  - 15|🇰🇷 韩国特殊|@ripaojiedian
-  - 15|🇺🇸 美国2|@ripaojiedian
-  - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4'
-  - 12|github.com/freefq - 美国Fastly全球...
-  - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6'
-  - 15|🇺🇸 美国|@ripaojiedian
-  - 1|_US__7
-  - 1|_CN_
-  - '12|github.com/freefq - 美国CloudFla... #3'
-  - 1|_SG_
-  - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7'
-  - '1,6|🇺🇸_US_美国 #15'
-  - 12|github.com/freefq - 广东省移动 7
-  - '3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #2'
-  - '1,6|🇺🇸_US_美国 #7'
-  - '1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #10'
-  - '3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #4'
-  - 2|🇺🇸_US_美国
-  - '3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8'
-  - 1|_FR_->_RU_
-  - '1,6|🇺🇸_US_美国 #11'
-  - '1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #9'
-  - 12|github.com/freefq - 印度  10
-  - '1,6|🇺🇸_US_美国 #18'
   - '3,17|🇨🇳_CN_中国 #1'
-  - '3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2'
-  - '2|🇺🇸_US_美国 #1'
-  - '2|🇺🇸_US_美国 #3'
-  - 1|_US__5
-  - '1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2'
-  - 2|🇩🇪_DE_德国
   - 12|github.com/freefq - 印度  3
-  - '1,6|🇺🇸_US_美国 #17'
-  - 11|16|d*********g.com_2
-  - 2|🇺🇸_US_美国->🇮🇳_IN_印度
-  - 1,6|🇺🇸_US_美国->🇳🇱_NL_荷兰
-  - 1|_US_->_ES_
-  - '3,17|🇺🇸_US_美国 #21'
-  - '1,6|🇺🇸_US_美国 #8'
-  - 2|🇨🇳_CN_中国->🇺🇸_US_美国
-  - 15|🇭🇰 香港9|@ripaojiedian
-  - '3,17|🇺🇸_US_美国 #22'
   - '2|🇺🇸_US_美国->🇮🇳_IN_印度 #1'
-  - '1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #1'
-  - 1|_US__11
-  - 2|🇺🇸_US_美国->🇫🇷_FR_法国
-  - '1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1'
-  - '1,6|🇺🇸_US_美国 #19'
-  - '2|🇷🇺_RU_俄罗斯联邦 #1'
+  - 12|github.com/freefq - 美国CloudFla...
   - '12|github.com/freefq - 美国CloudFla... #1'
-  - '1,6|🇺🇸_US_美国 #12'
+  - 15|tg频道:@ripaojiedian
+  - '1,6|🇺🇸_US_美国 #11'
+  - 1,6|🇺🇸_US_美国->🇳🇱_NL_荷兰
+  - '2|🇺🇸_US_美国 #3'
+  - 15|🇭🇰 香港6|@ripaojiedian
+  - '1,6|🇺🇸_US_美国 #18'
+  - '2|🇺🇸_US_美国 #1'
+  - 2|🇨🇳_CN_中国->🇺🇸_US_美国
+  - 2|🇺🇸_US_美国->🇮🇳_IN_印度
+  - '1,6|🇺🇸_US_美国 #7'
+  - '1,6|🇺🇸_US_美国 #8'
+  - '1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2'
+  - '3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #3'
+  - 1|_FR_->_RU_
+  - '1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #1'
+  - 11|16|d*********g.com_2
+  - 15|🇸🇬 狮城特殊|@ripaojiedian
+  - 15|🇯🇵 日本特殊|@ripaojiedian
   - 11,16|香港3|@ripaojiedian
+  - 1|_CN_
+  - 2|🇩🇪_DE_德国
+  - '12|github.com/freefq - 美国CloudFla... #3'
   - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5'
-  - 15|🇭🇰 香港8|@ripaojiedian
+  - 1|_US_->_ES_
+  - '3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3'
+  - '1,6|🇺🇸_US_美国 #15'
+  - 15|🇰🇷 韩国特殊|@ripaojiedian
+  - 15|🇺🇸 美国|@ripaojiedian
+  - '3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #4'
+  - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7'
+  - 12|github.com/freefq - 印度  2
+  - 2|🇺🇸_US_美国
+  - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6'
+  - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4'
+  - 12|github.com/freefq - 广东省移动 7
+  - 2|🇺🇸_US_美国->🇫🇷_FR_法国
+  - '3,17|🇺🇸_US_美国 #20'
+  - '1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #9'
+  - 2|🇷🇺_RU_俄罗斯联邦
+  - '3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8'
+  - 15|🇭🇰 香港4|@ripaojiedian
+  - 1|_US__11
+  - '1,6|🇺🇸_US_美国 #14'
+  - '3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #3'
+  - '1,6|🇺🇸_US_美国 #16'
+  - '3,17|🇺🇸_US_美国 #22'
+  - '12|github.com/freefq - 美国CloudFla... #2'
+  - '1,6|🇺🇸_US_美国 #12'
+  - '3,17|🇺🇸_US_美国 #21'
+  - '1,6|🇺🇸_US_美国 #19'
+  - 12|github.com/freefq - 印度  10
+  - '3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2'
+  - '3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #2'
+  - 1|_SG_
+  - '1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #10'
+  - '2|🇷🇺_RU_俄罗斯联邦 #1'
+  - 1|_US__7
+  - '1,6|🇺🇸_US_美国 #10'
+  - '1,6|🇺🇸_US_美国 #17'
+  - 12|github.com/freefq - 美国Fastly全球...
+  - 2|🇺🇸_US_美国->🇸🇬_SG_新加坡
+  - 16|香港8|@ripaojiedian
+  - 15|🇸🇬 新加坡|@ripaojiedian
+  - 1|_US__5
+  - '2|🇺🇸_US_美国 #2'
+  - '3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11'
+  - '1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1'
   type: load-balance
   url: https://www.google.com/
 - interval: 300
@@ -926,8 +892,6 @@ proxy-groups:
 - interval: 300
   name: 🇯🇵 日本
   proxies:
-  - 15|🇯🇵 日本|@ripaojiedian
-  - 15|🇯🇵 日本2|@ripaojiedian
   - 15|🇯🇵 日本特殊|@ripaojiedian
   tolerance: 20
   type: url-test
@@ -963,7 +927,6 @@ proxy-groups:
   - '12|github.com/freefq - 美国CloudFla... #2'
   - 12|github.com/freefq - 美国Fastly全球...
   - '12|github.com/freefq - 美国CloudFla... #3'
-  - 15|🇺🇸 美国2|@ripaojiedian
   tolerance: 20
   type: url-test
   url: https://www.google.com/
@@ -982,8 +945,9 @@ proxy-groups:
   - 11,16|香港3|@ripaojiedian
   - 11,16|香港5|@ripaojiedian
   - 15|🇺🇸 美国|@ripaojiedian
-  - 15|🇭🇰 香港8|@ripaojiedian
-  - 15|🇭🇰 香港9|@ripaojiedian
+  - 15|🇭🇰 香港4|@ripaojiedian
+  - 15|🇭🇰 香港6|@ripaojiedian
+  - 16|香港8|@ripaojiedian
   tolerance: 20
   type: url-test
   url: https://www.google.com/
@@ -1013,7 +977,6 @@ proxy-groups:
   proxies:
   - 1|_SG_
   - 15|🇸🇬 新加坡|@ripaojiedian
-  - 15|🇸🇬 新加坡4|@ripaojiedian
   - 15|🇸🇬 狮城特殊|@ripaojiedian
   tolerance: 20
   type: url-test
