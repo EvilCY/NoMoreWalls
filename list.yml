@@ -533,17 +533,16 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: 11|0|--58
-  network: ws
-  port: 17926
-  server: 194.87.69.50
+  name: 11|0|--31
+  network: tcp
+  port: 80
+  server: 94.182.150.231
   tls: false
   type: vmess
-  uuid: cdcc9f3a-ad63-46e2-92f4-173c2a6ec201
-  ws-opts: {}
+  uuid: 2b7ce1d2-0372-4104-aa06-f7d999f26e1d
 - alterId: 0
   cipher: auto
-  name: 11|0|--60
+  name: 11|0|--34
   network: http
   port: 2082
   server: 64.225.109.206
@@ -552,10 +551,23 @@ proxies:
   uuid: 48264b45-64b8-4e9f-8a88-cef41f20c736
 - alterId: 0
   cipher: auto
-  name: 11|0|--62
+  name: 11|0|--35
+  network: ws
+  port: 8880
+  server: s2.db-link01.top
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-14-147-154.s2.db-link01.top
+    path: /dabai.in172.64.0.32
+- alterId: 0
+  cipher: auto
+  name: 11|0|--43
   network: tcp
   port: 80
-  server: 94.182.150.231
+  server: 94.182.150.230
   tls: false
   type: vmess
   uuid: 2b7ce1d2-0372-4104-aa06-f7d999f26e1d
@@ -916,93 +928,94 @@ proxy-groups:
 - interval: 300
   name: 🎯 负载均衡
   proxies: &id001
-  - 1|_SG_
+  - '1,6|🇺🇸_US_美国 #11'
+  - '1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #10'
+  - '1,6|🇺🇸_US_美国 #18'
+  - 16|5pel5pysM3xAcmlwYW9qaWVkaWFu
   - '1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1'
-  - 1,6|🇺🇸_US_美国->🇳🇱_NL_荷兰
-  - 15|🇸🇬 新加坡4|@ripaojiedian
-  - '3,17|🇺🇸_US_美国 #21'
+  - 2|🇷🇺_RU_俄罗斯联邦
+  - 15|🇰🇷 韩国特殊|@ripaojiedian
+  - '1,6|🇺🇸_US_美国 #8'
+  - 1|_CN_
+  - 11|0|--34
+  - 12|github.com/freefq - 印度  2
+  - '2|🇺🇸_US_美国 #1'
+  - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5'
+  - '3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8'
+  - '12|github.com/freefq - 美国CloudFla... #2'
+  - 15|🇭🇰 香港6|@ripaojiedian
+  - 11,15,16|英国|@ripaojiedian
+  - 1|_US__11
+  - 12|github.com/freefq - 美国Fastly全球...
+  - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6'
+  - 15|🇺🇸 美国2|@ripaojiedian
+  - '1,6|🇺🇸_US_美国 #16'
+  - 11|0|--35
+  - 1|_SG_
   - '3,17|🇺🇸_US_美国 #20'
   - 12|github.com/freefq - 广东省移动 7
-  - '3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2'
-  - 12|github.com/freefq - 印度  3
-  - '1,6|🇺🇸_US_美国 #18'
-  - 1|_CN_
-  - 1|_US__5
-  - 1|_US__11
-  - '1,6|🇺🇸_US_美国 #15'
-  - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6'
-  - '2|🇺🇸_US_美国 #1'
-  - 11,15,16|韩国2|@ripaojiedian
-  - 15|🇰🇷 韩国|@ripaojiedian
-  - 16|5pel5pysM3xAcmlwYW9qaWVkaWFu
-  - '3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8'
-  - '3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #4'
-  - 11,16|香港4|@ripaojiedian
-  - 1|_US_->_ES_
-  - 2|🇺🇸_US_美国->🇮🇳_IN_印度
-  - '1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #1'
-  - 15|🇸🇬 狮城特殊|@ripaojiedian
-  - '2|🇺🇸_US_美国 #2'
-  - 11|16|d*********g.com_2
-  - 12|github.com/freefq - 印度  2
-  - 15|🇸🇬 新加坡|@ripaojiedian
-  - '12|github.com/freefq - 美国CloudFla... #2'
-  - '12|github.com/freefq - 美国CloudFla... #3'
-  - 1|_US__7
-  - '1,6|🇺🇸_US_美国 #7'
-  - '1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2'
-  - 15|🇯🇵 日本|@ripaojiedian
-  - '1,6|🇺🇸_US_美国 #12'
-  - 15|🇭🇰 香港4|@ripaojiedian
-  - 11|0|--62
-  - 15|🇯🇵 日本特殊|@ripaojiedian
-  - '1,6|🇺🇸_US_美国 #14'
-  - 11|0|--58
-  - 1|_FR_->_RU_
-  - 2|🇺🇸_US_美国->🇫🇷_FR_法国
-  - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5'
-  - 2|🇨🇳_CN_中国->🇺🇸_US_美国
-  - 15|🇸🇬 新加坡3|@ripaojiedian
-  - 2|🇺🇸_US_美国
-  - 15|🇯🇵 日本3|@ripaojiedian
-  - 2|🇷🇺_RU_俄罗斯联邦
-  - '1,6|🇺🇸_US_美国 #16'
-  - 15|🇺🇸 美国|@ripaojiedian
-  - '1,6|🇺🇸_US_美国 #11'
-  - 15|🇭🇰 香港5|@ripaojiedian
-  - 15|🇺🇸 美国2|@ripaojiedian
-  - '2|🇺🇸_US_美国->🇮🇳_IN_印度 #1'
-  - 12|github.com/freefq - 美国Fastly全球...
-  - 15|🇯🇵 日本2|@ripaojiedian
-  - '3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #3'
-  - '1,6|🇺🇸_US_美国 #10'
-  - '3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #2'
-  - 2|🇩🇪_DE_德国
-  - '1,6|🇺🇸_US_美国 #17'
-  - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4'
-  - '3,17|🇨🇳_CN_中国 #1'
-  - 11,15,16|香港3|@ripaojiedian
-  - '12|github.com/freefq - 美国CloudFla... #1'
-  - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7'
-  - '2|🇺🇸_US_美国 #3'
-  - 12|github.com/freefq - 美国CloudFla...
-  - 15|🇰🇷 韩国特殊|@ripaojiedian
-  - '1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #10'
-  - 15|🇸🇬 新加坡2|@ripaojiedian
-  - 15|tg频道:@ripaojiedian
-  - 11,15,16|英国|@ripaojiedian
-  - 2|🇺🇸_US_美国->🇸🇬_SG_新加坡
-  - '1,6|🇺🇸_US_美国 #8'
-  - 15|🇭🇰 香港6|@ripaojiedian
-  - '3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11'
-  - '1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #9'
-  - '2|🇷🇺_RU_俄罗斯联邦 #1'
   - '3,17|🇺🇸_US_美国 #22'
-  - 12|github.com/freefq - 印度  10
-  - '3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3'
-  - '3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #3'
+  - 15|tg频道:@ripaojiedian
+  - 1|_FR_->_RU_
+  - '1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2'
+  - '3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #2'
+  - '2|🇺🇸_US_美国 #2'
+  - 15|🇭🇰 香港4|@ripaojiedian
+  - 11|16|d*********g.com_2
+  - '1,6|🇺🇸_US_美国 #15'
+  - '1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #1'
+  - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7'
+  - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4'
+  - 2|🇺🇸_US_美国->🇮🇳_IN_印度
+  - '3,17|🇨🇳_CN_中国 #1'
+  - '2|🇺🇸_US_美国->🇮🇳_IN_印度 #1'
   - '1,6|🇺🇸_US_美国 #19'
-  - 11|0|--60
+  - 12|github.com/freefq - 美国CloudFla...
+  - 15|🇯🇵 日本|@ripaojiedian
+  - 11,15,16|香港3|@ripaojiedian
+  - 2|🇺🇸_US_美国->🇫🇷_FR_法国
+  - 1|_US_->_ES_
+  - '3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2'
+  - '2|🇺🇸_US_美国 #3'
+  - 15|🇸🇬 新加坡4|@ripaojiedian
+  - '1,6|🇺🇸_US_美国 #14'
+  - '2|🇷🇺_RU_俄罗斯联邦 #1'
+  - '3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #4'
+  - '3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11'
+  - 11,16|香港4|@ripaojiedian
+  - 15|🇸🇬 新加坡|@ripaojiedian
+  - 2|🇺🇸_US_美国
+  - 12|github.com/freefq - 印度  3
+  - 1|_US__7
+  - '3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #3'
+  - 11|0|--43
+  - 11|0|--31
+  - 2|🇺🇸_US_美国->🇸🇬_SG_新加坡
+  - '3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #3'
+  - '3,17|🇺🇸_US_美国 #21'
+  - 15|🇯🇵 日本3|@ripaojiedian
+  - 1,6|🇺🇸_US_美国->🇳🇱_NL_荷兰
+  - '12|github.com/freefq - 美国CloudFla... #1'
+  - '1,6|🇺🇸_US_美国 #10'
+  - '3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3'
+  - 12|github.com/freefq - 印度  10
+  - 15|🇰🇷 韩国|@ripaojiedian
+  - '1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #9'
+  - '1,6|🇺🇸_US_美国 #17'
+  - 15|🇯🇵 日本2|@ripaojiedian
+  - 15|🇭🇰 香港5|@ripaojiedian
+  - 15|🇸🇬 狮城特殊|@ripaojiedian
+  - 1|_US__5
+  - '12|github.com/freefq - 美国CloudFla... #3'
+  - 2|🇩🇪_DE_德国
+  - 11,15,16|韩国2|@ripaojiedian
+  - 15|🇸🇬 新加坡3|@ripaojiedian
+  - 15|🇯🇵 日本特殊|@ripaojiedian
+  - 2|🇨🇳_CN_中国->🇺🇸_US_美国
+  - '1,6|🇺🇸_US_美国 #12'
+  - '1,6|🇺🇸_US_美国 #7'
+  - 15|🇸🇬 新加坡2|@ripaojiedian
+  - 15|🇺🇸 美国|@ripaojiedian
   type: load-balance
   url: https://www.google.com/
 - interval: 300
