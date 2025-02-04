@@ -531,29 +531,42 @@ proxies:
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
-- alterId: 2
-  cipher: auto
-  name: 11|0|🇺🇸1 |  2.7MB/s
-  network: ws
-  port: 23617
-  server: 17.mamamajd.site
-  tls: false
-  type: vmess
-  uuid: b5c51710-04d9-38a8-9f22-cf1ed29743bf
-  ws-opts:
-    headers:
-      Host: 17.mamamajd.site
-    path: /
 - alterId: 0
   cipher: auto
-  name: 11,16|新加坡2|@ripaojiedian
+  name: 11,16|日本2|@ripaojiedian
   network: tcp
-  port: '50012'
-  server: 50012.baidu-cdn.top
+  port: '60717'
+  server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
   servername: ''
   tls: false
   type: vmess
-  uuid: cdb49a9b-6e23-4d90-b2a8-5c158b437cf2
+  uuid: a51ed25d-d878-472b-8a5c-4f2f53ddc2ac
+- alterId: 2
+  cipher: auto
+  name: 11|0|🇺🇸8 |  4.5MB/s
+  network: ws
+  port: 23616
+  server: 16.mamamajd.site
+  tls: false
+  type: vmess
+  uuid: c55cfbfc-b936-353a-b2b7-1366b86c5fde
+  ws-opts:
+    headers:
+      Host: 16.mamamajd.site
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 11|0|🇺🇸9 |  4.9MB/s
+  network: ws
+  port: 23605
+  server: 5.mamamajd.site
+  tls: false
+  type: vmess
+  uuid: c55cfbfc-b936-353a-b2b7-1366b86c5fde
+  ws-opts:
+    headers:
+      Host: 5.mamamajd.site
+    path: /
 - alterId: 0
   cipher: auto
   name: 11,16|香港2|@ripaojiedian
@@ -576,14 +589,14 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 11,16|日本2|@ripaojiedian
+  name: 11,16|新加坡2|@ripaojiedian
   network: tcp
-  port: '60717'
-  server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
+  port: '50012'
+  server: 50012.baidu-cdn.top
   servername: ''
   tls: false
   type: vmess
-  uuid: a51ed25d-d878-472b-8a5c-4f2f53ddc2ac
+  uuid: cdb49a9b-6e23-4d90-b2a8-5c158b437cf2
 - alterId: 0
   cipher: auto
   name: 11,16|新加坡3|@ripaojiedian
@@ -822,84 +835,85 @@ proxy-groups:
 - interval: 300
   name: 🎯 负载均衡
   proxies: &id001
-  - 15|🇭🇰 香港3|@ripaojiedian
-  - '12|github.com/freefq - 美国CloudFla... #1'
-  - 2|🇷🇺_RU_俄罗斯联邦
-  - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7'
-  - '12|github.com/freefq - 美国CloudFla... #2'
-  - '3,17|🇨🇳_CN_中国 #1'
+  - 12|github.com/freefq - 美国Fastly全球...
+  - '1,6|🇺🇸_US_美国 #19'
+  - '3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #3'
+  - '1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #1'
+  - 1,6|🇺🇸_US_美国->🇳🇱_NL_荷兰
+  - '2|🇺🇸_US_美国 #3'
+  - 12|github.com/freefq - 广东省移动 7
+  - 15|🇺🇸 美国|@ripaojiedian
   - 2|🇨🇳_CN_中国->🇺🇸_US_美国
   - '3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #3'
-  - 1|_US__11
-  - '1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1'
-  - 1|_SG_
-  - 12|github.com/freefq - 美国Fastly全球...
-  - 2|🇺🇸_US_美国->🇸🇬_SG_新加坡
-  - '1,6|🇺🇸_US_美国 #15'
-  - 15|🇸🇬 新加坡|@ripaojiedian
-  - 11,16|新加坡3|@ripaojiedian
-  - '2|🇺🇸_US_美国->🇮🇳_IN_印度 #1'
-  - '1,6|🇺🇸_US_美国 #8'
-  - 1,6|🇺🇸_US_美国->🇳🇱_NL_荷兰
-  - '2|🇺🇸_US_美国 #1'
-  - 2|🇺🇸_US_美国->🇮🇳_IN_印度
-  - '1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #10'
-  - '1,6|🇺🇸_US_美国 #11'
-  - 12|github.com/freefq - 印度  2
-  - 15|🇰🇷 韩国特殊|@ripaojiedian
-  - 11,16|新加坡2|@ripaojiedian
-  - '1,6|🇺🇸_US_美国 #16'
-  - '3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #3'
-  - '3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11'
-  - '12|github.com/freefq - 美国CloudFla... #3'
-  - 1|_CN_
-  - '1,6|🇺🇸_US_美国 #17'
-  - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4'
-  - '1,6|🇺🇸_US_美国 #14'
-  - 12|github.com/freefq - 印度  3
-  - 11,16|日本2|@ripaojiedian
-  - '2|🇷🇺_RU_俄罗斯联邦 #1'
-  - '3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2'
-  - 11,16|美国|@ripaojiedian
-  - 15|🇺🇸 美国|@ripaojiedian
-  - 11,16|香港5|@ripaojiedian
-  - 1|_FR_->_RU_
-  - 11|0|🇺🇸1 |  2.7MB/s
-  - '3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #2'
-  - 1|_US__5
-  - '2|🇺🇸_US_美国 #2'
-  - '1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #1'
-  - '3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #4'
-  - '1,6|🇺🇸_US_美国 #12'
-  - '1,6|🇺🇸_US_美国 #10'
-  - 15|🇯🇵 日本特殊|@ripaojiedian
-  - 15|🇸🇬 狮城特殊|@ripaojiedian
   - '3,17|🇺🇸_US_美国 #21'
-  - 11|16|d*********g.com_2
-  - '3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8'
-  - 1|_US_->_ES_
-  - 12|github.com/freefq - 印度  10
-  - '1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2'
-  - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5'
-  - '1,6|🇺🇸_US_美国 #7'
-  - '2|🇺🇸_US_美国 #3'
+  - 15|🇭🇰 香港3|@ripaojiedian
   - 2|🇺🇸_US_美国->🇫🇷_FR_法国
+  - 2|🇷🇺_RU_俄罗斯联邦
+  - 11,16|美国|@ripaojiedian
+  - '12|github.com/freefq - 美国CloudFla... #3'
+  - 1|_US__11
+  - 1|_SG_
+  - 12|github.com/freefq - 印度  2
+  - '1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #10'
+  - 12|github.com/freefq - 印度  10
+  - '3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #4'
+  - 11,16|新加坡2|@ripaojiedian
+  - 1|_US_->_ES_
+  - 1|_CN_
   - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6'
+  - 2|🇺🇸_US_美国->🇸🇬_SG_新加坡
+  - 15|🇸🇬 新加坡|@ripaojiedian
+  - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5'
+  - '2|🇺🇸_US_美国 #2'
+  - 15|🇸🇬 狮城特殊|@ripaojiedian
+  - '1,6|🇺🇸_US_美国 #11'
   - 15|🇭🇰 香港|@ripaojiedian
-  - 2|🇩🇪_DE_德国
-  - 11,16|香港2|@ripaojiedian
-  - 1|_US__7
-  - '1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #9'
-  - '1,6|🇺🇸_US_美国 #18'
-  - 2|🇺🇸_US_美国
   - '3,17|🇺🇸_US_美国 #22'
-  - '3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3'
+  - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4'
+  - '1,6|🇺🇸_US_美国 #18'
+  - 2|🇺🇸_US_美国->🇮🇳_IN_印度
+  - 11|0|🇺🇸8 |  4.5MB/s
+  - 11,16|新加坡3|@ripaojiedian
+  - '1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #9'
+  - 2|🇩🇪_DE_德国
+  - 15|🇯🇵 日本特殊|@ripaojiedian
+  - 11|16|d*********g.com_2
+  - 15|🇰🇷 韩国特殊|@ripaojiedian
   - 15|🇯🇵 日本|@ripaojiedian
-  - 12|github.com/freefq - 美国CloudFla...
-  - 12|github.com/freefq - 广东省移动 7
+  - '12|github.com/freefq - 美国CloudFla... #1'
+  - '1,6|🇺🇸_US_美国 #10'
+  - '3,17|🇨🇳_CN_中国 #1'
+  - '3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2'
+  - '1,6|🇺🇸_US_美国 #7'
+  - 1|_US__7
   - 15|tg频道:@ripaojiedian
+  - '1,6|🇺🇸_US_美国 #17'
+  - '3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11'
+  - 11,16|香港5|@ripaojiedian
+  - '3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #2'
+  - 11,16|日本2|@ripaojiedian
+  - 1|_FR_->_RU_
+  - '1,6|🇺🇸_US_美国 #15'
+  - '2|🇺🇸_US_美国 #1'
   - '3,17|🇺🇸_US_美国 #20'
-  - '1,6|🇺🇸_US_美国 #19'
+  - '1,6|🇺🇸_US_美国 #8'
+  - '1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7'
+  - 12|github.com/freefq - 美国CloudFla...
+  - '3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3'
+  - 1|_US__5
+  - '1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2'
+  - 2|🇺🇸_US_美国
+  - '3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8'
+  - '1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1'
+  - 11,16|香港2|@ripaojiedian
+  - '1,6|🇺🇸_US_美国 #16'
+  - '2|🇷🇺_RU_俄罗斯联邦 #1'
+  - '1,6|🇺🇸_US_美国 #14'
+  - 11|0|🇺🇸9 |  4.9MB/s
+  - '2|🇺🇸_US_美国->🇮🇳_IN_印度 #1'
+  - '12|github.com/freefq - 美国CloudFla... #2'
+  - '1,6|🇺🇸_US_美国 #12'
+  - 12|github.com/freefq - 印度  3
   type: load-balance
   url: https://www.google.com/
 - interval: 300
@@ -978,7 +992,8 @@ proxy-groups:
   - '3,17|🇺🇸_US_美国 #20'
   - '3,17|🇺🇸_US_美国 #21'
   - '3,17|🇺🇸_US_美国 #22'
-  - 11|0|🇺🇸1 |  2.7MB/s
+  - 11|0|🇺🇸8 |  4.5MB/s
+  - 11|0|🇺🇸9 |  4.9MB/s
   - 11,16|美国|@ripaojiedian
   - 12|github.com/freefq - 美国CloudFla...
   - '12|github.com/freefq - 美国CloudFla... #1'
