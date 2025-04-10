@@ -1,33 +1,33 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 01 | 1x HK
-  password: c9a90d64-f25d-46e7-8a19-3e052ae654ea
-  port: 36141
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧 英国住宅IP 01 | 1x UK
-  password: c9a90d64-f25d-46e7-8a19-3e052ae654ea
-  port: 36271
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇬🇧英国家宽 01 | 1x UK
-  password: 4b4e2aa3-8030-423f-90d4-a90d4f898613
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - allowInsecure: '1'
-  name: 2,22,26|2|🇧5 |  5.0MB/s
+  name: 0,14,22,26|2|🇧5 |  5.0MB/s
   network: original
   password: b19c4375-d847-4c40-9824-4767c88b5f38
   port: 10200
   server: www.ak-hk.top
   skip-cert-verify: true
   type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰香港 01 | 1x HK
+  password: e1093a25-9ead-4d92-bd47-e48119dca6e2
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇬🇧英国家宽 01 | 1x UK
+  password: e1093a25-9ead-4d92-bd47-e48119dca6e2
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇬🇧 英国住宅IP 01 | 1x UK
+  password: e44d8a82-98a7-449c-937f-24b372addc8c
+  port: 36271
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - alpn:
   - http/1.1
   name: 3|[🇬🇧]t.me/ConfigsHub`
@@ -39,16 +39,44 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 14|日本-优化
+  name: 14|英国1-伦敦-CDN | 1x
   network: ws
-  port: '16617'
-  server: yes.mojcn.com
+  port: '2053'
+  server: 1744294341.tencentapp.cn
+  servername: 1744293778.speed.htfrbg.cccp.freefly.pp.ua
+  tls: true
+  type: vmess
+  uuid: ffad2ef2-7b55-4f71-bc81-de5e0f769adc
+  ws-opts:
+    headers:
+      Host: 1744293778.speed.htfrbg.cccp.freefly.pp.ua
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 14|英国-优化2
+  network: ws
+  port: '16645'
+  server: m.cnmjin.net
   tls: false
   type: vmess
   uuid: da91214e-b022-4f61-a724-01c538170e62
   ws-opts:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 14|英国5-伦敦-CDN | 1x
+  network: ws
+  port: '2096'
+  server: 1744294341.tencentapp.cn
+  servername: 1744293778.speed.ukavsdgc.cccp.freefly.pp.ua
+  tls: true
+  type: vmess
+  uuid: ffad2ef2-7b55-4f71-bc81-de5e0f769adc
+  ws-opts:
+    headers:
+      Host: 1744293778.speed.ukavsdgc.cccp.freefly.pp.ua
     path: /
 - alterId: 0
   cipher: auto
@@ -63,161 +91,82 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- name: 14|英国+V2CROSS.COM
-  password: b19c4375-d847-4c40-9824-4767c88b5f38
-  port: 10200
-  server: www.ak-hk.top
-  sni: www.ak-hk.top
-  type: trojan
-- name: 14|>🇬🇧 GB|Ns|1115|TG@FProxies|
-  password: telegram-id-directvpn
-  port: 22222
-  server: 18.171.18.192
-  skip-cert-verify: true
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: 14|>🇬🇧 GB|Ls|0104|TG@FProxies|
+  name: 14|英国4-伦敦-CDN | 1x
   network: ws
-  port: '80'
-  server: 190.93.245.158
-  tls: false
-  type: vmess
-  uuid: aabf692c-6a0f-49b9-9bc2-6ff38d3a41cf
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 14|英国-优化-GPT
-  network: ws
-  port: '16645'
-  server: yes.mojcn.com
-  tls: false
-  type: vmess
-  uuid: da91214e-b022-4f61-a724-01c538170e62
-  ws-opts:
-    headers:
-      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 14|>🇬🇧 GB|Ms|1115|TG@FProxies|
-  network: ws
-  port: '80'
-  server: 154.81.220.120
-  tls: false
-  type: vmess
-  uuid: 90c90d06-c6bf-4a9c-bdb4-fe132c8ef4a8
-  ws-opts:
-    headers:
-      Host: ''
-    path: /aa
-- alterId: 0
-  cipher: auto
-  name: 14|>🇸🇬 SG|Hs|0104|TG@FProxies|
-  network: ws
-  port: '2086'
-  server: cdn2.bpcdn.cc
-  tls: false
-  type: vmess
-  uuid: 13d29042-ab82-4195-9cd4-2bafc518e201
-  ws-opts:
-    headers:
-      Host: cdn2.bpcdn.cc
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '14|>🇸🇬 SG|Ms|0104|TG@FProxies| #1'
-  network: ws
-  port: '2086'
-  server: cdn3.bpcdn.cc
-  tls: false
-  type: vmess
-  uuid: 13d29042-ab82-4195-9cd4-2bafc518e201
-  ws-opts:
-    headers:
-      Host: cdn3.bpcdn.cc
-    path: /
-- name: 14|2|🇬🇧1 |  5.4MB/s
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.132.220.128
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '14|>🇬🇧 GB|Ls|1115|TG@FProxies| #1'
-  network: ws
-  port: '443'
-  server: b.jishuzhai.cloudns.biz
+  port: '2096'
+  server: 1744294341.tencentapp.cn
+  servername: 1744293778.speed.ukavsdgb.cccp.freefly.pp.ua
   tls: true
   type: vmess
-  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
+  uuid: ffad2ef2-7b55-4f71-bc81-de5e0f769adc
   ws-opts:
     headers:
-      Host: jiedian.jishuge.eu.org
-    path: /hms19.best-tizi.top:443/linkws
-- alterId: 0
-  cipher: auto
-  name: '14|>🇬🇧 GB|Ls|1115|TG@FProxies| #2'
-  network: ws
-  port: '2086'
-  server: cdn2.bpcdn.cc
-  tls: false
-  type: vmess
-  uuid: 8b45d379-702f-41b3-a6b2-9c87a01dcd5c
-  ws-opts:
-    headers:
-      Host: cdn2.bpcdn.cc
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '14|>🇬🇧 GB|Hs|0104|TG@FProxies| #1'
-  network: ws
-  port: '23613'
-  server: 13.mamamajd.site
-  tls: false
-  type: vmess
-  uuid: 43297dad-fc2e-304a-9476-3e78e4562384
-  ws-opts:
-    headers:
-      Host: 13.mamamajd.site
+      Host: 1744293778.speed.ukavsdgb.cccp.freefly.pp.ua
     path: /
 - alterId: 0
   cipher: auto
-  name: '14|>🇬🇧 GB|Ms|1115|TG@FProxies| #2'
+  name: 14|英国3-伦敦-CDN | 1x
   network: ws
-  port: '2086'
-  server: cdn2.bpcdn.cc
-  tls: false
-  type: vmess
-  uuid: a361d210-35fd-4ea7-95fa-11f15c893d93
-  ws-opts:
-    headers:
-      Host: cdn2.bpcdn.cc
-    path: /
-- name: '14|>🇬🇧 GB|Ms|0104|TG@FProxies| #1'
-  password: '!!str 3723507166611775488'
-  port: 443
-  server: boss-hound.boa152.lol
-  skip-cert-verify: true
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 14|>🇬🇧 GB|Hs|1115|TG@FProxies|
-  network: ws
-  port: '443'
-  server: 16.724064.xyz
+  port: '2096'
+  server: 1744294341.tencentapp.cn
+  servername: 1744293778.speed.ukavsdga.cccp.freefly.pp.ua
   tls: true
   type: vmess
-  uuid: b7cf4466-956a-4639-b861-0cf78cbb6f8f
+  uuid: ffad2ef2-7b55-4f71-bc81-de5e0f769adc
   ws-opts:
     headers:
-      Host: 16.724064.xyz
-    path: /zlppvws
+      Host: 1744293778.speed.ukavsdga.cccp.freefly.pp.ua
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 14|🇬🇧 英国1
+  network: tcp
+  port: '45066'
+  server: haa.dashuai.cyou
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4953dd35-9fc1-4d5f-b047-ec34d96537b6
+- alterId: 0
+  cipher: auto
+  name: 14|英国2-伦敦-CDN | 1x
+  network: ws
+  port: '2096'
+  server: 1744294341.tencentapp.cn
+  servername: 1744293778.speed.ynrwkq.cccp.freefly.pp.ua
+  tls: true
+  type: vmess
+  uuid: ffad2ef2-7b55-4f71-bc81-de5e0f769adc
+  ws-opts:
+    headers:
+      Host: 1744293778.speed.ynrwkq.cccp.freefly.pp.ua
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 14|英国6-伦敦-CDN | 1x
+  network: ws
+  port: '2096'
+  server: 1744294341.tencentapp.cn
+  servername: 1744293778.speed.ukavsdgd.cccp.freefly.pp.ua
+  tls: true
+  type: vmess
+  uuid: ffad2ef2-7b55-4f71-bc81-de5e0f769adc
+  ws-opts:
+    headers:
+      Host: 1744293778.speed.ukavsdgd.cccp.freefly.pp.ua
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 14|🇬🇧 英国2
+  network: tcp
+  port: '45067'
+  server: xdd.dashuai.cyou
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4953dd35-9fc1-4d5f-b047-ec34d96537b6
 - name: 14|英国UK-T
   password: da91214e-b022-4f61-a724-01c538170e62
   port: 443
@@ -225,22 +174,12 @@ proxies:
   skip-cert-verify: false
   sni: uk.mjt000.com
   type: trojan
-- allowInsecure: ''
-  name: 14,21|英国 014
-  network: tcp
-  password: '!!str 74260698218909400'
-  port: 443
-  server: happy-bluebird.shiner427.skin
-  skip-cert-verify: false
-  sni: happy-bluebird.shiner427.skin
-  tls: true
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: 14|英国-优化2
+  name: 14|英国-优化-GPT
   network: ws
   port: '16645'
-  server: m.cnmjin.net
+  server: yes.mojcn.com
   tls: false
   type: vmess
   uuid: da91214e-b022-4f61-a724-01c538170e62
@@ -351,12 +290,12 @@ proxies:
   tls: true
   type: trojan
 - allowInsecure: ''
-  name: 21,33|🔒 TR-TCP-TLS 🇳🇱 NL-85.234.65.1...
+  name: 21,33|🔒 TR-TCP-NA 🇳🇱 NL-85.234.65.11...
   network: tcp
   password: '!!str 74260698218909400'
   port: 443
   server: 85.234.65.11
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: happy-bluebird.shiner427.skin
   tls: true
   type: trojan
@@ -378,6 +317,16 @@ proxies:
   server: 85.234.83.133
   skip-cert-verify: false
   sni: smooth-imp.shiner427.skin
+  tls: true
+  type: trojan
+- allowInsecure: ''
+  name: 21|英国 014
+  network: tcp
+  password: '!!str 74260698218909400'
+  port: 443
+  server: happy-bluebird.shiner427.skin
+  skip-cert-verify: false
+  sni: happy-bluebird.shiner427.skin
   tls: true
   type: trojan
 - name: 21|英国 015
@@ -405,14 +354,14 @@ proxies:
     path: /vc
 - cipher: chacha20-ietf-poly1305
   name: 22|0| 国住宅IP 01 | 1x UK
-  password: 5c9c5e77-7bb4-4d8d-9678-da9bc390958c
+  password: 9db30e7a-e4ec-4b1a-b030-0bbc9807a835
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 22|1|🇧英国家宽 01 | 1x UK
-  password: 0676fb91-ea9d-4e94-a688-5fe08820456f
+  password: 635583b2-54da-4846-910c-ac336a81b24d
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
@@ -426,16 +375,22 @@ proxies:
   tfo: false
   type: ss
 - cipher: aes-256-cfb
-  name: 23|🇬🇧GB-62.100.205.48-0642
+  name: 23|🇬🇧GB-62.100.205.48-0377
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 62.100.205.48
   type: ss
 - cipher: rc4-md5
-  name: 23|🇬🇧GB-146.70.61.18-0336
+  name: 23|🇬🇧GB-146.70.61.18-0385
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 146.70.61.18
+  type: ss
+- cipher: aes-128-gcm
+  name: 23|🇬🇧GB-212.102.53.197-0395
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.197
   type: ss
 - alterId: 0
   cipher: aes-128-gcm
@@ -447,76 +402,70 @@ proxies:
   tls: true
   type: ss
 - cipher: aes-128-gcm
-  name: 23|🇬🇧GB-212.102.53.80-0354
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.80
-  type: ss
-- cipher: aes-128-gcm
-  name: 23|🇬🇧GB-212.102.53.197-0356
-  password: shadowsocks
-  port: 443
-  server: uk-dc1.yangon.club
-  type: ss
-- cipher: aes-128-gcm
-  name: 23|🇬🇧GB-212.102.53.81-0349
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.81
-  type: ss
-- cipher: aes-128-gcm
-  name: 23|🇬🇧GB-212.102.53.198-0350
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.198
-  type: ss
-- cipher: aes-128-gcm
-  name: 23|🇬🇧GB-212.102.53.78-0352
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.78
-  type: ss
-- cipher: aes-128-gcm
-  name: 23|🇬🇧GB-212.102.53.195-0353
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.195
-  type: ss
-- cipher: aes-128-gcm
-  name: 23|🇬🇧GB-212.102.53.79-0348
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.79
-  type: ss
-- cipher: aes-128-gcm
-  name: 23|🇬🇧GB-212.102.53.193-0409
+  name: 23|🇬🇧GB-212.102.53.193-0423
   password: shadowsocks
   port: 443
   server: 212.102.53.193
   type: ss
 - cipher: aes-128-gcm
-  name: 23|🇬🇧GB-212.102.53.196-0435
+  name: 23|🇬🇧GB-212.102.53.78-0410
   password: shadowsocks
   port: 443
-  server: 212.102.53.196
+  server: 212.102.53.78
   type: ss
 - cipher: aes-128-gcm
-  name: 23|🇬🇧GB-212.102.53.197-0351
+  name: 23|🇬🇧GB-212.102.53.197-0398
   password: shadowsocks
   port: 443
-  server: 212.102.53.197
+  server: uk-dc1.yangon.club
   type: ss
 - cipher: aes-128-gcm
-  name: 23|🇬🇧GB-141.98.101.178-0411
+  name: 23|🇬🇧GB-212.102.53.198-0400
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.198
+  type: ss
+- cipher: rc4-md5
+  name: 23|🇬🇧GB-169.150.210.233-0414
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 169.150.210.233
+  type: ss
+- cipher: aes-128-gcm
+  name: 23|🇬🇧GB-212.102.53.79-0413
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.79
+  type: ss
+- cipher: aes-128-gcm
+  name: 23|🇬🇧GB-212.102.53.80-0403
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.80
+  type: ss
+- cipher: aes-128-gcm
+  name: 23|🇬🇧GB-212.102.53.81-0436
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.81
+  type: ss
+- cipher: aes-128-gcm
+  name: 23|🇬🇧GB-212.102.53.195-0424
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.195
+  type: ss
+- cipher: aes-128-gcm
+  name: 23|🇬🇧GB-141.98.101.178-0433
   password: shadowsocks
   port: 443
   server: 141.98.101.178
   type: ss
-- cipher: rc4-md5
-  name: 23|🇬🇧GB-169.150.210.233-0370
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 169.150.210.233
+- cipher: aes-128-gcm
+  name: 23|🇬🇧GB-212.102.53.196-0397
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.196
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: '26|0| 国住宅IP 01 | 1x UK #1'
@@ -532,6 +481,30 @@ proxies:
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- name: 33|🔒 TR-TCP-NA 🇬🇧 GB-84.8.159.155...
+  password: b19c4375-d847-4c40-9824-4767c88b5f38
+  port: 10200
+  server: 84.8.159.155
+  sni: www.ak-hk.top
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-13.134.3.22...
+  network: tcp
+  password: telegram-id-v2rayvpnchannel
+  port: 22222
+  server: 13.134.3.220
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-3.10.238.17...
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.10.238.173
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alpn:
   - http/1.1
   name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-52.56.73.22...
@@ -541,25 +514,20 @@ proxies:
   server: 52.56.73.225
   sni: trojan.burgerip.co.uk
   type: trojan
-- alterId: 0
-  name: 33,36|未知123 11.4MB/s
+- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-62.112.221....
   network: tcp
-  password: '!!str 74260698218909400'
+  password: '!!str 3747000103274291200'
   port: 443
-  server: 109.107.159.124
-  skip-cert-verify: true
-  sni: ample-warthog.shiner427.skin
-  tls: true
+  server: 62.112.221.57
+  sni: integral-malamute.adder289.quest
   type: trojan
-  udp: true
-- alpn:
-  - http/1.1
-  name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-18.175.111....
+- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-51.38.65.15...
   network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.175.111.129
-  sni: trojan.burgerip.co.uk
+  password: 43fc1ad0-1405-11f0-ace5-1239d0255272
+  port: 443
+  server: 51.38.65.155
+  skip-cert-verify: true
+  sni: tgju.org
   type: trojan
 - alterId: 0
   name: 33,36|未知58
@@ -571,21 +539,17 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-185.67.127....
+- alterId: 0
+  name: 33,36|未知123 11.4MB/s
   network: tcp
-  password: '!!str 3747000103274291200'
+  password: '!!str 74260698218909400'
   port: 443
-  server: 185.67.127.69
-  sni: ultimate-civet.adder289.quest
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-51.38.65.15...
-  network: tcp
-  password: 43fc1ad0-1405-11f0-ace5-1239d0255272
-  port: 443
-  server: 51.38.65.155
+  server: 109.107.159.124
   skip-cert-verify: true
-  sni: tgju.org
+  sni: ample-warthog.shiner427.skin
+  tls: true
   type: trojan
+  udp: true
 - name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-209.250.231...
   network: tcp
   password: Wd9QmL5Vr2Z6
@@ -593,34 +557,16 @@ proxies:
   server: 209.250.231.130
   sni: ash.d50f6225-23b4-3a7b-9f15-a0fb2fc16803.kailib.com
   type: trojan
-- alpn:
-  - http/1.1
-  name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-3.10.238.17...
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.10.238.173
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇬🇧 GB-84.8.159.155...
-  password: b19c4375-d847-4c40-9824-4767c88b5f38
-  port: 10200
-  server: 84.8.159.155
-  sni: www.ak-hk.top
+- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-51.38.71.17...
+  password: b640d791-ff83-4300-b509-c2a02f97f167
+  port: 80
+  server: 51.38.71.175
+  sni: uk1.trojanvh.xyz
   type: trojan
 - name: 33|🔒 TR-TCP-NA 🇬🇧 GB-185.193.29.1...
   password: NISHIKUITAN111
   port: 443
   server: 185.193.29.193
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-13.134.3.22...
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 13.134.3.220
-  sni: trojan.burgerip.co.uk
   type: trojan
 - name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-161.35.34.4...
   network: tcp
@@ -629,25 +575,29 @@ proxies:
   server: 161.35.34.48
   sni: yourjobnavigator.online
   type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-51.38.71.17...
-  password: b640d791-ff83-4300-b509-c2a02f97f167
-  port: 80
-  server: 51.38.71.175
-  sni: uk1.trojanvh.xyz
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-62.112.221....
+- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-185.67.127....
   network: tcp
   password: '!!str 3747000103274291200'
   port: 443
-  server: 62.112.221.57
-  sni: integral-malamute.adder289.quest
+  server: 185.67.127.69
+  sni: ultimate-civet.adder289.quest
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-18.175.111....
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.175.111.129
+  sni: trojan.burgerip.co.uk
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 35|🔒 VM-TCP-NONE 🇬🇧 GB-46.250.253...
+  name: 35|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
   network: tcp
-  port: 28872
+  port: '28872'
   server: 46.250.253.234
+  servername: ''
   tls: false
   type: vmess
   uuid: 762b3923-5885-4c5f-886f-e62788512338
