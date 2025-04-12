@@ -1,18 +1,17 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇨🇦 加拿大 01 | 1x CA
-  password: 13f7b999-e94b-4a73-9262-ad367df5ccc1
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇨🇦加拿大 01 | 1x CA
-  password: 9a4fd2b3-52f1-4b5d-bfc2-b7e0df85c2c2
-  port: 31441
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
+- alterId: 0
+  cipher: auto
+  name: 14|加拿大-优化
+  network: ws
+  port: '16641'
+  server: yes.mojcn.com
+  tls: false
+  type: vmess
+  uuid: da91214e-b022-4f61-a724-01c538170e62
+  ws-opts:
+    headers:
+      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 14|加拿大-优化3
@@ -41,44 +40,13 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 14|加拿大-优化
-  network: ws
-  port: '16641'
-  server: yes.mojcn.com
+  name: 14,35|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.16...
+  network: tcp
+  port: '58891'
+  server: 91.194.11.162
   tls: false
   type: vmess
-  uuid: da91214e-b022-4f61-a724-01c538170e62
-  ws-opts:
-    headers:
-      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 14,21,35,36|🇷🇺RU2 1012.4KB/s
-  network: tcp
-  port: 27699
-  raw:
-    add: 91.194.11.118
-    aid: '0'
-    alpn: ''
-    fp: ''
-    host: ''
-    id: c23b127b-af87-43bb-aa1e-ce42374a2b53
-    net: tcp
-    path: ''
-    port: '27699'
-    ps: 🔥Join+Telegram:@FarahVPN🟣
-    scy: auto
-    sni: ''
-    tls: ''
-    type: none
-    v: '2'
-  server: 91.194.11.118
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: c23b127b-af87-43bb-aa1e-ce42374a2b53
+  uuid: 4439cf3e-d072-4a5b-88b2-2a2ec6d71340
 - cipher: aes-256-gcm
   name: 19|🇨🇦CA-134.195.196.51-063_1@63
   password: pKEW8JPByTVTLtM
@@ -567,57 +535,42 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 22|0|🇦 加大 01 | 1x CA
-  password: cc75f8d1-5d29-4830-998b-69d23289b1ec
+  password: 616daf79-64bd-466d-b978-50c75c6abe1d
   port: 36441
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 22|1|🇦加拿大 01 | 1x CA
-  password: eabf511b-98b6-43b1-9633-5abb43bd8e47
+  password: 8a3d2662-082a-4aec-ae20-d3ecdfb2a1cc
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 23|🇨🇦CA-142.4.216.225-0455
+  name: 23|🇨🇦CA-142.4.216.225-1067
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 23|🇨🇦CA-142.4.216.225-1052
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 23|🇨🇦CA-142.4.216.225-0466
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 23,35|🔒 VM-WS-NA 🇨🇦 CA-51.79.102.253...
-  network: ws
-  port: 80
-  server: 51.79.102.253
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-  ws-opts:
-    headers:
-      Host: ''
-    path: /IOebhLMhl1CTbFHbL95myfRX2
-- cipher: chacha20-ietf-poly1305
-  name: 26|0|🇦加大 01 | 1x CA
-  password: 68641aa9-7956-45fa-a031-a5474616d351
-  port: 31441
-  server: free.2apzhfa.xyz
+  name: '26|0|🇦 加大 01 | 1x CA #1'
+  password: 13f7b999-e94b-4a73-9262-ad367df5ccc1
+  port: 36441
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 26|2|🇦 加拿大 01 | 1x CA
-  password: 6102c179-ccee-4b6c-b960-a99becc35d5d
-  port: 36441
-  server: free.2weradf.xyz
+  name: '26|1|🇦加拿大 01 | 1x CA #1'
+  password: 9a4fd2b3-52f1-4b5d-bfc2-b7e0df85c2c2
+  port: 31441
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - name: 33|🔒 TR-TCP-TLS 🇨🇦 CA-104.234.239...
@@ -636,13 +589,13 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.16...
+  name: 35|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.17...
   network: tcp
-  port: '58891'
-  server: 91.194.11.162
+  port: '28984'
+  server: 91.194.11.178
   tls: false
   type: vmess
-  uuid: 4439cf3e-d072-4a5b-88b2-2a2ec6d71340
+  uuid: 9b2335af-f24c-4810-9c34-95568ebd579d
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 36|CA
