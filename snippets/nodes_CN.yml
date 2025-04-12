@@ -1,17 +1,40 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 14|浙江省杭州市 电信
-  network: ws
-  port: 2030
-  server: sogav4.737698.xyz
+  name: 14|广东省湛江市 移动
+  network: tcp
+  port: '35001'
+  server: 120.198.71.216
   tls: false
   type: vmess
-  uuid: ea9c6c73-648d-4557-b290-11a20f6933e6
-  ws-opts:
-    headers:
-      Host: sogav4.737698.xyz
-    path: /
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: '14|广东省广州市 移动 #1'
+  network: tcp
+  port: '46597'
+  server: 120.232.153.41
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: '14|广东省湛江市 移动 #1'
+  network: tcp
+  port: '51095'
+  server: 120.198.71.219
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: '14|广东省广州市 移动 #2'
+  network: tcp
+  port: '37802'
+  server: 183.236.51.38
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 19|🇨🇳CN-139.227.223.3-049_1@49
@@ -628,17 +651,7 @@ proxies:
     Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
 - alterId: 0
-  name: 33,36|未知112
-  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
-  port: 8443
-  server: 183.240.139.234
-  skip-cert-verify: true
-  sni: official.taipeicitygovernment.co.ua
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 33,36|未知107
+  name: 33,36|未知99
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 2053
   server: 183.240.139.234
@@ -648,7 +661,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 33,36|未知86
+  name: 33,36|未知91
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 8443
   server: 183.240.139.235
@@ -657,13 +670,37 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '33|🔒 TR-TCP-TLS 🇨🇳 CN-183.240.139... #3'
+- alterId: 0
+  name: 33,36|未知47
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 2053
   server: 183.240.139.235
   skip-cert-verify: true
   sni: official.tokyometropolis.odessa.ua
+  tls: true
   type: trojan
+  udp: true
+- name: '33|🔒 TR-TCP-TLS 🇨🇳 CN-183.240.139... #3'
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+  port: 8443
+  server: 183.240.139.234
+  skip-cert-verify: true
+  sni: official.taipeicitygovernment.co.ua
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 35|🔒 VM-WS-TLS 🇨🇳 CN-120.232.17.7...
+  network: ws
+  port: 33202
+  server: 120.232.17.70
+  servername: yd2.ainivp.com
+  tls: true
+  type: vmess
+  uuid: 9204afcd-023e-781f-1abc-c12efccd1344
+  ws-opts:
+    headers:
+      Host: yd2.ainivp.com
+    path: /ray
 - alterId: 64
   cipher: auto
   name: 35|🔒 VM-RAW-NA 🇨🇳 CN-47.92.152.16...
@@ -683,26 +720,22 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
-  cipher: auto
-  name: 35|🔒 VM-WS-TLS 🇨🇳 CN-120.232.17.7...
-  network: ws
-  port: 33202
-  server: 120.232.17.70
-  servername: yd2.ainivp.com
-  tls: true
-  type: vmess
-  uuid: 9204afcd-023e-781f-1abc-c12efccd1344
-  ws-opts:
-    headers:
-      Host: yd2.ainivp.com
-    path: /ray
-- alterId: 0
-  name: 36|🇳CN国
-  password: Aimer
-  port: 2053
-  server: 154.197.64.173
+  name: 36|CN
+  password: VMhGp5wEIyCDf90T
+  port: 38340
+  server: gysz0000.dynu.net
   skip-cert-verify: true
-  sni: epcct.ambercc.filegear-sg.me
+  sni: gysz0000.dynu.net
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 36|🇨🇳CN中国2
+  password: Aimer
+  port: 2083
+  server: 154.211.8.84
+  skip-cert-verify: true
+  sni: epccr.ambercc.filegear-sg.me
   tls: true
   type: trojan
   udp: true
@@ -740,6 +773,22 @@ proxies:
   ws-opts:
     headers:
       Host: zxjp-a.tkong.cc
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 38|CN_speednode_0044
+  network: ws
+  port: 22643
+  server: 119.188.66.248
+  servername: zxjp-c.tkong.cc
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  ws-opts:
+    headers:
+      Host: zxjp-c.tkong.cc
     path: /
 - cipher: rc4-md5
   name: 38|CN_speednode_0046
