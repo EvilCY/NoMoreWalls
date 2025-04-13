@@ -1,45 +1,17 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇨🇦加拿大 01 | 1x CA
-  password: 82877ab4-ea8b-4e41-83ec-ebf504baa6dd
-  port: 31441
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 1,26|2|🇦1 |  5.1MB/s
-  network: ws
-  port: 30825
-  server: v25.heduian.link
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /oooo
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇨🇦 加拿大 01 | 1x CA
-  password: 3a27c31b-13a1-4974-b3db-14b7cb2de209
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 14|加拿大-优化
-  network: ws
-  port: '16641'
-  server: yes.mojcn.com
+  name: 2,22,35|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.17...
+  network: tcp
+  port: '28984'
+  server: 91.194.11.178
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: da91214e-b022-4f61-a724-01c538170e62
-  ws-opts:
-    headers:
-      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
-    path: /
+  uuid: 9b2335af-f24c-4810-9c34-95568ebd579d
+  ws-headers:
+    Host: 91.194.11.178
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 14|加拿大-优化3
@@ -55,10 +27,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 14|加拿大-优化2
+  name: 14|加拿大-优化
   network: ws
   port: '16641'
-  server: m.cnmjcn.com
+  server: yes.mojcn.com
   tls: false
   type: vmess
   uuid: da91214e-b022-4f61-a724-01c538170e62
@@ -76,6 +48,33 @@ proxies:
   tls: false
   type: vmess
   uuid: 4439cf3e-d072-4a5b-88b2-2a2ec6d71340
+- alterId: 2
+  cipher: auto
+  name: 14,26|1|🇦1 |  2.0MB/s
+  network: ws
+  port: 30825
+  server: v25.heduian.link
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  name: 14|加拿大-优化2
+  network: ws
+  port: '16641'
+  server: m.cnmjcn.com
+  tls: false
+  type: vmess
+  uuid: da91214e-b022-4f61-a724-01c538170e62
+  ws-opts:
+    headers:
+      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
+    path: /
 - cipher: aes-256-gcm
   name: 19|🇨🇦CA-134.195.196.51-063_1@63
   password: pKEW8JPByTVTLtM
@@ -553,27 +552,29 @@ proxies:
       Host: 100-217-184-172.s4.db-link02.top
     path: /dabai.in104.25.238.226
 - allowInsecure: ''
-  name: 21,33|🔒 TR-TCP-TLS 🇺🇸 US-142.171.162...
+  alterId: 0
+  name: 21,33,36|US27
   network: tcp
   password: ef23ddd0-14c5-39c2-9880-af55ce892363
   port: 52492
   server: 142.171.162.85
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: t28.qifei.app
   tls: true
   type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 22|0|🇦 加大 01 | 1x CA
-  password: d56e4ce2-2f50-4d7e-ab24-8750210efb67
-  port: 36441
-  server: free.2weradf.xyz
+  name: 22|0|🇦加大 01 | 1x CA
+  password: 0b570c01-8b48-4dd8-9279-8c001d3783e2
+  port: 31441
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 22|1|🇦加拿大 01 | 1x CA
-  password: 7c9ce1f0-5532-4a00-896e-6b468e89c948
-  port: 31441
-  server: free.2apzhfa.xyz
+  name: 22|1|🇦 加拿大 01 | 1x CA
+  password: 5117b131-3eee-4b5b-94cf-575e414dc482
+  port: 36441
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -589,17 +590,17 @@ proxies:
   server: ca225.vpnbook.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '26|0|🇦 加大 01 | 1x CA #1'
-  password: cabbc7b7-04be-40bc-9710-25925a864897
-  port: 36441
-  server: free.2weradf.xyz
+  name: '26|0|🇦加大 01 | 1x CA #1'
+  password: 60a5c688-c695-4f66-aab6-511b814d88fb
+  port: 31441
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '26|1|🇦加拿大 01 | 1x CA #1'
-  password: 9dd37d82-4dbe-47a6-bb28-cc9889069947
-  port: 31441
-  server: free.2apzhfa.xyz
+  name: 26|2|🇦 加拿大 01 | 1x CA
+  password: 3a27c31b-13a1-4974-b3db-14b7cb2de209
+  port: 36441
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - name: 33|🔒 TR-TCP-TLS 🇨🇦 CA-23.227.60.8...
@@ -616,12 +617,3 @@ proxies:
   server: 104.234.239.235
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.17...
-  network: tcp
-  port: '28984'
-  server: 91.194.11.178
-  tls: false
-  type: vmess
-  uuid: 9b2335af-f24c-4810-9c34-95568ebd579d
