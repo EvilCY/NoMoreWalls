@@ -1,21 +1,42 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇹🇼台湾 01 | 1x TW
-  password: 5f225e99-6e76-401d-94f0-7e372156691d
+  name: 0|🇹🇼 台湾 01 | 1x TW
+  password: 181df440-976a-469b-bdb8-73c477d87b1a
+  port: 36241
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇹🇼 台湾 02 | 1x TW
+  password: 181df440-976a-469b-bdb8-73c477d87b1a
+  port: 36243
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇹🇼 台湾 03 | 1x TW
+  password: 181df440-976a-469b-bdb8-73c477d87b1a
+  port: 36245
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇹🇼台湾 01 | 1x TW
+  password: 5dd7d900-409d-4ae7-8197-c94c6629ef0c
   port: 31241
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇹🇼台湾 02 | 1x TW
-  password: 5f225e99-6e76-401d-94f0-7e372156691d
+  name: 1|🇹🇼台湾 02 | 1x TW
+  password: 5dd7d900-409d-4ae7-8197-c94c6629ef0c
   port: 31243
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇹🇼台湾 03 | 1x TW
-  password: 5f225e99-6e76-401d-94f0-7e372156691d
+  name: 1|🇹🇼台湾 03 | 1x TW
+  password: 5dd7d900-409d-4ae7-8197-c94c6629ef0c
   port: 31245
   server: free.2apzhfa.xyz
   type: ss
@@ -28,30 +49,6 @@ proxies:
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
   server: gysz0000.dynu.net
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2,14|2|🇹🇼3 |  5.2MB/s
-  network: tcp
-  port: 16704
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: zhee01.dynu.net
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2,14|2|🇹🇼1 |  6.0MB/s
-  network: tcp
-  port: 15700
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: zhee01.dynu.net
   servername: www.nvidia.com
   tls: true
   type: vless
@@ -71,7 +68,42 @@ proxies:
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
-  name: 2|🇹🇼5 |  1.5MB/s
+  flow: xtls-rprx-vision
+  name: 2,14|2|🇹🇼3 |  5.2MB/s
+  network: tcp
+  port: 16704
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: zhee01.dynu.net
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2,14|2|🇹🇼2 |  6.1MB/s
+  network: tcp
+  port: 15823
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: gysz0000.dynu.net
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2,14|2|🇹🇼1 |  6.0MB/s
+  network: tcp
+  port: 15700
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: zhee01.dynu.net
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 2|🇹🇼6 |  1.4MB/s
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 1443
   server: twmoon1-cdn-route.couldflare-cdn.com
@@ -109,15 +141,6 @@ proxies:
   skip-cert-verify: false
   sni: hinet.mjt000.com
   type: trojan
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 14|2|🇹🇼2 |  6.1MB/s
-  port: 15823
-  server: gysz0000.dynu.net
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - name: 14|🇹🇼 AC台湾1-1｜流媒体｜x2
   network: tcp
   password: 07a0e875-9b9a-4e11-a81f-8af85f82e74d
@@ -139,15 +162,13 @@ proxies:
     headers:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
-- allowInsecure: '1'
-  name: 14,26|2|🇼7 |  4.6MB/s
+- name: 14|2|🇹🇼7 |  4.6MB/s
   network: ws
   password: 02926f9e-153a-42c8-8ecd-8fade7009ad1
   port: 443
   server: 166.0.198.68
   skip-cert-verify: true
   sni: golinkwuxian.top
-  tls: true
   type: trojan
   ws-opts:
     headers:
@@ -167,45 +188,45 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 22|0|  01 | 1x TW
-  password: de7f3e08-b67e-47aa-8184-e8b79c22852c
-  port: 36241
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 22|0|🇼 台湾 02 | 1x TW
-  password: de7f3e08-b67e-47aa-8184-e8b79c22852c
-  port: 36243
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 22|0|🇼 台湾 03 | 1x TW
-  password: de7f3e08-b67e-47aa-8184-e8b79c22852c
-  port: 36245
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 22|2|🇼台湾 01 | 1x TW
-  password: c69b3775-7535-46e0-b7f3-bb683fb49811
+  name: 22|0| 01 | 1x TW
+  password: 8076af46-cce6-4aea-9976-0a1467b67f20
   port: 31241
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 22|2|🇹🇼台湾 02 | 1x TW
-  password: c69b3775-7535-46e0-b7f3-bb683fb49811
+  name: 22|0|🇼台湾 02 | 1x TW
+  password: 8076af46-cce6-4aea-9976-0a1467b67f20
   port: 31243
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 22|2|🇼台湾 03 | 1x TW
-  password: c69b3775-7535-46e0-b7f3-bb683fb49811
+  name: 22|0|🇼台湾 03 | 1x TW
+  password: 8076af46-cce6-4aea-9976-0a1467b67f20
   port: 31245
   server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 22|2|🇼 台湾 01 | 1x TW
+  password: 941296bc-b3ef-4af7-b47f-92cbb0bfa3c0
+  port: 36241
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 22|2|🇹🇼 台湾 02 | 1x TW
+  password: 941296bc-b3ef-4af7-b47f-92cbb0bfa3c0
+  port: 36243
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 22|2|🇼 台湾 03 | 1x TW
+  password: 941296bc-b3ef-4af7-b47f-92cbb0bfa3c0
+  port: 36245
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -225,43 +246,46 @@ proxies:
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '26|0|  01 | 1x TW #1'
-  password: 746608c4-1e3f-4a57-b4e8-9879dd5c09cd
+  name: 26|0|  01 | 1x TW
+  password: a53a9ea3-d56a-4656-8ff3-2c8bd065d4e9
   port: 36241
   server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '26|0|🇼 台湾 02 | 1x TW #1'
-  password: 746608c4-1e3f-4a57-b4e8-9879dd5c09cd
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 26,36|TW
+  password: a53a9ea3-d56a-4656-8ff3-2c8bd065d4e9
   port: 36243
   server: free.2weradf.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '26|0|🇼 台湾 03 | 1x TW #1'
-  password: 746608c4-1e3f-4a57-b4e8-9879dd5c09cd
+  name: 26|0|🇼 台湾 03 | 1x TW
+  password: a53a9ea3-d56a-4656-8ff3-2c8bd065d4e9
   port: 36245
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 26|1|🇼台湾 01 | 1x TW
-  password: 050fd80b-c55b-4dcd-9874-0a30094a0f10
+  password: 5f225e99-6e76-401d-94f0-7e372156691d
   port: 31241
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: '26|1|🇹🇼台湾 02 | 1x TW #2'
-  password: 050fd80b-c55b-4dcd-9874-0a30094a0f10
+  password: 5f225e99-6e76-401d-94f0-7e372156691d
   port: 31243
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 26|1|🇼台湾 03 | 1x TW
-  password: 050fd80b-c55b-4dcd-9874-0a30094a0f10
+  password: 5f225e99-6e76-401d-94f0-7e372156691d
   port: 31245
   server: free.2apzhfa.xyz
   type: ss
@@ -304,19 +328,10 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 36|TW
-  password: b77de874-b287-49a2-9ece-cabc7fb56d66
-  port: 31245
-  server: free.2apzhfa.xyz
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
   name: '36|TW #1'
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 61.216.165.234
+  server: 60.249.35.38
   skip-cert-verify: true
   tls: true
   type: ss
@@ -325,7 +340,16 @@ proxies:
   name: 36|TW2
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 60.249.28.136
+  server: 211.72.214.66
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 36|TW3
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 60.249.35.37
   skip-cert-verify: true
   tls: true
   type: ss
