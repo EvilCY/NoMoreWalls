@@ -1,28 +1,80 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧英国家宽 01 | 1x UK
-  password: fa7d51ac-2f10-4bb0-ba7c-b1e560ae100d
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰 香港 01 | 1x HK
-  password: 4e6943c0-de19-493b-bf7e-6cb56e6e7530
+  name: 0|🇭🇰 香港 01 | 1x HK
+  password: 0d5981b6-f24d-4a09-9d68-7dfbf09f73d4
   port: 36141
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 4e6943c0-de19-493b-bf7e-6cb56e6e7530
+  name: 0|🇬🇧 英国住宅IP 01 | 1x UK
+  password: 0d5981b6-f24d-4a09-9d68-7dfbf09f73d4
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰香港 01 | 1x HK
+  password: d1dd0106-5ca6-4ee8-a5d7-4168ab320a68
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇬🇧英国家宽 01 | 1x UK
+  password: d1dd0106-5ca6-4ee8-a5d7-4168ab320a68
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  delay: 2310
+  flow: xtls-rprx-vision
+  name: '2,14,38,39|CN_speednode_0031 #1'
+  network: tcp
+  port: 14659
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: csuzhou01.1cooldns.com
+  servername: www.nvidia.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '2,14,38,39|CN_speednode_0035 #1'
+  network: tcp
+  port: 32055
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: csuzhou01.1cooldns.com
+  servername: www.amazon.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: ''
+  mode: ''
+  name: 2|🇬🇧3 |  5.2MB/s
+  network: ws
+  port: 8443
+  server: 104.17.147.22
+  servername: MdLoXlYg.rIcKtMoUsE.InFo
+  tls: true
+  type: vless
+  udp: false
+  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  ws-opts:
+    headers:
+      Host: MdLoXlYg.rIcKtMoUsE.InFo
+    path: /
 - flow: ''
   mode: ''
-  name: 2|🇬🇧1 |  3.2MB/s
+  name: 2|🇬🇧4 |  5.7MB/s
   network: ws
   port: 8443
   server: 104.17.148.22
@@ -36,7 +88,20 @@ proxies:
       Host: MdLoXlYg.rIcKtMoUsE.InFo
     path: /
 - client-fingerprint: chrome
-  delay: 2307
+  flow: xtls-rprx-vision
+  name: '2,14,38,39|CN_speednode_0045 #1'
+  network: tcp
+  port: 49699
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou05.mysynology.net
+  servername: www.amazon.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '2,14,38,39|CN_speednode_0029 #1'
   network: tcp
@@ -49,30 +114,6 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2,14|0|🇬🇧3 |  1.1MB/s
-  network: tcp
-  port: 47151
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou02.mysynology.net
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2,14|0|🇬🇧5 |  1.1MB/s
-  network: tcp
-  port: 35311
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou02.mysynology.net
-  servername: www.yahoo.com
-  tls: true
-  type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - alpn:
   - http/1.1
@@ -93,6 +134,15 @@ proxies:
   tls: true
   type: vless
   uuid: 88888888-8888-8888-8888-888888888888
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 14|0|🇬🇧3 |  1.1MB/s
+  port: 47151
+  server: shenzhou02.mysynology.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - name: 14|🇬🇧_GB_英国_11
   network: ws
   port: 2053
@@ -460,18 +510,18 @@ proxies:
       Host: vc.fly.dev
     path: /vc
 - allowInsecure: ''
-  name: 21|英国 016
+  name: 21,22|1|🇪10 |  1.5MB/s
   network: tcp
   password: I46LpSIM1f
   port: 1935
   server: 194.164.57.9
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: x4ger-ionos.devefun.net
   tls: true
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 21,22,26|0|1 |  2.4MB/s
+  name: 21|英国 017
   network: ws
   port: 443
   raw:
@@ -484,14 +534,13 @@ proxies:
     net: ws
     path: /linkws
     port: 443
-    ps: GB_153
+    ps: 🇬🇧 GB_153
     scy: ''
     sni: ''
     tls: tls
     type: ''
     v: '2'
   server: 144.24.200.164
-  servername: ''
   tls: true
   type: vmess
   uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
@@ -500,7 +549,7 @@ proxies:
       Host: beyonddsz.cfd
     path: /linkws
 - allowInsecure: ''
-  name: 21,26|0|🇧3 |  4.3MB/s
+  name: 21|英国 018
   network: tcp
   password: telegram-id-directvpn
   port: 22222
@@ -510,17 +559,17 @@ proxies:
   tls: true
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 22|0|国家宽 01 | 1x UK
-  password: 4d80a150-1857-485f-a119-873dd69520ad
-  port: 31271
-  server: free.2apzhfa.xyz
+  name: 22|0| 国住宅IP 01 | 1x UK
+  password: 065bf11f-2ef3-466c-a69c-7a63263698e8
+  port: 36271
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 22|1|🇧 英国住宅IP 01 | 1x UK
-  password: 395ebece-3131-4218-b2c4-939734d57ac1
-  port: 36271
-  server: free.2weradf.xyz
+  name: 22|2|🇧英国家宽 01 | 1x UK
+  password: 17ff808a-ad80-4c09-86f1-f2493c467858
+  port: 31271
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -623,15 +672,15 @@ proxies:
   tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 26|1|🇧国家宽 01 | 1x UK
-  password: 4547e428-09ce-45bb-be4d-7732dfe32e11
+  name: 26|0|国家宽 01 | 1x UK
+  password: fa7d51ac-2f10-4bb0-ba7c-b1e560ae100d
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 26|14|🇧 英国住宅IP 01 | 1x UK
-  password: 3eddf05b-4d68-488e-9ac4-4c5600e05a27
+  name: 26|1|🇧 英国住宅IP 01 | 1x UK
+  password: 4e6943c0-de19-493b-bf7e-6cb56e6e7530
   port: 36271
   server: free.2weradf.xyz
   type: ss
@@ -644,12 +693,6 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: 30|🔒 HYSTERIA-UDP 🇬🇧 GB-18.132.37...
-  password: 24c588b1-2853-49c7-91d2-33d93d8c8488
-  port: 443
-  server: 18.132.37.93
-  tls: false
-  type: hysteria2
 - name: 30|🔒 HYSTERIA-UDP 🇬🇧 GB-185.85.24...
   password: f7d4812f-9290-4403-bb70-d937279d9d44
   port: 1443
@@ -657,6 +700,36 @@ proxies:
   sni: gbr1.587458.xyz
   tls: false
   type: hysteria2
+- name: 30|🔒 HYSTERIA-UDP 🇬🇧 GB-18.132.37...
+  password: 24c588b1-2853-49c7-91d2-33d93d8c8488
+  port: 443
+  server: 18.132.37.93
+  tls: false
+  type: hysteria2
+- client-fingerprint: chrome
+  name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-165.232.38....
+  network: tcp
+  port: 1002
+  reality-opts:
+    public-key: w9x-dAl7ESzK_pnkH4waEZmKcazaXPFxWi3AUqSHNko
+    short-id: becf5919b526c26e
+  server: 165.232.38.199
+  servername: refersion.com
+  tls: false
+  type: vless
+  uuid: af335b42-7cd9-421f-ab04-a40cf106c680
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-18.169.158....
+  network: tcp
+  port: 32821
+  reality-opts:
+    public-key: K-rJkQX4Aix-0zxXbhxaZx2YcZmftmsMwybwpdGcpBU
+  server: 18.169.158.249
+  servername: s0.awsstatic.com
+  tls: false
+  type: vless
+  uuid: 1b187900-969e-4770-a3f6-f7f4d7bb24b8
 - client-fingerprint: ios
   flow: xtls-rprx-vision
   name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-130.162.163...
@@ -671,55 +744,28 @@ proxies:
   type: vless
   uuid: 82a224ad-4169-45e4-8bb4-3452b50139db
 - client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-165.232.38....
+  name: '31|🔒 VL-TCP-RLT 🇬🇧 GB-18.169.158.... #1'
   network: tcp
-  port: 1002
+  port: 31641
   reality-opts:
-    public-key: w9x-dAl7ESzK_pnkH4waEZmKcazaXPFxWi3AUqSHNko
-    short-id: becf5919b526c26e
-  server: 165.232.38.199
-  servername: refersion.com
+    public-key: umMTBR2TIwlPcd9TilfbnUTjszlT3H1y4Us2Z11ifl8
+  server: 18.169.158.249
+  servername: s0.awsstatic.com
   tls: false
   type: vless
-  uuid: d1b63250-4cfa-4029-8931-df44f2af2c51
+  uuid: 4260698c-e251-4454-904d-dea1cbdb7f7e
 - client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: TEL%20;%20@v2ray-store
   name: 31|🔒 VL-GRPC-RLT 🇬🇧 GB-51.89.119....
   network: grpc
-  port: 39439
+  port: 26528
   reality-opts:
-    public-key: axLa2Yb5VegTFNy2v8chJvX6ShWl5v9jPgyGeFpTMwA
-    short-id: 1f
+    public-key: 2FrbyUtv6Ajh0Ufmst5Tw0ch_aeF3tXw0kDcfOrvGTk
+    short-id: 8f9d4d9a
   server: 51.89.119.99
   servername: yahoo.com
   tls: false
   type: vless
-  uuid: c4ae75cf-4492-4a9c-85fb-6ec91616a2fd
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-18.169.158....
-  network: tcp
-  port: 32821
-  reality-opts:
-    public-key: K-rJkQX4Aix-0zxXbhxaZx2YcZmftmsMwybwpdGcpBU
-  server: 18.169.158.249
-  servername: s0.awsstatic.com
-  tls: false
-  type: vless
-  uuid: 1b187900-969e-4770-a3f6-f7f4d7bb24b8
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '31|🔒 VL-TCP-RLT 🇬🇧 GB-18.169.158.... #1'
-  network: tcp
-  port: 32785
-  reality-opts:
-    public-key: K-rJkQX4Aix-0zxXbhxaZx2YcZmftmsMwybwpdGcpBU
-  server: 18.169.158.249
-  servername: s0.awsstatic.com
-  tls: false
-  type: vless
-  uuid: 0feab3e5-b30a-47f6-b4ce-65a23fd33856
+  uuid: 422e7615-23b0-4d42-83ad-25e9a7e6d295
 - client-fingerprint: chrome
   name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-51.89.71.17...
   network: tcp
@@ -732,49 +778,6 @@ proxies:
   tls: false
   type: vless
   uuid: 04314541-ba99-49d9-9547-868e16961a1c
-- client-fingerprint: chrome
-  name: '31|🔒 VL-GRPC-RLT 🇬🇧 GB-51.89.119.... #1'
-  network: grpc
-  port: 26528
-  reality-opts:
-    public-key: 2FrbyUtv6Ajh0Ufmst5Tw0ch_aeF3tXw0kDcfOrvGTk
-    short-id: 8f9d4d9a
-  server: 51.89.119.99
-  servername: yahoo.com
-  tls: false
-  type: vless
-  uuid: d457af45-9ec8-46f7-bf70-fa8761cf627d
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '31|🔒 VL-TCP-RLT 🇬🇧 GB-18.169.158.... #2'
-  network: tcp
-  port: 32331
-  reality-opts:
-    public-key: K-rJkQX4Aix-0zxXbhxaZx2YcZmftmsMwybwpdGcpBU
-  server: 18.169.158.249
-  servername: s0.awsstatic.com
-  tls: false
-  type: vless
-  uuid: 7f4a2224-a640-4904-86d3-efdbe37ce7ad
-- name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-51.89.119.9...
-  port: 11045
-  server: 51.89.119.99
-  servername: g.soskom.ir
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  uuid: e06e1c1b-a1a5-409c-847b-3951bc293a0a
-- client-fingerprint: chrome
-  name: '31|🔒 VL-TCP-RLT 🇬🇧 GB-18.169.158.... #3'
-  network: tcp
-  port: 31641
-  reality-opts:
-    public-key: umMTBR2TIwlPcd9TilfbnUTjszlT3H1y4Us2Z11ifl8
-  server: 18.169.158.249
-  servername: s0.awsstatic.com
-  tls: false
-  type: vless
-  uuid: 4260698c-e251-4454-904d-dea1cbdb7f7e
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: 2086vless
@@ -789,12 +792,73 @@ proxies:
   tls: false
   type: vless
   uuid: 701a7842-79a2-4a48-882b-c563daad99c1
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '31|🔒 VL-TCP-RLT 🇬🇧 GB-18.169.158.... #2'
+  network: tcp
+  port: 32785
+  reality-opts:
+    public-key: K-rJkQX4Aix-0zxXbhxaZx2YcZmftmsMwybwpdGcpBU
+  server: 18.169.158.249
+  servername: s0.awsstatic.com
+  tls: false
+  type: vless
+  uuid: 0feab3e5-b30a-47f6-b4ce-65a23fd33856
+- name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-51.89.119.9...
+  port: 11045
+  server: 51.89.119.99
+  servername: g.soskom.ir
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  uuid: e06e1c1b-a1a5-409c-847b-3951bc293a0a
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: TEL%20;%20@v2ray-store
+  name: '31|🔒 VL-GRPC-RLT 🇬🇧 GB-51.89.119.... #1'
+  network: grpc
+  port: 39439
+  reality-opts:
+    public-key: axLa2Yb5VegTFNy2v8chJvX6ShWl5v9jPgyGeFpTMwA
+    short-id: 1f
+  server: 51.89.119.99
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: c4ae75cf-4492-4a9c-85fb-6ec91616a2fd
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '31|🔒 VL-TCP-RLT 🇬🇧 GB-18.169.158.... #3'
+  network: tcp
+  port: 32331
+  reality-opts:
+    public-key: K-rJkQX4Aix-0zxXbhxaZx2YcZmftmsMwybwpdGcpBU
+  server: 18.169.158.249
+  servername: s0.awsstatic.com
+  tls: false
+  type: vless
+  uuid: 7f4a2224-a640-4904-86d3-efdbe37ce7ad
+- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-51.38.71.17...
+  password: b640d791-ff83-4300-b509-c2a02f97f167
+  port: 80
+  server: 51.38.71.175
+  sni: uk1.trojanvh.xyz
+  type: trojan
 - name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-62.112.221....
   network: tcp
   password: '!!str 3747000103274291200'
   port: 443
   server: 62.112.221.57
   sni: integral-malamute.adder289.quest
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-3.8.239.206...
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 3.8.239.206
+  sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
   - http/1.1
@@ -805,6 +869,26 @@ proxies:
   server: 3.11.181.205
   sni: trojan.burgerip.co.uk
   type: trojan
+- name: 33|🔒 TR-TCP-NA 🇬🇧 GB-185.193.29.1...
+  password: NISHIKUITAN111
+  port: 443
+  server: 185.193.29.193
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-51.38.65.15...
+  network: tcp
+  password: cf49ce10-17ed-11f0-99f9-1239d0255272
+  port: 443
+  server: 51.38.65.155
+  skip-cert-verify: true
+  sni: tgju.org
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-209.250.231...
+  network: tcp
+  password: Wd9QmL5Vr2Z6
+  port: 443
+  server: 209.250.231.130
+  sni: ash.d50f6225-23b4-3a7b-9f15-a0fb2fc16803.kailib.com
+  type: trojan
 - alpn:
   - http/1.1
   name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-18.132.188....
@@ -813,13 +897,6 @@ proxies:
   port: 22222
   server: 18.132.188.47
   sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-209.250.231...
-  network: tcp
-  password: Wd9QmL5Vr2Z6
-  port: 443
-  server: 209.250.231.130
-  sni: ash.d50f6225-23b4-3a7b-9f15-a0fb2fc16803.kailib.com
   type: trojan
 - alterId: 0
   name: 33,36|未知96 9.8MB/s
@@ -832,23 +909,23 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alpn:
-  - http/1.1
-  name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-3.8.239.206...
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 3.8.239.206
-  sni: trojan.burgerip.co.uk
+- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-84.8.159.15...
+  password: b19c4375-d847-4c40-9824-4767c88b5f38
+  port: 10200
+  server: 84.8.159.155
+  sni: www.ak-hk.top
   type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-51.38.65.15...
+- alterId: 0
+  name: 33,36|未知113
   network: tcp
-  password: cf49ce10-17ed-11f0-99f9-1239d0255272
+  password: '!!str 3747000103274291200'
   port: 443
-  server: 51.38.65.155
+  server: 185.67.127.69
   skip-cert-verify: true
-  sni: tgju.org
+  sni: ultimate-civet.adder289.quest
+  tls: true
   type: trojan
+  udp: true
 - name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-161.35.34.4...
   network: tcp
   password: 2cba4104747d49d18319e5ade1b93ab5
@@ -864,35 +941,6 @@ proxies:
   port: 22222
   server: 13.41.6.195
   sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇬🇧 GB-185.193.29.1...
-  password: NISHIKUITAN111
-  port: 443
-  server: 185.193.29.193
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-84.8.159.15...
-  password: b19c4375-d847-4c40-9824-4767c88b5f38
-  port: 10200
-  server: 84.8.159.155
-  skip-cert-verify: true
-  sni: www.ak-hk.top
-  type: trojan
-- alterId: 0
-  name: 33,36|未知113
-  network: tcp
-  password: '!!str 3747000103274291200'
-  port: 443
-  server: 185.67.127.69
-  skip-cert-verify: true
-  sni: ultimate-civet.adder289.quest
-  tls: true
-  type: trojan
-  udp: true
-- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-51.38.71.17...
-  password: b640d791-ff83-4300-b509-c2a02f97f167
-  port: 80
-  server: 51.38.71.175
-  sni: uk1.trojanvh.xyz
   type: trojan
 - alterId: 0
   cipher: auto
