@@ -1,14 +1,14 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰 香港 01 | 1x HK
-  password: 4fd5302f-6860-4ac3-8ca8-2d1bfcd4a648
+  password: 3522b247-c55e-4033-b3d2-1414e08153f6
   port: 36141
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 4fd5302f-6860-4ac3-8ca8-2d1bfcd4a648
+  password: 3522b247-c55e-4033-b3d2-1414e08153f6
   port: 36271
   server: free.2weradf.xyz
   type: ss
@@ -103,7 +103,7 @@ proxies:
   server: 51.140.34.50
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 19,25|0|2 |  1.7MB/s
+  name: 19|0|🇬🇧2 |  1.7MB/s
   password: 9onFEWpRgKmtMnxtXGIWD0
   port: 64864
   server: 77.110.102.235
@@ -111,7 +111,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 19,25,35|🇬GB国
+  name: 19,35|🇬GB国
   password: f1e932dd-5aa7-4633-867b-68507b1fdb5d
   port: 36271
   server: free.2weradf.xyz
@@ -120,7 +120,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 19,25|14|🇧英国家宽 01 | 1x UK
+  name: 19|🇬🇧 14|🇬🇧英国家宽 01 | 1x UK
   password: 0978e7ed-5ce1-4945-a3f5-d31bea610fb3
   port: 31271
   server: free.2apzhfa.xyz
@@ -324,14 +324,14 @@ proxies:
     path: /linkws
 - cipher: chacha20-ietf-poly1305
   name: 21|0| 国住宅IP 01 | 1x UK
-  password: 0e4e9083-b57c-48c5-8bea-0b254196f7fb
+  password: 09e07b7b-41e0-4735-96c3-dc5f2725fa2c
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 21|1|🇧英国家宽 01 | 1x UK
-  password: fd9d9b82-a13c-4d5d-b19c-d8d3af469956
+  name: 21|2|🇧英国家宽 01 | 1x UK
+  password: a16c92ca-3766-4466-b4e8-502ec380f8fa
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
@@ -435,13 +435,27 @@ proxies:
   port: 55988
   server: mx2.drawnrisha.one
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '25|0| 国住宅IP 01 | 1x UK #1'
+  password: 4fd5302f-6860-4ac3-8ca8-2d1bfcd4a648
+  port: 36271
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 25|14|🇧英国家宽 01 | 1x UK
+  password: 49d53ea8-fb0e-4be5-8865-1e578d6b0a31
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - alpn:
   - http/1.1
-  name: 32|🔒 TR-TCP-TLS 🇬🇧 GB-35.177.26.1...
+  name: 32|🔒 TR-TCP-TLS 🇬🇧 GB-13.134.5.12...
   network: tcp
-  password: telegram-id-privatevpns
+  password: telegram-id-directvpn
   port: 22222
-  server: 35.177.26.121
+  server: 13.134.5.124
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
@@ -453,25 +467,24 @@ proxies:
   server: 18.133.209.187
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: 32|🔒 TR-TCP-NA 🇬🇧 GB-84.8.159.155...
-  password: b19c4375-d847-4c40-9824-4767c88b5f38
-  port: 10200
-  server: 84.8.159.155
-  skip-cert-verify: true
-  sni: www.ak-hk.top
-  type: trojan
-- name: 32|🔒 TR-TCP-TLS 🇬🇧 GB-185.67.127....
+- alterId: 0
+  name: 32,35|未知119 5.4MB/s
   network: tcp
-  password: '!!str 3747000103274291200'
+  password: '!!str 74260698218909400'
   port: 443
-  server: 185.67.127.69
-  sni: ultimate-civet.adder289.quest
+  server: 109.107.159.124
+  skip-cert-verify: true
+  sni: ample-warthog.shiner427.skin
+  tls: true
   type: trojan
-- name: 32|🔒 TR-TCP-TLS 🇬🇧 GB-51.38.71.17...
-  password: b640d791-ff83-4300-b509-c2a02f97f167
-  port: 80
-  server: 51.38.71.175
-  sni: uk1.trojanvh.xyz
+  udp: true
+- name: 32|🔒 TR-TCP-TLS 🇬🇧 GB-51.38.65.15...
+  network: tcp
+  password: cf49ce10-17ed-11f0-99f9-1239d0255272
+  port: 443
+  server: 51.38.65.155
+  skip-cert-verify: true
+  sni: tgju.org
   type: trojan
 - name: 32|🔒 TR-TCP-TLS 🇬🇧 GB-62.112.221....
   network: tcp
@@ -492,23 +505,6 @@ proxies:
   server: 209.250.231.130
   sni: ash.d50f6225-23b4-3a7b-9f15-a0fb2fc16803.kailib.com
   type: trojan
-- name: 32|🔒 TR-TCP-TLS 🇬🇧 GB-51.38.65.15...
-  network: tcp
-  password: cf49ce10-17ed-11f0-99f9-1239d0255272
-  port: 443
-  server: 51.38.65.155
-  skip-cert-verify: true
-  sni: tgju.org
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 32|🔒 TR-TCP-TLS 🇬🇧 GB-13.134.5.12...
-  network: tcp
-  password: telegram-id-v2rayvpnchannel
-  port: 22222
-  server: 13.134.5.124
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - name: 32|🔒 TR-TCP-TLS 🇬🇧 GB-161.35.34.4...
   network: tcp
   password: 2cba4104747d49d18319e5ade1b93ab5
@@ -516,17 +512,43 @@ proxies:
   server: 161.35.34.48
   sni: yourjobnavigator.online
   type: trojan
-- alterId: 0
-  name: 32,35|未知119 5.4MB/s
+- alpn:
+  - http/1.1
+  name: 32|🔒 TR-TCP-TLS 🇬🇧 GB-3.11.213.95...
   network: tcp
-  password: '!!str 74260698218909400'
-  port: 443
-  server: 109.107.159.124
-  skip-cert-verify: true
-  sni: ample-warthog.shiner427.skin
-  tls: true
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.11.213.95
+  sni: trojan.burgerip.co.uk
   type: trojan
-  udp: true
+- name: 32|🔒 TR-TCP-TLS 🇬🇧 GB-185.67.127....
+  network: tcp
+  password: '!!str 3747000103274291200'
+  port: 443
+  server: 185.67.127.69
+  sni: ultimate-civet.adder289.quest
+  type: trojan
+- name: 32|🔒 TR-TCP-TLS 🇬🇧 GB-51.38.71.17...
+  password: b640d791-ff83-4300-b509-c2a02f97f167
+  port: 80
+  server: 51.38.71.175
+  sni: uk1.trojanvh.xyz
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 32|🔒 TR-TCP-TLS 🇬🇧 GB-18.135.133....
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.135.133.131
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 32|🔒 TR-TCP-TLS 🇬🇧 GB-84.8.159.15...
+  password: b19c4375-d847-4c40-9824-4767c88b5f38
+  port: 10200
+  server: 84.8.159.155
+  sni: www.ak-hk.top
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 34|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
@@ -539,14 +561,14 @@ proxies:
   uuid: 762b3923-5885-4c5f-886f-e62788512338
 - cipher: chacha20-ietf-poly1305
   name: 39|🇭🇰香港 01 | 1x HK
-  password: 49d53ea8-fb0e-4be5-8865-1e578d6b0a31
+  password: 49349a6c-15d6-4fc9-bb2c-745bb03c709f
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 39|🇬🇧英国家宽 01 | 1x UK
-  password: 49d53ea8-fb0e-4be5-8865-1e578d6b0a31
+  password: 49349a6c-15d6-4fc9-bb2c-745bb03c709f
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
