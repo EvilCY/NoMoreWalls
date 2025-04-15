@@ -1,44 +1,30 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 01 | 1x HK
-  password: 0ea695c0-ed91-4393-ad57-e6c8cef57fc9
-  port: 36141
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 0ea695c0-ed91-4393-ad57-e6c8cef57fc9
-  port: 36271
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 1,22|2|🇧4 |  1.1MB/s
-  network: ws
-  port: 30836
-  server: v36.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: baidu.com
-    path: /oooo
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇭🇰香港 01 | 1x HK
-  password: 2c612590-69f0-4d27-a7fc-58d1af39d4cf
+  name: 0|🇭🇰香港 01 | 1x HK
+  password: 0f2343d4-a9b6-456d-98f9-2b63c88dbf0b
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 2|🇬🇧英国家宽 01 | 1x UK
-  password: 2c612590-69f0-4d27-a7fc-58d1af39d4cf
+  name: 0|🇬🇧英国家宽 01 | 1x UK
+  password: 0f2343d4-a9b6-456d-98f9-2b63c88dbf0b
   port: 31271
   server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇭🇰 香港 01 | 1x HK
+  password: 691bb251-77a1-4135-a689-3805654a67ee
+  port: 36141
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇬🇧 英国住宅IP 01 | 1x UK
+  password: 691bb251-77a1-4135-a689-3805654a67ee
+  port: 36271
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - alpn:
@@ -356,17 +342,17 @@ proxies:
       Host: beyonddsz.cfd
     path: /linkws
 - cipher: chacha20-ietf-poly1305
-  name: 22|0|国家宽 01 | 1x UK
-  password: b6affc67-8c10-477e-9fc6-586e77bbac85
-  port: 31271
-  server: free.2apzhfa.xyz
+  name: 22|0| 国住宅IP 01 | 1x UK
+  password: bfb0bb9e-dc26-47d1-9a5c-f57df00ef860
+  port: 36271
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 22|1|🇧 英国住宅IP 01 | 1x UK
-  password: d098249c-6aff-4221-8edb-b193cbcdcc5f
-  port: 36271
-  server: free.2weradf.xyz
+  name: 22|14|🇧英国家宽 01 | 1x UK
+  password: ce2ff801-b689-4b57-9a37-6bc124f3c2ff
+  port: 31271
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -475,19 +461,33 @@ proxies:
       host: linde06.indiavideo.sbs
     path: /linkws
 - cipher: chacha20-ietf-poly1305
-  name: 26|0| 国住宅IP 01 | 1x UK
-  password: 82abe71f-189c-401f-ab44-04b117ce3554
+  name: '26|0| 国住宅IP 01 | 1x UK #1'
+  password: 0ea695c0-ed91-4393-ad57-e6c8cef57fc9
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 26|1|🇧英国家宽 01 | 1x UK
-  password: 2137d650-e424-4d1a-a610-135b485b914b
+  name: 26|2|🇧英国家宽 01 | 1x UK
+  password: 2c612590-69f0-4d27-a7fc-58d1af39d4cf
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-84.8.159.15...
+  password: b19c4375-d847-4c40-9824-4767c88b5f38
+  port: 10200
+  server: 84.8.159.155
+  sni: www.ak-hk.top
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-51.38.65.15...
+  network: tcp
+  password: cf49ce10-17ed-11f0-99f9-1239d0255272
+  port: 443
+  server: 51.38.65.155
+  skip-cert-verify: true
+  sni: tgju.org
+  type: trojan
 - name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-109.107.159...
   network: tcp
   password: '!!str 74260698218909400'
@@ -504,13 +504,6 @@ proxies:
   server: 18.132.74.111
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-62.112.221....
-  network: tcp
-  password: '!!str 3747000103274291200'
-  port: 443
-  server: 62.112.221.57
-  sni: integral-malamute.adder289.quest
-  type: trojan
 - alpn:
   - http/1.1
   name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-3.8.62.172:...
@@ -520,10 +513,11 @@ proxies:
   server: 3.8.62.172
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: 33|🔒 TR-TCP-NA 🇬🇧 GB-185.193.29.1...
-  password: NISHIKUITAN111
-  port: 443
-  server: 185.193.29.193
+- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-51.38.71.17...
+  password: b640d791-ff83-4300-b509-c2a02f97f167
+  port: 80
+  server: 51.38.71.175
+  sni: uk1.trojanvh.xyz
   type: trojan
 - name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-161.35.34.4...
   network: tcp
@@ -532,20 +526,6 @@ proxies:
   server: 161.35.34.48
   sni: yourjobnavigator.online
   type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-84.8.159.15...
-  password: b19c4375-d847-4c40-9824-4767c88b5f38
-  port: 10200
-  server: 84.8.159.155
-  sni: www.ak-hk.top
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-51.38.65.15...
-  network: tcp
-  password: cf49ce10-17ed-11f0-99f9-1239d0255272
-  port: 443
-  server: 51.38.65.155
-  skip-cert-verify: true
-  sni: tgju.org
-  type: trojan
 - name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-209.250.231...
   network: tcp
   password: Wd9QmL5Vr2Z6
@@ -553,11 +533,12 @@ proxies:
   server: 209.250.231.130
   sni: ash.d50f6225-23b4-3a7b-9f15-a0fb2fc16803.kailib.com
   type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-51.38.71.17...
-  password: b640d791-ff83-4300-b509-c2a02f97f167
-  port: 80
-  server: 51.38.71.175
-  sni: uk1.trojanvh.xyz
+- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-62.112.221....
+  network: tcp
+  password: '!!str 3747000103274291200'
+  port: 443
+  server: 62.112.221.57
+  sni: integral-malamute.adder289.quest
   type: trojan
 - name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-185.67.127....
   network: tcp
@@ -565,6 +546,11 @@ proxies:
   port: 443
   server: 185.67.127.69
   sni: ultimate-civet.adder289.quest
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇬🇧 GB-185.193.29.1...
+  password: NISHIKUITAN111
+  port: 443
+  server: 185.193.29.193
   type: trojan
 - alterId: 0
   cipher: auto
