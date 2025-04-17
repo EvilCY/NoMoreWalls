@@ -1,14 +1,21 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇨🇦加拿大 01 | 1x CA
-  password: b3ad6719-2a79-43ec-a8ec-e55a844eb9e6
+  password: 1c23f26e-a30a-41d1-afc9-9d95b12743d0
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇨🇦 加拿大 01 | 1x CA
+  password: e9c65027-36ad-4908-ae56-9f43719466ee
+  port: 36441
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇨🇦1 |  3.8MB/s
+  name: 2|🇨🇦1 |  4.4MB/s
   network: tcp
   port: 16011
   reality-opts:
@@ -18,11 +25,23 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: '2'
+  cipher: auto
+  name: 2|🇨🇦2 |  5.1MB/s
+  network: ws
+  port: '30825'
+  server: v25.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v25.heduian.link
+    path: /oooo
 - alpn:
   - h2
   - http/1.1
   client-fingerprint: randomized
-  name: 2|[🇨🇦]t.me/ConfigsHub`
+  name: 3|[🇨🇦]t.me/ConfigsHub`
   network: ws
   port: 443
   server: 104.21.1.12
@@ -34,7 +53,7 @@ proxies:
     headers:
       Host: photographipictureai.ir
     path: '%2F%3Fed%3DMARAMBASHI_MARAMBASHI%2F%3Fed%3D2560'
-- name: '2|[🇨🇦]t.me/ConfigsHub` #1'
+- name: '3|[🇨🇦]t.me/ConfigsHub` #1'
   network: ws
   port: 80
   server: 104.26.14.85
@@ -46,7 +65,7 @@ proxies:
       Host: wHimsICAL-prEsEntAtioN.ONeeAt.CO.
     path: '%2F%3Fed%3D2048'
 - client-fingerprint: random
-  name: '2|[🇨🇦]t.me/ConfigsHub` #2'
+  name: '3|[🇨🇦]t.me/ConfigsHub` #2'
   network: ws
   port: 443
   server: 162.159.153.2
@@ -58,7 +77,7 @@ proxies:
     headers:
       Host: 5-55sfjslf.ifenxiang.cfd
     path: '%2FTelegram%40V2ray_Alpha%2F%3Fed%3D2560'
-- name: '2|[🇨🇦]t.me/ConfigsHub` #3'
+- name: '3|[🇨🇦]t.me/ConfigsHub` #3'
   network: ws
   port: 80
   server: www.speedtest.net
@@ -71,7 +90,7 @@ proxies:
     path: /?ed%3D@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn/?ed%3D2560
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 11|768d511ef3224e3b9f77031bf245df...
+  name: 12|c58acc74ceb24cac923e3e98e9d7b5...
   network: ws
   port: 2086
   server: 162.159.10.162
@@ -84,9 +103,9 @@ proxies:
     headers:
       host: 5-55sfjslf.ifenxiang.cfd
     path: /Telegram@mtmvpn
-- client-fingerprint: chrome
+- client-fingerprint: randomized
   fingerprint: ''
-  name: 11|8ac1b02e363a4cfe8c994bc6f84ba9...
+  name: 12|1b4a07430d6c471dae5a8690de7ef2...
   network: ws
   port: 8880
   server: www.speedtest.net
@@ -98,7 +117,7 @@ proxies:
     path: /Channel----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE---VPNCUSTOMIZE---VPNCUSTOMIZE---VPNCUSTOMIZE?ed=2048
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 11|858bd781ad1f4d6598d080b31f223b...
+  name: 12|512ae0d2270a4913a7ab42d05bf0ab...
   network: ws
   port: 443
   server: 104.16.186.41
@@ -113,7 +132,7 @@ proxies:
     path: /sinavm-sinavm/?ed=2560
 - client-fingerprint: randomized
   fingerprint: ''
-  name: 11|00b2f6de1c4741e6ac518ca31bc0ed...
+  name: 12|a8bbfa8f096940b1be26db169ddded...
   network: ws
   port: 443
   server: 104.21.90.210
@@ -128,7 +147,7 @@ proxies:
     path: /Telegram@V2ray_Alpha/?ed=2560
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 11|a972dab929704842bf9d4be02c0ad7...
+  name: 12|f0d7ba3ba2a84f9090f0ee64c0346a...
   network: ws
   port: 443
   server: 172.66.168.209
@@ -143,7 +162,7 @@ proxies:
     path: /linkws?ed=2560
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 11|d4ef1e55d007459b9860a2115b1c04...
+  name: 12|3be2ab27776e4b278251ec06e0e9c3...
   network: ws
   port: 443
   server: www.speedtest.net
@@ -158,7 +177,7 @@ proxies:
     path: salaam
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 11|4555779b91c842749ec78bfa519ed2...
+  name: 12|10ddb930e89945f59ab664a5eec111...
   network: grpc
   port: 2096
   server: www.speedtest.net
@@ -169,7 +188,7 @@ proxies:
   uuid: 030e448c-7535-4ea5-8c55-1b00403c0f6b
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 11|3851c976e22e4727b74639e8683ec9...
+  name: 12|e41186de2f5441c4ae489d69df2b4c...
   network: ws
   port: 8880
   server: www.speedtest.net
@@ -181,22 +200,7 @@ proxies:
     path: /Telegram-Academi_vpn--Academi_vpn--Academi_vpn--Academi_vpn--Academi_vpn--Academi_vpn--Academi_vpn--Academi_vpn--Academi_vpn--Academi_vpn--Academi_vpn--Academi_vpn--Academi_vpn--Academi_vpn--Academi_vpn---Academi_vpn--Academi_vpn--Academi_vpn--Academi_vpn--Academi_vpn-Admin-Mystic_vpn?ed=2048
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 11|2697677ccc9740379f2cc7f76d9967...
-  network: ws
-  port: 2053
-  server: 104.17.148.22
-  servername: app2.appdatanew2025g.lat
-  tls: true
-  type: vless
-  udp: false
-  uuid: c2f690dc-6187-48a8-aa8b-b75d43d11df4
-  ws-opts:
-    headers:
-      host: app2.appdatanew2025g.lat
-    path: /
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 11|240773e5177e40f695bfad055dc634...
+  name: 12|ea8f886be2eb4b699bfa320a56ad42...
   network: ws
   port: 8080
   server: tgju.org
@@ -208,7 +212,7 @@ proxies:
     path: /?ed=2048
 - client-fingerprint: random
   fingerprint: ''
-  name: 11|52c443c0169f49ffafe8132570adc5...
+  name: 12|30f9c12e9f0f453b81fa2536096253...
   network: ws
   port: 2087
   server: 104.16.148.244
@@ -223,7 +227,7 @@ proxies:
     path: /?ed=2560
 - client-fingerprint: random
   fingerprint: ''
-  name: 11|10ed7d299ae044378bb1b0e3f592ed...
+  name: 12|318c1e50937c4412ae62d6fc03c937...
   network: ws
   port: 443
   server: 104.18.27.94
@@ -238,7 +242,7 @@ proxies:
     path: /?ed=2560
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 11|471577b42d9c43dba8e168a1492177...
+  name: 12|6fe50ddebb6842919a1843a964693c...
   network: ws
   port: 443
   server: 104.21.64.1
@@ -253,7 +257,7 @@ proxies:
     path: /Eujcp9ekQlNJr3cu?ed=2560flow=-udp443flow=-udp443
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 11|4bedad8d67274884847749f5d94bc4...
+  name: 12|2c010de8f97a4d7cbdd33b48332154...
   network: ws
   port: 2095
   server: ns.cloudflare.com
@@ -267,7 +271,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 11|2e46fcce627643ee999806dc62d76a...
+  name: 12|ba9375fde1ad4c83ab3cd2af677627...
   network: ws
   port: 443
   server: 172.67.170.13
@@ -278,14 +282,14 @@ proxies:
   ws-opts:
     path: /linkws
 - client-fingerprint: chrome
-  name: 11|18ef0fc1539b4a9d915f52a50b8cc0...
+  name: 12|723b4581a0174c87975eb0ba9ae632...
   password: 89c1aea7-4d0d-4013-b663-0f94a3e6bdbd
   port: 443
   server: 172.67.149.172
   type: trojan
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 11|a731b3de92024fdc9025e0a0171873...
+  name: 12|ab7118775dfd4fb685a50c5239cdcf...
   network: ws
   port: 2095
   server: 162.159.20.34
@@ -297,7 +301,7 @@ proxies:
     path: /Telegram:TM@AZAFBAYJB1TM@Azarbayjab1
 - client-fingerprint: random
   fingerprint: ''
-  name: 11|596c822744d14efab38693cdac17b4...
+  name: 12|22f654b3515745d4b009b0a01036bd...
   network: ws
   port: 8443
   server: 104.22.15.132
@@ -312,7 +316,7 @@ proxies:
     path: /?ed=2560
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 11|3b29a286c9da4a8e89162403829d25...
+  name: 12|15649c8ff9b84665bde6ca8efb22a3...
   network: ws
   port: 443
   server: 104.24.222.73
@@ -327,7 +331,7 @@ proxies:
     path: sinavm-sinavm/?ed=2560
 - client-fingerprint: random
   fingerprint: ''
-  name: 11|d02cfe8521f3435989185a40f4ef40...
+  name: 12|de205c3319534879bf6ecea0c8926a...
   network: ws
   port: 443
   server: 104.26.12.54
@@ -342,7 +346,7 @@ proxies:
     path: /?ed=2560
 - client-fingerprint: random
   fingerprint: ''
-  name: 11|284bfb83d7cb42979f6420179b1ac0...
+  name: 12|8a8cf885ded2458d8299c4bd48734f...
   network: ws
   port: 8443
   server: 104.18.41.190
@@ -357,7 +361,7 @@ proxies:
     path: /?ed=2560
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 11|0d281af0ead346f48579412cb10604...
+  name: 12|a5cfff5c55ee4b7e98d5b1e0ee4b4c...
   network: ws
   port: 2096
   server: 104.17.128.1
@@ -372,7 +376,7 @@ proxies:
     path: /?ed=2560
 - client-fingerprint: randomized
   fingerprint: ''
-  name: 11|46faa0ab96524e4eb00acebbba4e52...
+  name: 12|649f117135134ffa888116f7a03623...
   network: ws
   port: 443
   server: 104.21.112.1
@@ -387,7 +391,7 @@ proxies:
     path: /Telegram@V2ray_Alpha/?ed=2560
 - client-fingerprint: random
   fingerprint: ''
-  name: 11|710f3a3b07084b3284ff31817665c3...
+  name: 12|e5998e88b92a47d1b2c335d5a3311a...
   network: ws
   port: 443
   server: 104.16.209.110
@@ -402,7 +406,7 @@ proxies:
     path: /
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 11|56cb7c5dc2a3458d91b98e7d227b3a...
+  name: 12|6bf82499be6a4e0ea102de819aa754...
   network: ws
   port: 2053
   server: 172.67.204.84
@@ -417,7 +421,7 @@ proxies:
     path: /containers/de
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 11|b58a047833554d6dbdb6252e67ba68...
+  name: 12|5a55f9b6b6224b3782865ed4770354...
   network: ws
   port: 80
   server: 151.101.64.155
@@ -429,7 +433,7 @@ proxies:
     path: /-LiV2ry@LIGHTNING6-TEL--@LIGHTNING6-TEL--@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL-@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL--@LIGHTNING6?ed=2048
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 11|f72e309c752e4140b6ae9b838ea8f9...
+  name: 12|d220fdeb99784a4ebd1c393ebb7f64...
   network: ws
   port: 80
   server: hajlab.ucdavis.edu
@@ -441,7 +445,7 @@ proxies:
     path: /@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy?ed=2048
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 11|baebc322ca324275b5926cce521f9c...
+  name: 12|6cfedaefef53462e948d1afb8bf274...
   network: ws
   port: 80
   server: www.speedtest.net
@@ -453,7 +457,7 @@ proxies:
     path: /@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy?ed=2048
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 11|1f1441944deb4928a2fd4e80964dca...
+  name: 12|eb4d7e2b9e0e48828a11cf537b4a0f...
   network: ws
   port: 443
   server: cloudgetservice.mcloudservice.site
@@ -468,7 +472,7 @@ proxies:
     path: /linkws?ed=2560
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 11|58a005fbc609419f93fcf35bde14b0...
+  name: 12|bfe7f6dbe6444fe687ab5b26aeecb4...
   network: ws
   port: 80
   server: zula.ir
@@ -480,7 +484,7 @@ proxies:
     path: /
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 11|f2a52f8a1cd944fbaf7c4fe8fc0ecf...
+  name: 12|9c22b0c7bf2d48898e2c4c25bb112a...
   network: ws
   port: 80
   server: chance.ns.cloudflare.com
@@ -495,7 +499,7 @@ proxies:
     path: /wss
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 11|994095fd8e7f44aaa9793a7831404a...
+  name: 12|555521bf26e542e89f7778d7f45d69...
   network: ws
   port: 8080
   server: 188.114.96.3
@@ -510,7 +514,7 @@ proxies:
     path: /z5lsHF5zQrd1rJDr
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 11|3ee8cc2668134af5baf513beac6352...
+  name: 12|b7962c32e12e4035a7780b93db156a...
   network: ws
   port: 443
   server: 172.67.200.11
@@ -523,24 +527,120 @@ proxies:
     headers:
       host: Hu9L7.890606.XyZ
     path: /jAcfFDEOj85lz42MdhsCLV
-- client-fingerprint: random
+- client-fingerprint: chrome
+  name: 12|887740cae5f345e98367ccd69c58b3...
+  password: 4d04b30c-ef7b-4a07-8f9e-f581ec171f8a
+  port: 443
+  server: 172.67.204.22
+  type: trojan
+- client-fingerprint: chrome
+  name: 12|c0eae11b1df94985a72edeb7eaecfc...
+  password: 89c1aea7-4d0d-4013-b663-0f94a3e6bdbd
+  port: 443
+  server: 104.21.58.135
+  type: trojan
+- client-fingerprint: chrome
   fingerprint: ''
-  name: 11|27dbfe8eb100449cb5241840af0323...
+  name: 12|c0889248708148f5a348e5d47529c4...
+  network: ws
+  port: 2052
+  server: www.speedtest.net
+  tls: false
+  type: vless
+  udp: false
+  uuid: 9c22197f-05b5-4748-9904-401b269ee460
+  ws-opts:
+    path: /@Maznet--@MAZNET--@Maznet--@MAZNET--@Maznet--@MAZNET--@Maznet--@MAZNET--@Maznet--@MAZNET?ed=2048
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 12|0268b01f5e404fe6a3959ae5abf9a2...
+  network: ws
+  port: 80
+  server: www.speedtest.net
+  tls: false
+  type: vless
+  udp: false
+  uuid: 4d775975-4e89-46af-8947-ecafdfa26530
+  ws-opts:
+    path: /@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy?ed=2048
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 12|3a0e6f787fd5488ca9d737af5382e9...
   network: ws
   port: 443
-  server: 104.26.12.54
-  servername: 5-55sfjslf.ifenxiang.cfd
+  server: 172.67.204.75
+  servername: sanjose-dy.818185.xyz
   tls: true
   type: vless
   udp: false
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  uuid: 89c1aea7-4d0d-4013-b663-0f94a3e6bdbd
   ws-opts:
     headers:
-      host: 5-55sfjslf.ifenxiang.cfd
-    path: /?ed=#TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
+      host: sanjose-dy.818185.xyz
+    path: /oLdow5owANhO1cThJQeJb
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 12|2bf48265f8104cbb9d41a28fb35e37...
+  network: ws
+  port: 443
+  server: www.speedtest.net
+  servername: www.speedtest.net.www.google.com.bing.com.visa.com.tls.htr.ddns-ip.net
+  tls: true
+  type: vless
+  udp: false
+  uuid: 5e1306ff-3ffa-4166-89ab-1a06ff42eca6
+  ws-opts:
+    headers:
+      host: www.speedtest.net.www.google.com.bing.com.visa.com.tls.htr.ddns-ip.net
+    path: /Telegram-XV2ry2?ed=512
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 12|35c1bdfe028c416d84af48c4497fb3...
+  network: ws
+  port: 2096
+  server: www.speedtest.net
+  servername: wi.filmekade.site
+  tls: true
+  type: vless
+  udp: false
+  uuid: dca00ac0-050b-42f8-ad56-ededaeaef2e7
+  ws-opts:
+    headers:
+      host: wi.filmekade.site
+    path: /telegram----------------v2ryNG01----v2ryNG01----v2ryNG01---v2ryNG01---------------v2ryNG01---v2ryNG01--v2ryNG01----v2ryNG01----v2ryNG01---v2ryNG01---v2ryNG01---v2ryNG01v2ryNG01----v2ryNG01----v2ryNG01---v2ryNG01---v2ryNG01---v2ryNG01?ed=2048
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 12|7dad0bbf47664dccb30929f7971525...
+  network: ws
+  port: 2083
+  server: www.speedtest.net
+  servername: mahdipok.filmekade.site
+  tls: true
+  type: vless
+  udp: false
+  uuid: c0512a6c-e10b-4f18-85c3-3d22a8cfbcfd
+  ws-opts:
+    headers:
+      host: mahdipok.filmekade.site
+    path: /telegram----------------v2ryNG01----v2ryNG01----v2ryNG01---v2ryNG01---------------v2ryNG01---v2ryNG01--v2ryNG01----v2ryNG01----v2ryNG01---v2ryNG01---v2ryNG01---v2ryNG01v2ryNG01----v2ryNG01----v2ryNG01---v2ryNG01---v2ryNG01---v2ryNG01?ed=2048
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 12|8ad3afbb08b64652b50000aec0210c...
+  network: ws
+  port: 443
+  server: 188.114.96.1
+  servername: r9ihm85sq4egopelgbfjgeigbox2dd4ljfouocj8eewswjghmtfuhrdl1agzy7s.2mievr34.workers.Dev
+  tls: true
+  type: vless
+  udp: false
+  uuid: 4bdab609-92da-4c23-b993-bbcb8caf2b03
+  ws-opts:
+    headers:
+      host: r9ihm85sq4egopelgbfjgeigbox2dd4ljfouocj8eewswjghmtfuhrdl1agzy7s.2mievr34.workers.Dev
+    path: /
 - alterId: 0
   cipher: auto
-  name: 13|加拿大-优化3
+  name: 14|加拿大-优化3
   network: ws
   port: '16641'
   server: t.cnmjcn.cyou
@@ -553,7 +653,7 @@ proxies:
     path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 13,33|🔒 VL-TCP-TLS 🇨🇦 CA-155.248.219...
+  name: 14|14|CA_speednode_0001
   port: 42557
   server: 155.248.219.28
   servername: www.yahoo.com
@@ -563,7 +663,7 @@ proxies:
   uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
 - alterId: 0
   cipher: auto
-  name: 13|加拿大-优化
+  name: 14|加拿大-优化
   network: ws
   port: '16641'
   server: yes.mojcn.com
@@ -576,7 +676,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 13|加拿大-优化2
+  name: 14|加拿大-优化2
   network: ws
   port: '16641'
   server: m.cnmjcn.com
@@ -588,36 +688,36 @@ proxies:
       Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - cipher: aes-256-gcm
-  name: 18|🇨🇦CA-134.195.196.51-063_1@63
+  name: 19|🇨🇦CA-134.195.196.51-063_1@63
   password: pKEW8JPByTVTLtM
   port: 443
   server: 134.195.196.51
   type: ss
 - cipher: aes-256-gcm
-  name: 18|🇨🇦CA-134.195.196.51-066_1@66
+  name: 19|🇨🇦CA-134.195.196.51-066_1@66
   password: Y6R9pAtvxxzmGC
   port: 3389
   server: 134.195.196.51
   type: ss
 - cipher: aes-256-gcm
-  name: 18|🇨🇦CA-134.195.196.51-068_1@68
+  name: 19|🇨🇦CA-134.195.196.51-068_1@68
   password: RexnBgU7EV5ADxG
   port: 7002
   server: 134.195.196.51
   type: ss
 - cipher: aes-256-gcm
-  name: 18|🇨🇦CA-134.195.198.211-069_1@69
+  name: 19|🇨🇦CA-134.195.198.211-069_1@69
   password: pKEW8JPByTVTLtM
   port: 443
   server: 134.195.198.211
   type: ss
 - cipher: aes-256-gcm
-  name: 18|🇨🇦CA-134.195.196.51-151_1@151
+  name: 19|🇨🇦CA-134.195.196.51-151_1@151
   password: zDNVedRFPQexG9v
   port: 6379
   server: 134.195.196.51
   type: ss
-- name: 18|🇨🇦CA-15.222.64.220-198_1@198
+- name: 19|🇨🇦CA-15.222.64.220-198_1@198
   password: xV6yLF0Z69Hm
   port: 16700
   server: 15.222.64.220
@@ -627,7 +727,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 18|加拿大 001_2@2
+  name: 19|加拿大 001_2@2
   network: ws
   port: 2082
   server: s1c.v2.v001sss.xyz
@@ -644,7 +744,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 18|加拿大 003_2@6
+  name: 19|加拿大 003_2@6
   network: ws
   port: 2086
   server: 104.21.4.14
@@ -660,7 +760,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 18|加拿大 005_2@9
+  name: 19|加拿大 005_2@9
   network: ws
   port: 2052
   server: 104.19.201.135
@@ -674,7 +774,7 @@ proxies:
     path: /video/GQ2qE5Us9g
 - alterId: 0
   cipher: auto
-  name: 18|加拿大 006_2@10
+  name: 19|加拿大 006_2@10
   network: ws
   port: 2082
   server: 104.19.201.135
@@ -688,7 +788,7 @@ proxies:
     path: /video/CuTy87zAzV/
 - alterId: 0
   cipher: auto
-  name: 18|加拿大 008_2@29
+  name: 19|加拿大 008_2@29
   network: ws
   port: 443
   server: 104.21.44.106
@@ -702,7 +802,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 18|加拿大 009_2@30
+  name: 19|加拿大 009_2@30
   network: ws
   port: 2095
   server: 172.67.214.33
@@ -715,7 +815,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 18|加拿大 010_2@46
+  name: 19|加拿大 010_2@46
   network: ws
   port: 443
   server: 172.67.145.166
@@ -729,7 +829,7 @@ proxies:
     path: /AUIKN8AU
 - alterId: 0
   cipher: auto
-  name: 18|加拿大 011_2@50
+  name: 19|加拿大 011_2@50
   network: ws
   port: 443
   server: 172.67.135.55
@@ -743,7 +843,7 @@ proxies:
     path: /AUIKN8AU
 - alterId: 0
   cipher: auto
-  name: 18|加拿大 012_2@53
+  name: 19|加拿大 012_2@53
   network: ws
   port: 443
   server: 162.159.135.42
@@ -757,7 +857,7 @@ proxies:
     path: /IYKLD53M
 - alterId: 0
   cipher: auto
-  name: 18|加拿大 013_2@54
+  name: 19|加拿大 013_2@54
   network: ws
   port: 2053
   server: 104.19.163.54
@@ -773,7 +873,7 @@ proxies:
     path: /db00
 - alterId: 0
   cipher: auto
-  name: 18|加拿大 014_2@55
+  name: 19|加拿大 014_2@55
   network: ws
   port: 2083
   server: 104.18.121.75
@@ -789,7 +889,7 @@ proxies:
     path: /db00
 - alterId: 0
   cipher: auto
-  name: 18|加拿大 015_2@56
+  name: 19|加拿大 015_2@56
   network: ws
   port: 2083
   server: 104.19.58.127
@@ -805,7 +905,7 @@ proxies:
     path: /db00
 - alterId: 0
   cipher: auto
-  name: 18|加拿大 016_2@57
+  name: 19|加拿大 016_2@57
   network: ws
   port: 2053
   server: 104.19.169.7
@@ -821,7 +921,7 @@ proxies:
     path: /db00
 - alterId: 0
   cipher: auto
-  name: 18|加拿大 018_2@60
+  name: 19|加拿大 018_2@60
   network: ws
   port: 8880
   server: go.snangua.com
@@ -834,7 +934,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 18|加拿大 019_2@61
+  name: 19|加拿大 019_2@61
   network: ws
   port: 8880
   server: us-01.snangua.com
@@ -847,7 +947,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 18|加拿大 020_2@62
+  name: 19|加拿大 020_2@62
   network: ws
   port: 8880
   server: jp-01.snangua.com
@@ -860,7 +960,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 18|加拿大 021_2@63
+  name: 19|加拿大 021_2@63
   network: ws
   port: 8880
   server: au-01.snangua.com
@@ -873,7 +973,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 18|加拿大 022_2@64
+  name: 19|加拿大 022_2@64
   network: ws
   port: 8880
   server: fr-01.snangua.com
@@ -886,7 +986,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 18|加拿大 023_2@66
+  name: 19|加拿大 023_2@66
   network: ws
   port: 443
   server: 104.19.225.226
@@ -902,7 +1002,7 @@ proxies:
     path: /db00
 - alterId: 0
   cipher: auto
-  name: 18|加拿大 024_2@67
+  name: 19|加拿大 024_2@67
   network: ws
   port: 2053
   server: 104.17.164.97
@@ -918,7 +1018,7 @@ proxies:
     path: /db00
 - alterId: 0
   cipher: auto
-  name: 18|加拿大 025_2@68
+  name: 19|加拿大 025_2@68
   network: ws
   port: 2083
   server: 104.19.13.82
@@ -934,7 +1034,7 @@ proxies:
     path: /db00
 - alterId: 0
   cipher: auto
-  name: 18|加拿大 026_2@69
+  name: 19|加拿大 026_2@69
   network: ws
   port: 2083
   server: 104.19.133.38
@@ -950,7 +1050,7 @@ proxies:
     path: /db00
 - alterId: 0
   cipher: auto
-  name: 18|加拿大 027_2@70
+  name: 19|加拿大 027_2@70
   network: ws
   port: 80
   server: 16.namesilo123.top
@@ -964,7 +1064,7 @@ proxies:
     path: /?ed
 - alterId: 0
   cipher: auto
-  name: 18|加拿大 028_2@72
+  name: 19|加拿大 028_2@72
   network: ws
   port: 2082
   server: 104.19.244.227
@@ -978,7 +1078,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1166
-  name: 20|加拿大 001
+  name: 21|加拿大 001
   network: ws
   port: 2052
   server: s1.db-link01.top
@@ -992,7 +1092,7 @@ proxies:
     path: /dabai.in172.67.2.142
 - alterId: 0
   cipher: auto
-  name: 20|加拿大 002
+  name: 21|加拿大 002
   network: ws
   port: 8880
   server: s4.db-link02.top
@@ -1008,7 +1108,7 @@ proxies:
     path: /dabai.in104.25.239.131
 - alterId: 0
   cipher: auto
-  name: 20|加拿大 003
+  name: 21|加拿大 003
   network: ws
   port: 8080
   server: 104.16.155.10
@@ -1024,7 +1124,7 @@ proxies:
     path: /dabai.in104.20.16.209
 - alterId: 0
   cipher: auto
-  name: 20|加拿大 004
+  name: 21|加拿大 004
   network: ws
   port: 2086
   server: s1.cn-db.top
@@ -1037,7 +1137,7 @@ proxies:
       Host: 100-47-154-9.s1.cn-db.top
     path: /
 - delay: 1303
-  name: 20|加拿大 005
+  name: 21|加拿大 005
   network: ws
   port: 443
   server: 140.238.158.238
@@ -1053,7 +1153,7 @@ proxies:
     path: /?ed=2560
 - alterId: 0
   cipher: auto
-  name: 20|加拿大 006
+  name: 21|加拿大 006
   network: ws
   port: 443
   server: us159.vp1000.net
@@ -1065,7 +1165,7 @@ proxies:
     headers:
       Host: us148.vp1000.net
     path: /cp100vp800kkkdsnx
-- name: 20|加拿大 007
+- name: 21|加拿大 007
   network: ws
   port: 443
   server: 138.197.175.155
@@ -1082,7 +1182,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 20|加拿大 008
+  name: 21|加拿大 008
   network: ws
   port: 8080
   server: s4.db-link02.top
@@ -1094,7 +1194,7 @@ proxies:
       Host: 100-217-184-172.s4.db-link02.top
     path: /dabai.in104.25.238.226
 - allowInsecure: ''
-  name: 20|加拿大 009
+  name: 21|加拿大 009
   network: tcp
   password: ef23ddd0-14c5-39c2-9880-af55ce892363
   port: 52492
@@ -1104,27 +1204,27 @@ proxies:
   tls: true
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 21|0|🇦加大 01 | 1x CA
-  password: 970378f2-2526-44ac-978f-a325e7752891
+  name: 22|0|🇦加大 01 | 1x CA
+  password: a93bcfa4-71b9-4c24-a82d-657bd08107bf
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 21|2|🇦 加拿大 01 | 1x CA
-  password: cacf0705-d55f-436d-b3e7-9c02bb3eaab0
+  name: 22|14|🇦 加拿大 01 | 1x CA
+  password: e89d961b-ce65-4df1-ad7b-ec4330a3d45c
   port: 36441
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 22|🇨🇦CA-142.4.216.225-1090
+  name: 23|🇨🇦CA-142.4.216.225-1090
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 22|🇨🇦CA-142.4.216.225-1078
+  name: 23|🇨🇦CA-142.4.216.225-1078
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
@@ -1132,7 +1232,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 22|🇨🇦CA-51.79.102.253-6345
+  name: 23|🇨🇦CA-51.79.102.253-6345
   network: ws
   port: 80
   server: 51.79.102.253
@@ -1145,21 +1245,20 @@ proxies:
       host: ''
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - cipher: chacha20-ietf-poly1305
-  name: 25|0|🇦 加大 01 | 1x CA
-  password: daaacaf2-ce3e-4851-94f0-7c03a01629df
+  name: '26|0|🇦加大 01 | 1x CA #1'
+  password: b3ad6719-2a79-43ec-a8ec-e55a844eb9e6
+  port: 31441
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '26|14|🇦 加拿大 01 | 1x CA #1'
+  password: 022dd8ac-f131-4ac3-8ccf-75142f364ea4
   port: 36441
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 29|🔒 HYSTERIA-UDP 🇨🇦 CA-204.216.1...
-  password: sysadmin.sysadmin
-  port: 2024
-  server: 204.216.108.5
-  skip-cert-verify: true
-  sni: 204-216-108-5.nip.io
-  tls: false
-  type: hysteria2
-- name: 29|🔒 HYSTERIA-UDP 🇨🇦 CA-192.18.14...
+- name: 30|🔒 HYSTERIA-UDP 🇨🇦 CA-192.18.14...
   password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
   port: 45979
   server: 192.18.145.7
@@ -1167,7 +1266,7 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: 29|🔒 HYSTERIA-UDP 🇨🇦 CA-155.248.2...
+- name: 30|🔒 HYSTERIA-UDP 🇨🇦 CA-155.248.2...
   password: 2429bee3-e0c1-47dd-b420-75e6512b184b
   port: 30300
   server: 155.248.219.28
@@ -1175,8 +1274,16 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
+- name: 30|🔒 HYSTERIA-UDP 🇨🇦 CA-204.216.1...
+  password: sysadmin.sysadmin
+  port: 2024
+  server: 204.216.108.5
+  skip-cert-verify: true
+  sni: 204-216-108-5.nip.io
+  tls: false
+  type: hysteria2
 - client-fingerprint: chrome
-  name: 30|🔒 VL-GRPC-RLT 🇨🇦 CA-138.197.15...
+  name: 31|🔒 VL-GRPC-RLT 🇨🇦 CA-138.197.15...
   network: grpc
   port: 443
   reality-opts:
@@ -1186,9 +1293,9 @@ proxies:
   servername: CaNVa.com
   tls: false
   type: vless
-  uuid: df626997-5175-4cb3-b62c-2004bada773f
+  uuid: e76ff182-f086-47e8-beab-ee76ce0b3120
 - client-fingerprint: chrome
-  name: 30|🔒 VL-TCP-RLT 🇨🇦 CA-167.99.183....
+  name: 31|🔒 VL-TCP-RLT 🇨🇦 CA-167.99.183....
   network: tcp
   port: 443
   reality-opts:
@@ -1199,176 +1306,23 @@ proxies:
   tls: false
   type: vless
   uuid: e26a79fd-35d0-4c25-8f6b-8bcd8726348c
-- name: 32|🔒 TR-TCP-TLS 🇨🇦 CA-104.234.239...
+- name: 33|🔒 TR-TCP-TLS 🇨🇦 CA-104.234.239...
   network: tcp
   password: Aimer
   port: 2087
   server: 104.234.239.235
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- name: 32|🔒 TR-TCP-TLS 🇨🇦 CA-23.227.60.8...
+- name: 33|🔒 TR-TCP-TLS 🇨🇦 CA-23.227.60.8...
   network: tcp
   password: bpb-trojan
   port: 443
   server: 23.227.60.8
   sni: 403b3611-99bc-43b7-88D7-26Ed5D0825A9-3.paGeS.dev
   type: trojan
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: random
-  name: 33|🔒 VL-WS-TLS 🇨🇦 CA-23.227.38.9:...
-  network: ws
-  port: 443
-  server: 23.227.38.9
-  servername: show.wfft.ir
-  tls: true
-  type: vless
-  uuid: 7c9e3c1d-a360-4429-9189-e45a98de7fde
-  ws-opts:
-    headers:
-      Host: show.wfft.ir
-    path: t.me/sinavm%3D@sinavm
-- name: 33|🔒 VL-WS-TLS 🇨🇦 CA-138.197.175....
-  network: ws
-  port: 443
-  server: 138.197.175.155
-  servername: imn90-plkdefss5487-jhnvgfdf.ssaaddaaffmmoottaahhaarrii.store
-  tls: true
-  type: vless
-  uuid: 3df4aabf-29d7-457e-f228-016156fc686a
-  ws-opts:
-    headers:
-      Host: imn90-plkdefss5487-jhnvgfdf.ssaaddaaffmmoottaahhaarrii.store
-    path: '%2F'
-- client-fingerprint: ios
-  name: 33|🔒 VL-WS-TLS 🇨🇦 CA-23.227.38.0:...
-  network: ws
-  port: 443
-  server: 23.227.38.0
-  servername: us5.pqvip.top
-  tls: true
-  type: vless
-  uuid: 50c32afb-ee63-443c-ad0a-a3f4866e4106
-  ws-opts:
-    headers:
-      Host: us5.pqvip.top
-    path: '%2Fpq%2Fus5'
-- name: 33|🔒 VL-WS-NONE 🇨🇦 CA-23.227.39.1...
-  network: ws
-  port: 8080
-  server: 23.227.39.185
-  tls: false
-  type: vless
-  uuid: ebe7d94e-c664-48f6-9ab5-b7f68b9029f2
-  ws-opts:
-    headers:
-      Host: seyyed.webdade.ddns-ip.net
-    path: '%2FV2ray_Alpha%2F%3Fed%3D2560'
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 33|🔒 VL-TCP-TLS 🇨🇦 CA-132.145.108...
-  port: 26113
-  server: 132.145.108.102
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  uuid: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-- client-fingerprint: chrome
-  name: 33|🔒 VL-WS-TLS 🇨🇦 CA-23.227.39.17...
-  network: ws
-  port: 2053
-  server: 23.227.39.179
-  servername: n2vpn.projectis.ir
-  tls: true
-  type: vless
-  uuid: fa80408d-f7ce-4c96-ac0b-6c1b791b5b69
-  ws-opts:
-    headers:
-      Host: n2vpn.projectis.ir
-    path: /@n2vpn
-- name: 33|🔒 VL-WS-TLS 🇨🇦 CA-23.227.39.15...
-  network: ws
-  port: 2053
-  server: 23.227.39.154
-  servername: 8b562c77-fc99-4d25-9100-d8c0849cc9ff.bvzizx.com
-  tls: true
-  type: vless
-  uuid: 8b562c77-fc99-4d25-9100-d8c0849cc9ff
-  ws-opts:
-    headers:
-      Host: cosi.bvzizx.com
-    path: '%2Fwss37193'
-- client-fingerprint: chrome
-  name: '33|🔒 VL-WS-TLS 🇨🇦 CA-23.227.39.17... #1'
-  network: ws
-  port: 443
-  server: 23.227.39.179
-  servername: n2vpn.projectis.ir
-  tls: true
-  type: vless
-  uuid: 9ad6196e-9332-4ba8-a60f-efd3bba1f37b
-  ws-opts:
-    headers:
-      Host: n2vpn.projectis.ir
-    path: /@n2vpn
-- client-fingerprint: chrome
-  name: '33|🔒 VL-WS-TLS 🇨🇦 CA-23.227.39.17... #2'
-  network: ws
-  port: 2083
-  server: 23.227.39.179
-  servername: n2vpn.projectis.ir
-  tls: true
-  type: vless
-  uuid: 466346a8-84ec-4f9b-8fc9-f1ccb079dd67
-  ws-opts:
-    headers:
-      Host: n2vpn.projectis.ir
-    path: /@n2vpn
-- name: 33|🔒 VL-WS-TLS 🇨🇦 CA-23.227.38.13...
-  network: ws
-  port: 443
-  server: 23.227.38.135
-  servername: eupmaq-fyvoq0da0mdvvzehshnqqcd6inl5ihzvry3fo5veeghhfkkhertre6uy.t03w4b.workers.Dev
-  tls: true
-  type: vless
-  uuid: 465fc43c-9872-40f9-bb94-ebee934e40b4
-  ws-opts:
-    headers:
-      Host: eupmaq-fyvoq0da0mdvvzehshnqqcd6inl5ihzvry3fo5veeghhfkkhertre6uy.t03w4b.workers.Dev
-    path: '%2F'
-- alpn:
-  - h3
-  - h2
-  client-fingerprint: chrome
-  name: 33|🔒 VL-WS-TLS 🇨🇦 CA-23.227.39.47...
-  network: ws
-  port: 443
-  server: 23.227.39.47
-  servername: steep-pine-3b0b.facic63646.workers.dev
-  tls: true
-  type: vless
-  uuid: d6660712-4d18-47fd-b095-0c36db667250
-  ws-opts:
-    headers:
-      Host: steep-pine-3b0b.facic63646.workers.dev
-    path: '%2F%3Fed%3D2048'
-- client-fingerprint: chrome
-  name: '33|🔒 VL-WS-TLS 🇨🇦 CA-23.227.39.17... #3'
-  network: ws
-  port: 2096
-  server: 23.227.39.179
-  servername: n2vpn.projectis.ir
-  tls: true
-  type: vless
-  uuid: a2c96a8e-0dec-49f3-945b-efb6353c11e8
-  ws-opts:
-    headers:
-      Host: n2vpn.projectis.ir
-    path: /@n2vpn
 - alterId: 0
   cipher: auto
-  name: 34|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.16...
+  name: 35|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.16...
   network: tcp
   port: '58891'
   server: 91.194.11.162
@@ -1376,10 +1330,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 4439cf3e-d072-4a5b-88b2-2a2ec6d71340
-- cipher: chacha20-ietf-poly1305
-  name: 39|🇨🇦 加拿大 01 | 1x CA
-  password: 022dd8ac-f131-4ac3-8ccf-75142f364ea4
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
