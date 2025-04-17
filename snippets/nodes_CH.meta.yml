@@ -1,24 +1,8 @@
 proxies:
 - client-fingerprint: chrome
-  flow: ''
-  mode: ''
-  name: 2|🇨🇭1 |  5.4MB/s
-  network: ws
-  port: 443
-  server: 108.162.196.159
-  servername: cr7777.rayan.dpdns.org
-  tls: true
-  type: vless
-  udp: false
-  uuid: 1688039e-a45f-499e-b9f4-c098c87d3b32
-  ws-opts:
-    headers:
-      Host: cr7777.rayan.dpdns.org
-    path: /Telegram@V2ray_Alpha/?ed=2560
-- client-fingerprint: chrome
   flow: xtls-rprx-vision
   mode: ''
-  name: 2,31|🔒 VL-TCP-RLT 🇨🇭 CH-37.156.46.6...
+  name: 1,13,30,33|🔒 VL-TCP-TLS 🇨🇭 CH-37.156.46.6...
   network: tcp
   port: 6718
   reality-opts:
@@ -26,14 +10,14 @@ proxies:
     short-id: d6d54c08fbbf895f
   server: 37.156.46.65
   servername: stackoverflow.com
-  tls: false
+  tls: true
   type: vless
   udp: false
   uuid: ce9e7012-01c3-b64b-3d4c-02bb237ae098
 - client-fingerprint: chrome
   flow: ''
   mode: ''
-  name: 2|🇨🇭3 |  5.2MB/s
+  name: 1,13|2|🇨🇭3 |  5.2MB/s
   network: tcp
   port: 443
   reality-opts:
@@ -47,26 +31,7 @@ proxies:
   uuid: 88888888-8888-8888-8888-888888888888
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '14,38,39|CH_speednode_0002 #1'
-  port: 443
-  server: yapc-1.afshin.ir
-  servername: yapc-1.afshin.ir
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7c317161-5cf8-4cbc-811a-d1297c41bb23
-- name: 14|🇨🇭瑞士北部（苏黎世）
-  network: tcp
-  password: 20bc0771-1fde-45ee-8052-3c26249c43dc
-  port: 34865
-  server: 250407.jichang.my
-  skip-cert-verify: false
-  sni: zurich.678789.xyz
-  type: trojan
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '14,38,39|CH_speednode_0004 #1'
+  name: '13,33,37,38|CH_speednode_0003 #1'
   port: 443
   server: 152.67.68.116
   servername: yapc-1.afshin.ir
@@ -75,55 +40,72 @@ proxies:
   type: vless
   udp: true
   uuid: 7c317161-5cf8-4cbc-811a-d1297c41bb23
-- cipher: aes-256-cfb
-  name: 20|2|🇨🇭2 |  2.8MB/s
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 178.209.50.206
-  type: ss
-  udp: true
 - allowInsecure: ''
-  name: '21,33|🔒 TR-TCP-TLS 🇺🇸 US-141.148.158... #1'
+  name: 20|瑞士 001
+  network: tcp
+  password: 20bc0771-1fde-45ee-8052-3c26249c43dc
+  port: 52803
+  server: 250407.jichang.my
+  skip-cert-verify: false
+  sni: seoul3.678789.xyz
+  tls: true
+  type: trojan
+- allowInsecure: ''
+  alterId: 0
+  name: 20,32,35|US3
   network: tcp
   password: 20bc0771-1fde-45ee-8052-3c26249c43dc
   port: 34865
   server: 141.148.158.215
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: zurich.678789.xyz
   tls: true
   type: trojan
+  udp: true
 - cipher: aes-128-gcm
-  name: 23|🇨🇭CH-156.146.62.164-1014
+  name: 22|🇨🇭CH-156.146.62.164-1014
   password: shadowsocks
   port: 443
   server: 156.146.62.164
   type: ss
 - cipher: aes-128-gcm
-  name: 23|🇨🇭CH-156.146.62.162-1010
+  name: 22|🇨🇭CH-156.146.62.162-1010
   password: shadowsocks
   port: 443
   server: 156.146.62.162
   type: ss
 - cipher: aes-128-gcm
-  name: 23|🇨🇭CH-156.146.62.161-1012
+  name: 22|🇨🇭CH-156.146.62.161-1012
   password: shadowsocks
   port: 443
   server: 156.146.62.161
   type: ss
 - cipher: aes-128-gcm
-  name: 23|🇨🇭CH-156.146.62.163-1011
+  name: 22|🇨🇭CH-156.146.62.163-1011
   password: shadowsocks
   port: 443
   server: 156.146.62.163
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 23|🇨🇭CH-204.136.10.115-2004
+  name: 22|🇨🇭CH-204.136.10.115-2004
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 204.136.10.115
   type: ss
 - client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇨🇭 CH-84.234.31.2...
+  name: 30|🔒 VL-TCP-RLT 🇨🇭 CH-188.213.129...
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
+    short-id: fd1dff03520d8f56
+  server: 188.213.129.15
+  servername: app.hubspot.com
+  tls: false
+  type: vless
+  uuid: 823d4cd1-b204-4ba1-8f2f-92781bbf094c
+- client-fingerprint: chrome
+  name: 30|🔒 VL-TCP-RLT 🇨🇭 CH-84.234.31.2...
   network: tcp
   port: 3662
   reality-opts:
@@ -135,7 +117,7 @@ proxies:
   type: vless
   uuid: af335b42-7cd9-421f-ab04-a40cf106c680
 - client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇨🇭 CH-188.213.129...
+  name: '30|🔒 VL-TCP-RLT 🇨🇭 CH-188.213.129... #1'
   network: tcp
   port: 3662
   reality-opts:
@@ -147,32 +129,7 @@ proxies:
   type: vless
   uuid: e76ff182-f086-47e8-beab-ee76ce0b3120
 - client-fingerprint: chrome
-  name: 31|🔒 VL-GRPC-RLT 🇨🇭 CH-84.234.28....
-  network: grpc
-  port: 2096
-  reality-opts:
-    public-key: woE_DAeAkSjFhqwiaecawAOMwZUmAvaFpTbJZHvUJQk
-    short-id: 765d8c54c01a53f7
-  server: 84.234.28.90
-  servername: SoURcForgE.net
-  tls: false
-  type: vless
-  uuid: a7bb4cfa-2a99-485d-8a20-52ee05d62c01
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇨🇭 CH-37.156.46.4...
-  network: tcp
-  port: 6718
-  reality-opts:
-    public-key: KmXtdOimd1xGGg7V2rvo74_HxMd6_bzFyosF6Z5c22A
-    short-id: d6d54c08fbbf895f
-  server: 37.156.46.44
-  servername: stackoverflow.com
-  tls: false
-  type: vless
-  uuid: ce9e7012-01c3-b64b-3d4c-02bb237ae098
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇨🇭 CH-37.156.45.8...
+  name: 30|🔒 VL-TCP-RLT 🇨🇭 CH-37.156.45.8...
   network: tcp
   port: 80
   reality-opts:
@@ -184,7 +141,7 @@ proxies:
   type: vless
   uuid: 81447221-6548-60a1-a9d9-aac48e8c410b
 - client-fingerprint: chrome
-  name: '31|🔒 VL-TCP-RLT 🇨🇭 CH-84.234.31.2... #1'
+  name: '30|🔒 VL-TCP-RLT 🇨🇭 CH-84.234.31.2... #1'
   network: tcp
   port: 3661
   reality-opts:
@@ -196,7 +153,18 @@ proxies:
   type: vless
   uuid: b2b7ca5b-dee8-4d1b-ae3f-ada65ddc6322
 - client-fingerprint: chrome
-  name: '31|🔒 VL-TCP-RLT 🇨🇭 CH-188.213.129... #1'
+  name: 30,33|🔒 VL-TCP-NA 🇨🇭 CH-37.156.47.13...
+  network: tcp
+  port: 1003
+  reality-opts:
+    public-key: ZR-m-ptbkHU71ZoH-jRM8L1NqSN1rzW738PsSHFwkik
+  server: 37.156.47.137
+  servername: astartap-abr.ir
+  tls: false
+  type: vless
+  uuid: 7de5b9f2-430a-4f2c-89b8-88e04a3ba179
+- client-fingerprint: chrome
+  name: '30|🔒 VL-TCP-RLT 🇨🇭 CH-188.213.129... #2'
   network: tcp
   port: 3661
   reality-opts:
@@ -206,9 +174,32 @@ proxies:
   servername: icloud.com
   tls: false
   type: vless
-  uuid: a7bb4cfa-2a99-485d-8a20-52ee05d62c01
+  uuid: e76ff182-f086-47e8-beab-ee76ce0b3120
 - client-fingerprint: chrome
-  name: '31|🔒 VL-TCP-RLT 🇨🇭 CH-188.213.129... #2'
+  name: 30|🔒 VL-GRPC-RLT 🇨🇭 CH-84.234.28....
+  network: grpc
+  port: 2096
+  reality-opts:
+    public-key: woE_DAeAkSjFhqwiaecawAOMwZUmAvaFpTbJZHvUJQk
+    short-id: 765d8c54c01a53f7
+  server: 84.234.28.90
+  servername: SoURcForgE.net
+  tls: false
+  type: vless
+  uuid: e76ff182-f086-47e8-beab-ee76ce0b3120
+- client-fingerprint: random
+  name: 30|🔒 VL-TCP-RLT 🇨🇭 CH-188.213.130...
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: Bpiths7d9KMdrZ51naksbK710v8AEvJl5_PgMf58Xmw
+  server: 188.213.130.77
+  servername: chess.com
+  tls: false
+  type: vless
+  uuid: 299dfe44-04db-5ee0-9ee6-6fc02cd66d63
+- client-fingerprint: chrome
+  name: '30|🔒 VL-TCP-RLT 🇨🇭 CH-188.213.129... #3'
   network: tcp
   port: 1001
   reality-opts:
@@ -219,37 +210,153 @@ proxies:
   tls: false
   type: vless
   uuid: e76ff182-f086-47e8-beab-ee76ce0b3120
-- client-fingerprint: random
-  name: 31|🔒 VL-TCP-RLT 🇨🇭 CH-188.213.130...
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: Bpiths7d9KMdrZ51naksbK710v8AEvJl5_PgMf58Xmw
-  server: 188.213.130.77
-  servername: chess.com
-  tls: false
-  type: vless
-  uuid: 299dfe44-04db-5ee0-9ee6-6fc02cd66d63
-- client-fingerprint: firefox
-  name: '31|🔒 VL-TCP-RLT 🇨🇭 CH-188.213.129... #3'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
-    short-id: fd1dff03520d8f56
-  server: 188.213.129.15
-  servername: app.hubspot.com
-  tls: false
-  type: vless
-  uuid: 8c2bb7d3-7079-434b-b2ba-dc7ddc2cb859
 - client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇨🇭 CH-37.156.47.1...
+  flow: xtls-rprx-vision
+  name: 30,33|🔒 VL-TCP-TLS 🇨🇭 CH-37.156.46.4...
   network: tcp
-  port: 1003
+  port: 6718
   reality-opts:
-    public-key: ZR-m-ptbkHU71ZoH-jRM8L1NqSN1rzW738PsSHFwkik
-  server: 37.156.47.137
-  servername: astartap-abr.ir
+    public-key: KmXtdOimd1xGGg7V2rvo74_HxMd6_bzFyosF6Z5c22A
+    short-id: d6d54c08fbbf895f
+  server: 37.156.46.44
+  servername: stackoverflow.com
+  tls: true
+  type: vless
+  uuid: ce9e7012-01c3-b64b-3d4c-02bb237ae098
+- name: 33|🔒 VL-TCP-NONE 🇨🇭 CH-84.234.28....
+  network: tcp
+  port: 443
+  server: 84.234.28.26
   tls: false
   type: vless
-  uuid: 7de5b9f2-430a-4f2c-89b8-88e04a3ba179
+  uuid: ab26cf44-fa18-4b0f-ab11-b619e9db7580
+- name: 33|🔒 VL-WS-NONE 🇨🇭 CH-185.18.250....
+  network: ws
+  port: 2095
+  server: 185.18.250.52
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: fuckingcloudflare.2-5e8.workers.dev
+    path: '%2F%40AZARBAYJAB1%40AZARBAYJAB1-TABREZ.NET%3Fed%3D2560'
+- name: 33|🔒 VL-WS-TLS 🇨🇭 CH-152.67.74.22...
+  network: ws
+  port: 443
+  server: 152.67.74.223
+  servername: psycho.suex12.ir
+  tls: true
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: psycho.suex12.ir
+    path: '%2FEujcp9ekQlNJr3cu%3Fed'
+- name: '33|🔒 VL-WS-NONE 🇨🇭 CH-185.18.250.... #1'
+  network: ws
+  port: 2095
+  server: 185.18.250.76
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: fuckingcloudflare.2-5e8.workers.dev
+    path: '%2F%40AZARBAYJAB1%40AZARBAYJAB1-TABREZ.NET%3Fed%3D2560'
+- client-fingerprint: chrome
+  name: 33|🔒 VL-WS-TLS 🇨🇭 CH-140.238.218....
+  network: ws
+  port: 8443
+  server: 140.238.218.65
+  servername: re.vs2024.us.kg
+  tls: true
+  type: vless
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    path: '%2F%3Fed'
+- client-fingerprint: chrome
+  name: 33|🔒 VL-TCP-TLS 🇨🇭 CH-144.24.243....
+  network: tcp
+  port: 443
+  server: 144.24.243.207
+  servername: 147135004002.sec20org.com
+  tls: true
+  type: vless
+  uuid: 54694a33-a8dc-47dd-bc38-acd3971e0055
+- name: '33|🔒 VL-WS-NONE 🇨🇭 CH-185.18.250.... #2'
+  network: ws
+  port: 2095
+  server: 185.18.250.242
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: fuckingcloudflare.2-5e8.workers.dev
+    path: '%2F%40AZARBAYJAB1%40AZARBAYJAB1-TABREZ.NET%3Fed%3D2560'
+- client-fingerprint: chrome
+  name: '33|🔒 VL-WS-TLS 🇨🇭 CH-140.238.218.... #1'
+  network: ws
+  port: 2053
+  server: 140.238.218.65
+  servername: re.vs2024.us.kg
+  tls: true
+  type: vless
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    path: '%2Fuxs.vs2024.us.kg'
+- name: '33|🔒 VL-WS-NONE 🇨🇭 CH-185.18.250.... #3'
+  network: ws
+  port: 2095
+  server: 185.18.250.121
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: fuckingcloudflare.2-5e8.workers.dev
+    path: '%2F%40AZARBAYJAB1%40AZARBAYJAB1-TABREZ.NET%3Fed%3D2560'
+- name: 33|🔒 VL-WS-TLS 🇨🇭 CH-185.18.250.2...
+  network: ws
+  port: 443
+  server: 185.18.250.27
+  servername: sany.sofia321.woRkers.DEV
+  tls: true
+  type: vless
+  uuid: f9fd5b50-ae7d-5f9a-82e8-b1a9633e682e
+  ws-opts:
+    headers:
+      Host: sany.sofia321.woRkers.DEV
+- name: '33|🔒 VL-WS-NONE 🇨🇭 CH-185.18.250.... #4'
+  network: ws
+  port: 80
+  server: 185.18.250.12
+  tls: false
+  type: vless
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      Host: ana-SErVICe.xAbjCDZ.wORkErs.deV
+    path: '%2F1Y6MN5DFV8zB82Ai%3Fed%3D2560'
+- name: '33|🔒 VL-WS-NONE 🇨🇭 CH-185.18.250.... #5'
+  network: ws
+  port: 2095
+  server: 185.18.250.240
+  tls: false
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: fuckingcloudflare.2-5e8.workers.dev
+    path: '%2F%40AZARBAYJAB1%40AZARBAYJAB1-TABREZ.NET%3Fed%3D2560'
+- name: 33|🔒 VL-TCP-NONE 🇨🇭 CH-188.213.12...
+  network: tcp
+  port: 8855
+  server: 188.213.129.55
+  tls: false
+  type: vless
+  uuid: 1e9569c5-f581-463c-b667-34001ae127e8
+  ws-opts:
+    headers:
+      Host: zula.ir
