@@ -1,6 +1,15 @@
 proxies:
 - fast-open: true
-  name: '0,14,30|🔒 HYSTERIA-UDP 🇷🇺 RU-46.29.163... #1'
+  name: '1,14,30|🔒 HYSTERIA-UDP 🇷🇺 RU-46.17.41.... #1'
+  password: dongtaiwang.com
+  port: 64816
+  server: 46.17.41.217
+  skip-cert-verify: true
+  sni: apple.com
+  tls: false
+  type: hysteria2
+- fast-open: true
+  name: '1,14,30|🔒 HYSTERIA-UDP 🇷🇺 RU-46.29.163... #1'
   password: dongtaiwang.com
   port: 32555
   server: 46.29.163.171
@@ -8,9 +17,20 @@ proxies:
   sni: apple.com
   tls: false
   type: hysteria2
+- alpn:
+  - h3
+  auth_str: dongtaiwang.com
+  down: 1000 Mbps
+  name: 1|🇷🇺3 |  2.6MB/s
+  port: 10803
+  server: 185.22.155.71
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria
+  up: 1000 Mbps
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0,14|1|🇷🇺2 |  5.6MB/s
+  name: 1,14|1|🇷🇺2 |  5.6MB/s
   network: tcp
   port: 20216
   reality-opts:
@@ -20,27 +40,11 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- fast-open: true
-  name: '0,14,30|🔒 HYSTERIA-UDP 🇷🇺 RU-46.17.41.... #2'
-  password: dongtaiwang.com
-  port: 64816
-  server: 46.17.41.217
-  skip-cert-verify: true
-  sni: apple.com
-  tls: false
-  type: hysteria2
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇷🇺 俄罗斯 01 | 1x RU
-  password: ea9cf1e9-3baf-4699-8f25-f3d398e7222f
+  name: 2|🇷🇺 俄罗斯 01 | 1x RU
+  password: 319399bd-4167-41ac-91be-7566584192ea
   port: 36511
   server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇷🇺俄罗斯 01 | 1x RU
-  password: 1df249ce-3819-4990-b5c4-da0417c9e6d1
-  port: 31511
-  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - name: 3|👉🆔@v2ray_configs_pool📡🇷🇺®️Russ...
@@ -61,18 +65,6 @@ proxies:
   tls: false
   type: vless
   uuid: 1133fb71-5fd0-4cb1-8a2e-28708dd82f31
-- client-fingerprint: chrome
-  fingerprint: ''
-  grpc-opts:
-    grpc-service-name: vless-grpc
-  name: 12|fb364d7eae824c6bb1458786aad80c...
-  network: grpc
-  port: 8880
-  server: 45.136.117.8
-  tls: false
-  type: vless
-  udp: false
-  uuid: 4d54cca5-20ea-4ed7-b7b1-a7956dcc68c6
 - name: 14|俄罗斯RU-T
   password: da91214e-b022-4f61-a724-01c538170e62
   port: 443
@@ -172,17 +164,17 @@ proxies:
       Host: lax1.ibgfw.top
     path: /xrenvws
 - cipher: chacha20-ietf-poly1305
-  name: 22|0|🇺 01 | 1x RU
-  password: f20ab594-a046-4189-bea9-e6470f9098af
-  port: 31511
-  server: free.2apzhfa.xyz
+  name: 22|0|🇺  01 | 1x RU
+  password: cb792946-9a07-4db9-8bb8-c9b5a97544ab
+  port: 36511
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 22|1|🇺 俄罗斯 01 | 1x RU
-  password: 197413ad-0df5-42f2-8299-54135c4a6aa5
-  port: 36511
-  server: free.2weradf.xyz
+  name: 22|2|🇺俄罗斯 01 | 1x RU
+  password: 6970f967-e17a-431d-ab0b-6ebfa8ddf3d6
+  port: 31511
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -193,7 +185,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 23,36|未知51
+  name: 23,36|未知37
   password: m30QhUjzdUtXi1tsDsF7G1
   port: 46356
   server: 147.45.221.106
@@ -201,41 +193,25 @@ proxies:
   tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '26|0|🇺 01 | 1x RU #1'
-  password: 4d9a8776-25c3-4160-813a-2409f1a08523
-  port: 31511
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 26|14|🇺 俄罗斯 01 | 1x RU
-  password: b842e5dd-8811-46d1-9e82-59373b91d65c
+  name: 26|1|🇺  01 | 1x RU
+  password: ea9cf1e9-3baf-4699-8f25-f3d398e7222f
   port: 36511
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 30|🔒 HYSTERIA-UDP 🇷🇺 RU-46.17.41....
-  password: dongtaiwang.com
-  port: 37481
-  server: 46.17.41.217
-  skip-cert-verify: true
-  sni: vkvd127.mycdn.me
-  tls: false
-  type: hysteria2
+- cipher: chacha20-ietf-poly1305
+  name: '26|2|🇺俄罗斯 01 | 1x RU #1'
+  password: 1df249ce-3819-4990-b5c4-da0417c9e6d1
+  port: 31511
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - name: 30|🔒 HYSTERIA-UDP 🇷🇺 RU-46.29.163...
   password: dongtaiwang.com
   port: 18626
   server: 46.29.163.171
   skip-cert-verify: true
   sni: vkvd127.mycdn.me
-  tls: false
-  type: hysteria2
-- name: '30|🔒 HYSTERIA-UDP 🇷🇺 RU-46.17.41.... #1'
-  password: dongtaiwang.com
-  port: 12904
-  server: 46.17.41.5
-  skip-cert-verify: true
-  sni: apple.com
   tls: false
   type: hysteria2
 - name: 30|🔒 HYSTERIA-UDP 🇷🇺 RU-195.133.5...
@@ -245,6 +221,22 @@ proxies:
   port: 33007
   server: 195.133.5.127
   skip-cert-verify: true
+  tls: false
+  type: hysteria2
+- name: 30|🔒 HYSTERIA-UDP 🇷🇺 RU-46.17.41....
+  password: dongtaiwang.com
+  port: 37481
+  server: 46.17.41.217
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: '30|🔒 HYSTERIA-UDP 🇷🇺 RU-46.17.41.... #2'
+  password: dongtaiwang.com
+  port: 12904
+  server: 46.17.41.5
+  skip-cert-verify: true
+  sni: apple.com
   tls: false
   type: hysteria2
 - client-fingerprint: chrome
@@ -265,39 +257,17 @@ proxies:
     path: /mms/video
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇷🇺 RU-109.120.189...
+  name: 31|🔒 VL-TCP-RLT 🇷🇺 RU-212.233.94....
   network: tcp
   port: 443
   reality-opts:
     public-key: cGzNRbN_zruI3CVTDukB2nOqWWEj7kgkay24f2fdLmQ
     short-id: 0f917152a871e9c0
-  server: 109.120.189.30
+  server: 212.233.94.204
   servername: maviks.eu
   tls: false
   type: vless
   uuid: 0a947205-01a0-4634-8e78-daf200d02def
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇷🇺 RU-109.73.192....
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: cTm0TIKL9qK550XICK2YroOSr1u-f12h5UmBw2EAr2c
-  server: 109.73.192.184
-  servername: google.com
-  tls: false
-  type: vless
-  uuid: 306139eb-7fe5-414f-8446-3f0d3aa59df7
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇷🇺 RU-147.45.225....
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: cTm0TIKL9qK550XICK2YroOSr1u-f12h5UmBw2EAr2c
-  server: 147.45.225.188
-  servername: google.com
-  tls: false
-  type: vless
-  uuid: 677a8b21-aea4-49af-9017-f3c505218547
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 31|🔒 VL-TCP-RLT 🇷🇺 RU-212.233.95....
@@ -307,6 +277,19 @@ proxies:
     public-key: cGzNRbN_zruI3CVTDukB2nOqWWEj7kgkay24f2fdLmQ
     short-id: 0f917152a871e9c0
   server: 212.233.95.52
+  servername: maviks.eu
+  tls: false
+  type: vless
+  uuid: 0a947205-01a0-4634-8e78-daf200d02def
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 31|🔒 VL-TCP-RLT 🇷🇺 RU-109.120.189...
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: cGzNRbN_zruI3CVTDukB2nOqWWEj7kgkay24f2fdLmQ
+    short-id: 0f917152a871e9c0
+  server: 109.120.189.30
   servername: maviks.eu
   tls: false
   type: vless
@@ -326,19 +309,6 @@ proxies:
   uuid: c775021c-c5a5-476e-8f0d-d78116f506c0
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇷🇺 RU-212.233.94....
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: cGzNRbN_zruI3CVTDukB2nOqWWEj7kgkay24f2fdLmQ
-    short-id: 0f917152a871e9c0
-  server: 212.233.94.204
-  servername: maviks.eu
-  tls: false
-  type: vless
-  uuid: 0a947205-01a0-4634-8e78-daf200d02def
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
   name: 31|🔒 VL-TCP-RLT 🇷🇺 RU-213.219.215...
   network: tcp
   port: 443
@@ -350,61 +320,98 @@ proxies:
   tls: false
   type: vless
   uuid: 0a947205-01a0-4634-8e78-daf200d02def
-- name: 33|🔒 TR-WS-TLS 🇷🇺 RU-46.254.92.19...
-  network: ws
+- alterId: 0
+  name: 33,36|未知61
   password: Aimer
   port: 443
-  server: 46.254.92.191
-  sni: epcct.ambercc.filegear-sg.me
+  server: 5.182.84.244
+  skip-cert-verify: true
+  sni: agepn.ambercc.filegear-sg.me
+  tls: true
+  type: trojan
+  udp: true
+- name: 33|🔒 TR-WS-TLS 🇷🇺 RU-77.232.140.7...
+  network: ws
+  password: SSorg
+  port: 443
+  server: 77.232.140.7
+  sni: ssjj.esslh.filegear-sg.me
   type: trojan
   ws-opts:
     headers:
-      Host: epcct.ambercc.filegear-sg.me
-    path: '%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw'
-- name: 33|🔒 TR-TCP-TLS 🇷🇺 RU-5.182.84.66...
+      Host: ssjj.esslh.filegear-sg.mehttp/1.1
+    path: /?ed
+- name: 33|🔒 TR-TCP-TLS 🇷🇺 RU-46.254.93.2...
+  network: tcp
+  password: Aimer
+  port: 8443
+  server: 46.254.93.243
+  sni: agept.ambercc.filegear-sg.me
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇷🇺 RU-5.182.84.22...
+  network: tcp
+  password: Aimer
+  port: 2087
+  server: 5.182.84.229
+  sni: ngepy.ambercc.filegear-sg.me
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇷🇺 RU-46.254.93.13...
+  password: Aimer
+  port: 2087
+  server: 46.254.93.134
+  skip-cert-verify: false
+  sni: agepl.ambercc.filegear-sg.me
+  type: trojan
+- alterId: 0
+  name: 33,36|未知65
   network: tcp
   password: Aimer
   port: 2083
   server: 5.182.84.66
-  sni: acepo.ambercc.filegear-sg.me
-  type: trojan
-- name: 33|🔒 TR-WS-TLS 🇷🇺 RU-185.148.106....
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 185.148.106.44
-  sni: za.ylks.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: za.ylks.xyz
-    path: /
-- alterId: 0
-  name: 33,36|未知33
-  password: NISHIKUITAN111
-  port: 443
-  server: 5.182.84.93
   skip-cert-verify: true
+  sni: acepo.ambercc.filegear-sg.me
   tls: true
   type: trojan
   udp: true
-- name: 33|🔒 TR-WS-TLS 🇷🇺 RU-46.254.93.25...
+- alterId: 0
+  name: 33,36|未知13
+  network: tcp
+  password: Aimer
+  port: 2083
+  server: 213.241.198.56
+  skip-cert-verify: true
+  sni: ngepy.ambercc.filegear-sg.me
+  tls: true
+  type: trojan
+  udp: true
+- name: 33|🔒 TR-WS-TLS 🇷🇺 RU-176.124.223....
   network: ws
   password: Aimer
-  port: 2087
-  server: 46.254.93.251
+  port: 8443
+  server: 176.124.223.50
   sni: ageph.ambercc.filegear-sg.me
   type: trojan
   ws-opts:
     headers:
-      Host: ageph.ambercc.filegear-sg.mehttp/1.1
-    path: /
-- name: 33|🔒 TR-TCP-NA 🇷🇺 RU-213.241.198....
+      Host: ageph.ambercc.filegear-sg.mehttp%2F1.1
+    path: '%2F'
+- name: 33|🔒 TR-TCP-NA 🇷🇺 RU-5.182.85.28:...
   password: Aimer
-  port: 2053
-  server: 213.241.198.189
-  sni: epcco.ambercc.filegear-sg.me
+  port: 443
+  server: 5.182.85.28
+  skip-cert-verify: false
+  sni: epccy.ambercc.filegear-sg.me
   type: trojan
+- name: 33|🔒 TR-WS-TLS 🇷🇺 RU-46.254.92.14...
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 46.254.92.142
+  sni: ngepx.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ngepx.ambercc.filegear-sg.me
 - name: 33|🔒 TR-WS-TLS 🇷🇺 RU-46.254.92.27...
   network: ws
   password: NISHIKUITAN111
@@ -423,27 +430,56 @@ proxies:
   skip-cert-verify: true
   sni: agepy.aimercc.filegear-sg.me
   type: trojan
-- name: 33|🔒 TR-WS-TLS 🇷🇺 RU-176.124.223....
+- name: 33|🔒 TR-TCP-NA 🇷🇺 RU-176.124.223....
+  password: Aimer
+  port: 2096
+  server: 176.124.223.133
+  skip-cert-verify: false
+  sni: epccu.ambercc.filegear-sg.me
+  type: trojan
+- name: '33|🔒 TR-TCP-TLS 🇷🇺 RU-46.254.93.2... #1'
+  network: tcp
+  password: Aimer
+  port: 2053
+  server: 46.254.93.211
+  sni: ngepy.ambercc.filegear-sg.me
+  type: trojan
+- name: 33|🔒 TR-WS-TLS 🇷🇺 RU-46.254.93.52...
   network: ws
   password: Aimer
   port: 8443
-  server: 176.124.223.50
-  sni: ageph.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ageph.ambercc.filegear-sg.mehttp%2F1.1
-    path: '%2F'
-- name: 33|🔒 TR-WS-TLS 🇷🇺 RU-46.254.92.14...
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 46.254.92.142
+  server: 46.254.93.52
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
   ws-opts:
     headers:
       Host: ngepx.ambercc.filegear-sg.me
+- name: 33|🔒 TR-TCP-NA 🇷🇺 RU-213.241.198....
+  password: Aimer
+  port: 2053
+  server: 213.241.198.189
+  sni: epcco.ambercc.filegear-sg.me
+  type: trojan
+- name: 33|🔒 TR-WS-TLS 🇷🇺 RU-5.182.85.189...
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 5.182.85.189
+  sni: ngepy.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ngepy.ambercc.filegear-sg.me
+- name: '33|🔒 TR-WS-TLS 🇷🇺 RU-176.124.223.... #1'
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 176.124.223.40
+  sni: ngepy.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ngepy.ambercc.filegear-sg.me
 - alpn:
   - h3
   - h2
@@ -458,31 +494,35 @@ proxies:
   ws-opts:
     headers:
       Host: ru2.asc-sam.io
-- alterId: 0
-  name: 33,36|未知77
+- name: 33|🔒 TR-WS-TLS 🇷🇺 RU-46.254.93.17...
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 46.254.93.175
+  sni: ageph.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ageph.ambercc.filegear-sg.mehttp/1.1
+    path: /
+- name: 33|🔒 TR-TCP-TLS 🇷🇺 RU-46.254.93.3...
   network: tcp
   password: Aimer
-  port: 2053
-  server: 46.254.92.201
-  skip-cert-verify: true
-  sni: ngepx.ambercc.filegear-sg.me
-  tls: true
+  port: 8443
+  server: 46.254.93.37
+  sni: acepo.ambercc.filegear-sg.me
   type: trojan
-  udp: true
-- name: 33|🔒 TR-TCP-NA 🇷🇺 RU-89.248.207.3...
+- name: 33|🔒 TR-WS-TLS 🇷🇺 RU-46.254.92.19...
+  network: ws
   password: Aimer
   port: 443
-  server: 89.248.207.37
-  skip-cert-verify: false
-  sni: epcci.ambercc.filegear-sg.me
+  server: 46.254.92.191
+  sni: epcct.ambercc.filegear-sg.me
   type: trojan
-- name: 33|🔒 TR-TCP-NA 🇷🇺 RU-46.254.93.13...
-  password: Aimer
-  port: 2087
-  server: 46.254.93.134
-  skip-cert-verify: false
-  sni: agepl.ambercc.filegear-sg.me
-  type: trojan
+  ws-opts:
+    headers:
+      Host: epcct.ambercc.filegear-sg.me
+    path: '%2F%3Fed%3D2560%26proxyip%3Dts.hpc.tw'
 - name: 33|🔒 TR-WS-TLS 🇷🇺 RU-5.182.84.52:...
   network: ws
   password: Aimer
@@ -493,12 +533,17 @@ proxies:
   ws-opts:
     headers:
       Host: ngepx.ambercc.filegear-sg.me
-- name: 33|🔒 TR-TCP-TLS 🇷🇺 RU-213.241.198...
-  network: tcp
+- name: 33|🔒 TR-TCP-NA 🇷🇺 RU-5.182.84.93:...
+  password: NISHIKUITAN111
+  port: 443
+  server: 5.182.84.93
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇷🇺 RU-89.248.207.3...
   password: Aimer
-  port: 2083
-  server: 213.241.198.56
-  sni: ngepy.ambercc.filegear-sg.me
+  port: 443
+  server: 89.248.207.37
+  skip-cert-verify: false
+  sni: epcci.ambercc.filegear-sg.me
   type: trojan
 - name: 33|🔒 TR-TCP-TLS 🇷🇺 RU-45.67.215.2...
   network: tcp
@@ -507,6 +552,53 @@ proxies:
   server: 45.67.215.217
   sni: ngepy.ambercc.filegear-sg.me
   type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇷🇺 RU-46.254.92.2...
+  network: tcp
+  password: Aimer
+  port: 2053
+  server: 46.254.92.201
+  sni: ngepx.ambercc.filegear-sg.me
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇷🇺 RU-77.232.140....
+  network: tcp
+  password: Aimer
+  port: 2053
+  server: 77.232.140.101
+  sni: ngepy.ambercc.filegear-sg.me
+  type: trojan
+- name: 33|🔒 TR-WS-TLS 🇷🇺 RU-45.67.215.95...
+  network: ws
+  password: tg-fq521free
+  port: 443
+  server: 45.67.215.95
+  sni: torjan.xn--xhq44j.eu.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: torjan.xn--xhq44j.eu.org
+    path: /
+- alterId: 0
+  name: 33,36|未知98
+  network: tcp
+  password: Aimer
+  port: 444
+  server: 92.63.192.110
+  skip-cert-verify: true
+  sni: ngepz.ambercc.filegear-sg.me
+  tls: true
+  type: trojan
+  udp: true
+- name: 33|🔒 TR-WS-TLS 🇷🇺 RU-45.67.215.25...
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 45.67.215.250
+  sni: ageph.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ageph.ambercc.filegear-sg.mehttp/1.1
+    path: /
 - alpn:
   - http/1.1
   name: 33|🔒 TR-WS-TLS 🇷🇺 RU-213.241.198....
@@ -520,158 +612,28 @@ proxies:
     headers:
       Host: agepn.ambercc.filegear-sg.me
     path: '%2F%3Fed%3D2560'
-- name: 33|🔒 TR-TCP-NA 🇷🇺 RU-5.182.84.244...
-  password: Aimer
-  port: 443
-  server: 5.182.84.244
-  skip-cert-verify: false
-  sni: agepn.ambercc.filegear-sg.me
-  type: trojan
-- name: 33|🔒 TR-WS-TLS 🇷🇺 RU-45.67.215.25...
+- name: 33|🔒 TR-WS-TLS 🇷🇺 RU-46.254.93.25...
   network: ws
-  password: Aimer
-  port: 2096
-  server: 45.67.215.250
-  sni: ageph.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ageph.ambercc.filegear-sg.mehttp/1.1
-    path: /
-- name: 33|🔒 TR-TCP-NA 🇷🇺 RU-5.182.85.28:...
-  password: Aimer
-  port: 443
-  server: 5.182.85.28
-  skip-cert-verify: false
-  sni: epccy.ambercc.filegear-sg.me
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇷🇺 RU-92.63.192.1...
-  network: tcp
-  password: Aimer
-  port: 444
-  server: 92.63.192.110
-  sni: ngepz.ambercc.filegear-sg.me
-  type: trojan
-- alterId: 0
-  name: 33,36|未知94
-  network: tcp
-  password: Aimer
-  port: 2096
-  server: 5.182.84.22
-  skip-cert-verify: true
-  sni: ngepx.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
-- name: 33|🔒 TR-WS-TLS 🇷🇺 RU-45.67.215.95...
-  network: ws
-  password: tg-fq521free
-  port: 443
-  server: 45.67.215.95
-  sni: torjan.xn--xhq44j.eu.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: torjan.xn--xhq44j.eu.org
-    path: /
-- name: 33|🔒 TR-TCP-TLS 🇷🇺 RU-77.232.140....
-  network: tcp
-  password: Aimer
-  port: 2053
-  server: 77.232.140.101
-  sni: ngepy.ambercc.filegear-sg.me
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇷🇺 RU-176.124.223....
-  password: Aimer
-  port: 2096
-  server: 176.124.223.133
-  skip-cert-verify: false
-  sni: epccu.ambercc.filegear-sg.me
-  type: trojan
-- name: 33|🔒 TR-WS-TLS 🇷🇺 RU-46.254.93.52...
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 46.254.93.52
-  sni: ngepx.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ngepx.ambercc.filegear-sg.me
-- alterId: 0
-  name: 33,36|未知60
-  network: tcp
   password: Aimer
   port: 2087
-  server: 5.182.84.229
-  skip-cert-verify: true
-  sni: ngepy.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
-- name: 33|🔒 TR-WS-TLS 🇷🇺 RU-77.232.140.7...
-  network: ws
-  password: SSorg
-  port: 443
-  server: 77.232.140.7
-  sni: ssjj.esslh.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ssjj.esslh.filegear-sg.mehttp/1.1
-    path: /?ed
-- name: 33|🔒 TR-WS-TLS 🇷🇺 RU-46.254.93.17...
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 46.254.93.175
+  server: 46.254.93.251
   sni: ageph.ambercc.filegear-sg.me
   type: trojan
   ws-opts:
     headers:
       Host: ageph.ambercc.filegear-sg.mehttp/1.1
     path: /
-- name: 33|🔒 TR-WS-TLS 🇷🇺 RU-5.182.85.189...
+- name: 33|🔒 TR-WS-TLS 🇷🇺 RU-185.148.106....
   network: ws
-  password: Aimer
-  port: 2096
-  server: 5.182.85.189
-  sni: ngepy.ambercc.filegear-sg.me
+  password: NISHIKUITAN111
+  port: 443
+  server: 185.148.106.44
+  sni: za.ylks.xyz
   type: trojan
   ws-opts:
     headers:
-      Host: ngepy.ambercc.filegear-sg.me
-- name: 33|🔒 TR-TCP-TLS 🇷🇺 RU-46.254.93.2...
-  network: tcp
-  password: Aimer
-  port: 8443
-  server: 46.254.93.243
-  sni: agept.ambercc.filegear-sg.me
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇷🇺 RU-46.254.93.3...
-  network: tcp
-  password: Aimer
-  port: 8443
-  server: 46.254.93.37
-  sni: acepo.ambercc.filegear-sg.me
-  type: trojan
-- name: '33|🔒 TR-TCP-TLS 🇷🇺 RU-46.254.93.2... #1'
-  network: tcp
-  password: Aimer
-  port: 2053
-  server: 46.254.93.211
-  sni: ngepy.ambercc.filegear-sg.me
-  type: trojan
-- name: '33|🔒 TR-WS-TLS 🇷🇺 RU-176.124.223.... #1'
-  network: ws
-  password: Aimer
-  port: 2053
-  server: 176.124.223.40
-  sni: ngepy.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ngepy.ambercc.filegear-sg.me
+      Host: za.ylks.xyz
+    path: /
 - name: 33|🔒 TR-WS-TLS 🇷🇺 RU-5.182.85.129...
   network: ws
   password: blue2024
@@ -683,16 +645,13 @@ proxies:
     headers:
       Host: tb.promote.icu
     path: /?ed
-- alterId: 0
-  cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇷🇺 RU-45.12.114.15...
+- name: '33|🔒 TR-TCP-TLS 🇷🇺 RU-5.182.84.22... #1'
   network: tcp
-  port: '20779'
-  server: 45.12.114.15
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9dc5bff8-bcbb-4703-b0fe-4f91ba517402
+  password: Aimer
+  port: 2096
+  server: 5.182.84.22
+  sni: ngepx.ambercc.filegear-sg.me
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 35|🔒 VM-WS-NA 🇷🇺 RU-195.58.49.84:...
@@ -707,6 +666,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 35|🔒 VM-TCP-NA 🇷🇺 RU-45.12.114.15...
+  network: tcp
+  port: '20779'
+  server: 45.12.114.15
+  tls: false
+  type: vmess
+  uuid: 9dc5bff8-bcbb-4703-b0fe-4f91ba517402
+- alterId: 0
+  cipher: auto
   name: 35|🔒 VM-WS-NA 🇷🇺 RU-45.147.201.23...
   network: ws
   port: '20013'
@@ -718,15 +686,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 36|🇷🇺RU
-  password: df64ff41-2595-4501-bf42-69162d81d9aa
-  port: 36511
-  server: free.2weradf.xyz
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - name: '38,39|RU_speednode_0046 #1'
   network: ws
   port: 443
