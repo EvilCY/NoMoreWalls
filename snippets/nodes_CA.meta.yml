@@ -1,21 +1,22 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇨🇦加拿大 01 | 1x CA
-  password: 1c23f26e-a30a-41d1-afc9-9d95b12743d0
+  password: 2b093022-8134-44ad-a7bb-8291cffbe00f
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇨🇦 加拿大 01 | 1x CA
-  password: e9c65027-36ad-4908-ae56-9f43719466ee
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
+- auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  name: 1|🇨🇦1 |  2.7MB/s
+  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  port: 45979
+  server: 132.145.108.102
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇨🇦1 |  4.4MB/s
+  name: 1|🇨🇦2 |  5.0MB/s
   network: tcp
   port: 16011
   reality-opts:
@@ -25,47 +26,424 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- alterId: '2'
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇨🇦 加拿大 01 | 1x CA
+  password: 888dda67-550c-46bf-9b91-3ef4c83f20fb
+  port: 36441
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- alterId: 0
   cipher: auto
-  name: 2|🇨🇦2 |  5.1MB/s
+  name: 3,21|美国 494
   network: ws
-  port: '30825'
-  server: v25.heduian.link
+  port: 443
+  raw:
+    add: 172.67.179.199
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: linde06.indiavideo.sbs
+    id: edbb1059-1633-4271-b66e-ed4fba47a1bf
+    net: ws
+    path: /linkws
+    port: 443
+    ps: 🇺🇸 US_309
+    scy: ''
+    sni: ''
+    tls: tls
+    type: ''
+    v: '2'
+  server: 172.67.179.199
+  tls: true
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
   ws-opts:
     headers:
-      host: v25.heduian.link
-    path: /oooo
+      Host: linde06.indiavideo.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: '3|👉🆔@v2ray_configs_pool📡🇨🇦®️Cana... #1'
+  network: ws
+  port: 443
+  server: cloudgetservice.mcloudservice.site
+  tls: true
+  type: vmess
+  uuid: 3cf58606-5f2a-4609-9abd-404f633bd7e0
+  ws-opts:
+    headers:
+      Host: maXNEtVIP-usA-VP3.nETKH3.SiTE
+    path: /linkws?ed=2560
+- alterId: 0
+  cipher: auto
+  name: '3|👉🆔@v2ray_configs_pool📡🇨🇦®️Cana... #2'
+  network: ws
+  port: 2083
+  server: fk2-bash.890617.xyz
+  servername: fk2-1.890617.xyz
+  tls: true
+  type: vmess
+  uuid: feddc326-da70-4fab-95a9-8f98be6da633
+  ws-opts:
+    headers:
+      Host: fk2-bash.890617.xyz
+    path: /fj2-1
 - alpn:
+  - http/1.1
+  name: '3,33|🔒 TR-WS-TLS 🏴‍☠️ NA-172.67.204... #4'
+  network: ws
+  password: 4d04b30c-ef7b-4a07-8f9e-f581ec171f8a
+  port: 443
+  server: 172.67.204.22
+  sni: US7-08.890602.xyZ
+  type: trojan
+  ws-opts:
+    headers:
+      Host: us7-08.890602.xyz
+    path: '%2FZseq8mE8wMzbGFtV'
+- alpn:
+  - http/1.1
+  name: 3,33|🔒 TR-WS-TLS 🏴‍☠️ NA-104.21.58....
+  network: ws
+  password: 89c1aea7-4d0d-4013-b663-0f94a3e6bdbd
+  port: 443
+  server: 104.21.58.135
+  sni: sanjose01.818185.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: sanjose01.818185.xyz
+    path: '%2FT5yZBrY2Qkg2cThJQeJb'
+- allowInsecure: ''
+  name: 3,21|美国 344
+  network: ws
+  password: 2fec7227-9abe-46f2-af18-78302b836c45
+  port: 443
+  server: 172.67.200.238
+  skip-cert-verify: false
+  sni: 3s.890689.xyz
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 3s.890689.xyz
+    path: /XjTi1NYwi9A2bckpqdDoAgkondVWl
+- alpn:
+  - http/1.1
+  name: '3|👉🆔@v2ray_configs_pool📡🇨🇦®️Cana... #4'
+  network: ws
+  password: 89c1aea7-4d0d-4013-b663-0f94a3e6bdbd
+  port: 443
+  server: usa-sanjose-one.890614.filegear-sg.me
+  sni: usa-sanjose-one.890614.filegear-sg.me
+  type: trojan
+  ws-opts:
+    path: '%2FT5yZBrY2Qkg2cThJQeJb'
+- name: '3|👉🆔@v2ray_configs_pool📡🇨🇦®️Cana... #5'
+  network: ws
+  port: 2086
+  server: 162.159.10.162
+  servername: 5-55sfjslf.ifenxiang.cfd
+  tls: false
+  type: vless
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      Host: 5-55sfjslf.ifenxiang.cfd
+    path: '%2FTelegram%40mtmvpn'
+- alpn:
+  - h3
   - h2
   - http/1.1
   client-fingerprint: randomized
-  name: 3|[🇨🇦]t.me/ConfigsHub`
+  name: '3|👉🆔@v2ray_configs_pool📡🇨🇦®️Cana... #6'
   network: ws
-  port: 443
-  server: 104.21.1.12
-  servername: pHOTOgrApHipiCTureaI.IR
-  tls: true
-  type: vless
-  uuid: f6bd2c47-99da-4bca-bf70-7186aa9e7e06
-  ws-opts:
-    headers:
-      Host: photographipictureai.ir
-    path: '%2F%3Fed%3DMARAMBASHI_MARAMBASHI%2F%3Fed%3D2560'
-- name: '3|[🇨🇦]t.me/ConfigsHub` #1'
-  network: ws
-  port: 80
-  server: 104.26.14.85
+  port: 8880
+  server: www.speedtest.net
   tls: false
   type: vless
-  uuid: 06adcb1c-9b72-412b-bf63-d4ef34fefca1
+  uuid: 8dc5b94a-382f-4d34-b44e-d78ba12aee1a
   ws-opts:
     headers:
-      Host: wHimsICAL-prEsEntAtioN.ONeeAt.CO.
-    path: '%2F%3Fed%3D2048'
+      Host: join.VPNCUSTOMIZE.iran.ir.arvancloud.ir.nett.ddns-ip.net.
+    path: '%2FChannel----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE---VPNCUSTOMIZE---VPNCUSTOMIZE---VPNCUSTOMIZE%3Fed%3D2048'
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: ''
+  name: '3|👉🆔@v2ray_configs_pool📡🇨🇦®️Cana... #7'
+  network: grpc
+  port: 2096
+  server: www.speedtest.net
+  servername: app6.appdatanewk.lat
+  tls: true
+  type: vless
+  uuid: 030e448c-7535-4ea5-8c55-1b00403c0f6b
 - client-fingerprint: random
+  name: '3|👉🆔@v2ray_configs_pool📡🇨🇦®️Cana... #8'
+  network: ws
+  port: 443
+  server: 104.26.12.54
+  servername: 5-55sfjslf.ifenxiang.cfd
+  tls: true
+  type: vless
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      Host: 5-55sfjslf.ifenxiang.cfd
+    path: '%2F%3Fed%3D2560'
+- client-fingerprint: random
+  name: '3|👉🆔@v2ray_configs_pool📡🇨🇦®️Cana... #9'
+  network: ws
+  port: 8443
+  server: 104.18.41.190
+  servername: 5-55sfjslf.ifenxiang.cfd
+  tls: true
+  type: vless
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      Host: 5-55sfjslf.ifenxiang.cfd
+    path: '%2F%3Fed%3D2560'
+- client-fingerprint: random
+  name: 3,21|美国 538
+  network: ws
+  port: 443
+  server: 104.16.209.110
+  servername: masaleini.mahsaamini.dpdns.org
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 10d9df89-9a20-4110-9711-bca119490ee9
+  ws-opts:
+    headers:
+      Host: masaleini.mahsaamini.dpdns.org
+- name: '3|👉🆔@v2ray_configs_pool📡🇨🇦®️Cana... #11'
+  network: ws
+  port: 2053
+  server: 172.67.204.84
+  servername: all18.kikforwindows.com
+  tls: true
+  type: vless
+  uuid: 99333609-167f-4750-ab63-34cfa27c723a
+  ws-opts:
+    headers:
+      Host: all18.kikforwindows.com
+    path: '%2Fcontainers%2Fde'
+- name: '3|👉🆔@v2ray_configs_pool📡🇨🇦®️Cana... #12'
+  network: ws
+  port: 80
+  server: 151.101.64.155
+  tls: false
+  type: vless
+  uuid: 71f8991c-e1a8-46fc-8fb2-b04367f831c1
+  ws-opts:
+    headers:
+      Host: irancell.net.
+    path: '%2F-LiV2ry%40LIGHTNING6-TEL--%40LIGHTNING6-TEL--%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL-%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL--%40LIGHTNING6%3Fed%3D2048'
+- name: '3|👉🆔@v2ray_configs_pool📡🇨🇦®️Cana... #13'
+  network: ws
+  port: 80
+  server: hajlab.ucdavis.edu
+  tls: false
+  type: vless
+  uuid: dda234c9-a38d-4091-8fba-4c023e2fa622
+  ws-opts:
+    headers:
+      Host: joinshhproxybedeeeeeee.ir
+    path: /@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy?ed%3D2048
+- name: '3|👉🆔@v2ray_configs_pool📡🇨🇦®️Cana... #14'
+  network: ws
+  port: 80
+  server: www.speedtest.net
+  tls: false
+  type: vless
+  uuid: 54bbb80a-9c79-4a0b-b546-fc62d29c5759
+  ws-opts:
+    headers:
+      Host: Www.speedtest.net.speedtest2.cfd.
+    path: /@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy?ed%3D2048
+- client-fingerprint: ''
+  name: '3|👉🆔@v2ray_configs_pool📡🇨🇦®️Cana... #15'
+  network: ws
+  port: 80
+  reality-opts:
+    public-key: ''
+    short-id: ''
+  server: zula.ir
+  servername: ''
+  tls: false
+  type: vless
+  uuid: 900f7654-4d76-4a98-b85b-62526f8dbbaa
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '3|👉🆔@v2ray_configs_pool📡🇨🇦®️Cana... #16'
+  network: ws
+  port: 80
+  server: chance.ns.cloudflare.com
+  servername: fari24.clodmolt3.com
+  tls: true
+  type: vless
+  uuid: 9fdc6f83-bfbd-40dd-8e4e-1678ee20351c
+  ws-opts:
+    headers:
+      Host: fari24.clodmolt3.com
+    path: '%2Fwss'
+- name: '3|👉🆔@v2ray_configs_pool📡🇨🇦®️Cana... #17'
+  network: ws
+  port: 8080
+  server: 188.114.96.3
+  servername: order.fortgift.ir
+  tls: false
+  type: vless
+  uuid: 08c41e17-9d1c-4d4a-9edc-242d3d71c1ac
+  ws-opts:
+    headers:
+      Host: order.fortgift.ir
+    path: '%2Fz5lsHF5zQrd1rJDr'
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
   name: '3|[🇨🇦]t.me/ConfigsHub` #2'
+  network: ws
+  port: 443
+  server: 172.67.200.11
+  servername: Hu9L7.890606.XyZ
+  tls: true
+  type: vless
+  uuid: d67cfeaf-b277-44ac-ab99-9dd02a7c5299
+  ws-opts:
+    headers:
+      Host: Hu9L7.890606.XyZ
+    path: '%2FjAcfFDEOj85lz42MdhsCLV'
+- name: '3|[🇨🇦]t.me/ConfigsHub` #3'
+  network: ws
+  port: 2052
+  server: www.speedtest.net
+  tls: false
+  type: vless
+  uuid: 9c22197f-05b5-4748-9904-401b269ee460
+  ws-opts:
+    headers:
+      Host: Www.speedtest.net.mahdijamkaran.online.
+    path: /@Maznet--@MAZNET--@Maznet--@MAZNET--@Maznet--@MAZNET--@Maznet--@MAZNET--@Maznet--@MAZNET?ed%3D2048
+- name: '3|[🇨🇦]t.me/ConfigsHub` #4'
+  network: ws
+  port: 80
+  server: www.speedtest.net
+  tls: false
+  type: vless
+  uuid: 4d775975-4e89-46af-8947-ecafdfa26530
+  ws-opts:
+    headers:
+      Host: Www.speedtest.net.speedtest2.cfd.
+    path: /@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy?ed%3D2048
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: '3|[🇨🇦]t.me/ConfigsHub` #5'
+  network: ws
+  port: 443
+  server: 172.67.204.75
+  servername: sanjose-dy.818185.xyz
+  tls: true
+  type: vless
+  uuid: 89c1aea7-4d0d-4013-b663-0f94a3e6bdbd
+  ws-opts:
+    headers:
+      Host: sanjose-dy.818185.xyz
+    path: '%2FoLdow5owANhO1cThJQeJb'
+- name: '3|[🇨🇦]t.me/ConfigsHub` #6'
+  network: ws
+  port: 443
+  server: www.speedtest.net
+  servername: www.speedtest.net.www.google.com.bing.com.visa.com.tls.htr.ddns-ip.net
+  tls: true
+  type: vless
+  uuid: 5e1306ff-3ffa-4166-89ab-1a06ff42eca6
+  ws-opts:
+    headers:
+      Host: www.speedtest.net.www.google.com.bing.com.visa.com.tls.htr.ddns-ip.net
+    path: '%2FTelegram-XV2ry2%3Fed%3D512'
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '3|[🇨🇦]t.me/ConfigsHub` #7'
+  network: ws
+  port: 2096
+  server: www.speedtest.net
+  servername: wi.filmekade.site
+  tls: true
+  type: vless
+  uuid: dca00ac0-050b-42f8-ad56-ededaeaef2e7
+  ws-opts:
+    headers:
+      Host: wi.filmekade.site
+    path: '%2Ftelegram----------------v2ryNG01----v2ryNG01----v2ryNG01---v2ryNG01---------------v2ryNG01---v2ryNG01--v2ryNG01----v2ryNG01----v2ryNG01---v2ryNG01---v2ryNG01---v2ryNG01v2ryNG01----v2ryNG01----v2ryNG01---v2ryNG01---v2ryNG01---v2ryNG01%3Fed%3D2048'
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '3|[🇨🇦]t.me/ConfigsHub` #8'
+  network: ws
+  port: 2083
+  server: www.speedtest.net
+  servername: mahdipok.filmekade.site
+  tls: true
+  type: vless
+  uuid: c0512a6c-e10b-4f18-85c3-3d22a8cfbcfd
+  ws-opts:
+    headers:
+      Host: mahdipok.filmekade.site
+    path: '%2Ftelegram----------------v2ryNG01----v2ryNG01----v2ryNG01---v2ryNG01---------------v2ryNG01---v2ryNG01--v2ryNG01----v2ryNG01----v2ryNG01---v2ryNG01---v2ryNG01---v2ryNG01v2ryNG01----v2ryNG01----v2ryNG01---v2ryNG01---v2ryNG01---v2ryNG01%3Fed%3D2048'
+- name: '3|[🇨🇦]t.me/ConfigsHub` #9'
+  network: ws
+  port: 443
+  server: 188.114.96.1
+  servername: r9ihm85sq4egopelgbfjgeigbox2dd4ljfouocj8eewswjghmtfuhrdl1agzy7s.2mievr34.workers.Dev
+  tls: true
+  type: vless
+  uuid: 4bdab609-92da-4c23-b993-bbcb8caf2b03
+  ws-opts:
+    headers:
+      Host: r9ihm85sq4egopelgbfjgeigbox2dd4ljfouocj8eewswjghmtfuhrdl1agzy7s.2mievr34.workers.Dev
+    path: '%2F'
+- client-fingerprint: random
+  name: '3|[🇨🇦]t.me/ConfigsHub` #10'
+  network: ws
+  port: 443
+  server: 172.67.161.104
+  servername: 5-55sfjslf.ifenxiang.cfd
+  tls: true
+  type: vless
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      Host: 5-55sfjslf.ifenxiang.cfd
+    path: '%2F%3Fed%3D%23TELEGRAM-MARAMBASHI_MARAMBASHI%3Fed%3D512'
+- name: '3|[🇨🇦]t.me/ConfigsHub` #11'
+  network: ws
+  port: 80
+  server: 151.101.64.155
+  tls: false
+  type: vless
+  uuid: 82d6a4ae-cd34-4734-a499-22d742e0561c
+  ws-opts:
+    headers:
+      Host: irancell.net.
+    path: '%2F-LiV2ry%40LIGHTNING6-TEL--%40LIGHTNING6-TEL--%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL-%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL--%40LIGHTNING6%3Fed%3D2048'
+- client-fingerprint: random
+  name: '3|👉🆔@v2ray_configs_pool📡🇨🇦®️Cana... #18'
   network: ws
   port: 443
   server: 162.159.153.2
@@ -76,21 +454,76 @@ proxies:
   ws-opts:
     headers:
       Host: 5-55sfjslf.ifenxiang.cfd
-    path: '%2FTelegram%40V2ray_Alpha%2F%3Fed%3D2560'
-- name: '3|[🇨🇦]t.me/ConfigsHub` #3'
+    path: '%2FTelegram%40proxy_mtm%2F%3Fed%3D2560'
+- name: '3|👉🆔@v2ray_configs_pool📡🇨🇦®️Cana... #19'
   network: ws
-  port: 80
-  server: www.speedtest.net
-  tls: false
+  port: 443
+  server: 104.22.56.77
+  servername: nautica.foolvpn.me
+  tls: true
   type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  uuid: c7d543af-1023-4b96-a698-187c190d3f4c
   ws-opts:
     headers:
-      Host: redw.pooriam.ir
-    path: /?ed%3D@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn/?ed%3D2560
+      Host: nautica.foolvpn.me
+    path: '%2F47.89.39.186-39251'
+- client-fingerprint: chrome
+  name: '3|👉🆔@v2ray_configs_pool📡🇨🇦®️Cana... #20'
+  network: ws
+  port: 443
+  server: 104.27.125.158
+  servername: in4s.pqvip.top
+  tls: true
+  type: vless
+  uuid: 1e5599e3-325c-49fa-a6c7-675e314a0d99
+  ws-opts:
+    headers:
+      Host: in4s.pqvip.top
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: random
+  name: '3|👉🆔@v2ray_configs_pool📡🇨🇦®️Cana... #21'
+  network: ws
+  port: 2096
+  server: 172.67.24.121
+  servername: bEAt.MIRaclETaxbiTS.Top.
+  tls: true
+  type: vless
+  uuid: 78f6c94b-9d54-40dd-867b-ae1bfc39fb59
+  ws-opts:
+    headers:
+      Host: bEAt.MIRaclETaxbiTS.Top.
+    path: '%2F2096%2F%40VRayyNGvpn'
+- client-fingerprint: randomized
+  name: '3|👉🆔@v2ray_configs_pool📡🇨🇦®️Cana... #22'
+  network: ws
+  port: 443
+  server: 162.159.153.2
+  servername: vlee.amclubs.nyc.mn
+  tls: true
+  type: vless
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vlee.amclubs.nyc.mn
+    path: '%2FTelegram%40V2ray_Alpha%2F%3Fed%3D2560'
+- client-fingerprint: chrome
+  name: '3|👉🆔@v2ray_configs_pool📡🇨🇦®️Cana... #23'
+  network: ws
+  port: 8443
+  server: 104.17.147.22
+  servername: MdLoXlYg.rIcKtMoUsE.InFo
+  tls: true
+  type: vless
+  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  ws-opts:
+    headers:
+      Host: MdLoXlYg.rIcKtMoUsE.InFo
+    path: '%2F'
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 12|c58acc74ceb24cac923e3e98e9d7b5...
+  name: 12|0c029f39ebb44b51a2102aa828e8bc...
   network: ws
   port: 2086
   server: 162.159.10.162
@@ -100,12 +533,10 @@ proxies:
   udp: false
   uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
   ws-opts:
-    headers:
-      host: 5-55sfjslf.ifenxiang.cfd
     path: /Telegram@mtmvpn
 - client-fingerprint: randomized
   fingerprint: ''
-  name: 12|1b4a07430d6c471dae5a8690de7ef2...
+  name: 12|5cc39c245d904dcf955adc7867fa72...
   network: ws
   port: 8880
   server: www.speedtest.net
@@ -117,67 +548,7 @@ proxies:
     path: /Channel----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE---VPNCUSTOMIZE---VPNCUSTOMIZE---VPNCUSTOMIZE?ed=2048
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 12|512ae0d2270a4913a7ab42d05bf0ab...
-  network: ws
-  port: 443
-  server: 104.16.186.41
-  servername: cr7.traneh.dpdns.org
-  tls: true
-  type: vless
-  udp: false
-  uuid: 102e5f34-1913-4dd3-a1f2-f831d891a490
-  ws-opts:
-    headers:
-      host: cr7.traneh.dpdns.org
-    path: /sinavm-sinavm/?ed=2560
-- client-fingerprint: randomized
-  fingerprint: ''
-  name: 12|a8bbfa8f096940b1be26db169ddded...
-  network: ws
-  port: 443
-  server: 104.21.90.210
-  servername: vlee.amclubs.nyc.mn
-  tls: true
-  type: vless
-  udp: false
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      host: vlee.amclubs.nyc.mn
-    path: /Telegram@V2ray_Alpha/?ed=2560
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 12|f0d7ba3ba2a84f9090f0ee64c0346a...
-  network: ws
-  port: 443
-  server: 172.66.168.209
-  servername: mAXNETvIPAp-UK2.MaxnETServIcES.onLiNe
-  tls: true
-  type: vless
-  udp: false
-  uuid: 0f7254ed-765d-4916-819f-b47f0664ae27
-  ws-opts:
-    headers:
-      host: mAXNETvIPAp-UK2.MaxnETServIcES.onLiNe
-    path: /linkws?ed=2560
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 12|3be2ab27776e4b278251ec06e0e9c3...
-  network: ws
-  port: 443
-  server: www.speedtest.net
-  servername: gpt.smatiz.info
-  tls: true
-  type: vless
-  udp: false
-  uuid: 6babb657-1524-43bb-b421-11bda27bc9de
-  ws-opts:
-    headers:
-      host: gpt.smatiz.info
-    path: salaam
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 12|10ddb930e89945f59ab664a5eec111...
+  name: 12|44d336741f7b404983945beae6262b...
   network: grpc
   port: 2096
   server: www.speedtest.net
@@ -186,152 +557,9 @@ proxies:
   type: vless
   udp: false
   uuid: 030e448c-7535-4ea5-8c55-1b00403c0f6b
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 12|e41186de2f5441c4ae489d69df2b4c...
-  network: ws
-  port: 8880
-  server: www.speedtest.net
-  tls: false
-  type: vless
-  udp: false
-  uuid: f9225e80-e0b6-4dd8-85fa-35f523d94d5c
-  ws-opts:
-    path: /Telegram-Academi_vpn--Academi_vpn--Academi_vpn--Academi_vpn--Academi_vpn--Academi_vpn--Academi_vpn--Academi_vpn--Academi_vpn--Academi_vpn--Academi_vpn--Academi_vpn--Academi_vpn--Academi_vpn--Academi_vpn---Academi_vpn--Academi_vpn--Academi_vpn--Academi_vpn--Academi_vpn-Admin-Mystic_vpn?ed=2048
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 12|ea8f886be2eb4b699bfa320a56ad42...
-  network: ws
-  port: 8080
-  server: tgju.org
-  tls: false
-  type: vless
-  udp: false
-  uuid: 0521634e-28f3-4a95-8b0f-aaee20b06d47
-  ws-opts:
-    path: /?ed=2048
 - client-fingerprint: random
   fingerprint: ''
-  name: 12|30f9c12e9f0f453b81fa2536096253...
-  network: ws
-  port: 2087
-  server: 104.16.148.244
-  servername: 5-55sfjslf.ifenxiang.cfd
-  tls: true
-  type: vless
-  udp: false
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
-  ws-opts:
-    headers:
-      host: 5-55sfjslf.ifenxiang.cfd
-    path: /?ed=2560
-- client-fingerprint: random
-  fingerprint: ''
-  name: 12|318c1e50937c4412ae62d6fc03c937...
-  network: ws
-  port: 443
-  server: 104.18.27.94
-  servername: 5-55sfjslf.ifenxiang.cfd
-  tls: true
-  type: vless
-  udp: false
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
-  ws-opts:
-    headers:
-      host: 5-55sfjslf.ifenxiang.cfd
-    path: /?ed=2560
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 12|6fe50ddebb6842919a1843a964693c...
-  network: ws
-  port: 443
-  server: 104.21.64.1
-  servername: pSycho.SueX12.Ir
-  tls: true
-  type: vless
-  udp: false
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      host: pSycho.SueX12.Ir
-    path: /Eujcp9ekQlNJr3cu?ed=2560flow=-udp443flow=-udp443
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 12|2c010de8f97a4d7cbdd33b48332154...
-  network: ws
-  port: 2095
-  server: ns.cloudflare.com
-  tls: false
-  type: vless
-  udp: false
-  uuid: f87a5cb2-8ab9-40a2-f90e-a87bbd2933e4
-  ws-opts:
-    path: '@XpnTeam----@XpnTeam----@XpnTeam----@XpnTeam----@XpnTeam----@XpnTeam----@XpnTeam----@XpnTeam----@XpnTeam----@XpnTeam----@XpnTeam----@XpnTeam----@XpnTeam----@XpnTeam----@XpnTeam----@XpnTeam?ed=2048'
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  fingerprint: ''
-  name: 12|ba9375fde1ad4c83ab3cd2af677627...
-  network: ws
-  port: 443
-  server: 172.67.170.13
-  tls: true
-  type: vmess
-  udp: false
-  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
-  ws-opts:
-    path: /linkws
-- client-fingerprint: chrome
-  name: 12|723b4581a0174c87975eb0ba9ae632...
-  password: 89c1aea7-4d0d-4013-b663-0f94a3e6bdbd
-  port: 443
-  server: 172.67.149.172
-  type: trojan
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 12|ab7118775dfd4fb685a50c5239cdcf...
-  network: ws
-  port: 2095
-  server: 162.159.20.34
-  tls: false
-  type: vless
-  udp: false
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
-  ws-opts:
-    path: /Telegram:TM@AZAFBAYJB1TM@Azarbayjab1
-- client-fingerprint: random
-  fingerprint: ''
-  name: 12|22f654b3515745d4b009b0a01036bd...
-  network: ws
-  port: 8443
-  server: 104.22.15.132
-  servername: 5-55sfjslf.ifenxiang.cfd
-  tls: true
-  type: vless
-  udp: false
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
-  ws-opts:
-    headers:
-      host: 5-55sfjslf.ifenxiang.cfd
-    path: /?ed=2560
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 12|15649c8ff9b84665bde6ca8efb22a3...
-  network: ws
-  port: 443
-  server: 104.24.222.73
-  servername: cr7.rayan.dpdns.org
-  tls: true
-  type: vless
-  udp: false
-  uuid: 1688039e-a45f-499e-b9f4-c098c87d3b32
-  ws-opts:
-    headers:
-      host: cr7.rayan.dpdns.org
-    path: sinavm-sinavm/?ed=2560
-- client-fingerprint: random
-  fingerprint: ''
-  name: 12|de205c3319534879bf6ecea0c8926a...
+  name: 12|3b019af687a545cc946d6c4f15d3b4...
   network: ws
   port: 443
   server: 104.26.12.54
@@ -344,9 +572,9 @@ proxies:
     headers:
       host: 5-55sfjslf.ifenxiang.cfd
     path: /?ed=2560
-- client-fingerprint: random
+- client-fingerprint: chrome
   fingerprint: ''
-  name: 12|8a8cf885ded2458d8299c4bd48734f...
+  name: 12|e9cfcfc3a67a4454b094d62850f878...
   network: ws
   port: 8443
   server: 104.18.41.190
@@ -359,39 +587,9 @@ proxies:
     headers:
       host: 5-55sfjslf.ifenxiang.cfd
     path: /?ed=2560
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 12|a5cfff5c55ee4b7e98d5b1e0ee4b4c...
-  network: ws
-  port: 2096
-  server: 104.17.128.1
-  servername: vlee.amclubs.nyc.mn
-  tls: true
-  type: vless
-  udp: false
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      host: vlee.amclubs.nyc.mn
-    path: /?ed=2560
-- client-fingerprint: randomized
-  fingerprint: ''
-  name: 12|649f117135134ffa888116f7a03623...
-  network: ws
-  port: 443
-  server: 104.21.112.1
-  servername: pSYcho.sUeX12.IR
-  tls: true
-  type: vless
-  udp: false
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      host: pSYcho.sUeX12.IR
-    path: /Telegram@V2ray_Alpha/?ed=2560
 - client-fingerprint: random
   fingerprint: ''
-  name: 12|e5998e88b92a47d1b2c335d5a3311a...
+  name: 12|d58c9b17c6ca4fc7b56c64407da196...
   network: ws
   port: 443
   server: 104.16.209.110
@@ -406,7 +604,7 @@ proxies:
     path: /
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 12|6bf82499be6a4e0ea102de819aa754...
+  name: 12|400335c796f6404c94d22945815474...
   network: ws
   port: 2053
   server: 172.67.204.84
@@ -421,7 +619,7 @@ proxies:
     path: /containers/de
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 12|5a55f9b6b6224b3782865ed4770354...
+  name: 12|0ac7102c6f7142f1a7a0500a085212...
   network: ws
   port: 80
   server: 151.101.64.155
@@ -433,7 +631,7 @@ proxies:
     path: /-LiV2ry@LIGHTNING6-TEL--@LIGHTNING6-TEL--@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL-@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL--@LIGHTNING6?ed=2048
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 12|d220fdeb99784a4ebd1c393ebb7f64...
+  name: 12|f13cfdc64db64828850fda3eaae399...
   network: ws
   port: 80
   server: hajlab.ucdavis.edu
@@ -445,7 +643,7 @@ proxies:
     path: /@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy?ed=2048
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 12|6cfedaefef53462e948d1afb8bf274...
+  name: 12|5566acb3f0164cad9f9163f4e08c2b...
   network: ws
   port: 80
   server: www.speedtest.net
@@ -457,7 +655,7 @@ proxies:
     path: /@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy?ed=2048
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 12|eb4d7e2b9e0e48828a11cf537b4a0f...
+  name: 12|1667b8bc1f7144d4a5775da02bb201...
   network: ws
   port: 443
   server: cloudgetservice.mcloudservice.site
@@ -472,7 +670,7 @@ proxies:
     path: /linkws?ed=2560
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 12|bfe7f6dbe6444fe687ab5b26aeecb4...
+  name: 12|4a3bf60a47544007b5e3a983bba473...
   network: ws
   port: 80
   server: zula.ir
@@ -484,7 +682,7 @@ proxies:
     path: /
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 12|9c22b0c7bf2d48898e2c4c25bb112a...
+  name: 12|3ff59f426bd14f2eb79be140398f35...
   network: ws
   port: 80
   server: chance.ns.cloudflare.com
@@ -499,7 +697,7 @@ proxies:
     path: /wss
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 12|555521bf26e542e89f7778d7f45d69...
+  name: 12|425c9ec5f1cb43389c5562e54f892d...
   network: ws
   port: 8080
   server: 188.114.96.3
@@ -513,35 +711,20 @@ proxies:
       host: order.fortgift.ir
     path: /z5lsHF5zQrd1rJDr
 - client-fingerprint: chrome
-  fingerprint: ''
-  name: 12|b7962c32e12e4035a7780b93db156a...
-  network: ws
-  port: 443
-  server: 172.67.200.11
-  servername: Hu9L7.890606.XyZ
-  tls: true
-  type: vless
-  udp: false
-  uuid: d67cfeaf-b277-44ac-ab99-9dd02a7c5299
-  ws-opts:
-    headers:
-      host: Hu9L7.890606.XyZ
-    path: /jAcfFDEOj85lz42MdhsCLV
-- client-fingerprint: chrome
-  name: 12|887740cae5f345e98367ccd69c58b3...
+  name: 12|3f7e37df8e194ef59a82892491dd0f...
   password: 4d04b30c-ef7b-4a07-8f9e-f581ec171f8a
   port: 443
   server: 172.67.204.22
   type: trojan
 - client-fingerprint: chrome
-  name: 12|c0eae11b1df94985a72edeb7eaecfc...
+  name: 12|2bdefd10b3c249848912a01276f0f9...
   password: 89c1aea7-4d0d-4013-b663-0f94a3e6bdbd
   port: 443
   server: 104.21.58.135
   type: trojan
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 12|c0889248708148f5a348e5d47529c4...
+  name: 12|3131813d0aee4f82a4c84d3656de4b...
   network: ws
   port: 2052
   server: www.speedtest.net
@@ -553,7 +736,7 @@ proxies:
     path: /@Maznet--@MAZNET--@Maznet--@MAZNET--@Maznet--@MAZNET--@Maznet--@MAZNET--@Maznet--@MAZNET?ed=2048
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 12|0268b01f5e404fe6a3959ae5abf9a2...
+  name: 12|aa279e5e4c6e4fc4b73e8d9ec02a40...
   network: ws
   port: 80
   server: www.speedtest.net
@@ -565,7 +748,7 @@ proxies:
     path: /@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy?ed=2048
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 12|3a0e6f787fd5488ca9d737af5382e9...
+  name: 12|a594ba95cf5642569c41ea3714d38c...
   network: ws
   port: 443
   server: 172.67.204.75
@@ -580,7 +763,7 @@ proxies:
     path: /oLdow5owANhO1cThJQeJb
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 12|2bf48265f8104cbb9d41a28fb35e37...
+  name: 12|6b1ff10cb06e4bee869de68a570aeb...
   network: ws
   port: 443
   server: www.speedtest.net
@@ -595,7 +778,7 @@ proxies:
     path: /Telegram-XV2ry2?ed=512
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 12|35c1bdfe028c416d84af48c4497fb3...
+  name: 12|d49ffee7b5744b79a93a5e9eccf9a8...
   network: ws
   port: 2096
   server: www.speedtest.net
@@ -610,7 +793,7 @@ proxies:
     path: /telegram----------------v2ryNG01----v2ryNG01----v2ryNG01---v2ryNG01---------------v2ryNG01---v2ryNG01--v2ryNG01----v2ryNG01----v2ryNG01---v2ryNG01---v2ryNG01---v2ryNG01v2ryNG01----v2ryNG01----v2ryNG01---v2ryNG01---v2ryNG01---v2ryNG01?ed=2048
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 12|7dad0bbf47664dccb30929f7971525...
+  name: 12|3c5d7e6d4dd641509b8e75fda18d43...
   network: ws
   port: 2083
   server: www.speedtest.net
@@ -625,7 +808,7 @@ proxies:
     path: /telegram----------------v2ryNG01----v2ryNG01----v2ryNG01---v2ryNG01---------------v2ryNG01---v2ryNG01--v2ryNG01----v2ryNG01----v2ryNG01---v2ryNG01---v2ryNG01---v2ryNG01v2ryNG01----v2ryNG01----v2ryNG01---v2ryNG01---v2ryNG01---v2ryNG01?ed=2048
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 12|8ad3afbb08b64652b50000aec0210c...
+  name: 12|d19b0bde14b44e9ead99217154c28e...
   network: ws
   port: 443
   server: 188.114.96.1
@@ -637,6 +820,417 @@ proxies:
   ws-opts:
     headers:
       host: r9ihm85sq4egopelgbfjgeigbox2dd4ljfouocj8eewswjghmtfuhrdl1agzy7s.2mievr34.workers.Dev
+    path: /
+- client-fingerprint: random
+  fingerprint: ''
+  name: 12|5d46daee77b34ee3b0d27149506ca4...
+  network: ws
+  port: 443
+  server: 172.67.161.104
+  servername: 5-55sfjslf.ifenxiang.cfd
+  tls: true
+  type: vless
+  udp: false
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 5-55sfjslf.ifenxiang.cfd
+    path: /?ed=#TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 12|ec7ec3ec1eb7475dbfef3d07cccbe7...
+  network: ws
+  port: 80
+  server: 151.101.64.155
+  tls: false
+  type: vless
+  udp: false
+  uuid: 82d6a4ae-cd34-4734-a499-22d742e0561c
+  ws-opts:
+    path: /-LiV2ry@LIGHTNING6-TEL--@LIGHTNING6-TEL--@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL-@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL--@LIGHTNING6?ed=2048
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 12|f8bdedfb11b14118973393d7102f16...
+  network: ws
+  port: 443
+  server: 172.67.179.199
+  tls: true
+  type: vmess
+  udp: false
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    path: /linkws
+- client-fingerprint: chrome
+  name: 12|631f3629ca4543c3957f126d9c3773...
+  password: 2fec7227-9abe-46f2-af18-78302b836c45
+  port: 443
+  server: 172.67.200.238
+  type: trojan
+- client-fingerprint: random
+  fingerprint: ''
+  name: 12|5e33ae17baea44469753830b1f6c48...
+  network: ws
+  port: 443
+  server: 162.159.153.2
+  servername: 5-55sfjslf.ifenxiang.cfd
+  tls: true
+  type: vless
+  udp: false
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 5-55sfjslf.ifenxiang.cfd
+    path: /Telegram@proxy_mtm/?ed=2560
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 12|392cef8e022743dab6736bb11223e9...
+  network: ws
+  port: 443
+  server: 104.22.56.77
+  servername: nautica.foolvpn.me
+  tls: true
+  type: vless
+  udp: false
+  uuid: c7d543af-1023-4b96-a698-187c190d3f4c
+  ws-opts:
+    headers:
+      host: nautica.foolvpn.me
+    path: /47.89.39.186-39251
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 12|536e12850f78426eb8febc7caaadcd...
+  network: ws
+  port: 443
+  server: 104.27.125.158
+  servername: in4s.pqvip.top
+  tls: true
+  type: vless
+  udp: false
+  uuid: 1e5599e3-325c-49fa-a6c7-675e314a0d99
+  ws-opts:
+    headers:
+      host: in4s.pqvip.top
+    path: /
+- client-fingerprint: random
+  fingerprint: ''
+  name: 12|0080853ef407441196d51a9a842bd6...
+  network: ws
+  port: 2096
+  server: 172.67.24.121
+  servername: bEAt.MIRaclETaxbiTS.Top.
+  tls: true
+  type: vless
+  udp: false
+  uuid: 78f6c94b-9d54-40dd-867b-ae1bfc39fb59
+  ws-opts:
+    headers:
+      host: bEAt.MIRaclETaxbiTS.Top.
+    path: /2096/@VRayyNGvpn
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 12|06a782d59afb4c729489da438fddbd...
+  network: ws
+  port: 443
+  server: cloudgetservice.mcloudservice.site
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 3cf58606-5f2a-4609-9abd-404f633bd7e0
+  ws-opts:
+    path: /linkws?ed=2560
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 12|c76d5ece2f12420b84170e63a1138d...
+  network: ws
+  port: 2083
+  server: fk2-bash.890617.xyz
+  servername: fk2-1.890617.xyz
+  tls: true
+  type: vmess
+  udp: false
+  uuid: feddc326-da70-4fab-95a9-8f98be6da633
+  ws-opts:
+    headers:
+      host: fk2-1.890617.xyz
+    path: /fj2-1
+- client-fingerprint: chrome
+  name: 12|f7683758d63745c9a7163ea03e2763...
+  password: 89c1aea7-4d0d-4013-b663-0f94a3e6bdbd
+  port: 443
+  server: usa-sanjose-one.890614.filegear-sg.me
+  type: trojan
+- client-fingerprint: randomized
+  fingerprint: ''
+  name: 12|9f2fc101932c4d83a5a4fd512cc228...
+  network: ws
+  port: 443
+  server: 162.159.153.2
+  servername: vlee.amclubs.nyc.mn
+  tls: true
+  type: vless
+  udp: false
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      host: vlee.amclubs.nyc.mn
+    path: /Telegram@V2ray_Alpha/?ed=2560
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 12|b4c94533a764442d84bc5da2522424...
+  network: ws
+  port: 8443
+  server: 104.17.147.22
+  servername: MdLoXlYg.rIcKtMoUsE.InFo
+  tls: true
+  type: vless
+  udp: false
+  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  ws-opts:
+    headers:
+      host: MdLoXlYg.rIcKtMoUsE.InFo
+    path: /
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 12|3dcd3f4438b0496eb42547c7ad711d...
+  network: ws
+  port: 2095
+  server: 162.159.20.34
+  tls: false
+  type: vless
+  udp: false
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    path: /Telegram:TM@AZAFBAYJB1TM@Azarbayjab1
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 12|632a74a5e4844a95a84e4162145b26...
+  network: ws
+  port: 443
+  server: 104.19.77.118
+  servername: cr777.rayan.dpdns.org
+  tls: true
+  type: vless
+  udp: false
+  uuid: 1688039e-a45f-499e-b9f4-c098c87d3b32
+  ws-opts:
+    headers:
+      host: cr777.rayan.dpdns.org
+    path: Join_Bade_Channel@JOKERRVPN_JOKERRVPN_JOKERRVPN/?ed=2560
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 12|3f70e8488e0840a3bab63141db4d80...
+  network: ws
+  port: 8880
+  server: 104.22.33.78
+  tls: false
+  type: vless
+  udp: false
+  uuid: 8dc5b94a-382f-4d34-b44e-d78ba12aee1a
+  ws-opts:
+    path: /Channel-@ELiV2RAY----Channel-@ELiV2RAY----Channel-@ELiV2RAY----Channel-@ELiV2RAY----Channel-@ELiV2RAY----Channel-@ELiV2RAY----Channel-@ELiV2RAY----Channel-@ELiV2RAY----Channel-@ELiV2RAY?ed=2048
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 12|77d9e4ca001046d181b0efd151c8ac...
+  network: ws
+  port: 443
+  server: 104.16.186.41
+  servername: cr7.traneh.dpdns.org
+  tls: true
+  type: vless
+  udp: false
+  uuid: 102e5f34-1913-4dd3-a1f2-f831d891a490
+  ws-opts:
+    headers:
+      host: cr7.traneh.dpdns.org
+    path: /sinavm-sinavm/?ed=2560
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 12|0b593aad449d43ad80dcca40a8c8d3...
+  network: ws
+  port: 8880
+  server: 172.67.24.121
+  tls: false
+  type: vless
+  udp: false
+  uuid: 8dc5b94a-382f-4d34-b44e-d78ba12aee1a
+  ws-opts:
+    path: /Channel-@ELiV2RAY----Channel-@ELiV2RAY----Channel-@ELiV2RAY----Channel-@ELiV2RAY----Channel-@ELiV2RAY----Channel-@ELiV2RAY----Channel-@ELiV2RAY----Channel-@ELiV2RAY----Channel-@ELiV2RAY?ed=2048
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 12|86f7b71c966643d39d49ca28bf4d53...
+  network: ws
+  port: 80
+  server: 104.21.56.44
+  tls: false
+  type: vless
+  udp: false
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    path: /Join_Bade_Channel@JOKERRVPNTELEGRAM----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 12|114ce98432b3429e8c2490aa263f7b...
+  network: ws
+  port: 2086
+  server: 162.159.10.162
+  tls: false
+  type: vless
+  udp: false
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    path: Telegram-@V2ray_Alpha
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 12|689829147305441aa476921d6c9299...
+  network: ws
+  port: 2087
+  server: 104.25.254.4
+  servername: vlee.amclubs.nyc.mn
+  tls: true
+  type: vless
+  udp: false
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      host: vlee.amclubs.nyc.mn
+    path: /?ed=2560
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 12|89d175874add4a4583b6251f6aea01...
+  network: ws
+  port: 443
+  server: 104.24.222.73
+  servername: cr7.rayan.dpdns.org
+  tls: true
+  type: vless
+  udp: false
+  uuid: 1688039e-a45f-499e-b9f4-c098c87d3b32
+  ws-opts:
+    headers:
+      host: cr7.rayan.dpdns.org
+    path: Join_Bade_Channel@JOKERRVPN_JOKERRVPN_JOKERRVPN/?ed=2560
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 12|8fe48df54b6e41e0a863109c76e71e...
+  network: ws
+  port: 8080
+  server: 104.19.54.50
+  tls: false
+  type: vless
+  udp: false
+  uuid: 6c050a90-b69d-421c-b01a-230ce6b96377
+  ws-opts:
+    path: /@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy?ed=2048
+- client-fingerprint: randomized
+  fingerprint: ''
+  name: 12|3908e99b53394f7890facc78d8b8c3...
+  network: ws
+  port: 8880
+  server: 104.17.147.22
+  tls: false
+  type: vless
+  udp: false
+  uuid: 8dc5b94a-382f-4d34-b44e-d78ba12aee1a
+  ws-opts:
+    path: /Channel----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE---VPNCUSTOMIZE---VPNCUSTOMIZE---VPNCUSTOMIZE?ed=2048
+- client-fingerprint: random
+  fingerprint: ''
+  name: 12|15685239f53f42c386f0ef56730233...
+  network: ws
+  port: 443
+  server: 104.18.27.94
+  servername: 5-55sfjslf.ifenxiang.cfd
+  tls: true
+  type: vless
+  udp: false
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 5-55sfjslf.ifenxiang.cfd
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: 12|3c74f2f7733a42c6a029a408085367...
+  password: 61d4840a5f23ac24873dd72e54a607e7
+  port: 443
+  server: notice.2513142.xyz
+  type: trojan
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 12|8ea9fd26b2a34480875b994d806e02...
+  network: ws
+  port: 443
+  server: 104.16.186.41
+  servername: cr7.medicalhistory.ir
+  tls: true
+  type: vless
+  udp: false
+  uuid: d6a1143b-cdf0-41f8-a646-bd8f11663786
+  ws-opts:
+    headers:
+      host: cr7.medicalhistory.ir
+    path: /fp=chrome
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 12|26ddfdcfe72a4864b410e5b88a1fe3...
+  network: ws
+  port: 443
+  server: 104.16.190.41
+  servername: cr7.medicalhistory.ir
+  tls: true
+  type: vless
+  udp: false
+  uuid: d6a1143b-cdf0-41f8-a646-bd8f11663786
+  ws-opts:
+    headers:
+      host: cr7.medicalhistory.ir
+    path: /
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 12|128127dff85f430ab8a26180c88bd2...
+  network: ws
+  port: 2052
+  server: 104.17.148.22
+  tls: false
+  type: vless
+  udp: false
+  uuid: f6c96581-cad4-5749-b02d-742cd0870c44
+  ws-opts:
+    path: /vless
+- client-fingerprint: randomized
+  fingerprint: ''
+  name: 12|bccbbc711797407f8375fb4d405c40...
+  network: ws
+  port: 443
+  server: 104.21.73.239
+  servername: DigITALsciENTIfiCrESeARCHGRoup.IR
+  tls: true
+  type: vless
+  udp: false
+  uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
+  ws-opts:
+    headers:
+      host: DigITALsciENTIfiCrESeARCHGRoup.IR
+    path: /4McLR3NKFOydbxDs/MTguMTk5LjIxMy4yMDE
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 12|fe49bb6e0c2f4a89b6865b7e6b86e5...
+  network: ws
+  port: 443
+  server: 104.19.77.118
+  servername: cr777.rayan.dpdns.org
+  tls: true
+  type: vless
+  udp: false
+  uuid: 1688039e-a45f-499e-b9f4-c098c87d3b32
+  ws-opts:
+    headers:
+      host: cr777.rayan.dpdns.org
     path: /
 - alterId: 0
   cipher: auto
@@ -1204,17 +1798,17 @@ proxies:
   tls: true
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 22|0|🇦加大 01 | 1x CA
-  password: a93bcfa4-71b9-4c24-a82d-657bd08107bf
-  port: 31441
-  server: free.2apzhfa.xyz
+  name: 22|0|🇦 加大 01 | 1x CA
+  password: 060bb4bd-4ab7-474e-8b64-a76dda49f5c9
+  port: 36441
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 22|14|🇦 加拿大 01 | 1x CA
-  password: e89d961b-ce65-4df1-ad7b-ec4330a3d45c
-  port: 36441
-  server: free.2weradf.xyz
+  name: 22|2|🇦加拿大 01 | 1x CA
+  password: 12034a06-63a1-48c8-9cf4-200025a9f686
+  port: 31441
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -1245,25 +1839,25 @@ proxies:
       host: ''
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - cipher: chacha20-ietf-poly1305
-  name: '26|0|🇦加大 01 | 1x CA #1'
-  password: b3ad6719-2a79-43ec-a8ec-e55a844eb9e6
+  name: 26|0|🇦加大 01 | 1x CA
+  password: 1c23f26e-a30a-41d1-afc9-9d95b12743d0
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '26|14|🇦 加拿大 01 | 1x CA #1'
-  password: 022dd8ac-f131-4ac3-8ccf-75142f364ea4
+  name: 26|1|🇦 加拿大 01 | 1x CA
+  password: e9c65027-36ad-4908-ae56-9f43719466ee
   port: 36441
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 30|🔒 HYSTERIA-UDP 🇨🇦 CA-192.18.14...
-  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  port: 45979
-  server: 192.18.145.7
+- name: 30|🔒 HYSTERIA-UDP 🇨🇦 CA-204.216.1...
+  password: sysadmin.sysadmin
+  port: 2024
+  server: 204.216.108.5
   skip-cert-verify: true
-  sni: www.bing.com
+  sni: 204-216-108-5.nip.io
   tls: false
   type: hysteria2
 - name: 30|🔒 HYSTERIA-UDP 🇨🇦 CA-155.248.2...
@@ -1274,26 +1868,14 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: 30|🔒 HYSTERIA-UDP 🇨🇦 CA-204.216.1...
-  password: sysadmin.sysadmin
-  port: 2024
-  server: 204.216.108.5
+- name: 30|🔒 HYSTERIA-UDP 🇨🇦 CA-192.18.14...
+  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  port: 45979
+  server: 192.18.145.7
   skip-cert-verify: true
-  sni: 204-216-108-5.nip.io
+  sni: www.bing.com
   tls: false
   type: hysteria2
-- client-fingerprint: chrome
-  name: 31|🔒 VL-GRPC-RLT 🇨🇦 CA-138.197.15...
-  network: grpc
-  port: 443
-  reality-opts:
-    public-key: 1hdF2ghIgrvTH9rf493hDR8y1ZEjKqW8U6sg2gt-jAk
-    short-id: 6036be4e05b3c4f4
-  server: 138.197.154.162
-  servername: CaNVa.com
-  tls: false
-  type: vless
-  uuid: e76ff182-f086-47e8-beab-ee76ce0b3120
 - client-fingerprint: chrome
   name: 31|🔒 VL-TCP-RLT 🇨🇦 CA-167.99.183....
   network: tcp
@@ -1306,6 +1888,18 @@ proxies:
   tls: false
   type: vless
   uuid: e26a79fd-35d0-4c25-8f6b-8bcd8726348c
+- client-fingerprint: chrome
+  name: 31|🔒 VL-GRPC-RLT 🇨🇦 CA-138.197.15...
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: 1hdF2ghIgrvTH9rf493hDR8y1ZEjKqW8U6sg2gt-jAk
+    short-id: 6036be4e05b3c4f4
+  server: 138.197.154.162
+  servername: CaNVa.com
+  tls: false
+  type: vless
+  uuid: e76ff182-f086-47e8-beab-ee76ce0b3120
 - name: 33|🔒 TR-TCP-TLS 🇨🇦 CA-104.234.239...
   network: tcp
   password: Aimer
