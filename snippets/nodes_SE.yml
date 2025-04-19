@@ -22,6 +22,22 @@ proxies:
   port: 44013
   server: 46.246.98.155
   type: ss
+- name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-70.34.206.3...
+  network: tcp
+  password: Bw5Mz7QkVp
+  port: 443
+  server: 70.34.206.32
+  skip-cert-verify: true
+  sni: z-v2-077787.kailib.com
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-94.131.115....
+  network: tcp
+  password: c5691b8f-d833-41e4-9295-769f3edb4cd2
+  port: 443
+  server: 94.131.115.71
+  skip-cert-verify: true
+  sni: customer-94-131-115-71.stark-industries.solutions
+  type: trojan
 - alpn:
   - http/1.1
   name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-56.228.39.9...
@@ -29,6 +45,15 @@ proxies:
   password: telegram-id-directvpn
   port: 22222
   server: 56.228.39.94
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-51.20.150.6...
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.20.150.68
   sni: trojan.burgerip.co.uk
   type: trojan
 - name: 33|🔒 TR-WS-NONE 🇸🇪 SE-150.241.78....
@@ -41,34 +66,6 @@ proxies:
     headers:
       Host: vkvd127.mycdn.me
     path: '%2F'
-- alterId: 0
-  name: 33,36|未知75
-  network: tcp
-  password: Bw5Mz7QkVp
-  port: 443
-  server: 70.34.206.32
-  skip-cert-verify: true
-  sni: z-v2-077787.kailib.com
-  tls: true
-  type: trojan
-  udp: true
-- alpn:
-  - http/1.1
-  name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-51.20.150.6...
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.20.150.68
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-94.131.115....
-  network: tcp
-  password: c5691b8f-d833-41e4-9295-769f3edb4cd2
-  port: 443
-  server: 94.131.115.71
-  skip-cert-verify: true
-  sni: customer-94-131-115-71.stark-industries.solutions
-  type: trojan
 - name: 33|🔒 TR-WS-TLS 🇸🇪 SE-185.146.173....
   network: ws
   password: auto

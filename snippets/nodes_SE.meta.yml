@@ -32,6 +32,22 @@ proxies:
   sni: 70.34.207.153
   tls: false
   type: hysteria2
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: '%28TG%3A%40free_v2ray0%29%28TG%3A%40free_v2ray0%29%28TG%3A%40free_v2ray0%29%28TG%3A%40free_v2ray0%29_gxZKH0Rc9ol%28TG%3A%40free_v2ray0%29%28TG%3A%40free_v2ray0%29%28TG%3A%40free_v2ray0%29%28TG%3A%40free_v2ray0%29_WwpW3iPFUm5'
+  name: 31|🔒 VL-GRPC-RLT 🇸🇪 SE-138.124.10...
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: gXCdbHLSxlT4DCgtd7oc33EtZrbQyoh8ztm7ELKSfyw
+    short-id: 7d891e2de36c
+  server: 138.124.102.65
+  servername: gemini.google.com
+  tls: false
+  type: vless
+  uuid: 391def02-25c9-496b-b4ca-6ae5e3df2cb5
 - client-fingerprint: chrome
   name: 31|🔒 VL-GRPC-RLT 🇸🇪 SE-65.20.112....
   network: grpc
@@ -57,22 +73,22 @@ proxies:
   tls: false
   type: vless
   uuid: b1c801ec-1c5e-4d12-8b53-8da11c64a21b
-- alpn:
-  - h2
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: '%28TG%3A%40free_v2ray0%29%28TG%3A%40free_v2ray0%29%28TG%3A%40free_v2ray0%29%28TG%3A%40free_v2ray0%29_gxZKH0Rc9ol%28TG%3A%40free_v2ray0%29%28TG%3A%40free_v2ray0%29%28TG%3A%40free_v2ray0%29%28TG%3A%40free_v2ray0%29_WwpW3iPFUm5'
-  name: 31|🔒 VL-GRPC-RLT 🇸🇪 SE-138.124.10...
-  network: grpc
+- name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-70.34.206.3...
+  network: tcp
+  password: Bw5Mz7QkVp
   port: 443
-  reality-opts:
-    public-key: gXCdbHLSxlT4DCgtd7oc33EtZrbQyoh8ztm7ELKSfyw
-    short-id: 7d891e2de36c
-  server: 138.124.102.65
-  servername: gemini.google.com
-  tls: false
-  type: vless
-  uuid: 391def02-25c9-496b-b4ca-6ae5e3df2cb5
+  server: 70.34.206.32
+  skip-cert-verify: true
+  sni: z-v2-077787.kailib.com
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-94.131.115....
+  network: tcp
+  password: c5691b8f-d833-41e4-9295-769f3edb4cd2
+  port: 443
+  server: 94.131.115.71
+  skip-cert-verify: true
+  sni: customer-94-131-115-71.stark-industries.solutions
+  type: trojan
 - alpn:
   - http/1.1
   name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-56.228.39.9...
@@ -80,6 +96,15 @@ proxies:
   password: telegram-id-directvpn
   port: 22222
   server: 56.228.39.94
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-51.20.150.6...
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.20.150.68
   sni: trojan.burgerip.co.uk
   type: trojan
 - name: 33|🔒 TR-WS-NONE 🇸🇪 SE-150.241.78....
@@ -92,34 +117,6 @@ proxies:
     headers:
       Host: vkvd127.mycdn.me
     path: '%2F'
-- alterId: 0
-  name: 33,36|未知75
-  network: tcp
-  password: Bw5Mz7QkVp
-  port: 443
-  server: 70.34.206.32
-  skip-cert-verify: true
-  sni: z-v2-077787.kailib.com
-  tls: true
-  type: trojan
-  udp: true
-- alpn:
-  - http/1.1
-  name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-51.20.150.6...
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.20.150.68
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-94.131.115....
-  network: tcp
-  password: c5691b8f-d833-41e4-9295-769f3edb4cd2
-  port: 443
-  server: 94.131.115.71
-  skip-cert-verify: true
-  sni: customer-94-131-115-71.stark-industries.solutions
-  type: trojan
 - name: 33|🔒 TR-WS-TLS 🇸🇪 SE-185.146.173....
   network: ws
   password: auto
