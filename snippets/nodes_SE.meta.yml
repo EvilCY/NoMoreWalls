@@ -1,5 +1,5 @@
 proxies:
-- name: 19|🇸🇪SE-95.164.33.62-233_1@232
+- name: 18|🇸🇪SE-95.164.33.62-233_1@232
   password: 0b1371aa-649d-41dc-9126-338c87936500
   port: 443
   server: 95.164.33.62
@@ -8,7 +8,7 @@ proxies:
   type: trojan
   ws-path: h=%2Fwebsocket
 - delay: 2486
-  name: 21|瑞典 001
+  name: 20|瑞典 001
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -17,12 +17,12 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 23|🇸🇪SE-46.246.98.155-1032
+  name: 22|🇸🇪SE-46.246.98.155-1032
   password: UDcjYQ6Z6AIWxViZpqyOmO
   port: 44013
   server: 46.246.98.155
   type: ss
-- name: 30|🔒 HYSTERIA-UDP 🇸🇪 SE-70.34.207...
+- name: 29|🔒 HYSTERIA-UDP 🇸🇪 SE-70.34.207...
   obfs: salamander
   obfs-password: d2648ec2
   password: 18240b2dfdd76484
@@ -32,12 +32,24 @@ proxies:
   sni: 70.34.207.153
   tls: false
   type: hysteria2
+- client-fingerprint: chrome
+  name: 30|🔒 VL-GRPC-RLT 🇸🇪 SE-65.20.112....
+  network: grpc
+  port: 2096
+  reality-opts:
+    public-key: woE_DAeAkSjFhqwiaecawAOMwZUmAvaFpTbJZHvUJQk
+    short-id: 765d8c54c01a53f7
+  server: 65.20.112.45
+  servername: SoURcForgE.net
+  tls: false
+  type: vless
+  uuid: 77e064b2-ff24-4794-9aa0-910bd831c6f1
 - alpn:
   - h2
   client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: '%28TG%3A%40free_v2ray0%29%28TG%3A%40free_v2ray0%29%28TG%3A%40free_v2ray0%29%28TG%3A%40free_v2ray0%29_gxZKH0Rc9ol%28TG%3A%40free_v2ray0%29%28TG%3A%40free_v2ray0%29%28TG%3A%40free_v2ray0%29%28TG%3A%40free_v2ray0%29_WwpW3iPFUm5'
-  name: 31|🔒 VL-GRPC-RLT 🇸🇪 SE-138.124.10...
+  name: 30|🔒 VL-GRPC-RLT 🇸🇪 SE-138.124.10...
   network: grpc
   port: 443
   reality-opts:
@@ -50,7 +62,7 @@ proxies:
   uuid: 391def02-25c9-496b-b4ca-6ae5e3df2cb5
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇸🇪 SE-94.242.58.1...
+  name: 30|🔒 VL-TCP-RLT 🇸🇪 SE-94.242.58.1...
   network: tcp
   port: 443
   reality-opts:
@@ -61,28 +73,7 @@ proxies:
   tls: false
   type: vless
   uuid: b1c801ec-1c5e-4d12-8b53-8da11c64a21b
-- client-fingerprint: chrome
-  name: 31|🔒 VL-GRPC-RLT 🇸🇪 SE-65.20.112....
-  network: grpc
-  port: 2096
-  reality-opts:
-    public-key: woE_DAeAkSjFhqwiaecawAOMwZUmAvaFpTbJZHvUJQk
-    short-id: 765d8c54c01a53f7
-  server: 65.20.112.45
-  servername: SoURcForgE.net
-  tls: false
-  type: vless
-  uuid: 77e064b2-ff24-4794-9aa0-910bd831c6f1
-- alpn:
-  - http/1.1
-  name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-51.20.150.6...
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.20.150.68
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-70.34.206.3...
+- name: 32|🔒 TR-TCP-TLS 🇸🇪 SE-70.34.206.3...
   network: tcp
   password: Bw5Mz7QkVp
   port: 443
@@ -90,7 +81,33 @@ proxies:
   skip-cert-verify: true
   sni: z-v2-077787.kailib.com
   type: trojan
-- name: 33|🔒 TR-WS-TLS 🇸🇪 SE-185.146.173....
+- alpn:
+  - http/1.1
+  name: 32|🔒 TR-TCP-TLS 🇸🇪 SE-51.20.150.6...
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.20.150.68
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 32|🔒 TR-TCP-TLS 🇸🇪 SE-56.228.39.9...
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 56.228.39.94
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 32|🔒 TR-TCP-TLS 🇸🇪 SE-94.131.115....
+  network: tcp
+  password: c5691b8f-d833-41e4-9295-769f3edb4cd2
+  port: 443
+  server: 94.131.115.71
+  skip-cert-verify: true
+  sni: customer-94-131-115-71.stark-industries.solutions
+  type: trojan
+- name: 32|🔒 TR-WS-TLS 🇸🇪 SE-185.146.173....
   network: ws
   password: auto
   port: 443
@@ -101,20 +118,3 @@ proxies:
     headers:
       Host: esetsecuritylicense.bwnsmv.workers.dev
     path: '%2F@v2rayngzendegimamad%2F%3Fed%3D2560'
-- alpn:
-  - http/1.1
-  name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-56.228.39.9...
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 56.228.39.94
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-94.131.115....
-  network: tcp
-  password: c5691b8f-d833-41e4-9295-769f3edb4cd2
-  port: 443
-  server: 94.131.115.71
-  skip-cert-verify: true
-  sni: customer-94-131-115-71.stark-industries.solutions
-  type: trojan
