@@ -1,35 +1,28 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港 01 | 1x HK
-  password: 295612f0-072a-42cd-be02-722f4f9389cf
-  port: 31141
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
   name: 0|🇬🇧英国家宽 01 | 1x UK
-  password: 295612f0-072a-42cd-be02-722f4f9389cf
+  password: caa69384-4357-43ab-8aef-0373a3c2d4a9
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇭🇰 香港 01 | 1x HK
-  password: 88000da0-9138-45e6-aeba-b3aee84e3809
+  password: 3e1511b1-f7b6-40d3-b907-97ad7637d417
   port: 36141
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 88000da0-9138-45e6-aeba-b3aee84e3809
+  password: 3e1511b1-f7b6-40d3-b907-97ad7637d417
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
 - grpc-opts:
     grpc-service-name: m3u8
-  name: '3,33|🔒 TR-GRPC-TLS 🏴‍☠️ NA-141.101.... #10'
+  name: '3,33|🔒 TR-GRPC-TLS 🏴‍☠️ NA-141.101.... #48'
   network: grpc
   password: c65dbe85-354d-4892-909d-2b288830ee37
   port: 2053
@@ -116,18 +109,21 @@ proxies:
   port: 35276
   server: 51.140.34.50
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 20|🇬🇧 1|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 87133d8d-a107-4982-b858-221e8b5db235
-  port: 36271
-  server: free.2weradf.xyz
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 20,26,36|🇬GB国
+  password: 295612f0-072a-42cd-be02-722f4f9389cf
+  port: 31271
+  server: free.2apzhfa.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇬🇧 14|🇬🇧英国家宽 01 | 1x UK
-  password: 2db6ece5-1b7e-4d5b-80a0-2909f84f2e93
-  port: 31271
-  server: free.2apzhfa.xyz
+  name: 20,26|1|🇧 英国住宅IP 01 | 1x UK
+  password: 88000da0-9138-45e6-aeba-b3aee84e3809
+  port: 36271
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - alterId: 0
@@ -145,17 +141,17 @@ proxies:
       Host: us-new03.daluquan.top
     path: /itdog?ed=2560
 - cipher: chacha20-ietf-poly1305
-  name: 22|0| 国住宅IP 01 | 1x UK
-  password: a5ebef11-caa2-4f69-ba98-1aeba5aa63d0
-  port: 36271
-  server: free.2weradf.xyz
+  name: 22|0|国家宽 01 | 1x UK
+  password: e1205924-ae63-4734-bce1-989d296ee630
+  port: 31271
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 22|1|🇧英国家宽 01 | 1x UK
-  password: 9428e9b0-0638-4e8d-98eb-9a2bdb75a64e
-  port: 31271
-  server: free.2apzhfa.xyz
+  name: 22|14|🇧 英国住宅IP 01 | 1x UK
+  password: 9b094457-6428-4657-b664-fa1ded442150
+  port: 36271
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -212,11 +208,14 @@ proxies:
   port: 443
   server: 212.102.53.195
   type: ss
-- cipher: aes-128-gcm
-  name: 23|🇬🇧GB-212.102.53.193-0988
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 23,36|未知2 14.1MB/s
   password: shadowsocks
   port: 443
   server: 212.102.53.193
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: aes-128-gcm
   name: 23|🇬🇧GB-212.102.53.197-1000
@@ -242,11 +241,14 @@ proxies:
   port: 443
   server: 212.102.53.80
   type: ss
-- cipher: aes-128-gcm
-  name: 23|🇬🇧GB-212.102.53.197-0986
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 23,36|未知51 13.1MB/s
   password: shadowsocks
   port: 443
   server: 212.102.53.197
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 23|🇬🇧GB-185.5.38.111-6211
@@ -254,20 +256,22 @@ proxies:
   port: 55988
   server: mx2.drawnrisha.one
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '26|0| 国住宅IP 01 | 1x UK #1'
-  password: d9544953-2570-4e05-9762-9048976cbc5e
-  port: 36271
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '26|1|🇧英国家宽 01 | 1x UK #1'
-  password: 6e0b4372-6e68-4cd2-accb-d82d3ffccf70
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
+- alpn:
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-3.11.248.10...
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.11.248.107
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-62.112.221....
+  network: tcp
+  password: '!!str 3747000103274291200'
+  port: 443
+  server: 62.112.221.57
+  sni: integral-malamute.adder289.quest
+  type: trojan
 - name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-161.35.34.4...
   network: tcp
   password: 2cba4104747d49d18319e5ade1b93ab5
@@ -284,23 +288,25 @@ proxies:
   server: 13.134.21.134
   sni: trojan.burgerip.co.uk
   type: trojan
-- alterId: 0
-  name: 33,36|未知70
+- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-51.38.65.15...
   network: tcp
   password: cf49ce10-17ed-11f0-99f9-1239d0255272
   port: 443
   server: 51.38.65.155
-  skip-cert-verify: true
   sni: tgju.org
-  tls: true
   type: trojan
-  udp: true
-- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-62.112.221....
+- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-84.8.159.15...
   network: tcp
-  password: '!!str 3747000103274291200'
-  port: 443
-  server: 62.112.221.57
-  sni: integral-malamute.adder289.quest
+  password: b19c4375-d847-4c40-9824-4767c88b5f38
+  port: 10230
+  server: 84.8.159.155
+  sni: www.ak-hk.top
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-51.38.71.17...
+  password: b640d791-ff83-4300-b509-c2a02f97f167
+  port: 80
+  server: 51.38.71.175
+  sni: uk1.trojanvh.xyz
   type: trojan
 - name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-185.67.127....
   network: tcp
@@ -314,38 +320,6 @@ proxies:
   port: 443
   server: 185.193.29.193
   type: trojan
-- alpn:
-  - http/1.1
-  name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-3.11.248.10...
-  network: tcp
-  password: telegram-id-vlessconfig
-  port: 22222
-  server: 3.11.248.107
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-51.38.71.17...
-  password: b640d791-ff83-4300-b509-c2a02f97f167
-  port: 80
-  server: 51.38.71.175
-  sni: uk1.trojanvh.xyz
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-84.8.159.15...
-  network: tcp
-  password: b19c4375-d847-4c40-9824-4767c88b5f38
-  port: 10230
-  server: 84.8.159.155
-  sni: www.ak-hk.top
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
-  network: tcp
-  port: '28872'
-  server: 46.250.253.234
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 762b3923-5885-4c5f-886f-e62788512338
 - alterId: 0
   cipher: auto
   name: 35|🔒 VM-TCP-NA 🇬🇧 GB-37.221.125.1...
@@ -356,3 +330,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 353e0787-71bc-442d-9c9d-902f90359eb5
+- alterId: 0
+  cipher: auto
+  name: 35|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
+  network: tcp
+  port: '28872'
+  server: 46.250.253.234
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 762b3923-5885-4c5f-886f-e62788512338
