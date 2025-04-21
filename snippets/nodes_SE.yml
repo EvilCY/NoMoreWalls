@@ -22,25 +22,6 @@ proxies:
   port: 44013
   server: 46.246.98.155
   type: ss
-- name: 33|🔒 TR-WS-NONE 🇸🇪 SE-150.241.78....
-  network: ws
-  password: vpn
-  port: 2025
-  server: 150.241.78.252
-  type: trojan
-  ws-opts:
-    headers:
-      Host: vkvd127.mycdn.me
-    path: '%2F'
-- alpn:
-  - http/1.1
-  name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-13.51.117.1...
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.51.117.155
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - name: 33|🔒 TR-WS-TLS 🇸🇪 SE-185.146.173....
   network: ws
   password: auto
@@ -54,9 +35,36 @@ proxies:
     path: '%2F@v2rayngzendegimamad%2F%3Fed%3D2560'
 - alpn:
   - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-13.51.117.1...
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.51.117.155
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-70.34.206.3...
+  network: tcp
+  password: Bw5Mz7QkVp
+  port: 443
+  server: 70.34.206.32
+  skip-cert-verify: true
+  sni: z-v2-077787.kailib.com
+  type: trojan
+- name: 33|🔒 TR-WS-NONE 🇸🇪 SE-150.241.78....
+  network: ws
+  password: vpn
+  port: 2025
+  server: 150.241.78.252
+  type: trojan
+  ws-opts:
+    headers:
+      Host: vkvd127.mycdn.me
+    path: '%2F'
+- alpn:
+  - http/1.1
   name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-13.50.83.10...
   network: tcp
-  password: telegram-id-vlessconfig
+  password: telegram-id-privatevpns
   port: 22222
   server: 13.50.83.104
   sni: trojan.burgerip.co.uk
@@ -69,25 +77,3 @@ proxies:
   skip-cert-verify: true
   sni: customer-94-131-115-71.stark-industries.solutions
   type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-70.34.206.3...
-  network: tcp
-  password: Bw5Mz7QkVp
-  port: 443
-  server: 70.34.206.32
-  skip-cert-verify: true
-  sni: z-v2-077787.kailib.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 35|🔒 VM-WS-NA 🇸🇪 SE-185.146.173.9...
-  network: ws
-  port: '2052'
-  server: 185.146.173.91
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 6e88465e-a2ac-57d3-bbaf-f72e4439bd75
-  ws-opts:
-    headers:
-      Host: De1.vmess.site.
-    path: /vmess
