@@ -1,13 +1,13 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 23|🇪🇪EE-147.45.60.33-6256
+  name: 22|🇪🇪EE-147.45.60.33-6256
   password: LqlPI19oqnunGNSLMvdXyB
   port: 16356
   server: 147.45.60.33
   type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇪🇪 EE-146.19.143....
+  name: 30|🔒 VL-TCP-RLT 🇪🇪 EE-146.19.143....
   network: tcp
   port: 23455
   reality-opts:
@@ -18,10 +18,33 @@ proxies:
   tls: false
   type: vless
   uuid: 9cbb5bc1-d21a-4ea7-8d2e-dac02f634c58
-- name: 33|🔒 TR-TCP-TLS 🇪🇪 EE-45.80.110.2...
+- name: 32|🔒 TR-TCP-TLS 🇪🇪 EE-45.80.110.2...
   network: tcp
   password: bpb-trojan
   port: 443
   server: 45.80.110.224
   sni: bpb.my79801.com
   type: trojan
+- name: 33|🔒 VL-WS-TLS 🇪🇪 EE-45.80.108.25...
+  network: ws
+  port: 443
+  server: 45.80.108.253
+  servername: mmdserver.us.kg
+  tls: true
+  type: vless
+  uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
+  ws-opts:
+    headers:
+      Host: mmdserver.us.kg
+    path: '%2F%3Fed%3D2048'
+- client-fingerprint: chrome
+  name: 33|🔒 VL-WS-TLS 🇪🇪 EE-147.45.60.70...
+  network: ws
+  port: 443
+  server: 147.45.60.70
+  servername: ee01.abvpn.ru
+  tls: true
+  type: vless
+  uuid: 37208d52-8823-412d-944e-0a8ef08a5079
+  ws-opts:
+    path: '%2Fwebsocket'
