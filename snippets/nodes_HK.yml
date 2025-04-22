@@ -1,59 +1,62 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 02 | 1x HK
-  password: d228d7ed-3840-4f01-92dc-139cd55d6889
-  port: 36143
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港住宅IP 03 | 1x HK
-  password: d228d7ed-3840-4f01-92dc-139cd55d6889
-  port: 36145
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港 02 | 1x HK
-  password: 57ba8f40-eaa3-4645-a802-56a9f6697415
-  port: 31143
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港家宽 03 | 1x HK
-  password: 57ba8f40-eaa3-4645-a802-56a9f6697415
-  port: 31145
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
+- name: 0,22,26|2|🇭🇰4 |  2.2MB/s
+  password: 292f149a-33cb-4ecd-b432-5447764ea339
+  port: 27103
+  server: sla.cn.964e995b760.gogodns.xin
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
 - alterId: 2
   cipher: auto
-  name: 2,22|2|🇰1 |  1.4MB/s
+  name: 0,22|1|🇰2 |  1.2MB/s
   network: ws
   port: 80
-  server: bfd41561-sv2sg0-t5wcb1-13x18.hgc1.tcpbbr.net
+  server: 92b1e00e-sv0xs0-tb224g-1h0r9.hk.p5pv.com
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9bfd0dde-957e-11ec-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 0,22|1|🇭🇰3 |  2.4MB/s
+  network: ws
+  port: 80
+  server: fd10dcb4-sv2sg0-tcjq63-18xa0.hgc1.tcpbbr.net
   servername: broadcastlv.chat.bilibili.com
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: e4499a62-0cfe-11eb-ad8c-f23c9164ca5d
+  uuid: 1789a3ae-f017-11ef-8eaf-f23c9164ca5d
   ws-opts:
     headers:
-      Host: bfd41561-sv2sg0-t5wcb1-13x18.hgc1.tcpbbr.net
+      Host: fd10dcb4-sv2sg0-tcjq63-18xa0.hgc1.tcpbbr.net
     path: /
-- name: 2,22|2|🇰2 |  3.6MB/s
-  password: '!!str 3828095943467868160'
-  port: 443
-  server: evolving-hippo.dolphin109.quest
-  skip-cert-verify: true
-  sni: evolving-hippo.dolphin109.quest
-  type: trojan
-- alterId: 0
+- alterId: 2
   cipher: auto
-  name: 2,22,26|1|🇰3 |  2.0MB/s
+  name: 0,22|1|🇭🇰4 |  1.9MB/s
+  network: ws
+  port: 80
+  server: 060d35f2-sv4n40-sypd5t-m7yx.hgc1.tcpbbr.net
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d57803f0-47e4-fc72-e44b-8a62ddedecd9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: '0'
+  cipher: auto
+  name: 0,22,26|2|🇰3 |  1.6MB/s
   network: tcp
-  port: 15229
+  port: '15229'
   server: d9e7fec2-sva740-svo46i-1tmhw.cm.plebai.net
   skip-cert-verify: true
   tls: false
@@ -62,192 +65,61 @@ proxies:
   ws-headers:
     Host: d9e7fec2-sva740-svo46i-1tmhw.cm.plebai.net
   ws-path: /
-- name: 2,22|2|🇭🇰4 |  2.2MB/s
-  password: 292f149a-33cb-4ecd-b432-5447764ea339
-  port: 27103
-  server: sla.cn.964e995b760.gogodns.xin
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- alterId: 2
-  cipher: auto
-  name: 2,22|2|🇭🇰6 |  3.3MB/s
-  network: ws
-  port: 80
-  raw:
-    add: 57b3518b-sv6hs0-sypj6z-1rk9y.hk.p5pv.com
-    aid: '2'
-    alpn: ''
-    fp: ''
-    host: broadcastlv.chat.bilibili.com
-    id: 88f6e3c4-1d01-11ef-812c-f23c91cfbbc9
-    net: ws
-    path: /
-    port: 80
-    ps: null
-    scy: ''
-    sni: ''
-    tls: ''
-    type: ''
-    v: '2'
-  server: 57b3518b-sv6hs0-sypj6z-1rk9y.hk.p5pv.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 88f6e3c4-1d01-11ef-812c-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 2,22|2|🇭🇰7 |  1.0MB/s
-  network: ws
-  port: 80
-  raw:
-    add: 183cb398-sv6hs0-tdzlqm-1h1y5.hk.p5pv.com
-    aid: '2'
-    alpn: ''
-    fp: ''
-    host: broadcastlv.chat.bilibili.com
-    id: ef332c4a-a21b-11ed-9765-f23c9164ca5d
-    net: ws
-    path: /
-    port: 80
-    ps: null
-    scy: ''
-    sni: ''
-    tls: ''
-    type: ''
-    v: '2'
-  server: 183cb398-sv6hs0-tdzlqm-1h1y5.hk.p5pv.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ef332c4a-a21b-11ed-9765-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 2,22|2|🇭🇰8 |  1.8MB/s
-  network: ws
-  port: 80
-  server: 532538de-sv0xs0-sylfil-1gcq2.hk.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 759bf004-6137-11ec-bd7c-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: 532538de-sv0xs0-sylfil-1gcq2.hk.p5pv.com
-    path: /
-- name: 2,22|2|🇭🇰9 |  2.1MB/s
-  password: 06fe48bd-53dc-4823-88b7-afb5d447a81e
-  port: 27102
-  server: sla.cn.964e995b760.gogodns.xin
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- alterId: 2
-  cipher: auto
-  name: 2,22|2|🇭🇰10 |  1.2MB/s
-  network: ws
-  port: 80
-  server: 66500699-sv2sg0-sx8y86-uvgv.hk.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: ee67070a-ceb2-11ed-bb7d-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: 66500699-sv2sg0-sx8y86-uvgv.hk.p5pv.com
-    path: /
 - alterId: 0
   cipher: auto
-  name: 2,20,22|2|🇰11 |  1.6MB/s
+  name: 0,22|1|🇭🇰8 |  1.3MB/s
   port: 15229
-  server: 789602b4-sux8g0-t8b7ls-qtx6.cm.plebai.net
-  skip-cert-verify: false
+  server: 81137562-sutj40-suyhjm-1hhyy.cm.plebai.net
   tls: false
   type: vmess
-  udp: true
-  uuid: b35f5984-a0b4-11ea-82ef-f23c9164ca5d
-- alterId: '0'
+  uuid: c594c7ec-8b10-11ef-a2b8-f23c9164ca5d
+- alterId: 0
   cipher: auto
-  name: 2,22,26|1|🇭🇰1 |  1.5MB/s
+  name: 0,22|1|🇭🇰9 |  3.2MB/s
   network: tcp
-  port: '15229'
-  server: 60a411de-sva740-t7uinf-i8ie.cm.plebai.net
+  port: 15229
+  server: 10fd33f4-sv4n40-tcq5zn-19qpt.cm.plebai.net
+  skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: 990e8f34-bd4f-11ef-bdb9-f23c91cfbbc9
-- name: 2,22|2|🇭🇰14 |  2.5MB/s
+  uuid: 4b9ca118-7fab-11eb-bd3a-f23c9164ca5d
+  ws-headers:
+    Host: 10fd33f4-sv4n40-tcq5zn-19qpt.cm.plebai.net
+  ws-path: /
+- name: 0,22,26|2|🇭🇰14 |  2.5MB/s
   password: 0b86a011-142f-4de9-b925-5c8222ab3a62
   port: 27101
   server: sla.cn.964e995b760.gogodns.xin
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- alterId: 2
-  cipher: auto
-  name: 2,22|2|🇭🇰15 |  1.0MB/s
-  network: ws
-  port: 80
-  server: 9b521ad7-sv2sg0-t2whio-1jcwu.hk.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: f93486ce-cc84-11ed-9e98-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: 9b521ad7-sv2sg0-t2whio-1jcwu.hk.p5pv.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 2,22,26,35|🔒 VM-TCP-NA 🇭🇰 HK-35.220.230.2...
-  network: tcp
-  port: '30251'
-  raw:
-    add: 35.220.230.251
-    aid: '0'
-    alpn: ''
-    fp: ''
-    host: ''
-    id: 86c9c119-c46d-45a9-82a6-75a886e5e795
-    net: tcp
-    path: ''
-    port: '30251'
-    ps: 🔥Join+Telegram:@FarahVPN🟣
-    scy: auto
-    sni: ''
-    tls: ''
-    type: ''
-    v: '2'
-  server: 35.220.230.251
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 86c9c119-c46d-45a9-82a6-75a886e5e795
-- alterId: 2
-  cipher: auto
-  name: 2,22|2|🇭🇰17 |  1.1MB/s
-  network: ws
-  port: 80
-  server: ab5b041e-sv0xs0-ta1zbm-1lusm.hk.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 85d50914-8de0-11ef-83cc-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- name: 2,22|2|🇭🇰18 |  4.3MB/s
-  password: 050e6a1d-d9df-4d1b-bd5d-0afd6358aec3
-  port: 10465
-  server: sla.cn.964e995b760.gogodns.xin
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰香港 02 | 1x HK
+  password: 6457adfe-fefb-4c38-8fd7-02f50d64ae83
+  port: 31143
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰香港家宽 03 | 1x HK
+  password: 6457adfe-fefb-4c38-8fd7-02f50d64ae83
+  port: 31145
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇭🇰 香港 02 | 1x HK
+  password: 6df1d12e-b6c9-41e3-991f-47f63c8cf676
+  port: 36143
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇭🇰 香港住宅IP 03 | 1x HK
+  password: 6df1d12e-b6c9-41e3-991f-47f63c8cf676
+  port: 36145
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 14|13|香港4|@ripaojiedian
@@ -264,7 +136,7 @@ proxies:
   server: sla.cn.964e995b760.gogodns.xin
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- name: '14,33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #53'
+- name: '14,33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #71'
   password: 502ce857-5d5d-4acd-9c5c-f62a9acfa54e
   port: 42883
   server: 45.146.232.173
@@ -693,6 +565,16 @@ proxies:
   uuid: 4b9ca118-7fab-11eb-bd3a-f23c9164ca5d
 - alterId: 0
   cipher: auto
+  name: 20,26|2|🇰11 |  1.6MB/s
+  port: 15229
+  server: 789602b4-sux8g0-t8b7ls-qtx6.cm.plebai.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b35f5984-a0b4-11ea-82ef-f23c9164ca5d
+- alterId: 0
+  cipher: auto
   name: 20|1|🇭🇰9 |  5.5MB/s
   port: 15229
   server: 6aceadab-sv0xs0-sv1gez-1tk5u.cm.plebai.net
@@ -804,45 +686,45 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 22|0| 01 | 1x HK
-  password: 968e3e2b-ea1e-40e0-bed4-66a37f6b02b0
-  port: 31141
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '22|0|🇭🇰香港 02 | 1x HK #1'
-  password: 968e3e2b-ea1e-40e0-bed4-66a37f6b02b0
-  port: 31143
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 22|0|🇭🇰香港 03 | 1x HK
-  password: 968e3e2b-ea1e-40e0-bed4-66a37f6b02b0
-  port: 31145
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '22|1|🇭🇰 香港 01 | 1x HK #2'
-  password: 96bc5a03-a078-46e2-bbf7-7f6495e9fd5c
+  name: 22|0|  01 | 1x HK
+  password: 85303093-919e-4135-a5bd-a624671f0708
   port: 36141
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '22|1|🇭🇰 香港 02 | 1x HK #2'
-  password: 96bc5a03-a078-46e2-bbf7-7f6495e9fd5c
+  name: 22|0|🇭🇰 香港 02 | 1x HK
+  password: 85303093-919e-4135-a5bd-a624671f0708
   port: 36143
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 22|1|🇭🇰 香港IP 03 | 1x HK
-  password: 96bc5a03-a078-46e2-bbf7-7f6495e9fd5c
+  name: 22|0|🇭🇰 香港IP 03 | 1x HK
+  password: 85303093-919e-4135-a5bd-a624671f0708
   port: 36145
   server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 22|2|🇭🇰香港 01 | 1x HK
+  password: 510b53b8-ce0d-487a-8d39-856364488110
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 22|2|🇭🇰香港 02 | 1x HK
+  password: 510b53b8-ce0d-487a-8d39-856364488110
+  port: 31143
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 22|2|🇭🇰香港 03 | 1x HK
+  password: 510b53b8-ce0d-487a-8d39-856364488110
+  port: 31145
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -883,227 +765,246 @@ proxies:
   type: vmess
   uuid: 888ce5e9-6e3a-4b5c-bcb7-ce1125c02d79
 - cipher: chacha20-ietf-poly1305
-  name: '26|0| 01 | 1x HK #1'
-  password: 8e4d4fbf-204d-45c5-9f67-a897110be4e3
-  port: 31141
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '26|0|🇭🇰香港 02 | 1x HK #2'
-  password: 8e4d4fbf-204d-45c5-9f67-a897110be4e3
-  port: 31143
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '26|0|🇭🇰香港 03 | 1x HK #1'
-  password: 8e4d4fbf-204d-45c5-9f67-a897110be4e3
-  port: 31145
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 26|14|🇭🇰 香港 01 | 1x HK
-  password: 92186e4b-d532-4e48-9148-c17725948d25
+  name: '26|0|  01 | 1x HK #1'
+  password: d228d7ed-3840-4f01-92dc-139cd55d6889
   port: 36141
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 26|14|🇭🇰 香港 02 | 1x HK
-  password: 92186e4b-d532-4e48-9148-c17725948d25
+  name: '26|0|🇭🇰 香港 02 | 1x HK #1'
+  password: d228d7ed-3840-4f01-92dc-139cd55d6889
   port: 36143
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 26|14|🇭🇰 香港IP 03 | 1x HK
-  password: 92186e4b-d532-4e48-9148-c17725948d25
+  name: '26|0|🇭🇰 香港IP 03 | 1x HK #1'
+  password: d228d7ed-3840-4f01-92dc-139cd55d6889
   port: 36145
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 26|1|🇭🇰香港 01 | 1x HK
+  password: 57ba8f40-eaa3-4645-a802-56a9f6697415
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 26|1|🇭🇰香港 02 | 1x HK
+  password: 57ba8f40-eaa3-4645-a802-56a9f6697415
+  port: 31143
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 26|1|🇭🇰香港 03 | 1x HK
+  password: 57ba8f40-eaa3-4645-a802-56a9f6697415
+  port: 31145
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 26|2|🇭🇰6 |  3.3MB/s
+  network: ws
+  port: 80
+  raw:
+    add: 57b3518b-sv6hs0-sypj6z-1rk9y.hk.p5pv.com
+    aid: '2'
+    alpn: ''
+    fp: ''
+    host: broadcastlv.chat.bilibili.com
+    id: 88f6e3c4-1d01-11ef-812c-f23c91cfbbc9
+    net: ws
+    path: /
+    port: 80
+    ps: null
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: 57b3518b-sv6hs0-sypj6z-1rk9y.hk.p5pv.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 88f6e3c4-1d01-11ef-812c-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 26|2|🇭🇰7 |  1.0MB/s
+  network: ws
+  port: 80
+  raw:
+    add: 183cb398-sv6hs0-tdzlqm-1h1y5.hk.p5pv.com
+    aid: '2'
+    alpn: ''
+    fp: ''
+    host: broadcastlv.chat.bilibili.com
+    id: ef332c4a-a21b-11ed-9765-f23c9164ca5d
+    net: ws
+    path: /
+    port: 80
+    ps: null
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: 183cb398-sv6hs0-tdzlqm-1h1y5.hk.p5pv.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ef332c4a-a21b-11ed-9765-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 26|2|🇭🇰8 |  1.8MB/s
+  network: ws
+  port: 80
+  server: 532538de-sv0xs0-sylfil-1gcq2.hk.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 759bf004-6137-11ec-bd7c-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: 532538de-sv0xs0-sylfil-1gcq2.hk.p5pv.com
+    path: /
+- name: 26|2|🇭🇰9 |  2.1MB/s
+  password: 06fe48bd-53dc-4823-88b7-afb5d447a81e
+  port: 27102
+  server: sla.cn.964e995b760.gogodns.xin
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- alterId: 2
+  cipher: auto
+  name: 26|2|🇭🇰10 |  1.2MB/s
+  network: ws
+  port: 80
+  server: 66500699-sv2sg0-sx8y86-uvgv.hk.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: ee67070a-ceb2-11ed-bb7d-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: 66500699-sv2sg0-sx8y86-uvgv.hk.p5pv.com
+    path: /
+- alterId: '0'
+  cipher: auto
+  name: 26|2|🇭🇰12 |  1.3MB/s
+  network: tcp
+  port: '15229'
+  server: 60a411de-sva740-t7uinf-i8ie.cm.plebai.net
+  type: vmess
+  uuid: 990e8f34-bd4f-11ef-bdb9-f23c91cfbbc9
+- alterId: 2
+  cipher: auto
+  name: 26|2|🇭🇰15 |  1.0MB/s
+  network: ws
+  port: 80
+  server: 9b521ad7-sv2sg0-t2whio-1jcwu.hk.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: f93486ce-cc84-11ed-9e98-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: 9b521ad7-sv2sg0-t2whio-1jcwu.hk.p5pv.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 26,35|🔒 VM-TCP-NA 🇭🇰 HK-35.220.230.2...
+  network: tcp
+  port: 30251
+  raw:
+    add: 35.220.230.251
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: ''
+    id: 86c9c119-c46d-45a9-82a6-75a886e5e795
+    net: tcp
+    path: ''
+    port: '30251'
+    ps: 🔥Join+Telegram:@FarahVPN🟣
+    scy: auto
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: 35.220.230.251
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 86c9c119-c46d-45a9-82a6-75a886e5e795
+- alterId: 2
+  cipher: auto
+  name: 26|2|🇭🇰17 |  1.1MB/s
+  network: ws
+  port: 80
+  server: ab5b041e-sv0xs0-ta1zbm-1lusm.hk.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 85d50914-8de0-11ef-83cc-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- name: 26|2|🇭🇰18 |  4.3MB/s
+  password: 050e6a1d-d9df-4d1b-bd5d-0afd6358aec3
+  port: 10465
+  server: sla.cn.964e995b760.gogodns.xin
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232....
+  password: 5d84f3b9-fb95-45ac-8e53-2e396bc19fa1
+  port: 43395
+  server: 45.146.232.171
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- alterId: 0
+  name: 33,36|HK8
+  password: 6557bf4a-852b-4a69-ad35-d53293386a13
+  port: 443
+  server: 20.2.156.66
+  skip-cert-verify: true
+  sni: ru.mjt000.com
+  tls: true
+  type: trojan
+  udp: true
 - name: 33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1...
-  password: d70a8847-7c64-4912-98f2-ea21e952880f
-  port: 27201
+  password: 292f149a-33cb-4ecd-b432-5447764ea339
+  port: 27408
   server: 45.146.232.171
   skip-cert-verify: false
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
 - name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #1'
   password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
-  port: 42882
-  server: 45.146.232.173
+  port: 27002
+  server: 45.146.232.172
   skip-cert-verify: false
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-219.76.13.1...
-  network: tcp
-  password: Aimer
-  port: 443
-  server: 219.76.13.166
-  sni: ngepz.ambercc.filegear-sg.me
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #2'
-  password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
-  port: 34017
-  server: 45.146.232.171
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #3'
-  password: 15f5ff0e-1837-4de6-8675-47819d7135e4
-  port: 27001
-  server: 45.146.232.171
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #4'
-  password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
-  port: 27401
-  server: 45.146.232.173
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232....
-  network: tcp
-  password: 6849c459-9b04-46e6-8dd8-f92812711563
-  port: 27001
-  server: 45.146.232.173
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #5'
-  password: fc5accc5-c514-4505-a51d-7a13c9e66192
-  port: 22269
-  server: 45.146.232.171
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #6'
-  password: 72bf2755-45e6-481f-b41a-71aa20d8db12
-  port: 44397
-  server: 45.146.232.173
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #7'
-  password: 0597af27-0972-45de-a32f-d320348cb765
-  port: 43591
-  server: 45.146.232.173
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #8'
-  password: 4d3546b9-f55a-4ec4-af91-36408636d06b
-  port: 46668
-  server: 45.146.232.171
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- alterId: 0
-  name: 33,36|HK5
+- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232.... #1'
   network: tcp
   password: d63b8dad-02ee-4477-8f58-693a715ddd4c
-  port: 46925
-  server: 45.146.232.172
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  tls: true
-  type: trojan
-  udp: true
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #9'
-  password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
-  port: 22269
+  port: 33505
   server: 45.146.232.173
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232.... #2'
-  network: tcp
-  password: 28bdfb42-f7ae-4a1f-9c85-dbc7f6b6cc95
-  port: 43590
-  server: 45.146.232.170
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #11'
-  password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
-  port: 42883
-  server: 45.146.232.172
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-103.135.248....
-  password: Aimer
-  port: 443
-  server: 103.135.248.172
-  skip-cert-verify: false
-  sni: epccd.ambercc.filegear-sg.me
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #12'
-  password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
-  port: 43590
-  server: 45.146.232.172
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232.... #3'
-  network: tcp
-  password: 0509203e-af57-479a-b7b0-27c4c0a3d502
-  port: 43590
-  server: 45.146.232.173
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232.... #4'
-  network: tcp
-  password: 3155d1e7-3f24-46a1-ba4a-6935792f41e1
-  port: 10465
-  server: 45.146.232.171
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #13'
-  password: d70a8847-7c64-4912-98f2-ea21e952880f
-  port: 43383
-  server: 45.146.232.172
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #14'
-  password: 7043f742-ca4b-417b-ade0-0416392e72be
-  port: 46926
-  server: 45.146.232.171
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #15'
-  password: d70a8847-7c64-4912-98f2-ea21e952880f
-  port: 43586
-  server: 45.146.232.172
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232.... #5'
-  network: tcp
-  password: d63b8dad-02ee-4477-8f58-693a715ddd4c
-  port: 34017
-  server: 45.146.232.173
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #16'
-  password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
-  port: 27401
-  server: 45.146.232.171
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #17'
-  password: 236c7c9a-76d7-431b-8c0d-e8f9f9dc80b5
-  port: 46925
-  server: 45.146.232.173
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #18'
-  password: 048e74a2-7c42-4826-980f-1d3378397f7d
-  port: 43592
-  server: 45.146.232.171
-  skip-cert-verify: true
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
 - alterId: 0
@@ -1117,104 +1018,59 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #19'
-  password: e254ed63-33df-4ca8-a980-7d0d9f510a93
-  port: 46668
-  server: 45.146.232.172
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
+- name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-185.14.47.1...
+  network: tcp
+  password: 3698a3e7-2877-4ded-a665-d81ee3cfd449
+  port: 12052
+  server: 185.14.47.199
+  sni: cdn.alibaba.com
   type: trojan
-- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-8.210.222.23...
-  password: Aimer
-  port: 38513
-  server: 8.210.222.238
-  skip-cert-verify: false
-  sni: epccd.ambercc.filegear-sg.me
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #20'
-  password: 085e84ab-ed44-4665-a90e-1b0e5fcd9084
-  port: 46927
-  server: 45.146.232.173
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-20.2.156.105...
-  password: 6557bf4a-852b-4a69-ad35-d53293386a13
-  port: 443
-  server: 20.2.156.105
-  sni: ru.mjt000.com
-  type: trojan
-- alterId: 0
-  name: 33,36|HK
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #2'
   password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
-  port: 33506
-  server: 45.146.232.171
-  skip-cert-verify: true
+  port: 27102
+  server: 45.146.232.173
+  skip-cert-verify: false
   sni: q08m.vgraxiw73s.hasyaf.cn
-  tls: true
   type: trojan
-  udp: true
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #22'
-  password: 6f4221ca-e019-4652-a3cc-0995dba60dc5
-  port: 27408
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #3'
+  password: 8da4c3ad-463c-4546-a841-3355024f8656
+  port: 27103
+  server: 45.146.232.173
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-185.14.47.1... #1'
+  network: tcp
+  password: d4c22fd9-1474-4e9f-baf7-80b162f3e60c
+  port: 12002
+  server: 185.14.47.199
+  sni: cdn.alibaba.com
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #5'
+  password: f4c09d3e-1143-4b97-af3d-6b8220ed930a
+  port: 27103
+  server: 45.146.232.171
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232.... #2'
+  network: tcp
+  password: 6849c459-9b04-46e6-8dd8-f92812711563
+  port: 27001
   server: 45.146.232.173
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #23'
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #6'
+  password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
+  port: 27401
+  server: 45.146.232.172
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #7'
   password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
   port: 42882
-  server: 45.146.232.171
+  server: 45.146.232.173
   skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #25'
-  password: 9e9ef571-5a94-47e9-916f-95c14f75f6f2
-  port: 43498
-  server: 45.146.232.171
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #26'
-  password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
-  port: 33506
-  server: 45.146.232.173
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232.... #6'
-  network: tcp
-  password: 19b4d632-0d79-4702-bfc8-1179a7e7a885
-  port: 43383
-  server: 45.146.232.173
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232.... #7'
-  password: 5d84f3b9-fb95-45ac-8e53-2e396bc19fa1
-  port: 43395
-  server: 45.146.232.171
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #27'
-  password: d70a8847-7c64-4912-98f2-ea21e952880f
-  port: 43583
-  server: 45.146.232.172
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232.... #8'
-  network: tcp
-  password: d63b8dad-02ee-4477-8f58-693a715ddd4c
-  port: 46925
-  server: 45.146.232.171
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #28'
-  password: 64f346fb-617e-49df-a9dc-b962a1c0d136
-  port: 27202
-  server: 45.146.232.171
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232.... #9'
-  network: tcp
-  password: 0509203e-af57-479a-b7b0-27c4c0a3d502
-  port: 43590
-  server: 45.146.232.171
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
 - alterId: 0
@@ -1227,236 +1083,10 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-185.14.47.1...
-  network: tcp
-  password: 3698a3e7-2877-4ded-a665-d81ee3cfd449
-  port: 12052
-  server: 185.14.47.199
-  sni: cdn.alibaba.com
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-192.142.4.6...
-  network: tcp
-  password: 0f73d067-8fac-4bf4-a08e-ca2434ef5086
-  port: 42405
-  server: 192.142.4.64
-  sni: cdn.alibaba.com
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #30'
-  password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
-  port: 42881
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #8'
+  password: 64f346fb-617e-49df-a9dc-b962a1c0d136
+  port: 27202
   server: 45.146.232.171
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #31'
-  password: 8e5f5dcb-5946-4c8f-9a79-7c0d72d977bf
-  port: 43394
-  server: 45.146.232.173
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-38.147.186.9...
-  password: Aimer
-  port: 447
-  server: 38.147.186.90
-  skip-cert-verify: false
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #32'
-  password: d70a8847-7c64-4912-98f2-ea21e952880f
-  port: 10465
-  server: 45.146.232.172
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-185.14.47.1... #1'
-  network: tcp
-  password: d4c22fd9-1474-4e9f-baf7-80b162f3e60c
-  port: 12002
-  server: 185.14.47.199
-  sni: cdn.alibaba.com
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #33'
-  password: d70a8847-7c64-4912-98f2-ea21e952880f
-  port: 43583
-  server: 45.146.232.171
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- alterId: 0
-  name: 33,36|HK9
-  password: 7043f742-ca4b-417b-ade0-0416392e72be
-  port: 46926
-  server: 45.146.232.173
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  tls: true
-  type: trojan
-  udp: true
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #35'
-  password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
-  port: 27102
-  server: 45.146.232.173
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #36'
-  password: 038f067a-213a-4c7d-89d7-e8fdeebcfe71
-  port: 27301
-  server: 45.146.232.173
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #37'
-  password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
-  port: 42881
-  server: 45.146.232.172
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- alterId: 0
-  name: 33,36|HK3
-  password: 72bf2755-45e6-481f-b41a-71aa20d8db12
-  port: 44397
-  server: 45.146.232.171
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  tls: true
-  type: trojan
-  udp: true
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #39'
-  password: 4d3546b9-f55a-4ec4-af91-36408636d06b
-  port: 46668
-  server: 45.146.232.173
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232.... #10'
-  network: tcp
-  password: 3155d1e7-3f24-46a1-ba4a-6935792f41e1
-  port: 10465
-  server: 45.146.232.173
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-38.22.88.199...
-  password: Aimer
-  port: 18026
-  server: 38.22.88.199
-  skip-cert-verify: false
-  sni: epccd.ambercc.filegear-sg.me
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #40'
-  password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
-  port: 42882
-  server: 45.146.232.172
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232.... #11'
-  network: tcp
-  password: d63b8dad-02ee-4477-8f58-693a715ddd4c
-  port: 33505
-  server: 45.146.232.173
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #41'
-  password: e254ed63-33df-4ca8-a980-7d0d9f510a93
-  port: 42883
-  server: 45.146.232.171
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #42'
-  password: d70a8847-7c64-4912-98f2-ea21e952880f
-  port: 43583
-  server: 45.146.232.173
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- alterId: 0
-  name: 33,36|🇺🇸US美国5
-  password: Aimer
-  port: 35961
-  server: 47.238.136.218
-  skip-cert-verify: true
-  sni: epccd.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 33,36|HK10
-  password: F3CSSRxD8uljgF73IAn34C3aE9wSqAzZDp5ZOCpxDBRacNYelOYayKTe826Xy0
-  port: 443
-  server: 219.76.13.180
-  skip-cert-verify: true
-  sni: stutter.freetrade.link
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 33,36|HK14
-  password: b26e31e5-eac1-45b0-9069-83830bd69521
-  port: 443
-  server: 20.187.85.198
-  skip-cert-verify: true
-  sni: hkt.iamnotagoodman.com
-  tls: true
-  type: trojan
-  udp: true
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #43'
-  password: 6d2b4216-3ab1-45bc-a1dc-5414c590c7a5
-  port: 27002
-  server: 45.146.232.171
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #44'
-  password: f4c09d3e-1143-4b97-af3d-6b8220ed930a
-  port: 27103
-  server: 45.146.232.171
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #45'
-  password: 8e5f5dcb-5946-4c8f-9a79-7c0d72d977bf
-  port: 43394
-  server: 45.146.232.171
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #46'
-  password: fc1148e1-d0a8-4e8f-88ea-fefbeb7ed38d
-  port: 34014
-  server: 45.146.232.171
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #47'
-  password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
-  port: 43394
-  server: 45.146.232.172
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #48'
-  password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
-  port: 43395
-  server: 45.146.232.172
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #49'
-  password: 1a7e4dd1-fa44-4471-a3eb-40e3aa3630fa
-  port: 33505
-  server: 45.146.232.171
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #50'
-  password: 37268e16-8fa3-479f-a0eb-f2e1cc6f8b7c
-  port: 43498
-  server: 45.146.232.173
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #51'
-  password: 8bb8802b-af19-4cbd-978c-5eb268eb9634
-  port: 43497
-  server: 45.146.232.173
-  skip-cert-verify: false
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
 - alterId: 0
@@ -1469,96 +1099,307 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232.... #12'
-  password: 5d84f3b9-fb95-45ac-8e53-2e396bc19fa1
-  port: 43395
+- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-8.218.107.16...
+  password: Aimer
+  port: 17085
+  server: 8.218.107.164
+  skip-cert-verify: false
+  sni: epccd.ambercc.filegear-sg.me
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #10'
+  password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
+  port: 22271
+  server: 45.146.232.171
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #11'
+  password: fb78f0de-5d1c-4b7c-95b5-045c594a71db
+  port: 46926
   server: 45.146.232.173
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-20.2.44.220...
-  network: tcp
-  password: 8aab51da-6b67-4bd2-b6e6-5ab3008cf53e
-  port: 443
-  server: 20.2.44.220
-  skip-cert-verify: true
-  sni: jp.iamnotagoodman.com
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #12'
+  password: 4d3546b9-f55a-4ec4-af91-36408636d06b
+  port: 46668
+  server: 45.146.232.173
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #54'
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #13'
+  password: d70a8847-7c64-4912-98f2-ea21e952880f
+  port: 43586
+  server: 45.146.232.172
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #14'
+  password: e604616e-645e-41d0-96e6-c6dd7a03cba5
+  port: 27101
+  server: 45.146.232.171
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- alterId: 0
+  name: 33,36|HK10
+  password: F3CSSRxD8uljgF73IAn34C3aE9wSqAzZDp5ZOCpxDBRacNYelOYayKTe826Xy0
+  port: 443
+  server: 219.76.13.180
+  skip-cert-verify: true
+  sni: stutter.freetrade.link
+  tls: true
+  type: trojan
+  udp: true
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #15'
+  password: d70a8847-7c64-4912-98f2-ea21e952880f
+  port: 27201
+  server: 45.146.232.171
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232.... #3'
+  network: tcp
+  password: 292f149a-33cb-4ecd-b432-5447764ea339
+  port: 27408
+  server: 45.146.232.173
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #16'
+  password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
+  port: 42882
+  server: 45.146.232.172
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-103.135.248....
+  password: Aimer
+  port: 443
+  server: 103.135.248.172
+  skip-cert-verify: false
+  sni: epccd.ambercc.filegear-sg.me
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #17'
+  password: 8db0a12c-d31c-4519-9617-e235a7c779f8
+  port: 43397
+  server: 45.146.232.173
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #18'
+  password: 8daad5d4-4ebd-41e1-b308-1371377a4f11
+  port: 46925
+  server: 45.146.232.171
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #19'
+  password: 0b8667c7-1208-440d-ac97-302f8c6f3f0c
+  port: 42882
+  server: 45.146.232.171
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #20'
+  password: 1a7e4dd1-fa44-4471-a3eb-40e3aa3630fa
+  port: 33505
+  server: 45.146.232.171
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-43.154.34.7...
+  network: tcp
+  password: Aimer
+  port: 1935
+  server: 43.154.34.74
+  sni: ngepz.ambercc.filegear-sg.me
+  type: trojan
+- alterId: 0
+  name: 33,36|HK2
+  password: d70a8847-7c64-4912-98f2-ea21e952880f
+  port: 34016
+  server: 45.146.232.173
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  tls: true
+  type: trojan
+  udp: true
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #22'
   password: 8bb8802b-af19-4cbd-978c-5eb268eb9634
   port: 43497
   server: 45.146.232.171
   skip-cert-verify: false
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #55'
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #23'
+  password: 8e5f5dcb-5946-4c8f-9a79-7c0d72d977bf
+  port: 43394
+  server: 45.146.232.171
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232.... #4'
+  password: 5d84f3b9-fb95-45ac-8e53-2e396bc19fa1
+  port: 43395
+  server: 45.146.232.173
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #24'
+  password: 8e5f5dcb-5946-4c8f-9a79-7c0d72d977bf
+  port: 43394
+  server: 45.146.232.173
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- alterId: 0
+  name: 33,36|HK13
+  password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
+  port: 27101
+  server: 45.146.232.172
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  tls: true
+  type: trojan
+  udp: true
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #27'
+  password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
+  port: 34017
+  server: 45.146.232.171
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #28'
   password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
   port: 22271
-  server: 45.146.232.173
+  server: 45.146.232.172
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #29'
+  password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
+  port: 43395
+  server: 45.146.232.172
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #30'
+  password: e254ed63-33df-4ca8-a980-7d0d9f510a93
+  port: 46668
+  server: 45.146.232.172
   skip-cert-verify: false
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #56'
-  password: 8da4c3ad-463c-4546-a841-3355024f8656
-  port: 27103
-  server: 45.146.232.173
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #31'
+  password: e254ed63-33df-4ca8-a980-7d0d9f510a93
+  port: 42883
+  server: 45.146.232.171
   skip-cert-verify: false
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232.... #13'
-  network: tcp
-  password: 28bdfb42-f7ae-4a1f-9c85-dbc7f6b6cc95
-  port: 43394
-  server: 45.146.232.170
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: 33|🔒 TR-WS-TLS 🇭🇰 HK-8.223.15.4:4...
-  network: ws
-  password: Aimer
+- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-203.23.128.4...
+  password: '!!str 3828095943467868160'
   port: 443
-  server: 8.223.15.4
-  sni: agepl.ambercc.filegear-sg.me
+  server: 203.23.128.48
+  skip-cert-verify: true
+  sni: evolving-hippo.dolphin109.quest
   type: trojan
-  ws-opts:
-    headers:
-      Host: agepl.ambercc.filegear-sg.me
-- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232.... #14'
-  network: tcp
-  password: d08d4b82-6a66-4ac2-9051-81b2375e1aaa
-  port: 43499
-  server: 45.146.232.173
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #57'
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #32'
   password: 21248e25-bc7f-4c39-af5b-09ec6a5a2b5b
   port: 43393
   server: 45.146.232.173
   skip-cert-verify: false
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #58'
-  password: 6d2b4216-3ab1-45bc-a1dc-5414c590c7a5
-  port: 27002
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #33'
+  password: 72bf2755-45e6-481f-b41a-71aa20d8db12
+  port: 44397
   server: 45.146.232.173
+  skip-cert-verify: false
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #59'
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #34'
   password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
-  port: 33506
+  port: 42881
   server: 45.146.232.172
   skip-cert-verify: false
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232.... #15'
-  network: tcp
-  password: 6849c459-9b04-46e6-8dd8-f92812711563
-  port: 34016
-  server: 45.146.232.172
-  sni: q08m.vgraxiw73s.hasyaf.cn
+- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-46.3.104.20:...
+  password: Aimer
+  port: 22222
+  server: 46.3.104.20
+  skip-cert-verify: false
+  sni: epcci.ambercc.filegear-sg.me
   type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #60'
+- alterId: 0
+  name: 33,36|HK14
+  password: b26e31e5-eac1-45b0-9069-83830bd69521
+  port: 443
+  server: 20.187.85.198
+  skip-cert-verify: true
+  sni: hkt.iamnotagoodman.com
+  tls: true
+  type: trojan
+  udp: true
+- name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-154.218.15....
+  network: tcp
+  password: Aimer
+  port: 2083
+  server: 154.218.15.250
+  sni: agept.ambercc.filegear-sg.me
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #35'
   password: 09032837-9d8b-459a-aea7-92edddc2d20a
   port: 43396
   server: 45.146.232.173
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #36'
+  password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
+  port: 27102
+  server: 45.146.232.171
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #37'
+  password: d70a8847-7c64-4912-98f2-ea21e952880f
+  port: 43396
+  server: 45.146.232.172
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #38'
+  password: 003fcf00-48d4-4d29-a8a4-252dc7f288b9
+  port: 27401
+  server: 45.146.232.173
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #39'
+  password: 050e6a1d-d9df-4d1b-bd5d-0afd6358aec3
+  port: 10465
+  server: 45.146.232.173
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-47.239.107.1...
+  password: Aimer
+  port: 16032
+  server: 47.239.107.108
+  sni: epcco.ambercc.filegear-sg.me
+  type: trojan
+- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232.... #5'
+  network: tcp
+  password: 28bdfb42-f7ae-4a1f-9c85-dbc7f6b6cc95
+  port: 46927
+  server: 45.146.232.170
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232.... #6'
+  network: tcp
+  password: 0509203e-af57-479a-b7b0-27c4c0a3d502
+  port: 43590
+  server: 45.146.232.171
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #40'
+  password: 0597af27-0972-45de-a32f-d320348cb765
+  port: 43591
+  server: 45.146.232.173
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #41'
+  password: fc1148e1-d0a8-4e8f-88ea-fefbeb7ed38d
+  port: 34014
+  server: 45.146.232.171
+  skip-cert-verify: false
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
 - alterId: 0
@@ -1572,113 +1413,34 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #61'
-  password: 038f067a-213a-4c7d-89d7-e8fdeebcfe71
-  port: 27301
-  server: 45.146.232.171
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232.... #17'
-  network: tcp
-  password: d63b8dad-02ee-4477-8f58-693a715ddd4c
-  port: 34017
-  server: 45.146.232.172
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #62'
-  password: e604616e-645e-41d0-96e6-c6dd7a03cba5
-  port: 27101
-  server: 45.146.232.171
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #63'
-  password: 8db0a12c-d31c-4519-9617-e235a7c779f8
-  port: 43397
-  server: 45.146.232.173
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-192.142.4.6... #1'
+- name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-192.142.4.6...
   network: tcp
   password: 030ba667-fde3-498d-99bb-9a0187519dcf
   port: 40387
   server: 192.142.4.64
   sni: cdn.alibaba.com
   type: trojan
-- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232.... #18'
-  network: tcp
-  password: 19b4d632-0d79-4702-bfc8-1179a7e7a885
-  port: 43383
-  server: 45.146.232.171
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #64'
-  password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
-  port: 42881
-  server: 45.146.232.173
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #65'
-  password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
-  port: 43591
-  server: 45.146.232.172
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #66'
-  password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
-  port: 27001
-  server: 45.146.232.172
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-46.3.104.20:...
-  password: Aimer
-  port: 22222
-  server: 46.3.104.20
-  skip-cert-verify: false
-  sni: epcci.ambercc.filegear-sg.me
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #67'
-  password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
-  port: 27002
-  server: 45.146.232.172
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #68'
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #42'
   password: d70a8847-7c64-4912-98f2-ea21e952880f
-  port: 27201
+  port: 43583
   server: 45.146.232.172
-  skip-cert-verify: false
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #69'
-  password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
-  port: 27102
-  server: 45.146.232.171
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-18.167.74.15...
+- name: 33|🔒 TR-WS-TLS 🇭🇰 HK-8.223.15.4:4...
+  network: ws
   password: Aimer
-  port: 1080
-  server: 18.167.74.152
-  sni: epccu.ambercc.filegear-sg.me
+  port: 443
+  server: 8.223.15.4
+  sni: agepl.ambercc.filegear-sg.me
   type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #70'
-  password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
-  port: 22271
+  ws-opts:
+    headers:
+      Host: agepl.ambercc.filegear-sg.me
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #43'
+  password: 038f067a-213a-4c7d-89d7-e8fdeebcfe71
+  port: 27301
   server: 45.146.232.171
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232.... #19'
-  network: tcp
-  password: 292f149a-33cb-4ecd-b432-5447764ea339
-  port: 27408
-  server: 45.146.232.171
+  skip-cert-verify: false
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
 - alterId: 0
@@ -1691,26 +1453,138 @@ proxies:
   tls: true
   type: trojan
   udp: true
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #45'
+  password: 8bb8802b-af19-4cbd-978c-5eb268eb9634
+  port: 43497
+  server: 45.146.232.173
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-20.2.156.105...
+  password: 6557bf4a-852b-4a69-ad35-d53293386a13
+  port: 443
+  server: 20.2.156.105
+  sni: ru.mjt000.com
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #46'
+  password: 085e84ab-ed44-4665-a90e-1b0e5fcd9084
+  port: 46927
+  server: 45.146.232.171
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #47'
+  password: 003fcf00-48d4-4d29-a8a4-252dc7f288b9
+  port: 27401
+  server: 45.146.232.171
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #48'
+  password: 6d2b4216-3ab1-45bc-a1dc-5414c590c7a5
+  port: 27002
+  server: 45.146.232.173
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
 - alterId: 0
-  name: 33,36|HK13
+  name: 33,36|HK3
+  password: 72bf2755-45e6-481f-b41a-71aa20d8db12
+  port: 44397
+  server: 45.146.232.171
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  tls: true
+  type: trojan
+  udp: true
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #50'
   password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
-  port: 27101
+  port: 42881
+  server: 45.146.232.171
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232.... #8'
+  network: tcp
+  password: d63b8dad-02ee-4477-8f58-693a715ddd4c
+  port: 34017
+  server: 45.146.232.173
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- alterId: 0
+  name: 33,36|HK5
+  network: tcp
+  password: d63b8dad-02ee-4477-8f58-693a715ddd4c
+  port: 46925
   server: 45.146.232.172
   skip-cert-verify: true
   sni: q08m.vgraxiw73s.hasyaf.cn
   tls: true
   type: trojan
   udp: true
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #73'
-  password: 8db0a12c-d31c-4519-9617-e235a7c779f8
-  port: 43397
-  server: 45.146.232.171
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #51'
+  password: d70a8847-7c64-4912-98f2-ea21e952880f
+  port: 27201
+  server: 45.146.232.172
+  skip-cert-verify: false
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #74'
+- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232.... #10'
+  network: tcp
+  password: 0509203e-af57-479a-b7b0-27c4c0a3d502
+  port: 43590
+  server: 45.146.232.173
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #52'
   password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
   port: 22269
   server: 45.146.232.172
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #53'
+  password: 4d3546b9-f55a-4ec4-af91-36408636d06b
+  port: 46668
+  server: 45.146.232.171
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #54'
+  password: d70a8847-7c64-4912-98f2-ea21e952880f
+  port: 43383
+  server: 45.146.232.172
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #55'
+  password: 038f067a-213a-4c7d-89d7-e8fdeebcfe71
+  port: 27301
+  server: 45.146.232.173
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232.... #11'
+  network: tcp
+  password: 3155d1e7-3f24-46a1-ba4a-6935792f41e1
+  port: 10465
+  server: 45.146.232.171
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232.... #12'
+  network: tcp
+  password: d63b8dad-02ee-4477-8f58-693a715ddd4c
+  port: 43397
+  server: 45.146.232.172
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #56'
+  password: fc1148e1-d0a8-4e8f-88ea-fefbeb7ed38d
+  port: 34014
+  server: 45.146.232.173
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232.... #13'
+  network: tcp
+  password: 19b4d632-0d79-4702-bfc8-1179a7e7a885
+  port: 43383
+  server: 45.146.232.171
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
 - name: 33|🔒 TR-TCP-NA 🇭🇰 HK-18.166.149.7...
@@ -1719,153 +1593,268 @@ proxies:
   server: 18.166.149.73
   sni: epccu.ambercc.filegear-sg.me
   type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #75'
-  password: fc1148e1-d0a8-4e8f-88ea-fefbeb7ed38d
-  port: 34014
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #57'
+  password: 085e84ab-ed44-4665-a90e-1b0e5fcd9084
+  port: 46927
   server: 45.146.232.173
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #76'
-  password: 09032837-9d8b-459a-aea7-92edddc2d20a
-  port: 43396
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #58'
+  password: 08571a3f-30fc-4646-929f-050da2fb62d0
+  port: 43383
+  server: 45.146.232.173
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #59'
+  password: d70a8847-7c64-4912-98f2-ea21e952880f
+  port: 43583
   server: 45.146.232.171
   skip-cert-verify: false
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #77'
-  password: 51a668c6-d1bb-4e7e-aca3-125349f779fd
+- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-18.167.74.15...
+  password: Aimer
+  port: 1080
+  server: 18.167.74.152
+  sni: epccu.ambercc.filegear-sg.me
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #60'
+  password: 048e74a2-7c42-4826-980f-1d3378397f7d
   port: 43592
+  server: 45.146.232.171
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #61'
+  password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
+  port: 42883
+  server: 45.146.232.172
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #62'
+  password: fc5accc5-c514-4505-a51d-7a13c9e66192
+  port: 22269
   server: 45.146.232.173
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-20.2.44.220...
+  network: tcp
+  password: 8aab51da-6b67-4bd2-b6e6-5ab3008cf53e
+  port: 443
+  server: 20.2.44.220
+  skip-cert-verify: true
+  sni: jp.iamnotagoodman.com
+  type: trojan
+- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232.... #14'
+  network: tcp
+  password: d08d4b82-6a66-4ac2-9051-81b2375e1aaa
+  port: 43499
+  server: 45.146.232.173
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #63'
+  password: fc5accc5-c514-4505-a51d-7a13c9e66192
+  port: 22269
+  server: 45.146.232.171
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232.... #15'
+  network: tcp
+  password: 28bdfb42-f7ae-4a1f-9c85-dbc7f6b6cc95
+  port: 43394
+  server: 45.146.232.170
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #64'
+  password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
+  port: 43591
+  server: 45.146.232.172
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #65'
+  password: 8e4ee829-afc3-400d-bc27-f696d6d7319a
+  port: 22271
+  server: 45.146.232.173
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-219.76.13.1... #1'
+  network: tcp
+  password: Aimer
+  port: 443
+  server: 219.76.13.166
+  sni: ngepz.ambercc.filegear-sg.me
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #66'
+  password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
+  port: 42881
+  server: 45.146.232.173
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #67'
+  password: 6d2b4216-3ab1-45bc-a1dc-5414c590c7a5
+  port: 27002
+  server: 45.146.232.171
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #68'
+  password: 15f5ff0e-1837-4de6-8675-47819d7135e4
+  port: 27001
+  server: 45.146.232.171
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-192.142.4.6... #1'
+  network: tcp
+  password: 0f73d067-8fac-4bf4-a08e-ca2434ef5086
+  port: 42405
+  server: 192.142.4.64
+  sni: cdn.alibaba.com
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #69'
+  password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
+  port: 33506
+  server: 45.146.232.172
   skip-cert-verify: false
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
 - alterId: 0
-  name: 33,36|HK8
-  password: 6557bf4a-852b-4a69-ad35-d53293386a13
-  port: 443
-  server: 20.2.156.66
+  name: 33,36|HK
+  password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
+  port: 33506
+  server: 45.146.232.171
   skip-cert-verify: true
-  sni: ru.mjt000.com
+  sni: q08m.vgraxiw73s.hasyaf.cn
   tls: true
   type: trojan
   udp: true
-- name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-154.218.15....
-  network: tcp
-  password: Aimer
-  port: 2083
-  server: 154.218.15.250
-  sni: agept.ambercc.filegear-sg.me
-  type: trojan
-- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232.... #20'
-  network: tcp
-  password: 28bdfb42-f7ae-4a1f-9c85-dbc7f6b6cc95
-  port: 46927
-  server: 45.146.232.170
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-43.154.34.7...
-  network: tcp
-  password: Aimer
-  port: 1935
-  server: 43.154.34.74
-  sni: ngepz.ambercc.filegear-sg.me
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #78'
-  password: 085e84ab-ed44-4665-a90e-1b0e5fcd9084
-  port: 46927
-  server: 45.146.232.171
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232.... #21'
+- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232.... #16'
   network: tcp
   password: d63b8dad-02ee-4477-8f58-693a715ddd4c
   port: 27103
   server: 45.146.232.172
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-47.239.107.1...
-  password: Aimer
-  port: 16032
-  server: 47.239.107.108
-  sni: epcco.ambercc.filegear-sg.me
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #72'
+  password: 8db0a12c-d31c-4519-9617-e235a7c779f8
+  port: 43397
+  server: 45.146.232.171
+  sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #79'
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #73'
+  password: 7043f742-ca4b-417b-ade0-0416392e72be
+  port: 46926
+  server: 45.146.232.171
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #74'
+  password: d70a8847-7c64-4912-98f2-ea21e952880f
+  port: 10465
+  server: 45.146.232.172
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #75'
+  password: 51a668c6-d1bb-4e7e-aca3-125349f779fd
+  port: 43592
+  server: 45.146.232.173
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-38.147.186.9...
+  password: Aimer
+  port: 447
+  server: 38.147.186.90
+  skip-cert-verify: false
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #76'
   password: 7f744c6e-7f17-416e-9ea7-5d5e6482b705
   port: 34016
   server: 45.146.232.171
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- alterId: 0
-  name: 33,36|HK2
-  password: d70a8847-7c64-4912-98f2-ea21e952880f
-  port: 34016
-  server: 45.146.232.173
-  skip-cert-verify: true
+- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232.... #17'
+  network: tcp
+  password: 28bdfb42-f7ae-4a1f-9c85-dbc7f6b6cc95
+  port: 43590
+  server: 45.146.232.170
   sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232.... #18'
+  network: tcp
+  password: 6849c459-9b04-46e6-8dd8-f92812711563
+  port: 34016
+  server: 45.146.232.172
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-38.22.88.199...
+  password: Aimer
+  port: 18026
+  server: 38.22.88.199
+  skip-cert-verify: false
+  sni: epccd.ambercc.filegear-sg.me
+  type: trojan
+- alterId: 0
+  name: 33,36|🇺🇸US美国5
+  password: Aimer
+  port: 35961
+  server: 47.238.136.218
+  skip-cert-verify: true
+  sni: epccd.ambercc.filegear-sg.me
   tls: true
   type: trojan
   udp: true
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #81'
-  password: d70a8847-7c64-4912-98f2-ea21e952880f
-  port: 43396
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #78'
+  password: 8daad5d4-4ebd-41e1-b308-1371377a4f11
+  port: 46925
+  server: 45.146.232.173
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #79'
+  password: 37268e16-8fa3-479f-a0eb-f2e1cc6f8b7c
+  port: 43498
+  server: 45.146.232.173
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-8.210.222.23...
+  password: Aimer
+  port: 38513
+  server: 8.210.222.238
+  skip-cert-verify: false
+  sni: epccd.ambercc.filegear-sg.me
+  type: trojan
+- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232.... #19'
+  network: tcp
+  password: d63b8dad-02ee-4477-8f58-693a715ddd4c
+  port: 34017
   server: 45.146.232.172
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #80'
+  password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
+  port: 27001
+  server: 45.146.232.172
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #81'
+  password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
+  port: 33506
+  server: 45.146.232.173
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
 - name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #82'
   password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
-  port: 22271
+  port: 43394
   server: 45.146.232.172
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇭🇰 HK-45.146.232.1... #83'
-  password: 67aae342-d53e-4b33-bc16-b70e15b30dc4
-  port: 27401
-  server: 45.146.232.172
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-8.218.107.16...
-  password: Aimer
-  port: 17085
-  server: 8.218.107.164
   skip-cert-verify: false
-  sni: epccd.ambercc.filegear-sg.me
-  type: trojan
-- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-45.146.232.... #22'
-  network: tcp
-  password: d63b8dad-02ee-4477-8f58-693a715ddd4c
-  port: 43397
-  server: 45.146.232.172
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- alterId: 2
-  cipher: auto
-  name: 35|🔒 VM-WS-NA 🇭🇰 HK-112.120.125.1...
-  network: ws
-  port: 8101
-  server: 112.120.125.105
-  servername: broadcastlv.chat.bilibili.com
-  tls: false
-  type: vmess
-  uuid: ca76ebf2-7312-11ea-82ef-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: 5c84d62c-sv0xs0-t9lb8r-ptn8.wtt5.p5pv.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 35|🔒 VM-WS-TLS 🇭🇰 HK-18.162.51.82...
-  network: ws
-  port: '10805'
-  server: 18.162.51.82
-  servername: kahk.kia-ai.com
-  tls: true
-  type: vmess
-  uuid: 2be9398d-f903-44bd-b36c-88008a601dde
-  ws-opts:
-    headers:
-      Host: kahk.kia-ai.com
-    path: /
 - alterId: 0
   cipher: auto
   name: 35|🔒 VM-WS-TLS 🇭🇰 HK-103.118.40.2...
@@ -1904,6 +1893,44 @@ proxies:
   tls: false
   type: vmess
   uuid: 0c1b0cfa-dcc0-4978-8db5-e8dbe1b6a424
+- alterId: 2
+  cipher: auto
+  name: 35|🔒 VM-WS-NA 🇭🇰 HK-112.120.125.1...
+  network: ws
+  port: 8101
+  server: 112.120.125.105
+  servername: broadcastlv.chat.bilibili.com
+  tls: false
+  type: vmess
+  uuid: ca76ebf2-7312-11ea-82ef-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: 5c84d62c-sv0xs0-t9lb8r-ptn8.wtt5.p5pv.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 35|🔒 VM-WS-TLS 🇭🇰 HK-18.162.51.82...
+  network: ws
+  port: '10805'
+  server: 18.162.51.82
+  servername: kahk.kia-ai.com
+  tls: true
+  type: vmess
+  uuid: 2be9398d-f903-44bd-b36c-88008a601dde
+  ws-opts:
+    headers:
+      Host: kahk.kia-ai.com
+    path: /
+- alterId: 0
+  name: 36|HK9
+  password: 7043f742-ca4b-417b-ade0-0416392e72be
+  port: 46926
+  server: 45.146.232.173
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 36|HK15
