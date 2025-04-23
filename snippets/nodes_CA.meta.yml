@@ -1,16 +1,50 @@
 proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇨🇦1 |  1.1MB/s
+  network: tcp
+  port: 42557
+  reality-opts:
+    public-key: LiHpb4jWrgHBSpi1mjKH3I8m2ahpVNexeNDh-sMW3Xo
+    short-id: f430927d
+  server: 155.248.219.28
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
+- auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  name: 0|🇨🇦2 |  1.1MB/s
+  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  port: 45979
+  server: 132.145.108.102
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- alterId: 2
+  cipher: auto
+  name: 0,14|吉林省 移动(全省通用)
+  network: ws
+  port: '30825'
+  server: v25.heduian.link
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇨🇦加拿大 01 | 1x CA
-  password: 4a943999-c273-4eab-bc07-405923786ecd
-  port: 31441
-  server: free.2apzhfa.xyz
+  name: 1|🇨🇦 加拿大 01 | 1x CA
+  password: 2ceb56cd-c0de-4beb-8ab0-6123b5bb8db8
+  port: 36441
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇨🇦 加拿大 01 | 1x CA
-  password: 11b47b9a-77fc-43cd-87ea-9dfa003fa00e
-  port: 36441
-  server: free.2weradf.xyz
+  name: 2|🇨🇦加拿大 01 | 1x CA
+  password: 6e74da1c-0ec8-4db3-ab25-11f815e9477d
+  port: 31441
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - alterId: 0
@@ -1111,14 +1145,14 @@ proxies:
     path: /?ed=2560
 - cipher: chacha20-ietf-poly1305
   name: 22|0|🇦加大 01 | 1x CA
-  password: 69e3a6b0-ecba-4854-9d8c-c88dd7b6150f
+  password: d4647491-02e5-425f-928a-b914adb5ffa8
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 22|2|🇦 加拿大 01 | 1x CA
-  password: d638091d-d590-49f9-80ff-5dc66c7ca73b
+  name: 22|14|🇦 加拿大 01 | 1x CA
+  password: 357ce67c-0b36-453a-b63e-ea2b5ac75265
   port: 36441
   server: free.2weradf.xyz
   type: ss
@@ -1152,24 +1186,24 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - cipher: chacha20-ietf-poly1305
   name: '26|0|🇦加大 01 | 1x CA #1'
-  password: 87fddbbe-f135-4916-b66f-036bb780def5
+  password: 4a943999-c273-4eab-bc07-405923786ecd
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 26|1|🇦 加拿大 01 | 1x CA
-  password: 110754cb-e3e3-4628-b594-7e788fa4dbf9
+  password: 11b47b9a-77fc-43cd-87ea-9dfa003fa00e
   port: 36441
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 30|🔒 HYSTERIA-UDP 🇨🇦 CA-204.216.1...
-  password: sysadmin.sysadmin
-  port: 2024
-  server: 204.216.108.5
+- name: 30|🔒 HYSTERIA-UDP 🇨🇦 CA-155.248.2...
+  password: 2429bee3-e0c1-47dd-b420-75e6512b184b
+  port: 30300
+  server: 155.248.219.28
   skip-cert-verify: true
-  sni: 204-216-108-5.nip.io
+  sni: www.bing.com
   tls: false
   type: hysteria2
 - name: 30|🔒 HYSTERIA-UDP 🇨🇦 CA-192.18.14...
@@ -1180,12 +1214,12 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: 30|🔒 HYSTERIA-UDP 🇨🇦 CA-155.248.2...
-  password: 2429bee3-e0c1-47dd-b420-75e6512b184b
-  port: 30300
-  server: 155.248.219.28
+- name: 30|🔒 HYSTERIA-UDP 🇨🇦 CA-204.216.1...
+  password: sysadmin.sysadmin
+  port: 2024
+  server: 204.216.108.5
   skip-cert-verify: true
-  sni: www.bing.com
+  sni: 204-216-108-5.nip.io
   tls: false
   type: hysteria2
 - client-fingerprint: chrome
@@ -1212,13 +1246,6 @@ proxies:
   tls: false
   type: vless
   uuid: 77e064b2-ff24-4794-9aa0-910bd831c6f1
-- name: 33|🔒 TR-TCP-TLS 🇨🇦 CA-104.234.239...
-  network: tcp
-  password: Aimer
-  port: 2087
-  server: 104.234.239.235
-  sni: ngepx.ambercc.filegear-sg.me
-  type: trojan
 - name: 33|🔒 TR-TCP-TLS 🇨🇦 CA-23.227.60.8...
   network: tcp
   password: bpb-trojan
@@ -1226,16 +1253,23 @@ proxies:
   server: 23.227.60.8
   sni: 403b3611-99bc-43b7-88D7-26Ed5D0825A9-3.paGeS.dev
   type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇨🇦 CA-104.234.239...
+  network: tcp
+  password: Aimer
+  port: 2087
+  server: 104.234.239.235
+  sni: ngepx.ambercc.filegear-sg.me
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.17...
+  name: 35|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.16...
   network: tcp
-  port: '28984'
-  server: 91.194.11.178
+  port: '58891'
+  server: 91.194.11.162
   servername: ''
   tls: false
   type: vmess
-  uuid: 9b2335af-f24c-4810-9c34-95568ebd579d
+  uuid: 4439cf3e-d072-4a5b-88b2-2a2ec6d71340
 - alterId: 0
   cipher: auto
   name: 35|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.11...
@@ -1247,11 +1281,11 @@ proxies:
   uuid: c23b127b-af87-43bb-aa1e-ce42374a2b53
 - alterId: 0
   cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.16...
+  name: 35|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.17...
   network: tcp
-  port: '58891'
-  server: 91.194.11.162
+  port: '28984'
+  server: 91.194.11.178
   servername: ''
   tls: false
   type: vmess
-  uuid: 4439cf3e-d072-4a5b-88b2-2a2ec6d71340
+  uuid: 9b2335af-f24c-4810-9c34-95568ebd579d
