@@ -1,14 +1,14 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇨🇦 加拿大 01 | 1x CA
-  password: 5adb284a-5064-4e16-a577-d254ccc5e7df
+  password: c753b316-7724-40e9-b835-741723fcce52
   port: 36441
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇨🇦加拿大 01 | 1x CA
-  password: cfe10bae-e65d-4d45-958e-5ec8136de71a
+  password: 090bd7a9-8cbe-433b-87b7-daeb90391c14
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
@@ -986,6 +986,20 @@ proxies:
     headers:
       Host: us4Bb5oSgJA.fzbqfrse.xyz
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: '20,26|0|🇦 加大 01 | 1x CA #1'
+  password: 5adb284a-5064-4e16-a577-d254ccc5e7df
+  port: 36441
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 20,26|1|🇦加拿大 01 | 1x CA
+  password: a233bbe8-92a6-42f3-a94a-ea2911d4f4bb
+  port: 31441
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   delay: 1166
@@ -1063,17 +1077,17 @@ proxies:
       Host: c01.ylkszy.eu.org
     path: /?ed=2560
 - cipher: chacha20-ietf-poly1305
-  name: 22|0|🇦加大 01 | 1x CA
-  password: a9b5c2d8-a0ab-466b-9f24-09795818e5f4
-  port: 31441
-  server: free.2apzhfa.xyz
+  name: 22|0|🇦 加大 01 | 1x CA
+  password: ac451383-11d8-4647-8433-c34983051e85
+  port: 36441
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 22|1|🇦 加拿大 01 | 1x CA
-  password: bb896786-b618-4aa7-8a4f-d48e948040fa
-  port: 36441
-  server: free.2weradf.xyz
+  name: 22|2|🇦加拿大 01 | 1x CA
+  password: 97673cd2-4d61-4ff0-bc2e-a8bfd06341c1
+  port: 31441
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -1103,28 +1117,6 @@ proxies:
     headers:
       host: ''
     path: /IOebhLMhl1CTbFHbL95myfRX2
-- cipher: chacha20-ietf-poly1305
-  name: 26|0|🇦 加大 01 | 1x CA
-  password: 29b31683-e4c2-435d-a8e3-00b24e9ca207
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 26|1|🇦加拿大 01 | 1x CA
-  password: 3007bc2f-d471-48d2-b2b5-5bf942a4c252
-  port: 31441
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- name: 30|🔒 HYSTERIA-UDP 🇨🇦 CA-192.18.14...
-  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  port: 45979
-  server: 192.18.145.7
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
 - name: 30|🔒 HYSTERIA-UDP 🇨🇦 CA-155.248.2...
   password: 2429bee3-e0c1-47dd-b420-75e6512b184b
   port: 30300
@@ -1139,6 +1131,14 @@ proxies:
   server: 204.216.108.5
   skip-cert-verify: true
   sni: 204-216-108-5.nip.io
+  tls: false
+  type: hysteria2
+- name: 30|🔒 HYSTERIA-UDP 🇨🇦 CA-192.18.14...
+  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  port: 45979
+  server: 192.18.145.7
+  skip-cert-verify: true
+  sni: www.bing.com
   tls: false
   type: hysteria2
 - client-fingerprint: chrome
@@ -1169,31 +1169,32 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.11...
+  name: 35|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.17...
   network: tcp
-  port: '27699'
-  server: 91.194.11.118
-  tls: false
-  type: vmess
-  uuid: c23b127b-af87-43bb-aa1e-ce42374a2b53
-- alterId: 0
-  cipher: auto
-  name: 35,36|未知58 5.3MB/s
-  network: tcp
-  port: 28984
+  port: '28984'
   server: 91.194.11.178
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: 9b2335af-f24c-4810-9c34-95568ebd579d
 - alterId: 0
   cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.16...
+  name: 35,36|未知48 2.3MB/s
   network: tcp
-  port: '58891'
+  port: 27699
+  server: 91.194.11.118
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: c23b127b-af87-43bb-aa1e-ce42374a2b53
+- alterId: 0
+  cipher: auto
+  name: 35,36|未知126 2.1MB/s
+  network: tcp
+  port: 58891
   server: 91.194.11.162
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 4439cf3e-d072-4a5b-88b2-2a2ec6d71340
