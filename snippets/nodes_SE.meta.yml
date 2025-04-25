@@ -32,18 +32,6 @@ proxies:
   sni: 70.34.207.153
   tls: false
   type: hysteria2
-- client-fingerprint: firefox
-  name: 30|🔒 VL-GRPC-RLT 🇸🇪 SE-70.34.200....
-  network: grpc
-  port: 2096
-  reality-opts:
-    public-key: woE_DAeAkSjFhqwiaecawAOMwZUmAvaFpTbJZHvUJQk
-    short-id: 765d8c54c01a53f7
-  server: 70.34.200.33
-  servername: SoURcForgE.net
-  tls: false
-  type: vless
-  uuid: 77e064b2-ff24-4794-9aa0-910bd831c6f1
 - client-fingerprint: chrome
   name: 30|🔒 VL-TCP-RLT 🇸🇪 SE-81.177.215....
   network: tcp
@@ -67,6 +55,18 @@ proxies:
   tls: false
   type: vless
   uuid: d239a4fb-83fd-46b3-bda1-c0b405bd7360
+- client-fingerprint: firefox
+  name: 30|🔒 VL-GRPC-RLT 🇸🇪 SE-70.34.200....
+  network: grpc
+  port: 2096
+  reality-opts:
+    public-key: woE_DAeAkSjFhqwiaecawAOMwZUmAvaFpTbJZHvUJQk
+    short-id: 765d8c54c01a53f7
+  server: 70.34.200.33
+  servername: SoURcForgE.net
+  tls: false
+  type: vless
+  uuid: 77e064b2-ff24-4794-9aa0-910bd831c6f1
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 30|🔒 VL-TCP-RLT 🇸🇪 SE-94.242.58.1...
@@ -100,11 +100,11 @@ proxies:
     path: (TG:@free_v2ray0)(TG:@free_v2ray0)(TG:@free_v2ray0)(TG:@free_v2ray0)_gxZKH0Rc9ol(TG:@free_v2ray0)(TG:@free_v2ray0)(TG:@free_v2ray0)(TG:@free_v2ray0)_WwpW3iPFUm5
 - alpn:
   - http/1.1
-  name: 32|🔒 TR-TCP-TLS 🇸🇪 SE-13.49.32.18...
+  name: 32|🔒 TR-TCP-TLS 🇸🇪 SE-51.21.163.2...
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 13.49.32.184
+  server: 51.21.163.250
   sni: trojan.burgerip.co.uk
   type: trojan
 - name: 32|🔒 TR-WS-TLS 🇸🇪 SE-185.146.173....
@@ -120,11 +120,11 @@ proxies:
     path: '%2F@v2rayngzendegimamad%2F%3Fed%3D2560'
 - alpn:
   - http/1.1
-  name: 32|🔒 TR-TCP-TLS 🇸🇪 SE-51.21.163.2...
+  name: 32|🔒 TR-TCP-TLS 🇸🇪 SE-13.49.32.18...
   network: tcp
-  password: telegram-id-directvpn
+  password: telegram-id-privatevpns
   port: 22222
-  server: 51.21.163.250
+  server: 13.49.32.184
   sni: trojan.burgerip.co.uk
   type: trojan
 - name: 32|🔒 TR-WS-NONE 🇸🇪 SE-150.241.78....
@@ -145,17 +145,3 @@ proxies:
   skip-cert-verify: true
   sni: customer-94-131-115-71.stark-industries.solutions
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 34|🔒 VM-WS-NA 🇸🇪 SE-185.146.173.9...
-  network: ws
-  port: '2052'
-  server: 185.146.173.91
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 6e88465e-a2ac-57d3-bbaf-f72e4439bd75
-  ws-opts:
-    headers:
-      Host: De1.vmess.site.
-    path: /vmess
