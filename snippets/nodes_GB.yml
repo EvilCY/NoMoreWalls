@@ -1,36 +1,35 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 59a7a9de-5885-4c29-960e-973bc2ba58e7
-  port: 36271
-  server: free.2weradf.xyz
+  name: 0|🇭🇰香港 01 | 1x HK
+  password: 17fe1f2e-b72b-439a-be8d-f42eeffad3a0
+  port: 31141
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇬🇧英国家宽 01 | 1x UK
-  password: 89a60949-6ba1-4a06-94a2-239869983b51
+  name: 0|🇬🇧英国家宽 01 | 1x UK
+  password: 17fe1f2e-b72b-439a-be8d-f42eeffad3a0
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- alterId: 2
-  cipher: auto
-  name: 2,22|0|1 |  4.8MB/s
-  network: ws
-  port: 23613
-  server: 13.mamamajd.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇭🇰 香港 01 | 1x HK
+  password: d06724c3-1a7a-4f42-a2cd-9b2e7c42d114
+  port: 36141
+  server: free.2weradf.xyz
+  type: ss
   udp: true
-  uuid: da80ce7a-5657-3901-944c-ab566995723b
-  ws-opts:
-    headers:
-      Host: 13.mamamajd.site
-    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇬🇧 英国住宅IP 01 | 1x UK
+  password: d06724c3-1a7a-4f42-a2cd-9b2e7c42d114
+  port: 36271
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - grpc-opts:
     grpc-service-name: m3u8
-  name: '3,33|🔒 TR-GRPC-TLS 🏴‍☠️ NA-141.101.... #60'
+  name: '3,33|🔒 TR-GRPC-TLS 🏴‍☠️ NA-141.101.... #40'
   network: grpc
   password: c65dbe85-354d-4892-909d-2b288830ee37
   port: 2053
@@ -86,17 +85,17 @@ proxies:
       Host: us-new03.daluquan.top
     path: /itdog?ed=2560
 - cipher: chacha20-ietf-poly1305
-  name: 22|13|🇧 国住宅IP 01 | 1x UK
-  password: 7b6bcd90-a1c3-45ba-bc9a-ec07ba4b5b5d
-  port: 36271
-  server: free.2weradf.xyz
+  name: 22|13|🇧国家宽 01 | 1x UK
+  password: 26009418-5fb2-4580-b64c-f450fea117ee
+  port: 31271
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 22|14|🇧英国家宽 01 | 1x UK
-  password: ebedb270-257a-4d5d-8984-6642c83c12ca
-  port: 31271
-  server: free.2apzhfa.xyz
+  name: 22|14|🇧 英国住宅IP 01 | 1x UK
+  password: e489e2df-d6a1-46ae-87d5-d95576f1a8bc
+  port: 36271
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -153,11 +152,14 @@ proxies:
   port: 443
   server: 212.102.53.195
   type: ss
-- cipher: aes-128-gcm
-  name: 23|🇬🇧GB-212.102.53.193-0988
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 23,36|未知44 3.1MB/s
   password: shadowsocks
   port: 443
   server: 212.102.53.193
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: aes-128-gcm
   name: 23|🇬🇧GB-212.102.53.197-1000
@@ -196,85 +198,16 @@ proxies:
   server: mx2.drawnrisha.one
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 26|0|国家宽 01 | 1x UK
-  password: bb9e74db-6b23-4b29-9a8d-1e9e039f24fa
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 26|14|🇧 英国住宅IP 01 | 1x UK
-  password: 26c6c26d-3968-47cf-a0da-11c2f9a01461
+  name: 26|0| 国住宅IP 01 | 1x UK
+  password: 1d61e31b-4047-4dd8-8782-86df735e5f7f
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-51.38.71.17...
-  password: b640d791-ff83-4300-b509-c2a02f97f167
-  port: 80
-  server: 51.38.71.175
-  sni: uk1.trojanvh.xyz
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-18.135.21.3...
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.135.21.30
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇬🇧 GB-109.107.159....
-  password: '!!str 3828095943467868160'
-  port: 443
-  server: 109.107.159.202
-  skip-cert-verify: true
-  sni: grateful-mako.dolphin109.quest
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-185.67.127....
-  network: tcp
-  password: '!!str 3747000103274291200'
-  port: 443
-  server: 185.67.127.69
-  sni: ultimate-civet.adder289.quest
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇬🇧 GB-5.144.181.14...
-  password: Aimer
-  port: 2053
-  server: 5.144.181.144
-  sni: epcco.ambercc.filegear-sg.me
-  type: trojan
 - name: 33|🔒 TR-TCP-NA 🇬🇧 GB-185.193.29.1...
   password: NISHIKUITAN111
   port: 443
   server: 185.193.29.193
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-35.178.55.2...
-  network: tcp
-  password: telegram-id-vlessconfig
-  port: 22222
-  server: 35.178.55.247
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alterId: 0
-  name: 33,36|未知106
-  network: tcp
-  password: cf49ce10-17ed-11f0-99f9-1239d0255272
-  port: 443
-  server: 51.38.65.155
-  skip-cert-verify: true
-  sni: tgju.org
-  tls: true
-  type: trojan
-  udp: true
-- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-161.35.34.4...
-  network: tcp
-  password: 2cba4104747d49d18319e5ade1b93ab5
-  port: 443
-  server: 161.35.34.48
-  sni: yourjobnavigator.online
   type: trojan
 - name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-62.112.221....
   network: tcp
@@ -283,15 +216,77 @@ proxies:
   server: 62.112.221.57
   sni: integral-malamute.adder289.quest
   type: trojan
+- alpn:
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-35.178.55.2...
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 35.178.55.247
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇬🇧 GB-5.144.181.14...
+  password: Aimer
+  port: 2053
+  server: 5.144.181.144
+  sni: epcco.ambercc.filegear-sg.me
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-18.135.21.3...
+  network: tcp
+  password: telegram-id-v2rayvpnchannel
+  port: 22222
+  server: 18.135.21.30
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-51.38.65.15...
+  network: tcp
+  password: cf49ce10-17ed-11f0-99f9-1239d0255272
+  port: 443
+  server: 51.38.65.155
+  skip-cert-verify: true
+  sni: tgju.org
+  type: trojan
+- alterId: 0
+  name: 33,36|未知65
+  network: tcp
+  password: '!!str 3747000103274291200'
+  port: 443
+  server: 185.67.127.69
+  skip-cert-verify: true
+  sni: ultimate-civet.adder289.quest
+  tls: true
+  type: trojan
+  udp: true
+- name: 33|🔒 TR-TCP-NA 🇬🇧 GB-109.107.159....
+  password: '!!str 3828095943467868160'
+  port: 443
+  server: 109.107.159.202
+  skip-cert-verify: true
+  sni: grateful-mako.dolphin109.quest
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-161.35.34.4...
+  network: tcp
+  password: 2cba4104747d49d18319e5ade1b93ab5
+  port: 443
+  server: 161.35.34.48
+  sni: yourjobnavigator.online
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-51.38.71.17...
+  password: b640d791-ff83-4300-b509-c2a02f97f167
+  port: 80
+  server: 51.38.71.175
+  sni: uk1.trojanvh.xyz
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 35,36|未知126 3.8MB/s
+  name: 35|🔒 VM-TCP-NA 🇬🇧 GB-46.250.253.2...
   network: tcp
-  port: 28872
+  port: '28872'
   server: 46.250.253.234
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: 762b3923-5885-4c5f-886f-e62788512338
 - alterId: 0
@@ -304,12 +299,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 353e0787-71bc-442d-9c9d-902f90359eb5
-- alterId: 0
-  name: 36|GB国
-  password: 3319d220-1e27-11f0-a775-1239d0255272
-  port: 443
-  server: 51.210.182.170
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
