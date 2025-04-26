@@ -1,4 +1,13 @@
 proxies:
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 2|🌀12-SE |  2.6MB/s
+  password: 0pTM3CJb
+  port: 5790
+  server: 13.48.143.91
+  tfo: true
+  type: ss
+  udp: true
 - name: 19|🇸🇪SE-95.164.33.62-233_1@232
   password: 0b1371aa-649d-41dc-9126-338c87936500
   port: 443
@@ -22,6 +31,17 @@ proxies:
   port: 44013
   server: 46.246.98.155
   type: ss
+- name: 33|🔒 TR-WS-TLS 🇸🇪 SE-185.146.173....
+  network: ws
+  password: auto
+  port: 443
+  server: 185.146.173.158
+  sni: esetsecuritylicense.bwnsmv.workers.dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: esetsecuritylicense.bwnsmv.workers.dev
+    path: '%2F@v2rayngzendegimamad%2F%3Fed%3D2560'
 - alterId: 0
   name: 33,36|未知92
   network: tcp
@@ -35,40 +55,12 @@ proxies:
   udp: true
 - alpn:
   - http/1.1
-  name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-16.171.156....
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 16.171.156.16
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
   name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-51.21.214.1...
   network: tcp
   password: telegram-id-vlessconfig
   port: 22222
   server: 51.21.214.138
   sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 33|🔒 TR-WS-TLS 🇸🇪 SE-185.146.173....
-  network: ws
-  password: auto
-  port: 443
-  server: 185.146.173.158
-  sni: esetsecuritylicense.bwnsmv.workers.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: esetsecuritylicense.bwnsmv.workers.dev
-    path: '%2F@v2rayngzendegimamad%2F%3Fed%3D2560'
-- name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-70.34.206.3...
-  network: tcp
-  password: Bw5Mz7QkVp
-  port: 443
-  server: 70.34.206.32
-  skip-cert-verify: true
-  sni: z-v2-077787.kailib.com
   type: trojan
 - name: 33|🔒 TR-WS-NONE 🇸🇪 SE-150.241.78....
   network: ws
@@ -80,6 +72,23 @@ proxies:
     headers:
       Host: vkvd127.mycdn.me
     path: '%2F'
+- alpn:
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-16.171.156....
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 16.171.156.16
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-70.34.206.3...
+  network: tcp
+  password: Bw5Mz7QkVp
+  port: 443
+  server: 70.34.206.32
+  skip-cert-verify: true
+  sni: z-v2-077787.kailib.com
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 35|🔒 VM-WS-NA 🇸🇪 SE-185.146.173.9...
