@@ -1,40 +1,61 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇯🇵日本 01 | 1x JP
-  password: 2a818953-c4d3-4149-8596-b7a4f7733913
+  password: a5d363e1-1b60-406f-90f6-9726dd32fbea
   port: 31111
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇯🇵日本 02 | 1x JP
-  password: 2a818953-c4d3-4149-8596-b7a4f7733913
+  password: a5d363e1-1b60-406f-90f6-9726dd32fbea
   port: 31113
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇯🇵日本 03 | 1x JP
-  password: 2a818953-c4d3-4149-8596-b7a4f7733913
+  password: a5d363e1-1b60-406f-90f6-9726dd32fbea
   port: 31115
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- name: 1,22|1|1 |  6.2MB/s
-  password: ec6b43e1-a9a9-30af-a54e-274df6c5080b
-  port: 20141
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z141.hongkongnode.top
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇯🇵 日本 01 | 1x JP
+  password: d9f7cbae-0a3b-4978-b423-5b95061d3fd0
+  port: 36111
+  server: free.2weradf.xyz
+  type: ss
   udp: true
-- name: 1,22|1|🇯🇵2 |  5.2MB/s
-  password: ec6b43e1-a9a9-30af-a54e-274df6c5080b
-  port: 20071
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x71.flybar.work
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇯🇵 日本 02 | 1x JP
+  password: d9f7cbae-0a3b-4978-b423-5b95061d3fd0
+  port: 36113
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇯🇵 日本 03 | 1x JP
+  password: d9f7cbae-0a3b-4978-b423-5b95061d3fd0
+  port: 36115
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 2,20,22|0|4 |  1.2MB/s
+  password: amazonskr05
+  port: 80
+  server: 52.198.168.58
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 2,20,22,26,28|🇯🇵 日本3|@ripaojiedian
+  password: 796EA43C-1A63-8C50-3745-FD3946149E4F
+  port: 21227
+  server: 910281.chasel.sbs
+  tfo: false
+  type: ss
   udp: true
 - client-fingerprint: chrome
   name: '14,20,22,26,28,29|日本4|@ripaojiedian #1'
@@ -46,15 +67,6 @@ proxies:
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 14|1|🇯🇵8 |  2.4MB/s
-  network: tcp
-  port: 17233
-  server: 3c984d30-svdwg0-t1bnjq-1krtb.cm5.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
 - client-fingerprint: chrome
   name: '14,20,22,26,28,29|香港4|@ripaojiedian #1'
   network: tcp
@@ -63,6 +75,14 @@ proxies:
   server: dozo01.flztjc.top
   skip-cert-verify: false
   sni: hk-13-568.flztjc.net
+  type: trojan
+  udp: true
+- name: '14,26|2|🇯🇵2 |  5.2MB/s #1'
+  password: ec6b43e1-a9a9-30af-a54e-274df6c5080b
+  port: 20071
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x71.flybar.work
   type: trojan
   udp: true
 - alterId: 0
@@ -75,24 +95,14 @@ proxies:
   tls: false
   type: vmess
   uuid: 07287360-e12f-4f94-9c7a-54386c100d8a
-- alterId: 0
-  cipher: auto
-  name: 14|2|🇯🇵12 |  2.1MB/s
-  network: tcp
-  port: 17233
-  server: a37e50db-svc1s0-t1bnjq-1krtb.cm5.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-- alterId: 0
-  cipher: auto
-  name: 14|2|🇯🇵4 |  5.9MB/s
-  network: tcp
-  port: 3684
-  server: 02c32b60-sudhc0-sva30v-au6.d.volczijie.com
-  tls: false
-  type: vmess
-  uuid: 1b609740-eec2-11ef-8543-f23c93136cb3
+- name: 14,26|2|🇵1 |  6.2MB/s
+  password: ec6b43e1-a9a9-30af-a54e-274df6c5080b
+  port: 20141
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z141.hongkongnode.top
+  type: trojan
+  udp: true
 - cipher: aes-256-cfb
   name: 19|🇯🇵JP-54.199.83.239-171_1@171
   password: doub.io
@@ -161,16 +171,9 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  name: '20|2|🇯🇵2 |  4.4MB/s #1'
-  password: amazonskr05
-  port: 80
-  server: 52.198.168.58
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: '20|2|🇯🇵4 |  5.9MB/s #1'
+  name: 20|2|🇯🇵4 |  5.9MB/s
   port: 3684
   server: 02c32b60-sudhc0-sva30v-au6.d.volczijie.com
   skip-cert-verify: false
@@ -180,7 +183,7 @@ proxies:
   uuid: 1b609740-eec2-11ef-8543-f23c93136cb3
 - alterId: 0
   cipher: auto
-  name: '20|2|🇯🇵8 |  2.4MB/s #1'
+  name: 20|2|🇯🇵8 |  2.4MB/s
   port: 17233
   server: 3c984d30-svdwg0-t1bnjq-1krtb.cm5.p5pv.com
   skip-cert-verify: false
@@ -190,7 +193,7 @@ proxies:
   uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
 - alterId: 0
   cipher: auto
-  name: '20|2|🇯🇵12 |  2.1MB/s #1'
+  name: 20|2|🇯🇵12 |  2.1MB/s
   port: 17233
   server: a37e50db-svc1s0-t1bnjq-1krtb.cm5.p5pv.com
   skip-cert-verify: false
@@ -210,15 +213,6 @@ proxies:
   password: 454f160a336b
   port: 443
   server: jp5v1.8vote.cn
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 20,22,26,28|🇯🇵 日本3|@ripaojiedian
-  password: 796EA43C-1A63-8C50-3745-FD3946149E4F
-  port: 21227
-  server: 910281.chasel.sbs
-  tfo: false
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -261,24 +255,45 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 22|14|🇵日本 01 | 1x JP
-  password: e5ff1e9a-1f96-4c98-9296-ff334fccd910
+  name: 22|13|🇵日本 01 | 1x JP
+  password: 8e018dd4-4ca1-4f37-aa54-4879ad1b2868
   port: 31111
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 22|14|🇵日本 02 | 1x JP
-  password: e5ff1e9a-1f96-4c98-9296-ff334fccd910
+  name: 22|13|🇵日本 02 | 1x JP
+  password: 8e018dd4-4ca1-4f37-aa54-4879ad1b2868
   port: 31113
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 22|14|🇵日本 03 | 1x JP
-  password: e5ff1e9a-1f96-4c98-9296-ff334fccd910
+  name: 22|13|🇵日本 03 | 1x JP
+  password: 8e018dd4-4ca1-4f37-aa54-4879ad1b2868
   port: 31115
   server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 22|14|🇵 日本 01 | 1x JP
+  password: 1270002b-c14d-4354-bc04-7239815bfdc1
+  port: 36111
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 22|14|🇯🇵 日本 02 | 1x JP
+  password: 1270002b-c14d-4354-bc04-7239815bfdc1
+  port: 36113
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 22|14|🇵 日本 03 | 1x JP
+  password: 1270002b-c14d-4354-bc04-7239815bfdc1
+  port: 36115
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -298,103 +313,57 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 26|0|  01 | 1x JP
-  password: 79f6732c-1d84-4832-855f-e8974cb46a95
+  password: 1a4b64d4-8255-4400-9366-35389dbea054
   port: 36111
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 26|0|🇵 日本 02 | 1x JP
-  password: 79f6732c-1d84-4832-855f-e8974cb46a95
+  password: 1a4b64d4-8255-4400-9366-35389dbea054
   port: 36113
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 26|0|🇵 日本 03 | 1x JP
-  password: 79f6732c-1d84-4832-855f-e8974cb46a95
+  password: 1a4b64d4-8255-4400-9366-35389dbea054
   port: 36115
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 26|1|🇵日本 01 | 1x JP
-  password: bcdb0141-8bf1-460e-b816-6d0de3ad58b1
+  password: 2a818953-c4d3-4149-8596-b7a4f7733913
   port: 31111
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 26|1|🇯🇵日本 02 | 1x JP
-  password: bcdb0141-8bf1-460e-b816-6d0de3ad58b1
+  name: '26|1|🇯🇵日本 02 | 1x JP #2'
+  password: 2a818953-c4d3-4149-8596-b7a4f7733913
   port: 31113
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 26|1|🇵日本 03 | 1x JP
-  password: bcdb0141-8bf1-460e-b816-6d0de3ad58b1
+  password: 2a818953-c4d3-4149-8596-b7a4f7733913
   port: 31115
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-160.16.149....
-  network: tcp
-  password: 3bcd9e33-8377-4b32-af33-217158577ff3
-  port: 443
-  server: 160.16.149.225
-  sni: kdlsupport.zendesk.com
-  type: trojan
-- name: 33|🔒 TR-WS-TLS 🇯🇵 JP-156.238.19.6...
-  network: ws
-  password: amclubs
-  port: 2096
-  server: 156.238.19.69
-  sni: tran.amclubstest.nyc.mn
-  type: trojan
-  ws-opts:
-    headers:
-      Host: tran.amclubstest.nyc.mn
-    path: '%2F%3Fed%3D2560'
-- name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-160.16.74.1...
-  network: tcp
-  password: 3bcd9e33-8377-4b32-af33-217158577ff3
-  port: 443
-  server: 160.16.74.162
-  sni: kdlsupport.zendesk.com
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-38.180.29.11...
-  password: Aimer
-  port: 443
-  server: 38.180.29.115
-  skip-cert-verify: false
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-85.234.83.24...
-  password: '!!str 3828095943467868160'
-  port: 443
-  server: 85.234.83.246
-  skip-cert-verify: true
-  sni: active-lamb.dolphin109.quest
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-43.207.112.2...
-  password: 0FaYIOcSy4lBg38yRxnj7RlR3RZYSq3pC9OaSDAAOw6Oe8FCpy08u8pzx3eKZacDz3XE3
-  port: 443
-  server: 43.207.112.226
-  skip-cert-verify: false
+- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-31.223.184.2...
+  password: c443be95-725d-4da3-a60f-d35af5bfbff8
+  port: 17721
+  server: 31.223.184.248
+  sni: data.52daishu.life
   type: trojan
 - name: 33|🔒 TR-TCP-NA 🇯🇵 JP-20.243.85.49...
   password: Aimer
   port: 10443
   server: 20.243.85.49
   sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-47.79.38.147...
-  password: Aimer
-  port: 9530
-  server: 47.79.38.147
-  skip-cert-verify: false
-  sni: epccs.ambercc.filegear-sg.me
   type: trojan
 - name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-160.16.150....
   network: tcp
@@ -403,84 +372,11 @@ proxies:
   server: 160.16.150.202
   sni: kdlsupport.zendesk.com
   type: trojan
-- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-168.138.204....
-  password: Aimer
-  port: 587
-  server: 168.138.204.44
-  sni: ngepo.ambercc.filegear-sg.me
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-85.234.83.28...
-  password: '!!str 3828095943467868160'
-  port: 443
-  server: 85.234.83.28
-  skip-cert-verify: true
-  sni: workable-puma.dolphin109.quest
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-150.230.201...
-  password: f42e1a2e-e650-44f4-8d17-bcb68663da18
-  port: 443
-  server: 150.230.201.192
-  sni: www.seetheworldjp.ga
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-13.230.34.30...
-  password: Aimer
-  port: 443
-  server: 13.230.34.30
-  sni: epccu.ambercc.filegear-sg.me
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-31.223.184.2...
-  password: c443be95-725d-4da3-a60f-d35af5bfbff8
-  port: 17721
-  server: 31.223.184.248
-  sni: data.52daishu.life
-  type: trojan
-- alterId: 0
-  name: 33,36|未知2
-  password: p0axgx3pXT6yjp4SwSRaaYeCDxCFOFaAlRYDNaRjF8OycXn3ZE3ABaYgnDIx3Eeq9C0ce
-  port: 443
-  server: 43.206.220.255
-  skip-cert-verify: true
-  sni: huzzah.meijireform.com
-  tls: true
-  type: trojan
-  udp: true
-- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-18.183.158.2...
-  password: Aimer
-  port: 443
-  server: 18.183.158.211
-  sni: epccu.ambercc.filegear-sg.me
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-116.206.93.2...
-  password: 4ea1d07c-41c2-42b5-954d-414fee051856
-  port: 46002
-  server: 116.206.93.254
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-160.16.144....
+- name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-160.16.149....
   network: tcp
   password: 3bcd9e33-8377-4b32-af33-217158577ff3
   port: 443
-  server: 160.16.144.90
-  sni: kdlsupport.zendesk.com
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-74.176.59.1...
-  network: tcp
-  password: dQUWbcwECl
-  port: 443
-  server: 74.176.59.185
-  sni: automq3-proxy.automq-sg.com
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-160.16.138....
-  network: tcp
-  password: 3bcd9e33-8377-4b32-af33-217158577ff3
-  port: 443
-  server: 160.16.138.58
-  sni: kdlsupport.zendesk.com
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-160.16.65.9...
-  network: tcp
-  password: 3bcd9e33-8377-4b32-af33-217158577ff3
-  port: 443
-  server: 160.16.65.99
+  server: 160.16.149.225
   sni: kdlsupport.zendesk.com
   type: trojan
 - name: 33|🔒 TR-WS-TLS 🇯🇵 JP-47.79.86.103...
@@ -493,28 +389,125 @@ proxies:
   ws-opts:
     headers:
       Host: agept.ambercc.filegear-sg.me
-- alterId: 0
-  cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇯🇵 JP-5.253.41.147...
+- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-18.183.158.2...
+  password: Aimer
+  port: 443
+  server: 18.183.158.211
+  sni: epccu.ambercc.filegear-sg.me
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-150.230.201...
+  password: f42e1a2e-e650-44f4-8d17-bcb68663da18
+  port: 443
+  server: 150.230.201.192
+  sni: www.seetheworldjp.ga
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-85.234.83.24...
+  password: '!!str 3828095943467868160'
+  port: 443
+  server: 85.234.83.246
+  skip-cert-verify: true
+  sni: active-lamb.dolphin109.quest
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-160.16.65.9...
   network: tcp
-  port: '27750'
-  server: 5.253.41.147
-  tls: false
-  type: vmess
-  uuid: 4b1992cc-8e7c-4003-a45f-a28c3e6f6fa8
-- alterId: 0
-  cipher: auto
-  name: 35|🔒 VM-WS-NA 🇯🇵 JP-154.55.122.23...
+  password: 3bcd9e33-8377-4b32-af33-217158577ff3
+  port: 443
+  server: 160.16.65.99
+  sni: kdlsupport.zendesk.com
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-160.16.144....
+  network: tcp
+  password: 3bcd9e33-8377-4b32-af33-217158577ff3
+  port: 443
+  server: 160.16.144.90
+  sni: kdlsupport.zendesk.com
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-43.207.112.2...
+  password: 0FaYIOcSy4lBg38yRxnj7RlR3RZYSq3pC9OaSDAAOw6Oe8FCpy08u8pzx3eKZacDz3XE3
+  port: 443
+  server: 43.207.112.226
+  skip-cert-verify: false
+  type: trojan
+- name: 33|🔒 TR-WS-TLS 🇯🇵 JP-156.238.19.6...
   network: ws
-  port: '8000'
-  server: 154.55.122.235
-  tls: false
-  type: vmess
-  uuid: b0c2f4e7-0743-4141-896c-1d58452ee05c
+  password: amclubs
+  port: 2096
+  server: 156.238.19.69
+  sni: tran.amclubstest.nyc.mn
+  type: trojan
   ws-opts:
     headers:
-      Host: www.bing.com
-    path: /nmkj
+      Host: tran.amclubstest.nyc.mn
+    path: '%2F%3Fed%3D2560'
+- alterId: 0
+  name: 33,36|未知2
+  password: p0axgx3pXT6yjp4SwSRaaYeCDxCFOFaAlRYDNaRjF8OycXn3ZE3ABaYgnDIx3Eeq9C0ce
+  port: 443
+  server: 43.206.220.255
+  skip-cert-verify: true
+  sni: huzzah.meijireform.com
+  tls: true
+  type: trojan
+  udp: true
+- name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-74.176.59.1...
+  network: tcp
+  password: dQUWbcwECl
+  port: 443
+  server: 74.176.59.185
+  sni: automq3-proxy.automq-sg.com
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-160.16.74.1...
+  network: tcp
+  password: 3bcd9e33-8377-4b32-af33-217158577ff3
+  port: 443
+  server: 160.16.74.162
+  sni: kdlsupport.zendesk.com
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-116.206.93.2...
+  password: 4ea1d07c-41c2-42b5-954d-414fee051856
+  port: 46002
+  server: 116.206.93.254
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-160.16.138....
+  network: tcp
+  password: 3bcd9e33-8377-4b32-af33-217158577ff3
+  port: 443
+  server: 160.16.138.58
+  sni: kdlsupport.zendesk.com
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-168.138.204....
+  password: Aimer
+  port: 587
+  server: 168.138.204.44
+  sni: ngepo.ambercc.filegear-sg.me
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-13.230.34.30...
+  password: Aimer
+  port: 443
+  server: 13.230.34.30
+  sni: epccu.ambercc.filegear-sg.me
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-38.180.29.11...
+  password: Aimer
+  port: 443
+  server: 38.180.29.115
+  skip-cert-verify: false
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-85.234.83.28...
+  password: '!!str 3828095943467868160'
+  port: 443
+  server: 85.234.83.28
+  skip-cert-verify: true
+  sni: workable-puma.dolphin109.quest
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-47.79.38.147...
+  password: Aimer
+  port: 9530
+  server: 47.79.38.147
+  skip-cert-verify: false
+  sni: epccs.ambercc.filegear-sg.me
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 35|🔒 VM-TCP-NA 🇯🇵 JP-116.206.92.1...
@@ -525,6 +518,28 @@ proxies:
   tls: false
   type: vmess
   uuid: d1f1022b-cd43-49e4-b736-7744d1e11a79
+- alterId: 0
+  cipher: auto
+  name: 35|🔒 VM-WS-NA 🇯🇵 JP-154.55.122.23...
+  network: ws
+  port: 8000
+  server: 154.55.122.235
+  tls: false
+  type: vmess
+  uuid: 5f981f88-2152-40c6-8312-7f36dc0e64ad
+  ws-opts:
+    headers:
+      Host: www.bing.com
+    path: /nmkj
+- alterId: 0
+  cipher: auto
+  name: 35|🔒 VM-TCP-NA 🇯🇵 JP-5.253.41.147...
+  network: tcp
+  port: '27750'
+  server: 5.253.41.147
+  tls: false
+  type: vmess
+  uuid: 4b1992cc-8e7c-4003-a45f-a28c3e6f6fa8
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 36|JP
