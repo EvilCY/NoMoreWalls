@@ -1,4 +1,14 @@
 proxies:
+- allowInsecure: ''
+  name: 1,22|1|3 |  2.0MB/s
+  network: tcp
+  password: OLq0FfOlp7
+  port: 1935
+  server: 141.227.160.88
+  skip-cert-verify: false
+  sni: x1-sweden-ovh-v2.devefun.net
+  tls: true
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 14|1|🇫🇷2 |  1.7MB/s
@@ -137,11 +147,14 @@ proxies:
   port: 8080
   server: 45.158.171.146
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 23|🇫🇷FR-45.158.171.110-0977
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 23,36|未知116 21.3MB/s
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 45.158.171.110
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -230,76 +243,14 @@ proxies:
     headers:
       host: az05.beyondy.cfd
     path: /link
-- name: 33|🔒 TR-TCP-NA 🇫🇷 FR-51.15.86.181...
-  network: tcp
-  password: eG92F3gh09
-  port: 1935
-  server: 51.15.86.181
-  skip-cert-verify: true
-  sni: x1ams-scaleway.devefun.net
-  type: trojan
-  ws-opts:
-    headers:
-      Host: x1ams-scaleway.devefun.net
-- alterId: 0
-  name: 33,36|未知17
-  password: Aimer
-  port: 8443
-  server: 57.128.177.172
-  skip-cert-verify: true
-  sni: epccu.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
-- name: 33|🔒 TR-TCP-NA 🇫🇷 FR-57.129.137.2...
-  password: Aimer
-  port: 443
-  server: 57.129.137.242
-  sni: epcci.ambercc.filegear-sg.me
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇫🇷 FR-152.228.191....
-  password: Aimer
-  port: 443
-  server: 152.228.191.232
-  skip-cert-verify: false
-  sni: epccd.ambercc.filegear-sg.me
-  type: trojan
 - name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.210.182....
   network: tcp
-  password: 7b4e3a80-211d-11f0-b03a-1239d0255272
+  password: c86b6670-1af3-11f0-b10c-1239d0255272
   port: 443
   server: 51.210.182.170
-  sni: telewebion.com
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-35.180.177....
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.180.177.138
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇫🇷 FR-84.235.237.6...
-  password: 4467ae8518abf1ef321618c0bfb5549ccc
-  port: 42600
-  server: 84.235.237.61
-  sni: www.cloudflare.com
-  type: trojan
-- alterId: 0
-  name: 33,36|未知139 16.6MB/s
-  network: tcp
-  password: FiSo7J6vfS
-  port: 1935
-  server: 51.68.13.106
   skip-cert-verify: true
-  sni: x1fr-ovh.devefun.net
-  tls: true
+  sni: fr1.test3.net
   type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: x1fr-ovh.devefun.net
 - name: 33|🔒 TR-WS-TLS 🇫🇷 FR-141.11.203.1...
   network: ws
   password: Aimer
@@ -310,6 +261,105 @@ proxies:
   ws-opts:
     headers:
       Host: ngepx.ambercc.filegear-sg.me
+- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.15.86.18...
+  network: tcp
+  password: eG92F3gh09
+  port: 1935
+  server: 51.15.86.181
+  sni: x1ams-scaleway.devefun.net
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-15.236.1.72...
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 15.236.1.72
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇫🇷 FR-57.129.137.2...
+  password: Aimer
+  port: 443
+  server: 57.129.137.242
+  sni: epcci.ambercc.filegear-sg.me
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇫🇷 FR-57.128.177.1...
+  password: Aimer
+  port: 8443
+  server: 57.128.177.172
+  skip-cert-verify: false
+  sni: epccu.ambercc.filegear-sg.me
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-35.181.156....
+  network: tcp
+  password: telegram-id-vlessconfig
+  port: 22222
+  server: 35.181.156.129
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇫🇷 FR-51.68.13.106...
+  network: tcp
+  password: FiSo7J6vfS
+  port: 1935
+  server: 51.68.13.106
+  skip-cert-verify: true
+  sni: x1fr-ovh.devefun.net
+  type: trojan
+  ws-opts:
+    headers:
+      Host: x1fr-ovh.devefun.net
+- alpn:
+  - h2
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-141.227.160...
+  network: tcp
+  password: OLq0FfOlp7
+  port: 1935
+  server: 141.227.160.88
+  sni: x1-sweden-ovh-v2.devefun.net
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.159.59.1...
+  password: 9498f3a0-2992-11ee-a4c7-1239d0255272
+  port: 443
+  server: 51.159.59.186
+  sni: zula.ir
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.38.99.96...
+  password: b8808043-6566-4923-9195-e66bfb553d57
+  port: 443
+  server: 51.38.99.96
+  sni: ba24.ir
+  type: trojan
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.195.254....
+  network: tcp
+  password: ebhZ11qYng
+  port: 8443
+  server: 51.195.254.75
+  sni: uk-02.allhubb.info
+  type: trojan
+- alterId: 0
+  name: 33,36|未知125
+  password: Aimer
+  port: 443
+  server: 152.228.191.232
+  skip-cert-verify: true
+  sni: epccd.ambercc.filegear-sg.me
+  tls: true
+  type: trojan
+  udp: true
+- name: 33|🔒 TR-TCP-NA 🇫🇷 FR-141.11.203.1...
+  password: Aimer
+  port: 443
+  server: 141.11.203.168
+  skip-cert-verify: false
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
 - name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.158.146....
   password: f6a0a650-306e-11ee-b692-1239d0255272
   port: 443
@@ -327,6 +377,16 @@ proxies:
     headers:
       Host: za.ylks.xyz
     path: /
+- alpn:
+  - h2
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-57.128.165....
+  network: tcp
+  password: klZqKyxq0H
+  port: 1935
+  server: 57.128.165.173
+  sni: x1-england-ovh-v2.devefun.net
+  type: trojan
 - name: 33|🔒 TR-TCP-NA 🇫🇷 FR-51.159.226.2...
   password: '!!str 3828095943467868160'
   port: 443
@@ -334,33 +394,9 @@ proxies:
   skip-cert-verify: true
   sni: equal-porpoise.dolphin109.quest
   type: trojan
-- name: 33|🔒 TR-TCP-NA 🇫🇷 FR-141.11.203.1...
-  password: Aimer
-  port: 443
-  server: 141.11.203.168
-  skip-cert-verify: false
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.159.59.1...
-  password: 9498f3a0-2992-11ee-a4c7-1239d0255272
-  port: 443
-  server: 51.159.59.186
-  sni: zula.ir
-  type: trojan
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.195.254....
-  network: tcp
-  password: ebhZ11qYng
-  port: 8443
-  server: 51.195.254.75
-  sni: uk-02.allhubb.info
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.38.99.96...
-  password: b8808043-6566-4923-9195-e66bfb553d57
-  port: 443
-  server: 51.38.99.96
-  sni: ba24.ir
+- name: 33|🔒 TR-TCP-NA 🇫🇷 FR-84.235.237.6...
+  password: 4467ae8518abf1ef321618c0bfb5549ccc
+  port: 42600
+  server: 84.235.237.61
+  sni: www.cloudflare.com
   type: trojan
