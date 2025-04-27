@@ -32,6 +32,42 @@ proxies:
   sni: 70.34.207.153
   tls: false
   type: hysteria2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 31|🔒 VL-TCP-RLT 🇸🇪 SE-94.242.58.1...
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
+    short-id: 7755e972daf8eec8
+  server: 94.242.58.133
+  servername: video.intfreed.ru
+  tls: false
+  type: vless
+  uuid: b1c801ec-1c5e-4d12-8b53-8da11c64a21b
+- client-fingerprint: chrome
+  name: 31|🔒 VL-TCP-RLT 🇸🇪 SE-81.177.215....
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: cTm0TIKL9qK550XICK2YroOSr1u-f12h5UmBw2EAr2c
+  server: 81.177.215.132
+  servername: google.com
+  tls: false
+  type: vless
+  uuid: f0ffda4f-3f92-4bc8-b481-7286d2901a69
+- client-fingerprint: firefox
+  name: 31|🔒 VL-GRPC-RLT 🇸🇪 SE-70.34.200....
+  network: grpc
+  port: 2096
+  reality-opts:
+    public-key: woE_DAeAkSjFhqwiaecawAOMwZUmAvaFpTbJZHvUJQk
+    short-id: 765d8c54c01a53f7
+  server: 70.34.200.33
+  servername: SoURcForgE.net
+  tls: false
+  type: vless
+  uuid: 77e064b2-ff24-4794-9aa0-910bd831c6f1
 - alpn:
   - h2
   client-fingerprint: chrome
@@ -51,31 +87,6 @@ proxies:
   ws-opts:
     path: (TG:@free_v2ray0)(TG:@free_v2ray0)(TG:@free_v2ray0)(TG:@free_v2ray0)_gxZKH0Rc9ol(TG:@free_v2ray0)(TG:@free_v2ray0)(TG:@free_v2ray0)(TG:@free_v2ray0)_WwpW3iPFUm5
 - client-fingerprint: firefox
-  name: 31|🔒 VL-GRPC-RLT 🇸🇪 SE-70.34.200....
-  network: grpc
-  port: 2096
-  reality-opts:
-    public-key: woE_DAeAkSjFhqwiaecawAOMwZUmAvaFpTbJZHvUJQk
-    short-id: 765d8c54c01a53f7
-  server: 70.34.200.33
-  servername: SoURcForgE.net
-  tls: false
-  type: vless
-  uuid: 77e064b2-ff24-4794-9aa0-910bd831c6f1
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇸🇪 SE-94.242.58.1...
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
-    short-id: 7755e972daf8eec8
-  server: 94.242.58.133
-  servername: video.intfreed.ru
-  tls: false
-  type: vless
-  uuid: b1c801ec-1c5e-4d12-8b53-8da11c64a21b
-- client-fingerprint: firefox
   name: 31|🔒 VL-GRPC-RLT 🇸🇪 SE-91.186.218...
   network: grpc
   port: 2083
@@ -87,17 +98,15 @@ proxies:
   tls: false
   type: vless
   uuid: d239a4fb-83fd-46b3-bda1-c0b405bd7360
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇸🇪 SE-81.177.215....
+- alpn:
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-13.49.37.18...
   network: tcp
-  port: 443
-  reality-opts:
-    public-key: cTm0TIKL9qK550XICK2YroOSr1u-f12h5UmBw2EAr2c
-  server: 81.177.215.132
-  servername: google.com
-  tls: false
-  type: vless
-  uuid: f0ffda4f-3f92-4bc8-b481-7286d2901a69
+  password: telegram-id-vlessconfig
+  port: 22222
+  server: 13.49.37.187
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - name: 33|🔒 TR-WS-TLS 🇸🇪 SE-185.146.173....
   network: ws
   password: auto
@@ -126,6 +135,14 @@ proxies:
     headers:
       Host: vkvd127.mycdn.me
     path: '%2F'
+- name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-70.34.206.3...
+  network: tcp
+  password: Bw5Mz7QkVp
+  port: 443
+  server: 70.34.206.32
+  skip-cert-verify: true
+  sni: z-v2-077787.kailib.com
+  type: trojan
 - alpn:
   - http/1.1
   name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-13.60.139.2...
@@ -135,29 +152,3 @@ proxies:
   server: 13.60.139.26
   sni: trojan.burgerip.co.uk
   type: trojan
-- alpn:
-  - http/1.1
-  name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-13.49.37.18...
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.49.37.187
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-70.34.206.3...
-  network: tcp
-  password: Bw5Mz7QkVp
-  port: 443
-  server: 70.34.206.32
-  skip-cert-verify: true
-  sni: z-v2-077787.kailib.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇸🇪 SE-169.150.208....
-  network: tcp
-  port: 18000
-  server: 169.150.208.83
-  tls: false
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
