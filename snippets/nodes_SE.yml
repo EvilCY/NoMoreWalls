@@ -1,7 +1,7 @@
 proxies:
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 1,22|2|🌀13-SE |  5.7MB/s
+  name: 2,22,26|1|🌀13-SE |  5.7MB/s
   password: LEFqixTd
   port: 21072
   server: 16.170.101.150
@@ -22,12 +22,14 @@ proxies:
   port: 44013
   server: 46.246.98.155
   type: ss
-- name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-94.131.115....
+- alpn:
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-13.51.141.1...
   network: tcp
-  password: c5691b8f-d833-41e4-9295-769f3edb4cd2
-  port: 443
-  server: 94.131.115.71
-  sni: customer-94-131-115-71.stark-industries.solutions
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.51.141.15
+  sni: trojan.burgerip.co.uk
   type: trojan
 - name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-70.34.206.3...
   network: tcp
@@ -37,6 +39,23 @@ proxies:
   skip-cert-verify: true
   sni: z-v2-077787.kailib.com
   type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-94.131.115....
+  network: tcp
+  password: c5691b8f-d833-41e4-9295-769f3edb4cd2
+  port: 443
+  server: 94.131.115.71
+  sni: customer-94-131-115-71.stark-industries.solutions
+  type: trojan
+- name: 33|🔒 TR-WS-NONE 🇸🇪 SE-150.241.78....
+  network: ws
+  password: vpn
+  port: 2025
+  server: 150.241.78.252
+  type: trojan
+  ws-opts:
+    headers:
+      Host: vkvd127.mycdn.me
+    path: '%2F'
 - name: 33|🔒 TR-WS-TLS 🇸🇪 SE-185.146.173....
   network: ws
   password: auto
@@ -48,16 +67,6 @@ proxies:
     headers:
       Host: esetsecuritylicense.bwnsmv.workers.dev
     path: '%2F@v2rayngzendegimamad%2F%3Fed%3D2560'
-- name: 33|🔒 TR-WS-NONE 🇸🇪 SE-150.241.78....
-  network: ws
-  password: vpn
-  port: 2025
-  server: 150.241.78.252
-  type: trojan
-  ws-opts:
-    headers:
-      Host: vkvd127.mycdn.me
-    path: '%2F'
 - alpn:
   - http/1.1
   name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-13.51.11.21...
@@ -65,14 +74,5 @@ proxies:
   password: telegram-id-vlessconfig
   port: 22222
   server: 13.51.11.214
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-13.51.141.1...
-  network: tcp
-  password: telegram-id-vlessconfig
-  port: 22222
-  server: 13.51.141.15
   sni: trojan.burgerip.co.uk
   type: trojan
