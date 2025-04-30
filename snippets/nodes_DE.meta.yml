@@ -1,25 +1,40 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇩🇪 德国 01 | 1x DE
-  password: ad3a8883-be07-4681-8cd9-f567c66c5bf6
-  port: 36471
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇩🇪德国 01 | 1x DE
-  password: 21c85832-5930-4d9d-8eec-4d880bb50c45
+  name: 0|🇩🇪德国 01 | 1x DE
+  password: 29ef4555-f4df-491e-b770-735514f8aa4c
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇩🇪 德国 01 | 1x DE
+  password: 9a7de5bc-f17e-47a1-a567-a91cce3a4537
+  port: 36471
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- flow: ''
+  mode: ''
+  name: 2|🇩🇪1 |  1.4MB/s
+  network: ws
+  port: 2096
+  server: 199.34.228.164
+  servername: DrOt0Ai1Oq.DeRaKhT.iNfO
+  tls: true
+  type: vless
+  udp: false
+  uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
+  ws-opts:
+    headers:
+      Host: DrOt0Ai1Oq.DeRaKhT.iNfO
+    path: /
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 2|🇩🇪1 |  5.6MB/s
+  name: 2|🇩🇪2 |  5.6MB/s
   network: ws
   port: 8443
-  server: 104.17.147.22
+  server: 104.17.148.22
   servername: CiR346yL3b.DeRaKhT.iNfO
   tls: true
   type: vless
@@ -29,35 +44,30 @@ proxies:
     headers:
       Host: CiR346yL3b.DeRaKhT.iNfO
     path: /
-- cipher: rc4-md5
-  name: 2,22,23,26|2|🇪5 |  4.4MB/s
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
-- client-fingerprint: ''
+- client-fingerprint: chrome
   flow: ''
-  mode: ''
-  name: 2|🇩🇪3 |  2.3MB/s
-  network: ws
-  port: 2096
-  server: 199.34.228.184
-  servername: D6rVkPfEgS.aAaZzZaAa-8129.CoM
-  tls: true
+  grpc-opts:
+    grpc-service-name: 7594vless
+  mode: gun
+  name: 2,31|🔒 VL-GRPC-RLT 🇩🇪 DE-188.166.19...
+  network: grpc
+  port: 7594
+  reality-opts:
+    public-key: AZSptdvlWvvmKWEDTY56UsIcnTP8nGCafvPEQOozrxw
+    short-id: 765e8e700426816c
+  server: 188.166.194.27
+  servername: dash.cloudflare.com
+  tls: false
   type: vless
   udp: false
-  uuid: 24a4aa9b-b341-4717-9d4a-00d74c2b84e0
-  ws-opts:
-    headers:
-      Host: D6rVkPfEgS.aAaZzZaAa-8129.CoM
-    path: /
+  uuid: 2a219df1-a04b-4424-bfd2-cb37aeb10b2c
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 2|🇩🇪4 |  2.0MB/s
+  name: 2|🇩🇪4 |  5.5MB/s
   network: ws
   port: 2096
-  server: 205.233.181.186
+  server: www.speedtest.net
   servername: DrOt0Ai1Oq.DeRaKhT.iNfO
   tls: true
   type: vless
@@ -68,12 +78,58 @@ proxies:
       Host: DrOt0Ai1Oq.DeRaKhT.iNfO
     path: /
 - client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  mode: ''
+  name: 2,31|🔒 VL-TCP-RLT 🇩🇪 DE-138.199.232...
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 15VSj5bGCGemmifDA6IfLCz8deqBcvaI7SRZFd2bUBQ
+    short-id: ec7d25
+  server: 138.199.232.232
+  servername: direct.psnapptapsi.ir
+  tls: false
+  type: vless
+  udp: false
+  uuid: ac5ef6ff-4df5-4615-8e8b-3819497f5776
+  ws-opts:
+    headers:
+      Host: '---@External_Net---@External_Net---@External_Net---@External_Net---@External_Net'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision-udp443
+  mode: ''
+  name: 2,14|2|🇩🇪2 |  2.9MB/s
+  network: ''
+  port: 443
+  server: 204.10.194.78
+  servername: yfnl1.xn--4gq62f52gppi29k.com
+  tls: true
+  type: vless
+  udp: false
+  uuid: 7a12ccb8-c431-4cc0-ace9-a994cc4b2ca7
+- client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 2|🇩🇪5 |  2.8MB/s
+  name: 2|🇩🇪7 |  1.0MB/s
   network: ws
   port: 2096
-  server: 199.34.228.164
+  server: 199.34.228.191
+  servername: DrOt0Ai1Oq.DeRaKhT.iNfO
+  tls: true
+  type: vless
+  udp: false
+  uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
+  ws-opts:
+    headers:
+      Host: DrOt0Ai1Oq.DeRaKhT.iNfO
+    path: ''
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 2|🇩🇪8 |  2.6MB/s
+  network: ws
+  port: 2096
+  server: 199.34.228.147
   servername: DrOt0Ai1Oq.DeRaKhT.iNfO
   tls: true
   type: vless
@@ -105,14 +161,60 @@ proxies:
   type: vless
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision-udp443
-  name: 14|2|🇩🇪2 |  2.9MB/s
-  port: 443
-  server: 204.10.194.78
-  servername: yfnl1.xn--4gq62f52gppi29k.com
+  fingerprint: ''
+  name: 12|4bb9d3d392ba41a0b165a76b412cce...
+  network: ws
+  port: 80
+  server: polproxy.fastly80.hosting-ip.com
+  tls: false
+  type: vless
+  udp: false
+  uuid: 1af365a2-349a-4b8d-8758-f81aeb1bc821
+  ws-opts:
+    path: /telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram?ed=2048
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 12|85d43e9235e74f34971b622c4ab5f1...
+  network: grpc
+  port: 16072
+  server: 188.34.201.88
+  tls: false
+  type: vless
+  udp: false
+  uuid: e126aa58-e1b6-453b-850e-47fad2d290f2
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 12|727b02cbe52d40c193e61d51f9bde8...
+  network: tcp
+  port: 26745
+  server: 188.245.32.66
+  tls: false
+  type: vless
+  udp: false
+  uuid: 4d33149e-7356-489c-a874-953c519bd30e
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 12|fd7932145a374def8b92efcd66dbd6...
+  network: grpc
+  port: 8880
+  server: 188.245.154.13
+  tls: false
+  type: vless
+  udp: false
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- client-fingerprint: chrome
+  fingerprint: ''
+  grpc-opts:
+    grpc-service-name: panel.proxystore11.news
+  name: 12|bec8ee5daeb84788b4d1afc4becc64...
+  network: grpc
+  port: 8443
+  server: 172.67.187.18
+  servername: panel.proxystore11.news
   tls: true
   type: vless
-  uuid: 7a12ccb8-c431-4cc0-ace9-a994cc4b2ca7
+  udp: false
+  uuid: 2d243e76-01c2-47c8-b700-0fe0964d8ef3
 - name: 14,16|🇩🇪 @VPNHubMaRKeT ⚡️  @VpnHubMa...
   obfs: salamander
   obfs-password: tel:@VPNHubMaRKeT
@@ -175,31 +277,31 @@ proxies:
   type: vmess
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇩🇪 0|🇩🇪 德国 01 | 1x DE
+  name: 20,24|🇨🇳CN-120.232.218.106-1477
   password: e7cc6a65-f0d3-4078-a22d-f0ae271c7b37
   port: 36471
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇩🇪 1|🇩🇪德国 01 | 1x DE
+  name: 20,24|🇨🇳CN-120.232.218.106-1509
   password: 4fab7ba2-ea09-4e2d-b9ca-921519e3f5a1
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 22|0| 国 01 | 1x DE
-  password: 2989e8f0-2dfc-4da3-b8cb-5a0b50d16807
-  port: 36471
-  server: free.2weradf.xyz
+  name: 22|0|国 01 | 1x DE
+  password: 627a38b9-66b7-495b-96ff-df0dbd25cd88
+  port: 31471
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 22|2|🇪德国 01 | 1x DE
-  password: d8770398-2e56-4f75-8ff1-9970b7e9e5a3
-  port: 31471
-  server: free.2apzhfa.xyz
+  name: 22|1|🇪 德国 01 | 1x DE
+  password: 5266a6a3-5720-43f0-bbf3-f6270b779a71
+  port: 36471
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -211,17 +313,16 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 23|🇩🇪DE-193.122.58.158-1506
+  name: 23,24|🇪DE-193.122.58.158-6139
   network: ws
   port: 443
   server: 193.122.58.158
-  skip-cert-verify: true
+  servername: irvideo.cfd
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
   ws-opts:
-    headers:
-      host: irvideo.cfd
     path: /linkws
 - cipher: chacha20-ietf-poly1305
   name: 23|🇩🇪DE-185.177.229.245-1080
@@ -230,48 +331,1917 @@ proxies:
   server: 185.177.229.245
   type: ss
 - cipher: aes-256-cfb
-  name: 23|🇩🇪DE-80.92.204.106-6032
+  name: 23,24|🇪DE-80.92.204.106-5902
   password: rpgbNnU9rDDU4aWZ
   port: 9094
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
-  name: 23|🇩🇪DE-80.92.204.106-3215
+  name: 23,24|🇪DE-80.92.204.106-3056
   password: M3t2ZEQcMGRWBjRa
   port: 9011
   server: 80.92.204.106
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 26|0|国 01 | 1x DE
-  password: 79bc969a-8e22-465f-92bb-9d695681e8cc
-  port: 31471
-  server: free.2apzhfa.xyz
+- cipher: aes-256-gcm
+  name: 24|DE-172.105.244.165-0021
+  password: PCnnH6SQSnfoS27
+  port: 8091
+  server: 172.105.244.165
   type: ss
-  udp: true
+- cipher: aes-256-gcm
+  name: 24|🇩🇪DE-172.105.244.165-0022
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 172.105.244.165
+  type: ss
+- cipher: aes-256-gcm
+  name: 24|🇩🇪DE-172.105.244.165-0023
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 172.105.244.165
+  type: ss
+- cipher: aes-256-gcm
+  name: 24|🇩🇪DE-172.105.244.165-0024
+  password: FoOiGlkAA9yPEGP
+  port: 7306
+  server: 172.105.244.165
+  type: ss
+- cipher: aes-256-gcm
+  name: 24|🇩🇪DE-172.105.244.165-0025
+  password: g5MeD6Ft3CWlJId
+  port: 5004
+  server: 172.105.244.165
+  type: ss
+- cipher: aes-256-gcm
+  name: 24|🇩🇪DE-172.105.244.165-0026
+  password: FoOiGlkAA9yPEGP
+  port: 7307
+  server: 172.105.244.165
+  type: ss
+- cipher: aes-256-gcm
+  name: 24|🇪DE-172.105.244.165-0031
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 172.105.244.165
+  type: ss
+- cipher: aes-256-gcm
+  name: 24|🇩🇪DE-193.108.118.182-0033
+  password: XKFKl2rULjIp74
+  port: 8009
+  server: 193.108.118.182
+  type: ss
+- name: 24|🇪DE-18.196.105.231-0273
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.196.105.231
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 24|🇩🇪DE-52.28.176.69-0274
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 52.28.176.69
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 24|🇩🇪DE-3.64.17.216-0284
+  password: telegram-id-directvpn
+  port: 22222
+  server: 3.64.17.216
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 24|🇩🇪DE-3.64.191.45-0285
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.64.191.45
+  skip-cert-verify: false
+  sni: sni=trojan.burgerip.co.uk
+  type: trojan
+- name: 24|🇩🇪DE-3.67.211.46-0286
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.67.211.46
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 24|🇪DE-3.78.23.212-0287
+  password: telegram-id-directvpn
+  port: 22222
+  server: 3.78.23.212
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 24|DE-92.114.54.227-0660
+  network: ws
+  port: 32683
+  server: 92.114.54.227
+  servername: digitalcloud.pro.jiahe.buzz
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: b4134d6a-945b-4355-b34b-a0899b02701e
+  ws-opts:
+    headers:
+      Host: digitalcloud.pro.jiahe.buzz
+    path: /jh002
+- cipher: rc4-md5
+  name: 24|DE-91.195.240.94-0926
+  obfs: plain
+  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40210
+  protocol: auth_aes128_md5
+  protocol-param: 92902:pFWGOQ
+  server: 2.hublink.pro
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 24|🇪DE-57.129.24.125-1086
+  network: ws
+  port: 443
+  server: 57.129.24.125
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24|🇪DE-57.129.64.238-1091
+  network: ws
+  port: 443
+  server: 57.129.64.238
+  servername: kapelleng.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kapelleng.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24|🇪DE-57.129.28.65-1107
+  network: ws
+  port: 443
+  server: 57.129.28.65
+  servername: kapelleng.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kapelleng.com
+    path: /
+- name: 24,33|🔒 TR-TCP-TLS 🇩🇪 DE-57.129.89.1...
+  network: tcp
+  password: pqlnPNu423
+  port: 1935
+  server: 57.129.89.172
+  skip-cert-verify: false
+  sni: x1-germany-ovh-v2.devefun.net
+  type: trojan
+- cipher: aes-256-cfb
+  name: 24|🇪DE-80.92.204.106-1143
+  password: BejrQvtu9sqUeNuZ
+  port: 9024
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 24|🇪DE-80.92.204.106-1152
+  password: NvS8N4Vf8qAGPSCL
+  port: 9046
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 24|🇪DE-80.92.204.106-1154
+  password: EXN3S3eQpjE7EJu8
+  port: 9027
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 24|🇪DE-80.92.204.106-1156
+  password: 4R3hUfZ2FHhDmNcP
+  port: 9061
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 24|🇪DE-80.92.204.106-1158
+  password: ZET59LF6DvCC8KVt
+  port: 9005
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 24|🇩🇪DE-80.92.204.106-1167
+  password: VP8ZPxQpJtZRCjfZ
+  port: 9080
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 24|🇪DE-80.92.204.106-1180
+  password: cp8pRSUAyLhTfVWH
+  port: 9064
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 24|🇩🇪DE-80.92.204.106-1182
+  password: aLpQtfEZe445QyHk
+  port: 9098
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 24|🇩🇪DE-80.92.204.106-1189
+  password: BwcAUZk8hUFAkDGN
+  port: 9031
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-gcm
+  name: 24|🇩🇪DE-145.239.1.100-1213
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: 24|🇪DE-145.239.1.100-1215
+  password: Y6R9pAtvxxzmGC
+  port: 8888
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: 24|🇪DE-145.239.1.100-1218
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 145.239.1.100
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 26|3|🇪 德国 01 | 1x DE
-  password: 05f83440-dc16-4ea1-a55e-d3f753f97e7f
+  name: 24|🇪DE-52.58.249.78-1222
+  password: pryhyxya
+  port: 57824
+  server: 52.58.249.78
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 24|🇪DE-5.75.154.136-1255
+  network: ws
+  port: 63456
+  server: 5.75.154.136
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: dab6ce8a-8059-4357-9083-c5283e1908b2
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24|🇩🇪DE-91.195.240.12-1372
+  network: ws
+  port: 443
+  server: sgp.kapok.buzz
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: c1bac6b8-934a-44e2-9cf2-ee0db1fc1c85
+  ws-opts:
+    headers:
+      Host: sgp.kapok.buzz
+    path: /4befdd8a6/
+- alterId: 64
+  cipher: auto
+  name: 24|🇪DE-89.163.157.147-1374
+  network: ws
+  port: 443
+  server: 89.163.157.147
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: b8aedf50-c4f5-4255-b73d-3779db661d70
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24|🇪DE-31.22.109.209-1394
+  network: ws
+  port: 443
+  server: 31.22.109.209
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 36793d2c-0d5a-4a84-8862-f9c93e9af5b5
+  ws-opts:
+    path: /4ba99a39b90faa/
+- name: 24|🇩🇪DE-18.193.176.89-1559
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.193.176.89
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 24|DE-149.50.74.62-1768
+  password: bs6KJkPBW9MP74uHEa
+  port: 443
+  server: de1.trojan-lite.com
+  skip-cert-verify: false
+  sni: de1.trojan-lite.com
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇩🇪DE-164.90.234.85-2122
+  password: fdRAl4scWDTg
+  port: 18492
+  server: 164.90.234.85
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 24|🇪DE-143.42.21.187-2334
+  network: ws
+  port: 443
+  server: 143.42.21.187
+  servername: 143.42.21.187
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 927094d3-d678-4763-8591-e240d0bcae87
+  ws-opts:
+    path: /chat
+- cipher: aes-256-cfb
+  name: 24|🇪DE-3.123.32.96-2341
+  obfs: http_simple
+  obfs-param: www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive
+  password: YpX2opBbrfqJzzMs
+  port: 42833
+  protocol: origin
+  protocol-param: ''
+  server: z0110.security-cloudfront-cdn.com
+  type: ssr
+- alterId: 64
+  cipher: auto
+  name: 24|🇩🇪DE-87.254.31.23-2403
+  network: ws
+  port: 41647
+  server: 87.254.31.23
+  servername: uk.linkeden.co
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: aae02fcc-179b-4edc-aa69-6878ff29d01c
+  ws-opts:
+    path: /uk/getData
+- alterId: 0
+  cipher: auto
+  name: 24|🇩🇪DE-89.163.213.20-2591
+  network: ws
+  port: 80
+  server: 89.163.213.20
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 5668ff97-631f-4602-a13f-b56552c67abe
+  ws-opts:
+    path: /vmess
+- name: 24|🇪DE-54.93.240.151-2649
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 54.93.240.151
+  skip-cert-verify: false
+  sni: trj.rollingnext.co.uk
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 24|🇪DE-78.47.131.39-2690
+  network: ws
+  port: 8081
+  server: 78.47.131.39
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 822a646e-6f69-4758-9008-494e137e26ac
+  ws-opts:
+    path: /@hashmakvpn 🇩🇪
+- name: 24|🇪DE-45.80.190.66-2691
+  password: bs6KJkPBW9MP74uHEa
+  port: 443
+  server: 45.80.190.66
+  skip-cert-verify: false
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 24|🇪DE-91.107.166.231-2722
+  network: ws
+  port: 8081
+  server: 91.107.166.231
+  servername: snapp.ir
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 822a646e-6f69-4758-9008-494e137e26ac
+  ws-opts:
+    path: /@hashmakvpn 🇩🇪
+- name: 24|🇩🇪DE-45.80.190.64-2738
+  password: bs6KJkPBW9MP74uHEa
+  port: 443
+  server: 45.80.190.64
+  skip-cert-verify: false
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇪DE-3.67.113.118-2810
+  password: G!yBwPWH3Vao
+  port: 810
+  server: 3.67.113.118
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 24|🇪DE-138.68.90.231-3001
+  network: ws
+  port: 8080
+  server: 138.68.90.231
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 294ffdc3-5942-45ae-a154-dc6c92eacf1d
+  ws-opts:
+    headers:
+      Host: 138.68.90.231
+    path: /cctv13/hd.m3u8
+- name: 24|🇩🇪DE-91.195.240.12-3019
+  password: cfbabf31-2cf6-40ca-9688-abbb682370aa
+  port: 32002
+  server: cn.speedabc.xyz
+  skip-cert-verify: false
+  sni: jp-bgp.speedaccelerate.com
+  type: trojan
+- name: 24|🇪DE-64.190.63.222-3117
+  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
+  port: 8443
+  server: 43-153-30-20.ipv4.rush.ml
+  skip-cert-verify: false
+  type: trojan
+- cipher: aes-256-gcm
+  name: 24|🇪DE-193.108.118.34-3120
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 193.108.118.34
+  type: ss
+- name: 24|🇪DE-64.190.63.222-3130
+  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
+  port: 8443
+  server: 43-153-34-170.ipv4.rush.ml
+  skip-cert-verify: false
+  type: trojan
+- name: 24|🇪DE-64.190.63.222-3228
+  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
+  port: 8443
+  server: 20-66-19-98.ipv4.rush.ml
+  skip-cert-verify: false
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 24|🇪DE-165.227.175.88-3338
+  network: ws
+  port: 28164
+  server: 165.227.175.88
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: eba8ccf5-5ab9-4b6b-de4b-83ab920c1005
+  ws-opts:
+    path: /
+- name: 24|🇪DE-130.162.230.82-3366
+  password: 8a03bc28-2a33-42c4-be59-30464dbb9954
+  port: 18818
+  server: fra13.yukiss.eu.org
+  skip-cert-verify: false
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 24|🇪DE-168.119.254.234-3376
+  network: ws
+  port: 80
+  server: 168.119.254.234
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 41990bdc-da75-496d-bad3-ae822ad8be5f
+  ws-opts:
+    path: /graphql
+- name: 24|🇪DE-51.75.76.22-3379
+  password: c60fbf90-4b55-11ed-b935-225401db9d57
+  port: 443
+  server: 51.75.76.22
+  skip-cert-verify: false
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 24|🇪DE-94.130.184.57-3701
+  network: ws
+  port: 80
+  server: 94.130.184.57
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: c5e523e7-da73-40af-a4a9-c638720c30e1
+  ws-opts:
+    path: /graphql
+- name: 24|🇪DE-89.163.220.99-3542
+  password: 750a29bf-0a40-437f-b120-38de74ae7eaf
+  port: 28443
+  server: 89.163.220.99
+  skip-cert-verify: false
+  type: trojan
+- name: 24|🇪DE-181.214.99.54-3557
+  password: q9870219
+  port: 2035
+  server: 181.214.99.54
+  skip-cert-verify: false
+  sni: ht.lljllj.buzz
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 24|🇪DE-162.55.174.135-3643
+  network: ws
+  port: 80
+  server: 162.55.174.135
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4d9aa6db-705a-4bfa-b05b-8f442c839557
+  ws-opts:
+    path: /graphql
+- name: 24|🇪DE-188.40.251.19-3647
+  password: origin
+  port: 443
+  server: 188.40.251.19
+  skip-cert-verify: false
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 24|🇪DE-162.55.62.193-3761
+  network: ws
+  port: 80
+  server: 162.55.62.193
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 2aac77de-b3e4-4017-845c-ca1380f2e8d0
+  ws-opts:
+    path: /telegram-id-@privatevpns
+- alterId: 0
+  cipher: auto
+  name: 24|🇪DE-5.75.173.189-3781
+  network: ws
+  port: 80
+  server: 5.75.173.189
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 2aac77de-b3e4-4017-845c-ca1380f2e8d0
+  ws-opts:
+    path: /telegram-id-@privatevpns
+- alterId: 0
+  cipher: auto
+  name: 24|🇪DE-78.46.129.226-3817
+  network: ws
+  port: 80
+  server: 78.46.129.226
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 2aac77de-b3e4-4017-845c-ca1380f2e8d0
+  ws-opts:
+    path: /telegram-id-@privatevpns
+- alterId: 0
+  cipher: auto
+  name: 24|🇪DE-167.235.78.112-3859
+  network: ws
+  port: 80
+  server: 167.235.78.112
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 2aac77de-b3e4-4017-845c-ca1380f2e8d0
+  ws-opts:
+    path: /telegram-id-@privatevpns
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 24|🇩🇪DE-157.90.20.18-4202
+  network: http
+  port: 443
+  server: 157.90.20.18
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 24|🇪DE-5.75.168.155-4204
+  network: http
+  port: 443
+  server: 5.75.168.155
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 24|🇩🇪DE-94.130.25.155-4205
+  network: http
+  port: 443
+  server: 94.130.25.155
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 24|🇩🇪DE-167.235.136.155-4256
+  network: http
+  port: 443
+  server: 167.235.136.155
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
+- alterId: 32
+  cipher: none
+  name: 24|🇪DE-5.75.236.246-4580
+  network: ws
+  port: 443
+  server: mt2.qowch.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: a61eb3a2-1adb-48cb-ab46-ce225769de16
+  ws-opts:
+    headers:
+      Host: mt2.qowch.com
+    path: users?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 24|🇪DE-188.40.132.107-4709
+  network: ws
+  port: 80
+  server: 188.40.132.107
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4ddd24d6-d901-5e5f-9a7c-080015c2e246
+  ws-opts:
+    path: /p3573l6m92h1ham3q23t
+- alterId: 0
+  cipher: auto
+  name: 24|🇪DE-162.55.214.110-4928
+  network: ws
+  port: 51549
+  server: 162.55.214.110
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 6399ab58-b7ce-4d24-be9e-92c581c93b44
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24|🇩🇪DE-150.230.149.55-4934
+  network: ws
+  port: 6374
+  server: 150.230.149.55
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 80f25361-877d-46d4-8404-f0dce1faf84f
+  ws-opts:
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇪DE-185.104.184.78-4948
+  password: G!yBwPWH3Vao
+  port: 802
+  server: 185.104.184.78
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇪DE-185.104.184.78-4949
+  password: G!yBwPWH3Vao
+  port: 804
+  server: 185.104.184.78
+  type: ss
+- cipher: aes-256-cfb
+  name: 24|🇪DE-68.183.74.63-4960
+  obfs: http_simple
+  obfs-param: ''
+  password: 4369b96
+  port: 12928
+  protocol: origin
+  protocol-param: ''
+  server: 68.183.74.63
+  type: ssr
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇩🇪DE-185.104.184.78-4962
+  password: G!yBwPWH3Vao
+  port: 811
+  server: 185.104.184.78
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 24|🇪DE-167.235.192.0-4968
+  network: ws
+  port: 25052
+  server: 167.235.192.0
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cbeff4ce-adcb-4e25-a42b-b4e5463b0d93
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24|🇪DE-159.223.30.153-4979
+  network: ws
+  port: 8081
+  server: 159.223.30.153
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: c2743f4a-9590-4406-dc78-6ac98c12004a
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 24|🇪DE-5.75.247.192-4988
+  network: http
+  port: 443
+  server: 5.75.247.192
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 24|🇪DE-88.198.104.211-4989
+  network: http
+  port: 443
+  server: 88.198.104.211
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
+- name: 24|🇩🇪DE-51.77.71.131-5063
+  password: Sp3eDVp
+  port: 443
+  server: 51.77.71.131
+  skip-cert-verify: false
+  type: trojan
+- name: 24|🇩🇪DE-51.77.71.134-5068
+  password: origin
+  port: 443
+  server: 51.77.71.134
+  skip-cert-verify: false
+  type: trojan
+- name: 24|🇩🇪DE-91.195.240.12-5306
+  password: cb5e2135-4d64-4454-be98-5bae4f2618d1
+  port: 32462
+  server: usfree2.jiantian.xyz
+  skip-cert-verify: false
+  type: trojan
+- alterId: 4
+  cipher: auto
+  name: 24|🇪DE-146.0.42.87-5531
+  network: ws
+  port: 443
+  server: 146.0.42.87
+  servername: germany-dusseldorf.mah3Hoet.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
+  ws-opts:
+    headers:
+      Host: germany-dusseldorf.mah3Hoet.com
+    path: /ws
+- alterId: 4
+  cipher: auto
+  name: 24|🇪DE-138.68.90.231-5806
+  network: ws
+  port: 8080
+  server: 138.68.90.231
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 826b8d0a-e0d3-407a-927d-19953c170779
+  ws-opts:
+    path: /cctv13/hd.m3u8
+- cipher: aes-256-cfb
+  name: 24|🇪DE-80.92.204.106-5887
+  password: a3GFYt36Sm82Vys9
+  port: 9000
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 24|🇩🇪DE-80.92.204.106-5900
+  password: TN2YqghxeFDKZfLU
+  port: 9037
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 24|🇩🇪DE-80.92.204.106-5901
+  password: c3NtHJ5ujV2tGDfj
+  port: 9084
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 24|🇪DE-80.92.204.106-5903
+  password: f63gg8EruDnUrmz4
+  port: 9010
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 24|🇪DE-80.92.204.106-5904
+  password: GA9KzeEgvfxNrgmM
+  port: 9019
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 24|🇪DE-80.92.204.106-5955
+  password: BNmAXXxAHYpTRdzu
+  port: 9020
+  server: 80.92.204.106
+  type: ss
+- name: 24|🇪DE-165.22.81.10-5986
+  password: 3240d72a-1373-4566-9c6c-68524e4b13fc
+  port: 443
+  server: es-full.privateip.net
+  skip-cert-verify: false
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 24|🇩🇪DE-57.129.24.124-5993
+  network: ws
+  port: 443
+  server: 57.129.24.124
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 24|🇩🇪DE-57.129.25.22-5994
+  network: ws
+  port: 443
+  server: 57.129.25.22
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 24|🇩🇪DE-57.129.28.69-5995
+  network: ws
+  port: 443
+  server: 57.129.28.69
+  servername: baradiha.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 24|🇩🇪DE-57.129.24.125-5996
+  network: ws
+  port: 443
+  server: 57.129.24.125
+  servername: aveiror.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: /linkvws
+- alterId: 1
+  cipher: auto
+  name: 24|🇩🇪DE-57.129.25.20-5997
+  network: ws
+  port: 443
+  server: 57.129.25.20
+  servername: 57.129.25.20
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 24|🇩🇪DE-57.129.25.25-5998
+  network: ws
+  port: 443
+  server: 57.129.25.25
+  servername: f.khilei.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: /linkvws
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇪DE-91.230.27.95-6002
+  password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3
+  port: 54075
+  server: beta.mattenadene.org
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 24|🇩🇪DE-132.145.232.171-6004
+  network: ws
+  port: 443
+  server: 132.145.232.171
+  servername: beyonddsz.cfd
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-opts:
+    path: /linkws
+- cipher: aes-256-cfb
+  name: 24|🇩🇪DE-80.92.204.106-6007
+  password: Sn5B7jTqr76aCJT8
+  port: 9097
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 24|🇪DE-80.92.204.106-6008
+  password: FAdUvMJUq5vDgKEq
+  port: 9006
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 24|🇩🇪DE-80.92.204.106-6011
+  password: XPtzA9sCug3SPR4c
+  port: 9025
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 24|🇪DE-80.92.204.106-6013
+  password: S7KwUu7yBy58S3Ga
+  port: 9042
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 24|🇪DE-80.92.204.106-6014
+  password: ZpNDDKRu9MagNvaf
+  port: 9015
+  server: 80.92.204.106
+  type: ss
+- name: 24,33|🔒 TR-TCP-TLS 🇩🇪 DE-139.162.158...
+  password: 665c944d-047d-4659-80d5-3eaac70241a9
+  port: 443
+  server: 139.162.158.172
+  skip-cert-verify: false
+  sni: de2-full.privateip.net
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 24|🇪DE-23.158.56.241-6128
+  network: ws
+  port: 443
+  server: 23.158.56.241
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 24|🇩🇪DE-139.162.178.95-6129
+  network: ws
+  port: 443
+  server: hms23.fixedfloati.cfd
+  servername: fixedfloati.cfd
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 9072d339-3885-4fe1-b0bc-29fa7505410e
+  ws-opts:
+    headers:
+      Host: hms23.fixedfloati.cfd
+    path: /linkwsd
+- name: 24|🇪DE-138.68.79.47-6175
+  password: 0280b529-2747-4b7a-ab11-bad6453150b9
+  port: 443
+  server: fr2-full.privateip.net
+  skip-cert-verify: false
+  type: trojan
+- name: 24|🇪DE-54.93.204.39-6209
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 54.93.204.39
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 24|🇪DE-165.22.74.230-6234
+  password: 4732adfa16c6450bbef87264e41332db
+  port: 443
+  server: nextstepcareer.online
+  skip-cert-verify: false
+  type: trojan
+- name: 24|🇪DE-165.22.74.230-6235
+  password: 4732adfa16c6450bbef87264e41332db
+  port: 443
+  server: 165.22.74.230
+  skip-cert-verify: false
+  sni: nextstepcareer.online
+  type: trojan
+- cipher: aes-256-gcm
+  name: 24|DE-193.108.117.75-6672
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 193.108.117.75
+  type: ss
+- cipher: aes-256-gcm
+  name: 24|🇪DE-193.108.117.75-6673
+  password: kDWvXYZoTBcGkC4
+  port: 8881
+  server: 193.108.117.75
+  type: ss
+- cipher: aes-256-gcm
+  name: 24|🇩🇪DE-193.108.117.75-6674
+  password: e4FCWrgpkji3QY
+  port: 9102
+  server: 193.108.117.75
+  type: ss
+- cipher: aes-256-gcm
+  name: 24|🇩🇪DE-193.108.117.75-6675
+  password: Y6R9pAtvxxzmGC
+  port: 5001
+  server: 193.108.117.75
+  type: ss
+- cipher: aes-256-gcm
+  name: 24|🇪DE-193.108.117.75-6676
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 193.108.117.75
+  type: ss
+- cipher: aes-256-gcm
+  name: 24|🇩🇪DE-193.108.117.75-6677
+  password: pKEW8JPByTVTLtM
+  port: 443
+  server: 193.108.117.75
+  type: ss
+- cipher: aes-256-gcm
+  name: 24|🇩🇪DE-193.108.117.75-6678
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 193.108.117.75
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇪DE-178.18.244.2-6844
+  password: 97OnDEZYGja4
+  port: 443
+  server: 178.18.244.2
+  type: ss
+- cipher: aes-256-gcm
+  name: 24|🇩🇪DE-145.239.1.100-6846
+  password: cdBIDV42DCwnfIN
+  port: 8118
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: 24|🇪DE-145.239.1.100-6848
+  password: cdBIDV42DCwnfIN
+  port: 8119
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: 24|🇪DE-145.239.1.100-6849
+  password: kDWvXYZoTBcGkC4
+  port: 8881
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: 24|🇩🇪DE-145.239.1.100-6851
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: 24|🇪DE-145.239.1.100-6852
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: 24|🇪DE-145.239.1.100-6855
+  password: FoOiGlkAA9yPEGP
+  port: 7306
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: 24|🇪DE-145.239.1.100-6857
+  password: zDNVedRFPQexG9v
+  port: 6379
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: 24|🇪DE-145.239.1.100-6864
+  password: XKFKl2rULjIp74
+  port: 8009
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: 24|🇪DE-145.239.1.100-6867
+  password: KixLvKzwjekG00rm
+  port: 8000
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: 24|🇪DE-145.239.1.100-6868
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: 24|🇪DE-145.239.1.100-6869
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: 24|🇪DE-145.239.1.100-6872
+  password: TEzjfAYq2IjtuoS
+  port: 6679
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: 24|🇪DE-145.239.1.100-6873
+  password: KixLvKzwjekG00rm
+  port: 5500
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: 24|🇩🇪DE-145.239.1.100-6874
+  password: RexnBgU7EV5ADxG
+  port: 7001
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: 24|🇩🇪DE-145.239.1.100-6876
+  password: g5MeD6Ft3CWlJId
+  port: 5004
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: 24|🇪DE-145.239.1.100-6878
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 145.239.1.100
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 24|DE-161.35.69.20-7843
+  password: Ultr@r00t_2017
+  port: 811
+  server: 161.35.69.20
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 24|DE-51.75.70.34-8244
+  network: ws
+  port: 443
+  server: 51.75.70.34
+  servername: goodfamily19.site
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 572126f8-5301-83c2-0a26-c30ced3db7c4
+  ws-opts:
+    path: /wmzmvws
+- alterId: 0
+  cipher: auto
+  name: 24|🇩🇪DE-51.75.70.34-8246
+  network: ws
+  port: 443
+  server: 51.75.70.34
+  servername: lg30.cfcdn3.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
+  ws-opts:
+    path: /ray
+- alterId: 0
+  cipher: auto
+  name: 24|🇩🇪DE-170.187.185.37-8304
+  network: ws
+  port: 443
+  server: 170.187.185.37
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 927094d3-d678-4763-8591-e240d0bcae87
+  ws-opts:
+    path: /chat
+- alterId: 0
+  cipher: auto
+  name: 24|🇩🇪DE-139.162.178.95-8321
+  network: ws
+  port: 443
+  server: 139.162.178.95
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 9072d339-3885-4fe1-b0bc-29fa7505410e
+  ws-opts:
+    headers:
+      Host: fixedfloati.cfd
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24|🇩🇪DE-193.122.58.158-8329
+  network: ws
+  port: 443
+  server: 193.122.58.158
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  ws-opts:
+    headers:
+      Host: irvideo.cfd
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24|🇪DE-57.129.25.22-8330
+  network: ws
+  port: 443
+  server: 57.129.25.22
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: o.metuji.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 24|🇩🇪DE-57.129.24.125-8331
+  network: ws
+  port: 443
+  server: 57.129.24.125
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 24|🇩🇪DE-57.129.28.65-8332
+  network: ws
+  port: 443
+  server: 57.129.28.65
+  servername: kapelleng.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kapelleng.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 24|🇩🇪DE-57.129.25.25-8342
+  network: ws
+  port: 443
+  server: 57.129.25.25
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: f.khilei.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 24|🇩🇪DE-57.129.64.238-8344
+  network: ws
+  port: 443
+  server: 57.129.64.238
+  servername: kapelleng.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kapelleng.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 24|🇩🇪DE-23.158.56.241-8348
+  network: ws
+  port: 443
+  server: 23.158.56.241
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /
+- alterId: 1
+  cipher: auto
+  name: 24|🇪DE-57.129.25.20-8357
+  network: ws
+  port: 443
+  server: 57.129.25.20
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 57.129.25.20
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24|🇪DE-57.129.28.69-8360
+  network: ws
+  port: 443
+  server: 57.129.28.69
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: baradiha.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 24|🇪DE-57.129.24.133-8367
+  network: ws
+  port: 443
+  server: 57.129.24.133
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 24|🇩🇪DE-57.129.24.142-8372
+  network: ws
+  port: 443
+  server: 57.129.24.142
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: harriscity.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24|🇩🇪DE-57.129.24.141-8373
+  network: ws
+  port: 443
+  server: 57.129.24.141
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 24|🇪DE-57.129.24.124-8383
+  network: ws
+  port: 443
+  server: 57.129.24.124
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: aveiror.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 24|🇪DE-23.158.56.227-8453
+  network: ws
+  port: 443
+  server: 23.158.56.227
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 23.158.56.227
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24|🇪DE-172.104.238.247-8472
+  network: ws
+  port: 443
+  server: denc36.xtooltech.cfd
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: b321fd5d-e6ec-4293-a644-164e3885f52e
+  ws-opts:
+    headers:
+      Host: adenc36v.xtooltech.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 24|DE-172.104.247.121-8616
+  network: ws
+  port: 443
+  server: 172.104.247.121
+  servername: ivideos.sbs
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
+  ws-opts:
+    headers:
+      Host: ivideos.sbs
+    path: /linkws
+- alterId: 64
+  cipher: auto
+  name: 24|🇪DE-89.163.231.19-8639
+  network: ws
+  port: 30005
+  server: 89.163.231.19
+  servername: www.80347320.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.80347320.xyz
+    path: /path/240811062813
+- alterId: 1
+  cipher: auto
+  name: 24|🇩🇪DE-23.158.56.39-8652
+  network: ws
+  port: 443
+  server: 23.158.56.39
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 23.158.56.39
+    path: /
+- alterId: 1
+  cipher: auto
+  name: 24|🇩🇪DE-23.158.56.145-8695
+  network: ws
+  port: 443
+  server: 23.158.56.145
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 23.158.56.145
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 24|🇪DE-80.158.63.104-8743
+  network: ws
+  port: 443
+  server: 80.158.63.104
+  servername: 2022585a-86a7-4231-b3a0-eeda14f77f4d.8f18237c-8e5f-4ffb-a434-1b2948c87be3.ddnsfree.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: 2022585a-86a7-4231-b3a0-eeda14f77f4d.8f18237c-8e5f-4ffb-a434-1b2948c87be3.ddnsfree.com
+    path: /obdii.cfd:443/linkws
+- alterId: 1
+  cipher: auto
+  name: 24|🇪DE-23.158.56.81-8809
+  network: ws
+  port: 443
+  server: 23.158.56.81
+  servername: 23.158.56.81
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 23.158.56.81
+    path: linkvws
+- alterId: 1
+  cipher: auto
+  name: 24|🇪DE-23.157.88.33-8819
+  network: ws
+  port: 443
+  server: 23.157.88.33
+  servername: 23.157.88.33
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 23.157.88.33
+    path: linkvws
+- alterId: 1
+  cipher: auto
+  name: 24|🇩🇪DE-23.158.56.129-8820
+  network: ws
+  port: 443
+  server: 23.158.56.129
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 23.158.56.129
+    path: /
+- alterId: 1
+  cipher: auto
+  name: 24|🇩🇪DE-23.157.88.6-8881
+  network: ws
+  port: 443
+  server: 23.157.88.6
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 23.157.88.6
+    path: linkvws
+- alterId: 1
+  cipher: auto
+  name: 24|🇪DE-23.157.88.20-8898
+  network: ws
+  port: 443
+  server: 23.157.88.20
+  servername: 23.157.88.20
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 23.157.88.20
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 24|DE-217.160.45.31-9144
+  network: ws
+  port: 8880
+  server: 217.160.45.31
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4e186678-fcca-4325-e4bc-b2916bdf6708
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24|🇩🇪DE-141.147.11.108-9202
+  network: ws
+  port: 80
+  server: 141.147.11.108
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 96782c55-676e-4b71-c8fe-1defe0988a76
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24|🇪DE-91.195.240.94-9370
+  network: ws
+  port: 8080
+  server: cf3.992688.xyz
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d3ded505-f89d-4070-dafa-8288ffbabd32
+  ws-opts:
+    headers:
+      Host: cf3.992688.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24|🇩🇪DE-91.195.240.94-9372
+  network: ws
+  port: 8080
+  server: cf3.992688.xyz
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: f467f4da-2226-448d-a30d-463ef10548ac
+  ws-opts:
+    headers:
+      Host: cf3.992688.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24|🇩🇪DE-91.195.240.94-9373
+  network: ws
+  port: 8080
+  server: cf2.992688.xyz
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 0ea60ebb-632d-4226-893a-cccc2053dbf5
+  ws-opts:
+    headers:
+      Host: cf2.992688.xyz
+    path: /
+- grpc-opts:
+    grpc-service-name: trgrpc
+  name: 24|🇩🇪DE-95.179.255.171-9419
+  network: grpc
+  password: 92902210-2eb5-11ee-b234-205c6d5f5d78
+  port: 2087
+  server: 95.179.255.171
+  skip-cert-verify: false
+  sni: asia.oceis.net
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 24|🇩🇪DE-95.179.254.20-9420
+  network: ws
+  port: 443
+  server: 95.179.254.20
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 068964e0-2e37-11ee-b733-205c6d5f5d78
+  ws-opts:
+    path: /@hopev2ray
+- grpc-opts:
+    grpc-service-name: trojangrpc
+  name: 24|🇩🇪DE-95.179.254.136-9421
+  network: grpc
+  password: mainssh-ddoejfv14
+  port: 443
+  server: 95.179.254.136
+  skip-cert-verify: false
+  sni: frtgrpc.mainssh.xyz
+  type: trojan
+- grpc-opts:
+    grpc-service-name: trojangrpc
+  name: 24,33|🔒 TR-GRPC-TLS 🇩🇪 DE-95.179.246...
+  network: grpc
+  password: mainssh-niwrhf87
+  port: 443
+  server: 95.179.246.122
+  skip-cert-verify: false
+  sni: getgrpc.mainssh.xyz
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇪DE-91.107.189.98-9439
+  password: rIvzNCBP_t5odSW4DiMLDw
+  port: 1080
+  server: 91.107.189.98
+  type: ss
+- cipher: aes-256-cfb
+  name: 24|🇩🇪DE-89.163.140.153-9442
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 89.163.140.153
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇪DE-46.4.162.18-9537
+  password: f8f7aCzcPKbsF8p3
+  port: 30696
+  server: 46.4.162.18
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 24|🇪DE-45.76.88.37-9554
+  network: ws
+  port: 2053
+  server: 45.76.88.37
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4134efe7-d935-416c-c2cc-24943e4a80ca
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24|🇩🇪DE-45.76.88.37-9555
+  network: ws
+  port: 2087
+  server: 45.76.88.37
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d5350465-ab63-4d30-ebda-5cbe0751cbd6
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24|🇪DE-45.76.88.37-9556
+  network: ws
+  port: 8443
+  server: 45.76.88.37
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 3d0c8ee5-3329-4252-aa1c-65f3fdaa0343
+  ws-opts:
+    path: /
+- name: 24|🇪DE-35.156.35.238-9610
+  password: telegram-id-directvpn
+  port: 22222
+  server: 35.156.35.238
+  skip-cert-verify: false
+  sni: trj.rollingnext.co.uk
+  type: trojan
+- name: 24|🇪DE-3.123.22.69-9636
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.123.22.69
+  skip-cert-verify: false
+  sni: trj.rollingnext.co.uk
+  type: trojan
+- name: 24|🇩🇪DE-3.123.128.240-9641
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.123.128.240
+  skip-cert-verify: false
+  sni: trj.rollingnext.co.uk
+  type: trojan
+- name: 24|🇩🇪DE-3.120.187.229-9644
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.120.187.229
+  skip-cert-verify: false
+  sni: trj.rollingnext.co.uk
+  type: trojan
+- name: 24,33|🔒 TR-GRPC-TLS 🇩🇪 DE-209.250.23...
+  network: grpc
+  password: Cl150MQWlG
+  port: 443
+  server: 209.250.236.93
+  skip-cert-verify: false
+  sni: irancell-ir-4.mmdruby13.store
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 24|🇩🇪DE-199.247.23.31-9750
+  network: ws
+  port: 443
+  server: 199.247.23.31
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: c13277ce-cda6-4d01-cedc-1e3605a0eb72
+  ws-opts:
+    path: /12796?ed=2048
+- name: 24|🇩🇪DE-18.196.127.24-9829
+  password: telegram-id-directvpn
+  port: 22222
+  server: 18.196.127.24
+  skip-cert-verify: false
+  sni: trj.rollingnext.co.uk
+  type: trojan
+- name: 24|🇩🇪DE-18.184.9.101-9831
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.184.9.101
+  skip-cert-verify: false
+  sni: trj.rollingnext.co.uk
+  type: trojan
+- grpc-opts:
+    grpc-service-name: trojangrpc
+  name: 24|🇪DE-140.82.38.103-10123
+  network: grpc
+  password: mainssh-ddoejfv14
+  port: 443
+  server: 140.82.38.103
+  skip-cert-verify: false
+  sni: frtgrpc.mainssh.xyz
+  type: trojan
+- grpc-opts:
+    grpc-service-name: trojangrpc
+  name: 24|🇩🇪DE-140.82.32.17-10125
+  network: grpc
+  password: mainssh-niwrhf87
+  port: 443
+  server: 140.82.32.17
+  skip-cert-verify: false
+  sni: getgrpc.mainssh.xyz
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 24|🇩🇪DE-130.162.47.123-10146
+  network: ws
+  port: 6854
+  server: 130.162.47.123
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: b5f7e932-f730-4ad2-b425-40977b9db332
+  ws-opts:
+    path: /zBLPou
+- grpc-opts:
+    grpc-service-name: trojangrpc
+  name: 24|🇪DE-108.61.171.167-10180
+  network: grpc
+  password: mainssh-niwrhf87
+  port: 443
+  server: 108.61.171.167
+  skip-cert-verify: false
+  sni: getgrpc.mainssh.xyz
+  type: trojan
+- grpc-opts:
+    grpc-service-name: trojangrpc
+  name: 24|🇪DE-108.61.170.104-10182
+  network: grpc
+  password: mainssh-ddoejfv14
+  port: 443
+  server: 108.61.170.104
+  skip-cert-verify: false
+  sni: frtgrpc.mainssh.xyz
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 26|0| 国 01 | 1x DE
+  password: ad3a8883-be07-4681-8cd9-f567c66c5bf6
   port: 36471
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 30|🔒 HYSTERIA-UDP 🇩🇪 DE-152.53.12...
-  password: 43326134-a0c8-4149-8a6d-8128791a16c7
-  port: 5002
-  server: 152.53.125.70
-  skip-cert-verify: true
-  sni: d1--cn-gotcha204-3.bilivideo.com
-  tls: false
-  type: hysteria2
-- name: 30|🔒 HYSTERIA-UDP 🇩🇪 DE-5.39.252....
-  obfs: salamander
-  obfs-password: M2UyNTc5OWUwYjkyM2Q2OQ%3D%3D
-  password: f869f5c5-18d0-4971-9d50-013ecef19daf
-  port: 32008
-  server: 5.39.252.72
-  skip-cert-verify: true
-  tls: false
-  type: hysteria2
+- cipher: chacha20-ietf-poly1305
+  name: 26|1|🇪德国 01 | 1x DE
+  password: 21c85832-5930-4d9d-8eec-4d880bb50c45
+  port: 31471
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - name: 30|🔒 HYSTERIA-UDP 🇩🇪 DE-91.149.23...
   obfs: salamander
   obfs-password: M2UyNTc5OWUwYjkyM2Q2OQ%3D%3D
@@ -291,6 +2261,15 @@ proxies:
   sni: vkvd127.mycdn.me
   tls: false
   type: hysteria2
+- name: 30|🔒 HYSTERIA-UDP 🇩🇪 DE-5.39.252....
+  obfs: salamander
+  obfs-password: M2UyNTc5OWUwYjkyM2Q2OQ%3D%3D
+  password: f869f5c5-18d0-4971-9d50-013ecef19daf
+  port: 32008
+  server: 5.39.252.72
+  skip-cert-verify: true
+  tls: false
+  type: hysteria2
 - name: 30|🔒 HYSTERIA-UDP 🇩🇪 DE-94.159.10...
   password: 41639cd3-a901-413d-9de3-b659ce5ab888
   port: 1443
@@ -298,285 +2277,45 @@ proxies:
   sni: de2.587458.xyz
   tls: false
   type: hysteria2
+- name: 30|🔒 HYSTERIA-UDP 🇩🇪 DE-152.53.12...
+  password: 43326134-a0c8-4149-8a6d-8128791a16c7
+  port: 5002
+  server: 152.53.125.70
+  skip-cert-verify: true
+  sni: d1--cn-gotcha204-3.bilivideo.com
+  tls: false
+  type: hysteria2
 - client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-49.12.243.8...
+  flow: xtls-rprx-vision
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-209.38.225....
   network: tcp
-  port: 4044
+  port: 21332
   reality-opts:
-    public-key: GqpLuqbGhZ3N1oIlSMfuLnpKCNZOoK8JWwHPmqSNxgk
-  server: 49.12.243.80
+    public-key: bGfBNbN30La6XWb4Cakg4y7kRCiveT2LpWYhK8r3-BI
+    short-id: 866c9d6a17a0ae44
+  server: 209.38.225.27
   servername: refersion.com
   tls: false
   type: vless
-  uuid: 4d3ec77b-0af0-48ba-8e46-973d184422d4
+  uuid: 422899ac-7bfb-441a-89c2-5b9eee312790
+  ws-opts:
+    headers:
+      Host: /JOKERRVPNJoin_Bade_Channel@JOKERRVPN
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-89.187.169....
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-209.38.183....
   network: tcp
-  port: 443
+  port: 9643
   reality-opts:
-    public-key: B5i03yc1WUTOQD8v_N0UrCUaR4AgMJ40rEl8tXUJY0g
-    short-id: 01b200e90e250221
-  server: 89.187.169.71
-  servername: www.cloudflare.com
-  tls: false
-  type: vless
-  uuid: 6ff213b8-ccc7-4b5a-b4aa-37f7b792a1f1
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-213.202.223...
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  server: 213.202.223.187
-  servername: dropbox.com
-  tls: false
-  type: vless
-  uuid: 5c80fb98-d9ad-4a89-9189-237881d2ef89
-- name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-159.89.111....
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: MG_eg7c6ip99Y4BROHhxDsnKDHTpu-1hjKa6J1zjig4
-  server: 159.89.111.97
+    public-key: LY-IIBxf0lcy6d7sZPCnF0CgzIxUvYVcsiiUiypUkUU
+  server: 209.38.183.156
   servername: refersion.com
   tls: false
   type: vless
-  uuid: 2d8f7808-c658-4dfc-8007-becae3176024
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-37.157.255....
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  server: 37.157.255.161
-  servername: dropbox.com
-  tls: false
-  type: vless
-  uuid: 5c80fb98-d9ad-4a89-9189-237881d2ef89
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-85.208.139....
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: cTm0TIKL9qK550XICK2YroOSr1u-f12h5UmBw2EAr2c
-  server: 85.208.139.163
-  servername: google.com
-  tls: false
-  type: vless
-  uuid: 04fcd444-ad3a-422f-b2ed-2fb8c12b6bc1
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-157.173.127...
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: c5VJpRsIyrxNp0eS3Lz5EMQH6jWBsvSTK7hNZQ77bl4
-    short-id: 4fd4ad
-  server: 157.173.127.239
-  servername: analytics.google.com
-  tls: false
-  type: vless
-  uuid: 667b5dfa-7ec4-45d7-ba9c-6957eed8cfbb
+  uuid: 94eae61e-13fc-484d-969c-f3bf68beaed9
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-45.150.174....
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
-    short-id: f203719d3ff9a5f5
-  server: 45.150.174.84
-  servername: maviks.eu
-  tls: false
-  type: vless
-  uuid: c8898cfd-9927-4f36-b7bc-40de76076b80
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-91.107.148....
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: HT5DfZtmmFSHXy__XWc1ukf2zJHRtCWJSc2mhcpptXc
-    short-id: b6c6a4369cb8
-  server: 91.107.148.31
-  servername: eset.com
-  tls: false
-  type: vless
-  uuid: acb9dedd-fa08-476f-b21a-06f6b7ddde97
-- name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-213.202.223... #1'
-  port: 8443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwB
-  server: 213.202.223.233
-  servername: 02020.sbs
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  uuid: 5c80fb98-d9ad-4a89-9189-237881d2ef89
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-45.150.174.... #1'
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
-    short-id: f203719d3ff9a5f5
-  server: 45.150.174.82
-  servername: maviks.eu
-  tls: false
-  type: vless
-  uuid: 3f789164-ca20-4041-89c0-bc553819970c
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-78.46.190.1...
-  network: tcp
-  port: 1616
-  reality-opts:
-    public-key: ZtIueP7duO8oy49YFWwsMzzYfuTCz3YtY0kFr31emAI
-    short-id: 666dbac6955fdf50
-  server: 78.46.190.158
-  servername: refersion.com
-  tls: false
-  type: vless
-  uuid: 05e2f43a-258f-4ed9-9dc5-900b0a05148f
-- client-fingerprint: chrome
-  name: 31|🔒 VL-XHTTP-RLT 🇩🇪 DE-188.245.1...
-  network: xhttp
-  port: 443
-  reality-opts:
-    public-key: wKlkFbReKv_gawUVfc2l-Ah3HNVutXWMfPhfDIjR1SI
-    short-id: f21f70d301f05a
-  server: 188.245.163.203
-  servername: yahoo.com
-  tls: false
-  type: vless
-  uuid: 6abe5ebe-7afb-4157-8e5f-fa3f074d2140
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-45.150.174.... #2'
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
-    short-id: f203719d3ff9a5f5
-  server: 45.150.174.84
-  servername: maviks.eu
-  tls: false
-  type: vless
-  uuid: 3f789164-ca20-4041-89c0-bc553819970c
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-91.238.82.2...
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
-    short-id: f203719d3ff9a5f5
-  server: 91.238.82.241
-  servername: maviks.eu
-  tls: false
-  type: vless
-  uuid: c8898cfd-9927-4f36-b7bc-40de76076b80
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-142.93.109....
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: 8jNnXIMyO3_rYopLhsXqGiutnKIEmW8myaV5f1CzVEc
-    short-id: 55f711551c4e3248
-  server: 142.93.109.101
-  servername: zula.ir
-  tls: false
-  type: vless
-  uuid: 9af9dc5d-5849-4ca1-bcc0-a2a53091cb6c
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-5.75.202.15...
-  network: tcp
-  port: 20000
-  reality-opts:
-    public-key: PHP5Ibb_VceW-qb5RXLn-lKMHoqMTZbhrjwCMtsJZiQ
-    short-id: 49d5a3bd8cd3e6b6
-  server: 5.75.202.153
-  servername: fontawesome.com
-  tls: false
-  type: vless
-  uuid: b7154df0-ce29-463e-8766-2afbf814b1b1
-  ws-opts:
-    headers:
-      Host: Telegram%20%3A
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-49.13.135.5...
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: X5WLfJ82KCpBanu2EwML11CwJUM2NczTonML5hHwW2o
-    short-id: b5b39d420f404069
-  server: 49.13.135.58
-  servername: github.io
-  tls: false
-  type: vless
-  uuid: 18e82ee0-3b88-48d1-9292-484c8051f690
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-45.150.174.... #3'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
-    short-id: f203719d3ff9a5f5
-  server: 45.150.174.85
-  servername: maviks.eu
-  tls: false
-  type: vless
-  uuid: 4a73fddb-e8c2-45fe-ad2c-e5bde13e51a6
-  ws-opts:
-    headers:
-      Host: JOKERRVPNJoin_Bade_Channel@JOKERRVPN
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-92.246.139....
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: C77mWXCK8T47d5c3Dyqjlqr4AJsWozMxhYhhq_GwQj8
-    short-id: 2c229e23f30b9a13
-  server: 92.246.139.182
-  servername: github.com
-  tls: false
-  type: vless
-  uuid: 7bd34ebe-c323-46cf-8a16-3945e7e3fa83
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-45.150.174.... #4'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
-    short-id: f203719d3ff9a5f5
-  server: 45.150.174.81
-  servername: maviks.eu
-  tls: false
-  type: vless
-  uuid: c8898cfd-9927-4f36-b7bc-40de76076b80
-  ws-opts:
-    headers:
-      Host: '---@External_Net---@External_Net---@External_Net---@External_Net---@External_Net'
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-172.105.94....
-  network: tcp
-  port: 55372
-  reality-opts:
-    public-key: qiWe2SHKDfGG_GdZXYwYNoKFBGWxFjDKtNFJ4Qvo8SA
-  server: 172.105.94.189
-  servername: microsoft.com
-  tls: false
-  type: vless
-  uuid: f0c07578-25e4-4397-d037-a89dcaf4dc65
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-45.150.174.... #5'
   network: tcp
   port: 8443
   reality-opts:
@@ -588,79 +2327,83 @@ proxies:
   type: vless
   uuid: 3f789164-ca20-4041-89c0-bc553819970c
 - client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-91.107.146....
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: _scshlStWSz3DI8nsre9mq87ZrPP5ov3a0NMuHkvyjU
-    short-id: fc
-  server: 91.107.146.208
-  servername: eset.com
-  tls: false
-  type: vless
-  uuid: e8bcc78f-6f92-4aa6-84e5-30db1a0143d6
-- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-81.30.156.9...
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-89.163.214....
   network: tcp
   port: 8443
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  server: 81.30.156.91
+  server: 89.163.214.14
+  servername: dropbox.com
+  tls: false
+  type: vless
+  uuid: 5c80fb98-d9ad-4a89-9189-237881d2ef89
+- client-fingerprint: chrome
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-57.129.77.1...
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: L_tbYn1GzbG3VS0OJcEFHFoYkh-jCK-iyzJVGLzoB30
+  server: 57.129.77.179
+  servername: de.nahadeh.co
+  tls: false
+  type: vless
+  uuid: 860bf99f-6817-4892-aa77-1877ec73a57b
+  ws-opts:
+    headers:
+      Host: speed.cloudflare.com
+- client-fingerprint: chrome
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-188.245.235...
+  network: tcp
+  port: 1001
+  reality-opts:
+    public-key: OedmrV321HapQz6m302_6l3zfGvSG54EoA1iBkvp100
+    short-id: '37'
+  server: 188.245.235.93
+  servername: refersion.com
+  tls: false
+  type: vless
+  uuid: d36a6514-0731-4c81-a295-4bcd5a68fe46
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-89.163.221....
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  server: 89.163.221.198
   servername: dropbox.com
   tls: false
   type: vless
   uuid: 5c80fb98-d9ad-4a89-9189-237881d2ef89
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-49.12.225.1...
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-64.227.126....
   network: tcp
-  port: 443
+  port: 21337
   reality-opts:
-    public-key: T7Cwk-B3EvZqqRywIgN_TNotJiUOXYUI9bHqYKPnTi0
-    short-id: 105e89ba3d2a1c3b
-  server: 49.12.225.140
-  servername: tgju.org
+    public-key: bGfBNbN30La6XWb4Cakg4y7kRCiveT2LpWYhK8r3-BI
+    short-id: 866c9d6a17a0ae44
+  server: 64.227.126.15
+  servername: refersion.com
   tls: false
   type: vless
-  uuid: 4907d47c-2df6-4fe2-9b25-6d98ba858e0d
+  uuid: 422899ac-7bfb-441a-89c2-5b9eee312790
+  ws-opts:
+    headers:
+      Host: '%2FJOKERRVPNJoin_Bade_Channel@JOKERRVPN'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-194.36.88.7...
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-91.107.240....
   network: tcp
-  port: 443
+  port: 1300
   reality-opts:
-    public-key: 83kO-C72OoPSqNzGDHRwRwl2bAHlI6DCzDs2KR0spnI
-    short-id: 10de3e76c515259b
-  server: 194.36.88.78
-  servername: www.microsoft.com
+    public-key: FdMFSpgEwT0nhczf37d-Z8gFgJtwyV4C_pJlnOTScUA
+  server: 91.107.240.125
+  servername: refersion.com
   tls: false
   type: vless
-  uuid: 27c11f2c-85f4-44ef-ac28-670e987f5788
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-91.238.82.2... #1'
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
-    short-id: f203719d3ff9a5f5
-  server: 91.238.82.243
-  servername: maviks.eu
-  tls: false
-  type: vless
-  uuid: 3f789164-ca20-4041-89c0-bc553819970c
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-194.87.71.1...
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: cTm0TIKL9qK550XICK2YroOSr1u-f12h5UmBw2EAr2c
-  server: 194.87.71.168
-  servername: google.com
-  tls: false
-  type: vless
-  uuid: c15f4413-9011-4adc-ac26-9f2b2f83de6c
+  uuid: 04c73880-8479-4164-bd2c-e7d49eb82c2c
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: Telegramid:@iranbaxvpn
@@ -677,187 +2420,17 @@ proxies:
   uuid: 984a49b5-b665-489c-d5cc-ea83344b2a60
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-213.202.219...
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  server: 213.202.219.135
-  servername: dropbox.com
-  tls: false
-  type: vless
-  uuid: 5c80fb98-d9ad-4a89-9189-237881d2ef89
-- client-fingerprint: chrome
-  name: 31|🔒 VL-GRPC-RLT 🇩🇪 DE-168.119.15...
-  network: grpc
-  port: 443
-  reality-opts:
-    public-key: 6FcfJl0x7JEzgqiUgSTZjOuqo90YOG0SOXTTt8hLOm4
-    short-id: ce00a8c4
-  server: 168.119.154.98
-  servername: ftp.debian.org
-  tls: false
-  type: vless
-  uuid: 161b8c69-b432-4865-8c1f-8d4a3406866b
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-45.150.174.... #6'
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-91.238.82.2...
   network: tcp
   port: 443
   reality-opts:
     public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
     short-id: f203719d3ff9a5f5
-  server: 45.150.174.83
-  servername: maviks.eu
-  tls: false
-  type: vless
-  uuid: 4a73fddb-e8c2-45fe-ad2c-e5bde13e51a6
-  ws-opts:
-    headers:
-      Host: JOKERRVPNJoin_Bade_Channel@JOKERRVPN
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-45.150.174.... #7'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
-    short-id: f203719d3ff9a5f5
-  server: 45.150.174.82
+  server: 91.238.82.243
   servername: maviks.eu
   tls: false
   type: vless
   uuid: c8898cfd-9927-4f36-b7bc-40de76076b80
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-57.129.77.1...
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: L_tbYn1GzbG3VS0OJcEFHFoYkh-jCK-iyzJVGLzoB30
-  server: 57.129.77.179
-  servername: de.nahadeh.co
-  tls: false
-  type: vless
-  uuid: 860bf99f-6817-4892-aa77-1877ec73a57b
-  ws-opts:
-    headers:
-      Host: speed.cloudflare.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-45.150.174.... #8'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
-    short-id: f203719d3ff9a5f5
-  server: 45.150.174.87
-  servername: maviks.eu
-  tls: false
-  type: vless
-  uuid: c8898cfd-9927-4f36-b7bc-40de76076b80
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-188.245.235...
-  network: tcp
-  port: 1001
-  reality-opts:
-    public-key: OedmrV321HapQz6m302_6l3zfGvSG54EoA1iBkvp100
-    short-id: '37'
-  server: 188.245.235.93
-  servername: refersion.com
-  tls: false
-  type: vless
-  uuid: d36a6514-0731-4c81-a295-4bcd5a68fe46
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-85.114.138....
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  server: 85.114.138.122
-  servername: dropbox.com
-  tls: false
-  type: vless
-  uuid: 5c80fb98-d9ad-4a89-9189-237881d2ef89
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-45.150.174.... #9'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
-    short-id: f203719d3ff9a5f5
-  server: 45.150.174.86
-  servername: maviks.eu
-  tls: false
-  type: vless
-  uuid: c8898cfd-9927-4f36-b7bc-40de76076b80
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-91.238.82.2... #2'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
-    short-id: f203719d3ff9a5f5
-  server: 91.238.82.242
-  servername: maviks.eu
-  tls: false
-  type: vless
-  uuid: c8898cfd-9927-4f36-b7bc-40de76076b80
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-209.38.225....
-  network: tcp
-  port: 21332
-  reality-opts:
-    public-key: bGfBNbN30La6XWb4Cakg4y7kRCiveT2LpWYhK8r3-BI
-    short-id: 866c9d6a17a0ae44
-  server: 209.38.225.27
-  servername: refersion.com
-  tls: false
-  type: vless
-  uuid: 422899ac-7bfb-441a-89c2-5b9eee312790
-  ws-opts:
-    headers:
-      Host: '%2FJOKERRVPNJoin_Bade_Channel%40JOKERRVPN'
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-91.107.180....
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: ViD5yelmczDvvpxSUuCp1OvDea1zgWvTwvdrkngX7BE
-    short-id: 1242e11f31
-  server: 91.107.180.49
-  servername: tgju.org
-  tls: false
-  type: vless
-  uuid: 7adcc0f2-e658-41de-a132-b5c66c34b2bc
-- client-fingerprint: chrome
-  name: 31|🔒 VL-XHTTP-RLT 🇩🇪 DE-5.75.148....
-  network: xhttp
-  port: 443
-  reality-opts:
-    public-key: kcaHStOeklhbOVcq_C_c04awq14jRTp8_HWCRiVx4Gw
-    short-id: 608dc6c7a397
-  server: 5.75.148.241
-  servername: yahoo.com
-  tls: false
-  type: vless
-  uuid: a14bb6a3-a2f7-4272-bb26-bb2502cf5ca6
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: '%2FWedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel%3Fed%3D2048'
-  name: 31|🔒 VL-GRPC-RLT 🇩🇪 DE-188.245.25...
-  network: grpc
-  port: 2086
-  reality-opts:
-    public-key: ztgCu_qsyNxw3VqnH9u9e3Soore9jRiquei7p66mBAc
-  server: 188.245.251.244
-  servername: www.cdn77.com
-  tls: false
-  type: vless
-  uuid: 6e4135f9-cf0f-4355-f133-177571fdccb4
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-185.230.162...
@@ -871,255 +2444,6 @@ proxies:
   tls: false
   type: vless
   uuid: 5b101fa9-9711-4fdf-8512-43490edee4ac
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-91.238.82.2... #3'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
-    short-id: f203719d3ff9a5f5
-  server: 91.238.82.240
-  servername: maviks.eu
-  tls: false
-  type: vless
-  uuid: c8898cfd-9927-4f36-b7bc-40de76076b80
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-64.227.126....
-  network: tcp
-  port: 21337
-  reality-opts:
-    public-key: bGfBNbN30La6XWb4Cakg4y7kRCiveT2LpWYhK8r3-BI
-    short-id: 866c9d6a17a0ae44
-  server: 64.227.126.15
-  servername: refersion.com
-  tls: false
-  type: vless
-  uuid: 422899ac-7bfb-441a-89c2-5b9eee312790
-  ws-opts:
-    headers:
-      Host: /JOKERRVPNJoin_Bade_Channel@JOKERRVPN
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-165.227.136...
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: MG_eg7c6ip99Y4BROHhxDsnKDHTpu-1hjKa6J1zjig4
-  server: 165.227.136.108
-  servername: refersion.com
-  tls: false
-  type: vless
-  uuid: 2d8f7808-c658-4dfc-8007-becae3176024
-  ws-opts:
-    headers:
-      Host: /Join_Bade_Channel@JOKERRVPN
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-91.107.219....
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: Rcapy_5gvuL9LOr1Bqz-Y84P69L3wUQjG48xpB4fLTA
-    short-id: 1d13151ce1
-  server: 91.107.219.8
-  servername: direct.pdownloaddigikala.ir
-  tls: false
-  type: vless
-  uuid: eacc24ed-a1c1-4037-9af4-4f6bcd657119
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: '@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy'
-  name: 31|🔒 VL-GRPC-RLT 🇩🇪 DE-178.63.228...
-  network: grpc
-  port: 443
-  reality-opts:
-    public-key: Aa3FogZ9ohTiRHsdnoyiMg7TFARWEeZs_m290juxEzs
-  server: 178.63.228.220
-  servername: fauxid.com
-  tls: false
-  type: vless
-  uuid: c9b0c62c-5287-4619-a963-6d635a933b73
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-94.130.172....
-  network: tcp
-  port: 1018
-  reality-opts:
-    public-key: pYgrp2QuotGEu59R_8PWq7RYWr59zVIiJa4ucUlck2w
-    short-id: 4a7d0a6040c33baa
-  server: 94.130.172.44
-  servername: tgju.org
-  tls: false
-  type: vless
-  uuid: 61269d11-85fa-41b2-b21b-9734a4974ba4
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-5.75.199.15...
-  network: tcp
-  port: 15110
-  reality-opts:
-    public-key: y7msPZW4eWBT4CJ5v_blgiXUd06HuKvTs3rhlpw9fnk
-    short-id: defb484210e5
-  server: 5.75.199.151
-  servername: yahoo.com
-  tls: false
-  type: vless
-  uuid: cf3ec89e-f531-4122-a2f2-7d0fd4ba980c
-- client-fingerprint: firefox
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-23.88.52.73...
-  network: tcp
-  port: 2096
-  reality-opts:
-    public-key: wzuNwzncGOhTuCcO2tt4j7es7b3logIYYlVmWvu1OBM
-    short-id: 118e3f91
-  server: 23.88.52.73
-  servername: Www.safine.net
-  tls: false
-  type: vless
-  uuid: 0dd2b47b-e321-4bf1-add5-5f72fafec7d6
-- client-fingerprint: chrome
-  name: 31|🔒 VL-XHTTP-RLT 🇩🇪 DE-188.245.2...
-  network: xhttp
-  port: 443
-  reality-opts:
-    public-key: QtjCio8gmuOZ1jCohKKPEibuk4evo76ZM4F45SbU8nA
-    short-id: 0b
-  server: 188.245.219.185
-  servername: yahoo.com
-  tls: false
-  type: vless
-  uuid: ddaa7727-6d96-43f3-9075-2edb20fdeea6
-  ws-opts:
-    path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-80.71.157.1...
-  network: tcp
-  port: 4434
-  reality-opts:
-    public-key: I4ckWGs37sBXSBq3lGP79HqOhZ1eOjqaikCsDJXTaw0
-    short-id: a4eed13ebbf2f9d2
-  server: 80.71.157.175
-  servername: DEDUso.su
-  tls: false
-  type: vless
-  uuid: 7634c38f-73ba-4dd5-8065-c3179158e1ff
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-91.107.141....
-  network: tcp
-  port: 1357
-  reality-opts:
-    public-key: 1u1Y_g3iEMwXx2_DwVZFwxwPzgbEI7xvMPWUf0pmPFw
-    short-id: bd33881a
-  server: 91.107.141.239
-  servername: refersion.com
-  tls: false
-  type: vless
-  uuid: 5b29869b-0b6e-490f-907a-c99e818ce3ed
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-89.163.214....
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  server: 89.163.214.14
-  servername: dropbox.com
-  tls: false
-  type: vless
-  uuid: 5c80fb98-d9ad-4a89-9189-237881d2ef89
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-91.107.255....
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: OOq6hzqeyKhR7HodeJo45fWqcP6WfoJNEnYBOvHcgxY
-    short-id: 91aed2
-  server: 91.107.255.255
-  servername: eset.com
-  tls: false
-  type: vless
-  uuid: 7ead5e72-ba64-4db6-9b4d-e5a9235389cc
-- client-fingerprint: chrome
-  name: 31|🔒 VL-XHTTP-RLT 🇩🇪 DE-128.140.8...
-  network: xhttp
-  port: 8443
-  reality-opts:
-    public-key: C8T_rENHVHgvklynPdF0oVbovX6rFi_6tA3MwI6vMn4
-    short-id: 8c6a044199a51b22
-  server: 128.140.85.245
-  servername: stackoverflow.com
-  tls: false
-  type: vless
-  uuid: bc7dbc36-f3a7-4cc8-9364-eba6e889cee2
-  ws-opts:
-    headers:
-      Host: JOKERRVPNTELEGRAM-Channel-@JOKERRVPN----Channel-@JOKERRVPN----Channel-@JOKERRVPN----Channel-@JOKERRVPN----Channel-@JOKERRVPN----Channel-@JOKERRVPN----Channel-@JOKERRVPN----Channel-@JOKERRVPN----Channel-@JOKERRVPN----Channel-@JOKERRVPN----Channel-@JOKERRVPN
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-91.238.82.2... #4'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
-    short-id: f203719d3ff9a5f5
-  server: 91.238.82.243
-  servername: maviks.eu
-  tls: false
-  type: vless
-  uuid: 4a73fddb-e8c2-45fe-ad2c-e5bde13e51a6
-  ws-opts:
-    headers:
-      Host: JOKERRVPNJoin_Bade_Channel@JOKERRVPN
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-45.150.174.... #10'
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
-    short-id: f203719d3ff9a5f5
-  server: 45.150.174.81
-  servername: maviks.eu
-  tls: false
-  type: vless
-  uuid: 3f789164-ca20-4041-89c0-bc553819970c
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-45.150.174.... #11'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
-    short-id: f203719d3ff9a5f5
-  server: 45.150.174.80
-  servername: maviks.eu
-  tls: false
-  type: vless
-  uuid: c8898cfd-9927-4f36-b7bc-40de76076b80
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-91.107.152....
-  network: tcp
-  port: 2000
-  reality-opts:
-    public-key: tEq4IUmR4X5c2zc_7cFtymKxZaGLkOm3PQg2-NGBJwA
-    short-id: 9be0f68444647ced
-  server: 91.107.152.230
-  servername: stackoverflow.com
-  tls: false
-  type: vless
-  uuid: 83a92a9d-ff29-4bfe-b5a8-2d395293f64d
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-209.38.183....
-  network: tcp
-  port: 9643
-  reality-opts:
-    public-key: LY-IIBxf0lcy6d7sZPCnF0CgzIxUvYVcsiiUiypUkUU
-  server: 209.38.183.156
-  servername: refersion.com
-  tls: false
-  type: vless
-  uuid: 94eae61e-13fc-484d-969c-f3bf68beaed9
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: mgrpcm
@@ -1135,336 +2459,42 @@ proxies:
   type: vless
   uuid: ff70f154-0490-406c-99b5-476a04914aa5
 - client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-168.119.167...
+  flow: xtls-rprx-vision
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-89.187.169....
   network: tcp
   port: 443
   reality-opts:
-    public-key: P_FOKz_hYDyi1FwtsHozm0P0wNXsBrLyjt5x6Ke_3jg
-  server: 168.119.167.255
-  servername: refersion.com
+    public-key: B5i03yc1WUTOQD8v_N0UrCUaR4AgMJ40rEl8tXUJY0g
+    short-id: 01b200e90e250221
+  server: 89.187.169.71
+  servername: www.cloudflare.com
   tls: false
   type: vless
-  uuid: e5065d53-e95b-4dbd-cf7a-e3d323aa1093
+  uuid: 6ff213b8-ccc7-4b5a-b4aa-37f7b792a1f1
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-45.150.174.... #12'
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-94.130.172....
+  network: tcp
+  port: 1018
+  reality-opts:
+    public-key: pYgrp2QuotGEu59R_8PWq7RYWr59zVIiJa4ucUlck2w
+    short-id: 4a7d0a6040c33baa
+  server: 94.130.172.44
+  servername: tgju.org
+  tls: false
+  type: vless
+  uuid: 61269d11-85fa-41b2-b21b-9734a4974ba4
+- client-fingerprint: chrome
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-142.93.109....
   network: tcp
   port: 8443
   reality-opts:
-    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
-    short-id: f203719d3ff9a5f5
-  server: 45.150.174.80
-  servername: maviks.eu
+    public-key: 8jNnXIMyO3_rYopLhsXqGiutnKIEmW8myaV5f1CzVEc
+    short-id: 55f711551c4e3248
+  server: 142.93.109.101
+  servername: zula.ir
   tls: false
   type: vless
-  uuid: 3f789164-ca20-4041-89c0-bc553819970c
-- flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-138.199.232...
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 15VSj5bGCGemmifDA6IfLCz8deqBcvaI7SRZFd2bUBQ
-    short-id: ec7d25
-  server: 138.199.232.232
-  servername: direct.psnapptapsi.ir
-  tls: false
-  type: vless
-  uuid: ac5ef6ff-4df5-4615-8e8b-3819497f5776
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-49.12.243.8... #1'
-  network: tcp
-  port: 1300
-  reality-opts:
-    public-key: FdMFSpgEwT0nhczf37d-Z8gFgJtwyV4C_pJlnOTScUA
-  server: 49.12.243.80
-  servername: refersion.com
-  tls: false
-  type: vless
-  uuid: b8243b8a-dece-432f-8b4d-88696594cbf8
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: '@VPN_KING_V2RAY@VPN_KING_V2RAY@VPN_KING_V2RAY@VPN_KING_V2RAY'
-  name: 31|🔒 VL-GRPC-RLT 🇩🇪 DE-77.110.100...
-  network: grpc
-  port: 2083
-  reality-opts:
-    public-key: _Mo8etwPEDo42B4BnrkX3FOaPsOv2thyIlrzg3hhDBk
-    short-id: e09b0ba7d2
-  server: 77.110.100.177
-  servername: speedtest.net
-  tls: false
-  type: vless
-  uuid: 2bcdbd33-321e-4a1c-bae9-d37517b694c3
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-5.199.138.1...
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  server: 5.199.138.12
-  servername: dropbox.com
-  tls: false
-  type: vless
-  uuid: 5c80fb98-d9ad-4a89-9189-237881d2ef89
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-167.172.171...
-  network: tcp
-  port: 21332
-  reality-opts:
-    public-key: bGfBNbN30La6XWb4Cakg4y7kRCiveT2LpWYhK8r3-BI
-    short-id: 866c9d6a17a0ae44
-  server: 167.172.171.216
-  servername: refersion.com
-  tls: false
-  type: vless
-  uuid: 422899ac-7bfb-441a-89c2-5b9eee312790
-  ws-opts:
-    headers:
-      Host: /JOKERRVPNJoin_Bade_Channel@JOKERRVPN
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-5.75.215.22...
-  network: tcp
-  port: 44
-  reality-opts:
-    public-key: R43U2y9vbOzBleKGsApbGCufsiRTTeVIKA7LRpGMrVA
-    short-id: f289871208
-  server: 5.75.215.22
-  servername: refersion.com
-  tls: false
-  type: vless
-  uuid: 6a2206ac-208b-49f5-95e0-6f3656f9072a
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-5.104.107.1...
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: L_tbYn1GzbG3VS0OJcEFHFoYkh-jCK-iyzJVGLzoB30
-  server: 5.104.107.135
-  servername: de.nahadeh.co
-  tls: false
-  type: vless
-  uuid: 860bf99f-6817-4892-aa77-1877ec73a57b
-  ws-opts:
-    headers:
-      Host: speed.cloudflare.com
-- client-fingerprint: chrome
-  name: 31|🔒 VL-XHTTP-RLT 🇩🇪 DE-188.245.9...
-  network: xhttp
-  port: 2025
-  reality-opts:
-    public-key: g23nq_R9TIMbMIGQHB6gjDNewFzrHXPcj72bTS-RtX8
-  server: 188.245.95.151
-  servername: stackoverflow.com
-  tls: false
-  type: vless
-  uuid: f9d28482-a8eb-4c6b-8575-596579979bf9
-  ws-opts:
-    path: '%2FAS'
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-94.159.103....
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: r4Visq16WAEVR7yIvxfC36KpaiuVLyzyXxA5xZwNEGk
-    short-id: a7970bf71a2aca0c
-  server: 94.159.103.254
-  servername: yahoo.com
-  tls: false
-  type: vless
-  uuid: 0f8eecbf-3d5f-4112-b7f3-32521ca114d4
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-91.238.82.2... #5'
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
-    short-id: f203719d3ff9a5f5
-  server: 91.238.82.240
-  servername: maviks.eu
-  tls: false
-  type: vless
-  uuid: 3f789164-ca20-4041-89c0-bc553819970c
-- client-fingerprint: chrome
-  name: 31|🔒 VL-XHTTP-RLT 🇩🇪 DE-165.22.69...
-  network: xhttp
-  port: 443
-  reality-opts:
-    public-key: y_QTFoFtDtkpJ57ypPCThsAyV9az-MmZQcCR9F-o7Ew
-    short-id: 42a22604946c86
-  server: 165.22.69.147
-  servername: yahoo.com
-  tls: false
-  type: vless
-  uuid: 20fe9385-f429-4dc4-acc8-2e372a3d982b
-  ws-opts:
-    path: /Grizzly
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-45.150.174.... #13'
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
-    short-id: f203719d3ff9a5f5
-  server: 45.150.174.86
-  servername: maviks.eu
-  tls: false
-  type: vless
-  uuid: 3f789164-ca20-4041-89c0-bc553819970c
-- client-fingerprint: chrome
-  name: 31|🔒 VL-GRPC-RLT 🇩🇪 DE-91.107.198...
-  network: grpc
-  port: 443
-  reality-opts:
-    public-key: dp7ziJPGFb5EUNyyM-QSd3uebJWBM_TCvd3KNQBspAA
-    short-id: 05d86b95
-  server: 91.107.198.79
-  servername: www.speedtest.net
-  tls: false
-  type: vless
-  uuid: ec488803-fc5a-4d96-9138-4fe14793b20a
-- alpn:
-  - h2
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: yZ1aB2cC3dD4eE5f6gH7iJ8kL9mNOoP
-  name: 31|🔒 VL-GRPC-RLT 🇩🇪 DE-88.198.101...
-  network: grpc
-  port: 443
-  reality-opts:
-    public-key: Hng90MObJ5OBtIrfrf6U02WIx36R9srHLBwRsj1r7Dw
-    short-id: 05a6d4aa5e314637
-  server: 88.198.101.66
-  servername: stackoverflow.com
-  tls: false
-  type: vless
-  uuid: 48554df0-1993-4395-8900-478be9a88ff0
-  ws-opts:
-    path: yZ1aB2cC3dD4eE5f6gH7iJ8kL9mNOoP
-- client-fingerprint: chrome
-  name: 31|🔒 VL-HTTP-RLT 🇩🇪 DE-142.93.98....
-  network: http
-  port: 2042
-  reality-opts:
-    public-key: 0UC5UUU0EMYg1v2rv-clwdnpRYl2b-bfOvEJMXed2nI
-    short-id: ee3caeb997f6
-  server: 142.93.98.78
-  servername: ftp.debian.org
-  tls: false
-  type: vless
-  uuid: 7562048f-6694-43da-a9ba-c80e92808fff
-  ws-opts:
-    headers:
-      Host: zula.ir
-    path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-91.238.82.2... #6'
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
-    short-id: f203719d3ff9a5f5
-  server: 91.238.82.242
-  servername: maviks.eu
-  tls: false
-  type: vless
-  uuid: 3f789164-ca20-4041-89c0-bc553819970c
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-45.150.174.... #14'
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
-    short-id: f203719d3ff9a5f5
-  server: 45.150.174.87
-  servername: maviks.eu
-  tls: false
-  type: vless
-  uuid: 3f789164-ca20-4041-89c0-bc553819970c
-- client-fingerprint: random
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-178.128.205...
-  network: tcp
-  port: 7788
-  reality-opts:
-    public-key: OUCuy7eLQ6hjd1YCAiYE669Hxylv1lNVfKNvtCbKjWs
-    short-id: 85b6875cdc4f468c
-  server: 178.128.205.129
-  servername: delacroix.3cx.be
-  tls: false
-  type: vless
-  uuid: 933d26bf-97d5-474c-a6e2-5e27c4e5ed66
-  ws-opts:
-    headers:
-      Host: delacroix.3cx.be
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-91.107.156....
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 0sxnaKMU6kGtDElfjsdnNlL_7SxBq0QPhaaaWvAj9zw
-    short-id: ac
-  server: 91.107.156.176
-  servername: mw5.baradshops.ir
-  tls: false
-  type: vless
-  uuid: e0c23a67-1fd3-4225-bf67-f1fdd465e9f7
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-31.57.241.2...
-  network: tcp
-  port: 7008
-  reality-opts:
-    public-key: FPH81X-EMwzv4nXgkplSqBAaK81uLuPYqWaYyIWFsnQ
-    short-id: efcbe824
-  server: 31.57.241.25
-  servername: addons.mozilla.org
-  tls: false
-  type: vless
-  uuid: aedae871-a4e5-489f-946c-98372f15bee2
-- client-fingerprint: chrome
-  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-157.173.127... #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: k9oHeYY0hNmcd6BRZQTX9sp0ZQR7Bx85fPMu0v4uvwc
-    short-id: c5a5eca0d8234375
-  server: 157.173.127.235
-  servername: analytics.google.com
-  tls: false
-  type: vless
-  uuid: 4a617961-06bb-405d-b1d8-28abaaaf18e7
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: /@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM
-  name: 31|🔒 VL-GRPC-RLT 🇩🇪 DE-91.107.168...
-  network: grpc
-  port: 443
-  reality-opts:
-    public-key: UUYC2_gNNVUIpGrNghmPKdJZRwbF0elm-cpKW8W2cWU
-  server: 91.107.168.205
-  servername: www.cdn77.com
-  tls: false
-  type: vless
-  uuid: be2d7d04-4500-4ea5-bb00-ce593e969607
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-150.241.99....
-  network: tcp
-  port: 12827
-  reality-opts:
-    public-key: RXYhk6mlyX7iLXpwhFsNAZNu2PhE20CUrHPEB1_96ic
-    short-id: b30c
-  server: 150.241.99.61
-  servername: espn.com
-  tls: false
-  type: vless
-  uuid: 009dbb5e-5cf4-4d3c-9609-284197910cde
+  uuid: 9af9dc5d-5849-4ca1-bcc0-a2a53091cb6c
 - client-fingerprint: chrome
   name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-188.245.246...
   network: tcp
@@ -1477,6 +2507,58 @@ proxies:
   tls: false
   type: vless
   uuid: 02a3e771-fb49-4662-db97-48100c811e09
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-45.150.174.... #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
+    short-id: f203719d3ff9a5f5
+  server: 45.150.174.87
+  servername: maviks.eu
+  tls: false
+  type: vless
+  uuid: 4a73fddb-e8c2-45fe-ad2c-e5bde13e51a6
+  ws-opts:
+    headers:
+      Host: JOKERRVPNJoin_Bade_Channel@JOKERRVPN
+- client-fingerprint: chrome
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-194.87.71.1...
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: cTm0TIKL9qK550XICK2YroOSr1u-f12h5UmBw2EAr2c
+  server: 194.87.71.168
+  servername: google.com
+  tls: false
+  type: vless
+  uuid: c15f4413-9011-4adc-ac26-9f2b2f83de6c
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-81.30.156.9...
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  server: 81.30.156.91
+  servername: dropbox.com
+  tls: false
+  type: vless
+  uuid: 5c80fb98-d9ad-4a89-9189-237881d2ef89
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-194.36.88.7...
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 83kO-C72OoPSqNzGDHRwRwl2bAHlI6DCzDs2KR0spnI
+    short-id: 10de3e76c515259b
+  server: 194.36.88.78
+  servername: www.microsoft.com
+  tls: false
+  type: vless
+  uuid: 27c11f2c-85f4-44ef-ac28-670e987f5788
 - client-fingerprint: chrome
   name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-23.88.62.20...
   network: tcp
@@ -1493,17 +2575,6 @@ proxies:
     headers:
       Host: '%2FTELEGRAM----%40MARAMBASHI----%40MARAMBASHI'
 - client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-91.107.235....
-  network: tcp
-  port: 1022
-  reality-opts:
-    public-key: O4PXR1eZRuubpri7ajbJBfhv3L7ZiJZbgZ80BGzN1X0
-  server: 91.107.235.161
-  servername: refersion.com
-  tls: false
-  type: vless
-  uuid: 19b3d5d3-b1e4-4eb3-aa10-ee63e0ca4a9b
-- client-fingerprint: chrome
   name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-128.140.38....
   network: tcp
   port: 443
@@ -1516,79 +2587,184 @@ proxies:
   type: vless
   uuid: c842415f-3a7e-4934-be35-5616ca01c759
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-91.107.240....
-  network: tcp
-  port: 1300
-  reality-opts:
-    public-key: FdMFSpgEwT0nhczf37d-Z8gFgJtwyV4C_pJlnOTScUA
-  server: 91.107.240.125
-  servername: refersion.com
-  tls: false
-  type: vless
-  uuid: 04c73880-8479-4164-bd2c-e7d49eb82c2c
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-91.107.188....
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-168.119.167...
   network: tcp
   port: 443
   reality-opts:
-    public-key: wMJXLcS5PbmoaZs9Lap-hSlG8PIw3rql1g9Kua-zwyM
-    short-id: '7947305341'
-  server: 91.107.188.234
-  servername: www.refersion.com
+    public-key: P_FOKz_hYDyi1FwtsHozm0P0wNXsBrLyjt5x6Ke_3jg
+  server: 168.119.167.255
+  servername: refersion.com
   tls: false
   type: vless
-  uuid: a6b7da11-03e2-476e-af96-ebdf45ea10fc
-  ws-opts:
-    headers:
-      Host: Telegram%20%3A
+  uuid: e5065d53-e95b-4dbd-cf7a-e3d323aa1093
 - client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: 7594vless
-  name: 31|🔒 VL-GRPC-RLT 🇩🇪 DE-188.166.19...
-  network: grpc
-  port: 7594
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-91.107.141....
+  network: tcp
+  port: 1357
   reality-opts:
-    public-key: AZSptdvlWvvmKWEDTY56UsIcnTP8nGCafvPEQOozrxw
-    short-id: 765e8e700426816c
-  server: 188.166.194.27
-  servername: dash.cloudflare.com
+    public-key: 1u1Y_g3iEMwXx2_DwVZFwxwPzgbEI7xvMPWUf0pmPFw
+    short-id: bd33881a
+  server: 91.107.141.239
+  servername: refersion.com
   tls: false
   type: vless
-  uuid: 2a219df1-a04b-4424-bfd2-cb37aeb10b2c
+  uuid: 5b29869b-0b6e-490f-907a-c99e818ce3ed
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-89.163.221....
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-150.241.99....
+  network: tcp
+  port: 12827
+  reality-opts:
+    public-key: RXYhk6mlyX7iLXpwhFsNAZNu2PhE20CUrHPEB1_96ic
+    short-id: b30c
+  server: 150.241.99.61
+  servername: espn.com
+  tls: false
+  type: vless
+  uuid: 009dbb5e-5cf4-4d3c-9609-284197910cde
+- client-fingerprint: chrome
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-91.107.180....
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: ViD5yelmczDvvpxSUuCp1OvDea1zgWvTwvdrkngX7BE
+    short-id: 1242e11f31
+  server: 91.107.180.49
+  servername: tgju.org
+  tls: false
+  type: vless
+  uuid: 7adcc0f2-e658-41de-a132-b5c66c34b2bc
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-45.150.174.... #2'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
+    short-id: f203719d3ff9a5f5
+  server: 45.150.174.85
+  servername: maviks.eu
+  tls: false
+  type: vless
+  uuid: c8898cfd-9927-4f36-b7bc-40de76076b80
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-85.114.138....
   network: tcp
   port: 8443
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  server: 89.163.221.198
+  server: 85.114.138.122
   servername: dropbox.com
   tls: false
   type: vless
   uuid: 5c80fb98-d9ad-4a89-9189-237881d2ef89
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-89.163.221.... #1'
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  server: 89.163.221.152
-  servername: dropbox.com
-  tls: false
-  type: vless
-  uuid: 5c80fb98-d9ad-4a89-9189-237881d2ef89
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-91.238.82.2... #7'
+  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-45.150.174.... #3'
   network: tcp
   port: 8443
   reality-opts:
     public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
     short-id: f203719d3ff9a5f5
-  server: 91.238.82.241
+  server: 45.150.174.84
+  servername: maviks.eu
+  tls: false
+  type: vless
+  uuid: 3f789164-ca20-4041-89c0-bc553819970c
+- client-fingerprint: chrome
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-157.173.127...
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: c5VJpRsIyrxNp0eS3Lz5EMQH6jWBsvSTK7hNZQ77bl4
+    short-id: 4fd4ad
+  server: 157.173.127.239
+  servername: analytics.google.com
+  tls: false
+  type: vless
+  uuid: 667b5dfa-7ec4-45d7-ba9c-6957eed8cfbb
+- client-fingerprint: chrome
+  name: 31|🔒 VL-XHTTP-RLT 🇩🇪 DE-188.245.1...
+  network: xhttp
+  port: 443
+  reality-opts:
+    public-key: wKlkFbReKv_gawUVfc2l-Ah3HNVutXWMfPhfDIjR1SI
+    short-id: f21f70d301f05a
+  server: 188.245.163.203
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: 6abe5ebe-7afb-4157-8e5f-fa3f074d2140
+- client-fingerprint: chrome
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-85.208.139....
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: cTm0TIKL9qK550XICK2YroOSr1u-f12h5UmBw2EAr2c
+  server: 85.208.139.163
+  servername: google.com
+  tls: false
+  type: vless
+  uuid: 04fcd444-ad3a-422f-b2ed-2fb8c12b6bc1
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-45.150.174.... #4'
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
+    short-id: f203719d3ff9a5f5
+  server: 45.150.174.80
+  servername: maviks.eu
+  tls: false
+  type: vless
+  uuid: 3f789164-ca20-4041-89c0-bc553819970c
+- client-fingerprint: chrome
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-91.107.235....
+  network: tcp
+  port: 1022
+  reality-opts:
+    public-key: O4PXR1eZRuubpri7ajbJBfhv3L7ZiJZbgZ80BGzN1X0
+  server: 91.107.235.161
+  servername: refersion.com
+  tls: false
+  type: vless
+  uuid: 19b3d5d3-b1e4-4eb3-aa10-ee63e0ca4a9b
+- client-fingerprint: chrome
+  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-157.173.127... #1'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: q70yFMTo4Dz6IWwVcL9icqgJPgyIuv3j3n5fZxym6kg
+    short-id: 40e3350da285
+  server: 157.173.127.227
+  servername: analytics.google.com
+  tls: false
+  type: vless
+  uuid: 7bda027c-cbc8-488f-864f-cfb415cd8d77
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-45.150.174.... #5'
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
+    short-id: f203719d3ff9a5f5
+  server: 45.150.174.82
+  servername: maviks.eu
+  tls: false
+  type: vless
+  uuid: 3f789164-ca20-4041-89c0-bc553819970c
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-45.150.174.... #6'
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
+    short-id: f203719d3ff9a5f5
+  server: 45.150.174.85
   servername: maviks.eu
   tls: false
   type: vless
@@ -1623,6 +2799,467 @@ proxies:
   type: vless
   uuid: bf4631cc-27eb-4b8e-ab85-5db1ddab6125
 - client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-49.13.135.5...
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: X5WLfJ82KCpBanu2EwML11CwJUM2NczTonML5hHwW2o
+    short-id: b5b39d420f404069
+  server: 49.13.135.58
+  servername: github.io
+  tls: false
+  type: vless
+  uuid: 18e82ee0-3b88-48d1-9292-484c8051f690
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-91.238.82.2... #1'
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
+    short-id: f203719d3ff9a5f5
+  server: 91.238.82.240
+  servername: maviks.eu
+  tls: false
+  type: vless
+  uuid: 3f789164-ca20-4041-89c0-bc553819970c
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-213.202.219...
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  server: 213.202.219.135
+  servername: dropbox.com
+  tls: false
+  type: vless
+  uuid: 5c80fb98-d9ad-4a89-9189-237881d2ef89
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-49.12.243.8...
+  network: tcp
+  port: 1300
+  reality-opts:
+    public-key: FdMFSpgEwT0nhczf37d-Z8gFgJtwyV4C_pJlnOTScUA
+  server: 49.12.243.80
+  servername: refersion.com
+  tls: false
+  type: vless
+  uuid: b8243b8a-dece-432f-8b4d-88696594cbf8
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-91.238.82.2... #2'
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
+    short-id: f203719d3ff9a5f5
+  server: 91.238.82.242
+  servername: maviks.eu
+  tls: false
+  type: vless
+  uuid: 3f789164-ca20-4041-89c0-bc553819970c
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-5.75.202.15...
+  network: tcp
+  port: 20000
+  reality-opts:
+    public-key: PHP5Ibb_VceW-qb5RXLn-lKMHoqMTZbhrjwCMtsJZiQ
+    short-id: 49d5a3bd8cd3e6b6
+  server: 5.75.202.153
+  servername: fontawesome.com
+  tls: false
+  type: vless
+  uuid: b7154df0-ce29-463e-8766-2afbf814b1b1
+  ws-opts:
+    headers:
+      Host: Telegram%20%3A
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-45.150.174.... #7'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
+    short-id: f203719d3ff9a5f5
+  server: 45.150.174.84
+  servername: maviks.eu
+  tls: false
+  type: vless
+  uuid: c8898cfd-9927-4f36-b7bc-40de76076b80
+- client-fingerprint: chrome
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-78.46.190.1...
+  network: tcp
+  port: 1616
+  reality-opts:
+    public-key: ZtIueP7duO8oy49YFWwsMzzYfuTCz3YtY0kFr31emAI
+    short-id: 666dbac6955fdf50
+  server: 78.46.190.158
+  servername: refersion.com
+  tls: false
+  type: vless
+  uuid: 05e2f43a-258f-4ed9-9dc5-900b0a05148f
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-45.150.174.... #8'
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
+    short-id: f203719d3ff9a5f5
+  server: 45.150.174.86
+  servername: maviks.eu
+  tls: false
+  type: vless
+  uuid: 3f789164-ca20-4041-89c0-bc553819970c
+- client-fingerprint: random
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-178.128.205...
+  network: tcp
+  port: 7788
+  reality-opts:
+    public-key: OUCuy7eLQ6hjd1YCAiYE669Hxylv1lNVfKNvtCbKjWs
+    short-id: 85b6875cdc4f468c
+  server: 178.128.205.129
+  servername: delacroix.3cx.be
+  tls: false
+  type: vless
+  uuid: 933d26bf-97d5-474c-a6e2-5e27c4e5ed66
+  ws-opts:
+    headers:
+      Host: delacroix.3cx.be
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-80.71.157.1...
+  network: tcp
+  port: 4434
+  reality-opts:
+    public-key: I4ckWGs37sBXSBq3lGP79HqOhZ1eOjqaikCsDJXTaw0
+    short-id: a4eed13ebbf2f9d2
+  server: 80.71.157.175
+  servername: DEDUso.su
+  tls: false
+  type: vless
+  uuid: 7634c38f-73ba-4dd5-8065-c3179158e1ff
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-91.238.82.2... #3'
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
+    short-id: f203719d3ff9a5f5
+  server: 91.238.82.241
+  servername: maviks.eu
+  tls: false
+  type: vless
+  uuid: 3f789164-ca20-4041-89c0-bc553819970c
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: '@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy'
+  name: 31|🔒 VL-GRPC-RLT 🇩🇪 DE-178.63.228...
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: Aa3FogZ9ohTiRHsdnoyiMg7TFARWEeZs_m290juxEzs
+  server: 178.63.228.220
+  servername: fauxid.com
+  tls: false
+  type: vless
+  uuid: b03305f4-5020-4a6e-a982-790a817212c0
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-45.150.174.... #9'
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
+    short-id: f203719d3ff9a5f5
+  server: 45.150.174.81
+  servername: maviks.eu
+  tls: false
+  type: vless
+  uuid: 3f789164-ca20-4041-89c0-bc553819970c
+- client-fingerprint: chrome
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-91.107.146....
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: _scshlStWSz3DI8nsre9mq87ZrPP5ov3a0NMuHkvyjU
+    short-id: fc
+  server: 91.107.146.208
+  servername: eset.com
+  tls: false
+  type: vless
+  uuid: e8bcc78f-6f92-4aa6-84e5-30db1a0143d6
+- client-fingerprint: chrome
+  name: 31|🔒 VL-XHTTP-RLT 🇩🇪 DE-188.245.9...
+  network: xhttp
+  port: 2025
+  reality-opts:
+    public-key: g23nq_R9TIMbMIGQHB6gjDNewFzrHXPcj72bTS-RtX8
+  server: 188.245.95.151
+  servername: stackoverflow.com
+  tls: false
+  type: vless
+  uuid: f9d28482-a8eb-4c6b-8575-596579979bf9
+  ws-opts:
+    path: '%2FAS'
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: '%2FWedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel%3Fed%3D2048'
+  name: 31|🔒 VL-GRPC-RLT 🇩🇪 DE-188.245.25...
+  network: grpc
+  port: 2086
+  reality-opts:
+    public-key: ztgCu_qsyNxw3VqnH9u9e3Soore9jRiquei7p66mBAc
+  server: 188.245.251.244
+  servername: www.cdn77.com
+  tls: false
+  type: vless
+  uuid: 6e4135f9-cf0f-4355-f133-177571fdccb4
+- client-fingerprint: chrome
+  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-157.173.127... #2'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: k9oHeYY0hNmcd6BRZQTX9sp0ZQR7Bx85fPMu0v4uvwc
+    short-id: c5a5eca0d8234375
+  server: 157.173.127.235
+  servername: analytics.google.com
+  tls: false
+  type: vless
+  uuid: 4a617961-06bb-405d-b1d8-28abaaaf18e7
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-45.150.174.... #10'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
+    short-id: f203719d3ff9a5f5
+  server: 45.150.174.82
+  servername: maviks.eu
+  tls: false
+  type: vless
+  uuid: c8898cfd-9927-4f36-b7bc-40de76076b80
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-89.163.221.... #1'
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  server: 89.163.221.152
+  servername: dropbox.com
+  tls: false
+  type: vless
+  uuid: 5c80fb98-d9ad-4a89-9189-237881d2ef89
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-31.57.241.2...
+  network: tcp
+  port: 7008
+  reality-opts:
+    public-key: FPH81X-EMwzv4nXgkplSqBAaK81uLuPYqWaYyIWFsnQ
+    short-id: efcbe824
+  server: 31.57.241.25
+  servername: addons.mozilla.org
+  tls: false
+  type: vless
+  uuid: aedae871-a4e5-489f-946c-98372f15bee2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-45.150.174.... #11'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
+    short-id: f203719d3ff9a5f5
+  server: 45.150.174.81
+  servername: maviks.eu
+  tls: false
+  type: vless
+  uuid: c8898cfd-9927-4f36-b7bc-40de76076b80
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-45.150.174.... #12'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
+    short-id: f203719d3ff9a5f5
+  server: 45.150.174.80
+  servername: maviks.eu
+  tls: false
+  type: vless
+  uuid: c8898cfd-9927-4f36-b7bc-40de76076b80
+- client-fingerprint: chrome
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-159.89.111....
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: MG_eg7c6ip99Y4BROHhxDsnKDHTpu-1hjKa6J1zjig4
+  server: 159.89.111.97
+  servername: refersion.com
+  tls: false
+  type: vless
+  uuid: 2d8f7808-c658-4dfc-8007-becae3176024
+  ws-opts:
+    headers:
+      Host: /Join_Bade_Channel@JOKERRVPN
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-45.150.174.... #13'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
+    short-id: f203719d3ff9a5f5
+  server: 45.150.174.86
+  servername: maviks.eu
+  tls: false
+  type: vless
+  uuid: 4a73fddb-e8c2-45fe-ad2c-e5bde13e51a6
+  ws-opts:
+    headers:
+      Host: JOKERRVPNJoin_Bade_Channel@JOKERRVPN
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-91.238.82.2... #4'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
+    short-id: f203719d3ff9a5f5
+  server: 91.238.82.241
+  servername: maviks.eu
+  tls: false
+  type: vless
+  uuid: 4a73fddb-e8c2-45fe-ad2c-e5bde13e51a6
+  ws-opts:
+    headers:
+      Host: JOKERRVPNJoin_Bade_Channel@JOKERRVPN
+- client-fingerprint: chrome
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-5.75.215.22...
+  network: tcp
+  port: 44
+  reality-opts:
+    public-key: R43U2y9vbOzBleKGsApbGCufsiRTTeVIKA7LRpGMrVA
+    short-id: f289871208
+  server: 5.75.215.22
+  servername: refersion.com
+  tls: false
+  type: vless
+  uuid: 6a2206ac-208b-49f5-95e0-6f3656f9072a
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-37.157.255....
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  server: 37.157.255.161
+  servername: dropbox.com
+  tls: false
+  type: vless
+  uuid: 5c80fb98-d9ad-4a89-9189-237881d2ef89
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-167.172.171...
+  network: tcp
+  port: 21332
+  reality-opts:
+    public-key: bGfBNbN30La6XWb4Cakg4y7kRCiveT2LpWYhK8r3-BI
+    short-id: 866c9d6a17a0ae44
+  server: 167.172.171.216
+  servername: refersion.com
+  tls: false
+  type: vless
+  uuid: 422899ac-7bfb-441a-89c2-5b9eee312790
+  ws-opts:
+    headers:
+      Host: /JOKERRVPNJoin_Bade_Channel@JOKERRVPN
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-45.150.174.... #14'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
+    short-id: f203719d3ff9a5f5
+  server: 45.150.174.83
+  servername: maviks.eu
+  tls: false
+  type: vless
+  uuid: c8898cfd-9927-4f36-b7bc-40de76076b80
+- client-fingerprint: chrome
+  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-49.12.243.8... #1'
+  network: tcp
+  port: 4044
+  reality-opts:
+    public-key: GqpLuqbGhZ3N1oIlSMfuLnpKCNZOoK8JWwHPmqSNxgk
+  server: 49.12.243.80
+  servername: refersion.com
+  tls: false
+  type: vless
+  uuid: 4d3ec77b-0af0-48ba-8e46-973d184422d4
+- client-fingerprint: chrome
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-5.104.107.1...
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: L_tbYn1GzbG3VS0OJcEFHFoYkh-jCK-iyzJVGLzoB30
+  server: 5.104.107.135
+  servername: de.nahadeh.co
+  tls: false
+  type: vless
+  uuid: 860bf99f-6817-4892-aa77-1877ec73a57b
+  ws-opts:
+    headers:
+      Host: speed.cloudflare.com
+- client-fingerprint: chrome
+  name: 31|🔒 VL-XHTTP-RLT 🇩🇪 DE-165.22.69...
+  network: xhttp
+  port: 443
+  reality-opts:
+    public-key: y_QTFoFtDtkpJ57ypPCThsAyV9az-MmZQcCR9F-o7Ew
+    short-id: 42a22604946c86
+  server: 165.22.69.147
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: 20fe9385-f429-4dc4-acc8-2e372a3d982b
+  ws-opts:
+    path: /Grizzly
+- client-fingerprint: chrome
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-91.107.188....
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: wMJXLcS5PbmoaZs9Lap-hSlG8PIw3rql1g9Kua-zwyM
+    short-id: '7947305341'
+  server: 91.107.188.234
+  servername: www.refersion.com
+  tls: false
+  type: vless
+  uuid: a6b7da11-03e2-476e-af96-ebdf45ea10fc
+  ws-opts:
+    headers:
+      Host: Telegram%20%3A
+- name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-213.202.223...
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwB
+  server: 213.202.223.233
+  servername: 02020.sbs
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  uuid: 5c80fb98-d9ad-4a89-9189-237881d2ef89
+- client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: '@iranbaxvpn-@iranbaxvpn-@iranbaxvpn-@iranbaxvpn'
   name: '31|🔒 VL-GRPC-RLT 🇩🇪 DE-64.190.63.... #1'
@@ -1637,6 +3274,45 @@ proxies:
   type: vless
   uuid: 5eb40b31-6d9b-461d-81c2-53909a01df5b
 - client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: '@VPN_KING_V2RAY@VPN_KING_V2RAY@VPN_KING_V2RAY@VPN_KING_V2RAY'
+  name: 31|🔒 VL-GRPC-RLT 🇩🇪 DE-77.110.100...
+  network: grpc
+  port: 2083
+  reality-opts:
+    public-key: _Mo8etwPEDo42B4BnrkX3FOaPsOv2thyIlrzg3hhDBk
+    short-id: e09b0ba7d2
+  server: 77.110.100.177
+  servername: speedtest.net
+  tls: false
+  type: vless
+  uuid: 2bcdbd33-321e-4a1c-bae9-d37517b694c3
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: /@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM
+  name: 31|🔒 VL-GRPC-RLT 🇩🇪 DE-91.107.168...
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: UUYC2_gNNVUIpGrNghmPKdJZRwbF0elm-cpKW8W2cWU
+  server: 91.107.168.205
+  servername: www.cdn77.com
+  tls: false
+  type: vless
+  uuid: be2d7d04-4500-4ea5-bb00-ce593e969607
+- client-fingerprint: firefox
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-23.88.52.73...
+  network: tcp
+  port: 2096
+  reality-opts:
+    public-key: wzuNwzncGOhTuCcO2tt4j7es7b3logIYYlVmWvu1OBM
+    short-id: 118e3f91
+  server: 23.88.52.73
+  servername: Www.safine.net
+  tls: false
+  type: vless
+  uuid: 0dd2b47b-e321-4bf1-add5-5f72fafec7d6
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-45.150.174.... #15'
   network: tcp
@@ -1644,20 +3320,679 @@ proxies:
   reality-opts:
     public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
     short-id: f203719d3ff9a5f5
-  server: 45.150.174.85
+  server: 45.150.174.87
   servername: maviks.eu
   tls: false
   type: vless
   uuid: 3f789164-ca20-4041-89c0-bc553819970c
+- client-fingerprint: chrome
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-165.227.136...
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: MG_eg7c6ip99Y4BROHhxDsnKDHTpu-1hjKa6J1zjig4
+  server: 165.227.136.108
+  servername: refersion.com
+  tls: false
+  type: vless
+  uuid: 2d8f7808-c658-4dfc-8007-becae3176024
+  ws-opts:
+    headers:
+      Host: /Join_Bade_Channel@JOKERRVPN
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-91.238.82.2... #5'
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
+    short-id: f203719d3ff9a5f5
+  server: 91.238.82.243
+  servername: maviks.eu
+  tls: false
+  type: vless
+  uuid: 3f789164-ca20-4041-89c0-bc553819970c
+- client-fingerprint: chrome
+  name: 31|🔒 VL-GRPC-RLT 🇩🇪 DE-91.107.198...
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: dp7ziJPGFb5EUNyyM-QSd3uebJWBM_TCvd3KNQBspAA
+    short-id: 05d86b95
+  server: 91.107.198.79
+  servername: www.speedtest.net
+  tls: false
+  type: vless
+  uuid: ec488803-fc5a-4d96-9138-4fe14793b20a
+- client-fingerprint: chrome
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-91.107.152....
+  network: tcp
+  port: 2000
+  reality-opts:
+    public-key: tEq4IUmR4X5c2zc_7cFtymKxZaGLkOm3PQg2-NGBJwA
+    short-id: 9be0f68444647ced
+  server: 91.107.152.230
+  servername: stackoverflow.com
+  tls: false
+  type: vless
+  uuid: 83a92a9d-ff29-4bfe-b5a8-2d395293f64d
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-91.238.82.2... #6'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
+    short-id: f203719d3ff9a5f5
+  server: 91.238.82.240
+  servername: maviks.eu
+  tls: false
+  type: vless
+  uuid: c8898cfd-9927-4f36-b7bc-40de76076b80
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: yZ1aB2cC3dD4eE5f6gH7iJ8kL9mNOoP
+  name: 31|🔒 VL-GRPC-RLT 🇩🇪 DE-88.198.101...
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: Hng90MObJ5OBtIrfrf6U02WIx36R9srHLBwRsj1r7Dw
+    short-id: 05a6d4aa5e314637
+  server: 88.198.101.66
+  servername: stackoverflow.com
+  tls: false
+  type: vless
+  uuid: 48554df0-1993-4395-8900-478be9a88ff0
+  ws-opts:
+    path: yZ1aB2cC3dD4eE5f6gH7iJ8kL9mNOoP
+- client-fingerprint: chrome
+  name: 31|🔒 VL-XHTTP-RLT 🇩🇪 DE-5.75.148....
+  network: xhttp
+  port: 443
+  reality-opts:
+    public-key: kcaHStOeklhbOVcq_C_c04awq14jRTp8_HWCRiVx4Gw
+    short-id: 608dc6c7a397
+  server: 5.75.148.241
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: a14bb6a3-a2f7-4272-bb26-bb2502cf5ca6
+- client-fingerprint: chrome
+  name: 31|🔒 VL-HTTP-RLT 🇩🇪 DE-142.93.98....
+  network: http
+  port: 2042
+  reality-opts:
+    public-key: 0UC5UUU0EMYg1v2rv-clwdnpRYl2b-bfOvEJMXed2nI
+    short-id: ee3caeb997f6
+  server: 142.93.98.78
+  servername: ftp.debian.org
+  tls: false
+  type: vless
+  uuid: 7562048f-6694-43da-a9ba-c80e92808fff
+  ws-opts:
+    headers:
+      Host: zula.ir
+    path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-49.12.225.1...
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: T7Cwk-B3EvZqqRywIgN_TNotJiUOXYUI9bHqYKPnTi0
+    short-id: 105e89ba3d2a1c3b
+  server: 49.12.225.140
+  servername: tgju.org
+  tls: false
+  type: vless
+  uuid: 5de37875-7b21-4066-a9ff-e33ee683c032
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-5.199.138.1...
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  server: 5.199.138.12
+  servername: dropbox.com
+  tls: false
+  type: vless
+  uuid: 5c80fb98-d9ad-4a89-9189-237881d2ef89
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-92.246.139....
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: C77mWXCK8T47d5c3Dyqjlqr4AJsWozMxhYhhq_GwQj8
+    short-id: 2c229e23f30b9a13
+  server: 92.246.139.182
+  servername: github.com
+  tls: false
+  type: vless
+  uuid: 7bd34ebe-c323-46cf-8a16-3945e7e3fa83
+- client-fingerprint: chrome
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-91.107.255....
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: OOq6hzqeyKhR7HodeJo45fWqcP6WfoJNEnYBOvHcgxY
+    short-id: 91aed2
+  server: 91.107.255.255
+  servername: eset.com
+  tls: false
+  type: vless
+  uuid: 7ead5e72-ba64-4db6-9b4d-e5a9235389cc
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-213.202.223... #1'
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  server: 213.202.223.187
+  servername: dropbox.com
+  tls: false
+  type: vless
+  uuid: 5c80fb98-d9ad-4a89-9189-237881d2ef89
+- client-fingerprint: chrome
+  name: 31|🔒 VL-XHTTP-RLT 🇩🇪 DE-128.140.8...
+  network: xhttp
+  port: 8443
+  reality-opts:
+    public-key: C8T_rENHVHgvklynPdF0oVbovX6rFi_6tA3MwI6vMn4
+    short-id: 8c6a044199a51b22
+  server: 128.140.85.245
+  servername: stackoverflow.com
+  tls: false
+  type: vless
+  uuid: bc7dbc36-f3a7-4cc8-9364-eba6e889cee2
+  ws-opts:
+    headers:
+      Host: JOKERRVPNTELEGRAM-Channel-@JOKERRVPN----Channel-@JOKERRVPN----Channel-@JOKERRVPN----Channel-@JOKERRVPN----Channel-@JOKERRVPN----Channel-@JOKERRVPN----Channel-@JOKERRVPN----Channel-@JOKERRVPN----Channel-@JOKERRVPN----Channel-@JOKERRVPN----Channel-@JOKERRVPN
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '31|🔒 VL-TCP-RLT 🇩🇪 DE-91.238.82.2... #7'
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo
+    short-id: f203719d3ff9a5f5
+  server: 91.238.82.242
+  servername: maviks.eu
+  tls: false
+  type: vless
+  uuid: c8898cfd-9927-4f36-b7bc-40de76076b80
+- client-fingerprint: chrome
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-5.75.199.15...
+  network: tcp
+  port: 15110
+  reality-opts:
+    public-key: y7msPZW4eWBT4CJ5v_blgiXUd06HuKvTs3rhlpw9fnk
+    short-id: defb484210e5
+  server: 5.75.199.151
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: cf3ec89e-f531-4122-a2f2-7d0fd4ba980c
+- client-fingerprint: chrome
+  name: 31|🔒 VL-TCP-RLT 🇩🇪 DE-94.159.103....
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: r4Visq16WAEVR7yIvxfC36KpaiuVLyzyXxA5xZwNEGk
+    short-id: a7970bf71a2aca0c
+  server: 94.159.103.254
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: 0f8eecbf-3d5f-4112-b7f3-32521ca114d4
+- client-fingerprint: chrome
+  name: 31|🔒 VL-XHTTP-RLT 🇩🇪 DE-188.245.2...
+  network: xhttp
+  port: 443
+  reality-opts:
+    public-key: QtjCio8gmuOZ1jCohKKPEibuk4evo76ZM4F45SbU8nA
+    short-id: 0b
+  server: 188.245.219.185
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: ddaa7727-6d96-43f3-9075-2edb20fdeea6
+  ws-opts:
+    path: /
+- client-fingerprint: chrome
+  name: 31|🔒 VL-GRPC-RLT 🇩🇪 DE-168.119.15...
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: 6FcfJl0x7JEzgqiUgSTZjOuqo90YOG0SOXTTt8hLOm4
+    short-id: ce00a8c4
+  server: 168.119.154.98
+  servername: ftp.debian.org
+  tls: false
+  type: vless
+  uuid: 161b8c69-b432-4865-8c1f-8d4a3406866b
+- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-88.198.156.6...
+  password: juzi
+  port: 2053
+  server: 88.198.156.62
+  sni: juzi8186-sr1.pages.dev
+  type: trojan
 - alpn:
   - h3
   - h2
   - http/1.1
   name: 33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
   network: httpupgrade
+  password: ncynDWKB7Um7
+  port: 443
+  server: 172.67.175.40
+  sni: isna.farsonline24.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: isna.farsonline24.ir
+    path: '%2F%F0%9F%86%94%40M3HDIO1'
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #1'
+  network: httpupgrade
+  password: woCp0eJnQ5It
+  port: 8443
+  server: 172.67.141.68
+  sni: shabestan.itn24.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: shabestan.itn24.ir
+    path: '%2F%F0%9F%86%94%40M3HDIO1'
+- name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-188.166.162...
+  network: tcp
+  password: Aimer
+  port: 443
+  server: 188.166.162.201
+  sni: ngepz.ambercc.filegear-sg.me
+  type: trojan
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #2'
+  network: httpupgrade
+  password: nqYiA9K1cdwK
+  port: 443
+  server: 104.21.16.1
+  sni: hamshahri.twn24.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: hamshahri.twn24.ir
+    path: '%2F%F0%9F%86%94%40M3HDIO1'
+- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-217.160.216....
+  password: juzi
+  port: 443
+  server: 217.160.216.30
+  sni: juzi8186-sr1.pages.dev
+  type: trojan
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #3'
+  network: httpupgrade
+  password: 5Va4g9kI9!WY
+  port: 2087
+  server: 104.21.71.8
+  sni: fars.itn24.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: fars.itn24.ir
+    path: '%2FdHV8LpKm'
+- name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #4'
+  network: httpupgrade
+  password: PC38PoxjmNbQ
+  port: 2087
+  server: 104.21.96.1
+  sni: hamshahri.twn24.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: hamshahri.twn24.ir
+    path: /🆔@M3HDIO1
+- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-194.87.148.1...
+  password: juzi
+  port: 8443
+  server: 194.87.148.148
+  sni: juzi8186-sr1.pages.dev
+  type: trojan
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #5'
+  network: httpupgrade
+  password: QTKsqSws9Sgc
+  port: 2087
+  server: 104.21.80.1
+  sni: hamshahri.twn24.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: hamshahri.twn24.ir
+    path: '%2F%F0%9F%86%94%40M3HDIO1'
+- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-165.22.74.23...
+  password: 4732adfa16c6450bbef87264e41332db
+  port: 443
+  server: 165.22.74.230
+  skip-cert-verify: false
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-3.76.154.119...
+  password: juzi
+  port: 443
+  server: 3.76.154.119
+  sni: juzi8186-sr1.pages.dev
+  type: trojan
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #6'
+  network: httpupgrade
+  password: eZFUYsXGBLab
+  port: 2087
+  server: 104.21.16.1
+  sni: hamshahri.twn24.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: hamshahri.twn24.ir
+    path: '%2F%F0%9F%86%94%40M3HDIO1'
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #7'
+  network: httpupgrade
+  password: nqYiA9K1cdwK
+  port: 443
+  server: 104.21.64.1
+  sni: hamshahri.twn24.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: hamshahri.twn24.ir
+    path: '%2F%F0%9F%86%94%40M3HDIO1'
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #8'
+  network: httpupgrade
+  password: xJ6KJem6QIwQ
+  port: 8443
+  server: 104.21.71.8
+  sni: shabestan.itn24.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: shabestan.itn24.ir
+    path: '%2F%F0%9F%86%94%40M3HDIO1'
+- alpn:
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-18.193.90.1...
+  network: tcp
+  password: telegram-id-vlessconfig
+  port: 22222
+  server: 18.193.90.151
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 33|🔒 TR-WS-TLS 🇩🇪 DE-89.116.46.33...
+  network: ws
+  password: NISHIKUITAN111
+  port: 443
+  server: 89.116.46.33
+  sni: zb.ylks.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: zb.ylks.xyz
+    path: /
+- name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-194.164.57....
+  network: tcp
+  password: I46LpSIM1f
+  port: 1935
+  server: 194.164.57.9
+  skip-cert-verify: true
+  sni: x4ger-ionos.devefun.net
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇩🇪 DE-88.198.156.6... #1'
+  password: juzi
+  port: 8443
+  server: 88.198.156.62
+  skip-cert-verify: false
+  sni: juzi8186-sr1.pages.dev
+  type: trojan
+- name: 33|🔒 TR-WS-NONE 🇩🇪 DE-89.191.234....
+  network: ws
+  password: vpn
+  port: 2025
+  server: 89.191.234.182
+  type: trojan
+  ws-opts:
+    headers:
+      Host: vkvd127.mycdn.me
+    path: '%2F'
+- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-104.248.241....
+  password: juzi
+  port: 443
+  server: 104.248.241.182
+  sni: juzi8186-sr1.pages.dev
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-18.185.51.6...
+  network: tcp
+  password: Aimer
+  port: 8080
+  server: 18.185.51.67
+  sni: epccr.ambercc.filegear-sg.me
+  type: trojan
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #9'
+  network: httpupgrade
+  password: VGZ0nM9KY3Qz
+  port: 2096
+  server: 172.67.175.40
+  sni: esna.farsonline24.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: esna.farsonline24.ir
+    path: '%2F%F0%9F%86%94%40M3HDIO1'
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #10'
+  network: httpupgrade
+  password: pm1pwiX9aLqF
+  port: 2096
+  server: 104.21.48.6
+  sni: esna.farsonline24.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: esna.farsonline24.ir
+    path: '%2F%F0%9F%86%94%40M3HDIO1'
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #11'
+  network: httpupgrade
+  password: 4Tze3Ri*i#Fo
+  port: 8443
+  server: 104.21.44.185
+  sni: soft.onetwothree123.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: soft.onetwothree123.ir
+    path: '%2FL9sBUTui'
+- name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-202.78.163....
+  network: tcp
+  password: '!!str 3828095943467868160'
+  port: 443
+  server: 202.78.163.146
+  sni: immense-goose.dolphin109.quest
+  type: trojan
+- name: 33|🔒 TR-GRPC-TLS 🇩🇪 DE-108.61.171...
+  network: grpc
+  password: mainssh-niwrhf87
+  port: 443
+  server: 108.61.171.167
+  sni: getgrpc.mainssh.xyz
+  type: trojan
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #12'
+  network: httpupgrade
+  password: eB20cwssJIVZ
+  port: 2096
+  server: 172.67.202.155
+  sni: ilna.onetwothree123.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ilna.onetwothree123.ir
+    path: '%2F%F0%9F%86%94%40M3HDIO1'
+- name: 33|🔒 TR-TCP-NONE 🇩🇪 DE-178.63.244...
+  network: tcp
+  password: fsoOufuTGmSKzRDaAwAbww
+  port: 443
+  server: 178.63.244.9
+  type: trojan
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #13'
+  network: httpupgrade
+  password: ny07PbwOr0rb
+  port: 2083
+  server: 172.67.202.155
+  sni: isna.onetwothree123.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: isna.onetwothree123.ir
+    path: '%2F%F0%9F%86%94%40M3HDIO1'
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #14'
+  network: httpupgrade
+  password: QTKsqSws9Sgc
+  port: 2087
+  server: 104.21.112.1
+  sni: hamshahri.twn24.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: hamshahri.twn24.ir
+    path: '%2F%F0%9F%86%94%40M3HDIO1'
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #15'
+  network: httpupgrade
+  password: Q^c5&MzXRa#%
+  port: 2087
+  server: 172.67.141.68
+  sni: fars.itn24.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: fars.itn24.ir
+    path: '%2FdHV8LpKm'
+- name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-91.195.240....
+  network: tcp
+  password: 3r372
+  port: 443
+  server: 91.195.240.94
+  sni: tj786.37927.online
+  type: trojan
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #16'
+  network: httpupgrade
+  password: nqYiA9K1cdwK
+  port: 443
+  server: 104.21.32.1
+  sni: hamshahri.twn24.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: hamshahri.twn24.ir
+    path: '%2F%F0%9F%86%94%40M3HDIO1'
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #17'
+  network: httpupgrade
+  password: 6X1Ca9dbWv@^
+  port: 8443
+  server: 172.67.202.155
+  sni: soft.onetwothree123.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: soft.onetwothree123.ir
+    path: '%2FL9sBUTui'
+- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-18.184.27.24...
+  password: juzi
+  port: 443
+  server: 18.184.27.249
+  sni: juzi8186-sr1.pages.dev
+  type: trojan
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #18'
+  network: httpupgrade
   password: QTKsqSws9Sgc
   port: 2087
   server: 104.21.48.1
+  sni: hamshahri.twn24.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: hamshahri.twn24.ir
+    path: '%2F%F0%9F%86%94%40M3HDIO1'
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #19'
+  network: httpupgrade
+  password: eZFUYsXGBLab
+  port: 2087
+  server: 104.21.64.1
   sni: hamshahri.twn24.ir
   type: trojan
   ws-opts:
@@ -1673,17 +4008,36 @@ proxies:
   type: trojan
   ws-opts:
     path: '%2Ftrojanws'
-- name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-139.162.158...
-  password: 665c944d-047d-4659-80d5-3eaac70241a9
+- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-91.107.233.1...
+  password: juzi
+  port: 8443
+  server: 91.107.233.151
+  sni: juzi8186-sr1.pages.dev
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-3.67.25.193:...
+  password: juzi
   port: 443
-  server: 139.162.158.172
-  sni: de2-full.privateip.net
+  server: 3.67.25.193
+  sni: juzi8186-sr1.pages.dev
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-85.90.194.1...
+  network: tcp
+  password: '!!str 3747000103274291200'
+  port: 443
+  server: 85.90.194.160
+  sni: awaited-chicken.adder289.quest
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-3.75.170.179...
+  password: Aimer
+  port: 443
+  server: 3.75.170.179
+  sni: epcco.ambercc.filegear-sg.me
   type: trojan
 - alpn:
   - h3
   - h2
   - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #1'
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #20'
   network: httpupgrade
   password: vlJW3VCP9Gmq
   port: 443
@@ -1694,25 +4048,22 @@ proxies:
     headers:
       Host: hamshahri.twn24.ir
     path: '%2F%F0%9F%86%94%40M3HDIO1'
-- name: 33|🔒 TR-WS-NONE 🇩🇪 DE-89.191.234....
-  network: ws
-  password: vpn
-  port: 2025
-  server: 89.191.234.182
+- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-5.75.201.8:2...
+  password: juzi
+  port: 2053
+  server: 5.75.201.8
+  skip-cert-verify: false
+  sni: juzi8186-sr1.pages.dev
   type: trojan
-  ws-opts:
-    headers:
-      Host: vkvd127.mycdn.me
-    path: '%2F'
 - alpn:
   - h3
   - h2
   - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #2'
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #21'
   network: httpupgrade
-  password: QTKsqSws9Sgc
+  password: eZFUYsXGBLab
   port: 2087
-  server: 104.21.96.1
+  server: 104.21.32.1
   sni: hamshahri.twn24.ir
   type: trojan
   ws-opts:
@@ -1723,7 +4074,7 @@ proxies:
   - h3
   - h2
   - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #3'
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #22'
   network: httpupgrade
   password: ny07PbwOr0rb
   port: 2083
@@ -1735,162 +4086,27 @@ proxies:
       Host: isna.onetwothree123.ir
     path: '%2F%F0%9F%86%94%40M3HDIO1'
 - alpn:
-  - h3
-  - h2
   - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #4'
-  network: httpupgrade
-  password: QTKsqSws9Sgc
-  port: 2087
-  server: 104.21.32.1
-  sni: hamshahri.twn24.ir
+  name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-18.184.137....
+  network: tcp
+  password: telegram-id-vlessconfig
+  port: 22222
+  server: 18.184.137.232
+  sni: trojan.burgerip.co.uk
   type: trojan
-  ws-opts:
-    headers:
-      Host: hamshahri.twn24.ir
-    path: '%2F%F0%9F%86%94%40M3HDIO1'
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #5'
-  network: httpupgrade
-  password: Q^c5&MzXRa#%
-  port: 2087
-  server: 172.67.141.68
-  sni: fars.itn24.ir
+- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-49.13.236.10...
+  password: Aimer
+  port: 2095
+  server: 49.13.236.106
+  skip-cert-verify: false
+  sni: epcca.ambercc.filegear-sg.me
   type: trojan
-  ws-opts:
-    headers:
-      Host: fars.itn24.ir
-    path: '%2FdHV8LpKm'
 - name: 33|🔒 TR-TCP-NA 🇩🇪 DE-3.66.115.225...
   password: juzi
   port: 443
   server: 3.66.115.225
   skip-cert-verify: false
   sni: juzi8186-sr1.pages.dev
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-217.160.216....
-  password: juzi
-  port: 443
-  server: 217.160.216.30
-  sni: juzi8186-sr1.pages.dev
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-3.67.25.193:...
-  password: juzi
-  port: 443
-  server: 3.67.25.193
-  sni: juzi8186-sr1.pages.dev
-  type: trojan
-- grpc-opts:
-    grpc-service-name: trojangrpc
-  name: 33|🔒 TR-GRPC-TLS 🇩🇪 DE-95.179.246...
-  network: grpc
-  password: mainssh-niwrhf87
-  port: 443
-  server: 95.179.246.122
-  sni: getgrpc.mainssh.xyz
-  type: trojan
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #6'
-  network: httpupgrade
-  password: xJ6KJem6QIwQ
-  port: 8443
-  server: 104.21.71.8
-  sni: shabestan.itn24.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: shabestan.itn24.ir
-    path: '%2F%F0%9F%86%94%40M3HDIO1'
-- name: 33|🔒 TR-GRPC-TLS 🇩🇪 DE-108.61.171...
-  network: grpc
-  password: mainssh-niwrhf87
-  port: 443
-  server: 108.61.171.167
-  sni: getgrpc.mainssh.xyz
-  type: trojan
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #7'
-  network: httpupgrade
-  password: eZFUYsXGBLab
-  port: 2087
-  server: 104.21.112.1
-  sni: hamshahri.twn24.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: hamshahri.twn24.ir
-    path: '%2F%F0%9F%86%94%40M3HDIO1'
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #8'
-  network: httpupgrade
-  password: VGZ0nM9KY3Qz
-  port: 2096
-  server: 172.67.175.40
-  sni: esna.farsonline24.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: esna.farsonline24.ir
-    path: '%2F%F0%9F%86%94%40M3HDIO1'
-- name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-18.185.51.6...
-  network: tcp
-  password: Aimer
-  port: 8080
-  server: 18.185.51.67
-  sni: epccr.ambercc.filegear-sg.me
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-194.87.148.1...
-  password: juzi
-  port: 8443
-  server: 194.87.148.148
-  sni: juzi8186-sr1.pages.dev
-  type: trojan
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #9'
-  network: httpupgrade
-  password: nqYiA9K1cdwK
-  port: 443
-  server: 104.21.64.1
-  sni: hamshahri.twn24.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: hamshahri.twn24.ir
-    path: '%2F%F0%9F%86%94%40M3HDIO1'
-- name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-91.195.240....
-  network: tcp
-  password: 3r372
-  port: 443
-  server: 91.195.240.94
-  sni: tj786.37927.online
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-3.75.170.179...
-  password: Aimer
-  port: 443
-  server: 3.75.170.179
-  sni: epcco.ambercc.filegear-sg.me
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-202.78.163....
-  network: tcp
-  password: '!!str 3828095943467868160'
-  port: 443
-  server: 202.78.163.146
-  sni: immense-goose.dolphin109.quest
   type: trojan
 - name: 33|🔒 TR-GRPC-TLS 🇩🇪 DE-95.179.254...
   network: grpc
@@ -1899,224 +4115,7 @@ proxies:
   server: 95.179.254.136
   sni: frtgrpc.mainssh.xyz
   type: trojan
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #10'
-  network: httpupgrade
-  password: 5Va4g9kI9!WY
-  port: 2087
-  server: 104.21.71.8
-  sni: fars.itn24.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: fars.itn24.ir
-    path: '%2FdHV8LpKm'
-- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-3.76.154.119...
-  password: juzi
-  port: 443
-  server: 3.76.154.119
-  sni: juzi8186-sr1.pages.dev
-  type: trojan
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #11'
-  network: httpupgrade
-  password: woCp0eJnQ5It
-  port: 8443
-  server: 172.67.141.68
-  sni: shabestan.itn24.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: shabestan.itn24.ir
-    path: '%2F%F0%9F%86%94%40M3HDIO1'
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #12'
-  network: httpupgrade
-  password: 4Tze3Ri*i#Fo
-  port: 8443
-  server: 104.21.44.185
-  sni: soft.onetwothree123.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: soft.onetwothree123.ir
-    path: '%2FL9sBUTui'
-- alpn:
-  - http/1.1
-  name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-3.74.220.39...
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.74.220.39
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #13'
-  network: httpupgrade
-  password: nqYiA9K1cdwK
-  port: 443
-  server: 104.21.32.1
-  sni: hamshahri.twn24.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: hamshahri.twn24.ir
-    path: '%2F%F0%9F%86%94%40M3HDIO1'
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #14'
-  network: httpupgrade
-  password: PC38PoxjmNbQ
-  port: 2087
-  server: 104.21.16.1
-  sni: hamshahri.twn24.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: hamshahri.twn24.ir
-    path: '%2F%F0%9F%86%94%40M3HDIO1'
-- name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-188.166.162...
-  network: tcp
-  password: Aimer
-  port: 443
-  server: 188.166.162.201
-  sni: ngepz.ambercc.filegear-sg.me
-  type: trojan
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #15'
-  network: httpupgrade
-  password: eZFUYsXGBLab
-  port: 2087
-  server: 104.21.64.1
-  sni: hamshahri.twn24.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: hamshahri.twn24.ir
-    path: '%2F%F0%9F%86%94%40M3HDIO1'
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #16'
-  network: httpupgrade
-  password: nqYiA9K1cdwK
-  port: 443
-  server: 104.21.16.1
-  sni: hamshahri.twn24.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: hamshahri.twn24.ir
-    path: '%2F%F0%9F%86%94%40M3HDIO1'
-- alterId: 0
-  name: 33,36|未知118
-  network: httpupgrade
-  password: ncynDWKB7Um7
-  port: 443
-  server: 172.67.175.40
-  skip-cert-verify: true
-  sni: isna.farsonline24.ir
-  tls: true
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: isna.farsonline24.ir
-    path: /🆔@M3HDIO1
-- alterId: 0
-  name: 33,36|未知72
-  password: juzi
-  port: 443
-  server: 104.248.241.182
-  skip-cert-verify: true
-  sni: juzi8186-sr1.pages.dev
-  tls: true
-  type: trojan
-  udp: true
-- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-18.184.27.24...
-  password: juzi
-  port: 443
-  server: 18.184.27.249
-  sni: juzi8186-sr1.pages.dev
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-165.22.74.23...
-  password: 4732adfa16c6450bbef87264e41332db
-  port: 443
-  server: 165.22.74.230
-  skip-cert-verify: false
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-5.75.201.8:2...
-  password: juzi
-  port: 2053
-  server: 5.75.201.8
-  skip-cert-verify: false
-  sni: juzi8186-sr1.pages.dev
-  type: trojan
-- name: 33|🔒 TR-WS-TLS 🇩🇪 DE-89.116.46.33...
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 89.116.46.33
-  sni: zb.ylks.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: zb.ylks.xyz
-    path: /
-- name: 33|🔒 TR-GRPC-TLS 🇩🇪 DE-209.250.23...
-  network: grpc
-  password: Cl150MQWlG
-  port: 443
-  server: 209.250.236.93
-  sni: irancell-ir-4.mmdruby13.store
-  type: trojan
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #18'
-  network: httpupgrade
-  password: eB20cwssJIVZ
-  port: 2096
-  server: 172.67.202.155
-  sni: ilna.onetwothree123.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ilna.onetwothree123.ir
-    path: '%2F%F0%9F%86%94%40M3HDIO1'
-- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-49.13.236.10...
-  password: Aimer
-  port: 2095
-  server: 49.13.236.106
-  skip-cert-verify: false
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-88.198.156.6...
-  password: juzi
-  port: 2053
-  server: 88.198.156.62
-  sni: juzi8186-sr1.pages.dev
-  type: trojan
-- name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #19'
+- name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #23'
   network: httpupgrade
   password: nEKYp2bQim
   port: 443
@@ -2128,116 +4127,14 @@ proxies:
     headers:
       Host: support.sabapardaziran.ir
     path: '%2F30662%2F%40M3HDIO1'
-- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-91.107.233.1...
-  password: juzi
-  port: 8443
-  server: 91.107.233.151
-  sni: juzi8186-sr1.pages.dev
-  type: trojan
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #20'
-  network: httpupgrade
-  password: eZFUYsXGBLab
-  port: 2087
-  server: 104.21.80.1
-  sni: hamshahri.twn24.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: hamshahri.twn24.ir
-    path: '%2F%F0%9F%86%94%40M3HDIO1'
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #21'
-  network: httpupgrade
-  password: 6X1Ca9dbWv@^
-  port: 8443
-  server: 172.67.202.155
-  sni: soft.onetwothree123.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: soft.onetwothree123.ir
-    path: '%2FL9sBUTui'
-- name: 33|🔒 TR-TCP-NONE 🇩🇪 DE-178.63.244...
-  network: tcp
-  password: fsoOufuTGmSKzRDaAwAbww
-  port: 443
-  server: 178.63.244.9
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-57.129.89.1...
-  network: tcp
-  password: pqlnPNu423
-  port: 1935
-  server: 57.129.89.172
-  sni: x1-germany-ovh-v2.devefun.net
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-194.164.57....
-  network: tcp
-  password: I46LpSIM1f
-  port: 1935
-  server: 194.164.57.9
-  skip-cert-verify: true
-  sni: x4ger-ionos.devefun.net
-  type: trojan
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #22'
-  network: httpupgrade
-  password: pm1pwiX9aLqF
-  port: 2096
-  server: 104.21.48.6
-  sni: esna.farsonline24.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: esna.farsonline24.ir
-    path: '%2F%F0%9F%86%94%40M3HDIO1'
-- name: '33|🔒 TR-TCP-NA 🇩🇪 DE-88.198.156.6... #1'
-  password: juzi
-  port: 8443
-  server: 88.198.156.62
-  skip-cert-verify: false
-  sni: juzi8186-sr1.pages.dev
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-85.90.194.1...
-  network: tcp
-  password: '!!str 3747000103274291200'
-  port: 443
-  server: 85.90.194.160
-  sni: awaited-chicken.adder289.quest
-  type: trojan
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #23'
-  network: httpupgrade
-  password: ny07PbwOr0rb
-  port: 2083
-  server: 172.67.202.155
-  sni: isna.onetwothree123.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: isna.onetwothree123.ir
-    path: '%2F%F0%9F%86%94%40M3HDIO1'
 - alterId: 0
   cipher: auto
-  name: 35,36|未知85
+  name: 35|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
   network: httpupgrade
-  port: 2095
+  port: '2095'
   server: 104.19.150.10
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
 - alterId: 0
