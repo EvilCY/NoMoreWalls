@@ -1,26 +1,25 @@
 proxies:
-- alterId: 2
-  cipher: auto
-  name: 1,21|1|🇦1 |  4.2MB/s
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇨🇦加拿大 01 | 1x CA
+  password: b43dcb63-4d2f-46e7-a1e4-ab35d0231fbe
+  port: 31441
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- name: 1|🇨🇦1 |  1.5MB/s
   network: ws
-  port: 30825
-  server: v25.heduian.link
+  port: 443
+  server: 192.0.54.46
+  servername: cz.ylks0033.dpdns.org
   skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: baidu.com
-    path: /oooo
-- auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  name: 1|🇨🇦2 |  1.5MB/s
-  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  port: 45979
-  server: 132.145.108.102
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
+      host: cz.ylks0033.dpdns.org
+    path: /?ed=2560
 - alterId: 0
   cipher: auto
   name: 2|👉🆔@v2ray_configs_pool📡🇨🇦®️Cana...
@@ -877,14 +876,14 @@ proxies:
       Host: us4Bb5oSgJA.fzbqfrse.xyz
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 19,25|0|🇦加大 01 | 1x CA
+  name: 19|🇨🇦 0|🇨🇦加拿大 01 | 1x CA
   password: 7d0b1f82-919f-454b-8633-f20b24866c75
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 19,25|1|🇦 加拿大 01 | 1x CA
+  name: 19|🇨🇦 1|🇨🇦 加拿大 01 | 1x CA
   password: cb22308a-693f-4c79-a5ad-87abd7bc4d02
   port: 36441
   server: free.2weradf.xyz
@@ -936,17 +935,17 @@ proxies:
       Host: c01.ylkszy.eu.org
     path: /?ed=2560
 - cipher: chacha20-ietf-poly1305
-  name: 21|0|🇦 加大 01 | 1x CA
-  password: b23ab9de-d45b-4cd9-af88-85a372912093
-  port: 36441
-  server: free.2weradf.xyz
+  name: 21|0|🇦加大 01 | 1x CA
+  password: 27cbdfdb-5a49-4316-8149-ab22777e603d
+  port: 31441
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 21|2|🇦加拿大 01 | 1x CA
-  password: 079e5dbe-79a4-43bd-b914-9a02ee2fac9f
-  port: 31441
-  server: free.2apzhfa.xyz
+  name: 21|14|🇦 加大 01 | 1x CA
+  password: e5d65f26-7dca-48f9-a896-2ef5936b1404
+  port: 36441
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -976,14 +975,13 @@ proxies:
     headers:
       host: ''
     path: /IOebhLMhl1CTbFHbL95myfRX2
-- name: 29|🔒 HYSTERIA-UDP 🇨🇦 CA-204.216.1...
-  password: sysadmin.sysadmin
-  port: 2024
-  server: 204.216.108.5
-  skip-cert-verify: true
-  sni: 204-216-108-5.nip.io
-  tls: false
-  type: hysteria2
+- cipher: chacha20-ietf-poly1305
+  name: 25|0|🇦 加大 01 | 1x CA
+  password: 79ac225a-d935-4c60-af82-fe50533d1480
+  port: 36441
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - name: 29|🔒 HYSTERIA-UDP 🇨🇦 CA-192.18.14...
   password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
   port: 45979
@@ -998,6 +996,14 @@ proxies:
   server: 155.248.219.28
   skip-cert-verify: true
   sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: 29|🔒 HYSTERIA-UDP 🇨🇦 CA-204.216.1...
+  password: sysadmin.sysadmin
+  port: 2024
+  server: 204.216.108.5
+  skip-cert-verify: true
+  sni: 204-216-108-5.nip.io
   tls: false
   type: hysteria2
 - client-fingerprint: chrome
@@ -1039,11 +1045,19 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
+  name: 34|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.16...
+  network: tcp
+  port: '58891'
+  server: 91.194.11.162
+  tls: false
+  type: vmess
+  uuid: 4439cf3e-d072-4a5b-88b2-2a2ec6d71340
+- alterId: 0
+  cipher: auto
   name: 34|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.11...
   network: tcp
   port: '27699'
   server: 91.194.11.118
-  servername: ''
   tls: false
   type: vmess
   uuid: c23b127b-af87-43bb-aa1e-ce42374a2b53
@@ -1053,23 +1067,13 @@ proxies:
   network: tcp
   port: '28984'
   server: 91.194.11.178
-  servername: ''
   tls: false
   type: vmess
   uuid: 9b2335af-f24c-4810-9c34-95568ebd579d
-- alterId: 0
-  cipher: auto
-  name: 34|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.16...
-  network: tcp
-  port: '58891'
-  server: 91.194.11.162
-  tls: false
-  type: vmess
-  uuid: 4439cf3e-d072-4a5b-88b2-2a2ec6d71340
 - cipher: chacha20-ietf-poly1305
-  name: 39|🇨🇦加拿大 01 | 1x CA
-  password: e6ff2c4d-21b2-4a0d-9ace-fb83f32c5ae1
-  port: 31441
-  server: free.2apzhfa.xyz
+  name: 39|🇨🇦 加拿大 01 | 1x CA
+  password: 070b18c0-6f76-43bb-ad42-81573612a85e
+  port: 36441
+  server: free.2weradf.xyz
   type: ss
   udp: true
