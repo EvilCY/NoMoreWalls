@@ -1,24 +1,16 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇨🇦 加拿大 01 | 1x CA
-  password: 1c0be36a-78c5-4abc-b98f-b016fdaf7950
+  password: bd44ceca-4f19-40da-bc8b-b633e461319e
   port: 36441
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇨🇦加拿大 01 | 1x CA
-  password: ee29682a-254e-4ae0-90ab-4e7559567dd1
+  name: 2|🇨🇦加拿大 01 | 1x CA
+  password: f4547361-9092-4fa6-b431-aee85ba7c413
   port: 31441
   server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  delay: 1679
-  name: 2,22|2|🇦1 |  1.1MB/s
-  password: 9FP85F7Q33RRWZ0J
-  port: 20011
-  server: qh62onjn.slashdevslashnetslashtun.net
   type: ss
   udp: true
 - alterId: 0
@@ -561,46 +553,26 @@ proxies:
     headers:
       Host: 100-47-154-9.s1.cn-db.top
     path: /
-- alterId: 0
-  cipher: auto
-  name: 21|加拿大 006
-  network: ws
-  port: 2082
-  server: s1.cn-db.top
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-150-51-99.s1.cn-db.top
-    path: /dabai.in172.64.27.73
-- alterId: 0
-  cipher: auto
-  name: 21|加拿大 001
-  network: ws
-  port: 80
-  server: s4.db-link02.top
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-21-178-246.s4.db-link02.top
-    path: /dabai.in104.24.152.253
 - cipher: chacha20-ietf-poly1305
   name: 22|0|🇦加大 01 | 1x CA
-  password: fb81f3d9-5adc-49ac-bde8-f2dd8a42fa0c
+  password: 31e21698-bc2a-4d65-8587-1d0eedb84037
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 22|1|🇦 加拿大 01 | 1x CA
-  password: 01c9218f-86c0-4aea-be98-4abea73ca0a7
+  password: 2fb40116-0318-4cba-8748-f416c668521b
   port: 36441
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 22|2|🇨🇦1 |  4.3MB/s
+  password: VekzIVJwbk1f
+  port: 443
+  server: 147.45.177.65
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 23|🇨🇦CA-142.4.216.225-1090
   password: JIhN6rBKkaEboLNXVSv5rq
@@ -629,26 +601,12 @@ proxies:
       host: ''
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - cipher: chacha20-ietf-poly1305
-  name: '26|0|🇦加大 01 | 1x CA #1'
-  password: 29ef4555-f4df-491e-b770-735514f8aa4c
+  name: 26|1|🇦加大 01 | 1x CA
+  password: ee29682a-254e-4ae0-90ab-4e7559567dd1
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '26|1|🇦 加拿大 01 | 1x CA #1'
-  password: 9a7de5bc-f17e-47a1-a567-a91cce3a4537
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- name: 33|🔒 TR-TCP-TLS 🇨🇦 CA-104.234.239...
-  network: tcp
-  password: Aimer
-  port: 2087
-  server: 104.234.239.235
-  sni: ngepx.ambercc.filegear-sg.me
-  type: trojan
 - alterId: 0
   name: 33,36|未知85
   network: tcp
@@ -660,16 +618,34 @@ proxies:
   tls: true
   type: trojan
   udp: true
+- name: 33|🔒 TR-TCP-TLS 🇨🇦 CA-104.234.239...
+  network: tcp
+  password: Aimer
+  port: 2087
+  server: 104.234.239.235
+  sni: ngepx.ambercc.filegear-sg.me
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇨🇦 CA-104.247.81.5...
+  network: tcp
+  password: dongtaiwang.com
+  port: 443
+  server: 104.247.81.50
+  skip-cert-verify: false
+  sni: trojan2.free4444.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: trojan2.free4444.xyz
 - alterId: 0
   cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.17...
+  name: 35|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.16...
   network: tcp
-  port: '28984'
-  server: 91.194.11.178
+  port: '58891'
+  server: 91.194.11.162
   servername: ''
   tls: false
   type: vmess
-  uuid: 9b2335af-f24c-4810-9c34-95568ebd579d
+  uuid: 4439cf3e-d072-4a5b-88b2-2a2ec6d71340
 - alterId: 0
   cipher: auto
   name: 35|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.11...
@@ -682,11 +658,10 @@ proxies:
   uuid: c23b127b-af87-43bb-aa1e-ce42374a2b53
 - alterId: 0
   cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.16...
+  name: 35|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.17...
   network: tcp
-  port: '58891'
-  server: 91.194.11.162
-  servername: ''
+  port: '28984'
+  server: 91.194.11.178
   tls: false
   type: vmess
-  uuid: 4439cf3e-d072-4a5b-88b2-2a2ec6d71340
+  uuid: 9b2335af-f24c-4810-9c34-95568ebd579d
