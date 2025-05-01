@@ -1,40 +1,74 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇯🇵 日本 01 | 1x JP
-  password: bebaa925-1983-4741-9e28-af17903e35f3
+  name: 0|🇯🇵日本 01 | 1x JP
+  password: 62189652-6600-4467-acc0-df439bcc5dbc
+  port: 31111
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇯🇵日本 02 | 1x JP
+  password: 62189652-6600-4467-acc0-df439bcc5dbc
+  port: 31113
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇯🇵日本 03 | 1x JP
+  password: 62189652-6600-4467-acc0-df439bcc5dbc
+  port: 31115
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇯🇵 日本 01 | 1x JP
+  password: 38335947-2f1e-466a-8ab1-93fbc9fb63ed
   port: 36111
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇯🇵 日本 02 | 1x JP
-  password: bebaa925-1983-4741-9e28-af17903e35f3
+  name: 1|🇯🇵 日本 02 | 1x JP
+  password: 38335947-2f1e-466a-8ab1-93fbc9fb63ed
   port: 36113
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇯🇵 日本 03 | 1x JP
-  password: bebaa925-1983-4741-9e28-af17903e35f3
+  name: 1|🇯🇵 日本 03 | 1x JP
+  password: 38335947-2f1e-466a-8ab1-93fbc9fb63ed
   port: 36115
   server: free.2weradf.xyz
   type: ss
   udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '1,14,38,39|CN_speednode_0010 #1'
-  network: tcp
-  port: 13989
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: cos90-new2.dynu.net
-  servername: gateway.icloud.com
+- alterId: 0
+  cipher: auto
+  name: 2|🇯🇵1 |  1.7MB/s
+  port: 3684
+  server: 884b8b44-sudhc0-svm3vt-czv5.d.volczijie.com
+  tls: false
+  type: vmess
+  uuid: 82efba2c-f420-11ef-9529-f23c93141fad
+- name: '2,38,39|JP_speednode_0029 #1'
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 443
+  server: jp104-cdn-route.couldflare-cdn.com
   skip-cert-verify: false
+  sni: jp104-cdn-route.couldflare-cdn.com
   tls: true
-  type: vless
+  type: http
   udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 1|🇯🇵2 |  2.8MB/s
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 2,22|1|🇵25 |  2.9MB/s
+  port: 11555
+  server: 167.88.182.219
+  tls: false
+  type: vmess
+  uuid: c4968b1c-d71b-44be-f31e-ac231a2e828d
+- name: 2|🇯🇵4 |  6.1MB/s
   network: ws
   port: 16058
   server: 59.26.208.19
@@ -48,21 +82,19 @@ proxies:
     headers:
       host: miku.mikuru.ip-ddns.com
     path: /?ed=2560
-- name: 1|🇯🇵3 |  3.1MB/s
-  network: ws
-  port: 20001
-  server: 52.76.110.129
-  servername: miku.mikuru.ip-ddns.com
-  skip-cert-verify: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2,14|1|🇯🇵16 |  5.7MB/s
+  network: tcp
+  port: 31735
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: bsuqian01.dynu.net
+  servername: www.nvidia.com
   tls: true
   type: vless
-  udp: true
-  uuid: 5543ae5c-c24f-405a-9266-597cbc43c818
-  ws-opts:
-    headers:
-      host: miku.mikuru.ip-ddns.com
-    path: /?ed=2560
-- name: 1|🇯🇵4 |  1.4MB/s
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 2|🇯🇵6 |  2.5MB/s
   network: ws
   port: 20000
   server: 45.76.143.208
@@ -76,46 +108,21 @@ proxies:
     headers:
       host: miku.mikuru.ip-ddns.com
     path: /?ed=2560
-- name: 1|🇯🇵5 |  2.7MB/s
-  network: ws
-  port: 14896
-  server: 222.117.231.32
-  servername: miku.mikuru.ip-ddns.com
-  skip-cert-verify: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '2,14,38,39|CN_speednode_0010 #1'
+  network: tcp
+  port: 13989
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: cos90-new2.dynu.net
+  servername: gateway.icloud.com
+  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 5543ae5c-c24f-405a-9266-597cbc43c818
-  ws-opts:
-    headers:
-      host: miku.mikuru.ip-ddns.com
-    path: /?ed=2560
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇯🇵6 |  1.1MB/s
-  network: tcp
-  port: 48121
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: beiyong.dynuddns.net
-  servername: www.nvidia.com
-  tls: true
-  type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  delay: 750
-  flow: xtls-rprx-vision
-  name: 1,14|2|🇯🇵19 |  1.5MB/s
-  network: tcp
-  port: 16497
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: zhee01.dynu.net
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 1|🇯🇵8 |  1.3MB/s
+- name: 2|🇯🇵8 |  1.5MB/s
   network: ws
   port: 443
   server: 54.169.229.188
@@ -129,10 +136,10 @@ proxies:
     headers:
       host: miku.mikuru.ip-ddns.com
     path: /?ed=2560
-- name: 1|🇯🇵9 |  5.0MB/s
+- name: 2|🇯🇵9 |  2.0MB/s
   network: ws
-  port: 81
-  server: 95.164.18.132
+  port: 12202
+  server: 14.56.226.68
   servername: miku.mikuru.ip-ddns.com
   skip-cert-verify: true
   tls: true
@@ -145,34 +152,73 @@ proxies:
     path: /?ed=2560
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1,14|1|🇯🇵16 |  5.7MB/s
+  name: 2|🇯🇵10 |  5.7MB/s
   network: tcp
-  port: 31735
+  port: 35659
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: bsuqian01.dynu.net
-  servername: www.nvidia.com
+  server: shenzhou02.mysynology.net
+  servername: gateway.icloud.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 2|🇯🇵11 |  1.4MB/s
+  network: ws
+  port: 12416
+  server: 121.174.200.92
+  servername: miku.mikuru.ip-ddns.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5543ae5c-c24f-405a-9266-597cbc43c818
+  ws-opts:
+    headers:
+      host: miku.mikuru.ip-ddns.com
+    path: /?ed=2560
+- name: 2|🇯🇵12 |  1.0MB/s
+  network: ws
+  port: 12456
+  server: 121.129.91.180
+  servername: miku.mikuru.ip-ddns.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5543ae5c-c24f-405a-9266-597cbc43c818
+  ws-opts:
+    headers:
+      host: miku.mikuru.ip-ddns.com
+    path: /?ed=2560
+- name: 2|🇯🇵13 |  6.0MB/s
+  password: ef23ddd0-14c5-39c2-9880-af55ce892363
+  port: 64804
+  server: t9.qifei.app
+  skip-cert-verify: true
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 1,14,22|1|🇵11 |  1.3MB/s
-  network: tcp
-  port: 17233
-  server: 17bf3bb4-svjgg0-swy6li-tni2.cm5.p5pv.com
+  name: 2|🇯🇵14 |  1.2MB/s
+  port: 3684
+  server: a29b45ed-submo0-syap8d-dbk8.d.volczijie.com
   tls: false
   type: vmess
-  uuid: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-- alterId: 0
-  cipher: auto
-  name: 1,22,26|2|🇵2 |  2.8MB/s
-  port: 17233
-  server: 0e8845d1-suk9s0-sve5if-z93q.cm5.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 40639730-e027-11ea-87ad-f23c913c8d2b
-- name: 1|🇯🇵13 |  2.8MB/s
+  uuid: 45845d5e-0605-11f0-8cf9-f23c93136cb3
+- name: 2|🇯🇵15 |  4.5MB/s
+  network: ws
+  port: 10943
+  server: 14.39.43.121
+  servername: miku.mikuru.ip-ddns.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5543ae5c-c24f-405a-9266-597cbc43c818
+  ws-opts:
+    headers:
+      host: miku.mikuru.ip-ddns.com
+    path: /?ed=2560
+- name: 2|🇯🇵16 |  5.3MB/s
   network: ws
   port: 50008
   server: 59.25.160.141
@@ -188,220 +234,37 @@ proxies:
     path: /?ed=2560
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇯🇵14 |  3.7MB/s
-  network: tcp
-  port: 35659
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou05.mysynology.net
-  servername: gateway.icloud.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- alterId: 0
-  cipher: auto
-  name: 1,22,26|2|🇵20 |  2.0MB/s
-  network: tcp
-  port: 17233
-  server: 86b5ac0e-svlb40-swy6li-tni2.cm5.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1,14|2|🇯🇵13 |  5.9MB/s
-  network: tcp
-  port: 25768
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: '1,38,39|JP_speednode_0029 #1'
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 443
-  server: jp104-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: jp104-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  udp: true
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- name: 1|🇯🇵18 |  1.2MB/s
-  network: ws
-  port: 12456
-  server: 121.129.91.180
-  servername: miku.mikuru.ip-ddns.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5543ae5c-c24f-405a-9266-597cbc43c818
-  ws-opts:
-    headers:
-      host: miku.mikuru.ip-ddns.com
-    path: /?ed=2560
-- name: 1|🇯🇵19 |  5.2MB/s
-  network: ws
-  port: 8442
-  server: 185.233.184.66
-  servername: miku.mikuru.ip-ddns.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5543ae5c-c24f-405a-9266-597cbc43c818
-  ws-opts:
-    headers:
-      host: miku.mikuru.ip-ddns.com
-    path: /?ed=2560
-- name: 1|🇯🇵20 |  4.0MB/s
-  network: ws
-  port: 8445
-  server: 195.200.18.68
-  servername: miku.mikuru.ip-ddns.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5543ae5c-c24f-405a-9266-597cbc43c818
-  ws-opts:
-    headers:
-      host: miku.mikuru.ip-ddns.com
-    path: /?ed=2560
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇯🇵21 |  4.2MB/s
-  network: tcp
-  port: 14548
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: vip.jddns0202.top
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- alterId: 0
-  cipher: auto
-  name: 1,22|1|🇵22 |  1.9MB/s
-  network: tcp
-  port: 17233
-  server: f585489b-svhls0-t1bnjq-1krtb.cm5.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  ws-headers:
-    Host: f585489b-svhls0-t1bnjq-1krtb.cm5.p5pv.com
-  ws-path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  mode: ''
-  name: 1,31|🔒 VL-TCP-RLT 🇯🇵 JP-160.16.75.2...
+  name: 2|🇯🇵17 |  2.2MB/s
   network: tcp
   port: 443
   reality-opts:
     public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
     short-id: 1a
-  server: 160.16.75.222
+  server: v61.qifei.app
   servername: www.lovelive-anime.jp
-  tls: false
+  tls: true
   type: vless
-  udp: false
   uuid: ef23ddd0-14c5-39c2-9880-af55ce892363
 - alterId: 0
   cipher: auto
-  name: 1,14,22|1|🇯🇵24 |  2.8MB/s
-  network: tcp
-  port: 17233
-  server: 50ec05bc-sutj40-tdcdb7-1k27l.cm5.p5pv.com
-  skip-cert-verify: true
+  name: 2|🇯🇵18 |  1.8MB/s
+  port: 3684
+  server: 3370784f-submo0-sv7alj-ctxx.d.volczijie.com
   tls: false
   type: vmess
-  uuid: ba4b1f2e-c985-11ed-9c0c-f23c913c8d2b
-  ws-headers:
-    Host: 50ec05bc-sutj40-tdcdb7-1k27l.cm5.p5pv.com
-  ws-path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇯🇵25 |  4.9MB/s
-  network: tcp
-  port: 31735
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenyang001.dynu.net
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 1|🇯🇵26 |  5.7MB/s
-  network: ws
-  port: 30111
-  server: 222.102.166.18
-  servername: miku.mikuru.ip-ddns.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5543ae5c-c24f-405a-9266-597cbc43c818
-  ws-opts:
-    headers:
-      host: miku.mikuru.ip-ddns.com
-    path: /?ed=2560
-- name: 1|🇯🇵27 |  1.8MB/s
-  network: ws
-  port: 443
-  server: 13.228.155.72
-  servername: miku.mikuru.ip-ddns.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5543ae5c-c24f-405a-9266-597cbc43c818
-  ws-opts:
-    headers:
-      host: miku.mikuru.ip-ddns.com
-    path: /?ed=2560
-- name: 1|🇯🇵28 |  2.6MB/s
-  network: ws
-  port: 10943
-  server: 14.39.43.121
-  servername: miku.mikuru.ip-ddns.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5543ae5c-c24f-405a-9266-597cbc43c818
-  ws-opts:
-    headers:
-      host: miku.mikuru.ip-ddns.com
-    path: /?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇯🇵日本 01 | 1x JP
-  password: 212b3dff-280a-42d9-8c0d-42e6bdedc57b
-  port: 31111
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇯🇵日本 02 | 1x JP
-  password: 212b3dff-280a-42d9-8c0d-42e6bdedc57b
-  port: 31113
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇯🇵日本 03 | 1x JP
-  password: 212b3dff-280a-42d9-8c0d-42e6bdedc57b
-  port: 31115
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
+  uuid: 4e84400e-f4bc-11ef-81b7-f23c932f2c32
 - alterId: 0
   cipher: auto
-  name: 14,26|2|🇯🇵11 |  2.0MB/s
+  client-fingerprint: chrome
+  name: 2,22|1|🇯🇵28 |  6.4MB/s
+  port: 11667
+  server: 167.88.182.219
+  tls: false
+  type: vmess
+  uuid: d4096144-32f1-424e-9b67-940186f35395
+- alterId: 0
+  cipher: auto
+  name: 14|1|🇯🇵12 |  1.3MB/s
   network: tcp
   port: 17233
   server: 1ff869eb-svjgg0-t1bnjq-1krtb.cm5.p5pv.com
@@ -410,7 +273,7 @@ proxies:
   uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
 - alterId: 0
   cipher: auto
-  name: 14,26|2|🇯🇵23 |  2.3MB/s
+  name: 14,22|1|🇵20 |  2.1MB/s
   network: tcp
   port: 17233
   server: 7ab33995-svdwg0-swy6li-tni2.cm5.p5pv.com
@@ -428,17 +291,13 @@ proxies:
   uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
 - alterId: 0
   cipher: auto
-  name: 14,26|2|🇯🇵27 |  2.2MB/s
+  name: 14|2|🇯🇵25 |  1.0MB/s
   network: tcp
   port: 17233
   server: 3c984d30-svdwg0-t1bnjq-1krtb.cm5.p5pv.com
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  ws-headers:
-    Host: 3c984d30-svdwg0-t1bnjq-1krtb.cm5.p5pv.com
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: 14|日本 - 东京 - Akamai Technologies ...
@@ -463,13 +322,17 @@ proxies:
   uuid: a664d16a-4e47-11ef-9d7e-f23c9164ca5d
 - alterId: 0
   cipher: auto
-  name: 14|2|🇯🇵10 |  1.8MB/s
+  name: 14,22|1|🇵29 |  1.5MB/s
   network: tcp
   port: 17233
   server: 2c7f0fc0-svlb40-t1bnjq-1krtb.cm5.p5pv.com
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  ws-headers:
+    Host: 2c7f0fc0-svlb40-t1bnjq-1krtb.cm5.p5pv.com
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: '14|日本 - 东京 - Akamai Technologies ... #1'
@@ -483,9 +346,31 @@ proxies:
     headers:
       Host: jp4.vip2.g2.moonbase.life
     path: /home
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 14|2|🇯🇵13 |  5.9MB/s
+  port: 25768
+  server: csuzhou01.1cooldns.com
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - alterId: 0
   cipher: auto
-  name: 14,26|2|🇵10 |  1.9MB/s
+  name: 14,26|2|🇯🇵24 |  2.8MB/s
+  network: tcp
+  port: 17233
+  server: 50ec05bc-sutj40-tdcdb7-1k27l.cm5.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ba4b1f2e-c985-11ed-9c0c-f23c913c8d2b
+  ws-headers:
+    Host: 50ec05bc-sutj40-tdcdb7-1k27l.cm5.p5pv.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 14|1|🇯🇵22 |  1.0MB/s
   network: tcp
   port: 17233
   server: 13806907-svc1s0-swy6li-tni2.cm5.p5pv.com
@@ -531,6 +416,15 @@ proxies:
   uuid: 07287360-e12f-4f94-9c7a-54386c100d8a
 - alterId: 0
   cipher: auto
+  name: 14,22,26|2|11 |  1.3MB/s
+  network: tcp
+  port: 17233
+  server: 17bf3bb4-svjgg0-swy6li-tni2.cm5.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+- alterId: 0
+  cipher: auto
   name: 14|1|🇯🇵7 |  1.8MB/s
   network: tcp
   port: 17233
@@ -540,7 +434,7 @@ proxies:
   uuid: 0114339c-488d-11ee-8792-f23c9164ca5d
 - alterId: 0
   cipher: auto
-  name: 14,26|2|🇯🇵4 |  1.7MB/s
+  name: 14|2|🇯🇵27 |  1.2MB/s
   network: tcp
   port: 17233
   server: 666c5d9b-svfr40-t1bnjq-1krtb.cm5.p5pv.com
@@ -583,6 +477,15 @@ proxies:
   sni: sg.lyyyds.club
   type: trojan
   udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 14|2|🇯🇵19 |  1.5MB/s
+  port: 16497
+  server: zhee01.dynu.net
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - alterId: 0
   cipher: auto
   name: 14|2|🇯🇵2 |  1.6MB/s
@@ -661,46 +564,33 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   name: 22|0| 01 | 1x JP
-  password: 52ce2253-8a6f-4050-be59-7dafe1c2560b
+  password: 78895340-8022-43c3-853e-9013863e03cb
   port: 31111
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 22|0|🇵日本 02 | 1x JP
-  password: 52ce2253-8a6f-4050-be59-7dafe1c2560b
+  password: 78895340-8022-43c3-853e-9013863e03cb
   port: 31113
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 22|0|🇵日本 03 | 1x JP
-  password: 52ce2253-8a6f-4050-be59-7dafe1c2560b
+  password: 78895340-8022-43c3-853e-9013863e03cb
   port: 31115
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 22|2|🇵 日本 01 | 1x JP
-  password: 70d2ff32-4b90-40f6-8053-06724657f19c
-  port: 36111
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 22|2|🇯🇵 日本 02 | 1x JP
-  password: 70d2ff32-4b90-40f6-8053-06724657f19c
-  port: 36113
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 22|2|🇵 日本 03 | 1x JP
-  password: 70d2ff32-4b90-40f6-8053-06724657f19c
-  port: 36115
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
+- alterId: 0
+  cipher: auto
+  name: 22|1|🇯🇵26 |  1.4MB/s
+  port: 4151
+  server: d0f55eaf-submo0-t0t1z3-1qgn.c.volczijie.com
+  tls: false
+  type: vmess
+  uuid: 564b440a-700f-11ee-a90c-f23c9313b177
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 22,26,28|🇯🇵 日本|@ripaojiedian
@@ -751,123 +641,45 @@ proxies:
   port: 443
   server: 149.22.87.241
   type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 23,36|未知136 1.7MB/s
+- cipher: aes-128-gcm
+  name: 23|🇯🇵JP-149.22.87.240-1055
   password: shadowsocks
   port: 443
   server: 149.22.87.240
-  skip-cert-verify: true
-  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '26|0| 01 | 1x JP #1'
-  password: 93e520ec-1686-48b1-b957-260bc2a9ef4c
+  name: 26|3|🇵 01 | 1x JP
+  password: 212b3dff-280a-42d9-8c0d-42e6bdedc57b
   port: 31111
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '26|0|🇵日本 02 | 1x JP #1'
-  password: 93e520ec-1686-48b1-b957-260bc2a9ef4c
+  name: 26|3|🇵日本 02 | 1x JP
+  password: 212b3dff-280a-42d9-8c0d-42e6bdedc57b
   port: 31113
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '26|0|🇵日本 03 | 1x JP #1'
-  password: 93e520ec-1686-48b1-b957-260bc2a9ef4c
+  name: 26|3|🇵日本 03 | 1x JP
+  password: 212b3dff-280a-42d9-8c0d-42e6bdedc57b
   port: 31115
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- alterId: 1
-  cipher: auto
-  name: 26|2|🇯🇵12 |  2.3MB/s
-  port: 21583
-  server: jp01-alt-vm0.entry.srthdw.art
-  servername: jp01-alt-vm0.entry.srthdw.art
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: c4b2e7ea-1a0e-316f-8e28-0717cc087534
-- alterId: 0
-  cipher: auto
-  disable-sni: true
-  name: 26|2|🇯🇵21 |  2.1MB/s
-  network: tcp
-  port: 17233
-  raw:
-    add: 69c584f2-suif40-tee612-2r82.cm5.p5pv.com
-    aid: 0
-    alpn: ''
-    fp: ''
-    host: ''
-    id: 03573f46-e944-11eb-a8bf-f23c91cfbbc9
-    net: tcp
-    path: ''
-    port: 17233
-    ps: 1|🇯🇵7 |  5.7MB/s
-    scy: auto
-    sni: ''
-    tls: ''
-    type: none
-    v: '2'
-  server: 69c584f2-suif40-tee612-2r82.cm5.p5pv.com
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 03573f46-e944-11eb-a8bf-f23c91cfbbc9
-- cipher: chacha20-ietf-poly1305
-  name: 26|15|🇵 日本 01 | 1x JP
-  password: c3336a73-45f4-406a-bf42-da46d8b92548
-  port: 36111
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 26|15|🇯🇵 日本 02 | 1x JP
-  password: c3336a73-45f4-406a-bf42-da46d8b92548
-  port: 36113
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 26|15|🇵 日本 03 | 1x JP
-  password: c3336a73-45f4-406a-bf42-da46d8b92548
-  port: 36115
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- name: 30|🔒 HYSTERIA-UDP 🇯🇵 JP-45.192.24...
-  password: ab78be87
-  port: 2022
-  server: 45.192.243.159
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
-- name: 30|🔒 HYSTERIA-UDP 🇯🇵 JP-54.199.14...
-  password: 4c0014ad-562c-4dc9-979e-4241bed0f22a
-  port: 443
-  server: 54.199.14.212
-  tls: false
-  type: hysteria2
-- name: 30|🔒 HYSTERIA-UDP 🇯🇵 JP-35.75.9.1...
+- name: 30|🔒 HYSTERIA-UDP 🇯🇵 JP-35.76.31....
   password: b0pkiuXmIQsEQD9W_yT5rsGr
   port: 443
-  server: 35.75.9.110
+  server: 35.76.31.203
   skip-cert-verify: true
   sni: www.cloudflare.com
   tls: false
   type: hysteria2
-- name: 30|🔒 HYSTERIA-UDP 🇯🇵 JP-35.74.79....
+- name: 30|🔒 HYSTERIA-UDP 🇯🇵 JP-43.207.20...
   password: 25a7be37-eca8-4d9e-a8ae-63722bf9ec2e
   port: 7001
-  server: 35.74.79.114
+  server: 43.207.208.50
   skip-cert-verify: true
   sni: d1--cn-gotcha204-3.bilivideo.com
   tls: false
@@ -888,22 +700,49 @@ proxies:
   sni: d1--cn-gotcha204-3.bilivideo.com
   tls: false
   type: hysteria2
-- name: 30|🔒 HYSTERIA-UDP 🇯🇵 JP-43.207.20...
-  password: 25a7be37-eca8-4d9e-a8ae-63722bf9ec2e
-  port: 7001
-  server: 43.207.208.50
+- name: 30|🔒 HYSTERIA-UDP 🇯🇵 JP-45.192.24...
+  password: ab78be87
+  port: 2022
+  server: 45.192.243.159
   skip-cert-verify: true
-  sni: d1--cn-gotcha204-3.bilivideo.com
+  sni: www.bing.com
   tls: false
   type: hysteria2
-- name: 30|🔒 HYSTERIA-UDP 🇯🇵 JP-35.76.31....
+- name: 30|🔒 HYSTERIA-UDP 🇯🇵 JP-35.75.9.1...
   password: b0pkiuXmIQsEQD9W_yT5rsGr
   port: 443
-  server: 35.76.31.203
+  server: 35.75.9.110
   skip-cert-verify: true
   sni: www.cloudflare.com
   tls: false
   type: hysteria2
+- name: 30|🔒 HYSTERIA-UDP 🇯🇵 JP-35.74.79....
+  password: 25a7be37-eca8-4d9e-a8ae-63722bf9ec2e
+  port: 7001
+  server: 35.74.79.114
+  skip-cert-verify: true
+  sni: d1--cn-gotcha204-3.bilivideo.com
+  tls: false
+  type: hysteria2
+- name: 30|🔒 HYSTERIA-UDP 🇯🇵 JP-54.199.14...
+  password: 4c0014ad-562c-4dc9-979e-4241bed0f22a
+  port: 443
+  server: 54.199.14.212
+  tls: false
+  type: hysteria2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 31|🔒 VL-TCP-RLT 🇯🇵 JP-160.16.75.2...
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
+    short-id: 1a
+  server: 160.16.75.222
+  servername: www.lovelive-anime.jp
+  tls: false
+  type: vless
+  uuid: ef23ddd0-14c5-39c2-9880-af55ce892363
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 31|🔒 VL-TCP-RLT 🇯🇵 JP-202.182.96....
@@ -920,19 +759,6 @@ proxies:
   ws-opts:
     headers:
       Host: /JOKERRVPNJoin_Bade_Channel@JOKERRVPN
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇯🇵 JP-152.70.99.1...
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: IHJ7w7m13QsYPFq8eppdqyTyeLmXzTtOG9EGu_-ep2c
-    short-id: 49824283a241
-  server: 152.70.99.180
-  servername: buylite.music.apple.com
-  tls: false
-  type: vless
-  uuid: 966dc5ee-cd6e-4698-9116-50e6bd301bd9
 - client-fingerprint: ios
   flow: xtls-rprx-vision
   name: 31|🔒 VL-TCP-RLT 🇯🇵 JP-52.69.40.18...
@@ -959,52 +785,36 @@ proxies:
   tls: false
   type: vless
   uuid: 6b2b20e9-5f11-43cc-a1f6-cd646c83c85b
-- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-13.230.34.30...
-  password: Aimer
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 31|🔒 VL-TCP-RLT 🇯🇵 JP-152.70.99.1...
+  network: tcp
   port: 443
-  server: 13.230.34.30
-  sni: epccu.ambercc.filegear-sg.me
-  type: trojan
-- alterId: 0
-  name: 33,36|未知132 216.6KB/s
+  reality-opts:
+    public-key: IHJ7w7m13QsYPFq8eppdqyTyeLmXzTtOG9EGu_-ep2c
+    short-id: 49824283a241
+  server: 152.70.99.180
+  servername: buylite.music.apple.com
+  tls: false
+  type: vless
+  uuid: 966dc5ee-cd6e-4698-9116-50e6bd301bd9
+- name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-74.176.59.1...
   password: dQUWbcwECl
   port: 443
   server: 74.176.59.185
-  skip-cert-verify: true
   sni: automq3-proxy.automq-sg.com
-  tls: true
   type: trojan
-  udp: true
-- name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-160.16.138....
-  network: tcp
-  password: 3bcd9e33-8377-4b32-af33-217158577ff3
-  port: 443
-  server: 160.16.138.58
-  sni: kdlsupport.zendesk.com
+- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-168.138.204....
+  password: Aimer
+  port: 587
+  server: 168.138.204.44
+  sni: ngepo.ambercc.filegear-sg.me
   type: trojan
-- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-85.234.83.28...
+- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-85.234.83.24...
   password: '!!str 3828095943467868160'
   port: 443
-  server: 85.234.83.28
-  sni: workable-puma.dolphin109.quest
-  type: trojan
-- alterId: 0
-  name: 33,36|未知75
-  network: tcp
-  password: 3bcd9e33-8377-4b32-af33-217158577ff3
-  port: 443
-  server: 160.16.74.162
-  skip-cert-verify: true
-  sni: kdlsupport.zendesk.com
-  tls: true
-  type: trojan
-  udp: true
-- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-141.98.196.2...
-  password: Aimer
-  port: 443
-  server: 141.98.196.223
-  skip-cert-verify: false
-  sni: epcch.ambercc.filegear-sg.me
+  server: 85.234.83.246
+  sni: active-lamb.dolphin109.quest
   type: trojan
 - name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-160.16.150....
   network: tcp
@@ -1013,11 +823,107 @@ proxies:
   server: 160.16.150.202
   sni: kdlsupport.zendesk.com
   type: trojan
-- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-43.207.112.2...
-  password: 0FaYIOcSy4lBg38yRxnj7RlR3RZYSq3pC9OaSDAAOw6Oe8FCpy08u8pzx3eKZacDz3XE3
+- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-31.223.184.2...
+  password: c443be95-725d-4da3-a60f-d35af5bfbff8
+  port: 17721
+  server: 31.223.184.248
+  sni: data.52daishu.life
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-18.183.158.2...
+  password: Aimer
   port: 443
-  server: 43.207.112.226
+  server: 18.183.158.211
+  sni: epccu.ambercc.filegear-sg.me
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-47.79.85.118...
+  password: Aimer
+  port: 4443
+  server: 47.79.85.118
   skip-cert-verify: false
+  sni: epcch.ambercc.filegear-sg.me
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-160.16.65.9...
+  network: tcp
+  password: 3bcd9e33-8377-4b32-af33-217158577ff3
+  port: 443
+  server: 160.16.65.99
+  sni: kdlsupport.zendesk.com
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-160.16.149....
+  network: tcp
+  password: 3bcd9e33-8377-4b32-af33-217158577ff3
+  port: 443
+  server: 160.16.149.225
+  sni: kdlsupport.zendesk.com
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-150.230.201...
+  password: f42e1a2e-e650-44f4-8d17-bcb68663da18
+  port: 443
+  server: 150.230.201.192
+  sni: www.seetheworldjp.ga
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-20.243.85.49...
+  password: Aimer
+  port: 10443
+  server: 20.243.85.49
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-13.230.34.30...
+  password: Aimer
+  port: 443
+  server: 13.230.34.30
+  sni: epccu.ambercc.filegear-sg.me
+  type: trojan
+- name: 33|🔒 TR-WS-TLS 🇯🇵 JP-47.79.86.103...
+  network: ws
+  password: Aimer
+  port: 587
+  server: 47.79.86.103
+  sni: agept.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: agept.ambercc.filegear-sg.me
+- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-35.77.166.21...
+  password: 05f1368b-1743-48a3-b2a5-56343e64e7be
+  port: 443
+  server: 35.77.166.21
+  skip-cert-verify: false
+  sni: sg.lyyyds.club
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-85.234.83.28...
+  password: '!!str 3828095943467868160'
+  port: 443
+  server: 85.234.83.28
+  sni: workable-puma.dolphin109.quest
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-141.98.196.2...
+  password: Aimer
+  port: 443
+  server: 141.98.196.223
+  skip-cert-verify: false
+  sni: epcch.ambercc.filegear-sg.me
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-109.107.137....
+  password: Aimer
+  port: 37316
+  server: 109.107.137.56
+  skip-cert-verify: false
+  sni: epccf.ambercc.filegear-sg.me
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-160.16.144....
+  network: tcp
+  password: 3bcd9e33-8377-4b32-af33-217158577ff3
+  port: 443
+  server: 160.16.144.90
+  sni: kdlsupport.zendesk.com
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-160.16.74.1...
+  network: tcp
+  password: 3bcd9e33-8377-4b32-af33-217158577ff3
+  port: 443
+  server: 160.16.74.162
+  sni: kdlsupport.zendesk.com
   type: trojan
 - name: 33|🔒 TR-WS-TLS 🇯🇵 JP-156.238.19.6...
   network: ws
@@ -1030,28 +936,16 @@ proxies:
     headers:
       Host: tran.amclubstest.nyc.mn
     path: '%2F%3Fed%3D2560'
-- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-31.223.184.2...
-  password: c443be95-725d-4da3-a60f-d35af5bfbff8
-  port: 17721
-  server: 31.223.184.248
-  sni: data.52daishu.life
+- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-116.206.93.2...
+  password: 4ea1d07c-41c2-42b5-954d-414fee051856
+  port: 46002
+  server: 116.206.93.254
   type: trojan
-- name: 33|🔒 TR-WS-TLS 🇯🇵 JP-47.79.86.103...
-  network: ws
-  password: Aimer
-  port: 587
-  server: 47.79.86.103
-  sni: agept.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: agept.ambercc.filegear-sg.me
-- name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-160.16.65.9...
-  network: tcp
-  password: 3bcd9e33-8377-4b32-af33-217158577ff3
+- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-43.207.112.2...
+  password: 0FaYIOcSy4lBg38yRxnj7RlR3RZYSq3pC9OaSDAAOw6Oe8FCpy08u8pzx3eKZacDz3XE3
   port: 443
-  server: 160.16.65.99
-  sni: kdlsupport.zendesk.com
+  server: 43.207.112.226
+  skip-cert-verify: false
   type: trojan
 - name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-43.206.220....
   password: p0axgx3pXT6yjp4SwSRaaYeCDxCFOFaAlRYDNaRjF8OycXn3ZE3ABaYgnDIx3Eeq9C0ce
@@ -1059,29 +953,13 @@ proxies:
   server: 43.206.220.255
   sni: huzzah.meijireform.com
   type: trojan
-- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-18.183.158.2...
-  password: Aimer
+- name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-160.16.138....
+  network: tcp
+  password: 3bcd9e33-8377-4b32-af33-217158577ff3
   port: 443
-  server: 18.183.158.211
-  sni: epccu.ambercc.filegear-sg.me
+  server: 160.16.138.58
+  sni: kdlsupport.zendesk.com
   type: trojan
-- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-109.107.137....
-  password: Aimer
-  port: 37316
-  server: 109.107.137.56
-  skip-cert-verify: false
-  sni: epccf.ambercc.filegear-sg.me
-  type: trojan
-- alterId: 0
-  name: 33,36|未知98
-  password: Aimer
-  port: 10443
-  server: 20.243.85.49
-  skip-cert-verify: true
-  sni: epcca.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
 - name: 33|🔒 TR-TCP-NA 🇯🇵 JP-45.66.217.17...
   password: Aimer
   port: 2002
@@ -1089,70 +967,16 @@ proxies:
   skip-cert-verify: false
   sni: epcch.ambercc.filegear-sg.me
   type: trojan
-- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-47.79.85.118...
-  password: Aimer
-  port: 4443
-  server: 47.79.85.118
-  skip-cert-verify: false
-  sni: epcch.ambercc.filegear-sg.me
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-150.230.201...
-  password: f42e1a2e-e650-44f4-8d17-bcb68663da18
-  port: 443
-  server: 150.230.201.192
-  sni: www.seetheworldjp.ga
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-116.206.93.2...
-  password: 4ea1d07c-41c2-42b5-954d-414fee051856
-  port: 46002
-  server: 116.206.93.254
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-35.72.56.8:4...
-  password: 05f1368b-1743-48a3-b2a5-56343e64e7be
-  port: 443
-  server: 35.72.56.8
-  skip-cert-verify: false
-  sni: sg.lyyyds.club
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-160.16.149....
-  network: tcp
-  password: 3bcd9e33-8377-4b32-af33-217158577ff3
-  port: 443
-  server: 160.16.149.225
-  sni: kdlsupport.zendesk.com
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-168.138.204....
-  password: Aimer
-  port: 587
-  server: 168.138.204.44
-  sni: ngepo.ambercc.filegear-sg.me
-  type: trojan
-- alterId: 0
-  name: 33,36|未知133
-  password: '!!str 3828095943467868160'
-  port: 443
-  server: 85.234.83.246
-  skip-cert-verify: true
-  sni: active-lamb.dolphin109.quest
-  tls: true
-  type: trojan
-  udp: true
-- name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-160.16.144....
-  network: tcp
-  password: 3bcd9e33-8377-4b32-af33-217158577ff3
-  port: 443
-  server: 160.16.144.90
-  sni: kdlsupport.zendesk.com
-  type: trojan
-- alterId: 0
+- alterId: 1
   cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇯🇵 JP-5.253.41.147...
+  name: 35|🔒 VM-TCP-TLS 🇯🇵 JP-54.248.60.0...
   network: tcp
-  port: '27750'
-  server: 5.253.41.147
-  tls: false
+  port: 21583
+  server: 54.248.60.0
+  servername: jp01-alt-vm0.entry.srthdw.art
+  tls: true
   type: vmess
-  uuid: 4b1992cc-8e7c-4003-a45f-a28c3e6f6fa8
+  uuid: c4b2e7ea-1a0e-316f-8e28-0717cc087534
 - alterId: 0
   cipher: auto
   name: 35|🔒 VM-WS-NA 🇯🇵 JP-154.55.122.23...
@@ -1177,14 +1001,14 @@ proxies:
   type: vmess
   uuid: d1f1022b-cd43-49e4-b736-7744d1e11a79
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 36|🇵JP
-  password: f4547361-9092-4fa6-b431-aee85ba7c413
-  port: 31111
-  server: free.2apzhfa.xyz
-  skip-cert-verify: true
-  tls: true
-  type: ss
+  cipher: auto
+  name: 35|🔒 VM-TCP-NA 🇯🇵 JP-5.253.41.147...
+  network: tcp
+  port: '27750'
+  server: 5.253.41.147
+  tls: false
+  type: vmess
+  uuid: 4b1992cc-8e7c-4003-a45f-a28c3e6f6fa8
 - name: '38,39|JP_speednode_0030 #1'
   network: ws
   port: 80
