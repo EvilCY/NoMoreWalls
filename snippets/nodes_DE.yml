@@ -1,14 +1,14 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇩🇪 德国 01 | 1x DE
-  password: 086c27ae-5ed9-41ba-80c1-37c4f5441243
+  password: 70bdfbd2-a8a1-45c5-85db-144e2ec55ebb
   port: 36471
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇩🇪德国 01 | 1x DE
-  password: f41dcbaf-6865-4c62-854f-44dd5869a870
+  password: 435c9e4a-54a1-47f5-8e53-553310eaa07a
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
@@ -45,40 +45,39 @@ proxies:
   type: vmess
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇩🇪 0|🇩🇪德国 01 | 1x DE
-  password: 7d0b1f82-919f-454b-8633-f20b24866c75
+  name: '20,26|0| 国 01 | 1x DE #1'
+  password: 086c27ae-5ed9-41ba-80c1-37c4f5441243
+  port: 36471
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '20,26|1|🇪德国 01 | 1x DE #1'
+  password: f41dcbaf-6865-4c62-854f-44dd5869a870
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇩🇪 1|🇩🇪 德国 01 | 1x DE
-  password: cb22308a-693f-4c79-a5ad-87abd7bc4d02
+  name: 22|0| 国 01 | 1x DE
+  password: d09c245f-3943-4055-ae8d-bcf918d71560
   port: 36471
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 22|1|🇪德国 01 | 1x DE
+  password: 71a99125-9235-4c0d-9e4f-4cec68a587fd
+  port: 31471
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - cipher: rc4-md5
-  name: 20,23|🇩🇪DE-193.108.119.230-0910
+  name: 23|🇩🇪DE-193.108.119.230-0910
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 193.108.119.230
   type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 22|0|国 01 | 1x DE
-  password: fe806776-c413-44db-8c13-edb9b855c45c
-  port: 31471
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 22|1|🇪 德国 01 | 1x DE
-  password: a312dc04-7756-420e-9882-ddc19a710efc
-  port: 36471
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 23|🇩🇪DE-85.208.139.31-6186
   password: q7jwtcA0MmyYi0JddUgXXj
@@ -118,129 +117,17 @@ proxies:
   port: 9011
   server: 80.92.204.106
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '26|0|国 01 | 1x DE #1'
-  password: 97c0513f-ee90-4147-8ef5-1214d3781c35
-  port: 31471
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '26|1|🇪 德国 01 | 1x DE #1'
-  password: 5de86aac-b348-46c0-80bb-651ef0322ca1
-  port: 36471
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
+- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-104.248.241....
+  password: juzi
+  port: 443
+  server: 104.248.241.182
+  sni: juzi8186-sr1.pages.dev
+  type: trojan
 - alpn:
   - h3
   - h2
   - http/1.1
   name: 33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
-  network: httpupgrade
-  password: eZFUYsXGBLab
-  port: 2087
-  server: 104.21.32.1
-  sni: hamshahri.twn24.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: hamshahri.twn24.ir
-    path: '%2F%F0%9F%86%94%40M3HDIO1'
-- name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-202.78.163....
-  network: tcp
-  password: '!!str 3828095943467868160'
-  port: 443
-  server: 202.78.163.146
-  sni: immense-goose.dolphin109.quest
-  type: trojan
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #1'
-  network: httpupgrade
-  password: ny07PbwOr0rb
-  port: 2083
-  server: 104.21.44.185
-  sni: isna.onetwothree123.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: isna.onetwothree123.ir
-    path: '%2F%F0%9F%86%94%40M3HDIO1'
-- name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #2'
-  network: httpupgrade
-  password: QTKsqSws9Sgc
-  port: 2087
-  server: 104.21.48.1
-  sni: hamshahri.twn24.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: hamshahri.twn24.ir
-    path: /🆔@M3HDIO1
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #3'
-  network: httpupgrade
-  password: QTKsqSws9Sgc
-  port: 2087
-  server: 104.21.80.1
-  sni: hamshahri.twn24.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: hamshahri.twn24.ir
-    path: '%2F%F0%9F%86%94%40M3HDIO1'
-- name: 33|🔒 TR-GRPC-TLS 🇩🇪 DE-108.61.171...
-  network: grpc
-  password: mainssh-niwrhf87
-  port: 443
-  server: 108.61.171.167
-  sni: getgrpc.mainssh.xyz
-  type: trojan
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #4'
-  network: httpupgrade
-  password: nqYiA9K1cdwK
-  port: 443
-  server: 104.21.32.1
-  sni: hamshahri.twn24.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: hamshahri.twn24.ir
-    path: '%2F%F0%9F%86%94%40M3HDIO1'
-- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-3.67.25.193:...
-  password: juzi
-  port: 443
-  server: 3.67.25.193
-  sni: juzi8186-sr1.pages.dev
-  type: trojan
-- name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #5'
-  network: httpupgrade
-  password: nqYiA9K1cdwK
-  port: 443
-  server: 104.21.16.1
-  sni: hamshahri.twn24.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: hamshahri.twn24.ir
-    path: /🆔@M3HDIO1
-- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-217.160.216....
-  password: juzi
-  port: 443
-  server: 217.160.216.30
-  sni: juzi8186-sr1.pages.dev
-  type: trojan
-- name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #6'
   network: httpupgrade
   password: xJ6KJem6QIwQ
   port: 8443
@@ -250,127 +137,88 @@ proxies:
   ws-opts:
     headers:
       Host: shabestan.itn24.ir
-    path: /🆔@M3HDIO1
-- name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #7'
+    path: '%2F%F0%9F%86%94%40M3HDIO1'
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #1'
   network: httpupgrade
-  password: QTKsqSws9Sgc
-  port: 2087
-  server: 104.21.112.1
+  password: nqYiA9K1cdwK
+  port: 443
+  server: 104.21.32.1
   sni: hamshahri.twn24.ir
   type: trojan
   ws-opts:
     headers:
       Host: hamshahri.twn24.ir
-    path: /🆔@M3HDIO1
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #8'
-  network: httpupgrade
-  password: Aq3ytpoqI6xJ
-  port: 2087
-  server: 172.67.142.21
-  sni: leader.andishehnegariran.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: leader.andishehnegariran.ir
     path: '%2F%F0%9F%86%94%40M3HDIO1'
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #9'
-  network: httpupgrade
-  password: Aq3ytpoqI6xJ
-  port: 2087
-  server: 104.21.54.208
-  sni: leader.andishehnegariran.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: leader.andishehnegariran.ir
-    path: '%2F%F0%9F%86%94%40M3HDIO1'
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #10'
-  network: httpupgrade
-  password: 4Tze3Ri*i#Fo
-  port: 8443
-  server: 104.21.44.185
-  sni: soft.onetwothree123.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: soft.onetwothree123.ir
-    path: '%2FL9sBUTui'
-- alpn:
-  - http/1.1
-  name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-18.184.137....
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.184.137.232
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-18.193.90.1...
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 18.193.90.151
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 33|🔒 TR-GRPC-TLS 🇩🇪 DE-209.250.23...
-  network: grpc
-  password: Cl150MQWlG
-  port: 443
-  server: 209.250.236.93
-  sni: irancell-ir-4.mmdruby13.store
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-57.129.89.1...
-  network: tcp
-  password: pqlnPNu423
-  port: 1935
-  server: 57.129.89.172
-  sni: x1-germany-ovh-v2.devefun.net
-  type: trojan
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #11'
-  network: httpupgrade
-  password: 5Va4g9kI9!WY
-  port: 2087
-  server: 104.21.71.8
-  sni: fars.itn24.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: fars.itn24.ir
-    path: '%2FdHV8LpKm'
-- name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #12'
-  network: httpupgrade
-  password: ny07PbwOr0rb
-  port: 2083
-  server: 172.67.202.155
-  sni: isna.onetwothree123.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: isna.onetwothree123.ir
-    path: /🆔@M3HDIO1
-- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-91.107.233.1...
+- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-18.184.27.24...
   password: juzi
-  port: 8443
-  server: 91.107.233.151
+  port: 443
+  server: 18.184.27.249
   sni: juzi8186-sr1.pages.dev
   type: trojan
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #2'
+  network: httpupgrade
+  password: QTKsqSws9Sgc
+  port: 2087
+  server: 104.21.48.1
+  sni: hamshahri.twn24.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: hamshahri.twn24.ir
+    path: '%2F%F0%9F%86%94%40M3HDIO1'
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #3'
+  network: httpupgrade
+  password: VGZ0nM9KY3Qz
+  port: 2096
+  server: 172.67.175.40
+  sni: esna.farsonline24.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: esna.farsonline24.ir
+    path: '%2F%F0%9F%86%94%40M3HDIO1'
+- name: 33|🔒 TR-WS-TLS 🇩🇪 DE-5.254.17.52:...
+  network: ws
+  password: 2bfa08e0-ae1e-11ed-a3a0-1239d0255272
+  port: 443
+  server: 5.254.17.52
+  sni: telewebion.com
+  type: trojan
+  ws-opts:
+    path: '%2Ftrojanws'
+- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-5.75.201.8:2...
+  password: juzi
+  port: 2053
+  server: 5.75.201.8
+  sni: juzi8186-sr1.pages.dev
+  type: trojan
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #4'
+  network: httpupgrade
+  password: ncynDWKB7Um7
+  port: 443
+  server: 172.67.175.40
+  sni: isna.farsonline24.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: isna.farsonline24.ir
+    path: '%2F%F0%9F%86%94%40M3HDIO1'
 - name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-194.164.57....
   network: tcp
   password: I46LpSIM1f
@@ -388,11 +236,7 @@ proxies:
   server: 95.179.246.122
   sni: getgrpc.mainssh.xyz
   type: trojan
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #13'
+- name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #5'
   network: httpupgrade
   password: QTKsqSws9Sgc
   port: 2087
@@ -402,18 +246,52 @@ proxies:
   ws-opts:
     headers:
       Host: hamshahri.twn24.ir
-    path: '%2F%F0%9F%86%94%40M3HDIO1'
-- name: 33|🔒 TR-TCP-NONE 🇩🇪 DE-178.63.244...
-  network: tcp
-  password: fsoOufuTGmSKzRDaAwAbww
-  port: 443
-  server: 178.63.244.9
+    path: /🆔@M3HDIO1
+- name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #6'
+  network: httpupgrade
+  password: ny07PbwOr0rb
+  port: 2083
+  server: 172.67.202.155
+  sni: isna.onetwothree123.ir
   type: trojan
-- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-5.75.201.8:2...
-  password: juzi
-  port: 2053
-  server: 5.75.201.8
-  sni: juzi8186-sr1.pages.dev
+  ws-opts:
+    headers:
+      Host: isna.onetwothree123.ir
+    path: /🆔@M3HDIO1
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #7'
+  network: httpupgrade
+  password: Aq3ytpoqI6xJ
+  port: 2087
+  server: 104.21.54.208
+  sni: leader.andishehnegariran.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: leader.andishehnegariran.ir
+    path: '%2F%F0%9F%86%94%40M3HDIO1'
+- name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-57.129.89.1...
+  network: tcp
+  password: pqlnPNu423
+  port: 1935
+  server: 57.129.89.172
+  sni: x1-germany-ovh-v2.devefun.net
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-49.13.236.10...
+  password: Aimer
+  port: 2095
+  server: 49.13.236.106
+  skip-cert-verify: false
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-165.22.74.23...
+  password: 4732adfa16c6450bbef87264e41332db
+  port: 443
+  server: 165.22.74.230
+  skip-cert-verify: false
   type: trojan
 - name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-188.166.162...
   network: tcp
@@ -422,90 +300,45 @@ proxies:
   server: 188.166.162.201
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-139.162.158...
-  password: 665c944d-047d-4659-80d5-3eaac70241a9
-  port: 443
-  server: 139.162.158.172
-  sni: de2-full.privateip.net
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-104.248.241....
-  password: juzi
-  port: 443
-  server: 104.248.241.182
-  sni: juzi8186-sr1.pages.dev
-  type: trojan
-- name: 33|🔒 TR-GRPC-TLS 🇩🇪 DE-95.179.254...
-  network: grpc
-  password: mainssh-ddoejfv14
-  port: 443
-  server: 95.179.254.136
-  sni: frtgrpc.mainssh.xyz
-  type: trojan
-- name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #14'
-  network: httpupgrade
-  password: ncynDWKB7Um7
-  port: 443
-  server: 172.67.175.40
-  sni: isna.farsonline24.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: isna.farsonline24.ir
-    path: /🆔@M3HDIO1
-- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-165.22.74.23...
-  password: 4732adfa16c6450bbef87264e41332db
-  port: 443
-  server: 165.22.74.230
-  skip-cert-verify: false
-  type: trojan
 - alpn:
   - h3
   - h2
   - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #15'
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #8'
   network: httpupgrade
-  password: 6X1Ca9dbWv@^
-  port: 8443
-  server: 172.67.202.155
-  sni: soft.onetwothree123.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: soft.onetwothree123.ir
-    path: '%2FL9sBUTui'
-- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-49.13.236.10...
-  password: Aimer
-  port: 2095
-  server: 49.13.236.106
-  skip-cert-verify: false
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-- name: 33|🔒 TR-WS-TLS 🇩🇪 DE-89.116.46.33...
-  network: ws
-  password: NISHIKUITAN111
+  password: nqYiA9K1cdwK
   port: 443
-  server: 89.116.46.33
-  sni: zb.ylks.xyz
+  server: 104.21.64.1
+  sni: hamshahri.twn24.ir
   type: trojan
   ws-opts:
     headers:
-      Host: zb.ylks.xyz
-    path: /
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #16'
-  network: httpupgrade
-  password: pm1pwiX9aLqF
-  port: 2096
-  server: 104.21.48.6
-  sni: esna.farsonline24.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: esna.farsonline24.ir
+      Host: hamshahri.twn24.ir
     path: '%2F%F0%9F%86%94%40M3HDIO1'
+- name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #9'
+  network: httpupgrade
+  password: Aq3ytpoqI6xJ
+  port: 2087
+  server: 172.67.142.21
+  sni: leader.andishehnegariran.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: leader.andishehnegariran.ir
+    path: /🆔@M3HDIO1
+- name: 33|🔒 TR-TCP-NONE 🇩🇪 DE-178.63.244...
+  network: tcp
+  password: fsoOufuTGmSKzRDaAwAbww
+  port: 443
+  server: 178.63.244.9
+  type: trojan
+- name: 33|🔒 TR-GRPC-TLS 🇩🇪 DE-108.61.171...
+  network: grpc
+  password: mainssh-niwrhf87
+  port: 443
+  server: 108.61.171.167
+  sni: getgrpc.mainssh.xyz
+  type: trojan
 - name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-91.195.240....
   network: tcp
   password: 3r372
@@ -517,81 +350,7 @@ proxies:
   - h3
   - h2
   - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #17'
-  network: httpupgrade
-  password: VGZ0nM9KY3Qz
-  port: 2096
-  server: 172.67.175.40
-  sni: esna.farsonline24.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: esna.farsonline24.ir
-    path: '%2F%F0%9F%86%94%40M3HDIO1'
-- name: 33|🔒 TR-WS-NONE 🇩🇪 DE-89.191.234....
-  network: ws
-  password: vpn
-  port: 2025
-  server: 89.191.234.182
-  type: trojan
-  ws-opts:
-    headers:
-      Host: vkvd127.mycdn.me
-    path: '%2F'
-- name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #18'
-  network: httpupgrade
-  password: nEKYp2bQim
-  port: 443
-  server: 104.21.15.33
-  skip-cert-verify: true
-  sni: support.sabapardaziran.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: support.sabapardaziran.ir
-    path: '%2F30662%2F%40M3HDIO1'
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #19'
-  network: httpupgrade
-  password: eZFUYsXGBLab
-  port: 2087
-  server: 104.21.16.1
-  sni: hamshahri.twn24.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: hamshahri.twn24.ir
-    path: '%2F%F0%9F%86%94%40M3HDIO1'
-- name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-18.185.51.6...
-  network: tcp
-  password: Aimer
-  port: 8080
-  server: 18.185.51.67
-  sni: epccr.ambercc.filegear-sg.me
-  type: trojan
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #20'
-  network: httpupgrade
-  password: Q^c5&MzXRa#%
-  port: 2087
-  server: 172.67.141.68
-  sni: fars.itn24.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: fars.itn24.ir
-    path: '%2FdHV8LpKm'
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #21'
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #10'
   network: httpupgrade
   password: TKsVHmEEGn3v
   port: 2087
@@ -602,49 +361,34 @@ proxies:
     headers:
       Host: hamshahri.twn24.ir
     path: '%2F%F0%9F%86%94%40M3HDIO1'
+- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-3.67.25.193:...
+  password: juzi
+  port: 443
+  server: 3.67.25.193
+  sni: juzi8186-sr1.pages.dev
+  type: trojan
+- name: 33|🔒 TR-GRPC-TLS 🇩🇪 DE-209.250.23...
+  network: grpc
+  password: Cl150MQWlG
+  port: 443
+  server: 209.250.236.93
+  sni: irancell-ir-4.mmdruby13.store
+  type: trojan
 - alpn:
   - h3
   - h2
   - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #22'
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #11'
   network: httpupgrade
-  password: woCp0eJnQ5It
-  port: 8443
-  server: 172.67.141.68
-  sni: shabestan.itn24.ir
+  password: QTKsqSws9Sgc
+  port: 2087
+  server: 104.21.112.1
+  sni: hamshahri.twn24.ir
   type: trojan
   ws-opts:
     headers:
-      Host: shabestan.itn24.ir
+      Host: hamshahri.twn24.ir
     path: '%2F%F0%9F%86%94%40M3HDIO1'
-- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-3.75.170.179...
-  password: Aimer
-  port: 443
-  server: 3.75.170.179
-  sni: epcco.ambercc.filegear-sg.me
-  type: trojan
-- name: 33|🔒 TR-WS-TLS 🇩🇪 DE-5.254.17.52:...
-  network: ws
-  password: 2bfa08e0-ae1e-11ed-a3a0-1239d0255272
-  port: 443
-  server: 5.254.17.52
-  sni: telewebion.com
-  type: trojan
-  ws-opts:
-    path: '%2Ftrojanws'
-- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-194.87.148.1...
-  password: juzi
-  port: 8443
-  server: 194.87.148.148
-  sni: juzi8186-sr1.pages.dev
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-95.179.245....
-  network: tcp
-  password: Bw5Mz7QkVp
-  port: 443
-  server: 95.179.245.249
-  sni: z-v2-080537.kailib.com
-  type: trojan
 - name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-3.76.154.11...
   network: tcp
   password: juzi
@@ -652,11 +396,58 @@ proxies:
   server: 3.76.154.119
   sni: juzi8186-sr1.pages.dev
   type: trojan
-- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-18.184.27.24...
-  password: juzi
+- alpn:
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-18.193.90.1...
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.193.90.151
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 33|🔒 TR-GRPC-TLS 🇩🇪 DE-95.179.254...
+  network: grpc
+  password: mainssh-ddoejfv14
   port: 443
-  server: 18.184.27.249
-  sni: juzi8186-sr1.pages.dev
+  server: 95.179.254.136
+  sni: frtgrpc.mainssh.xyz
+  type: trojan
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #12'
+  network: httpupgrade
+  password: 4Tze3Ri*i#Fo
+  port: 8443
+  server: 104.21.44.185
+  sni: soft.onetwothree123.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: soft.onetwothree123.ir
+    path: '%2FL9sBUTui'
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #13'
+  network: httpupgrade
+  password: eB20cwssJIVZ
+  port: 2096
+  server: 172.67.202.155
+  sni: ilna.onetwothree123.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ilna.onetwothree123.ir
+    path: '%2F%F0%9F%86%94%40M3HDIO1'
+- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-51.195.47.24...
+  password: Aimer
+  port: 8443
+  server: 51.195.47.243
+  skip-cert-verify: false
+  sni: epcch.ambercc.filegear-sg.me
   type: trojan
 - name: 33|🔒 TR-TCP-NA 🇩🇪 DE-3.66.115.225...
   password: juzi
@@ -669,60 +460,237 @@ proxies:
   - h3
   - h2
   - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #23'
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #14'
   network: httpupgrade
-  password: eB20cwssJIVZ
-  port: 2096
-  server: 172.67.202.155
-  sni: ilna.onetwothree123.ir
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ilna.onetwothree123.ir
-    path: '%2F%F0%9F%86%94%40M3HDIO1'
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #24'
-  network: httpupgrade
-  password: nqYiA9K1cdwK
-  port: 443
-  server: 104.21.64.1
+  password: eZFUYsXGBLab
+  port: 2087
+  server: 104.21.32.1
   sni: hamshahri.twn24.ir
   type: trojan
   ws-opts:
     headers:
       Host: hamshahri.twn24.ir
     path: '%2F%F0%9F%86%94%40M3HDIO1'
-- alterId: 0
-  cipher: auto
-  name: 35|🔒 VM-WS-TLS 🇩🇪 DE-57.129.25.22...
-  network: ws
+- name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #15'
+  network: httpupgrade
+  password: nqYiA9K1cdwK
   port: 443
-  server: 57.129.25.22
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  server: 104.21.16.1
+  sni: hamshahri.twn24.ir
+  type: trojan
   ws-opts:
     headers:
-      Host: o.metuji.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 35|🔒 VM-WS-NA 🇩🇪 DE-85.215.229.21...
+      Host: hamshahri.twn24.ir
+    path: /🆔@M3HDIO1
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #16'
+  network: httpupgrade
+  password: Q^c5&MzXRa#%
+  port: 2087
+  server: 172.67.141.68
+  sni: fars.itn24.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: fars.itn24.ir
+    path: '%2FdHV8LpKm'
+- name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-95.179.245....
+  network: tcp
+  password: Bw5Mz7QkVp
+  port: 443
+  server: 95.179.245.249
+  sni: z-v2-080537.kailib.com
+  type: trojan
+- name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #17'
+  network: httpupgrade
+  password: ny07PbwOr0rb
+  port: 2083
+  server: 104.21.44.185
+  sni: isna.onetwothree123.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: isna.onetwothree123.ir
+    path: /🆔@M3HDIO1
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #18'
+  network: httpupgrade
+  password: 6X1Ca9dbWv@^
+  port: 8443
+  server: 172.67.202.155
+  sni: soft.onetwothree123.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: soft.onetwothree123.ir
+    path: '%2FL9sBUTui'
+- name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-202.78.163....
+  network: tcp
+  password: '!!str 3828095943467868160'
+  port: 443
+  server: 202.78.163.146
+  sni: immense-goose.dolphin109.quest
+  type: trojan
+- name: 33|🔒 TR-WS-NONE 🇩🇪 DE-89.191.234....
   network: ws
-  port: '27797'
-  server: 85.215.229.219
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ff5085f9-7114-4ab8-a983-e1132475b128
+  password: vpn
+  port: 2025
+  server: 89.191.234.182
+  type: trojan
   ws-opts:
     headers:
-      Host: vpn.techbytehub.de
+      Host: vkvd127.mycdn.me
+    path: '%2F'
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #19'
+  network: httpupgrade
+  password: woCp0eJnQ5It
+  port: 8443
+  server: 172.67.141.68
+  sni: shabestan.itn24.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: shabestan.itn24.ir
+    path: '%2F%F0%9F%86%94%40M3HDIO1'
+- name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-139.162.158...
+  password: 665c944d-047d-4659-80d5-3eaac70241a9
+  port: 443
+  server: 139.162.158.172
+  sni: de2-full.privateip.net
+  type: trojan
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #20'
+  network: httpupgrade
+  password: QTKsqSws9Sgc
+  port: 2087
+  server: 104.21.80.1
+  sni: hamshahri.twn24.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: hamshahri.twn24.ir
+    path: '%2F%F0%9F%86%94%40M3HDIO1'
+- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-217.160.216....
+  password: juzi
+  port: 443
+  server: 217.160.216.30
+  sni: juzi8186-sr1.pages.dev
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-194.87.148.1...
+  password: juzi
+  port: 8443
+  server: 194.87.148.148
+  sni: juzi8186-sr1.pages.dev
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-3.75.170.179...
+  password: Aimer
+  port: 443
+  server: 3.75.170.179
+  sni: epcco.ambercc.filegear-sg.me
+  type: trojan
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #21'
+  network: httpupgrade
+  password: pm1pwiX9aLqF
+  port: 2096
+  server: 104.21.48.6
+  sni: esna.farsonline24.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: esna.farsonline24.ir
+    path: '%2F%F0%9F%86%94%40M3HDIO1'
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #22'
+  network: httpupgrade
+  password: 5Va4g9kI9!WY
+  port: 2087
+  server: 104.21.71.8
+  sni: fars.itn24.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: fars.itn24.ir
+    path: '%2FdHV8LpKm'
+- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-91.107.233.1...
+  password: juzi
+  port: 8443
+  server: 91.107.233.151
+  sni: juzi8186-sr1.pages.dev
+  type: trojan
+- name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #23'
+  network: httpupgrade
+  password: nEKYp2bQim
+  port: 443
+  server: 104.21.15.33
+  skip-cert-verify: true
+  sni: support.sabapardaziran.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: support.sabapardaziran.ir
+    path: '%2F30662%2F%40M3HDIO1'
+- name: 33|🔒 TR-WS-TLS 🇩🇪 DE-89.116.46.33...
+  network: ws
+  password: NISHIKUITAN111
+  port: 443
+  server: 89.116.46.33
+  sni: zb.ylks.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: zb.ylks.xyz
     path: /
+- name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-18.185.51.6...
+  network: tcp
+  password: Aimer
+  port: 8080
+  server: 18.185.51.67
+  sni: epccr.ambercc.filegear-sg.me
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-18.184.137....
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.184.137.232
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #24'
+  network: httpupgrade
+  password: eZFUYsXGBLab
+  port: 2087
+  server: 104.21.16.1
+  sni: hamshahri.twn24.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: hamshahri.twn24.ir
+    path: '%2F%F0%9F%86%94%40M3HDIO1'
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -747,6 +715,40 @@ proxies:
   uuid: 4976466c-abb4-4353-add6-8c6b4f3859bc
 - alterId: 0
   cipher: auto
+  name: 35|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
+  network: httpupgrade
+  port: '2095'
+  server: 104.19.150.10
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+- alterId: 0
+  cipher: auto
+  name: 35|🔒 VM-WS-NA 🇩🇪 DE-85.215.229.21...
+  network: ws
+  port: '27797'
+  server: 85.215.229.219
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ff5085f9-7114-4ab8-a983-e1132475b128
+  ws-opts:
+    headers:
+      Host: vpn.techbytehub.de
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 35|🔒 VM-HTTPUPGRADE-TLS 🏴‍☠️ NA-1...
+  network: httpupgrade
+  port: '2096'
+  server: 172.67.142.21
+  servername: iribtv3.andishehnegariran.ir
+  tls: true
+  type: vmess
+  uuid: 0dbc96f2-10fc-4574-81cd-366e8dc7ac02
+- alterId: 0
+  cipher: auto
   name: 35|🔒 VM-TCP-NONE 🇩🇪 DE-147.45.178...
   network: tcp
   port: 5008
@@ -756,11 +758,15 @@ proxies:
   uuid: 9ef6a6ce-5654-4751-a45a-80546bc346ea
 - alterId: 0
   cipher: auto
-  name: 35|🔒 VM-HTTPUPGRADE-NA 🏴‍☠️ NA-10...
-  network: httpupgrade
-  port: '2095'
-  server: 104.19.150.10
-  servername: ''
-  tls: false
+  name: 35|🔒 VM-WS-TLS 🇩🇪 DE-57.129.25.22...
+  network: ws
+  port: 443
+  server: 57.129.25.22
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
   type: vmess
-  uuid: 94f332b0-c5d3-4531-a1d6-6e6358cc6c72
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: o.metuji.com
+    path: /linkvws
