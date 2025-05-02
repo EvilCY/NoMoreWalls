@@ -23,19 +23,6 @@ proxies:
   sni: 70.34.207.153
   tls: false
   type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 30|🔒 VL-TCP-RLT 🇸🇪 SE-94.242.58.1...
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
-    short-id: 7755e972daf8eec8
-  server: 94.242.58.133
-  servername: video.intfreed.ru
-  tls: false
-  type: vless
-  uuid: b1c801ec-1c5e-4d12-8b53-8da11c64a21b
 - client-fingerprint: firefox
   name: 30|🔒 VL-GRPC-RLT 🇸🇪 SE-70.34.200....
   network: grpc
@@ -48,17 +35,6 @@ proxies:
   tls: false
   type: vless
   uuid: 77e064b2-ff24-4794-9aa0-910bd831c6f1
-- client-fingerprint: chrome
-  name: 30|🔒 VL-XHTTP-RLT 🇸🇪 SE-70.34.223...
-  network: xhttp
-  port: 2023
-  reality-opts:
-    public-key: gDBtmJC-zpvrr8qB_IHk3S9jl7U2yW2bVyI1cMDmbGk
-  server: 70.34.223.240
-  servername: refersion.com
-  tls: false
-  type: vless
-  uuid: fd99e44d-a046-4477-b48b-8f15bc0f217a
 - client-fingerprint: chrome
   name: 30|🔒 VL-TCP-RLT 🇸🇪 SE-81.177.215....
   network: tcp
@@ -82,15 +58,30 @@ proxies:
   tls: false
   type: vless
   uuid: d239a4fb-83fd-46b3-bda1-c0b405bd7360
-- alpn:
-  - http/1.1
-  name: 32|🔒 TR-TCP-TLS 🇸🇪 SE-13.60.151.1...
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 30|🔒 VL-TCP-RLT 🇸🇪 SE-94.242.58.1...
   network: tcp
-  password: telegram-id-vlessconfig
-  port: 22222
-  server: 13.60.151.163
-  sni: trojan.burgerip.co.uk
-  type: trojan
+  port: 443
+  reality-opts:
+    public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
+    short-id: 7755e972daf8eec8
+  server: 94.242.58.133
+  servername: video.intfreed.ru
+  tls: false
+  type: vless
+  uuid: b1c801ec-1c5e-4d12-8b53-8da11c64a21b
+- client-fingerprint: chrome
+  name: 30|🔒 VL-XHTTP-RLT 🇸🇪 SE-70.34.223...
+  network: xhttp
+  port: 2023
+  reality-opts:
+    public-key: gDBtmJC-zpvrr8qB_IHk3S9jl7U2yW2bVyI1cMDmbGk
+  server: 70.34.223.240
+  servername: refersion.com
+  tls: false
+  type: vless
+  uuid: fd99e44d-a046-4477-b48b-8f15bc0f217a
 - alpn:
   - http/1.1
   name: 32|🔒 TR-TCP-TLS 🇸🇪 SE-56.228.53.2...
@@ -98,6 +89,26 @@ proxies:
   password: telegram-id-vlessconfig
   port: 22222
   server: 56.228.53.24
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alterId: 0
+  name: 32,35|未知44
+  network: tcp
+  password: Bw5Mz7QkVp
+  port: 443
+  server: 70.34.206.32
+  skip-cert-verify: true
+  sni: z-v2-077787.kailib.com
+  tls: true
+  type: trojan
+  udp: true
+- alpn:
+  - http/1.1
+  name: 32|🔒 TR-TCP-TLS 🇸🇪 SE-13.60.151.1...
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.60.151.163
   sni: trojan.burgerip.co.uk
   type: trojan
 - name: 32|🔒 TR-WS-NONE 🇸🇪 SE-150.241.78....
@@ -110,17 +121,6 @@ proxies:
     headers:
       Host: vkvd127.mycdn.me
     path: '%2F'
-- alterId: 0
-  name: 32,35|未知44
-  network: tcp
-  password: Bw5Mz7QkVp
-  port: 443
-  server: 70.34.206.32
-  skip-cert-verify: true
-  sni: z-v2-077787.kailib.com
-  tls: true
-  type: trojan
-  udp: true
 - name: 32|🔒 TR-WS-TLS 🇸🇪 SE-185.146.173....
   network: ws
   password: auto
