@@ -27,31 +27,6 @@ proxies:
   tls: false
   type: hysteria2
 - client-fingerprint: firefox
-  name: 30|🔒 VL-GRPC-RLT 🇸🇪 SE-70.34.200....
-  network: grpc
-  port: 2096
-  reality-opts:
-    public-key: woE_DAeAkSjFhqwiaecawAOMwZUmAvaFpTbJZHvUJQk
-    short-id: 765d8c54c01a53f7
-  server: 70.34.200.33
-  servername: SoURcForgE.net
-  tls: false
-  type: vless
-  uuid: 77e064b2-ff24-4794-9aa0-910bd831c6f1
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 30|🔒 VL-TCP-RLT 🇸🇪 SE-94.242.58.1...
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
-    short-id: 7755e972daf8eec8
-  server: 94.242.58.133
-  servername: video.intfreed.ru
-  tls: false
-  type: vless
-  uuid: b1c801ec-1c5e-4d12-8b53-8da11c64a21b
-- client-fingerprint: firefox
   name: 30|🔒 VL-GRPC-RLT 🇸🇪 SE-91.186.218...
   network: grpc
   port: 2083
@@ -74,6 +49,18 @@ proxies:
   tls: false
   type: vless
   uuid: fd99e44d-a046-4477-b48b-8f15bc0f217a
+- client-fingerprint: firefox
+  name: 30|🔒 VL-GRPC-RLT 🇸🇪 SE-70.34.200....
+  network: grpc
+  port: 2096
+  reality-opts:
+    public-key: woE_DAeAkSjFhqwiaecawAOMwZUmAvaFpTbJZHvUJQk
+    short-id: 765d8c54c01a53f7
+  server: 70.34.200.33
+  servername: SoURcForgE.net
+  tls: false
+  type: vless
+  uuid: 77e064b2-ff24-4794-9aa0-910bd831c6f1
 - client-fingerprint: chrome
   name: 30|🔒 VL-TCP-RLT 🇸🇪 SE-81.177.215....
   network: tcp
@@ -85,6 +72,19 @@ proxies:
   tls: false
   type: vless
   uuid: f0ffda4f-3f92-4bc8-b481-7286d2901a69
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 30|🔒 VL-TCP-RLT 🇸🇪 SE-94.242.58.1...
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
+    short-id: 7755e972daf8eec8
+  server: 94.242.58.133
+  servername: video.intfreed.ru
+  tls: false
+  type: vless
+  uuid: b1c801ec-1c5e-4d12-8b53-8da11c64a21b
 - name: 32|🔒 TR-WS-NONE 🇸🇪 SE-150.241.78....
   network: ws
   password: vpn
@@ -95,15 +95,6 @@ proxies:
     headers:
       Host: vkvd127.mycdn.me
     path: '%2F'
-- alpn:
-  - http/1.1
-  name: 32|🔒 TR-TCP-TLS 🇸🇪 SE-56.228.53.2...
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 56.228.53.24
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - alpn:
   - http/1.1
   name: 32|🔒 TR-TCP-TLS 🇸🇪 SE-13.60.151.1...
@@ -124,6 +115,15 @@ proxies:
     headers:
       Host: esetsecuritylicense.bwnsmv.workers.dev
     path: '%2F@v2rayngzendegimamad%2F%3Fed%3D2560'
+- alpn:
+  - http/1.1
+  name: 32|🔒 TR-TCP-TLS 🇸🇪 SE-56.228.53.2...
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 56.228.53.24
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - name: 32|🔒 TR-TCP-TLS 🇸🇪 SE-70.34.206.3...
   network: tcp
   password: Bw5Mz7QkVp
@@ -141,3 +141,17 @@ proxies:
   tls: false
   type: vmess
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- alterId: 0
+  cipher: auto
+  name: 34|🔒 VM-WS-NA 🇸🇪 SE-185.146.173.9...
+  network: ws
+  port: '2052'
+  server: 185.146.173.91
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6e88465e-a2ac-57d3-bbaf-f72e4439bd75
+  ws-opts:
+    headers:
+      Host: De1.vmess.site.
+    path: /vmess
