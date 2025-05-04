@@ -1,9 +1,9 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇨🇦加拿大 01 | 1x CA
-  password: 0d8c4f85-4821-4c8b-863a-bfcdb9abb0a4
-  port: 31441
-  server: free.2apzhfa.xyz
+  name: 0|🇨🇦 加拿大 01 | 1x CA
+  password: 3789532f-08d3-4b05-b885-8479db56455f
+  port: 36441
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - alpn:
@@ -439,17 +439,17 @@ proxies:
       Host: 100-47-154-9.s1.cn-db.top
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 21|1|🇦加大 01 | 1x CA
-  password: d52ba248-6c0b-47bd-b33b-d680dd53360c
-  port: 31441
-  server: free.2apzhfa.xyz
+  name: 21|0|🇦 加大 01 | 1x CA
+  password: 501f8ead-b8a1-483f-806e-ec6abeecf94e
+  port: 36441
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 21|14|🇦 加拿大 01 | 1x CA
-  password: 4081c6e1-a396-46a3-a50b-242710fd784b
-  port: 36441
-  server: free.2weradf.xyz
+  name: 21|1|🇦加拿大 01 | 1x CA
+  password: 13583fc3-95d4-4525-904b-ab9fb4863cda
+  port: 31441
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -481,25 +481,29 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - cipher: chacha20-ietf-poly1305
   name: 25|0|🇦加大 01 | 1x CA
-  password: 605ffac9-ddc6-49e6-a23b-d15fd35be042
+  password: d562af03-0e89-4576-b205-9154495d0127
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 25|1|🇦 加拿大 01 | 1x CA
-  password: 2fd5d3f5-3ff5-42e7-a945-33f0e738efa6
+  name: 25|15|🇦 加大 01 | 1x CA
+  password: 6f0b8209-30a5-4384-8351-6d708696a85e
   port: 36441
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 32|🔒 TR-TCP-TLS 🇨🇦 CA-23.227.60.8...
+- alterId: 0
+  name: 32,35|未知14
   network: tcp
   password: bpb-trojan
   port: 443
   server: 23.227.60.8
+  skip-cert-verify: true
   sni: 403b3611-99bc-43b7-88D7-26Ed5D0825A9-3.paGeS.dev
+  tls: true
   type: trojan
+  udp: true
 - name: 32|🔒 TR-TCP-TLS 🇨🇦 CA-104.234.239...
   network: tcp
   password: Aimer
@@ -507,13 +511,33 @@ proxies:
   server: 104.234.239.235
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
+- name: 32|🔒 TR-TCP-NA 🇨🇦 CA-104.247.81.5...
+  network: tcp
+  password: dongtaiwang.com
+  port: 443
+  server: 104.247.81.50
+  skip-cert-verify: false
+  sni: trojan2.free4444.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: trojan2.free4444.xyz
+- alterId: 0
+  cipher: auto
+  name: 34|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.11...
+  network: tcp
+  port: '27699'
+  server: 91.194.11.118
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c23b127b-af87-43bb-aa1e-ce42374a2b53
 - alterId: 0
   cipher: auto
   name: 34|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.16...
   network: tcp
   port: '58891'
   server: 91.194.11.162
-  servername: ''
   tls: false
   type: vmess
   uuid: 4439cf3e-d072-4a5b-88b2-2a2ec6d71340
@@ -527,20 +551,10 @@ proxies:
   tls: false
   type: vmess
   uuid: 9b2335af-f24c-4810-9c34-95568ebd579d
-- alterId: 0
-  cipher: auto
-  name: 34|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.11...
-  network: tcp
-  port: '27699'
-  server: 91.194.11.118
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c23b127b-af87-43bb-aa1e-ce42374a2b53
 - cipher: chacha20-ietf-poly1305
-  name: 39|🇨🇦 加拿大 01 | 1x CA
-  password: 6f0b8209-30a5-4384-8351-6d708696a85e
-  port: 36441
-  server: free.2weradf.xyz
+  name: 39|🇨🇦加拿大 01 | 1x CA
+  password: 34306665-9e3e-4989-b960-33f60d0ddb6d
+  port: 31441
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
