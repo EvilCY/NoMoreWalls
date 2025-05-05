@@ -1,14 +1,14 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇨🇦 加拿大 01 | 1x CA
-  password: de4a9fc8-c4b5-46d7-876d-14e4837cd635
+  password: c9899ec0-599d-41ac-bbd7-5a6abb2e906e
   port: 36441
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇨🇦加拿大 01 | 1x CA
-  password: 5dbd8b59-21dd-4d06-bb8e-70aa63fbe53e
+  password: 41629e9c-c101-432f-a855-d91192ed7f62
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
@@ -582,17 +582,17 @@ proxies:
       Host: us4Bb5oSgJA.fzbqfrse.xyz
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇦 0|🇨🇦 加拿大 01 | 1x CA
-  password: b03adcae-c60c-4898-90d8-2cd9dd1cf159
-  port: 36441
-  server: free.2weradf.xyz
+  name: 20,26|0|🇦加大 01 | 1x CA
+  password: eb2b4c16-657a-45cb-9c24-a6a49dd3b98d
+  port: 31441
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇨🇦 1|🇨🇦加拿大 01 | 1x CA
-  password: 543ad82f-47eb-4c9e-aa25-af680b03b073
-  port: 31441
-  server: free.2apzhfa.xyz
+  name: 20,26|1|🇦 加拿大 01 | 1x CA
+  password: de4a9fc8-c4b5-46d7-876d-14e4837cd635
+  port: 36441
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - alterId: 0
@@ -641,27 +641,24 @@ proxies:
       Host: c01.ylkszy.eu.org
     path: /?ed=2560
 - cipher: chacha20-ietf-poly1305
-  name: 22|0|🇦加大 01 | 1x CA
-  password: 54968ebd-7dd5-419e-a22f-bc7ea23964e4
+  name: 22|0|🇦 加大 01 | 1x CA
+  password: d1b00f03-f12f-450c-ae89-b6172f35ae84
+  port: 36441
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 22|1|🇦加拿大 01 | 1x CA
+  password: 684df891-5cec-4280-83f8-ab150be5802b
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 22|14|🇦 加大 01 | 1x CA
-  password: c8459b97-3b51-47b9-813f-c1ec79bc3820
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 23,36|未知72 322.7KB/s
+  name: 23|🇨🇦CA-142.4.216.225-1090
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
-  skip-cert-verify: true
-  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 23|🇨🇦CA-142.4.216.225-1078
@@ -684,20 +681,6 @@ proxies:
     headers:
       host: ''
     path: /IOebhLMhl1CTbFHbL95myfRX2
-- cipher: chacha20-ietf-poly1305
-  name: '26|0|🇦加大 01 | 1x CA #1'
-  password: 624d5b5e-9213-4ee2-821f-0ed0b745e0fb
-  port: 31441
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 26|1|🇦 加拿大 01 | 1x CA
-  password: 484a270d-db71-4b88-a06e-92db82cc1b54
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - name: 30|🔒 HYSTERIA-UDP 🇨🇦 CA-192.18.14...
   password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
   port: 45979
@@ -734,17 +717,6 @@ proxies:
   tls: false
   type: vless
   uuid: e26a79fd-35d0-4c25-8f6b-8bcd8726348c
-- name: 33|🔒 TR-TCP-NA 🇨🇦 CA-104.247.81.5...
-  network: tcp
-  password: dongtaiwang.com
-  port: 443
-  server: 104.247.81.50
-  skip-cert-verify: false
-  sni: trojan2.free4444.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: trojan2.free4444.xyz
 - name: 33|🔒 TR-TCP-TLS 🇨🇦 CA-104.234.239...
   network: tcp
   password: Aimer
@@ -752,13 +724,17 @@ proxies:
   server: 104.234.239.235
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇨🇦 CA-23.227.60.8...
+- alterId: 0
+  name: 33,36|未知78
   network: tcp
   password: bpb-trojan
   port: 443
   server: 23.227.60.8
+  skip-cert-verify: true
   sni: 403b3611-99bc-43b7-88D7-26Ed5D0825A9-3.paGeS.dev
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 35|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.17...
@@ -770,16 +746,6 @@ proxies:
   uuid: 9b2335af-f24c-4810-9c34-95568ebd579d
 - alterId: 0
   cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.11...
-  network: tcp
-  port: '27699'
-  server: 91.194.11.118
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c23b127b-af87-43bb-aa1e-ce42374a2b53
-- alterId: 0
-  cipher: auto
   name: 35|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.16...
   network: tcp
   port: '58891'
@@ -788,3 +754,14 @@ proxies:
   tls: false
   type: vmess
   uuid: 4439cf3e-d072-4a5b-88b2-2a2ec6d71340
+- alterId: 0
+  cipher: auto
+  name: 35,36|未知56 6.3MB/s
+  network: tcp
+  port: 27699
+  server: 91.194.11.118
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: c23b127b-af87-43bb-aa1e-ce42374a2b53

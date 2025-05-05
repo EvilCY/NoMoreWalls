@@ -35,18 +35,6 @@ proxies:
   tls: false
   type: vless
   uuid: 77e064b2-ff24-4794-9aa0-910bd831c6f1
-- client-fingerprint: firefox
-  name: 31|🔒 VL-GRPC-RLT 🇸🇪 SE-91.186.218...
-  network: grpc
-  port: 2083
-  reality-opts:
-    public-key: b14Nibi1pMPwFPqgiyZRS3a6-Y-Q8EsE5urKnA-RkAc
-    short-id: adf8a1f5689177a2
-  server: 91.186.218.167
-  servername: www.speedtest.net
-  tls: false
-  type: vless
-  uuid: d239a4fb-83fd-46b3-bda1-c0b405bd7360
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 31|🔒 VL-TCP-RLT 🇸🇪 SE-94.242.58.1...
@@ -71,13 +59,34 @@ proxies:
   tls: false
   type: vless
   uuid: fd99e44d-a046-4477-b48b-8f15bc0f217a
+- client-fingerprint: firefox
+  name: 31|🔒 VL-GRPC-RLT 🇸🇪 SE-91.186.218...
+  network: grpc
+  port: 2083
+  reality-opts:
+    public-key: b14Nibi1pMPwFPqgiyZRS3a6-Y-Q8EsE5urKnA-RkAc
+    short-id: adf8a1f5689177a2
+  server: 91.186.218.167
+  servername: www.speedtest.net
+  tls: false
+  type: vless
+  uuid: d239a4fb-83fd-46b3-bda1-c0b405bd7360
 - alpn:
   - http/1.1
   name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-56.228.53.2...
   network: tcp
-  password: telegram-id-vlessconfig
+  password: telegram-id-privatevpns
   port: 22222
   server: 56.228.53.24
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-13.60.151.1...
+  network: tcp
+  password: telegram-id-vlessconfig
+  port: 22222
+  server: 13.60.151.163
   sni: trojan.burgerip.co.uk
   type: trojan
 - name: 33|🔒 TR-WS-NONE 🇸🇪 SE-150.241.78....
@@ -90,15 +99,6 @@ proxies:
     headers:
       Host: vkvd127.mycdn.me
     path: '%2F'
-- alpn:
-  - http/1.1
-  name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-13.60.151.1...
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.60.151.163
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - name: 33|🔒 TR-WS-TLS 🇸🇪 SE-185.146.173....
   network: ws
   password: auto
