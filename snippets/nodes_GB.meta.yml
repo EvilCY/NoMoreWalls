@@ -1,14 +1,21 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港 01 | 1x HK
-  password: 01c25b7c-15e4-44c8-8daa-9fe4cf65f73d
-  port: 31141
-  server: free.2apzhfa.xyz
+  name: 0|🇭🇰 香港 01 | 1x HK
+  password: 86bb8836-501a-41a1-8db1-228a42ac8e9d
+  port: 36141
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧英国家宽 01 | 1x UK
-  password: 01c25b7c-15e4-44c8-8daa-9fe4cf65f73d
+  name: 0|🇬🇧 英国住宅IP 01 | 1x UK
+  password: 86bb8836-501a-41a1-8db1-228a42ac8e9d
+  port: 36271
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇬🇧英国家宽 01 | 1x UK
+  password: dba22b2a-53b1-47fe-9fa6-90d3370d1703
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
@@ -16,7 +23,7 @@ proxies:
 - client-fingerprint: chrome
   flow: ''
   mode: ''
-  name: 1|🇬🇧1 |  3.4MB/s
+  name: 2|🇬🇧1 |  3.4MB/s
   network: tcp
   port: 443
   reality-opts:
@@ -28,35 +35,6 @@ proxies:
   type: vless
   udp: false
   uuid: 4c41dd88-6632-4c7a-8dbb-e276bf78b357
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇭🇰 香港 01 | 1x HK
-  password: cd927b27-4235-463e-9ca0-2a9a0778da96
-  port: 36141
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇬🇧 英国住宅IP 01 | 1x UK
-  password: cd927b27-4235-463e-9ca0-2a9a0778da96
-  port: 36271
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 12|02e432c8cd7e4fc1abc6f06e078659...
-  network: ws
-  port: 20000
-  server: 45.76.143.208
-  servername: miku.mikuru.ip-ddns.com
-  tls: true
-  type: vless
-  udp: false
-  uuid: 5543ae5c-c24f-405a-9266-597cbc43c818
-  ws-opts:
-    headers:
-      host: miku.mikuru.ip-ddns.com
-    path: /?ed
 - alterId: 2
   cipher: auto
   name: 14|英国 - Slough - DigitalOcean, LL...
@@ -259,17 +237,17 @@ proxies:
       Host: us-new03.daluquan.top
     path: /itdog?ed=2560
 - cipher: chacha20-ietf-poly1305
-  name: 22|0| 国住宅IP 01 | 1x UK
-  password: 74666db1-032f-42f1-81f9-730f50a3a452
-  port: 36271
-  server: free.2weradf.xyz
+  name: 22|0|国家宽 01 | 1x UK
+  password: 2620308a-2c98-40e8-b935-5cc1ee6eec80
+  port: 31271
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 22|1|🇧英国家宽 01 | 1x UK
-  password: af4a3c93-9eea-4a81-836f-50086c083d90
-  port: 31271
-  server: free.2apzhfa.xyz
+  name: 22|1|🇧 英国住宅IP 01 | 1x UK
+  password: b169f0a4-a8ca-46e3-9423-2543a27488c8
+  port: 36271
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -369,15 +347,15 @@ proxies:
   server: mx2.drawnrisha.one
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 26|0|国家宽 01 | 1x UK
-  password: 5bb96fcb-a4c2-416d-98e2-daf0092c5eaf
+  name: '26|0|国家宽 01 | 1x UK #1'
+  password: 01c25b7c-15e4-44c8-8daa-9fe4cf65f73d
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 26|3|🇧 英国住宅IP 01 | 1x UK
-  password: f1194353-3313-451e-870d-4d1b7a8b0fbd
+  password: cd927b27-4235-463e-9ca0-2a9a0778da96
   port: 36271
   server: free.2weradf.xyz
   type: ss
@@ -404,90 +382,6 @@ proxies:
   tls: false
   type: hysteria2
 - client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: '@@jet_config-@jet_config-@jet_config'
-  name: 31|🔒 VL-GRPC-RLT 🇬🇧 GB-74.220.23....
-  network: grpc
-  port: 2030
-  reality-opts:
-    public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
-    short-id: 7fe29733
-  server: 74.220.23.227
-  servername: refersion.com
-  tls: false
-  type: vless
-  uuid: 77f680d1-1881-4b16-9eac-b8882c05fe62
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: 2086vless
-  name: 31|🔒 VL-GRPC-RLT 🇬🇧 GB-165.22.116...
-  network: grpc
-  port: 2060
-  reality-opts:
-    public-key: jW_vraWBLfMcIkPp89pEPSbFQn2VM4qtPO4FAoC2chE
-    short-id: 629cc26960e47e39
-  server: 165.22.116.82
-  servername: refersion.com
-  tls: false
-  type: vless
-  uuid: 701a7842-79a2-4a48-882b-c563daad99c1
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-64.227.35.2...
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: tnDvChtpeNANGe52_QG3Jx6esgMTil1tcg7jlYPmoRY
-  server: 64.227.35.202
-  servername: refersion.com
-  tls: false
-  type: vless
-  uuid: f0f8ae10-e52f-4454-f5ac-55b4e25eeb73
-- name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-51.89.119.3...
-  port: 11045
-  server: 51.89.119.31
-  servername: o.soskom.ir
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  uuid: acd87ebe-a74e-4dfc-84a6-bacb9fe893a6
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-178.62.114....
-  network: tcp
-  port: 8080
-  reality-opts:
-    public-key: V-RVJNo4JhkGB5KdQWth_rfHzhrltumWNJpxRo69Ikc
-    short-id: 54cdac677251c555
-  server: 178.62.114.251
-  servername: blog.stackoverflow.com
-  tls: false
-  type: vless
-  uuid: 80c8604a-1e2e-4ee6-81b1-1cc10feb5483
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-51.89.71.17...
-  network: tcp
-  port: 2053
-  reality-opts:
-    public-key: FfxMkKZQbG8Cdua7TSwH2NCOr-7JnJHSqfVq7dEHrCQ
-    short-id: a153ba05a5faf65a
-  server: 51.89.71.174
-  servername: sourceforge.net
-  tls: false
-  type: vless
-  uuid: 04314541-ba99-49d9-9547-868e16961a1c
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-130.162.163...
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: b5WuWodd3tB9cHWUJuoEFNvgYVOcLuDyjaxHy70umU4
-    short-id: '50211843'
-  server: 130.162.163.216
-  servername: buylite.tv.apple.com
-  tls: false
-  type: vless
-  uuid: 82a224ad-4169-45e4-8bb4-3452b50139db
-- client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-64.227.45.2...
   network: tcp
@@ -502,46 +396,33 @@ proxies:
   uuid: 422899ac-7bfb-441a-89c2-5b9eee312790
   ws-opts:
     headers:
-      Host: /JOKERRVPNJoin_Bade_Channel@JOKERRVPN
-- client-fingerprint: chrome
-  name: 31|🔒 VL-GRPC-RLT 🇬🇧 GB-51.89.119....
-  network: grpc
-  port: 26528
-  reality-opts:
-    public-key: 2FrbyUtv6Ajh0Ufmst5Tw0ch_aeF3tXw0kDcfOrvGTk
-    short-id: 8f9d4d9a
-  server: 51.89.119.31
-  servername: yahoo.com
-  tls: false
-  type: vless
-  uuid: d4978c89-0958-4185-b08a-15d85c1f6666
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-140.238.89....
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: ZMtlGCYlW4xf2_g1ruTqLEw1H57ggWXrb6aAbh029lo
-    short-id: 9a89fdfc
-  server: 140.238.89.224
-  servername: www.yahoo.com
-  tls: false
-  type: vless
-  uuid: d2a11ee4-7ede-4e7f-a001-a23e9bb44ff2
+      Host: '%2FJOKERRVPNJoin_Bade_Channel@JOKERRVPN'
 - client-fingerprint: chrome
   grpc-opts:
-    grpc-service-name: telegram-silvernet
-  name: 31|🔒 VL-GRPC-RLT 🇬🇧 GB-82.29.190....
+    grpc-service-name: '@@jet_config-@jet_config-@jet_config'
+  name: 31|🔒 VL-GRPC-RLT 🇬🇧 GB-74.220.23....
   network: grpc
-  port: 20403
+  port: 2030
   reality-opts:
-    public-key: w9yvnoCbgP30B_rA05MkW7M358sQGmqC8HamqmM9Tlc
-    short-id: d3a3a2eb963b53a3
-  server: 82.29.190.168
-  servername: www.sourceforge.net
+    public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
+    short-id: 7fe29733
+  server: 74.220.23.227
+  servername: refersion.com
   tls: false
   type: vless
-  uuid: 55710871-3055-45ab-984a-db78f0fb29fb
+  uuid: 77f680d1-1881-4b16-9eac-b8882c05fe62
+- client-fingerprint: chrome
+  name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-178.62.114....
+  network: tcp
+  port: 8080
+  reality-opts:
+    public-key: V-RVJNo4JhkGB5KdQWth_rfHzhrltumWNJpxRo69Ikc
+    short-id: 54cdac677251c555
+  server: 178.62.114.251
+  servername: blog.stackoverflow.com
+  tls: false
+  type: vless
+  uuid: 80c8604a-1e2e-4ee6-81b1-1cc10feb5483
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: mgrpcmn
@@ -557,6 +438,81 @@ proxies:
   type: vless
   uuid: 4a58fbe1-9d81-431f-9ea6-a22515a5af86
 - client-fingerprint: chrome
+  name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-64.227.35.2...
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: tnDvChtpeNANGe52_QG3Jx6esgMTil1tcg7jlYPmoRY
+  server: 64.227.35.202
+  servername: refersion.com
+  tls: false
+  type: vless
+  uuid: f0f8ae10-e52f-4454-f5ac-55b4e25eeb73
+- client-fingerprint: chrome
+  name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-51.89.71.17...
+  network: tcp
+  port: 2053
+  reality-opts:
+    public-key: FfxMkKZQbG8Cdua7TSwH2NCOr-7JnJHSqfVq7dEHrCQ
+    short-id: a153ba05a5faf65a
+  server: 51.89.71.174
+  servername: sourceforge.net
+  tls: false
+  type: vless
+  uuid: 04314541-ba99-49d9-9547-868e16961a1c
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-140.238.89....
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: ZMtlGCYlW4xf2_g1ruTqLEw1H57ggWXrb6aAbh029lo
+    short-id: 9a89fdfc
+  server: 140.238.89.224
+  servername: www.yahoo.com
+  tls: false
+  type: vless
+  uuid: d2a11ee4-7ede-4e7f-a001-a23e9bb44ff2
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: t.me/entryNET
+  name: 31|🔒 VL-GRPC-RLT 🇬🇧 GB-51.89.119....
+  network: grpc
+  port: 11045
+  reality-opts:
+    public-key: p-FNeH1T5de5nmwI7iT16MQKWspQ0b6C9GGSRwGtlnM
+    short-id: 20db1be5e1ab118a
+  server: 51.89.119.31
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: acd87ebe-a74e-4dfc-84a6-bacb9fe893a6
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-130.162.163...
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: b5WuWodd3tB9cHWUJuoEFNvgYVOcLuDyjaxHy70umU4
+    short-id: '50211843'
+  server: 130.162.163.216
+  servername: buylite.tv.apple.com
+  tls: false
+  type: vless
+  uuid: 82a224ad-4169-45e4-8bb4-3452b50139db
+- client-fingerprint: chrome
+  name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-138.68.182....
+  network: tcp
+  port: 1002
+  reality-opts:
+    public-key: w9x-dAl7ESzK_pnkH4waEZmKcazaXPFxWi3AUqSHNko
+    short-id: becf5919b526c26e
+  server: 138.68.182.122
+  servername: refersion.com
+  tls: false
+  type: vless
+  uuid: 19306fe8-10be-49b9-bf8e-034ed0978250
+- client-fingerprint: chrome
   name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-139.59.161....
   network: tcp
   port: 5291
@@ -567,6 +523,18 @@ proxies:
   tls: false
   type: vless
   uuid: fd99e44d-a046-4477-b48b-8f15bc0f217a
+- client-fingerprint: chrome
+  name: '31|🔒 VL-GRPC-RLT 🇬🇧 GB-51.89.119.... #1'
+  network: grpc
+  port: 26528
+  reality-opts:
+    public-key: 2FrbyUtv6Ajh0Ufmst5Tw0ch_aeF3tXw0kDcfOrvGTk
+    short-id: 8f9d4d9a
+  server: 51.89.119.31
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: d4978c89-0958-4185-b08a-15d85c1f6666
 - client-fingerprint: chrome
   name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-138.68.155....
   network: tcp
@@ -580,33 +548,19 @@ proxies:
   type: vless
   uuid: 9af9dc5d-5849-4ca1-bcc0-a2a53091cb6c
 - client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-138.68.182....
-  network: tcp
-  port: 1002
+  grpc-opts:
+    grpc-service-name: 2086vless
+  name: 31|🔒 VL-GRPC-RLT 🇬🇧 GB-165.22.116...
+  network: grpc
+  port: 2060
   reality-opts:
-    public-key: w9x-dAl7ESzK_pnkH4waEZmKcazaXPFxWi3AUqSHNko
-    short-id: becf5919b526c26e
-  server: 138.68.182.122
+    public-key: jW_vraWBLfMcIkPp89pEPSbFQn2VM4qtPO4FAoC2chE
+    short-id: 629cc26960e47e39
+  server: 165.22.116.82
   servername: refersion.com
   tls: false
   type: vless
-  uuid: 19306fe8-10be-49b9-bf8e-034ed0978250
-- alpn:
-  - http/1.1
-  name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-35.178.114....
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.178.114.243
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-51.38.65.15...
-  network: tcp
-  password: d8e9f5e0-1233-11f0-85ba-1239d0255272
-  port: 443
-  server: 51.38.65.155
-  sni: uk1.test3.net
-  type: trojan
+  uuid: 701a7842-79a2-4a48-882b-c563daad99c1
 - name: 33|🔒 TR-TCP-NA 🇬🇧 GB-109.107.159....
   password: '!!str 74260667533381300'
   port: 443
@@ -614,24 +568,11 @@ proxies:
   skip-cert-verify: true
   sni: patient-emu.shiner427.skin
   type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-161.35.34.4...
-  network: tcp
-  password: 2cba4104747d49d18319e5ade1b93ab5
-  port: 443
-  server: 161.35.34.48
-  sni: yourjobnavigator.online
-  type: trojan
 - name: 33|🔒 TR-TCP-NA 🇬🇧 GB-18.135.188.8...
   password: juzi
   port: 443
   server: 18.135.188.86
   sni: juzi8186-sr1.pages.dev
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-51.38.71.17...
-  password: b640d791-ff83-4300-b509-c2a02f97f167
-  port: 80
-  server: 51.38.71.175
-  sni: uk1.trojanvh.xyz
   type: trojan
 - name: 33|🔒 TR-TCP-NA 🇬🇧 GB-91.199.32.15...
   password: juzi
@@ -640,22 +581,52 @@ proxies:
   skip-cert-verify: false
   sni: juzi8186-sr1.pages.dev
   type: trojan
-- name: 33|🔒 TR-TCP-NA 🇬🇧 GB-185.193.29.1...
-  password: NISHIKUITAN111
-  port: 443
-  server: 185.193.29.193
-  type: trojan
 - name: 33|🔒 TR-TCP-NA 🇬🇧 GB-5.144.181.14...
   password: Aimer
   port: 2053
   server: 5.144.181.144
   sni: epcca.ambercc.filegear-sg.me
   type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-161.35.34.4...
+  network: tcp
+  password: 2cba4104747d49d18319e5ade1b93ab5
+  port: 443
+  server: 161.35.34.48
+  sni: yourjobnavigator.online
+  type: trojan
 - name: 33|🔒 TR-TCP-NA 🇬🇧 GB-198.244.246....
   password: juzi
   port: 8443
   server: 198.244.246.67
   sni: juzi8186-sr1.pages.dev
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-51.38.65.15...
+  network: tcp
+  password: d8e9f5e0-1233-11f0-85ba-1239d0255272
+  port: 443
+  server: 51.38.65.155
+  skip-cert-verify: true
+  sni: uk1.test3.net
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇬🇧 GB-185.193.29.1...
+  password: NISHIKUITAN111
+  port: 443
+  server: 185.193.29.193
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-51.38.71.17...
+  password: b640d791-ff83-4300-b509-c2a02f97f167
+  port: 80
+  server: 51.38.71.175
+  sni: uk1.trojanvh.xyz
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-35.178.114....
+  network: tcp
+  password: telegram-id-vlessconfig
+  port: 22222
+  server: 35.178.114.243
+  sni: trojan.burgerip.co.uk
   type: trojan
 - name: 33|🔒 TR-TCP-NA 🇬🇧 GB-5.144.181.83...
   password: juzi
