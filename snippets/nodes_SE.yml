@@ -15,20 +15,30 @@ proxies:
   type: ss
 - alpn:
   - http/1.1
-  name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-13.60.151.1...
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 13.60.151.163
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
   name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-56.228.53.2...
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 56.228.53.24
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 33|🔒 TR-WS-NONE 🇸🇪 SE-150.241.78....
+  network: ws
+  password: vpn
+  port: 2025
+  server: 150.241.78.252
+  type: trojan
+  ws-opts:
+    headers:
+      Host: vkvd127.mycdn.me
+    path: '%2F'
+- alpn:
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-13.60.151.1...
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 13.60.151.163
   sni: trojan.burgerip.co.uk
   type: trojan
 - name: 33|🔒 TR-WS-TLS 🇸🇪 SE-185.146.173....
@@ -42,16 +52,6 @@ proxies:
     headers:
       Host: esetsecuritylicense.bwnsmv.workers.dev
     path: '%2F@v2rayngzendegimamad%2F%3Fed%3D2560'
-- name: 33|🔒 TR-WS-NONE 🇸🇪 SE-150.241.78....
-  network: ws
-  password: vpn
-  port: 2025
-  server: 150.241.78.252
-  type: trojan
-  ws-opts:
-    headers:
-      Host: vkvd127.mycdn.me
-    path: '%2F'
 - alterId: 0
   cipher: auto
   name: 35|🔒 VM-WS-NA 🇸🇪 SE-185.146.173.9...
