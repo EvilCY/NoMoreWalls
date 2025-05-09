@@ -1,4 +1,14 @@
 proxies:
+- client-fingerprint: chrome
+  name: 1|🌀9-SE |  1.3MB/s|86%|Openai
+  password: cacb4d4fa26f4eed25e4d17a6370083c
+  port: 443
+  server: stockholm1.sqx001.com
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: dmpyoary@mayorlogistic.com
 - name: 19|🇸🇪SE-95.164.33.62-233_1@232
   password: 0b1371aa-649d-41dc-9126-338c87936500
   port: 443
@@ -23,6 +33,19 @@ proxies:
   sni: 70.34.207.153
   tls: false
   type: hysteria2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 31|🔒 VL-TCP-RLT 🇸🇪 SE-45.82.13.14...
+  network: tcp
+  port: 2082
+  reality-opts:
+    public-key: ANlgAsYC8HmKfJnc5SFvru822urkxG1PzW1Zw4Vbm0Q
+    short-id: 9bc0a55a5379c0ed
+  server: 45.82.13.142
+  servername: stackoverflow.com
+  tls: false
+  type: vless
+  uuid: 0870a931-b121-1278-f010-b140a958a300
 - client-fingerprint: firefox
   name: 31|🔒 VL-GRPC-RLT 🇸🇪 SE-91.186.218...
   network: grpc
@@ -46,6 +69,18 @@ proxies:
   tls: false
   type: vless
   uuid: fd99e44d-a046-4477-b48b-8f15bc0f217a
+- client-fingerprint: firefox
+  name: 31|🔒 VL-GRPC-RLT 🇸🇪 SE-70.34.200....
+  network: grpc
+  port: 2096
+  reality-opts:
+    public-key: woE_DAeAkSjFhqwiaecawAOMwZUmAvaFpTbJZHvUJQk
+    short-id: 765d8c54c01a53f7
+  server: 70.34.200.33
+  servername: SoURcForgE.net
+  tls: false
+  type: vless
+  uuid: 77e064b2-ff24-4794-9aa0-910bd831c6f1
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 31|🔒 VL-TCP-RLT 🇸🇪 SE-94.242.58.1...
@@ -59,31 +94,25 @@ proxies:
   tls: false
   type: vless
   uuid: b1c801ec-1c5e-4d12-8b53-8da11c64a21b
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇸🇪 SE-45.82.13.14...
+- alpn:
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-13.60.151.1...
   network: tcp
-  port: 2082
-  reality-opts:
-    public-key: ANlgAsYC8HmKfJnc5SFvru822urkxG1PzW1Zw4Vbm0Q
-    short-id: 9bc0a55a5379c0ed
-  server: 45.82.13.142
-  servername: stackoverflow.com
-  tls: false
-  type: vless
-  uuid: 0870a931-b121-1278-f010-b140a958a300
-- client-fingerprint: firefox
-  name: 31|🔒 VL-GRPC-RLT 🇸🇪 SE-70.34.200....
-  network: grpc
-  port: 2096
-  reality-opts:
-    public-key: woE_DAeAkSjFhqwiaecawAOMwZUmAvaFpTbJZHvUJQk
-    short-id: 765d8c54c01a53f7
-  server: 70.34.200.33
-  servername: SoURcForgE.net
-  tls: false
-  type: vless
-  uuid: 77e064b2-ff24-4794-9aa0-910bd831c6f1
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.60.151.163
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 33|🔒 TR-WS-NONE 🇸🇪 SE-150.241.78....
+  network: ws
+  password: vpn
+  port: 2025
+  server: 150.241.78.252
+  type: trojan
+  ws-opts:
+    headers:
+      Host: vkvd127.mycdn.me
+    path: /
 - name: 33|🔒 TR-WS-TLS 🇸🇪 SE-185.146.173....
   network: ws
   password: auto
@@ -97,11 +126,11 @@ proxies:
     path: '%2F@v2rayngzendegimamad%2F%3Fed%3D2560'
 - alpn:
   - http/1.1
-  name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-13.60.151.1...
+  name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-56.228.53.2...
   network: tcp
-  password: telegram-id-directvpn
+  password: telegram-id-vlessconfig
   port: 22222
-  server: 13.60.151.163
+  server: 56.228.53.24
   sni: trojan.burgerip.co.uk
   type: trojan
 - alterId: 0
@@ -115,25 +144,6 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alpn:
-  - http/1.1
-  name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-56.228.53.2...
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 56.228.53.24
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 33|🔒 TR-WS-NONE 🇸🇪 SE-150.241.78....
-  network: ws
-  password: vpn
-  port: 2025
-  server: 150.241.78.252
-  type: trojan
-  ws-opts:
-    headers:
-      Host: vkvd127.mycdn.me
-    path: /
 - name: 33|🔒 TR-WS-NONE 🇸🇪 SE-109.120.132...
   network: ws
   password: vpn
