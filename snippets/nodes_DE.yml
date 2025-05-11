@@ -1,15 +1,22 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇩🇪 德国 01 | 1x DE
-  password: 7073a02a-8cd0-418d-909b-d639b1f736a1
+  password: 9bc12592-5b68-4913-a85a-b2c0c33829a7
   port: 36471
   server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇩🇪德国 01 | 1x DE
+  password: a5350a24-c867-4655-a25d-567199d5a27e
+  port: 31471
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: '1,33|🔒 TR-TCP-TLS 🇩🇪 DE-3.76.154.15... #1'
+  name: '2,14,22,26,33|🔒 TR-TCP-TLS 🇩🇪 DE-3.76.154.15... #1'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -22,7 +29,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: randomized
-  name: 1|🇩🇪20 |  1.3MB/s|21%|Disney|Ope...
+  name: '2,22,26|2|🇪20 |  1.3MB/s|21%|Disney|Op... #1'
   network: ws
   password: T@_WvT8Ho@LW%w_,
   port: '2053'
@@ -36,28 +43,22 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko)
         Chrome/70.0.3538.67 Safari/537.36
     path: /trGPZDfetEwuO25SAs?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇩🇪德国 01 | 1x DE
-  password: 93656afe-c968-4c3f-b052-25af54a2b09d
-  port: 31471
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 3,35|🔒 VM-TCP-NA 🇨🇾 CY-45.12.138.82...
+  name: 3,35,36|未知39 10.4MB/s
   network: tcp
-  port: '54757'
+  port: 54757
   server: 45.12.138.82
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: cde9f074-c930-4aa3-a558-46bbc9d0a5a1
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 12|3a469a26c4964c1dbf956133886a97...
+  name: 12|55ee1d0b6a084842a2804b0f97399f...
   network: ws
   port: 443
   server: kapelleng.com
@@ -70,42 +71,6 @@ proxies:
     headers:
       host: kapelleng.com
     path: /linkvws
-- alpn:
-  - http/1.1
-  name: 14|2|🇩🇪4 |  4.3MB/s|34%|Openai
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.157.170.126
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 14|2|🇩🇪10 |  2.5MB/s|34%|Openai
-  password: telegram-id-directvpn
-  port: 22223
-  server: 18.185.39.157
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 14|2|🇩🇪6 |  3.6MB/s|34%|Youtube|O...
-  password: telegram-id-directvpn
-  port: 22223
-  server: 18.157.170.126
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 14|2|🇩🇪5 |  1.9MB/s|34%|Youtube|O...
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.185.39.157
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - name: 19|🇩🇪DE-52.58.179.46-180_1@180
   password: telegram-id-privatevpns
   port: 22222
@@ -124,56 +89,25 @@ proxies:
   type: vmess
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
 - cipher: chacha20-ietf-poly1305
-  name: 20|🇩🇪 0|🇩🇪德国 01 | 1x DE
-  password: c93236ba-acc4-4ca5-8ea4-c65c09137f41
-  port: 31471
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 20|🇩🇪 1|🇩🇪 德国 01 | 1x DE
-  password: 23103682-0658-497b-8671-3afcaff32c47
-  port: 36471
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 20|3|🇩🇪5 |  5.3MB/s|45%|Openai
-  network: ws
-  port: 443
-  server: cloudgetservice.mcloudservice.site
-  servername: MAxNEtViP-gEr-vp1.MaXnETcLOuDSErVice.com
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 8f922e2e-18f3-4bd9-a097-09c2d7c139be
-  ws-opts:
-    headers:
-      Host: MAxNEtViP-gEr-vp1.MaXnETcLOuDSErVice.com
-    path: /linkws
-- cipher: rc4-md5
-  name: 20,22,23|🇩🇪DE-193.108.119.230-0910
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
   name: 22|0| 国 01 | 1x DE
-  password: 2f51818c-5d82-4457-bca5-f36c8e48e1cf
+  password: 5d5e5754-49eb-47ab-9400-ffc0577eceac
   port: 36471
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 22|1|🇪德国 01 | 1x DE
-  password: 5e066934-6b6b-4880-abc7-df51b1cb8a00
+  password: a6a30fda-fa11-4cc8-80f4-5227d67463fb
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: rc4-md5
+  name: 23|🇩🇪DE-193.108.119.230-0910
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 23|🇩🇪DE-85.208.139.31-6186
   password: q7jwtcA0MmyYi0JddUgXXj
@@ -195,11 +129,14 @@ proxies:
     headers:
       host: irvideo.cfd
     path: /linkws
-- cipher: chacha20-ietf-poly1305
-  name: 23|🇩🇪DE-185.177.229.245-1080
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 23,36|未知61 241.6KB/s
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 185.177.229.245
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: aes-256-cfb
   name: 23|🇩🇪DE-80.92.204.106-6032
@@ -214,24 +151,20 @@ proxies:
   server: 80.92.204.106
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 26|0|国 01 | 1x DE
-  password: b9ce1486-4a67-4373-9f5b-988d28bdad38
-  port: 31471
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 26|1|🇪 德国 01 | 1x DE
-  password: 10dd9a3b-0237-403b-8ede-854c57dda1f7
+  name: '26|0| 国 01 | 1x DE #1'
+  password: 7073a02a-8cd0-418d-909b-d639b1f736a1
   port: 36471
   server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 26|3|🇩🇪2 |  4.4MB/s|50%|Netflix|Y...
-  password: PBrts5Au4GM9ar7bTNyZEu
-  port: '63861'
-  server: 85.208.139.69
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 26,36|DE
+  password: 93656afe-c968-4c3f-b052-25af54a2b09d
+  port: 31471
+  server: free.2apzhfa.xyz
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - grpc-opts:
@@ -296,22 +229,22 @@ proxies:
     headers:
       Host: shabestan.itn24.ir
     path: '%2F%F0%9F%86%94%40M3HDIO1'
-- name: 33|🔒 TR-TCP-NONE 🇩🇪 DE-178.63.244...
+- alterId: 0
+  name: 33,36|未知26
   network: tcp
   password: fsoOufuTGmSKzRDaAwAbww
   port: 443
   server: 178.63.244.9
-  type: trojan
-- alterId: 0
-  name: 33,36|未知113
-  password: juzi
-  port: 443
-  server: 217.160.216.30
   skip-cert-verify: true
-  sni: juzi8186-sr1.pages.dev
   tls: true
   type: trojan
   udp: true
+- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-217.160.216....
+  password: juzi
+  port: 443
+  server: 217.160.216.30
+  sni: juzi8186-sr1.pages.dev
+  type: trojan
 - name: 33|🔒 TR-WS-TLS 🇩🇪 DE-89.116.46.33...
   network: ws
   password: NISHIKUITAN111
@@ -323,13 +256,16 @@ proxies:
     headers:
       Host: zb.ylks.xyz
     path: /
-- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-5.75.201.8:2...
+- alterId: 0
+  name: 33,36|未知103
   password: juzi
   port: 2053
   server: 5.75.201.8
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: juzi8186-sr1.pages.dev
+  tls: true
   type: trojan
+  udp: true
 - alpn:
   - http/1.1
   name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-3.127.213.1...
@@ -354,16 +290,12 @@ proxies:
     headers:
       Host: ilna.onetwothree123.ir
     path: '%2F%F0%9F%86%94%40M3HDIO1'
-- alterId: 0
-  name: 33,36|未知14
+- name: 33|🔒 TR-TCP-NA 🇩🇪 DE-194.87.148.1...
   password: juzi
   port: 8443
   server: 194.87.148.148
-  skip-cert-verify: true
   sni: juzi8186-sr1.pages.dev
-  tls: true
   type: trojan
-  udp: true
 - alpn:
   - h3
   - h2
@@ -402,7 +334,7 @@ proxies:
       Host: isna.onetwothree123.ir
     path: '%2F%F0%9F%86%94%40M3HDIO1'
 - alterId: 0
-  name: 33,36|未知97
+  name: 33,36|未知89
   network: httpupgrade
   password: QTKsqSws9Sgc
   port: 2087
@@ -425,17 +357,13 @@ proxies:
   server: 3.76.154.155
   sni: trojan.burgerip.co.uk
   type: trojan
-- alterId: 0
-  name: 33,36|未知35
+- name: '33|🔒 TR-HTTPUPGRADE-TLS 🏴‍☠️ NA-1... #6'
   network: httpupgrade
   password: TKsVHmEEGn3v
   port: 2087
   server: 104.21.64.1
-  skip-cert-verify: true
   sni: hamshahri.twn24.ir
-  tls: true
   type: trojan
-  udp: true
   ws-opts:
     headers:
       Host: hamshahri.twn24.ir
@@ -476,16 +404,12 @@ proxies:
     headers:
       Host: leader.andishehnegariran.ir
     path: '%2F%F0%9F%86%94%40M3HDIO1'
-- alterId: 0
-  name: 33,36|未知128
+- name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-139.162.158...
   password: 665c944d-047d-4659-80d5-3eaac70241a9
   port: 443
   server: 139.162.158.172
-  skip-cert-verify: true
   sni: de2-full.privateip.net
-  tls: true
   type: trojan
-  udp: true
 - alpn:
   - h3
   - h2
@@ -585,6 +509,15 @@ proxies:
   server: 3.66.115.225
   skip-cert-verify: false
   sni: juzi8186-sr1.pages.dev
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇩🇪 DE-52.29.199.7...
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 52.29.199.75
+  sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
   - h3
