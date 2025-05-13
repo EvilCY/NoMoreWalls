@@ -1,30 +1,30 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 01 | 1x HK
-  password: da43078d-b62a-4349-911b-1214099d42b9
-  port: 36141
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧 英国住宅IP 01 | 1x UK
-  password: da43078d-b62a-4349-911b-1214099d42b9
-  port: 36271
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇭🇰香港 01 | 1x HK
-  password: 7c385e97-154e-486c-92d9-d20232e099f8
+  name: 1|🇭🇰香港 01 | 1x HK
+  password: f8be5f0d-e58c-4de8-90d8-97edd2bdff94
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 2|🇬🇧英国家宽 01 | 1x UK
-  password: 7c385e97-154e-486c-92d9-d20232e099f8
+  name: 1|🇬🇧英国家宽 01 | 1x UK
+  password: f8be5f0d-e58c-4de8-90d8-97edd2bdff94
   port: 31271
   server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇭🇰 香港 01 | 1x HK
+  password: defa1a25-452f-40ff-bab5-e4b85d93297e
+  port: 36141
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇬🇧 英国住宅IP 01 | 1x UK
+  password: defa1a25-452f-40ff-bab5-e4b85d93297e
+  port: 36271
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - alterId: 0
@@ -86,14 +86,14 @@ proxies:
     path: /itdog?ed=2560
 - cipher: chacha20-ietf-poly1305
   name: 22|0| 国住宅IP 01 | 1x UK
-  password: 6fddedd5-f587-4ce3-9ef2-ec191e0a61f6
+  password: ce032596-5daf-4d35-9bd5-cbf3f67e1054
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 22|2|🇧英国家宽 01 | 1x UK
-  password: ff6119b4-ed52-44ed-862b-03980279eac3
+  name: 22|14|🇧英国家宽 01 | 1x UK
+  password: 4f246117-18f2-4ef3-af4c-917baf0264e2
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
@@ -199,23 +199,40 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: '26|0| 国住宅IP 01 | 1x UK #1'
-  password: 8520af87-837c-45df-8011-a269ea57f5f3
+  password: da43078d-b62a-4349-911b-1214099d42b9
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 26|15|🇧英国家宽 01 | 1x UK
-  password: e8102bb3-5376-4cd4-9bb9-e56b1cea78cf
+  name: 26|3|🇧英国家宽 01 | 1x UK
+  password: 7c385e97-154e-486c-92d9-d20232e099f8
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-51.38.71.17...
-  password: b640d791-ff83-4300-b509-c2a02f97f167
-  port: 80
-  server: 51.38.71.175
-  sni: uk1.trojanvh.xyz
+- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-161.35.34.4...
+  network: tcp
+  password: 2cba4104747d49d18319e5ade1b93ab5
+  port: 443
+  server: 161.35.34.48
+  sni: yourjobnavigator.online
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-35.178.114....
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.178.114.243
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇬🇧 GB-109.107.159....
+  password: '!!str 74260667533381300'
+  port: 443
+  server: 109.107.159.67
+  skip-cert-verify: true
+  sni: patient-emu.shiner427.skin
   type: trojan
 - name: 33|🔒 TR-TCP-NA 🇬🇧 GB-185.193.29.1...
   password: NISHIKUITAN111
@@ -228,39 +245,24 @@ proxies:
   server: 5.144.181.144
   sni: epcca.ambercc.filegear-sg.me
   type: trojan
-- name: 33|🔒 TR-TCP-NA 🇬🇧 GB-109.107.159....
-  password: '!!str 74260667533381300'
+- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-51.38.65.15...
+  network: tcp
+  password: fde0ff30-0a7c-11f0-a77a-1239d0255272
   port: 443
-  server: 109.107.159.67
+  server: 51.38.65.155
   skip-cert-verify: true
-  sni: patient-emu.shiner427.skin
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇬🇧 GB-5.144.181.83...
-  password: juzi
-  port: 2053
-  server: 5.144.181.83
-  sni: juzi8186-sr1.pages.dev
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-35.178.114....
-  network: tcp
-  password: telegram-id-vlessconfig
-  port: 22222
-  server: 35.178.114.243
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-161.35.34.4...
-  network: tcp
-  password: 2cba4104747d49d18319e5ade1b93ab5
-  port: 443
-  server: 161.35.34.48
-  sni: yourjobnavigator.online
+  sni: uk1.test3.net
   type: trojan
 - name: 33|🔒 TR-TCP-NA 🇬🇧 GB-18.135.188.8...
   password: juzi
   port: 443
   server: 18.135.188.86
+  sni: juzi8186-sr1.pages.dev
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇬🇧 GB-198.244.246....
+  password: juzi
+  port: 8443
+  server: 198.244.246.67
   sni: juzi8186-sr1.pages.dev
   type: trojan
 - name: 33|🔒 TR-TCP-NA 🇬🇧 GB-91.199.32.15...
@@ -270,19 +272,17 @@ proxies:
   skip-cert-verify: false
   sni: juzi8186-sr1.pages.dev
   type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-51.38.65.15...
-  network: tcp
-  password: d8e9f5e0-1233-11f0-85ba-1239d0255272
-  port: 443
-  server: 51.38.65.155
-  skip-cert-verify: true
-  sni: uk1.test3.net
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇬🇧 GB-198.244.246....
+- name: 33|🔒 TR-TCP-NA 🇬🇧 GB-5.144.181.83...
   password: juzi
-  port: 8443
-  server: 198.244.246.67
+  port: 2053
+  server: 5.144.181.83
   sni: juzi8186-sr1.pages.dev
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-51.38.71.17...
+  password: b640d791-ff83-4300-b509-c2a02f97f167
+  port: 80
+  server: 51.38.71.175
+  sni: uk1.trojanvh.xyz
   type: trojan
 - alterId: 0
   cipher: auto
