@@ -1,14 +1,14 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇨🇦加拿大 01 | 1x CA
-  password: 49656a49-5c70-423b-8918-6e1258fcccd4
+  password: 1ac5b070-137c-4fe3-b650-8687487a6331
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 2|🇨🇦 加拿大 01 | 1x CA
-  password: 0ca138e3-82be-4314-86d0-7ae81065c563
+  name: 1|🇨🇦 加拿大 01 | 1x CA
+  password: d2ef927f-9256-4501-ae43-681dff84d701
   port: 36441
   server: free.2weradf.xyz
   type: ss
@@ -470,9 +470,16 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   name: 22|0|🇦加大 01 | 1x CA
-  password: b2b606a6-2182-4c72-9835-60286aca51a5
+  password: 882dfcb0-44d3-400b-ab63-a0d7af8a16ae
   port: 31441
   server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 22|1|🇦 加拿大 01 | 1x CA
+  password: b977c657-e203-479d-b1a9-06839c3ac368
+  port: 36441
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - name: '22,26,38,39|CA_speednode_0009 #1'
@@ -488,13 +495,6 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /proxyip=140.238.158.238:443&proxyIP=null
-- cipher: chacha20-ietf-poly1305
-  name: 22|14|🇦 加拿大 01 | 1x CA
-  password: ca588407-e495-445b-911f-6d11d7182639
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 23|🇨🇦CA-142.4.216.225-1090
   password: JIhN6rBKkaEboLNXVSv5rq
@@ -524,14 +524,14 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - cipher: chacha20-ietf-poly1305
   name: '26|0|🇦加大 01 | 1x CA #1'
-  password: f900c828-ef12-4b21-8339-f51010da0bc8
+  password: 49656a49-5c70-423b-8918-6e1258fcccd4
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 26|1|🇦 加拿大 01 | 1x CA
-  password: b72578fe-ede5-4bf3-ad91-16a49b0953bb
+  name: 26|3|🇦 加拿大 01 | 1x CA
+  password: 0ca138e3-82be-4314-86d0-7ae81065c563
   port: 36441
   server: free.2weradf.xyz
   type: ss
@@ -543,6 +543,17 @@ proxies:
   server: 23.227.60.8
   sni: 403b3611-99bc-43b7-88D7-26Ed5D0825A9-3.paGeS.dev
   type: trojan
+- name: 33|🔒 TR-WS-NA 🇨🇦 CA-140.238.158.2...
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 140.238.158.238
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
 - name: 33|🔒 TR-TCP-TLS 🇨🇦 CA-104.234.239...
   network: tcp
   password: Aimer
@@ -550,6 +561,20 @@ proxies:
   server: 104.234.239.235
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 35|🔒 VM-WS-NA 🇨🇦 CA-51.79.102.253...
+  network: ws
+  port: 80
+  server: 51.79.102.253
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    headers:
+      Host: 51.79.102.253
+    path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
   name: 35|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.16...
@@ -560,6 +585,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 4439cf3e-d072-4a5b-88b2-2a2ec6d71340
+- alterId: 0
+  cipher: auto
+  name: 35|🔒 VM-WS-TLS 🇨🇦 CA-15.235.83.22...
+  network: ws
+  port: 443
+  server: 15.235.83.227
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: mankadmu.com
+    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 35|🔒 VM-TCP-NA 🇨🇦 CA-91.194.11.11...
