@@ -25,30 +25,45 @@ proxies:
   tls: false
   type: hysteria2
   up: ''
-- cipher: aes-256-gcm
-  name: '1,19,21,25|2|🇫🇷10 |  4.6MB/s|36%|Openai #1'
-  password: PqJc89bEJnYJ-3mFetkZRQ
-  port: '20'
-  server: ss.sps1.sbs
-  type: ss
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  delay: 1608
+  down: 100
+  name: 1|🇫🇷3 |  4.2MB/s|15%|Openai
+  port: 14241
+  protocol: udp
+  server: 51.159.226.1
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
   udp: true
-- name: 1|🇫🇷4 |  1.5MB/s|15%|Openai
+  up: 100
+- name: 1|🇫🇷4 |  1.9MB/s|43%|Openai
   network: ws
-  port: '8080'
-  server: 104.26.15.85
+  port: '8880'
+  server: zula.ir
   type: vless
   udp: true
-  uuid: 56652249-2e67-4429-b86c-3df8b838ad85
+  uuid: 817c78d6-21bc-4511-ba25-1d4131d26dc9
   ws-opts:
     headers:
-      Host: 4j.QBAo1g5z6k.ZulaIR.org.
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/58.0.3029.110 Safari/537.36
-    path: ''
+      Host: join.V2RAYFAST7.iran.ir.arvancloud.ir.nett.focusontrade.ir
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-J500M Build/MMB29M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /?ed=2048
   xudp: true
+- cipher: aes-256-gcm
+  name: 1|🇫🇷5 |  5.1MB/s|36%|Openai
+  password: PqJc89bEJnYJ-3mFetkZRQ
+  port: '20'
+  server: 82.146.46.28
+  type: ss
+  udp: true
 - alterId: '0'
   cipher: auto
-  name: '1,19,21,25|2|🇫🇷14 |  3.4MB/s|0% #1'
+  name: 1,19,25|2|🇫🇷5 |  2.8MB/s|0%|Youtube|Op...
   network: ws
   port: 443
   server: cloudgetservice.mcloudservice.site
@@ -62,10 +77,9 @@ proxies:
       Host: Fra-Vp-123.BLaZECLOUD.Site
     path: /linvkws
   xudp: true
-- delay: 2606
-  name: 1|🇫🇷6 |  1.0MB/s|15%|Openai
+- name: 1|🇫🇷7 |  5.7MB/s|15%|Openai
   network: ws
-  port: 8080
+  port: '8080'
   server: tgju.org
   servername: IO.IhJtq0hklC.ZULAiR.OrG.
   type: vless
@@ -74,25 +88,26 @@ proxies:
   ws-opts:
     headers:
       Host: IO.IhJtq0hklC.ZULAiR.OrG.
-      User-Agent: Mozilla/5.0 (Unknown; Linux) AppleWebKit/538.1 (KHTML, like Gecko)
-        Chrome/v1.0.0 Safari/538.1
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/37.0.2062.120 Safari/537.36
     path: /
   xudp: true
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  delay: 1608
-  down: 100
-  name: 1|🇫🇷7 |  5.4MB/s|15%|Openai
-  port: 14241
-  protocol: udp
-  server: 51.159.226.1
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: fdvsdv
+  name: 1,30|🔒 VL-GRPC-RLT 🇩🇪 DE-188.245.23...
+  network: grpc
+  port: 2098
+  reality-opts:
+    public-key: JNcCRy0bfOEzzyqh1foTuuG9T8IvwiO8ApJu5FhVERs
+    short-id: 2665af94c7b25f90
+  server: 188.245.239.127
+  servername: sourceforge.net
+  tls: false
+  type: vless
   udp: true
-  up: 100
+  uuid: a685b264-42b6-4ecd-92e2-d8dd402e5f6b
+  xudp: true
 - name: 2|[🇫🇷]t.me/ConfigsHub`
   network: grpc
   port: 8880
@@ -138,11 +153,11 @@ proxies:
     headers:
       host: az05.beyondy.cfd
     path: /link
-- alterId: '0'
+- alterId: 0
   cipher: auto
-  name: 13,19,25|2|🇷3 |  5.5MB/s|100%|Openai
+  name: 13,19|2|🇫🇷3 |  5.5MB/s|100%|Openai
   network: ws
-  port: '443'
+  port: 443
   server: 188.114.96.2
   servername: obdii.cfd
   skip-cert-verify: false
@@ -154,10 +169,9 @@ proxies:
     headers:
       Host: obdii.cfd
     path: /linkws
-  xudp: true
-- alterId: '0'
+- alterId: 0
   cipher: auto
-  name: '13,19,25|2|🇫🇷21 |  2.0MB/s|100%|Openai #1'
+  name: 13,19|2|🇫🇷21 |  2.0MB/s|100%|Openai
   network: ws
   port: 443
   server: 188.114.97.2
@@ -171,12 +185,11 @@ proxies:
     headers:
       Host: obdii.cfd
     path: /linkws
-  xudp: true
-- alterId: '0'
+- alterId: 0
   cipher: auto
-  name: '13,19,25|2|🇫🇷18 |  2.4MB/s|100%|Openai #1'
+  name: 13,19|2|🇫🇷18 |  2.4MB/s|100%|Openai
   network: ws
-  port: '443'
+  port: 443
   server: 172.67.175.56
   servername: obdii.cfd
   skip-cert-verify: false
@@ -188,12 +201,11 @@ proxies:
     headers:
       Host: obdii.cfd
     path: /linkws
-  xudp: true
-- alterId: '0'
+- alterId: 0
   cipher: auto
-  name: '13,19,25|2|🇫🇷15 |  2.0MB/s|100%|Openai #1'
+  name: 13,19|2|🇫🇷15 |  2.0MB/s|100%|Openai
   network: ws
-  port: '443'
+  port: 443
   server: 104.26.0.95
   servername: obdii.cfd
   skip-cert-verify: false
@@ -205,7 +217,6 @@ proxies:
     headers:
       Host: obdii.cfd
     path: /linkws
-  xudp: true
 - name: 13|1|🇫🇷16 |  5.3MB/s|Openai
   network: ws
   port: 8080
@@ -217,9 +228,9 @@ proxies:
     headers:
       Host: QW.VU6d72nt9y.zULaiR.orG.
     path: ''
-- alterId: '0'
+- alterId: 0
   cipher: auto
-  name: '13,19,25|2|🇫🇷8 |  3.9MB/s|100% #1'
+  name: 13,19|2|🇫🇷8 |  3.9MB/s|100%
   network: ws
   port: 443
   server: 188.114.96.3
@@ -232,7 +243,6 @@ proxies:
     headers:
       Host: obdii.cfd
     path: /linkws
-  xudp: true
 - client-fingerprint: chrome
   name: 13,30|🔒 VL-TCP-RLT 🇵🇱 PL-91.108.249....
   network: tcp
@@ -247,7 +257,7 @@ proxies:
   uuid: 59b057a6-4307-4619-8c90-420aa070722a
 - alterId: 0
   cipher: auto
-  name: 13,19,25|2|🇷6 |  2.0MB/s|100%|Openai
+  name: 13,19|2|🇫🇷6 |  2.0MB/s|100%|Openai
   network: ws
   port: 443
   server: 104.21.31.62
@@ -261,13 +271,11 @@ proxies:
     headers:
       Host: obdii.cfd
     path: /linkws
-- alpn:
-  - ''
-  alterId: '0'
+- alterId: 0
   cipher: auto
-  name: '13,19,25|2|🇫🇷9 |  2.8MB/s|100%|Openai #1'
+  name: 13,19|2|🇫🇷9 |  2.8MB/s|100%|Openai
   network: ws
-  port: '443'
+  port: 443
   server: 172.67.71.160
   servername: obdii.cfd
   skip-cert-verify: false
@@ -279,7 +287,6 @@ proxies:
     headers:
       Host: obdii.cfd
     path: /linkws
-  xudp: true
 - cipher: aes-256-gcm
   name: 18|🇫🇷FR-193.243.147.128-160_1@160
   password: 7BcLdsO1WweoGD0X
@@ -361,6 +368,13 @@ proxies:
   port: 6379
   server: 149.202.82.172
   type: ss
+- cipher: aes-256-gcm
+  name: 19,25|2|🇷3 |  2.1MB/s|36%|Openai
+  password: PqJc89bEJnYJ-3mFetkZRQ
+  port: '20'
+  server: ss.sps1.sbs
+  type: ss
+  udp: true
 - name: 19|2|🇫🇷13 |  4.8MB/s|42%|Openai
   network: ws
   password: 2faaf996-d2b0-440d-8258-81f2b05dd0e4
@@ -374,6 +388,14 @@ proxies:
     headers:
       Host: fwd-refuse-senators-brought.trycloudflare.com
     path: /trojan-argo?ed=2560
+- name: '21,37,38|FR_speednode_0040 #1'
+  password: '!!str 74260665780162200'
+  port: 443
+  server: grown-doberman.shiner427.skin
+  skip-cert-verify: false
+  sni: grown-doberman.shiner427.skin
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 22|🇫🇷FR-45.158.171.146-0972
   password: QCXDxuDlTTMD7jtgHUjIoj
@@ -466,18 +488,18 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: 29|🔒 HYSTERIA-UDP 🇫🇷 FR-195.154.3...
-  password: dongtaiwang.com
-  port: 4489
-  server: 195.154.33.70
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
 - name: '29|🔒 HYSTERIA-UDP 🇫🇷 FR-51.159.22... #1'
   password: dongtaiwang.com
   port: 44464
   server: 51.159.226.1
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: 29|🔒 HYSTERIA-UDP 🇫🇷 FR-195.154.3...
+  password: dongtaiwang.com
+  port: 4489
+  server: 195.154.33.70
   skip-cert-verify: true
   sni: www.bing.com
   tls: false
@@ -490,6 +512,45 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 30|🔒 VL-TCP-RLT 🇫🇷 FR-62.60.148.1...
+  network: tcp
+  port: 25756
+  reality-opts:
+    public-key: QYKUzjbRc3V_-SwJ7DbChBt5nT6miAoFuNCqbflDF2o
+    short-id: '61'
+  server: 62.60.148.14
+  servername: google.com
+  tls: false
+  type: vless
+  uuid: c35e1f46-eb5e-4d41-aea6-722439177a03
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 30|🔒 VL-TCP-RLT 🇫🇷 FR-51.15.228.6...
+  network: tcp
+  port: 25481
+  reality-opts:
+    public-key: uF7Fv79MbpkF2x_bDeXezdkMrI-vGS3UDNAwLzIKZTo
+    short-id: d72dc8a0
+  server: 51.15.228.68
+  servername: www.7-zip.org
+  tls: false
+  type: vless
+  uuid: 67d1e140-d8c8-4e4c-be1f-9800a1bcad38
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 30|🔒 VL-TCP-RLT 🇫🇷 FR-51.91.250.2...
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: oj8VxkyFXCZEtJoRc-yjx7MEyRT1QrW17Ca3Rnu3hSE
+    short-id: 9b5538a5c337e0a7
+  server: 51.91.250.245
+  servername: easygoau1h.com
+  tls: false
+  type: vless
+  uuid: 2d6be8bf-27a6-482b-bc3a-ad385c8999d0
 - client-fingerprint: chrome
   name: 30|🔒 VL-TCP-RLT 🇫🇷 FR-45.95.233.8...
   network: tcp
@@ -517,19 +578,6 @@ proxies:
   ws-opts:
     path: /v2raybluecrystal
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 30|🔒 VL-TCP-RLT 🇫🇷 FR-51.91.250.2...
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: oj8VxkyFXCZEtJoRc-yjx7MEyRT1QrW17Ca3Rnu3hSE
-    short-id: 9b5538a5c337e0a7
-  server: 51.91.250.245
-  servername: easygoau1h.com
-  tls: false
-  type: vless
-  uuid: 2d6be8bf-27a6-482b-bc3a-ad385c8999d0
-- client-fingerprint: chrome
   name: 30|🔒 VL-TCP-RLT 🇫🇷 FR-54.37.79.28...
   network: tcp
   port: 1983
@@ -540,51 +588,19 @@ proxies:
   tls: false
   type: vless
   uuid: d03a3480-7441-45a2-beac-eadfb9a6714d
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 30|🔒 VL-TCP-RLT 🇫🇷 FR-62.60.148.1...
+- name: 32|🔒 TR-TCP-TLS 🇫🇷 FR-141.227.160...
   network: tcp
-  port: 25756
-  reality-opts:
-    public-key: QYKUzjbRc3V_-SwJ7DbChBt5nT6miAoFuNCqbflDF2o
-    short-id: '61'
-  server: 62.60.148.14
-  servername: google.com
-  tls: false
-  type: vless
-  uuid: c35e1f46-eb5e-4d41-aea6-722439177a03
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 30|🔒 VL-TCP-RLT 🇫🇷 FR-51.15.228.6...
-  network: tcp
-  port: 25481
-  reality-opts:
-    public-key: uF7Fv79MbpkF2x_bDeXezdkMrI-vGS3UDNAwLzIKZTo
-    short-id: d72dc8a0
-  server: 51.15.228.68
-  servername: www.7-zip.org
-  tls: false
-  type: vless
-  uuid: 67d1e140-d8c8-4e4c-be1f-9800a1bcad38
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: 32|🔒 TR-TCP-TLS 🇫🇷 FR-51.195.254....
-  network: tcp
-  password: zsu4Mq3A9J
-  port: 8443
-  server: 51.195.254.75
-  sni: uk-02.allhubb.info
+  password: OLq0FfOlp7
+  port: 1935
+  server: 141.227.160.88
+  skip-cert-verify: true
+  sni: x1-sweden-ovh-v2.devefun.net
   type: trojan
-- alpn:
-  - http/1.1
-  name: 32|🔒 TR-TCP-TLS 🇫🇷 FR-15.237.241....
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 15.237.241.92
-  sni: trojan.burgerip.co.uk
+- name: 32|🔒 TR-TCP-NA 🇫🇷 FR-57.128.177.1...
+  password: Aimer
+  port: 8443
+  server: 57.128.177.172
+  sni: epccu.ambercc.filegear-sg.me
   type: trojan
 - name: 32|🔒 TR-TCP-TLS 🇫🇷 FR-152.228.191...
   network: tcp
@@ -592,6 +608,69 @@ proxies:
   port: 443
   server: 152.228.191.232
   sni: epccd.ambercc.filegear-sg.me
+  type: trojan
+- name: 32|🔒 TR-TCP-NA 🇫🇷 FR-141.11.203.1...
+  password: Aimer
+  port: 8443
+  server: 141.11.203.191
+  sni: epccj.ambercc.filegear-sg.me
+  type: trojan
+- name: 32|🔒 TR-WS-TLS 🇫🇷 FR-141.11.203.2...
+  network: ws
+  password: NISHIKUITAN111
+  port: 443
+  server: 141.11.203.203
+  sni: za.ylks.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: za.ylks.xyz
+    path: /
+- name: 32|🔒 TR-TCP-TLS 🇫🇷 FR-51.158.146....
+  password: f6a0a650-306e-11ee-b692-1239d0255272
+  port: 443
+  server: 51.158.146.183
+  sni: Speedtest.net
+  type: trojan
+- name: 32|🔒 TR-TCP-TLS 🇫🇷 FR-51.159.59.1...
+  password: 9498f3a0-2992-11ee-a4c7-1239d0255272
+  port: 443
+  server: 51.159.59.186
+  sni: zula.ir
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 32|🔒 TR-TCP-TLS 🇫🇷 FR-13.37.170.2...
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.37.170.237
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '32|🔒 TR-TCP-TLS 🇫🇷 FR-13.37.170.2... #1'
+  network: tcp
+  password: telegram-id-v2rayvpnchannel
+  port: 22223
+  server: 13.37.170.237
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 32|🔒 TR-TCP-TLS 🇫🇷 FR-15.237.241....
+  network: tcp
+  password: telegram-id-vlessconfig
+  port: 22222
+  server: 15.237.241.92
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 32|🔒 TR-TCP-TLS 🇫🇷 FR-51.195.254....
+  network: tcp
+  password: zsu4Mq3A9J
+  port: 8443
+  server: 51.195.254.75
+  sni: uk-02.allhubb.info
   type: trojan
 - name: 32|🔒 TR-TCP-TLS 🇫🇷 FR-51.210.182....
   network: tcp
@@ -605,60 +684,6 @@ proxies:
   port: 443
   server: 51.38.99.96
   sni: ba24.ir
-  type: trojan
-- name: 32|🔒 TR-TCP-NA 🇫🇷 FR-57.128.177.1...
-  password: Aimer
-  port: 8443
-  server: 57.128.177.172
-  sni: epccu.ambercc.filegear-sg.me
-  type: trojan
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: 32|🔒 TR-TCP-TLS 🇫🇷 FR-51.68.13.10...
-  network: tcp
-  password: FiSo7J6vfS
-  port: 1935
-  server: 51.68.13.106
-  sni: x1fr-ovh.devefun.net
-  type: trojan
-- name: 32|🔒 TR-TCP-TLS 🇫🇷 FR-51.158.146....
-  password: f6a0a650-306e-11ee-b692-1239d0255272
-  port: 443
-  server: 51.158.146.183
-  sni: Speedtest.net
-  type: trojan
-- name: 32|🔒 TR-WS-TLS 🇫🇷 FR-141.11.203.2...
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 141.11.203.203
-  sni: za.ylks.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: za.ylks.xyz
-    path: /
-- name: 32|🔒 TR-TCP-TLS 🇫🇷 FR-141.227.160...
-  network: tcp
-  password: OLq0FfOlp7
-  port: 1935
-  server: 141.227.160.88
-  skip-cert-verify: true
-  sni: x1-sweden-ovh-v2.devefun.net
-  type: trojan
-- name: 32|🔒 TR-TCP-TLS 🇫🇷 FR-51.159.59.1...
-  password: 9498f3a0-2992-11ee-a4c7-1239d0255272
-  port: 443
-  server: 51.159.59.186
-  sni: zula.ir
-  type: trojan
-- name: 32|🔒 TR-TCP-NA 🇫🇷 FR-141.11.203.1...
-  password: Aimer
-  port: 8443
-  server: 141.11.203.191
-  sni: epccj.ambercc.filegear-sg.me
   type: trojan
 - name: 32|🔒 TR-TCP-TLS 🇫🇷 FR-141.11.203....
   network: tcp
@@ -675,6 +700,31 @@ proxies:
   skip-cert-verify: true
   sni: x1-england-ovh-v2.devefun.net
   type: trojan
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: 32|🔒 TR-TCP-TLS 🇫🇷 FR-51.68.13.10...
+  network: tcp
+  password: FiSo7J6vfS
+  port: 1935
+  server: 51.68.13.106
+  sni: x1fr-ovh.devefun.net
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 34|🔒 VM-WS-NA 🇫🇷 FR-5.196.29.123:...
+  network: ws
+  port: '2082'
+  server: 5.196.29.123
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 34|🔒 VM-TCP-NA 🇫🇷 FR-95.179.208.4...

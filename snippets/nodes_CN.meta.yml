@@ -544,7 +544,7 @@ proxies:
   skip-cert-verify: true
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- name: '13,19,21,25,37,38|CN_speednode_0004 #1'
+- name: '13,19,25|14|CN_speednode_0004 #1'
   password: b6200af42ccadea353f5b5856dd20d70
   port: 39001
   server: 120.233.128.68
@@ -835,7 +835,7 @@ proxies:
   skip-cert-verify: true
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- name: '13,19,21,25,37,38|CN_speednode_0008 #1'
+- name: '13,19,25|14|CN_speednode_0008 #1'
   password: 09e8b39a-4c09-4df0-a50c-af3bef01567e
   port: 35000
   server: gzyd.cg.xxality.cn
@@ -1619,22 +1619,66 @@ proxies:
   ws-headers:
     Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
-- name: 32|🔒 TR-TCP-NA 🇨🇳 CN-36.151.251.6...
-  password: RlzoEILU
-  port: 7789
-  server: 36.151.251.61
+- name: '21,37,38|CN_speednode_0014 #1'
+  password: ef35dfd8-b468-42fb-abf8-0a6c4536c1ff
+  port: 22269
+  server: 58.254.186.222
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- name: '32|🔒 TR-TCP-NA 🇨🇳 CN-36.151.251.6... #1'
+  udp: true
+- name: '21,37,38|CN_speednode_0016 #1'
+  password: ef35dfd8-b468-42fb-abf8-0a6c4536c1ff
+  port: 43394
+  server: 219.135.197.214
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+  udp: true
+- name: '21,32,37,38|CN_speednode_0027 #1'
   password: RlzoEILU
-  port: 36654
+  port: 3744
   server: 36.151.251.61
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: '21,37,38|CN_speednode_0031 #1'
+  password: ef35dfd8-b468-42fb-abf8-0a6c4536c1ff
+  port: 43590
+  server: 58.254.186.222
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+  udp: true
+- name: '21,37,38|CN_speednode_0033 #1'
+  password: 4a7f880c-72f4-11ed-b0b5-f23c9164ca5d
+  port: 15229
+  server: 3c80a135-swb8g0-t6ouc9-13xtu.cu.plebai.net
   skip-cert-verify: false
+  sni: 3c80a135-swb8g0-t6ouc9-13xtu.cu.plebai.net
+  type: trojan
+  udp: true
+- name: 32|🔒 TR-TCP-NA 🇨🇳 CN-36.151.251.5...
+  password: RlzoEILU
+  port: 49893
+  server: 36.151.251.57
   type: trojan
 - name: 32|🔒 TR-WS-TLS 🇨🇳 CN-119.188.204....
   network: ws
   password: bpb-trojan
   port: 443
   server: 119.188.204.76
+  sni: zamim340.ggff.net
+  type: trojan
+  ws-opts:
+    headers:
+      Host: zamim340.ggff.net
+    path: '%2Ftr%3Fed%3D2560'
+- name: 32|🔒 TR-WS-TLS 🇨🇳 CN-27.36.125.2:...
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 27.36.125.2
   sni: zamim340.ggff.net
   type: trojan
   ws-opts:
@@ -1651,31 +1695,20 @@ proxies:
   ws-opts:
     headers:
       Host: zamim340.ggff.net
-- name: 32|🔒 TR-TCP-NA 🇨🇳 CN-36.151.251.5...
-  password: RlzoEILU
-  port: 49893
-  server: 36.151.251.57
-  type: trojan
 - name: '32|🔒 TR-TCP-NA 🇨🇳 CN-36.151.251.6... #2'
   password: RlzoEILU
-  port: 3744
+  port: 7789
   server: 36.151.251.61
-  skip-cert-verify: true
   type: trojan
-- name: 32|🔒 TR-WS-TLS 🇨🇳 CN-27.36.125.2:...
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 27.36.125.2
-  sni: zamim340.ggff.net
+- name: '32|🔒 TR-TCP-NA 🇨🇳 CN-36.151.251.6... #3'
+  password: RlzoEILU
+  port: 36654
+  server: 36.151.251.61
+  skip-cert-verify: false
   type: trojan
-  ws-opts:
-    headers:
-      Host: zamim340.ggff.net
-    path: '%2Ftr%3Fed%3D2560'
 - alterId: 0
   cipher: auto
-  name: 34|🔒 VM-TCP-NA 🇨🇳 CN-112.132.215....
+  name: '34|🔒 VM-TCP-NA 🇨🇳 CN-112.132.215.... #1'
   network: tcp
   port: '50002'
   server: 112.132.215.12
@@ -1683,10 +1716,101 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
-  name: 37|CN_speednode_0011
-  password: d192a833-b118-4b46-8e54-12cf5025d4cd
-  port: 43450
-  server: gdlt.aicheetah.lol
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 37|CN_speednode_0012
+  port: 20014
+  server: i.needss.top
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
+  uuid: ae79308e-1a20-46de-bd15-57ccc850f567
+- alterId: 0
+  cipher: auto
+  name: 37|CN_speednode_0013
+  port: 20021
+  server: i.needss.top
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 079256ed-6926-440e-acbb-52953afd4af9
+- alterId: 0
+  cipher: auto
+  name: 37|CN_speednode_0015
+  port: 15442
+  server: i.needss.top
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 079256ed-6926-440e-acbb-52953afd4af9
+- alterId: 0
+  cipher: auto
+  name: 37|CN_speednode_0020
+  port: 44410
+  server: i.needss.top
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ae79308e-1a20-46de-bd15-57ccc850f567
+- alterId: 2
+  cipher: auto
+  name: 37|CN_speednode_0023
+  network: ws
+  port: 22641
+  server: 52.80.27.229
+  servername: tk.hzlt.tkddns.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  ws-opts:
+    headers:
+      Host: zxjp-a.tkong.cc
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 37|CN_speednode_0024
+  network: ws
+  port: 22643
+  server: 52.80.232.93
+  servername: zxjp-c.tkong.cc
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  ws-opts:
+    headers:
+      Host: zxjp-c.tkong.cc
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 37|CN_speednode_0026
+  network: ws
+  port: 22643
+  server: 52.80.27.229
+  servername: zxjp-c.tkong.cc
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  ws-opts:
+    headers:
+      Host: zxjp-c.tkong.cc
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 37|CN_speednode_0028
+  port: 14100
+  server: dxv4.pai50288.uk
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
