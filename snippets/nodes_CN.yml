@@ -1663,22 +1663,17 @@ proxies:
   ws-headers:
     Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
-- name: 33|🔒 TR-TCP-NA 🇨🇳 CN-36.151.251.6...
-  password: RlzoEILU
-  port: 36654
-  server: 36.151.251.61
-  skip-cert-verify: false
+- name: 33|🔒 TR-WS-TLS 🇨🇳 CN-119.188.204....
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 119.188.204.76
+  sni: zamim340.ggff.net
   type: trojan
-- name: '33|🔒 TR-TCP-NA 🇨🇳 CN-36.151.251.6... #1'
-  password: RlzoEILU
-  port: 7789
-  server: 36.151.251.61
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇨🇳 CN-36.151.251.5...
-  password: RlzoEILU
-  port: 49893
-  server: 36.151.251.57
-  type: trojan
+  ws-opts:
+    headers:
+      Host: zamim340.ggff.net
+    path: '%2Ftr%3Fed%3D2560'
 - name: 33|🔒 TR-WS-TLS 🇨🇳 CN-27.36.125.2:...
   network: ws
   password: bpb-trojan
@@ -1690,6 +1685,18 @@ proxies:
     headers:
       Host: zamim340.ggff.net
     path: '%2Ftr%3Fed%3D2560'
+- name: 33|🔒 TR-TCP-NA 🇨🇳 CN-36.151.251.6...
+  password: RlzoEILU
+  port: 8513
+  server: 36.151.251.61
+  skip-cert-verify: true
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇨🇳 CN-36.151.251.6... #1'
+  password: RlzoEILU
+  port: 3744
+  server: 36.151.251.61
+  skip-cert-verify: true
+  type: trojan
 - name: 33|🔒 TR-WS-TLS 🇨🇳 CN-101.69.122.1...
   network: ws
   password: bpb-trojan
@@ -1702,27 +1709,20 @@ proxies:
       Host: zamim340.ggff.net
 - name: '33|🔒 TR-TCP-NA 🇨🇳 CN-36.151.251.6... #2'
   password: RlzoEILU
-  port: 3744
+  port: 36654
   server: 36.151.251.61
-  skip-cert-verify: true
+  skip-cert-verify: false
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇨🇳 CN-36.151.251.5...
+  password: RlzoEILU
+  port: 49893
+  server: 36.151.251.57
   type: trojan
 - name: '33|🔒 TR-TCP-NA 🇨🇳 CN-36.151.251.6... #3'
   password: RlzoEILU
-  port: 8513
+  port: 7789
   server: 36.151.251.61
-  skip-cert-verify: true
   type: trojan
-- name: 33|🔒 TR-WS-TLS 🇨🇳 CN-119.188.204....
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 119.188.204.76
-  sni: zamim340.ggff.net
-  type: trojan
-  ws-opts:
-    headers:
-      Host: zamim340.ggff.net
-    path: '%2Ftr%3Fed%3D2560'
 - alterId: 0
   name: 36|🇨CN
   password: Aimer
