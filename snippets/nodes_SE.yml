@@ -1,9 +1,18 @@
 proxies:
+- alpn:
+  - http/1.1
+  name: '14,33|🔒 TR-TCP-TLS 🇸🇪 SE-56.228.78.1... #1'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 56.228.78.101
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
-  cipher: none
-  name: 2,14|3|🌀6-SE |  4.3MB/s|0%|Youtube|...
+  cipher: auto
+  name: 14,26|3|🌀5-SE |  2.4MB/s|0%|Youtube|...
   network: ws
-  port: '443'
+  port: 443
   server: se.vmess.comnpmjs.com
   servername: se.vmess.comnpmjs.com
   skip-cert-verify: false
@@ -17,15 +26,6 @@ proxies:
 - alpn:
   - http/1.1
   name: 14,33|🔒 TR-TCP-TLS 🇸🇪 SE-56.228.78.1...
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 56.228.78.101
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '14,33|🔒 TR-TCP-TLS 🇸🇪 SE-56.228.78.1... #1'
   network: tcp
   password: telegram-id-directvpn
   port: 22223
@@ -47,6 +47,16 @@ proxies:
   port: 44013
   server: 46.246.98.155
   type: ss
+- name: 33|🔒 TR-WS-NONE 🇸🇪 SE-109.120.132...
+  network: ws
+  password: vpn
+  port: 2025
+  server: 109.120.132.80
+  type: trojan
+  ws-opts:
+    headers:
+      Host: vkvd127.mycdn.me
+    path: '%2F'
 - name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-70.34.206.3...
   network: tcp
   password: Bw5Mz7QkVp
@@ -55,16 +65,6 @@ proxies:
   skip-cert-verify: true
   sni: z-v2-077787.kailib.com
   type: trojan
-- name: 33|🔒 TR-WS-NONE 🇸🇪 SE-150.241.78....
-  network: ws
-  password: vpn
-  port: 2025
-  server: 150.241.78.252
-  type: trojan
-  ws-opts:
-    headers:
-      Host: vkvd127.mycdn.me
-    path: /
 - name: 33|🔒 TR-WS-TLS 🇸🇪 SE-185.146.173....
   network: ws
   password: auto
@@ -76,6 +76,16 @@ proxies:
     headers:
       Host: esetsecuritylicense.bwnsmv.workers.dev
     path: '%2F@v2rayngzendegimamad%2F%3Fed%3D2560'
+- name: 33|🔒 TR-WS-NONE 🇸🇪 SE-150.241.78....
+  network: ws
+  password: vpn
+  port: 2025
+  server: 150.241.78.252
+  type: trojan
+  ws-opts:
+    headers:
+      Host: vkvd127.mycdn.me
+    path: /
 - alterId: 0
   cipher: auto
   name: 35|🔒 VM-WS-NA 🇸🇪 SE-185.146.173.9...
