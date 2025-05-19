@@ -1,21 +1,7 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 02 | 1x HK
-  password: 0896e0eb-5070-4a73-97e3-7567f24525d6
-  port: 36143
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港住宅IP 03 | 1x HK
-  password: 0896e0eb-5070-4a73-97e3-7567f24525d6
-  port: 36145
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 1,13,19,21,25|1|🇰1 |  1.8MB/s|15%|Disney|You...
+  name: '0,13,19,21,25|2|🇰1 |  1.8MB/s|15%|Disney|You... #1'
   network: ws
   port: 8080
   server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
@@ -28,6 +14,20 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港 02 | 1x HK
+  password: c0f67ded-dfa3-4739-83a2-caf3ac1fa118
+  port: 36143
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港住宅IP 03 | 1x HK
+  password: c0f67ded-dfa3-4739-83a2-caf3ac1fa118
+  port: 36145
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - alterId: 64
   cipher: auto
   name: '13,21,25,28|香港3|@ripaojiedian #1'
@@ -181,68 +181,74 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 21|0| 01 | 1x HK
-  password: d2745ab6-1ffe-4655-aa70-fd5d7098d3b1
+  name: 21|1| 01 | 1x HK
+  password: 634644be-8a2a-4903-8dc2-021aabedd726
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 21|0|🇭🇰香港 02 | 1x HK
-  password: d2745ab6-1ffe-4655-aa70-fd5d7098d3b1
+  name: '21|1|🇭🇰香港 02 | 1x HK #1'
+  password: 634644be-8a2a-4903-8dc2-021aabedd726
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 21|0|🇭🇰香港 03 | 1x HK
-  password: d2745ab6-1ffe-4655-aa70-fd5d7098d3b1
+  name: 21|1|🇭🇰香港 03 | 1x HK
+  password: 634644be-8a2a-4903-8dc2-021aabedd726
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 21|1|🇭🇰 香港 01 | 1x HK
-  password: 1ead355a-f554-4504-a880-a3f444cc4f8b
+  name: 25|0|  01 | 1x HK
+  password: 0896e0eb-5070-4a73-97e3-7567f24525d6
   port: 36141
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 21|1|🇭🇰 香港 02 | 1x HK
-  password: 1ead355a-f554-4504-a880-a3f444cc4f8b
+  name: '25|0|🇭🇰 香港 02 | 1x HK #1'
+  password: 0896e0eb-5070-4a73-97e3-7567f24525d6
   port: 36143
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 21|1|🇭🇰 香港IP 03 | 1x HK
-  password: 1ead355a-f554-4504-a880-a3f444cc4f8b
+  name: 25|0|🇭🇰 香港IP 03 | 1x HK
+  password: 0896e0eb-5070-4a73-97e3-7567f24525d6
   port: 36145
   server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '25|15|🇭🇰香港 01 | 1x HK #1'
-  password: b5dd8028-09a7-423a-889b-a2a8fdde2ca7
-  port: 31141
-  server: free.2apzhfa.xyz
-  type: ss
+- name: 32|🔒 TR-WS-TLS 🇭🇰 HK-45.192.222.1...
+  network: ws
+  password: trojan
+  port: 8443
+  server: 45.192.222.112
+  sni: store.timimi.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: store.timimi.dpdns.org
+- alterId: 0
+  name: 32,35|HK3
+  network: tcp
+  password: 4eab66c3-c95f-42af-b3f7-bf7f2d5b06d6
+  port: 443
+  server: 157.254.20.4
+  skip-cert-verify: true
+  sni: new.download.the-best-airport.com
+  tls: true
+  type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '25|15|🇭🇰香港 02 | 1x HK #1'
-  password: b5dd8028-09a7-423a-889b-a2a8fdde2ca7
-  port: 31143
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 25|15|🇭🇰香港 03 | 1x HK
-  password: b5dd8028-09a7-423a-889b-a2a8fdde2ca7
-  port: 31145
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
+- name: 32|🔒 TR-TCP-TLS 🇭🇰 HK-219.76.13.1...
+  password: F3CSSRxD8uljgF73IAn34C3aE9wSqAzZDp5ZOCpxDBRacNYelOYayKTe826Xy0
+  port: 443
+  server: 219.76.13.180
+  sni: stutter.freetrade.link
+  type: trojan
 - name: 32|🔒 TR-TCP-NA 🇭🇰 HK-82.152.164.1...
   password: 5c634f9c-3dd4-4d3e-97c2-9db2470cf722
   port: 34015
@@ -250,38 +256,45 @@ proxies:
   skip-cert-verify: false
   sni: jsygouer.weixin-baidu-qq.com
   type: trojan
-- name: 32|🔒 TR-TCP-TLS 🇭🇰 HK-219.76.13.1...
+- name: 32|🔒 TR-TCP-NA 🇭🇰 HK-219.76.13.17...
+  password: Aimer
+  port: 443
+  server: 219.76.13.177
+  skip-cert-verify: false
+  sni: tyep.esslh.filegear-sg.me
+  type: trojan
+- name: 32|🔒 TR-TCP-TLS 🇭🇰 HK-185.14.47.1...
+  network: tcp
+  password: 3698a3e7-2877-4ded-a665-d81ee3cfd449
+  port: 12052
+  server: 185.14.47.199
+  sni: cdn.alibaba.com
+  type: trojan
+- name: 32|🔒 TR-TCP-NA 🇭🇰 HK-18.166.149.7...
+  password: Aimer
+  port: 18443
+  server: 18.166.149.73
+  sni: epccu.ambercc.filegear-sg.me
+  type: trojan
+- name: '32|🔒 TR-TCP-TLS 🇭🇰 HK-185.14.47.1... #1'
+  network: tcp
+  password: d4c22fd9-1474-4e9f-baf7-80b162f3e60c
+  port: 12002
+  server: 185.14.47.199
+  sni: cdn.alibaba.com
+  type: trojan
+- name: '32|🔒 TR-TCP-TLS 🇭🇰 HK-219.76.13.1... #1'
   network: tcp
   password: Aimer
   port: 443
   server: 219.76.13.166
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: 32|🔒 TR-TCP-TLS 🇭🇰 HK-154.218.15....
-  network: tcp
+- name: 32|🔒 TR-TCP-NA 🇭🇰 HK-18.167.74.15...
   password: Aimer
-  port: 2083
-  server: 154.218.15.250
-  sni: agept.ambercc.filegear-sg.me
-  type: trojan
-- name: 32|🔒 TR-TCP-TLS 🇭🇰 HK-20.2.44.220...
-  network: tcp
-  password: 8aab51da-6b67-4bd2-b6e6-5ab3008cf53e
-  port: 443
-  server: 20.2.44.220
-  sni: jp.iamnotagoodman.com
-  type: trojan
-- name: 32|🔒 TR-TCP-NA 🇭🇰 HK-47.239.107.1...
-  password: Aimer
-  port: 16032
-  server: 47.239.107.108
-  sni: epcco.ambercc.filegear-sg.me
-  type: trojan
-- name: '32|🔒 TR-TCP-TLS 🇭🇰 HK-219.76.13.1... #1'
-  password: F3CSSRxD8uljgF73IAn34C3aE9wSqAzZDp5ZOCpxDBRacNYelOYayKTe826Xy0
-  port: 443
-  server: 219.76.13.180
-  sni: stutter.freetrade.link
+  port: 1080
+  server: 18.167.74.152
+  sni: epccu.ambercc.filegear-sg.me
   type: trojan
 - name: 32|🔒 TR-TCP-TLS 🇭🇰 HK-43.154.34.7...
   network: tcp
@@ -289,6 +302,26 @@ proxies:
   port: 1935
   server: 43.154.34.74
   sni: ngepz.ambercc.filegear-sg.me
+  type: trojan
+- name: 32|🔒 TR-WS-NA 🇭🇰 HK-38.207.133.20...
+  network: ws
+  password: trojan
+  port: 10002
+  server: 38.207.133.204
+  skip-cert-verify: true
+  sni: qingming-b08.pages.dev
+  type: trojan
+- name: 32|🔒 TR-TCP-NA 🇭🇰 HK-47.239.107.1...
+  password: Aimer
+  port: 16032
+  server: 47.239.107.108
+  sni: epcco.ambercc.filegear-sg.me
+  type: trojan
+- name: 32|🔒 TR-TCP-NA 🇭🇰 HK-16.162.225.1...
+  password: Aimer
+  port: 443
+  server: 16.162.225.15
+  sni: epcco.ambercc.filegear-sg.me
   type: trojan
 - name: 32|🔒 TR-TCP-TLS 🇭🇰 HK-192.142.4.6...
   network: tcp
@@ -304,31 +337,11 @@ proxies:
   server: 42.200.230.100
   sni: t2.qifei.app
   type: trojan
-- name: 32|🔒 TR-TCP-TLS 🇭🇰 HK-157.254.20....
-  network: tcp
-  password: 4eab66c3-c95f-42af-b3f7-bf7f2d5b06d6
-  port: 443
-  server: 157.254.20.4
-  sni: new.download.the-best-airport.com
-  type: trojan
 - name: 32|🔒 TR-TCP-NA 🇭🇰 HK-8.217.47.218...
   password: Aimer
   port: 36374
   server: 8.217.47.218
   sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-- name: 32|🔒 TR-TCP-TLS 🇭🇰 HK-185.14.47.1...
-  network: tcp
-  password: 3698a3e7-2877-4ded-a665-d81ee3cfd449
-  port: 12052
-  server: 185.14.47.199
-  sni: cdn.alibaba.com
-  type: trojan
-- name: 32|🔒 TR-TCP-NA 🇭🇰 HK-18.166.149.7...
-  password: Aimer
-  port: 18443
-  server: 18.166.149.73
-  sni: epccu.ambercc.filegear-sg.me
   type: trojan
 - name: 32|🔒 TR-TCP-TLS 🇭🇰 HK-20.187.85.1...
   password: b26e31e5-eac1-45b0-9069-83830bd69521
@@ -336,64 +349,20 @@ proxies:
   server: 20.187.85.198
   sni: hkt.iamnotagoodman.com
   type: trojan
-- name: 32|🔒 TR-TCP-NA 🇭🇰 HK-18.167.74.15...
-  password: Aimer
-  port: 1080
-  server: 18.167.74.152
-  sni: epccu.ambercc.filegear-sg.me
-  type: trojan
-- name: 32|🔒 TR-WS-TLS 🇭🇰 HK-45.192.222.1...
-  network: ws
-  password: trojan
-  port: 8443
-  server: 45.192.222.112
-  sni: store.timimi.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: store.timimi.dpdns.org
-- name: 32|🔒 TR-WS-NA 🇭🇰 HK-38.207.133.20...
-  network: ws
-  password: trojan
-  port: 10002
-  server: 38.207.133.204
-  skip-cert-verify: true
-  sni: qingming-b08.pages.dev
-  type: trojan
-- name: 32|🔒 TR-TCP-NA 🇭🇰 HK-219.76.13.17...
-  password: Aimer
-  port: 443
-  server: 219.76.13.177
-  skip-cert-verify: false
-  sni: tyep.esslh.filegear-sg.me
-  type: trojan
-- name: 32|🔒 TR-TCP-NA 🇭🇰 HK-16.162.225.1...
-  password: Aimer
-  port: 443
-  server: 16.162.225.15
-  sni: epcco.ambercc.filegear-sg.me
-  type: trojan
-- name: '32|🔒 TR-TCP-TLS 🇭🇰 HK-185.14.47.1... #1'
+- name: 32|🔒 TR-TCP-TLS 🇭🇰 HK-20.2.44.220...
   network: tcp
-  password: d4c22fd9-1474-4e9f-baf7-80b162f3e60c
-  port: 12002
-  server: 185.14.47.199
-  sni: cdn.alibaba.com
+  password: 8aab51da-6b67-4bd2-b6e6-5ab3008cf53e
+  port: 443
+  server: 20.2.44.220
+  sni: jp.iamnotagoodman.com
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 34|🔒 VM-WS-TLS 🇭🇰 HK-43.154.34.74...
-  network: ws
-  port: '1935'
-  server: 43.154.34.74
-  servername: djdjjrjjrhk.lzj520hxw.dpdns.org
-  tls: true
-  type: vmess
-  uuid: 2e5bfd4a-0852-4df4-b9e7-9b6f207113b4
-  ws-opts:
-    headers:
-      Host: djdjjrjjrhk.lzj520hxw.dpdns.org
-    path: /vmess-argo
+- name: 32|🔒 TR-TCP-TLS 🇭🇰 HK-154.218.15....
+  network: tcp
+  password: Aimer
+  port: 2083
+  server: 154.218.15.250
+  sni: agept.ambercc.filegear-sg.me
+  type: trojan
 - alterId: 2
   cipher: auto
   name: 34|🔒 VM-WS-NA 🇭🇰 HK-112.120.125.1...
@@ -407,15 +376,6 @@ proxies:
     headers:
       Host: 9e968b51-svp0g0-t6fl0c-1r7od.wtt5.p5pv.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: 34|🔒 VM-TCP-NA 🇭🇰 HK-216.250.97.1...
-  network: tcp
-  port: '900'
-  server: 216.250.97.138
-  tls: false
-  type: vmess
-  uuid: b2f87c13-c42d-4cf1-b8f9-1a812d4f887a
 - alterId: 0
   cipher: auto
   name: 34|🔒 VM-WS-TLS 🇭🇰 HK-182.237.0.12...
@@ -432,6 +392,20 @@ proxies:
     path: /zxascas
 - alterId: 0
   cipher: auto
+  name: 34|🔒 VM-WS-TLS 🇭🇰 HK-43.154.34.74...
+  network: ws
+  port: '1935'
+  server: 43.154.34.74
+  servername: djdjjrjjrhk.lzj520hxw.dpdns.org
+  tls: true
+  type: vmess
+  uuid: 2e5bfd4a-0852-4df4-b9e7-9b6f207113b4
+  ws-opts:
+    headers:
+      Host: djdjjrjjrhk.lzj520hxw.dpdns.org
+    path: /vmess-argo
+- alterId: 0
+  cipher: auto
   name: 34|🔒 VM-WS-NA 🇭🇰 HK-82.152.164.10...
   network: ws
   port: 40601
@@ -445,42 +419,41 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 34|🔒 VM-WS-TLS 🇭🇰 HK-202.181.24.8...
-  network: ws
-  port: '1081'
-  server: 202.181.24.84
-  servername: hk-cn-01.yumeifang.cn
-  tls: true
+  name: 34|🔒 VM-TCP-NA 🇭🇰 HK-216.250.97.1...
+  network: tcp
+  port: '900'
+  server: 216.250.97.138
+  tls: false
   type: vmess
-  uuid: df9b788f-929a-4349-970a-8cbbe12d6ae8
-  ws-opts:
-    headers:
-      Host: wamxoa.com
-    path: /asdd
+  uuid: b2f87c13-c42d-4cf1-b8f9-1a812d4f887a
 - alterId: 0
-  cipher: auto
+  cipher: aes-256-gcm
   name: 35|HK
-  network: ws
-  port: 1086
-  server: 182.237.0.127
+  password: PT2N60DCUH6VCQPC
+  port: 15004
+  server: 156.245.190.13
   skip-cert-verify: true
   tls: true
-  type: vmess
-  uuid: 5aef9bfd-20e3-420a-9b16-433031984bd9
-  ws-opts:
-    headers:
-      host: www.ouabaua.com
-    path: /zxascas
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 35|HK2
+  password: ZDGC0Q2E112UAJO6
+  port: 15014
+  server: 156.245.190.23
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 39|🇭🇰香港 02 | 1x HK
-  password: 4480267f-620c-4b9c-9856-94fb2ad62c69
+  password: c9a39d38-8676-4f29-a443-d73264533ae3
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 39|🇭🇰香港家宽 03 | 1x HK
-  password: 4480267f-620c-4b9c-9856-94fb2ad62c69
+  password: c9a39d38-8676-4f29-a443-d73264533ae3
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
