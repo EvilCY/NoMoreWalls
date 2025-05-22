@@ -1,6 +1,22 @@
 proxies:
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 12,23,24|🇷FR-146.19.168.161-5813
+  network: ws
+  port: 443
+  server: 146.19.168.161
+  servername: az05.beyondy.cfd
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: false
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
+  ws-opts:
+    path: /link
+- alterId: 0
+  cipher: auto
   name: 14|法国 - 格拉沃利讷 - OVH SAS - 1
   network: ws
   port: '443'
@@ -120,11 +136,14 @@ proxies:
     headers:
       host: irvideo.cfd
     path: /linkws
-- cipher: chacha20-ietf-poly1305
-  name: 23,24|🇫🇷FR-45.158.171.132-5631
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 23,24,36|未知123 4.0MB/s
   password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
   server: 45.158.171.132
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 23,24|🇫🇷FR-45.158.171.151-5835
@@ -132,20 +151,6 @@ proxies:
   port: 8080
   server: 45.158.171.151
   type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 23,24|🇷FR-146.19.168.161-5813
-  network: ws
-  port: 443
-  server: 146.19.168.161
-  servername: az05.beyondy.cfd
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
-  ws-opts:
-    path: /link
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -161,36 +166,6 @@ proxies:
     headers:
       host: beyonddsz.cfd
     path: /linkws
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 23|🇫🇷FR-144.24.200.164-1593
-  network: ws
-  port: 443
-  server: 144.24.200.164
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
-  ws-opts:
-    headers:
-      host: beyonddsz.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 23|🇫🇷FR-146.19.168.161-6203
-  network: ws
-  port: 443
-  server: az05.beyondy.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
-  ws-opts:
-    headers:
-      host: az05.beyondy.cfd
-    path: /link
 - alterId: 4
   cipher: auto
   name: 24|FR-104.166.135.10-0009
@@ -277,17 +252,13 @@ proxies:
   port: 11703
   server: 57.128.190.110
   type: ss
-- alterId: 0
-  name: 24,36|未知116 8.5MB/s
-  network: tcp
+- name: 24|🇫🇷FR-51.68.13.106-0458
   password: FiSo7J6vfS
   port: 1935
   server: 51.68.13.106
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: x1fr-ovh.devefun.net
-  tls: true
   type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 24|🇷FR-138.124.31.187-0524
@@ -667,19 +638,6 @@ proxies:
   uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
   ws-opts:
     path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 24|🇷FR-146.59.55.50-5854
-  network: ws
-  port: 443
-  server: 146.59.55.50
-  servername: o.metuji.com
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    path: /linkvws
 - cipher: chacha20-ietf-poly1305
   name: 24|🇷FR-45.158.171.60-5943
   password: oZIoA69Q8yhcQV8ka3Pa3A
@@ -1441,6 +1399,43 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
+- name: 33|🔒 TR-TCP-NA 🇫🇷 FR-141.11.203.1...
+  password: Aimer
+  port: 8443
+  server: 141.11.203.191
+  sni: epccj.ambercc.filegear-sg.me
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇫🇷 FR-185.16.110.1...
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 185.16.110.113
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+- alterId: 0
+  name: 33,36|未知124
+  network: tcp
+  password: 3a792860-34de-11f0-a992-1239d0255272
+  port: 443
+  server: 51.210.182.170
+  skip-cert-verify: true
+  sni: fr1.test3.net
+  tls: true
+  type: trojan
+  udp: true
+- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-152.228.191...
+  network: tcp
+  password: Aimer
+  port: 443
+  server: 152.228.191.232
+  sni: epccd.ambercc.filegear-sg.me
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇫🇷 FR-57.128.177.1...
+  password: Aimer
+  port: 8443
+  server: 57.128.177.172
+  sni: epccu.ambercc.filegear-sg.me
+  type: trojan
 - name: 33|🔒 TR-WS-TLS 🇫🇷 FR-141.11.203.2...
   network: ws
   password: NISHIKUITAN111
@@ -1452,52 +1447,11 @@ proxies:
     headers:
       Host: za.ylks.xyz
     path: /
-- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.210.182....
-  network: tcp
-  password: 3a792860-34de-11f0-a992-1239d0255272
+- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.159.59.1...
+  password: 9498f3a0-2992-11ee-a4c7-1239d0255272
   port: 443
-  server: 51.210.182.170
-  skip-cert-verify: true
-  sni: fr1.test3.net
-  type: trojan
-- alterId: 0
-  name: 33,36|未知110
-  password: Aimer
-  port: 8443
-  server: 57.128.177.172
-  skip-cert-verify: true
-  sni: epccu.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
-- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.195.254....
-  network: tcp
-  password: zsu4Mq3A9J
-  port: 8443
-  server: 51.195.254.75
-  skip-cert-verify: true
-  sni: uk-02.allhubb.info
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇫🇷 FR-141.11.203.1...
-  password: Aimer
-  port: 8443
-  server: 141.11.203.191
-  sni: epccj.ambercc.filegear-sg.me
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-141.227.160...
-  network: tcp
-  password: OLq0FfOlp7
-  port: 1935
-  server: 141.227.160.88
-  skip-cert-verify: true
-  sni: x1-sweden-ovh-v2.devefun.net
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-152.228.191...
-  network: tcp
-  password: Aimer
-  port: 443
-  server: 152.228.191.232
-  sni: epccd.ambercc.filegear-sg.me
+  server: 51.159.59.186
+  sni: zula.ir
   type: trojan
 - alpn:
   - h3
@@ -1509,6 +1463,22 @@ proxies:
   port: 1935
   server: 51.68.13.106
   sni: x1fr-ovh.devefun.net
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.195.254....
+  network: tcp
+  password: zsu4Mq3A9J
+  port: 8443
+  server: 51.195.254.75
+  skip-cert-verify: true
+  sni: uk-02.allhubb.info
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-141.227.160...
+  network: tcp
+  password: OLq0FfOlp7
+  port: 1935
+  server: 141.227.160.88
+  skip-cert-verify: true
+  sni: x1-sweden-ovh-v2.devefun.net
   type: trojan
 - name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-141.11.203....
   network: tcp
@@ -1524,17 +1494,4 @@ proxies:
   server: 57.128.165.173
   skip-cert-verify: true
   sni: x1-england-ovh-v2.devefun.net
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇫🇷 FR-185.16.110.1...
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 185.16.110.113
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.159.59.1...
-  password: 9498f3a0-2992-11ee-a4c7-1239d0255272
-  port: 443
-  server: 51.159.59.186
-  sni: zula.ir
   type: trojan
