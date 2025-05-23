@@ -1,9 +1,16 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇬🇧英国家宽 01 | 1x UK
-  password: 7c90de38-ec2d-4015-aff5-726ca1af2ad2
-  port: 31271
-  server: free.2apzhfa.xyz
+  name: 1|🇭🇰 香港 01 | 1x HK
+  password: 45599056-d894-4147-9bd1-478a51f6779b
+  port: 36141
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇬🇧 英国住宅IP 01 | 1x UK
+  password: 45599056-d894-4147-9bd1-478a51f6779b
+  port: 36271
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - alterId: 2
@@ -54,14 +61,14 @@ proxies:
   server: 51.140.34.50
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20,26|2| 国住宅IP 01 | 1x UK
+  name: 20|🇬🇧 2|🇬🇧 英国住宅IP 01 | 1x UK
   password: fdfa237a-d7f8-4d7f-8872-036ecd5e1f03
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 20,26|15|🇧英国家宽 01 | 1x UK
+  name: 20|🇬🇧 15|🇬🇧英国家宽 01 | 1x UK
   password: 6339ad63-eebe-4ecb-a5bd-f4620633542c
   port: 31271
   server: free.2apzhfa.xyz
@@ -84,14 +91,14 @@ proxies:
     path: /itdog?ed=2560
 - cipher: chacha20-ietf-poly1305
   name: 22|0|国家宽 01 | 1x UK
-  password: e2ad7868-0334-4a73-af86-c0736478fb10
+  password: 5a8b6ade-d708-46e6-abd9-b79b55c0e04b
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 22|1|🇧 英国住宅IP 01 | 1x UK
-  password: d21d6c11-7a30-4209-9997-919dae4357e4
+  password: bd699201-c26b-4516-85ec-eea1ee113b8e
   port: 36271
   server: free.2weradf.xyz
   type: ss
@@ -114,11 +121,14 @@ proxies:
   port: 443
   server: 212.102.53.194
   type: ss
-- cipher: aes-128-gcm
-  name: 23,24|🇧GB-212.102.53.79-0493
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 23,24,36|未知80 6.8MB/s
   password: shadowsocks
   port: 443
   server: 212.102.53.79
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: rc4-md5
   name: 23|🇬🇧GB-169.150.210.233-1013
@@ -1412,16 +1422,13 @@ proxies:
   port: 8080
   server: 51.68.206.229
   type: ss
-- alterId: 0
-  name: 24,33,36|未知58
+- name: 24,33|🔒 TR-TCP-TLS 🇬🇧 GB-51.38.71.17...
   password: b640d791-ff83-4300-b509-c2a02f97f167
   port: 80
   server: 51.38.71.175
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: uk1.trojanvh.xyz
-  tls: true
   type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 24|🇧GB-45.94.169.142-8912
@@ -1573,16 +1580,19 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- alterId: 0
-  name: 33,36|未知102
+- cipher: chacha20-ietf-poly1305
+  name: 26|15| 国住宅IP 01 | 1x UK
+  password: 62921c01-b1fd-41c3-9d5c-b43d6dc64507
+  port: 36271
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- name: 33|🔒 TR-TCP-NA 🇬🇧 GB-198.244.246....
   password: juzi
   port: 8443
   server: 198.244.246.67
-  skip-cert-verify: true
   sni: juzi8186-sr1.pages.dev
-  tls: true
   type: trojan
-  udp: true
 - name: 33|🔒 TR-WS-TLS 🇬🇧 GB-217.163.76.2...
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6

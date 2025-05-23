@@ -1,16 +1,9 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷韩国 01 | 1x KR
-  password: 7c90de38-ec2d-4015-aff5-726ca1af2ad2
-  port: 31311
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷韩国 02 | 1x KR
-  password: 7c90de38-ec2d-4015-aff5-726ca1af2ad2
-  port: 31313
-  server: free.2apzhfa.xyz
+  name: 1|🇰🇷 韩国 01 | 1x KR
+  password: 45599056-d894-4147-9bd1-478a51f6779b
+  port: 36311
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - name: 2|🇰🇷1 |  1.3MB/s|61%|Disney|Open...
@@ -65,21 +58,21 @@ proxies:
   tls: false
   type: hysteria2
 - cipher: chacha20-ietf-poly1305
-  name: 20,26|2|🇷 韩国 01 | 1x KR
+  name: 20|🇰🇷 2|🇰🇷 韩国 01 | 1x KR
   password: fdfa237a-d7f8-4d7f-8872-036ecd5e1f03
   port: 36311
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 20,26|15|🇷韩国 01 | 1x KR
+  name: 20|🇰🇷 15|🇰🇷韩国 01 | 1x KR
   password: 6339ad63-eebe-4ecb-a5bd-f4620633542c
   port: 31311
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 20,26|15|🇰🇷韩国 02 | 1x KR
+  name: 20|🇰🇷 15|🇰🇷韩国 02 | 1x KR
   password: 6339ad63-eebe-4ecb-a5bd-f4620633542c
   port: 31313
   server: free.2apzhfa.xyz
@@ -87,21 +80,21 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 22|0| 01 | 1x KR
-  password: e2ad7868-0334-4a73-af86-c0736478fb10
+  password: 5a8b6ade-d708-46e6-abd9-b79b55c0e04b
   port: 31311
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 22|0|🇷韩国 02 | 1x KR
-  password: e2ad7868-0334-4a73-af86-c0736478fb10
+  password: 5a8b6ade-d708-46e6-abd9-b79b55c0e04b
   port: 31313
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 22|1|🇷 韩国 01 | 1x KR
-  password: d21d6c11-7a30-4209-9997-919dae4357e4
+  password: bd699201-c26b-4516-85ec-eea1ee113b8e
   port: 36311
   server: free.2weradf.xyz
   type: ss
@@ -763,6 +756,13 @@ proxies:
   port: 2003
   server: 125.141.26.5
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 26|15|🇷 韩国 01 | 1x KR
+  password: 62921c01-b1fd-41c3-9d5c-b43d6dc64507
+  port: 36311
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - name: 30|🔒 HYSTERIA-UDP 🇰🇷 KR-146.56.10...
   password: b4dd408a-542d-4898-8d43-47dcad8255e8
   port: 34237
@@ -807,12 +807,16 @@ proxies:
   server: 121.139.207.184
   sni: epcci.ambercc.filegear-sg.me
   type: trojan
-- name: 33|🔒 TR-TCP-NA 🇰🇷 KR-125.134.157....
+- alterId: 0
+  name: 33,36|未知68
   password: Aimer
   port: 35241
   server: 125.134.157.224
+  skip-cert-verify: true
   sni: epccx.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: 33|🔒 TR-WS-NA 🇰🇷 KR-149.129.8.215...
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
@@ -823,16 +827,12 @@ proxies:
   ws-opts:
     headers:
       Host: icecream.955850.xyz
-- alterId: 0
-  name: 33,36|未知86
+- name: 33|🔒 TR-TCP-NA 🇰🇷 KR-59.3.254.50:...
   password: Aimer
   port: 50000
   server: 59.3.254.50
-  skip-cert-verify: true
   sni: epccz.ambercc.filegear-sg.me
-  tls: true
   type: trojan
-  udp: true
 - name: 33|🔒 TR-TCP-TLS 🇰🇷 KR-146.56.155....
   network: tcp
   password: Aimer
@@ -864,16 +864,12 @@ proxies:
   server: 121.145.126.10
   sni: epccs.ambercc.filegear-sg.me
   type: trojan
-- alterId: 0
-  name: 33,36|未知85
+- name: 33|🔒 TR-TCP-NA 🇰🇷 KR-175.199.227....
   password: Aimer
   port: 50000
   server: 175.199.227.244
-  skip-cert-verify: true
   sni: epccx.ambercc.filegear-sg.me
-  tls: true
   type: trojan
-  udp: true
 - name: 33|🔒 TR-TCP-TLS 🇰🇷 KR-175.215.175...
   network: tcp
   password: Aimer
@@ -1007,16 +1003,12 @@ proxies:
   server: 183.99.193.147
   sni: epccx.ambercc.filegear-sg.me
   type: trojan
-- alterId: 0
-  name: 33,36|未知87
+- name: 33|🔒 TR-TCP-NA 🇰🇷 KR-218.158.109....
   password: Aimer
   port: 12336
   server: 218.158.109.102
-  skip-cert-verify: true
   sni: epcca.ambercc.filegear-sg.me
-  tls: true
   type: trojan
-  udp: true
 - name: 33|🔒 TR-WS-TLS 🇰🇷 KR-210.222.30.1...
   network: ws
   password: Aimer
@@ -1071,7 +1063,7 @@ proxies:
   sni: juzi8186-sr1.pages.dev
   type: trojan
 - alterId: 0
-  name: 33,36|未知90
+  name: 33,36|未知150
   password: Aimer
   port: 12393
   server: 220.86.228.109
