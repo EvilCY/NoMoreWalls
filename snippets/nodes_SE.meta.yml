@@ -194,6 +194,19 @@ proxies:
   sni: 70.34.207.153
   tls: false
   type: hysteria2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 31|🔒 VL-TCP-RLT 🇸🇪 SE-45.82.13.14...
+  network: tcp
+  port: 2082
+  reality-opts:
+    public-key: ANlgAsYC8HmKfJnc5SFvru822urkxG1PzW1Zw4Vbm0Q
+    short-id: 9bc0a55a5379c0ed
+  server: 45.82.13.142
+  servername: stackoverflow.com
+  tls: false
+  type: vless
+  uuid: 0870a931-b121-1278-f010-b140a958a300
 - client-fingerprint: firefox
   name: 31|🔒 VL-GRPC-RLT 🇸🇪 SE-91.186.218...
   network: grpc
@@ -206,19 +219,6 @@ proxies:
   tls: false
   type: vless
   uuid: d239a4fb-83fd-46b3-bda1-c0b405bd7360
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇸🇪 SE-94.242.58.1...
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
-    short-id: 7755e972daf8eec8
-  server: 94.242.58.133
-  servername: video.intfreed.ru
-  tls: false
-  type: vless
-  uuid: b1c801ec-1c5e-4d12-8b53-8da11c64a21b
 - client-fingerprint: chrome
   name: 31|🔒 VL-XHTTP-RLT 🇸🇪 SE-70.34.223...
   network: xhttp
@@ -244,27 +244,17 @@ proxies:
   uuid: 10b59513-ef76-4494-a925-305ec45dd3a4
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇸🇪 SE-45.82.13.14...
+  name: 31|🔒 VL-TCP-RLT 🇸🇪 SE-94.242.58.1...
   network: tcp
-  port: 2082
+  port: 443
   reality-opts:
-    public-key: ANlgAsYC8HmKfJnc5SFvru822urkxG1PzW1Zw4Vbm0Q
-    short-id: 9bc0a55a5379c0ed
-  server: 45.82.13.142
-  servername: stackoverflow.com
+    public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
+    short-id: 7755e972daf8eec8
+  server: 94.242.58.133
+  servername: video.intfreed.ru
   tls: false
   type: vless
-  uuid: 0870a931-b121-1278-f010-b140a958a300
-- name: 33|🔒 TR-WS-NONE 🇸🇪 SE-109.120.132...
-  network: ws
-  password: vpn
-  port: 2025
-  server: 109.120.132.80
-  type: trojan
-  ws-opts:
-    headers:
-      Host: vkvd127.mycdn.me
-    path: '%2F'
+  uuid: b1c801ec-1c5e-4d12-8b53-8da11c64a21b
 - name: 33|🔒 TR-WS-TLS 🇸🇪 SE-185.146.173....
   network: ws
   password: auto
@@ -284,26 +274,13 @@ proxies:
   skip-cert-verify: true
   sni: z-v2-077787.kailib.com
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 35|🔒 VM-WS-NA 🇸🇪 SE-185.146.173.9...
+- name: 33|🔒 TR-WS-NONE 🇸🇪 SE-109.120.132...
   network: ws
-  port: '2052'
-  server: 185.146.173.91
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 6e88465e-a2ac-57d3-bbaf-f72e4439bd75
+  password: vpn
+  port: 2025
+  server: 109.120.132.80
+  type: trojan
   ws-opts:
     headers:
-      Host: De1.vmess.site.
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇸🇪 SE-169.150.208....
-  network: tcp
-  port: 18000
-  server: 169.150.208.83
-  tls: false
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+      Host: vkvd127.mycdn.me
+    path: '%2F'
