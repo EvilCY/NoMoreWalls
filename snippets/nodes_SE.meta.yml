@@ -33,6 +33,17 @@ proxies:
   tls: false
   type: hysteria2
 - client-fingerprint: chrome
+  name: 31|🔒 VL-XHTTP-RLT 🇸🇪 SE-70.34.223...
+  network: xhttp
+  port: 2023
+  reality-opts:
+    public-key: gDBtmJC-zpvrr8qB_IHk3S9jl7U2yW2bVyI1cMDmbGk
+  server: 70.34.223.240
+  servername: refersion.com
+  tls: false
+  type: vless
+  uuid: fd99e44d-a046-4477-b48b-8f15bc0f217a
+- client-fingerprint: chrome
   name: 31|🔒 VL-TCP-RLT 🇸🇪 SE-138.124.116...
   network: tcp
   port: 2040
@@ -44,30 +55,6 @@ proxies:
   tls: false
   type: vless
   uuid: 10b59513-ef76-4494-a925-305ec45dd3a4
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇸🇪 SE-94.242.58.1...
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
-    short-id: 7755e972daf8eec8
-  server: 94.242.58.133
-  servername: video.intfreed.ru
-  tls: false
-  type: vless
-  uuid: b1c801ec-1c5e-4d12-8b53-8da11c64a21b
-- client-fingerprint: chrome
-  name: 31|🔒 VL-XHTTP-RLT 🇸🇪 SE-70.34.223...
-  network: xhttp
-  port: 2023
-  reality-opts:
-    public-key: gDBtmJC-zpvrr8qB_IHk3S9jl7U2yW2bVyI1cMDmbGk
-  server: 70.34.223.240
-  servername: refersion.com
-  tls: false
-  type: vless
-  uuid: fd99e44d-a046-4477-b48b-8f15bc0f217a
 - client-fingerprint: firefox
   name: 31|🔒 VL-GRPC-RLT 🇸🇪 SE-91.186.218...
   network: grpc
@@ -93,16 +80,19 @@ proxies:
   tls: false
   type: vless
   uuid: 0870a931-b121-1278-f010-b140a958a300
-- name: 33|🔒 TR-WS-NONE 🇸🇪 SE-109.120.132...
-  network: ws
-  password: vpn
-  port: 2025
-  server: 109.120.132.80
-  type: trojan
-  ws-opts:
-    headers:
-      Host: vkvd127.mycdn.me
-    path: '%2F'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 31|🔒 VL-TCP-RLT 🇸🇪 SE-94.242.58.1...
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
+    short-id: 7755e972daf8eec8
+  server: 94.242.58.133
+  servername: video.intfreed.ru
+  tls: false
+  type: vless
+  uuid: b1c801ec-1c5e-4d12-8b53-8da11c64a21b
 - name: 33|🔒 TR-WS-TLS 🇸🇪 SE-185.146.173....
   network: ws
   password: auto
@@ -114,6 +104,16 @@ proxies:
     headers:
       Host: esetsecuritylicense.bwnsmv.workers.dev
     path: '%2F@v2rayngzendegimamad%2F%3Fed%3D2560'
+- name: 33|🔒 TR-WS-NONE 🇸🇪 SE-109.120.132...
+  network: ws
+  password: vpn
+  port: 2025
+  server: 109.120.132.80
+  type: trojan
+  ws-opts:
+    headers:
+      Host: vkvd127.mycdn.me
+    path: '%2F'
 - name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-70.34.206.3...
   network: tcp
   password: Bw5Mz7QkVp
@@ -122,17 +122,3 @@ proxies:
   skip-cert-verify: true
   sni: z-v2-077787.kailib.com
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 35|🔒 VM-WS-NA 🇸🇪 SE-185.146.173.9...
-  network: ws
-  port: '2052'
-  server: 185.146.173.91
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 6e88465e-a2ac-57d3-bbaf-f72e4439bd75
-  ws-opts:
-    headers:
-      Host: De1.vmess.site.
-    path: /vmess
