@@ -1,4 +1,16 @@
 proxies:
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 12|25763cbc95e940a3bd10c324c6eefd...
+  network: ws
+  port: 8880
+  server: 176.124.223.20
+  tls: false
+  type: vless
+  udp: false
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    path: /Telegram-@V2ray_Alpha/?ed=2560
 - alterId: 0
   cipher: auto
   name: 14|中国 - 青岛市 - Hangzhou Alibaba Ad...
@@ -841,16 +853,13 @@ proxies:
   port: 18016
   server: ti3hyra4.slashdevslashnetslashtun.net
   type: ss
-- alterId: 0
-  name: 24,36|🇨🇳CN中国3
+- name: 24|🇨🇳CN-157.148.96.89-0238
   password: b55123f4-0ba2-11f0-a2ef-f23c91cfbbc9
   port: 15229
   server: d700ff89-swvls0-t5w83q-1slpx.cu.plebai.net
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: d700ff89-swvls0-t5w83q-1slpx.cu.plebai.net
-  tls: true
   type: trojan
-  udp: true
 - cipher: aes-256-gcm
   name: 24|🇳CN-183.2.157.134-0239
   password: 4AHZ7NXVR0INNPXB
@@ -894,11 +903,14 @@ proxies:
   skip-cert-verify: false
   sni: vt-bana2-cn-11.ghpgwqswodgzv.com
   type: trojan
-- cipher: aes-256-gcm
-  name: 24|🇨🇳CN-180.188.47.62-0268
+- alterId: 0
+  cipher: aes-256-gcm
+  name: '24,36|未命名 #1'
   password: 323537df-dbdf-4f7e-a4c7-6c290d8e53ff
   port: 16004
   server: hk004.dogsvip.site
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 24|🇳CN-120.240.167.113-0271
@@ -2800,11 +2812,11 @@ proxies:
   port: 870
   server: 183.240.222.15
   type: ss
-- name: 33|🔒 TR-WS-TLS 🇨🇳 CN-101.69.122.1...
+- name: 33|🔒 TR-WS-TLS 🇨🇳 CN-119.188.204....
   network: ws
   password: bpb-trojan
   port: 443
-  server: 101.69.122.104
+  server: 119.188.204.76
   sni: zamim340.ggff.net
   type: trojan
   ws-opts:
@@ -2820,6 +2832,16 @@ proxies:
   ws-opts:
     headers:
       Host: zamim340.ggff.net
+- name: 33|🔒 TR-WS-TLS 🇨🇳 CN-101.69.122.1...
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 101.69.122.104
+  sni: zamim340.ggff.net
+  type: trojan
+  ws-opts:
+    headers:
+      Host: zamim340.ggff.net
 - alterId: 64
   cipher: auto
   name: 35|🔒 VM-RAW-NA 🇨🇳 CN-47.104.186.1...
@@ -2829,23 +2851,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  name: 36|CN
-  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-  port: 15229
-  server: 3784f70a-swo740-swy6li-tni2.cu.plebai.net
-  skip-cert-verify: true
-  sni: 3784f70a-swo740-swy6li-tni2.cu.plebai.net
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 36|🇨🇳CN中国2
-  password: 9ad05870-d8c5-11ef-9f1c-f23c913c8d2b
-  port: 15229
-  server: a2bbfa2e-swq1s0-sxwsos-g3b3.cu.plebai.net
-  skip-cert-verify: true
-  sni: a2bbfa2e-swq1s0-sxwsos-g3b3.cu.plebai.net
-  tls: true
-  type: trojan
-  udp: true

@@ -127,29 +127,19 @@ proxies:
   uuid: bbe3c5b9-876f-59c9-9793-9eeb3edcbc22
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 12|9bc94170082f473b925614e45960b0...
-  network: grpc
-  port: 8880
-  server: 95.164.45.78
-  tls: false
-  type: vless
-  udp: false
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 12|af0503cc56b3415aaced780f25487f...
+  name: 12|cd6b79129e1344d7bf0cac63d646d2...
   network: ws
-  port: 8443
-  server: 172.67.153.156
-  servername: ovhwuxian.pai50288.uk
+  port: 22224
+  server: 13.38.215.57
+  servername: trojan.burgerip.co.uk
   tls: true
   type: vless
   udp: false
-  uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
   ws-opts:
     headers:
-      host: ovhwuxian.pai50288.uk
-    path: /57ba2ab1
+      host: trojan.burgerip.co.uk
+    path: /telegram-channel-vlessconfig
 - alterId: 0
   cipher: auto
   name: 14|法国 - 格拉沃利讷 - OVH SAS - 1
@@ -404,11 +394,14 @@ proxies:
   skip-cert-verify: false
   sni: x1fr-ovh.devefun.net
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇫🇷FR-57.128.190.110-0371
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 24,36|未知146 5.6MB/s
   password: d275849ebcfcec7e
   port: 11703
   server: 57.128.190.110
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: aes-256-cfb
   name: 24|🇷FR-195.154.169.198-0378
@@ -521,17 +514,13 @@ proxies:
   uuid: 54c6c823-4957-4c6c-b10c-359bc51f7cc3
   ws-opts:
     path: /
-- alterId: 0
-  name: 24,36|未命名
-  network: tcp
+- name: 24|🇷FR-35.181.77.27-0744
   password: telegram-id-privatevpns
   port: 22222
   server: 35.181.77.27
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: trojan.burgerip.co.uk
-  tls: true
   type: trojan
-  udp: true
 - name: 24|🇷FR-176.31.83.90-0803
   password: origin
   port: 443
@@ -779,6 +768,19 @@ proxies:
   uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
   ws-opts:
     path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 24|🇷FR-146.59.55.50-5434
+  network: ws
+  port: 443
+  server: 146.59.55.50
+  servername: o.metuji.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: /linkvws
 - cipher: aes-256-cfb
   name: 24|🇫🇷FR-51.15.23.63-5557
   password: f8f7aCzcPKbsF8p3
@@ -1285,16 +1287,13 @@ proxies:
   port: 810
   server: 51.178.87.37
   type: ss
-- alterId: 0
-  name: 24,33,36|未知88
+- name: 24,33|🔒 TR-TCP-TLS 🇫🇷 FR-51.158.146....
   password: f6a0a650-306e-11ee-b692-1239d0255272
   port: 443
   server: 51.158.146.183
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: Speedtest.net
-  tls: true
   type: trojan
-  udp: true
 - cipher: aes-256-cfb
   name: 24|🇫🇷FR-51.15.27.48-8613
   password: f8f7aCzcPKbsF8p3
@@ -1517,16 +1516,8 @@ proxies:
   type: trojan
 - name: 30|🔒 HYSTERIA-UDP 🇫🇷 FR-51.159.22...
   password: dongtaiwang.com
-  port: 44464
+  port: 61770
   server: 51.159.226.1
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
-- name: 30|🔒 HYSTERIA-UDP 🇫🇷 FR-51.158.20...
-  password: dongtaiwang.com
-  port: 4489
-  server: 51.158.205.126
   skip-cert-verify: true
   sni: www.bing.com
   tls: false
@@ -1534,22 +1525,6 @@ proxies:
 - name: 30|🔒 HYSTERIA-UDP 🇫🇷 FR-195.154.3...
   password: dongtaiwang.com
   port: 4489
-  server: 195.154.33.70
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
-- name: '30|🔒 HYSTERIA-UDP 🇫🇷 FR-51.159.22... #1'
-  password: dongtaiwang.com
-  port: 61770
-  server: 51.159.226.1
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
-- name: '30|🔒 HYSTERIA-UDP 🇫🇷 FR-195.154.3... #1'
-  password: dongtaiwang.com
-  port: 23587
   server: 195.154.33.70
   skip-cert-verify: true
   sni: www.bing.com
@@ -1563,19 +1538,57 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
+- name: 30|🔒 HYSTERIA-UDP 🇫🇷 FR-51.158.20...
+  password: dongtaiwang.com
+  port: 4489
+  server: 51.158.205.126
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: '30|🔒 HYSTERIA-UDP 🇫🇷 FR-51.159.22... #1'
+  password: dongtaiwang.com
+  port: 44464
+  server: 51.159.226.1
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: '30|🔒 HYSTERIA-UDP 🇫🇷 FR-195.154.3... #1'
+  password: dongtaiwang.com
+  port: 23587
+  server: 195.154.33.70
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇫🇷 FR-51.91.250.2...
+  name: 31|🔒 VL-TCP-RLT 🇫🇷 FR-51.195.35.2...
   network: tcp
-  port: 8443
+  port: 4768
   reality-opts:
-    public-key: oj8VxkyFXCZEtJoRc-yjx7MEyRT1QrW17Ca3Rnu3hSE
-    short-id: 9b5538a5c337e0a7
-  server: 51.91.250.245
-  servername: easygoau1h.com
+    public-key: 1juiWgfU1-cGsbu9zxKCly7Vn3WGES5x6S86r90_vwc
+    short-id: b7e284c9b786f709
+  server: 51.195.35.2
+  servername: yandex.com
   tls: false
   type: vless
-  uuid: 2d6be8bf-27a6-482b-bc3a-ad385c8999d0
+  uuid: af50bdbf-1715-a461-cbb4-ebbea9ed338c
+  ws-opts:
+    headers:
+      Host: '---@External_Net---@External_Net---@External_Net---@External_Net---@External_Net'
+- client-fingerprint: chrome
+  name: 31|🔒 VL-TCP-RLT 🇫🇷 FR-54.37.79.28...
+  network: tcp
+  port: 1983
+  reality-opts:
+    public-key: 4PTi0kHTkABFYGzjfKeG2SdXZc5nkmo2WJeojJwf7HI
+  server: 54.37.79.28
+  servername: colorlib.com
+  tls: false
+  type: vless
+  uuid: 07e8ccf6-f598-4e10-9be7-a1b9aa51f518
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 31|🔒 VL-TCP-RLT 🇫🇷 FR-62.60.148.1...
@@ -1589,29 +1602,6 @@ proxies:
   tls: false
   type: vless
   uuid: 99464d7f-8691-41c2-922b-e75a1e182344
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇫🇷 FR-45.95.233.8...
-  network: tcp
-  port: 2040
-  reality-opts:
-    public-key: iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs
-    short-id: 27cfa05000c23cc4
-  server: 45.95.233.8
-  servername: fr.ign.com
-  tls: false
-  type: vless
-  uuid: 10b59513-ef76-4494-a925-305ec45dd3a4
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇫🇷 FR-54.37.79.28...
-  network: tcp
-  port: 1983
-  reality-opts:
-    public-key: 4PTi0kHTkABFYGzjfKeG2SdXZc5nkmo2WJeojJwf7HI
-  server: 54.37.79.28
-  servername: colorlib.com
-  tls: false
-  type: vless
-  uuid: 07e8ccf6-f598-4e10-9be7-a1b9aa51f518
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 31|🔒 VL-TCP-RLT 🇫🇷 FR-51.15.228.6...
@@ -1627,17 +1617,17 @@ proxies:
   uuid: 67d1e140-d8c8-4e4c-be1f-9800a1bcad38
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇫🇷 FR-51.195.35.2...
+  name: 31|🔒 VL-TCP-RLT 🇫🇷 FR-51.91.250.2...
   network: tcp
-  port: 4768
+  port: 8443
   reality-opts:
-    public-key: 1juiWgfU1-cGsbu9zxKCly7Vn3WGES5x6S86r90_vwc
-    short-id: b7e284c9b786f709
-  server: 51.195.35.2
-  servername: yandex.com
+    public-key: oj8VxkyFXCZEtJoRc-yjx7MEyRT1QrW17Ca3Rnu3hSE
+    short-id: 9b5538a5c337e0a7
+  server: 51.91.250.245
+  servername: easygoau1h.com
   tls: false
   type: vless
-  uuid: af50bdbf-1715-a461-cbb4-ebbea9ed338c
+  uuid: 2d6be8bf-27a6-482b-bc3a-ad385c8999d0
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '31|🔒 VL-TCP-RLT 🇫🇷 FR-51.195.35.2... #1'
@@ -1654,29 +1644,24 @@ proxies:
   ws-opts:
     headers:
       Host: '%2FBIA_TELEGRAM%40MARAMBASHI_MARAMBASHI'
-- alpn:
-  - http/1.1
-  name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-13.38.215.5...
+- client-fingerprint: chrome
+  name: 31|🔒 VL-TCP-RLT 🇫🇷 FR-45.95.233.8...
   network: tcp
-  password: telegram-id-directvpn
-  port: 22223
-  server: 13.38.215.57
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.210.182....
+  port: 2040
+  reality-opts:
+    public-key: iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs
+    short-id: 27cfa05000c23cc4
+  server: 45.95.233.8
+  servername: fr.ign.com
+  tls: false
+  type: vless
+  uuid: 10b59513-ef76-4494-a925-305ec45dd3a4
+- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-57.128.165....
   network: tcp
-  password: 3a792860-34de-11f0-a992-1239d0255272
-  port: 443
-  server: 51.210.182.170
-  skip-cert-verify: true
-  sni: fr1.test3.net
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇫🇷 FR-185.16.110.1...
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 185.16.110.113
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
+  password: klZqKyxq0H
+  port: 1935
+  server: 57.128.165.173
+  sni: x1-england-ovh-v2.devefun.net
   type: trojan
 - name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-152.228.191...
   network: tcp
@@ -1685,28 +1670,17 @@ proxies:
   server: 152.228.191.232
   sni: epccd.ambercc.filegear-sg.me
   type: trojan
-- alpn:
-  - http/1.1
-  name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-15.188.224....
+- alterId: 0
+  name: 33,36|未知79 1.7MB/s
   network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 15.188.224.253
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-57.128.165....
-  network: tcp
-  password: klZqKyxq0H
-  port: 1935
-  server: 57.128.165.173
-  sni: x1-england-ovh-v2.devefun.net
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇫🇷 FR-141.11.203.1...
-  password: Aimer
+  password: zsu4Mq3A9J
   port: 8443
-  server: 141.11.203.191
-  sni: epccj.ambercc.filegear-sg.me
+  server: 51.195.254.75
+  skip-cert-verify: true
+  sni: uk-02.allhubb.info
+  tls: true
   type: trojan
+  udp: true
 - alpn:
   - h3
   - h2
@@ -1718,35 +1692,59 @@ proxies:
   server: 51.68.13.106
   sni: x1fr-ovh.devefun.net
   type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.195.254....
+- alpn:
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-13.38.215.5...
   network: tcp
-  password: zsu4Mq3A9J
-  port: 8443
-  server: 51.195.254.75
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.38.215.57
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇫🇷 FR-185.16.110.1...
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 185.16.110.113
   skip-cert-verify: true
-  sni: uk-02.allhubb.info
+  sni: icecream.955850.xyz
   type: trojan
 - alpn:
   - http/1.1
-  name: '33|🔒 TR-TCP-TLS 🇫🇷 FR-15.188.224.... #1'
+  name: '33|🔒 TR-TCP-TLS 🇫🇷 FR-13.38.215.5... #1'
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22223
+  server: 13.38.215.57
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.159.59.1...
+  password: 9498f3a0-2992-11ee-a4c7-1239d0255272
+  port: 443
+  server: 51.159.59.186
+  sni: zula.ir
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇫🇷 FR-141.11.203.1...
+  password: Aimer
+  port: 8443
+  server: 141.11.203.191
+  sni: epccj.ambercc.filegear-sg.me
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.210.182....
+  network: tcp
+  password: 3a792860-34de-11f0-a992-1239d0255272
+  port: 443
+  server: 51.210.182.170
+  skip-cert-verify: true
+  sni: fr1.test3.net
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-15.188.224....
   network: tcp
   password: telegram-id-directvpn
   port: 22223
   server: 15.188.224.253
   sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇫🇷 FR-57.128.177.1...
-  password: Aimer
-  port: 8443
-  server: 57.128.177.172
-  sni: epccu.ambercc.filegear-sg.me
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-141.11.203....
-  network: tcp
-  password: Aimer
-  port: 443
-  server: 141.11.203.168
-  sni: epcca.ambercc.filegear-sg.me
   type: trojan
 - name: 33|🔒 TR-WS-TLS 🇫🇷 FR-141.11.203.2...
   network: ws
@@ -1759,21 +1757,6 @@ proxies:
     headers:
       Host: za.ylks.xyz
     path: /
-- alpn:
-  - http/1.1
-  name: '33|🔒 TR-TCP-TLS 🇫🇷 FR-13.38.215.5... #1'
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.38.215.57
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.159.59.1...
-  password: 9498f3a0-2992-11ee-a4c7-1239d0255272
-  port: 443
-  server: 51.159.59.186
-  sni: zula.ir
-  type: trojan
 - name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-141.227.160...
   network: tcp
   password: OLq0FfOlp7
@@ -1781,6 +1764,19 @@ proxies:
   server: 141.227.160.88
   skip-cert-verify: true
   sni: x1-sweden-ovh-v2.devefun.net
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-141.11.203....
+  network: tcp
+  password: Aimer
+  port: 443
+  server: 141.11.203.168
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇫🇷 FR-57.128.177.1...
+  password: Aimer
+  port: 8443
+  server: 57.128.177.172
+  sni: epccu.ambercc.filegear-sg.me
   type: trojan
 - alterId: 0
   cipher: auto
@@ -1792,6 +1788,20 @@ proxies:
   tls: false
   type: vmess
   uuid: 8371146b-a577-4ffb-bd04-bfcc42fdd10a
+- alterId: 0
+  cipher: auto
+  name: 35|🔒 VM-WS-NA 🇫🇷 FR-5.196.29.123:...
+  network: ws
+  port: '2082'
+  server: 5.196.29.123
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - name: '38,39|FR_speednode_0103 #1'
   network: ws
   port: 8880
