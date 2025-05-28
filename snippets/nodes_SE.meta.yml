@@ -1,33 +1,4 @@
 proxies:
-- client-fingerprint: chrome
-  fingerprint: ''
-  http-opts:
-    headers:
-      Host:
-      - www.irna.ir.www.alibaba.ir
-    method: GET
-    path:
-    - /
-  name: '12,38,39|LV_speednode_0144 #1'
-  network: http
-  port: 26000
-  server: 185.82.126.141
-  servername: www.irna.ir.www.alibaba.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 8c8873fb-6e68-4359-8d67-092d399612c9
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 12|6217cf4d8d1f460f96c5604711e761...
-  network: tcp
-  port: 3053
-  server: dl.dllavanddownload.ir
-  tls: false
-  type: vless
-  udp: false
-  uuid: d8c6ba07-2566-430b-b2a4-e8700347f686
 - name: 14,27|🇸🇪 sshocean VIP VPN 🛡️
   obfs: salamander
   obfs-password: 8w4jlX268iItraZSsWibq5gW0ZB1N0h2
@@ -195,30 +166,6 @@ proxies:
   type: vless
   uuid: 0870a931-b121-1278-f010-b140a958a300
 - client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇸🇪 SE-138.124.116...
-  network: tcp
-  port: 2040
-  reality-opts:
-    public-key: iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs
-    short-id: 27cfa05000c23cc4
-  server: 138.124.116.112
-  servername: fr.ign.com
-  tls: false
-  type: vless
-  uuid: 10b59513-ef76-4494-a925-305ec45dd3a4
-- client-fingerprint: firefox
-  name: 31|🔒 VL-GRPC-RLT 🇸🇪 SE-91.186.218...
-  network: grpc
-  port: 2083
-  reality-opts:
-    public-key: b14Nibi1pMPwFPqgiyZRS3a6-Y-Q8EsE5urKnA-RkAc
-    short-id: adf8a1f5689177a2
-  server: 91.186.218.167
-  servername: www.speedtest.net
-  tls: false
-  type: vless
-  uuid: d239a4fb-83fd-46b3-bda1-c0b405bd7360
-- client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 31|🔒 VL-TCP-RLT 🇸🇪 SE-94.242.58.1...
   network: tcp
@@ -269,6 +216,38 @@ proxies:
   tls: false
   type: vless
   uuid: f7fdf2c2-a98a-4e8f-b06a-29f1b3c8122f
+- client-fingerprint: firefox
+  name: 31|🔒 VL-GRPC-RLT 🇸🇪 SE-91.186.218...
+  network: grpc
+  port: 2083
+  reality-opts:
+    public-key: b14Nibi1pMPwFPqgiyZRS3a6-Y-Q8EsE5urKnA-RkAc
+    short-id: adf8a1f5689177a2
+  server: 91.186.218.167
+  servername: www.speedtest.net
+  tls: false
+  type: vless
+  uuid: d239a4fb-83fd-46b3-bda1-c0b405bd7360
+- client-fingerprint: chrome
+  name: 31|🔒 VL-TCP-RLT 🇸🇪 SE-138.124.116...
+  network: tcp
+  port: 2040
+  reality-opts:
+    public-key: iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs
+    short-id: 27cfa05000c23cc4
+  server: 138.124.116.112
+  servername: fr.ign.com
+  tls: false
+  type: vless
+  uuid: 10b59513-ef76-4494-a925-305ec45dd3a4
+- name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-70.34.206.3...
+  network: tcp
+  password: Bw5Mz7QkVp
+  port: 443
+  server: 70.34.206.32
+  skip-cert-verify: true
+  sni: z-v2-077787.kailib.com
+  type: trojan
 - name: 33|🔒 TR-WS-TLS 🇸🇪 SE-185.146.173....
   network: ws
   password: auto
@@ -289,11 +268,26 @@ proxies:
     headers:
       Host: vkvd127.mycdn.me
     path: '%2F'
-- name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-70.34.206.3...
+- alterId: 0
+  cipher: auto
+  name: 35|🔒 VM-WS-NA 🇸🇪 SE-185.146.173.9...
+  network: ws
+  port: '2052'
+  server: 185.146.173.91
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6e88465e-a2ac-57d3-bbaf-f72e4439bd75
+  ws-opts:
+    headers:
+      Host: De1.vmess.site.
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 35|🔒 VM-TCP-NA 🇸🇪 SE-169.150.208....
   network: tcp
-  password: Bw5Mz7QkVp
-  port: 443
-  server: 70.34.206.32
-  skip-cert-verify: true
-  sni: z-v2-077787.kailib.com
-  type: trojan
+  port: 18000
+  server: 169.150.208.83
+  tls: false
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
