@@ -48,19 +48,6 @@ proxies:
   uuid: 4714e7ef-8b40-448c-bcd3-f2526c18fbd0
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇸🇪 SE-46.253.4.31...
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: r-Sryx8MT35Vu5eHeRr-nfVXkGw1pQCkkwL0MFIkeEw
-    short-id: 321dd18a
-  server: 46.253.4.31
-  servername: www.dropbox.com
-  tls: false
-  type: vless
-  uuid: f7fdf2c2-a98a-4e8f-b06a-29f1b3c8122f
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
   name: 31|🔒 VL-TCP-RLT 🇸🇪 SE-94.242.58.1...
   network: tcp
   port: 443
@@ -72,6 +59,29 @@ proxies:
   tls: false
   type: vless
   uuid: b1c801ec-1c5e-4d12-8b53-8da11c64a21b
+- client-fingerprint: chrome
+  name: 31|🔒 VL-XHTTP-RLT 🇸🇪 SE-70.34.223...
+  network: xhttp
+  port: 2023
+  reality-opts:
+    public-key: gDBtmJC-zpvrr8qB_IHk3S9jl7U2yW2bVyI1cMDmbGk
+  server: 70.34.223.240
+  servername: refersion.com
+  tls: false
+  type: vless
+  uuid: fd99e44d-a046-4477-b48b-8f15bc0f217a
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: 31|🔒 VL-TCP-RLT 🇸🇪 SE-109.122.201...
+  network: tcp
+  port: 24782
+  reality-opts:
+    public-key: _On5EYS5axlQCBRzDSbjf4bMWbnIGWrTdP_qN3kfayc
+  server: 109.122.201.47
+  servername: m.media-amazon.com
+  tls: false
+  type: vless
+  uuid: 8d5c286f-d00a-4377-8cea-3e4ce23e2373
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 31|🔒 VL-TCP-RLT 🇸🇪 SE-45.82.13.14...
@@ -85,17 +95,6 @@ proxies:
   tls: false
   type: vless
   uuid: 0870a931-b121-1278-f010-b140a958a300
-- client-fingerprint: chrome
-  name: 31|🔒 VL-XHTTP-RLT 🇸🇪 SE-70.34.223...
-  network: xhttp
-  port: 2023
-  reality-opts:
-    public-key: gDBtmJC-zpvrr8qB_IHk3S9jl7U2yW2bVyI1cMDmbGk
-  server: 70.34.223.240
-  servername: refersion.com
-  tls: false
-  type: vless
-  uuid: fd99e44d-a046-4477-b48b-8f15bc0f217a
 - client-fingerprint: firefox
   name: 31|🔒 VL-GRPC-RLT 🇸🇪 SE-91.186.218...
   network: grpc
@@ -120,18 +119,19 @@ proxies:
   tls: false
   type: vless
   uuid: 10b59513-ef76-4494-a925-305ec45dd3a4
-- client-fingerprint: safari
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇸🇪 SE-109.122.201...
+  name: 31|🔒 VL-TCP-RLT 🇸🇪 SE-46.253.4.31...
   network: tcp
-  port: 24782
+  port: 443
   reality-opts:
-    public-key: _On5EYS5axlQCBRzDSbjf4bMWbnIGWrTdP_qN3kfayc
-  server: 109.122.201.47
-  servername: m.media-amazon.com
+    public-key: r-Sryx8MT35Vu5eHeRr-nfVXkGw1pQCkkwL0MFIkeEw
+    short-id: 321dd18a
+  server: 46.253.4.31
+  servername: www.dropbox.com
   tls: false
   type: vless
-  uuid: 8d5c286f-d00a-4377-8cea-3e4ce23e2373
+  uuid: f7fdf2c2-a98a-4e8f-b06a-29f1b3c8122f
 - name: 33|🔒 TR-WS-TLS 🇸🇪 SE-185.146.173....
   network: ws
   password: auto
@@ -142,6 +142,12 @@ proxies:
   ws-opts:
     headers:
       Host: esetsecuritylicense.bwnsmv.workers.dev
+- name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-13.60.86.63...
+  password: FYCO02u8Ny3RS38axzSTl3pcaegKlZ3BZyeS7Eaj6A9ODYIpwCAXF5CR4DqxDn
+  port: 443
+  server: 13.60.86.63
+  sni: loosely.freetrade.link
+  type: trojan
 - name: 33|🔒 TR-WS-NONE 🇸🇪 SE-109.120.132...
   network: ws
   password: vpn
@@ -160,12 +166,6 @@ proxies:
   skip-cert-verify: true
   sni: z-v2-077787.kailib.com
   type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-13.60.86.63...
-  password: FYCO02u8Ny3RS38axzSTl3pcaegKlZ3BZyeS7Eaj6A9ODYIpwCAXF5CR4DqxDn
-  port: 443
-  server: 13.60.86.63
-  sni: loosely.freetrade.link
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 35|🔒 VM-WS-NA 🇸🇪 SE-185.146.173.9...
@@ -180,3 +180,12 @@ proxies:
     headers:
       Host: De1.vmess.site.
     path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 35|🔒 VM-TCP-NA 🇸🇪 SE-169.150.208....
+  network: tcp
+  port: 18000
+  server: 169.150.208.83
+  tls: false
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
