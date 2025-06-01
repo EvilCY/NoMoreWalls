@@ -13,29 +13,6 @@ proxies:
   port: 44013
   server: 46.246.98.155
   type: ss
-- name: 32|🔒 TR-WS-TLS 🇸🇪 SE-185.146.173....
-  network: ws
-  password: auto
-  port: 443
-  server: 185.146.173.158
-  sni: esetsecuritylicense.bwnsmv.workers.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: esetsecuritylicense.bwnsmv.workers.dev
-- name: 32|🔒 TR-TCP-TLS 🇸🇪 SE-70.34.206.3...
-  network: tcp
-  password: Bw5Mz7QkVp
-  port: 443
-  server: 70.34.206.32
-  sni: z-v2-077787.kailib.com
-  type: trojan
-- name: 32|🔒 TR-TCP-TLS 🇸🇪 SE-13.60.86.63...
-  password: FYCO02u8Ny3RS38axzSTl3pcaegKlZ3BZyeS7Eaj6A9ODYIpwCAXF5CR4DqxDn
-  port: 443
-  server: 13.60.86.63
-  sni: loosely.freetrade.link
-  type: trojan
 - name: 32|🔒 TR-WS-NONE 🇸🇪 SE-109.120.132...
   network: ws
   password: vpn
@@ -46,6 +23,33 @@ proxies:
     headers:
       Host: vkvd127.mycdn.me
     path: '%2F'
+- name: 32|🔒 TR-WS-TLS 🇸🇪 SE-185.146.173....
+  network: ws
+  password: auto
+  port: 443
+  server: 185.146.173.158
+  sni: esetsecuritylicense.bwnsmv.workers.dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: esetsecuritylicense.bwnsmv.workers.dev
+- alterId: 0
+  name: 32,35|未知4
+  network: tcp
+  password: Bw5Mz7QkVp
+  port: 443
+  server: 70.34.206.32
+  skip-cert-verify: true
+  sni: z-v2-077787.kailib.com
+  tls: true
+  type: trojan
+  udp: true
+- name: 32|🔒 TR-TCP-TLS 🇸🇪 SE-13.60.86.63...
+  password: FYCO02u8Ny3RS38axzSTl3pcaegKlZ3BZyeS7Eaj6A9ODYIpwCAXF5CR4DqxDn
+  port: 443
+  server: 13.60.86.63
+  sni: loosely.freetrade.link
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 34|🔒 VM-WS-NA 🇸🇪 SE-185.146.173.9...
