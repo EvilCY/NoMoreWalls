@@ -33,6 +33,19 @@ proxies:
   tls: false
   type: hysteria2
 - client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 30|🔒 VL-TCP-RLT 🇸🇪 SE-94.242.58.1...
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
+    short-id: 7755e972daf8eec8
+  server: 94.242.58.133
+  servername: video.intfreed.ru
+  tls: false
+  type: vless
+  uuid: b1c801ec-1c5e-4d12-8b53-8da11c64a21b
+- client-fingerprint: chrome
   name: 30|🔒 VL-XHTTP-RLT 🇸🇪 SE-70.34.223...
   network: xhttp
   port: 2023
@@ -43,6 +56,20 @@ proxies:
   tls: false
   type: vless
   uuid: fd99e44d-a046-4477-b48b-8f15bc0f217a
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 30|🔒 VL-TCP-RLT 🇸🇪 SE-94.131.115....
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: ckRcueERkPqqjZABwxqni_J_Nbb70Q6k5fEEUAjoImw
+  server: 94.131.115.15
+  servername: www.samsung.com
+  tls: false
+  type: vless
+  uuid: 4714e7ef-8b40-448c-bcd3-f2526c18fbd0
 - client-fingerprint: chrome
   name: 30|🔒 VL-TCP-RLT 🇸🇪 SE-138.124.116...
   network: tcp
@@ -81,32 +108,6 @@ proxies:
   uuid: 8d5c286f-d00a-4377-8cea-3e4ce23e2373
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 30|🔒 VL-TCP-RLT 🇸🇪 SE-46.253.4.31...
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: r-Sryx8MT35Vu5eHeRr-nfVXkGw1pQCkkwL0MFIkeEw
-    short-id: 321dd18a
-  server: 46.253.4.31
-  servername: www.dropbox.com
-  tls: false
-  type: vless
-  uuid: f7fdf2c2-a98a-4e8f-b06a-29f1b3c8122f
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 30|🔒 VL-TCP-RLT 🇸🇪 SE-94.242.58.1...
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: JxwG7rAbNCd_C82p9K69AZDWh51fri2nm3wLHHrfyiw
-    short-id: 7755e972daf8eec8
-  server: 94.242.58.133
-  servername: video.intfreed.ru
-  tls: false
-  type: vless
-  uuid: b1c801ec-1c5e-4d12-8b53-8da11c64a21b
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
   name: 30|🔒 VL-TCP-RLT 🇸🇪 SE-45.82.13.14...
   network: tcp
   port: 2082
@@ -118,31 +119,27 @@ proxies:
   tls: false
   type: vless
   uuid: 0870a931-b121-1278-f010-b140a958a300
-- alpn:
-  - h2
-  client-fingerprint: chrome
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 30|🔒 VL-TCP-RLT 🇸🇪 SE-94.131.115....
+  name: 30|🔒 VL-TCP-RLT 🇸🇪 SE-46.253.4.31...
   network: tcp
   port: 443
   reality-opts:
-    public-key: ckRcueERkPqqjZABwxqni_J_Nbb70Q6k5fEEUAjoImw
-  server: 94.131.115.15
-  servername: www.samsung.com
+    public-key: r-Sryx8MT35Vu5eHeRr-nfVXkGw1pQCkkwL0MFIkeEw
+    short-id: 321dd18a
+  server: 46.253.4.31
+  servername: www.dropbox.com
   tls: false
   type: vless
-  uuid: 4714e7ef-8b40-448c-bcd3-f2526c18fbd0
-- alterId: 0
-  name: 32,35|未知153
+  uuid: f7fdf2c2-a98a-4e8f-b06a-29f1b3c8122f
+- name: 32|🔒 TR-TCP-TLS 🇸🇪 SE-70.34.206.3...
   network: tcp
   password: Bw5Mz7QkVp
   port: 443
   server: 70.34.206.32
   skip-cert-verify: true
   sni: z-v2-077787.kailib.com
-  tls: true
   type: trojan
-  udp: true
 - name: 32|🔒 TR-WS-TLS 🇸🇪 SE-185.146.173....
   network: ws
   password: auto
