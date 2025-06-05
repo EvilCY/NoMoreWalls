@@ -1,5 +1,5 @@
 proxies:
-- name: '14,38,39|CH_speednode_0023 #1'
+- name: 14|14|CH_speednode_0023
   network: ws
   port: 8880
   server: 185.18.250.20
@@ -7,7 +7,6 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: vless
-  udp: true
   uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
@@ -94,18 +93,6 @@ proxies:
   type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇨🇭 CH-84.234.29.9...
-  network: tcp
-  port: 1300
-  reality-opts:
-    public-key: FdMFSpgEwT0nhczf37d-Z8gFgJtwyV4C_pJlnOTScUA
-  server: 84.234.29.94
-  servername: refersion.com
-  tls: false
-  type: vless
-  uuid: 04c73880-8479-4164-bd2c-e7d49eb82c2c
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
   name: 31|🔒 VL-TCP-RLT 🇨🇭 CH-195.15.215....
   network: tcp
   port: 443
@@ -117,6 +104,18 @@ proxies:
   tls: false
   type: vless
   uuid: e40799ef-6343-450a-95cf-88b12749e492
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 31|🔒 VL-TCP-RLT 🇨🇭 CH-84.234.29.9...
+  network: tcp
+  port: 1300
+  reality-opts:
+    public-key: FdMFSpgEwT0nhczf37d-Z8gFgJtwyV4C_pJlnOTScUA
+  server: 84.234.29.94
+  servername: refersion.com
+  tls: false
+  type: vless
+  uuid: 04c73880-8479-4164-bd2c-e7d49eb82c2c
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config
@@ -135,44 +134,29 @@ proxies:
   cipher: auto
   name: 35|🔒 VM-TCP-NA 🇨🇭 CH-188.213.128....
   network: tcp
-  port: '2010'
-  server: 188.213.128.64
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b117bd27-0e16-4342-852a-59f0c0aa61f4
-- alterId: 0
-  cipher: auto
-  name: 35,36|未知6 7.7MB/s
-  network: tcp
-  port: 22324
-  server: 186.190.215.193
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alterId: 0
-  cipher: auto
-  name: '35|🔒 VM-TCP-NA 🇨🇭 CH-188.213.128.... #1'
-  network: tcp
   port: '1010'
   server: 188.213.128.211
   servername: ''
   tls: false
   type: vmess
   uuid: 799775e9-a2df-43dd-9d2d-b362fd60ef07
-- name: '38,39|CH_speednode_0022 #1'
-  network: ws
-  port: 8880
-  server: 185.18.250.20
-  servername: reedfree8mahsang2.redorg.ir
-  skip-cert-verify: false
+- alterId: 0
+  cipher: auto
+  name: 35|🔒 VM-TCP-NA 🇨🇭 CH-186.190.215....
+  network: tcp
+  port: '22324'
+  server: 186.190.215.193
+  servername: ''
   tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: /?ed=2560
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
+  name: '35|🔒 VM-TCP-NA 🇨🇭 CH-188.213.128.... #1'
+  network: tcp
+  port: '2010'
+  server: 188.213.128.64
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b117bd27-0e16-4342-852a-59f0c0aa61f4
