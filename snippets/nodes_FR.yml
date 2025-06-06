@@ -3,7 +3,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 12|739fee29ba244babb0c8c05d9916de...
+  name: 12|e58a693435fa4082ab5994a435748f...
   network: ws
   port: 443
   server: 57.129.25.25
@@ -20,7 +20,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 12|68b7c692a6564ef0a51137268c65bd...
+  name: 12|eb5f28b3d5af4c5ca5dc79d2b7432d...
   network: ws
   port: 443
   server: 57.129.25.20
@@ -33,6 +33,23 @@ proxies:
     headers:
       host: 57.129.25.20
     path: linkvws
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 12|1f5d4b6ba289459e8c5dc7106a39e7...
+  network: ws
+  port: 443
+  server: 163.5.159.231
+  servername: irvideo.cfd
+  tls: true
+  type: vmess
+  udp: false
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  ws-opts:
+    headers:
+      host: irvideo.cfd
+    path: /linkws
 - alterId: 0
   cipher: auto
   name: 14|法国 - 巴黎 - CGI GLOBAL LIMITED -...
@@ -144,6 +161,21 @@ proxies:
   port: 8080
   server: 45.158.171.110
   type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 23|🇫🇷FR-163.5.159.231-8334
+  network: ws
+  port: 443
+  server: irvideo.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  ws-opts:
+    headers:
+      host: irvideo.cfd
+    path: /linkws
 - cipher: chacha20-ietf-poly1305
   name: 23|🇫🇷FR-45.158.171.132-1007
   password: cvII85TrW6n0OGyfpHVS1u
@@ -174,6 +206,21 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
+  name: 23|🇫🇷FR-45.145.165.114-8319
+  network: ws
+  port: 443
+  server: beyonddsz.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-opts:
+    headers:
+      host: beyonddsz.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
   name: 23|🇫🇷FR-144.24.200.164-1593
   network: ws
   port: 443
@@ -201,17 +248,23 @@ proxies:
     headers:
       host: az05.beyondy.cfd
     path: /link
-- name: 33|🔒 TR-WS-TLS 🇫🇷 FR-141.11.203.2...
-  network: ws
-  password: NISHIKUITAN111
+- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.210.182....
+  network: tcp
+  password: df9d6880-3f0f-11f0-b00b-1239d0255272
   port: 443
-  server: 141.11.203.203
-  sni: za.ylks.xyz
+  server: 51.210.182.170
+  skip-cert-verify: true
+  sni: fr1.test3.net
   type: trojan
-  ws-opts:
-    headers:
-      Host: za.ylks.xyz
-    path: /
+- alpn:
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-13.39.3.20:...
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22223
+  server: 13.39.3.20
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - name: 33|🔒 TR-WS-TLS 🇫🇷 FR-141.11.203.1...
   network: ws
   password: Aimer
@@ -223,29 +276,30 @@ proxies:
     headers:
       Host: epmw.ambercc.filegear-sg.me
     path: '%2F%3Fed%3D2560'
+- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.158.146....
+  password: f6a0a650-306e-11ee-b692-1239d0255272
+  port: 443
+  server: 51.158.146.183
+  sni: Speedtest.net
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '33|🔒 TR-TCP-TLS 🇫🇷 FR-13.39.3.20:... #1'
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.39.3.20
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇫🇷 FR-57.128.177.1...
+  password: Aimer
+  port: 8443
+  server: 57.128.177.172
+  sni: epccu.ambercc.filegear-sg.me
+  type: trojan
 - alpn:
   - http/1.1
   name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-13.37.181.6...
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22223
-  server: 13.37.181.65
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.68.13.10...
-  network: tcp
-  password: FiSo7J6vfS
-  port: 1935
-  server: 51.68.13.106
-  sni: x1fr-ovh.devefun.net
-  type: trojan
-- alpn:
-  - http/1.1
-  name: '33|🔒 TR-TCP-TLS 🇫🇷 FR-13.37.181.6... #1'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -262,6 +316,68 @@ proxies:
   tls: true
   type: trojan
   udp: true
+- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-57.128.165....
+  network: tcp
+  password: klZqKyxq0H
+  port: 1935
+  server: 57.128.165.173
+  sni: x1-england-ovh-v2.devefun.net
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.159.59.1...
+  password: 9498f3a0-2992-11ee-a4c7-1239d0255272
+  port: 443
+  server: 51.159.59.186
+  sni: zula.ir
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '33|🔒 TR-TCP-TLS 🇫🇷 FR-13.37.181.6... #1'
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22223
+  server: 13.37.181.65
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-141.11.203....
+  network: tcp
+  password: Aimer
+  port: 443
+  server: 141.11.203.168
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+- name: 33|🔒 TR-WS-TLS 🇫🇷 FR-141.11.203.2...
+  network: ws
+  password: NISHIKUITAN111
+  port: 443
+  server: 141.11.203.203
+  sni: za.ylks.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: za.ylks.xyz
+    path: /
+- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-141.227.160...
+  network: tcp
+  password: OLq0FfOlp7
+  port: 1935
+  server: 141.227.160.88
+  skip-cert-verify: true
+  sni: x1-sweden-ovh-v2.devefun.net
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-38.180.240....
+  network: tcp
+  password: d2adff89-5143-4d67-921f-3478464de5bb
+  port: 443
+  server: 38.180.240.150
+  sni: fr.freeguard.org
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-152.228.191...
+  network: tcp
+  password: Aimer
+  port: 443
+  server: 152.228.191.232
+  sni: epccd.ambercc.filegear-sg.me
+  type: trojan
 - name: 33|🔒 TR-WS-TLS 🇫🇷 FR-185.16.110.1...
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
@@ -273,47 +389,6 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: '%2F'
-- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-141.227.160...
-  network: tcp
-  password: OLq0FfOlp7
-  port: 1935
-  server: 141.227.160.88
-  skip-cert-verify: true
-  sni: x1-sweden-ovh-v2.devefun.net
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇫🇷 FR-57.128.177.1...
-  password: Aimer
-  port: 8443
-  server: 57.128.177.172
-  sni: epccu.ambercc.filegear-sg.me
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-38.180.240....
-  network: tcp
-  password: d2adff89-5143-4d67-921f-3478464de5bb
-  port: 443
-  server: 38.180.240.150
-  sni: fr.freeguard.org
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.158.146....
-  password: f6a0a650-306e-11ee-b692-1239d0255272
-  port: 443
-  server: 51.158.146.183
-  sni: Speedtest.net
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-141.11.203....
-  network: tcp
-  password: Aimer
-  port: 443
-  server: 141.11.203.168
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-152.228.191...
-  network: tcp
-  password: Aimer
-  port: 443
-  server: 152.228.191.232
-  sni: epccd.ambercc.filegear-sg.me
-  type: trojan
 - name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.195.254....
   network: tcp
   password: zsu4Mq3A9J
@@ -321,37 +396,27 @@ proxies:
   server: 51.195.254.75
   sni: uk-02.allhubb.info
   type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.210.182....
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.68.13.10...
   network: tcp
-  password: df9d6880-3f0f-11f0-b00b-1239d0255272
-  port: 443
-  server: 51.210.182.170
-  skip-cert-verify: true
-  sni: fr1.test3.net
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.159.59.1...
-  password: 9498f3a0-2992-11ee-a4c7-1239d0255272
-  port: 443
-  server: 51.159.59.186
-  sni: zula.ir
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-57.128.165....
-  network: tcp
-  password: klZqKyxq0H
+  password: FiSo7J6vfS
   port: 1935
-  server: 57.128.165.173
-  sni: x1-england-ovh-v2.devefun.net
+  server: 51.68.13.106
+  sni: x1fr-ovh.devefun.net
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇫🇷 FR-45.12.133.43...
+  name: 35|🔒 VM-TCP-NA 🇫🇷 FR-95.179.216.1...
   network: tcp
-  port: '28444'
-  server: 45.12.133.43
+  port: '8874'
+  server: 95.179.216.149
   servername: ''
   tls: false
   type: vmess
-  uuid: 1be8eddb-4f8c-45d0-b2a1-e538eb3abd39
+  uuid: 8371146b-a577-4ffb-bd04-bfcc42fdd10a
 - alterId: 0
   cipher: auto
   name: 35|🔒 VM-TCP-NA 🇫🇷 FR-2.56.126.103...
@@ -364,14 +429,14 @@ proxies:
   uuid: 2eb3ee2a-7bf8-4b50-9b93-2d489d2f3456
 - alterId: 0
   cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇫🇷 FR-95.179.216.1...
+  name: 35|🔒 VM-TCP-NA 🇫🇷 FR-45.12.133.43...
   network: tcp
-  port: '8874'
-  server: 95.179.216.149
+  port: '28444'
+  server: 45.12.133.43
   servername: ''
   tls: false
   type: vmess
-  uuid: 8371146b-a577-4ffb-bd04-bfcc42fdd10a
+  uuid: 1be8eddb-4f8c-45d0-b2a1-e538eb3abd39
 - alterId: 0
   cipher: auto
   name: 35|🔒 VM-TCP-NA 🇫🇷 FR-135.125.182....
