@@ -74,6 +74,18 @@ proxies:
   sni: 70.34.207.153
   tls: false
   type: hysteria2
+- client-fingerprint: firefox
+  name: 30|🔒 VL-GRPC-RLT 🇸🇪 SE-91.186.218...
+  network: grpc
+  port: 2083
+  reality-opts:
+    public-key: b14Nibi1pMPwFPqgiyZRS3a6-Y-Q8EsE5urKnA-RkAc
+    short-id: adf8a1f5689177a2
+  server: 91.186.218.167
+  servername: www.speedtest.net
+  tls: false
+  type: vless
+  uuid: d239a4fb-83fd-46b3-bda1-c0b405bd7360
 - client-fingerprint: chrome
   name: 30|🔒 VL-TCP-RLT 🇸🇪 SE-138.124.116...
   network: tcp
@@ -86,6 +98,19 @@ proxies:
   tls: false
   type: vless
   uuid: 10b59513-ef76-4494-a925-305ec45dd3a4
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 30|🔒 VL-TCP-RLT 🇸🇪 SE-46.253.4.31...
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: r-Sryx8MT35Vu5eHeRr-nfVXkGw1pQCkkwL0MFIkeEw
+    short-id: 321dd18a
+  server: 46.253.4.31
+  servername: www.dropbox.com
+  tls: false
+  type: vless
+  uuid: f7fdf2c2-a98a-4e8f-b06a-29f1b3c8122f
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 30|🔒 VL-TCP-RLT 🇸🇪 SE-94.242.58.1...
@@ -111,31 +136,6 @@ proxies:
   tls: false
   type: vless
   uuid: 8d5c286f-d00a-4377-8cea-3e4ce23e2373
-- client-fingerprint: firefox
-  name: 30|🔒 VL-GRPC-RLT 🇸🇪 SE-91.186.218...
-  network: grpc
-  port: 2083
-  reality-opts:
-    public-key: b14Nibi1pMPwFPqgiyZRS3a6-Y-Q8EsE5urKnA-RkAc
-    short-id: adf8a1f5689177a2
-  server: 91.186.218.167
-  servername: www.speedtest.net
-  tls: false
-  type: vless
-  uuid: d239a4fb-83fd-46b3-bda1-c0b405bd7360
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 30|🔒 VL-TCP-RLT 🇸🇪 SE-46.253.4.31...
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: r-Sryx8MT35Vu5eHeRr-nfVXkGw1pQCkkwL0MFIkeEw
-    short-id: 321dd18a
-  server: 46.253.4.31
-  servername: www.dropbox.com
-  tls: false
-  type: vless
-  uuid: f7fdf2c2-a98a-4e8f-b06a-29f1b3c8122f
 - name: 32|🔒 TR-WS-NONE 🇸🇪 SE-109.120.132...
   network: ws
   password: vpn
@@ -145,15 +145,7 @@ proxies:
   ws-opts:
     headers:
       Host: vkvd127.mycdn.me
-    path: /
-- name: 32|🔒 TR-TCP-TLS 🇸🇪 SE-70.34.206.3...
-  network: tcp
-  password: Bw5Mz7QkVp
-  port: 443
-  server: 70.34.206.32
-  skip-cert-verify: true
-  sni: z-v2-077787.kailib.com
-  type: trojan
+    path: '%2F'
 - name: 32|🔒 TR-WS-TLS 🇸🇪 SE-185.146.173....
   network: ws
   password: auto
@@ -164,6 +156,14 @@ proxies:
   ws-opts:
     headers:
       Host: esetsecuritylicense.bwnsmv.workers.dev
+- name: 32|🔒 TR-TCP-TLS 🇸🇪 SE-70.34.206.3...
+  network: tcp
+  password: Bw5Mz7QkVp
+  port: 443
+  server: 70.34.206.32
+  skip-cert-verify: true
+  sni: z-v2-077787.kailib.com
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 34|🔒 VM-WS-NA 🇸🇪 SE-185.146.173.9...
