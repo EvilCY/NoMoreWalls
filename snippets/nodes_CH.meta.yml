@@ -1,9 +1,12 @@
 proxies:
-- cipher: aes-128-gcm
-  name: 23|🇨🇭CH-156.146.62.164-1014
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 23,36|未知51 13.2MB/s
   password: shadowsocks
   port: 443
   server: 156.146.62.164
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: aes-128-gcm
   name: 23|🇨🇭CH-156.146.62.162-1010
@@ -29,18 +32,20 @@ proxies:
   port: 1866
   server: 204.136.10.115
   type: ss
-- client-fingerprint: randomized
-  name: 31|🔒 VL-GRPC-RLT 🇨🇭 CH-195.15.201...
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config
+  name: 31|🔒 VL-GRPC-RLT 🇨🇭 CH-141.227.13...
   network: grpc
-  port: 443
+  port: 1210
   reality-opts:
-    public-key: c6D9SIzHXAiKHBkXLQgY5NiGt50Mj_PkiqI2B8eQi1A
-    short-id: 864702d02962387e
-  server: 195.15.201.22
-  servername: whatsapp.net
+    public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
+    short-id: 7fe29733
+  server: 141.227.138.201
+  servername: ubuntu.com
   tls: false
   type: vless
-  uuid: d6e651f4-8346-43cd-9cb9-581e92be4c17
+  uuid: 6526be27-2537-417d-a25f-15e2b2b21d6e
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 31|🔒 VL-TCP-RLT 🇨🇭 CH-84.234.29.9...
@@ -66,27 +71,24 @@ proxies:
   tls: false
   type: vless
   uuid: e40799ef-6343-450a-95cf-88b12749e492
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config
-  name: 31|🔒 VL-GRPC-RLT 🇨🇭 CH-141.227.13...
+- client-fingerprint: randomized
+  name: 31|🔒 VL-GRPC-RLT 🇨🇭 CH-195.15.201...
   network: grpc
-  port: 1210
+  port: 443
   reality-opts:
-    public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
-    short-id: 7fe29733
-  server: 141.227.138.201
-  servername: ubuntu.com
+    public-key: c6D9SIzHXAiKHBkXLQgY5NiGt50Mj_PkiqI2B8eQi1A
+    short-id: 864702d02962387e
+  server: 195.15.201.22
+  servername: whatsapp.net
   tls: false
   type: vless
-  uuid: 6526be27-2537-417d-a25f-15e2b2b21d6e
+  uuid: d6e651f4-8346-43cd-9cb9-581e92be4c17
 - alterId: 0
   cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇨🇭 CH-23.166.88.18...
+  name: 35|🔒 VM-TCP-NA 🇨🇭 CH-186.190.215....
   network: tcp
-  port: '22324'
-  server: 23.166.88.183
-  servername: ''
+  port: 22324
+  server: 186.190.215.193
   tls: false
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002

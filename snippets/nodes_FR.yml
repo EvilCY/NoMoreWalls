@@ -95,11 +95,14 @@ proxies:
   port: 8080
   server: 45.158.171.146
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 23|🇫🇷FR-45.158.171.110-0977
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 23,36|未知149 19.6MB/s
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 45.158.171.110
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -188,78 +191,6 @@ proxies:
     headers:
       host: az05.beyondy.cfd
     path: /link
-- name: 33|🔒 TR-WS-TLS 🇫🇷 FR-141.11.203.1...
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 141.11.203.191
-  sni: epmw.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epmw.ambercc.filegear-sg.me
-    path: '%2F%3Fed%3D2560'
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.68.13.10...
-  network: tcp
-  password: FiSo7J6vfS
-  port: 1935
-  server: 51.68.13.106
-  sni: x1fr-ovh.devefun.net
-  type: trojan
-- alterId: 0
-  name: 33,36|未知153 2.9MB/s
-  network: tcp
-  password: zsu4Mq3A9J
-  port: 8443
-  server: 51.195.254.75
-  skip-cert-verify: true
-  sni: uk-02.allhubb.info
-  tls: true
-  type: trojan
-  udp: true
-- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-141.11.203....
-  network: tcp
-  password: Aimer
-  port: 443
-  server: 141.11.203.168
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.158.146....
-  password: f6a0a650-306e-11ee-b692-1239d0255272
-  port: 443
-  server: 51.158.146.183
-  sni: Speedtest.net
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-38.180.240....
-  network: tcp
-  password: d2adff89-5143-4d67-921f-3478464de5bb
-  port: 443
-  server: 38.180.240.150
-  sni: fr.freeguard.org
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.210.182....
-  network: tcp
-  password: df9d6880-3f0f-11f0-b00b-1239d0255272
-  port: 443
-  server: 51.210.182.170
-  skip-cert-verify: true
-  sni: fr1.test3.net
-  type: trojan
-- alterId: 0
-  name: 33,36|未知111
-  network: tcp
-  password: Aimer
-  port: 443
-  server: 152.228.191.232
-  skip-cert-verify: true
-  sni: epccd.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
 - name: 33|🔒 TR-WS-TLS 🇫🇷 FR-141.11.203.2...
   network: ws
   password: NISHIKUITAN111
@@ -271,24 +202,29 @@ proxies:
     headers:
       Host: za.ylks.xyz
     path: /
-- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-57.128.165....
+- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-38.180.240....
   network: tcp
-  password: klZqKyxq0H
-  port: 1935
-  server: 57.128.165.173
-  sni: x1-england-ovh-v2.devefun.net
+  password: d2adff89-5143-4d67-921f-3478464de5bb
+  port: 443
+  server: 38.180.240.150
+  sni: fr.freeguard.org
   type: trojan
-- alterId: 0
-  name: 33,36|未知50 13.5MB/s
+- alpn:
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.44.103.6...
   network: tcp
-  password: OLq0FfOlp7
-  port: 1935
-  server: 141.227.160.88
-  skip-cert-verify: true
-  sni: x1-sweden-ovh-v2.devefun.net
-  tls: true
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.44.103.6
+  sni: trojan.burgerip.co.uk
   type: trojan
-  udp: true
+- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.195.254....
+  network: tcp
+  password: zsu4Mq3A9J
+  port: 8443
+  server: 51.195.254.75
+  sni: uk-02.allhubb.info
+  type: trojan
 - name: 33|🔒 TR-TCP-NA 🇫🇷 FR-57.128.177.1...
   password: Aimer
   port: 8443
@@ -301,6 +237,75 @@ proxies:
   server: 51.159.59.186
   sni: zula.ir
   type: trojan
+- name: 33|🔒 TR-WS-TLS 🇫🇷 FR-141.11.203.1...
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 141.11.203.191
+  sni: epmw.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epmw.ambercc.filegear-sg.me
+    path: '%2F%3Fed%3D2560'
+- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-141.11.203....
+  network: tcp
+  password: Aimer
+  port: 443
+  server: 141.11.203.168
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '33|🔒 TR-TCP-TLS 🇫🇷 FR-51.44.103.6... #1'
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22223
+  server: 51.44.103.6
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-141.227.160...
+  network: tcp
+  password: OLq0FfOlp7
+  port: 1935
+  server: 141.227.160.88
+  skip-cert-verify: true
+  sni: x1-sweden-ovh-v2.devefun.net
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.38.99.96...
+  password: b8808043-6566-4923-9195-e66bfb553d57
+  port: 443
+  server: 51.38.99.96
+  sni: ba24.ir
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-152.228.191...
+  network: tcp
+  password: Aimer
+  port: 443
+  server: 152.228.191.232
+  sni: epccd.ambercc.filegear-sg.me
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.210.182....
+  network: tcp
+  password: df9d6880-3f0f-11f0-b00b-1239d0255272
+  port: 443
+  server: 51.210.182.170
+  skip-cert-verify: true
+  sni: fr1.test3.net
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-57.128.165....
+  network: tcp
+  password: klZqKyxq0H
+  port: 1935
+  server: 57.128.165.173
+  sni: x1-england-ovh-v2.devefun.net
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.158.146....
+  password: f6a0a650-306e-11ee-b692-1239d0255272
+  port: 443
+  server: 51.158.146.183
+  sni: Speedtest.net
+  type: trojan
 - name: 33|🔒 TR-WS-TLS 🇫🇷 FR-185.16.110.1...
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
@@ -312,38 +317,51 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: '%2FTelegram%40V2ray_Alpha'
-- alterId: 0
-  name: 33,36|未知43
-  password: b8808043-6566-4923-9195-e66bfb553d57
-  port: 443
-  server: 51.38.99.96
-  skip-cert-verify: true
-  sni: ba24.ir
-  tls: true
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.68.13.10...
+  network: tcp
+  password: FiSo7J6vfS
+  port: 1935
+  server: 51.68.13.106
+  sni: x1fr-ovh.devefun.net
   type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 35,36|未知140 21.9MB/s
-  network: tcp
-  port: 33579
-  server: 2.56.126.103
-  servername: ''
-  skip-cert-verify: true
+  name: 35|🔒 VM-WS-TLS 🇫🇷 FR-45.145.165.1...
+  network: ws
+  port: '443'
+  server: 45.145.165.114
+  servername: beyonddsz.cfd
   tls: true
   type: vmess
-  uuid: 2eb3ee2a-7bf8-4b50-9b93-2d489d2f3456
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-opts:
+    headers:
+      Host: beyonddsz.cfd
+    path: /linkws
 - alterId: 0
   cipher: auto
-  name: 35,36|未知3 990.5KB/s
+  name: 35|🔒 VM-TCP-NA 🇫🇷 FR-45.12.133.43...
   network: tcp
-  port: 28444
+  port: '28444'
   server: 45.12.133.43
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: 1be8eddb-4f8c-45d0-b2a1-e538eb3abd39
+- alterId: 0
+  cipher: auto
+  name: 35|🔒 VM-TCP-NA 🇫🇷 FR-2.56.126.103...
+  network: tcp
+  port: '33579'
+  server: 2.56.126.103
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2eb3ee2a-7bf8-4b50-9b93-2d489d2f3456
 - alterId: 0
   cipher: auto
   name: 35|🔒 VM-TCP-NA 🇫🇷 FR-95.179.216.1...
