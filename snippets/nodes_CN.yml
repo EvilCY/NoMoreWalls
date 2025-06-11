@@ -728,11 +728,28 @@ proxies:
   ws-headers:
     Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
-- name: 33|🔒 TR-WS-TLS 🇨🇳 CN-101.69.122.1...
+- name: 33|🔒 TR-TCP-NA 🇨🇳 CN-14.215.39.15...
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  port: 3462
+  server: 14.215.39.158
+  skip-cert-verify: false
+  sni: 45.32.28.232
+  type: trojan
+- name: 33|🔒 TR-WS-TLS 🇨🇳 CN-27.36.125.2:...
   network: ws
   password: bpb-trojan
   port: 443
-  server: 101.69.122.104
+  server: 27.36.125.2
+  sni: zamim340.ggff.net
+  type: trojan
+  ws-opts:
+    headers:
+      Host: zamim340.ggff.net
+- name: 33|🔒 TR-WS-TLS 🇨🇳 CN-119.188.204....
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 119.188.204.76
   sni: zamim340.ggff.net
   type: trojan
   ws-opts:
@@ -745,13 +762,16 @@ proxies:
   skip-cert-verify: false
   sni: 45.32.28.232
   type: trojan
-- name: 33|🔒 TR-TCP-NA 🇨🇳 CN-14.215.39.15...
-  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
-  port: 3462
-  server: 14.215.39.158
-  skip-cert-verify: false
-  sni: 45.32.28.232
+- name: 33|🔒 TR-WS-TLS 🇨🇳 CN-101.69.122.1...
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 101.69.122.104
+  sni: zamim340.ggff.net
   type: trojan
+  ws-opts:
+    headers:
+      Host: zamim340.ggff.net
 - name: '33|🔒 TR-TCP-NA 🇨🇳 CN-120.241.226.... #1'
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
@@ -759,26 +779,6 @@ proxies:
   skip-cert-verify: false
   sni: 45.32.28.232
   type: trojan
-- name: 33|🔒 TR-WS-TLS 🇨🇳 CN-119.188.204....
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 119.188.204.76
-  sni: zamim340.ggff.net
-  type: trojan
-  ws-opts:
-    headers:
-      Host: zamim340.ggff.net
-- name: 33|🔒 TR-WS-TLS 🇨🇳 CN-27.36.125.2:...
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 27.36.125.2
-  sni: zamim340.ggff.net
-  type: trojan
-  ws-opts:
-    headers:
-      Host: zamim340.ggff.net
 - alterId: 0
   cipher: auto
   name: 38|CN_speednode_0001
