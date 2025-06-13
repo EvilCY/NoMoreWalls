@@ -1,35 +1,21 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰 香港 102 | 1x HK
-  password: 73b60174-4d86-4be4-a759-4d87d3f813b9
+  password: b82722b2-7636-4d2a-8d88-ead6eece1fde
   port: 36143
   server: freea.glyphara.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰 香港住宅IP 103 | 1x HK
-  password: 73b60174-4d86-4be4-a759-4d87d3f813b9
+  password: b82722b2-7636-4d2a-8d88-ead6eece1fde
   port: 36145
   server: freea.glyphara.com
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港 102 | 1x HK
-  password: 19eb4339-af8f-440b-b046-fe29ac35c6e5
-  port: 31143
-  server: freem.vidalith.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港家宽 103 | 1x HK
-  password: 19eb4339-af8f-440b-b046-fe29ac35c6e5
-  port: 31145
-  server: freem.vidalith.com
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 2,14,20,22,26|3|🇰1 |  1.8MB/s|15%|Disney|You...
+  name: 1,14,20,22,26|3|🇰1 |  1.8MB/s|15%|Disney|You...
   network: ws
   port: 8080
   server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
@@ -42,6 +28,20 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇭🇰香港 102 | 1x HK
+  password: b0c621cf-8041-4029-ad31-b19173bb57e0
+  port: 31143
+  server: freem.vidalith.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇭🇰香港家宽 103 | 1x HK
+  password: b0c621cf-8041-4029-ad31-b19173bb57e0
+  port: 31145
+  server: freem.vidalith.com
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 3|👉🆔@v2ray_configs_pool📡🇭🇰®️Hong...
@@ -125,30 +125,45 @@ proxies:
   uuid: aa15b97a-24b1-3a31-824a-bc52f5a15bac
 - alterId: 0
   cipher: auto
-  name: 17,35|🔒 VM-TCP-NA 🇭🇰 HK-103.30.76.66...
+  name: 17|🇭🇰[openproxylist.com] vmess-HK
   network: tcp
-  port: '13651'
-  server: 103.30.76.66
+  port: '34795'
+  server: 1111-2222.0020.aaaa-cloud-cdna-apia-gwsd-aaaa-aabb.com
+  tls: false
+  type: vmess
+  uuid: b79d2468-b606-3803-a863-fbc8f5c4d1aa
+- alterId: 0
+  cipher: auto
+  name: 17,35|🔒 VM-TCP-NA 🇭🇰 HK-206.237.10.1...
+  network: tcp
+  port: '1058'
+  server: 206.237.10.10
   servername: ''
   tls: false
   type: vmess
-  uuid: 6831c9ce-4ca8-42c0-8181-fb1055710ccc
+  uuid: ca5837a2-4b67-4d5e-9473-80cc204d899c
+- name: 17|🇭🇰[openproxylist.com] trojan-H...
+  password: c471ef32-798d-40a0-a57c-acf3475a204e
+  port: 13011
+  server: naiu-jp.05vr9nyqg5.download
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 20,26|0| 101 | 1x HK
+  name: 20|🇭🇰 0|🇭🇰香港 101 | 1x HK
   password: fe144043-8f84-41c7-982d-7842fb8d0c61
   port: 31141
   server: freem.vidalith.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '20,26|0|🇭🇰香港 102 | 1x HK #1'
+  name: 20|🇭🇰 0|🇭🇰香港 102 | 1x HK
   password: fe144043-8f84-41c7-982d-7842fb8d0c61
   port: 31143
   server: freem.vidalith.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 20,26|0|🇭🇰香港 103 | 1x HK
+  name: 20|🇭🇰 0|🇭🇰香港家宽 103 | 1x HK
   password: fe144043-8f84-41c7-982d-7842fb8d0c61
   port: 31145
   server: freem.vidalith.com
@@ -156,7 +171,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 20,26,36|🇰HK
+  name: 20,36|🇰HK
   password: 675f30fd-ab57-4a74-b5a3-04b4a3814f67
   port: 36141
   server: freea.glyphara.com
@@ -165,14 +180,14 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '20,26|1|🇭🇰 香港 102 | 1x HK #1'
+  name: 20|🇭🇰 1|🇭🇰 香港 102 | 1x HK
   password: 675f30fd-ab57-4a74-b5a3-04b4a3814f67
   port: 36143
   server: freea.glyphara.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 20,26|1|🇭🇰 香港IP 103 | 1x HK
+  name: 20|🇭🇰 1|🇭🇰 香港住宅IP 103 | 1x HK
   password: 675f30fd-ab57-4a74-b5a3-04b4a3814f67
   port: 36145
   server: freea.glyphara.com
@@ -239,78 +254,95 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 22|0|  101 | 1x HK
-  password: 08fa16ef-22eb-4024-86d0-622ff7f026f4
-  port: 36141
-  server: freea.glyphara.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '22|0|🇭🇰 香港 102 | 1x HK #1'
-  password: 08fa16ef-22eb-4024-86d0-622ff7f026f4
-  port: 36143
-  server: freea.glyphara.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 22|0|🇭🇰 香港IP 103 | 1x HK
-  password: 08fa16ef-22eb-4024-86d0-622ff7f026f4
-  port: 36145
-  server: freea.glyphara.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '22|1|🇭🇰香港 101 | 1x HK #1'
-  password: 61ccf574-4a74-4495-8547-75c9f0fc5070
+  name: 22|0| 101 | 1x HK
+  password: 34067d52-6634-4b0e-9d25-374ce668545d
   port: 31141
   server: freem.vidalith.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '22|1|🇭🇰香港 102 | 1x HK #1'
-  password: 61ccf574-4a74-4495-8547-75c9f0fc5070
+  name: '22|0|🇭🇰香港 102 | 1x HK #1'
+  password: 34067d52-6634-4b0e-9d25-374ce668545d
   port: 31143
   server: freem.vidalith.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 22|1|🇭🇰香港 103 | 1x HK
-  password: 61ccf574-4a74-4495-8547-75c9f0fc5070
+  name: 22|0|🇭🇰香港 103 | 1x HK
+  password: 34067d52-6634-4b0e-9d25-374ce668545d
   port: 31145
   server: freem.vidalith.com
   type: ss
   udp: true
-- name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-154.218.15....
-  network: tcp
-  password: Aimer
-  port: 2083
-  server: 154.218.15.250
-  sni: agept.ambercc.filegear-sg.me
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-192.142.4.6...
-  network: tcp
-  password: 0f73d067-8fac-4bf4-a08e-ca2434ef5086
-  port: 42405
-  server: 192.142.4.64
-  sni: cdn.alibaba.com
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-38.147.187.9...
-  password: Aimer
-  port: 18181
-  server: 38.147.187.99
-  sni: epme.ambercc.filegear-sg.me
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-219.76.13.1...
-  password: F3CSSRxD8uljgF73IAn34C3aE9wSqAzZDp5ZOCpxDBRacNYelOYayKTe826Xy0
-  port: 443
-  server: 219.76.13.180
-  sni: stutter.freetrade.link
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-20.187.85.1...
-  password: b26e31e5-eac1-45b0-9069-83830bd69521
-  port: 443
-  server: 20.187.85.198
-  sni: hkt.iamnotagoodman.com
+- cipher: chacha20-ietf-poly1305
+  name: 22|2|🇭🇰 香港 101 | 1x HK
+  password: 83e38e46-bc83-4399-b73d-48055563a323
+  port: 36141
+  server: freea.glyphara.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 22|2|🇭🇰 香港 102 | 1x HK
+  password: 83e38e46-bc83-4399-b73d-48055563a323
+  port: 36143
+  server: freea.glyphara.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 22|2|🇭🇰 香港IP 103 | 1x HK
+  password: 83e38e46-bc83-4399-b73d-48055563a323
+  port: 36145
+  server: freea.glyphara.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 26|0|  101 | 1x HK
+  password: 73b60174-4d86-4be4-a759-4d87d3f813b9
+  port: 36141
+  server: freea.glyphara.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '26|0|🇭🇰 香港 102 | 1x HK #1'
+  password: 73b60174-4d86-4be4-a759-4d87d3f813b9
+  port: 36143
+  server: freea.glyphara.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 26|0|🇭🇰 香港IP 103 | 1x HK
+  password: 73b60174-4d86-4be4-a759-4d87d3f813b9
+  port: 36145
+  server: freea.glyphara.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '26|1|🇭🇰香港 101 | 1x HK #1'
+  password: 19eb4339-af8f-440b-b046-fe29ac35c6e5
+  port: 31141
+  server: freem.vidalith.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '26|1|🇭🇰香港 102 | 1x HK #1'
+  password: 19eb4339-af8f-440b-b046-fe29ac35c6e5
+  port: 31143
+  server: freem.vidalith.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 26|1|🇭🇰香港 103 | 1x HK
+  password: 19eb4339-af8f-440b-b046-fe29ac35c6e5
+  port: 31145
+  server: freem.vidalith.com
+  type: ss
+  udp: true
+- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-45.192.222.1...
+  password: trojan
+  port: 8443
+  server: 45.192.222.112
+  skip-cert-verify: false
+  sni: store.timimi.dpdns.org
   type: trojan
 - name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-20.2.44.220...
   network: tcp
@@ -319,44 +351,37 @@ proxies:
   server: 20.2.44.220
   sni: jp.iamnotagoodman.com
   type: trojan
-- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-219.76.13.17...
+- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-8.217.47.218...
   password: Aimer
+  port: 36374
+  server: 8.217.47.218
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-219.76.13.1...
+  password: F3CSSRxD8uljgF73IAn34C3aE9wSqAzZDp5ZOCpxDBRacNYelOYayKTe826Xy0
   port: 443
-  server: 219.76.13.177
-  skip-cert-verify: false
-  sni: tyep.esslh.filegear-sg.me
+  server: 219.76.13.180
+  sni: stutter.freetrade.link
   type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-23.143.136....
+- name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-185.14.47.1...
   network: tcp
-  password: fcfe033b-0003-4c58-9d96-c5132353a17a
-  port: 443
-  server: 23.143.136.73
-  sni: new.download.the-best-airport.com
+  password: d4c22fd9-1474-4e9f-baf7-80b162f3e60c
+  port: 12002
+  server: 185.14.47.199
+  sni: cdn.alibaba.com
   type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-42.200.230....
+- name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-154.218.15....
   network: tcp
-  password: ef23ddd0-14c5-39c2-9880-af55ce892363
-  port: 59623
-  server: 42.200.230.100
-  sni: t2.qifei.app
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-18.167.74.15...
   password: Aimer
-  port: 1080
-  server: 18.167.74.152
-  sni: epccu.ambercc.filegear-sg.me
+  port: 2083
+  server: 154.218.15.250
+  sni: agept.ambercc.filegear-sg.me
   type: trojan
 - name: 33|🔒 TR-TCP-NA 🇭🇰 HK-82.152.164.1...
   password: 5c634f9c-3dd4-4d3e-97c2-9db2470cf722
   port: 34015
   server: 82.152.164.10
   sni: jsygouer.weixin-baidu-qq.com
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-16.162.225.1...
-  password: Aimer
-  port: 443
-  server: 16.162.225.15
-  sni: epcco.ambercc.filegear-sg.me
   type: trojan
 - alterId: 0
   name: 33,36|HK2
@@ -368,13 +393,6 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-185.14.47.1...
-  network: tcp
-  password: 3698a3e7-2877-4ded-a665-d81ee3cfd449
-  port: 12052
-  server: 185.14.47.199
-  sni: cdn.alibaba.com
-  type: trojan
 - name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-219.76.13.1... #1'
   network: tcp
   password: Aimer
@@ -382,32 +400,66 @@ proxies:
   server: 219.76.13.166
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-20.2.156.38...
-  network: tcp
-  password: 427090d9-d3df-4f05-919a-a0c5c2e160e5
-  port: 443
-  server: 20.2.156.38
-  sni: ua.mjt000.com
+- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-38.147.187.9...
+  password: Aimer
+  port: 18181
+  server: 38.147.187.99
+  sni: epme.ambercc.filegear-sg.me
   type: trojan
 - name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-185.14.47.1... #1'
   network: tcp
-  password: d4c22fd9-1474-4e9f-baf7-80b162f3e60c
-  port: 12002
+  password: 3698a3e7-2877-4ded-a665-d81ee3cfd449
+  port: 12052
   server: 185.14.47.199
   sni: cdn.alibaba.com
   type: trojan
-- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-45.192.222.1...
-  password: trojan
-  port: 8443
-  server: 45.192.222.112
-  skip-cert-verify: false
-  sni: store.timimi.dpdns.org
+- name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-209.209.48....
+  network: tcp
+  password: faee6828-82e8-4716-934e-d9949caead07
+  port: 38032
+  server: 209.209.48.19
+  skip-cert-verify: true
+  sni: aliyun.com
   type: trojan
-- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-8.217.47.218...
+- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-18.167.74.15...
   password: Aimer
-  port: 36374
-  server: 8.217.47.218
-  sni: epcca.ambercc.filegear-sg.me
+  port: 1080
+  server: 18.167.74.152
+  sni: epccu.ambercc.filegear-sg.me
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-192.142.4.6...
+  network: tcp
+  password: 0f73d067-8fac-4bf4-a08e-ca2434ef5086
+  port: 42405
+  server: 192.142.4.64
+  sni: cdn.alibaba.com
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-23.143.136....
+  network: tcp
+  password: fcfe033b-0003-4c58-9d96-c5132353a17a
+  port: 443
+  server: 23.143.136.73
+  sni: new.download.the-best-airport.com
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-219.76.13.17...
+  password: Aimer
+  port: 443
+  server: 219.76.13.177
+  skip-cert-verify: false
+  sni: tyep.esslh.filegear-sg.me
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-42.200.230....
+  network: tcp
+  password: ef23ddd0-14c5-39c2-9880-af55ce892363
+  port: 59623
+  server: 42.200.230.100
+  sni: t2.qifei.app
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-20.187.85.1...
+  password: b26e31e5-eac1-45b0-9069-83830bd69521
+  port: 443
+  server: 20.187.85.198
+  sni: hkt.iamnotagoodman.com
   type: trojan
 - name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-43.154.34.7...
   network: tcp
@@ -416,47 +468,19 @@ proxies:
   server: 43.154.34.74
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- alterId: 2
-  cipher: auto
-  name: 35|🔒 VM-WS-NA 🇭🇰 HK-42.2.113.136:...
-  network: ws
-  port: '80'
-  server: 42.2.113.136
-  servername: broadcastlv.chat.bilibili.com
-  tls: false
-  type: vmess
-  uuid: 98d2b660-7218-11ec-bd7c-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: 09d8162a-sv6hs0-t5963m-1ex5a.hk.p5pv.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇭🇰 HK-18.162.126.6...
+- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-16.162.225.1...
+  password: Aimer
+  port: 443
+  server: 16.162.225.15
+  sni: epcco.ambercc.filegear-sg.me
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-20.2.156.38...
   network: tcp
-  port: '50001'
-  server: 18.162.126.66
-  tls: false
-  type: vmess
-  uuid: e7b9ff44-c0d0-3d85-a56d-4f0959dec88b
-- alterId: 0
-  cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇭🇰 HK-82.152.165.2...
-  network: tcp
-  port: '34795'
-  server: 82.152.165.2
-  tls: false
-  type: vmess
-  uuid: b79d2468-b606-3803-a863-fbc8f5c4d1aa
-- alterId: 0
-  cipher: auto
-  name: '35|🔒 VM-TCP-NA 🇭🇰 HK-82.152.165.2... #1'
-  network: tcp
-  port: '60301'
-  server: 82.152.165.2
-  tls: false
-  type: vmess
-  uuid: e7b9ff44-c0d0-3d85-a56d-4f0959dec88b
+  password: 427090d9-d3df-4f05-919a-a0c5c2e160e5
+  port: 443
+  server: 20.2.156.38
+  sni: ua.mjt000.com
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 35|🔒 VM-WS-NA 🇭🇰 HK-82.152.164.10...
@@ -470,6 +494,34 @@ proxies:
     headers:
       Host: us05.jssssss.com
     path: /
+- alterId: 0
+  cipher: auto
+  name: 35|🔒 VM-TCP-NA 🇭🇰 HK-82.152.165.2...
+  network: tcp
+  port: '34795'
+  server: 82.152.165.2
+  tls: false
+  type: vmess
+  uuid: b79d2468-b606-3803-a863-fbc8f5c4d1aa
+- alterId: 0
+  cipher: auto
+  name: 35|🔒 VM-TCP-NA 🇭🇰 HK-43.247.134.8...
+  network: tcp
+  port: '47010'
+  server: 43.247.134.85
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbffb825-93d5-4a19-aed0-0936a48c84d3
+- alterId: 0
+  cipher: auto
+  name: '35|🔒 VM-TCP-NA 🇭🇰 HK-82.152.165.2... #1'
+  network: tcp
+  port: '60301'
+  server: 82.152.165.2
+  tls: false
+  type: vmess
+  uuid: e7b9ff44-c0d0-3d85-a56d-4f0959dec88b
 - alterId: 0
   cipher: auto
   name: 35|🔒 VM-TCP-NA 🇭🇰 HK-43.199.24.24...
@@ -495,14 +547,13 @@ proxies:
     path: /vmess-argo
 - alterId: 0
   cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇭🇰 HK-43.247.134.8...
+  name: 35|🔒 VM-TCP-NA 🇭🇰 HK-18.162.126.6...
   network: tcp
-  port: '47010'
-  server: 43.247.134.85
-  servername: ''
+  port: '50001'
+  server: 18.162.126.66
   tls: false
   type: vmess
-  uuid: cbffb825-93d5-4a19-aed0-0936a48c84d3
+  uuid: e7b9ff44-c0d0-3d85-a56d-4f0959dec88b
 - alterId: 0
   cipher: aes-256-gcm
   name: 36|HK
