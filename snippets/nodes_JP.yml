@@ -1,28 +1,28 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇯🇵 日本 101 | 1x JP
-  password: b82722b2-7636-4d2a-8d88-ead6eece1fde
+  password: ac7b64fb-1b37-406f-af70-44c290d1b638
   port: 36111
   server: freea.glyphara.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇯🇵 日本 102 | 1x JP
-  password: b82722b2-7636-4d2a-8d88-ead6eece1fde
+  password: ac7b64fb-1b37-406f-af70-44c290d1b638
   port: 36113
   server: freea.glyphara.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇯🇵 日本 103 | 1x JP
-  password: b82722b2-7636-4d2a-8d88-ead6eece1fde
+  password: ac7b64fb-1b37-406f-af70-44c290d1b638
   port: 36115
   server: freea.glyphara.com
   type: ss
   udp: true
 - alterId: 64
   cipher: auto
-  name: '1,14,20,22,26|3|🇯🇵1 |  1.8MB/s|54%|Youtube|O... #2'
+  name: 1,14,20,22,26|2|1 |  1.8MB/s|54%|Youtube|Ope...
   network: ws
   port: 1443
   server: sslvpn.51job.com
@@ -93,7 +93,17 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 17,35|🔒 VM-TCP-NA 🇯🇵 JP-47.79.88.113...
+  name: 17,35|🔒 VM-TCP-NA 🇯🇵 JP-45.89.109.43...
+  network: tcp
+  port: '51039'
+  server: 45.89.109.43
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 12947e56-ab80-43bf-9145-72fa50e41c9a
+- alterId: 0
+  cipher: auto
+  name: '17|🇯🇵[openproxylist.com] vmess-JP #1'
   network: tcp
   port: '53710'
   server: 47.79.88.113
@@ -206,22 +216,22 @@ proxies:
       Host: epme.ambercc.filegear-sg.me
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 22|2|🇵  101 | 1x JP
-  password: 83e38e46-bc83-4399-b73d-48055563a323
+  name: 22|0|  101 | 1x JP
+  password: 5cbfc53a-96d7-4e69-aa65-432a7ca6e089
   port: 36111
   server: freea.glyphara.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 22|2|🇯🇵 日本 102 | 1x JP
-  password: 83e38e46-bc83-4399-b73d-48055563a323
+  name: 22|0|🇵 日本 102 | 1x JP
+  password: 5cbfc53a-96d7-4e69-aa65-432a7ca6e089
   port: 36113
   server: freea.glyphara.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 22|2|🇵 日本 103 | 1x JP
-  password: 83e38e46-bc83-4399-b73d-48055563a323
+  name: 22|0|🇵 日本 103 | 1x JP
+  password: 5cbfc53a-96d7-4e69-aa65-432a7ca6e089
   port: 36115
   server: freea.glyphara.com
   type: ss
@@ -238,96 +248,6 @@ proxies:
   port: 443
   server: 149.22.87.240
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 26|0|  101 | 1x JP
-  password: 73b60174-4d86-4be4-a759-4d87d3f813b9
-  port: 36111
-  server: freea.glyphara.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 26|0|🇵 日本 102 | 1x JP
-  password: 73b60174-4d86-4be4-a759-4d87d3f813b9
-  port: 36113
-  server: freea.glyphara.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 26|0|🇵 日本 103 | 1x JP
-  password: 73b60174-4d86-4be4-a759-4d87d3f813b9
-  port: 36115
-  server: freea.glyphara.com
-  type: ss
-  udp: true
-- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-94.177.131.1...
-  password: 4ea1d07c-41c2-42b5-954d-414fee051856
-  port: 46002
-  server: 94.177.131.150
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-47.79.88.21:...
-  password: Aimer
-  port: 6010
-  server: 47.79.88.21
-  sni: epccg.ambercc.filegear-sg.me
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-20.243.85.49...
-  password: Aimer
-  port: 10443
-  server: 20.243.85.49
-  sni: epccc.ambercc.filegear-sg.me
-  type: trojan
-- name: 33|🔒 TR-WS-TLS 🇯🇵 JP-156.238.19.6...
-  network: ws
-  password: amclubs
-  port: 2096
-  server: 156.238.19.69
-  sni: tran.amclubstest.nyc.mn
-  type: trojan
-  ws-opts:
-    headers:
-      Host: tran.amclubstest.nyc.mn
-- name: 33|🔒 TR-GRPC-TLS 🇯🇵 JP-13.231.106...
-  network: grpc
-  password: 0df6b9c4e7d58d84
-  port: 443
-  server: 13.231.106.60
-  sni: n2.gladns.com
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-160.16.149....
-  network: tcp
-  password: 3bcd9e33-8377-4b32-af33-217158577ff3
-  port: 443
-  server: 160.16.149.225
-  sni: kdlsupport.zendesk.com
-  type: trojan
-- name: 33|🔒 TR-WS-NA 🇯🇵 JP-43.206.192.21...
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 43.206.192.211
-  sni: skwygx.top
-  type: trojan
-  ws-opts:
-    headers:
-      Host: skwygx.top
-    path: /tr
-- name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-18.183.158....
-  network: tcp
-  password: ouo
-  port: 443
-  server: 18.183.158.211
-  sni: tr.koxok.us.kg
-  type: trojan
-- alterId: 0
-  name: 33,36|未知45
-  password: Aimer
-  port: 8843
-  server: 47.79.90.82
-  skip-cert-verify: true
-  sni: epccx.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
 - alterId: 0
   name: 33,36|未知65
   network: grpc
@@ -339,37 +259,44 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-48.218.11.1...
-  network: tcp
-  password: 427090d9-d3df-4f05-919a-a0c5c2e160e5
-  port: 443
-  server: 48.218.11.10
-  sni: ua.mjt000.com
-  type: trojan
 - name: 33|🔒 TR-TCP-NA 🇯🇵 JP-156.238.18.1...
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
   port: 2087
   server: 156.238.18.112
   sni: vle.amclubsvip.dpdns.org
   type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-160.16.150....
+- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-45.66.129.14...
+  password: Aimer
+  port: 46741
+  server: 45.66.129.147
+  sni: epccj.ambercc.filegear-sg.me
+  type: trojan
+- name: 33|🔒 TR-GRPC-TLS 🇯🇵 JP-13.231.106...
+  network: grpc
+  password: 0df6b9c4e7d58d84
+  port: 443
+  server: 13.231.106.60
+  sni: n2.gladns.com
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-48.218.11.10...
+  password: 6087d8e3-ea9e-48eb-8217-6050ff752f56
+  port: 443
+  server: 48.218.11.10
+  skip-cert-verify: false
+  sni: il.mjt000.com
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-47.79.88.21:...
+  password: Aimer
+  port: 6010
+  server: 47.79.88.21
+  sni: epccg.ambercc.filegear-sg.me
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-160.16.149....
   network: tcp
   password: 3bcd9e33-8377-4b32-af33-217158577ff3
   port: 443
-  server: 160.16.150.202
+  server: 160.16.149.225
   sni: kdlsupport.zendesk.com
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-48.210.245.1...
-  password: 54231b3d-a39d-4769-a511-2a1c663a62b1
-  port: 443
-  server: 48.210.245.1
-  sni: sg02.trojanyyds.xyz
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-150.230.201...
-  password: f42e1a2e-e650-44f4-8d17-bcb68663da18
-  port: 443
-  server: 150.230.201.192
-  sni: www.seetheworldjp.ga
   type: trojan
 - name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-160.16.74.1...
   network: tcp
@@ -378,30 +305,79 @@ proxies:
   server: 160.16.74.162
   sni: kdlsupport.zendesk.com
   type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-150.230.201...
+  password: f42e1a2e-e650-44f4-8d17-bcb68663da18
+  port: 443
+  server: 150.230.201.192
+  sni: www.seetheworldjp.ga
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-18.183.158....
+  network: tcp
+  password: ouo
+  port: 443
+  server: 18.183.158.211
+  sni: tr.koxok.us.kg
+  type: trojan
 - name: 33|🔒 TR-TCP-NA 🇯🇵 JP-31.223.184.2...
   password: c443be95-725d-4da3-a60f-d35af5bfbff8
   port: 17721
   server: 31.223.184.248
   sni: data.52daishu.life
   type: trojan
-- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-185.184.223....
+- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-20.243.85.49...
   password: Aimer
-  port: 443
-  server: 185.184.223.47
-  skip-cert-verify: false
-  sni: epme.ambercc.filegear-sg.me
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-45.66.129.14...
-  password: Aimer
-  port: 46741
-  server: 45.66.129.147
-  sni: epccj.ambercc.filegear-sg.me
+  port: 10443
+  server: 20.243.85.49
+  sni: epccc.ambercc.filegear-sg.me
   type: trojan
 - name: 33|🔒 TR-TCP-NA 🇯🇵 JP-47.79.84.167...
   password: Aimer
   port: 443
   server: 47.79.84.167
   sni: epccc.ambercc.filegear-sg.me
+  type: trojan
+- alterId: 0
+  name: 33,36|未知45
+  password: Aimer
+  port: 8843
+  server: 47.79.90.82
+  skip-cert-verify: true
+  sni: epccx.ambercc.filegear-sg.me
+  tls: true
+  type: trojan
+  udp: true
+- name: 33|🔒 TR-WS-NA 🇯🇵 JP-43.206.192.21...
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 43.206.192.211
+  sni: skwygx.top
+  type: trojan
+  ws-opts:
+    headers:
+      Host: skwygx.top
+    path: /tr
+- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-94.177.131.1...
+  password: 4ea1d07c-41c2-42b5-954d-414fee051856
+  port: 46002
+  server: 94.177.131.150
+  type: trojan
+- name: 33|🔒 TR-WS-TLS 🇯🇵 JP-156.238.19.6...
+  network: ws
+  password: amclubs
+  port: 2096
+  server: 156.238.19.69
+  sni: tran.amclubstest.nyc.mn
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tran.amclubstest.nyc.mn
+- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-185.184.223....
+  password: Aimer
+  port: 443
+  server: 185.184.223.47
+  skip-cert-verify: false
+  sni: epme.ambercc.filegear-sg.me
   type: trojan
 - name: 33|🔒 TR-WS-TLS 🇯🇵 JP-47.79.86.103...
   network: ws
@@ -413,6 +389,20 @@ proxies:
   ws-opts:
     headers:
       Host: agept.ambercc.filegear-sg.me
+- name: 33|🔒 TR-TCP-TLS 🇯🇵 JP-160.16.150....
+  network: tcp
+  password: 3bcd9e33-8377-4b32-af33-217158577ff3
+  port: 443
+  server: 160.16.150.202
+  sni: kdlsupport.zendesk.com
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇯🇵 JP-48.210.245.1...
+  password: 54231b3d-a39d-4769-a511-2a1c663a62b1
+  port: 443
+  server: 48.210.245.1
+  skip-cert-verify: false
+  sni: sg02.trojanyyds.xyz
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 35|🔒 VM-TCP-NA 🇯🇵 JP-5.253.41.147...
