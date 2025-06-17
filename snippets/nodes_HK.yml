@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '2,14,20,22,26|2|🇰1 |  1.8MB/s|15%|Disney|You... #1'
+  name: 1,14,20,22,26|3|🇰1 |  1.8MB/s|15%|Disney|You...
   network: ws
   port: 8080
   server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
@@ -62,7 +62,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '14,22,26,29|香港6|@ripaojiedian #1'
+  name: 14,22,26,35|🔒 VM-TCP-NA 🇭🇰 HK-20.2.80.240:...
   network: tcp
   port: '20452'
   server: 20.2.80.240
@@ -72,7 +72,7 @@ proxies:
   uuid: 52aba3eb-0a6f-4c2f-29c6-d4b18a1d7c3e
 - alterId: 0
   cipher: auto
-  name: '14,22,26,29|香港7|@ripaojiedian #1'
+  name: 14,22,26|14|香港7|@ripaojiedian
   network: tcp
   port: '46159'
   server: 120.198.71.216
@@ -140,8 +140,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 20,22,26,28|🇭🇰 香港6|@ripaojiedian
+  name: 20,22,26|13|🇭🇰 香港6|@ripaojiedian
   port: 20452
   server: 20.2.80.240
   skip-cert-verify: false
@@ -152,8 +151,7 @@ proxies:
   uuid: 52aba3eb-0a6f-4c2f-29c6-d4b18a1d7c3e
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 20,22,26,28|🇭🇰 香港7|@ripaojiedian
+  name: 20,22,26|13|🇭🇰 香港7|@ripaojiedian
   port: 46159
   server: 120.198.71.216
   skip-cert-verify: false
@@ -163,8 +161,7 @@ proxies:
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: '20,22,26,28|🇭🇰 香港2|@ripaojiedian #1'
+  name: 20,22,26|13|🇭🇰 2|@ripaojiedian
   password: 08293b204707
   plugin: v2ray-plugin
   plugin-opts:
@@ -179,44 +176,72 @@ proxies:
   tfo: false
   type: ss
   udp: true
-- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-209.209.48.1...
-  password: e3826052-a5a4-4566-978b-cdd0e717a5eb
-  port: 53171
-  server: 209.209.48.19
-  sni: cn.bing.com
-  type: trojan
 - alterId: 0
-  name: 33,36|HK
-  password: ea17601d-8ebf-4431-b815-4d644821ca7e
-  port: 443
-  server: 20.2.156.38
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
+  cipher: auto
+  client-fingerprint: chrome
+  name: 28|🇭🇰 香港6|@ripaojiedian
+  port: 36519
+  server: 183.236.51.38
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: '28|🇭🇰 香港2|@ripaojiedian #1'
+  password: 1450cecfb93f
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: kh36v1.pmxiaonan.xyz
+    mode: websocket
+    mux: true
+    path: /simieepvt
+    skip-cert-verify: false
+    tls: true
+  port: 15116
+  server: kh36v1.pmxiaonan.xyz
+  tfo: false
+  type: ss
 - alterId: 0
-  name: 33,36|HK3
-  network: tcp
-  password: faee6828-82e8-4716-934e-d9949caead07
-  port: 38032
-  server: 209.209.48.19
-  skip-cert-verify: true
-  sni: aliyun.com
+  cipher: auto
+  client-fingerprint: chrome
+  name: '28,29|香港5|@ripaojiedian #1'
+  network: ws
+  port: '8443'
+  server: 104.18.42.62
+  servername: hk2.huaweiwuu5.xyz
+  skip-cert-verify: false
+  tfo: false
   tls: true
-  type: trojan
-  udp: true
-- name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-43.154.34.7...
+  type: vmess
+  uuid: 48469ac3-9fe7-4fb3-9320-6c8b0494c4f7
+  ws-opts:
+    headers:
+      Host: hk2.huaweiwuu5.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '29|香港6|@ripaojiedian #1'
   network: tcp
+  port: '36519'
+  server: 183.236.51.38
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-45.192.222.1...
+  password: trojan
+  port: 8443
+  server: 45.192.222.112
+  skip-cert-verify: false
+  sni: store.timimi.dpdns.org
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-16.162.225.1...
   password: Aimer
-  port: 1935
-  server: 43.154.34.74
-  sni: ngepz.ambercc.filegear-sg.me
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-82.152.164.1...
-  password: 5c634f9c-3dd4-4d3e-97c2-9db2470cf722
-  port: 34015
-  server: 82.152.164.10
-  sni: jsygouer.weixin-baidu-qq.com
+  port: 443
+  server: 16.162.225.15
+  sni: epcco.ambercc.filegear-sg.me
   type: trojan
 - name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-185.14.47.1...
   network: tcp
@@ -225,24 +250,42 @@ proxies:
   server: 185.14.47.199
   sni: cdn.alibaba.com
   type: trojan
-- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-219.76.13.17...
+- name: 33|🔒 TR-WS-TLS 🇭🇰 HK-192.131.142....
+  network: ws
+  password: ttfang
+  port: 46639
+  server: 192.131.142.161
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: '%2F'
+- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-8.217.47.218...
   password: Aimer
-  port: 443
-  server: 219.76.13.177
-  skip-cert-verify: false
-  sni: tyep.esslh.filegear-sg.me
+  port: 36374
+  server: 8.217.47.218
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-209.209.48.1...
+  password: e3826052-a5a4-4566-978b-cdd0e717a5eb
+  port: 53171
+  server: 209.209.48.19
+  sni: cn.bing.com
+  type: trojan
+- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-185.14.47.1... #1'
+  network: tcp
+  password: d4c22fd9-1474-4e9f-baf7-80b162f3e60c
+  port: 12002
+  server: 185.14.47.199
+  sni: cdn.alibaba.com
   type: trojan
 - name: 33|🔒 TR-TCP-NA 🇭🇰 HK-18.167.74.15...
   password: Aimer
   port: 1080
   server: 18.167.74.152
   sni: epccu.ambercc.filegear-sg.me
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-20.187.85.1...
-  password: b26e31e5-eac1-45b0-9069-83830bd69521
-  port: 443
-  server: 20.187.85.198
-  sni: hkt.iamnotagoodman.com
   type: trojan
 - name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-219.76.13.1...
   password: F3CSSRxD8uljgF73IAn34C3aE9wSqAzZDp5ZOCpxDBRacNYelOYayKTe826Xy0
@@ -257,24 +300,48 @@ proxies:
   server: 154.218.15.250
   sni: agept.ambercc.filegear-sg.me
   type: trojan
-- name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-185.14.47.1... #1'
+- name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-20.2.44.220...
   network: tcp
-  password: d4c22fd9-1474-4e9f-baf7-80b162f3e60c
-  port: 12002
-  server: 185.14.47.199
-  sni: cdn.alibaba.com
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-8.217.47.218...
-  password: Aimer
-  port: 36374
-  server: 8.217.47.218
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-16.162.225.1...
-  password: Aimer
+  password: 8aab51da-6b67-4bd2-b6e6-5ab3008cf53e
   port: 443
-  server: 16.162.225.15
-  sni: epcco.ambercc.filegear-sg.me
+  server: 20.2.44.220
+  sni: jp.iamnotagoodman.com
+  type: trojan
+- alterId: 0
+  name: 33,36|HK3
+  network: tcp
+  password: faee6828-82e8-4716-934e-d9949caead07
+  port: 38032
+  server: 209.209.48.19
+  skip-cert-verify: true
+  sni: aliyun.com
+  tls: true
+  type: trojan
+  udp: true
+- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-38.147.187.9...
+  password: Aimer
+  port: 18181
+  server: 38.147.187.99
+  sni: epme.ambercc.filegear-sg.me
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-20.187.85.1...
+  password: b26e31e5-eac1-45b0-9069-83830bd69521
+  port: 443
+  server: 20.187.85.198
+  sni: hkt.iamnotagoodman.com
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-82.152.164.1...
+  password: 5c634f9c-3dd4-4d3e-97c2-9db2470cf722
+  port: 34015
+  server: 82.152.164.10
+  sni: jsygouer.weixin-baidu-qq.com
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-43.154.34.7...
+  network: tcp
+  password: Aimer
+  port: 1935
+  server: 43.154.34.74
+  sni: ngepz.ambercc.filegear-sg.me
   type: trojan
 - name: '33|🔒 TR-TCP-TLS 🇭🇰 HK-219.76.13.1... #1'
   network: tcp
@@ -283,25 +350,12 @@ proxies:
   server: 219.76.13.166
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
-- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-38.147.187.9...
-  password: Aimer
-  port: 18181
-  server: 38.147.187.99
-  sni: epme.ambercc.filegear-sg.me
-  type: trojan
 - name: 33|🔒 TR-TCP-NA 🇭🇰 HK-152.32.226.2...
   password: Aimer
   port: 80
   server: 152.32.226.221
   skip-cert-verify: false
   sni: epccj.ambercc.filegear-sg.me
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-45.192.222.1...
-  password: trojan
-  port: 8443
-  server: 45.192.222.112
-  skip-cert-verify: false
-  sni: store.timimi.dpdns.org
   type: trojan
 - name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-42.200.230....
   network: tcp
@@ -310,24 +364,21 @@ proxies:
   server: 42.200.230.100
   sni: t2.qifei.app
   type: trojan
-- name: 33|🔒 TR-WS-TLS 🇭🇰 HK-192.131.142....
-  network: ws
-  password: ttfang
-  port: 46639
-  server: 192.131.142.161
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: '%2F'
-- name: 33|🔒 TR-TCP-TLS 🇭🇰 HK-20.2.44.220...
-  network: tcp
-  password: 8aab51da-6b67-4bd2-b6e6-5ab3008cf53e
+- alterId: 0
+  name: 33,36|HK
+  password: ea17601d-8ebf-4431-b815-4d644821ca7e
   port: 443
-  server: 20.2.44.220
-  sni: jp.iamnotagoodman.com
+  server: 20.2.156.38
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- name: 33|🔒 TR-TCP-NA 🇭🇰 HK-219.76.13.17...
+  password: Aimer
+  port: 443
+  server: 219.76.13.177
+  skip-cert-verify: false
+  sni: tyep.esslh.filegear-sg.me
   type: trojan
 - alterId: 0
   cipher: auto
@@ -340,55 +391,22 @@ proxies:
   uuid: e7b9ff44-c0d0-3d85-a56d-4f0959dec88b
 - alterId: 0
   cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇭🇰 HK-43.247.134.8...
-  network: tcp
-  port: '47010'
-  server: 43.247.134.85
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbffb825-93d5-4a19-aed0-0936a48c84d3
-- alterId: 0
-  cipher: auto
   name: '35|🔒 VM-TCP-NA 🇭🇰 HK-82.152.165.2... #1'
   network: tcp
-  port: '34795'
+  port: '21961'
   server: 82.152.165.2
   tls: false
   type: vmess
   uuid: b79d2468-b606-3803-a863-fbc8f5c4d1aa
 - alterId: 0
   cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇭🇰 HK-206.237.10.1...
+  name: '35|🔒 VM-TCP-NA 🇭🇰 HK-82.152.165.2... #2'
   network: tcp
-  port: '1058'
-  server: 206.237.10.10
-  servername: ''
+  port: '34795'
+  server: 82.152.165.2
   tls: false
   type: vmess
-  uuid: ca5837a2-4b67-4d5e-9473-80cc204d899c
-- alterId: 0
-  cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇭🇰 HK-18.162.126.6...
-  network: tcp
-  port: '50001'
-  server: 18.162.126.66
-  tls: false
-  type: vmess
-  uuid: e7b9ff44-c0d0-3d85-a56d-4f0959dec88b
-- alterId: 0
-  cipher: auto
-  name: 35|🔒 VM-WS-NA 🇭🇰 HK-191.96.240.15...
-  network: ws
-  port: '1475'
-  server: 191.96.240.155
-  tls: false
-  type: vmess
-  uuid: b6fb3816-af03-4b21-b1fc-cb2b70fa2705
-  ws-opts:
-    headers:
-      Host: pull.free.video.10010.com
-    path: /
+  uuid: b79d2468-b606-3803-a863-fbc8f5c4d1aa
 - alterId: 0
   cipher: auto
   name: 35|🔒 VM-WS-TLS 🇭🇰 HK-43.154.34.74...
@@ -405,17 +423,41 @@ proxies:
     path: /vmess-argo
 - alterId: 0
   cipher: auto
-  name: 35|🔒 VM-WS-NA 🇭🇰 HK-82.152.164.10...
-  network: ws
-  port: 40601
-  server: 82.152.164.10
+  name: 35|🔒 VM-TCP-NA 🇭🇰 HK-163.53.18.21...
+  network: tcp
+  port: '19901'
+  server: 163.53.18.212
   tls: false
   type: vmess
-  uuid: 5c634f9c-3dd4-4d3e-97c2-9db2470cf722
-  ws-opts:
-    headers:
-      Host: us05.jssssss.com
-    path: /
+  uuid: 066b32cc-ee3d-4719-b1f0-2f202298737e
+- alterId: 0
+  cipher: auto
+  name: 35|🔒 VM-TCP-NA 🇭🇰 HK-43.247.134.8...
+  network: tcp
+  port: '47010'
+  server: 43.247.134.85
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbffb825-93d5-4a19-aed0-0936a48c84d3
+- alterId: 0
+  cipher: auto
+  name: 35|🔒 VM-TCP-NA 🇭🇰 HK-18.162.126.6...
+  network: tcp
+  port: '50001'
+  server: 18.162.126.66
+  tls: false
+  type: vmess
+  uuid: e7b9ff44-c0d0-3d85-a56d-4f0959dec88b
+- alterId: 0
+  cipher: auto
+  name: 35|🔒 VM-TCP-NA 🇭🇰 HK-43.199.24.24...
+  network: tcp
+  port: '3000'
+  server: 43.199.24.247
+  tls: false
+  type: vmess
+  uuid: cc101ff1-3452-41c3-89fe-c2a5a20dc6dc
 - alterId: 0
   cipher: auto
   name: 35|🔒 VM-TCP-NA 🇭🇰 HK-20.2.4.223:2...
@@ -428,31 +470,30 @@ proxies:
   uuid: 169501c1-88a6-4419-cd22-9cd9e69df2a9
 - alterId: 0
   cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇭🇰 HK-43.199.24.24...
-  network: tcp
-  port: '3000'
-  server: 43.199.24.247
+  name: 35|🔒 VM-WS-NA 🇭🇰 HK-191.96.240.15...
+  network: ws
+  port: '1475'
+  server: 191.96.240.155
   tls: false
   type: vmess
-  uuid: cc101ff1-3452-41c3-89fe-c2a5a20dc6dc
+  uuid: b6fb3816-af03-4b21-b1fc-cb2b70fa2705
+  ws-opts:
+    headers:
+      Host: pull.free.video.10010.com
+    path: /
 - alterId: 0
   cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇭🇰 HK-163.53.18.21...
-  network: tcp
-  port: '19901'
-  server: 163.53.18.212
+  name: 35|🔒 VM-WS-NA 🇭🇰 HK-82.152.164.10...
+  network: ws
+  port: 40601
+  server: 82.152.164.10
   tls: false
   type: vmess
-  uuid: 066b32cc-ee3d-4719-b1f0-2f202298737e
-- alterId: 0
-  cipher: auto
-  name: '35|🔒 VM-TCP-NA 🇭🇰 HK-82.152.165.2... #2'
-  network: tcp
-  port: '21961'
-  server: 82.152.165.2
-  tls: false
-  type: vmess
-  uuid: b79d2468-b606-3803-a863-fbc8f5c4d1aa
+  uuid: 5c634f9c-3dd4-4d3e-97c2-9db2470cf722
+  ws-opts:
+    headers:
+      Host: us05.jssssss.com
+    path: /
 - alterId: 0
   cipher: aes-256-gcm
   name: 36|HK2
