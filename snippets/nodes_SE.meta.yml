@@ -1,5 +1,5 @@
 proxies:
-- name: 19|🇸🇪SE-95.164.33.62-233_1@232
+- name: 18|🇸🇪SE-95.164.33.62-233_1@232
   password: 0b1371aa-649d-41dc-9126-338c87936500
   port: 443
   server: 95.164.33.62
@@ -8,12 +8,12 @@ proxies:
   type: trojan
   ws-path: h=%2Fwebsocket
 - cipher: chacha20-ietf-poly1305
-  name: 23|🇸🇪SE-46.246.98.155-1032
+  name: 22|🇸🇪SE-46.246.98.155-1032
   password: UDcjYQ6Z6AIWxViZpqyOmO
   port: 44013
   server: 46.246.98.155
   type: ss
-- name: 30|🔒 HYSTERIA-UDP 🇸🇪 SE-70.34.207...
+- name: 29|🔒 HYSTERIA-UDP 🇸🇪 SE-70.34.207...
   obfs: salamander
   obfs-password: d2648ec2
   password: 18240b2dfdd76484
@@ -23,9 +23,23 @@ proxies:
   sni: 70.34.207.153
   tls: false
   type: hysteria2
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: Tel%3A%40VPN_KING_V2RAY
+  name: 30|🔒 VL-GRPC-RLT 🇸🇪 SE-109.120.13...
+  network: grpc
+  port: 2083
+  reality-opts:
+    public-key: BUzfBVmWNSPk69ZlNgIlMvjB_KctXOhYaLx_bBlf70U
+    short-id: 3b35fd9cd4d47fe6
+  server: 109.120.132.204
+  servername: speedtest.net
+  tls: false
+  type: vless
+  uuid: 889878fd-0121-48f2-80a0-dfde05c0a7fa
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇸🇪 SE-94.242.58.1...
+  name: 30|🔒 VL-TCP-RLT 🇸🇪 SE-94.242.58.1...
   network: tcp
   port: 443
   reality-opts:
@@ -38,7 +52,7 @@ proxies:
   uuid: b1c801ec-1c5e-4d12-8b53-8da11c64a21b
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇸🇪 SE-109.122.201...
+  name: 30|🔒 VL-TCP-RLT 🇸🇪 SE-109.122.201...
   network: tcp
   port: 24782
   reality-opts:
@@ -48,33 +62,8 @@ proxies:
   tls: false
   type: vless
   uuid: 8d5c286f-d00a-4377-8cea-3e4ce23e2373
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇸🇪 SE-138.124.116...
-  network: tcp
-  port: 2040
-  reality-opts:
-    public-key: iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs
-    short-id: 27cfa05000c23cc4
-  server: 138.124.116.112
-  servername: fr.ign.com
-  tls: false
-  type: vless
-  uuid: 10b59513-ef76-4494-a925-305ec45dd3a4
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇸🇪 SE-46.253.4.31...
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: r-Sryx8MT35Vu5eHeRr-nfVXkGw1pQCkkwL0MFIkeEw
-    short-id: 321dd18a
-  server: 46.253.4.31
-  servername: www.dropbox.com
-  tls: false
-  type: vless
-  uuid: f7fdf2c2-a98a-4e8f-b06a-29f1b3c8122f
 - client-fingerprint: firefox
-  name: 31|🔒 VL-GRPC-RLT 🇸🇪 SE-91.186.218...
+  name: 30|🔒 VL-GRPC-RLT 🇸🇪 SE-91.186.218...
   network: grpc
   port: 2083
   reality-opts:
@@ -85,7 +74,32 @@ proxies:
   tls: false
   type: vless
   uuid: d239a4fb-83fd-46b3-bda1-c0b405bd7360
-- name: 33|🔒 TR-WS-TLS 🇸🇪 SE-185.146.173....
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 30|🔒 VL-TCP-RLT 🇸🇪 SE-46.253.4.31...
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: r-Sryx8MT35Vu5eHeRr-nfVXkGw1pQCkkwL0MFIkeEw
+    short-id: 321dd18a
+  server: 46.253.4.31
+  servername: www.dropbox.com
+  tls: false
+  type: vless
+  uuid: f7fdf2c2-a98a-4e8f-b06a-29f1b3c8122f
+- client-fingerprint: chrome
+  name: 30|🔒 VL-TCP-RLT 🇸🇪 SE-138.124.116...
+  network: tcp
+  port: 2040
+  reality-opts:
+    public-key: iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs
+    short-id: 27cfa05000c23cc4
+  server: 138.124.116.112
+  servername: fr.ign.com
+  tls: false
+  type: vless
+  uuid: 10b59513-ef76-4494-a925-305ec45dd3a4
+- name: 32|🔒 TR-WS-TLS 🇸🇪 SE-185.146.173....
   network: ws
   password: auto
   port: 443
@@ -95,7 +109,7 @@ proxies:
   ws-opts:
     headers:
       Host: esetsecuritylicense.bwnsmv.workers.dev
-- name: 33|🔒 TR-WS-NONE 🇸🇪 SE-109.120.132...
+- name: 32|🔒 TR-WS-NONE 🇸🇪 SE-109.120.132...
   network: ws
   password: vpn
   port: 2025
@@ -107,15 +121,10 @@ proxies:
     path: '%2F'
 - alterId: 0
   cipher: auto
-  name: 35|🔒 VM-WS-NA 🇸🇪 SE-185.146.173.9...
-  network: ws
-  port: '2052'
-  server: 185.146.173.91
-  servername: ''
+  name: 34|🔒 VM-TCP-NA 🇸🇪 SE-169.150.208....
+  network: tcp
+  port: 18000
+  server: 169.150.208.83
   tls: false
   type: vmess
-  uuid: 6e88465e-a2ac-57d3-bbaf-f72e4439bd75
-  ws-opts:
-    headers:
-      Host: De1.vmess.site.
-    path: /vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
