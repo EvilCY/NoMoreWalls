@@ -1,9 +1,12 @@
 proxies:
-- cipher: aes-128-gcm
-  name: 23|🇨🇭CH-156.146.62.164-1014
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 23,36|未知60 2.3MB/s
   password: shadowsocks
   port: 443
   server: 156.146.62.164
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: aes-128-gcm
   name: 23|🇨🇭CH-156.146.62.162-1010
@@ -30,6 +33,18 @@ proxies:
   server: 204.136.10.115
   type: ss
 - client-fingerprint: chrome
+  name: 31|🔒 VL-GRPC-RLT 🇨🇭 CH-193.168.14...
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: rsoZpDByMW3Ukcj68I5vw_-k-CivE6CV6TPJxyPl6WY
+    short-id: 07a9a22b
+  server: 193.168.144.46
+  servername: mega.io
+  tls: false
+  type: vless
+  uuid: cdb38f5b-12c3-414b-eacd-a635dc633701
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 31|🔒 VL-TCP-RLT 🇨🇭 CH-84.234.28.1...
   network: tcp
@@ -42,18 +57,6 @@ proxies:
   tls: false
   type: vless
   uuid: 9a976dba-b3c5-48e0-88c1-8492d42c2998
-- client-fingerprint: chrome
-  name: 31|🔒 VL-GRPC-RLT 🇨🇭 CH-193.168.14...
-  network: grpc
-  port: 443
-  reality-opts:
-    public-key: rsoZpDByMW3Ukcj68I5vw_-k-CivE6CV6TPJxyPl6WY
-    short-id: 07a9a22b
-  server: 193.168.144.46
-  servername: mega.io
-  tls: false
-  type: vless
-  uuid: cdb38f5b-12c3-414b-eacd-a635dc633701
 - client-fingerprint: randomized
   name: 31|🔒 VL-GRPC-RLT 🇨🇭 CH-195.15.201...
   network: grpc
@@ -66,20 +69,6 @@ proxies:
   tls: false
   type: vless
   uuid: d6e651f4-8346-43cd-9cb9-581e92be4c17
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config
-  name: 31|🔒 VL-GRPC-RLT 🇨🇭 CH-141.227.13...
-  network: grpc
-  port: 1210
-  reality-opts:
-    public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
-    short-id: 7fe29733
-  server: 141.227.138.201
-  servername: ubuntu.com
-  tls: false
-  type: vless
-  uuid: c8a71f9b-692d-4916-ad73-f070ac00257f
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 31|🔒 VL-TCP-RLT 🇨🇭 CH-195.15.215....
@@ -105,6 +94,20 @@ proxies:
   tls: false
   type: vless
   uuid: 12c4e4ff-e1e9-487c-9ae3-e55b0b5b5e3a
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config
+  name: 31|🔒 VL-GRPC-RLT 🇨🇭 CH-141.227.13...
+  network: grpc
+  port: 1210
+  reality-opts:
+    public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
+    short-id: 7fe29733
+  server: 141.227.138.201
+  servername: ubuntu.com
+  tls: false
+  type: vless
+  uuid: c8a71f9b-692d-4916-ad73-f070ac00257f
 - alterId: 0
   cipher: auto
   name: 35|🔒 VM-TCP-NA 🇨🇭 CH-23.166.88.18...
@@ -116,10 +119,10 @@ proxies:
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - client-fingerprint: chrome
-  name: '38,39|CH_speednode_0025 #1'
+  name: '38,39|CH_speednode_0041 #1'
   network: ws
   port: 8880
-  server: 185.18.250.213
+  server: 185.18.250.63
   servername: jp.laoyoutiao.link
   skip-cert-verify: false
   tls: false
@@ -129,4 +132,4 @@ proxies:
   ws-opts:
     headers:
       Host: jp.laoyoutiao.link
-    path: /?ed=2560
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
