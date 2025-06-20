@@ -6,11 +6,11 @@ proxies:
   skip-cert-verify: true
   sni: brwx.spvpv.com
   type: trojan
-- name: '13,19,25|15|CN_speednode_0003 #2'
+- name: '13,19|15|CN_speednode_0003 #1'
   password: 85f133142f04dbf6547da33895cfabb3
   port: 39001
   server: 116.31.75.150
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.yrtok.com
   type: trojan
   udp: true
@@ -717,14 +717,14 @@ proxies:
   ws-headers:
     Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
-- name: '21,37,38|CN_speednode_0022 #1'
+- name: '21,25,37,38|CN_speednode_0022 #1'
   password: HrTsLJvh
   port: 38632
   server: 36.151.251.62
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: '21,37,38|CN_speednode_0023 #1'
+- name: '21,25,37,38|CN_speednode_0023 #1'
   password: 2b1ed981-6547-4094-998b-06a3323d6f6c
   port: 21179
   server: 120.233.44.201
@@ -738,41 +738,29 @@ proxies:
   server: 120.241.226.94
   sni: 45.32.28.232
   type: trojan
+- name: 32|🔒 TR-WS-TLS 🇨🇳 CN-101.69.122.1...
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 101.69.122.104
+  sni: zamim340.ggff.net
+  type: trojan
+  ws-opts:
+    headers:
+      Host: zamim340.ggff.net
 - name: '32|🔒 TR-TCP-NA 🇨🇳 CN-120.241.226.... #1'
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
-  port: 2053
+  port: 3462
   server: 120.241.226.93
   skip-cert-verify: false
   sni: 45.32.28.232
   type: trojan
-- name: 32|🔒 TR-TCP-NA 🇨🇳 CN-14.215.39.15...
-  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
-  port: 3462
-  server: 14.215.39.157
-  skip-cert-verify: false
-  sni: 45.32.28.232
-  type: trojan
-- name: '32|🔒 TR-TCP-NA 🇨🇳 CN-14.215.39.15... #1'
-  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
-  port: 2053
-  server: 14.215.39.158
-  sni: 45.32.28.232
-  type: trojan
-- alterId: 0
-  name: 32,35|未知136
+- name: 32|🔒 TR-TCP-NA 🇨🇳 CN-163.177.58.1...
   password: 616F5C28-A1B2-D7C7-2F5D-46AC56436130
   port: 8306
   server: 163.177.58.129
   skip-cert-verify: true
   sni: cos.ap-guangzhou.myqcloud.com
-  tls: true
-  type: trojan
-  udp: true
-- name: '32|🔒 TR-TCP-NA 🇨🇳 CN-14.215.39.15... #2'
-  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
-  port: 3462
-  server: 14.215.39.158
-  sni: 45.32.28.232
   type: trojan
 - name: 32|🔒 TR-WS-TLS 🇨🇳 CN-27.36.125.2:...
   network: ws
@@ -784,29 +772,39 @@ proxies:
   ws-opts:
     headers:
       Host: zamim340.ggff.net
-- name: '32|🔒 TR-TCP-NA 🇨🇳 CN-120.241.226.... #2'
+- name: 32|🔒 TR-TCP-NA 🇨🇳 CN-14.215.39.15...
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
+  server: 14.215.39.158
+  sni: 45.32.28.232
+  type: trojan
+- name: '32|🔒 TR-TCP-NA 🇨🇳 CN-120.241.226.... #2'
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  port: 2053
   server: 120.241.226.93
   skip-cert-verify: false
   sni: 45.32.28.232
   type: trojan
-- name: '32|🔒 TR-TCP-NA 🇨🇳 CN-120.241.226.... #3'
+- name: '32|🔒 TR-TCP-NA 🇨🇳 CN-14.215.39.15... #1'
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 2053
-  server: 120.241.226.94
+  server: 14.215.39.158
   sni: 45.32.28.232
   type: trojan
-- name: 32|🔒 TR-WS-TLS 🇨🇳 CN-101.69.122.1...
+- alterId: 0
+  cipher: auto
+  name: 34|🔒 VM-WS-TLS 🇨🇳 CN-183.236.51.1...
   network: ws
-  password: bpb-trojan
-  port: 443
-  server: 101.69.122.104
-  sni: zamim340.ggff.net
-  type: trojan
+  port: '35146'
+  server: 183.236.51.187
+  servername: sg6.vip2.g2.moonbase.life
+  tls: true
+  type: vmess
+  uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
   ws-opts:
     headers:
-      Host: zamim340.ggff.net
+      Host: web.xcjs.info
+    path: /home
 - alterId: 0
   cipher: auto
   name: 34|🔒 VM-WS-TLS 🇨🇳 CN-120.253.242....
@@ -837,7 +835,30 @@ proxies:
     path: /home
 - alterId: 0
   cipher: auto
-  name: 34|🔒 VM-WS-TLS 🇨🇳 CN-183.236.51.1...
+  name: 34|🔒 VM-WS-NA 🇨🇳 CN-111.47.244.38...
+  network: ws
+  port: '25230'
+  server: 111.47.244.38
+  tls: false
+  type: vmess
+  uuid: b784f479-32c2-4fa9-a6f9-0e8d3f8cb4ae
+  ws-opts:
+    headers:
+      Host: cm1.awslcn.info
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 34|🔒 VM-TCP-NA 🇨🇳 CN-120.26.55.22...
+  network: tcp
+  port: '50002'
+  server: 120.26.55.225
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: '34|🔒 VM-WS-TLS 🇨🇳 CN-183.236.51.1... #1'
   network: ws
   port: '35111'
   server: 183.236.51.131
@@ -848,20 +869,6 @@ proxies:
   ws-opts:
     headers:
       Host: sg1.g2.moonbase.life
-    path: /home
-- alterId: 0
-  cipher: auto
-  name: '34|🔒 VM-WS-TLS 🇨🇳 CN-36.150.94.79... #1'
-  network: ws
-  port: '35246'
-  server: 36.150.94.79
-  servername: jp6.vip2.g2.moonbase.life
-  tls: true
-  type: vmess
-  uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
-  ws-opts:
-    headers:
-      Host: web.xcjs.info
     path: /home
 - alterId: 0
   cipher: auto
@@ -879,11 +886,11 @@ proxies:
     path: /home
 - alterId: 0
   cipher: auto
-  name: '34|🔒 VM-WS-TLS 🇨🇳 CN-183.236.51.1... #1'
+  name: '34|🔒 VM-WS-TLS 🇨🇳 CN-36.150.94.79... #1'
   network: ws
-  port: '35146'
-  server: 183.236.51.187
-  servername: sg6.vip2.g2.moonbase.life
+  port: '35246'
+  server: 36.150.94.79
+  servername: jp6.vip2.g2.moonbase.life
   tls: true
   type: vmess
   uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
@@ -905,29 +912,6 @@ proxies:
     headers:
       Host: web.xcjs.info
     path: /home
-- alterId: 0
-  cipher: auto
-  name: 34|🔒 VM-TCP-NA 🇨🇳 CN-120.26.55.22...
-  network: tcp
-  port: '50002'
-  server: 120.26.55.225
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 34|🔒 VM-WS-NA 🇨🇳 CN-111.47.244.38...
-  network: ws
-  port: '25230'
-  server: 111.47.244.38
-  tls: false
-  type: vmess
-  uuid: b784f479-32c2-4fa9-a6f9-0e8d3f8cb4ae
-  ws-opts:
-    headers:
-      Host: cm1.awslcn.info
-    path: /
 - alterId: 0
   cipher: auto
   name: 37|CN_speednode_0019
