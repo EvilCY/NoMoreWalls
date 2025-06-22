@@ -31,17 +31,18 @@ proxies:
   tls: false
   type: hysteria2
 - client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇸🇪 SE-138.124.116...
+  flow: xtls-rprx-vision
+  name: 31|🔒 VL-TCP-RLT 🇸🇪 SE-46.253.4.31...
   network: tcp
-  port: 2040
+  port: 443
   reality-opts:
-    public-key: iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs
-    short-id: 27cfa05000c23cc4
-  server: 138.124.116.112
-  servername: fr.ign.com
+    public-key: r-Sryx8MT35Vu5eHeRr-nfVXkGw1pQCkkwL0MFIkeEw
+    short-id: 321dd18a
+  server: 46.253.4.31
+  servername: www.dropbox.com
   tls: false
   type: vless
-  uuid: 10b59513-ef76-4494-a925-305ec45dd3a4
+  uuid: f7fdf2c2-a98a-4e8f-b06a-29f1b3c8122f
 - client-fingerprint: safari
   flow: xtls-rprx-vision
   name: 31|🔒 VL-TCP-RLT 🇸🇪 SE-109.122.201...
@@ -54,6 +55,18 @@ proxies:
   tls: false
   type: vless
   uuid: 8d5c286f-d00a-4377-8cea-3e4ce23e2373
+- client-fingerprint: chrome
+  name: 31|🔒 VL-TCP-RLT 🇸🇪 SE-138.124.116...
+  network: tcp
+  port: 2040
+  reality-opts:
+    public-key: iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs
+    short-id: 27cfa05000c23cc4
+  server: 138.124.116.112
+  servername: fr.ign.com
+  tls: false
+  type: vless
+  uuid: 10b59513-ef76-4494-a925-305ec45dd3a4
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 31|🔒 VL-TCP-RLT 🇸🇪 SE-94.242.58.1...
@@ -68,31 +81,6 @@ proxies:
   type: vless
   uuid: b1c801ec-1c5e-4d12-8b53-8da11c64a21b
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇸🇪 SE-46.253.4.31...
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: r-Sryx8MT35Vu5eHeRr-nfVXkGw1pQCkkwL0MFIkeEw
-    short-id: 321dd18a
-  server: 46.253.4.31
-  servername: www.dropbox.com
-  tls: false
-  type: vless
-  uuid: f7fdf2c2-a98a-4e8f-b06a-29f1b3c8122f
-- client-fingerprint: firefox
-  name: 31|🔒 VL-GRPC-RLT 🇸🇪 SE-91.186.218...
-  network: grpc
-  port: 2083
-  reality-opts:
-    public-key: b14Nibi1pMPwFPqgiyZRS3a6-Y-Q8EsE5urKnA-RkAc
-    short-id: adf8a1f5689177a2
-  server: 91.186.218.167
-  servername: www.speedtest.net
-  tls: false
-  type: vless
-  uuid: d239a4fb-83fd-46b3-bda1-c0b405bd7360
-- client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: Tel:@VPN_KING_V2RAY
   name: 31|🔒 VL-GRPC-RLT 🇸🇪 SE-109.120.13...
@@ -106,73 +94,36 @@ proxies:
   tls: false
   type: vless
   uuid: f5476642-ce98-45af-b227-273dcfd4f96a
-- alpn:
-  - http/1.1
-  name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-13.61.252.2...
+- client-fingerprint: firefox
+  name: 31|🔒 VL-TCP-RLT 🇸🇪 SE-77.221.143....
   network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 13.61.252.238
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-51.20.195.8...
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.20.195.87
-  sni: trojan.burgerip.co.uk
-  type: trojan
+  port: 54231
+  reality-opts:
+    public-key: 4fJKg7LhM4N1J23P-YU2cJ4TPOsGVZinB6VTvmHE4Ec
+    short-id: 96ab5d73
+  server: 77.221.143.85
+  servername: dash.cloudflare.com
+  tls: false
+  type: vless
+  uuid: c4ca05f0-1b67-4552-bd03-9d71945ddc3e
+- client-fingerprint: firefox
+  name: 31|🔒 VL-GRPC-RLT 🇸🇪 SE-91.186.218...
+  network: grpc
+  port: 2083
+  reality-opts:
+    public-key: b14Nibi1pMPwFPqgiyZRS3a6-Y-Q8EsE5urKnA-RkAc
+    short-id: adf8a1f5689177a2
+  server: 91.186.218.167
+  servername: www.speedtest.net
+  tls: false
+  type: vless
+  uuid: d239a4fb-83fd-46b3-bda1-c0b405bd7360
 - name: 33|🔒 TR-TCP-NA 🇸🇪 SE-13.53.249.24...
   password: telegram-id-directvpn
   port: 22222
   server: 13.53.249.246
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-13.50.61.27...
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.50.61.27
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-51.20.111.1...
-  network: tcp
-  password: telegram-id-v2rayvpnchannel
-  port: 22222
-  server: 51.20.111.108
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-51.20.19.11...
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 51.20.19.115
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇸🇪 SE-16.16.10.249...
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 16.16.10.249
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-13.48.5.87:...
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.48.5.87
-  sni: trj.rollingnext.co.uk
   type: trojan
 - name: 33|🔒 TR-WS-TLS 🇸🇪 SE-185.146.173....
   network: ws
@@ -190,11 +141,72 @@ proxies:
   server: 13.50.27.202
   sni: trojan.burgerip.co.uk
   type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-51.20.38.22...
+  network: tcp
+  password: 77G4g4apO0
+  port: 1935
+  server: 51.20.38.227
+  sni: x8-sweden-amazon-v2-cf9yw.devefun.org
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-13.61.252.2...
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 13.61.252.238
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - name: 33|🔒 TR-TCP-NA 🇸🇪 SE-51.20.148.12...
   password: telegram-id-directvpn
   port: 22222
   server: 51.20.148.128
   skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-51.21.166.9...
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.21.166.9
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-51.20.19.11...
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 51.20.19.115
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-13.50.61.27...
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.50.61.27
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-13.48.5.87:...
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.48.5.87
+  sni: trj.rollingnext.co.uk
+  type: trojan
+- alpn:
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-51.20.195.8...
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.20.195.87
   sni: trojan.burgerip.co.uk
   type: trojan
 - alpn:
@@ -206,18 +218,27 @@ proxies:
   server: 51.21.59.141
   sni: trojan.burgerip.co.uk
   type: trojan
+- alpn:
+  - http/1.1
+  name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-51.20.111.1...
+  network: tcp
+  password: telegram-id-v2rayvpnchannel
+  port: 22222
+  server: 51.20.111.108
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-13.53.176.1...
   password: TRY332RCOD4panalyy9nISleFSZDOYFwzXSSNaCCwYelEyDR230cxAZxDqFOTzA3AX68S
   port: 443
   server: 13.53.176.184
   sni: otcele.golfland.club
   type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇸🇪 SE-51.20.38.22...
-  network: tcp
-  password: 77G4g4apO0
-  port: 1935
-  server: 51.20.38.227
-  sni: x8-sweden-amazon-v2-cf9yw.devefun.org
+- name: 33|🔒 TR-TCP-NA 🇸🇪 SE-16.16.10.249...
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 16.16.10.249
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
   type: trojan
 - alterId: 0
   cipher: auto
