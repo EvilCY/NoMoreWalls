@@ -420,13 +420,6 @@ proxies:
     headers:
       host: 51.79.102.253
     path: /IOebhLMhl1CTbFHbL95myfRX2
-- name: 33|🔒 TR-TCP-TLS 🇨🇦 CA-146.19.106....
-  network: tcp
-  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
-  port: 443
-  server: 146.19.106.154
-  sni: both-cramp-banjo.stark-industries.solutions
-  type: trojan
 - name: 33|🔒 TR-TCP-NONE 🇨🇦 CA-99.199.73....
   network: tcp
   password: p5T9x5WrfZ
@@ -437,6 +430,13 @@ proxies:
     headers:
       Host: sourceforge.net
     path: '%2F'
+- name: 33|🔒 TR-TCP-TLS 🇨🇦 CA-146.19.106....
+  network: tcp
+  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
+  port: 443
+  server: 146.19.106.154
+  sni: both-cramp-banjo.stark-industries.solutions
+  type: trojan
 - name: '33|🔒 TR-TCP-NONE 🇨🇦 CA-99.199.73.... #1'
   network: tcp
   password: 1VPOgXGwK7
@@ -447,6 +447,13 @@ proxies:
     headers:
       Host: sourceforge.net
     path: '%2F'
+- name: 33|🔒 TR-TCP-NA 🇨🇦 CA-104.234.239....
+  password: Aimer
+  port: 2087
+  server: 104.234.239.235
+  skip-cert-verify: false
+  sni: epcct.ambercc.filegear-sg.me
+  type: trojan
 - name: 33|🔒 TR-WS-TLS 🇨🇦 CA-23.227.38.33...
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
@@ -464,23 +471,26 @@ proxies:
   server: 23.227.60.8
   sni: 403b3611-99bc-43b7-88D7-26Ed5D0825A9-3.paGeS.dev
   type: trojan
-- name: 33|🔒 TR-TCP-NA 🇨🇦 CA-104.234.239....
-  password: Aimer
-  port: 2087
-  server: 104.234.239.235
-  skip-cert-verify: false
-  sni: epcct.ambercc.filegear-sg.me
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 35|🔒 VM-TCP-NA 🇨🇦 CA-51.79.86.182...
+  network: tcp
+  port: '42610'
+  server: 51.79.86.182
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e0957ca6-f613-4017-ff3c-effd1da8871a
 - alterId: 0
   cipher: auto
   name: 35|🔒 VM-TCP-NA 🇨🇦 CA-99.199.73.53...
   network: tcp
-  port: '37333'
+  port: '33230'
   server: 99.199.73.53
   servername: ''
   tls: false
   type: vmess
-  uuid: 8e32b5ce-ff24-405a-9932-48df5a59183d
+  uuid: 780ab182-b50d-462d-c027-38d9d69c1721
 - alterId: 0
   cipher: auto
   name: '35|🔒 VM-TCP-NA 🇨🇦 CA-99.199.73.53... #1'
@@ -493,14 +503,24 @@ proxies:
   uuid: 1aa40adf-b4b0-41b8-bd98-fafaadf423eb
 - alterId: 0
   cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇨🇦 CA-51.79.86.182...
+  name: '35|🔒 VM-TCP-NA 🇨🇦 CA-99.199.73.53... #2'
   network: tcp
-  port: '42610'
-  server: 51.79.86.182
+  port: '33480'
+  server: 99.199.73.53
   servername: ''
   tls: false
   type: vmess
-  uuid: e0957ca6-f613-4017-ff3c-effd1da8871a
+  uuid: 62f2d17e-a607-4f8f-d25d-92a0958ca1a9
+- alterId: 0
+  cipher: auto
+  name: 35|🔒 VM-TCP-NA 🇨🇦 CA-99.199.83.48...
+  network: tcp
+  port: '33678'
+  server: 99.199.83.48
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: fd83d63c-e97e-4a94-87db-27107dcbe293
 - alterId: 0
   cipher: auto
   name: 35|🔒 VM-WS-NA 🇨🇦 CA-158.69.48.14:...
@@ -517,26 +537,6 @@ proxies:
     path: /vpnjantit
 - alterId: 0
   cipher: auto
-  name: '35|🔒 VM-TCP-NA 🇨🇦 CA-99.199.73.53... #2'
-  network: tcp
-  port: '33230'
-  server: 99.199.73.53
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 780ab182-b50d-462d-c027-38d9d69c1721
-- alterId: 0
-  cipher: auto
-  name: '35|🔒 VM-TCP-NA 🇨🇦 CA-99.199.73.53... #3'
-  network: tcp
-  port: '33480'
-  server: 99.199.73.53
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 62f2d17e-a607-4f8f-d25d-92a0958ca1a9
-- alterId: 0
-  cipher: auto
   name: 35|🔒 VM-WS-NA 🇨🇦 CA-141.195.112.5...
   network: ws
   port: '20022'
@@ -548,3 +548,13 @@ proxies:
     headers:
       Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  name: '35|🔒 VM-TCP-NA 🇨🇦 CA-99.199.73.53... #3'
+  network: tcp
+  port: '37333'
+  server: 99.199.73.53
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 8e32b5ce-ff24-405a-9932-48df5a59183d
