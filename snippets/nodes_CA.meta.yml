@@ -1,7 +1,7 @@
 proxies:
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 12|3d4166df3b4b4cd9b905b3bba1fe2d...
+  name: 12|203b44509f3a4ee8b14eae299c4d28...
   network: ws
   port: 2096
   server: www.speedtest.net
@@ -479,27 +479,21 @@ proxies:
       Host: c01.ylkszy.eu.org
     path: /?ed=2560
 - cipher: chacha20-ietf-poly1305
-  name: 23|🇨🇦CA-79.127.233.170-4977
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 79.127.233.170
-  type: ss
-- cipher: aes-128-gcm
-  name: 23|🇨🇦CA-149.22.95.183-0256
-  password: shadowsocks
-  port: 443
-  server: 149.22.95.183
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 23|🇨🇦CA-142.4.216.225-0379
+  name: 23|🇨🇦CA-142.4.216.225-0351
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 23|🇨🇦CA-142.4.216.225-0342
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: ca225.vpnbook.com
+  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 23|🇨🇦CA-51.79.102.253-0949
+  name: 23|🇨🇦CA-51.79.102.253-0950
   network: ws
   port: 80
   server: 51.79.102.253
@@ -511,32 +505,10 @@ proxies:
     headers:
       host: 51.79.102.253
     path: /IOebhLMhl1CTbFHbL95myfRX2
-- cipher: chacha20-ietf-poly1305
-  name: 23|🇨🇦CA-142.4.216.225-0350
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: ca225.vpnbook.com
-  type: ss
 - name: 30|🔒 HYSTERIA-UDP 🇨🇦 CA-129.153.5...
-  password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
-  port: 54530
-  server: 129.153.59.124
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
-- name: 30|🔒 HYSTERIA-UDP 🇨🇦 CA-204.216.1...
-  password: sysadmin.sysadmin
-  port: 2024
-  server: 204.216.108.5
-  skip-cert-verify: true
-  sni: 204-216-108-5.nip.io
-  tls: false
-  type: hysteria2
-- name: 30|🔒 HYSTERIA-UDP 🇨🇦 CA-155.248.2...
   password: 2429bee3-e0c1-47dd-b420-75e6512b184b
   port: 30300
-  server: 155.248.219.28
+  server: 129.153.59.86
   skip-cert-verify: true
   sni: www.bing.com
   tls: false
@@ -549,6 +521,30 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
+- name: '30|🔒 HYSTERIA-UDP 🇨🇦 CA-129.153.5... #1'
+  password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
+  port: 54530
+  server: 129.153.59.124
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: 30|🔒 HYSTERIA-UDP 🇨🇦 CA-155.248.2...
+  password: 2429bee3-e0c1-47dd-b420-75e6512b184b
+  port: 30300
+  server: 155.248.219.28
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: 30|🔒 HYSTERIA-UDP 🇨🇦 CA-204.216.1...
+  password: sysadmin.sysadmin
+  port: 2024
+  server: 204.216.108.5
+  skip-cert-verify: true
+  sni: 204-216-108-5.nip.io
+  tls: false
+  type: hysteria2
 - name: '30|🔒 HYSTERIA-UDP 🇨🇦 CA-155.248.2... #1'
   password: 2429bee3-e0c1-47dd-b420-75e6512b184b
   port: 30300
@@ -557,14 +553,28 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: '30|🔒 HYSTERIA-UDP 🇨🇦 CA-129.153.5... #1'
-  password: 2429bee3-e0c1-47dd-b420-75e6512b184b
-  port: 30300
-  server: 129.153.59.86
-  skip-cert-verify: true
-  sni: www.bing.com
+- client-fingerprint: chrome
+  name: 31|🔒 VL-TCP-RLT 🇨🇦 CA-35.183.19.6...
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  server: 35.183.19.60
+  servername: zula.ir
   tls: false
-  type: hysteria2
+  type: vless
+  uuid: 73c732f2-d435-4197-9f33-0d7c1f47d3a9
+- client-fingerprint: chrome
+  name: 31|🔒 VL-TCP-RLT 🇨🇦 CA-35.182.124....
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  server: 35.182.124.226
+  servername: zula.ir
+  tls: false
+  type: vless
+  uuid: 73c732f2-d435-4197-9f33-0d7c1f47d3a9
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 31|🔒 VL-TCP-RLT 🇨🇦 CA-35.183.62.3...
@@ -577,65 +587,6 @@ proxies:
   tls: false
   type: vless
   uuid: b285432e-8677-40e3-a86a-ca167cd9d5bd
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇨🇦 CA-148.113.174...
-  network: tcp
-  port: 28495
-  reality-opts:
-    public-key: KXMH8QzaRa66F6GxOR1CanBunO2uHdJvri2zCbar2RQ
-    short-id: 0ecc2c1392
-  server: 148.113.174.213
-  servername: dl.google.com
-  tls: false
-  type: vless
-  uuid: 7e296434-2d17-48d3-928d-19eaa34aecb1
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇨🇦 CA-35.183.19.6...
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  server: 35.183.19.60
-  servername: zula.ir
-  tls: false
-  type: vless
-  uuid: 73c732f2-d435-4197-9f33-0d7c1f47d3a9
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇨🇦 CA-99.199.73.5...
-  network: tcp
-  port: 6443
-  reality-opts:
-    public-key: ej-1TFOFrMViJxM4oMy6TvWNDpNc2Oewfa45k-kxsyU
-    short-id: 6ae90c8970bd0bc1
-  server: 99.199.73.53
-  servername: prod01-cloud-xrsecure02.cyberscaler.com
-  tls: false
-  type: vless
-  uuid: d8f24744-13db-4b7a-87aa-a8118e5c51b8
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇨🇦 CA-178.128.231...
-  network: tcp
-  port: 8080
-  reality-opts:
-    public-key: CZWbmrDdvesNCBlbMBuvHsJiR8Hsxmsd8DWDR_2JrjM
-    short-id: 8e36c7e79b74a6fa
-  server: 178.128.231.204
-  servername: rEfErSion.Com.
-  tls: false
-  type: vless
-  uuid: acd867f1-a71b-4a17-a473-2b57930d8678
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇨🇦 CA-35.182.124....
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  server: 35.182.124.226
-  servername: zula.ir
-  tls: false
-  type: vless
-  uuid: 73c732f2-d435-4197-9f33-0d7c1f47d3a9
 - client-fingerprint: ios
   flow: xtls-rprx-vision
   name: 31|🔒 VL-TCP-RLT 🇨🇦 CA-142.179.77....
@@ -649,61 +600,44 @@ proxies:
   tls: false
   type: vless
   uuid: cfa392db-7445-4aa6-964f-2a3e20103936
-- name: 33|🔒 TR-TCP-TLS 🇨🇦 CA-104.234.239...
+- client-fingerprint: chrome
+  name: 31|🔒 VL-TCP-RLT 🇨🇦 CA-148.113.174...
   network: tcp
-  password: Aimer
-  port: 2087
-  server: 104.234.239.235
-  sni: ngepx.ambercc.filegear-sg.me
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇨🇦 CA-146.19.106....
+  port: 28495
+  reality-opts:
+    public-key: KXMH8QzaRa66F6GxOR1CanBunO2uHdJvri2zCbar2RQ
+    short-id: 0ecc2c1392
+  server: 148.113.174.213
+  servername: dl.google.com
+  tls: false
+  type: vless
+  uuid: 7e296434-2d17-48d3-928d-19eaa34aecb1
+- client-fingerprint: chrome
+  name: 31|🔒 VL-TCP-RLT 🇨🇦 CA-178.128.231...
   network: tcp
-  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
-  port: 443
-  server: 146.19.106.154
-  sni: both-cramp-banjo.stark-industries.solutions
-  type: trojan
-- name: 33|🔒 TR-WS-TLS 🇨🇦 CA-40.233.70.7:...
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 40.233.70.7
-  sni: ngepz.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ngepz.ambercc.filegear-sg.me
-- name: 33|🔒 TR-WS-TLS 🇨🇦 CA-23.227.38.33...
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 23.227.38.33
-  sni: icecream.955850.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-- name: 33|🔒 TR-TCP-NONE 🇨🇦 CA-99.199.73....
+  port: 8080
+  reality-opts:
+    public-key: CZWbmrDdvesNCBlbMBuvHsJiR8Hsxmsd8DWDR_2JrjM
+    short-id: 8e36c7e79b74a6fa
+  server: 178.128.231.204
+  servername: rEfErSion.Com.
+  tls: false
+  type: vless
+  uuid: acd867f1-a71b-4a17-a473-2b57930d8678
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: 31|🔒 VL-TCP-RLT 🇨🇦 CA-99.199.73.5...
   network: tcp
-  password: p5T9x5WrfZ
-  port: 46780
+  port: 6443
+  reality-opts:
+    public-key: ej-1TFOFrMViJxM4oMy6TvWNDpNc2Oewfa45k-kxsyU
+    short-id: 6ae90c8970bd0bc1
   server: 99.199.73.53
-  type: trojan
-  ws-opts:
-    headers:
-      Host: sourceforge.net
-- alterId: 0
-  name: 33,36|未知49
-  network: tcp
-  password: '!!str 3747000103274291200'
-  port: 443
-  server: 15.156.168.85
-  skip-cert-verify: true
-  sni: dynamic-liger.adder289.quest
-  tls: true
-  type: trojan
-  udp: true
-- name: '33|🔒 TR-TCP-NONE 🇨🇦 CA-99.199.73.... #1'
+  servername: prod01-cloud-xrsecure02.cyberscaler.com
+  tls: false
+  type: vless
+  uuid: d8f24744-13db-4b7a-87aa-a8118e5c51b8
+- name: 33|🔒 TR-TCP-NONE 🇨🇦 CA-99.199.73....
   network: tcp
   password: 1VPOgXGwK7
   port: 2089
@@ -720,26 +654,56 @@ proxies:
   server: 23.227.60.8
   sni: 403b3611-99bc-43b7-88D7-26Ed5D0825A9-3.paGeS.dev
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇨🇦 CA-23.162.200.9...
+- name: '33|🔒 TR-TCP-NONE 🇨🇦 CA-99.199.73.... #1'
   network: tcp
-  port: '20182'
-  server: 23.162.200.91
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cc9b66b7-1de7-4aa9-9642-575a8ae3ff19
-- alterId: 0
-  cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇨🇦 CA-99.199.73.53...
-  network: tcp
-  port: '33480'
+  password: p5T9x5WrfZ
+  port: 46780
   server: 99.199.73.53
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 62f2d17e-a607-4f8f-d25d-92a0958ca1a9
+  type: trojan
+  ws-opts:
+    headers:
+      Host: sourceforge.net
+- name: 33|🔒 TR-TCP-TLS 🇨🇦 CA-146.19.106....
+  network: tcp
+  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
+  port: 443
+  server: 146.19.106.154
+  sni: both-cramp-banjo.stark-industries.solutions
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇨🇦 CA-15.156.168....
+  network: tcp
+  password: '!!str 3747000103274291200'
+  port: 443
+  server: 15.156.168.85
+  sni: dynamic-liger.adder289.quest
+  type: trojan
+- name: 33|🔒 TR-WS-TLS 🇨🇦 CA-23.227.38.33...
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 23.227.38.33
+  sni: icecream.955850.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+- name: 33|🔒 TR-TCP-TLS 🇨🇦 CA-104.234.239...
+  network: tcp
+  password: Aimer
+  port: 2087
+  server: 104.234.239.235
+  sni: ngepx.ambercc.filegear-sg.me
+  type: trojan
+- name: 33|🔒 TR-WS-TLS 🇨🇦 CA-40.233.70.7:...
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 40.233.70.7
+  sni: ngepz.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ngepz.ambercc.filegear-sg.me
 - alterId: 0
   cipher: auto
   name: 35|🔒 VM-TCP-NA 🇨🇦 CA-99.199.83.48...
@@ -752,16 +716,6 @@ proxies:
   uuid: fd83d63c-e97e-4a94-87db-27107dcbe293
 - alterId: 0
   cipher: auto
-  name: '35|🔒 VM-TCP-NA 🇨🇦 CA-99.199.73.53... #1'
-  network: tcp
-  port: '37333'
-  server: 99.199.73.53
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 8e32b5ce-ff24-405a-9932-48df5a59183d
-- alterId: 0
-  cipher: auto
   name: 35|🔒 VM-TCP-NA 🇨🇦 CA-51.79.86.182...
   network: tcp
   port: '42610'
@@ -772,31 +726,7 @@ proxies:
   uuid: e0957ca6-f613-4017-ff3c-effd1da8871a
 - alterId: 0
   cipher: auto
-  name: 35|🔒 VM-WS-NA 🇨🇦 CA-141.195.112.5...
-  network: ws
-  port: '20022'
-  server: 141.195.112.53
-  tls: false
-  type: vmess
-  uuid: cfb611bf-c93e-413b-b04c-3090f4f7cbbb
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 35,36|未知84
-  network: tcp
-  port: 14812
-  server: 38.111.114.153
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 0146fc40-5962-4e9a-b36a-2b606d001467
-- alterId: 0
-  cipher: auto
-  name: '35|🔒 VM-TCP-NA 🇨🇦 CA-99.199.73.53... #2'
+  name: 35|🔒 VM-TCP-NA 🇨🇦 CA-99.199.73.53...
   network: tcp
   port: '33641'
   server: 99.199.73.53
@@ -806,14 +736,14 @@ proxies:
   uuid: f27a25c2-d4e4-4d0a-b75b-22e58c7784a8
 - alterId: 0
   cipher: auto
-  name: '35|🔒 VM-TCP-NA 🇨🇦 CA-99.199.73.53... #3'
+  name: '35|🔒 VM-TCP-NA 🇨🇦 CA-99.199.73.53... #1'
   network: tcp
-  port: '33230'
+  port: '33480'
   server: 99.199.73.53
   servername: ''
   tls: false
   type: vmess
-  uuid: 780ab182-b50d-462d-c027-38d9d69c1721
+  uuid: 62f2d17e-a607-4f8f-d25d-92a0958ca1a9
 - alterId: 0
   cipher: auto
   name: 35|🔒 VM-WS-NA 🇨🇦 CA-158.69.48.14:...
@@ -828,6 +758,59 @@ proxies:
     headers:
       Host: ''
     path: /vpnjantit
+- alterId: 0
+  cipher: auto
+  name: '35|🔒 VM-TCP-NA 🇨🇦 CA-99.199.73.53... #2'
+  network: tcp
+  port: '33230'
+  server: 99.199.73.53
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 780ab182-b50d-462d-c027-38d9d69c1721
+- alterId: 0
+  cipher: auto
+  name: 35|🔒 VM-TCP-NA 🇨🇦 CA-38.111.114.1...
+  network: tcp
+  port: '14812'
+  server: 38.111.114.153
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0146fc40-5962-4e9a-b36a-2b606d001467
+- alterId: 0
+  cipher: auto
+  name: '35|🔒 VM-TCP-NA 🇨🇦 CA-99.199.73.53... #3'
+  network: tcp
+  port: '37333'
+  server: 99.199.73.53
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 8e32b5ce-ff24-405a-9932-48df5a59183d
+- alterId: 0
+  cipher: auto
+  name: 35|🔒 VM-TCP-NA 🇨🇦 CA-23.162.200.9...
+  network: tcp
+  port: '20182'
+  server: 23.162.200.91
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cc9b66b7-1de7-4aa9-9642-575a8ae3ff19
+- alterId: 0
+  cipher: auto
+  name: 35|🔒 VM-WS-NA 🇨🇦 CA-141.195.112.5...
+  network: ws
+  port: '20022'
+  server: 141.195.112.53
+  tls: false
+  type: vmess
+  uuid: cfb611bf-c93e-413b-b04c-3090f4f7cbbb
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - client-fingerprint: chrome
   name: '38,39|CA_speednode_0019 #1'
   network: ws
