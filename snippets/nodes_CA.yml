@@ -460,6 +460,30 @@ proxies:
   server: 23.227.60.8
   sni: 403b3611-99bc-43b7-88D7-26Ed5D0825A9-3.paGeS.dev
   type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇨🇦 CA-146.19.106....
+  network: tcp
+  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
+  port: 443
+  server: 146.19.106.154
+  sni: both-cramp-banjo.stark-industries.solutions
+  type: trojan
+- name: 33|🔒 TR-TCP-TLS 🇨🇦 CA-104.234.239...
+  network: tcp
+  password: Aimer
+  port: 2087
+  server: 104.234.239.235
+  sni: ngepx.ambercc.filegear-sg.me
+  type: trojan
+- name: 33|🔒 TR-TCP-NONE 🇨🇦 CA-99.199.73....
+  network: tcp
+  password: 1VPOgXGwK7
+  port: 2089
+  server: 99.199.73.28
+  type: trojan
+  ws-opts:
+    headers:
+      Host: sourceforge.net
+    path: /
 - name: 33|🔒 TR-WS-TLS 🇨🇦 CA-40.233.70.7:...
   network: ws
   password: Aimer
@@ -470,22 +494,6 @@ proxies:
   ws-opts:
     headers:
       Host: ngepz.ambercc.filegear-sg.me
-- name: 33|🔒 TR-TCP-TLS 🇨🇦 CA-15.156.168....
-  network: tcp
-  password: '!!str 3747000103274291200'
-  port: 443
-  server: 15.156.168.85
-  sni: dynamic-liger.adder289.quest
-  type: trojan
-- name: 33|🔒 TR-TCP-NONE 🇨🇦 CA-99.199.73....
-  network: tcp
-  password: p5T9x5WrfZ
-  port: 46780
-  server: 99.199.73.53
-  type: trojan
-  ws-opts:
-    headers:
-      Host: sourceforge.net
 - name: 33|🔒 TR-WS-TLS 🇨🇦 CA-23.227.38.33...
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
@@ -498,38 +506,114 @@ proxies:
       Host: icecream.955850.xyz
 - name: '33|🔒 TR-TCP-NONE 🇨🇦 CA-99.199.73.... #1'
   network: tcp
-  password: 1VPOgXGwK7
-  port: 2089
-  server: 99.199.73.28
+  password: p5T9x5WrfZ
+  port: 46780
+  server: 99.199.73.53
   type: trojan
   ws-opts:
     headers:
       Host: sourceforge.net
-    path: /
-- name: 33|🔒 TR-TCP-TLS 🇨🇦 CA-104.234.239...
+- name: 33|🔒 TR-TCP-TLS 🇨🇦 CA-15.156.168....
   network: tcp
-  password: Aimer
-  port: 2087
-  server: 104.234.239.235
-  sni: ngepx.ambercc.filegear-sg.me
-  type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇨🇦 CA-146.19.106....
-  network: tcp
-  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
+  password: '!!str 3747000103274291200'
   port: 443
-  server: 146.19.106.154
-  sni: both-cramp-banjo.stark-industries.solutions
+  server: 15.156.168.85
+  sni: dynamic-liger.adder289.quest
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇨🇦 CA-23.162.200.9...
+  name: 35|🔒 VM-TCP-NA 🇨🇦 CA-99.199.73.53...
   network: tcp
-  port: '20182'
-  server: 23.162.200.91
+  port: '37333'
+  server: 99.199.73.53
   servername: ''
   tls: false
   type: vmess
-  uuid: cc9b66b7-1de7-4aa9-9642-575a8ae3ff19
+  uuid: 8e32b5ce-ff24-405a-9932-48df5a59183d
+- alterId: 0
+  cipher: auto
+  name: 35,36|未知96
+  network: tcp
+  port: 14812
+  server: 38.111.114.153
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 0146fc40-5962-4e9a-b36a-2b606d001467
+- alterId: 0
+  cipher: auto
+  name: 35|🔒 VM-TCP-NA 🇨🇦 CA-99.199.83.48...
+  network: tcp
+  port: '33678'
+  server: 99.199.83.48
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0be9f568-4ef5-4288-8818-2034593ad6bd
+- alterId: 0
+  cipher: auto
+  name: '35|🔒 VM-TCP-NA 🇨🇦 CA-99.199.73.53... #1'
+  network: tcp
+  port: '33230'
+  server: 99.199.73.53
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 29f86640-0359-456c-d6e6-75155b3d781e
+- alterId: 0
+  cipher: auto
+  name: '35|🔒 VM-TCP-NA 🇨🇦 CA-99.199.73.53... #2'
+  network: tcp
+  port: '33423'
+  server: 99.199.73.53
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ced3a0f7-e5b4-411b-fe29-a004aea2324e
+- alterId: 0
+  cipher: auto
+  name: 35|🔒 VM-WS-NA 🇨🇦 CA-141.195.112.5...
+  network: ws
+  port: '20022'
+  server: 141.195.112.53
+  tls: false
+  type: vmess
+  uuid: cfb611bf-c93e-413b-b04c-3090f4f7cbbb
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '35|🔒 VM-TCP-NA 🇨🇦 CA-99.199.73.53... #3'
+  network: tcp
+  port: '33480'
+  server: 99.199.73.53
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 62f2d17e-a607-4f8f-d25d-92a0958ca1a9
+- alterId: 0
+  cipher: auto
+  name: 35|🔒 VM-TCP-NA 🇨🇦 CA-51.79.86.182...
+  network: tcp
+  port: '42610'
+  server: 51.79.86.182
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e0957ca6-f613-4017-ff3c-effd1da8871a
+- alterId: 0
+  cipher: auto
+  name: '35|🔒 VM-TCP-NA 🇨🇦 CA-99.199.73.53... #4'
+  network: tcp
+  port: '33641'
+  server: 99.199.73.53
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f27a25c2-d4e4-4d0a-b75b-22e58c7784a8
 - alterId: 0
   cipher: auto
   name: 35|🔒 VM-WS-NA 🇨🇦 CA-158.69.48.14:...
@@ -546,84 +630,11 @@ proxies:
     path: /vpnjantit
 - alterId: 0
   cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇨🇦 CA-38.111.114.1...
+  name: 35|🔒 VM-TCP-NA 🇨🇦 CA-23.162.200.9...
   network: tcp
-  port: '14812'
-  server: 38.111.114.153
+  port: '20182'
+  server: 23.162.200.91
   servername: ''
   tls: false
   type: vmess
-  uuid: 0146fc40-5962-4e9a-b36a-2b606d001467
-- alterId: 0
-  cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇨🇦 CA-99.199.73.53...
-  network: tcp
-  port: '33480'
-  server: 99.199.73.53
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 62f2d17e-a607-4f8f-d25d-92a0958ca1a9
-- alterId: 0
-  cipher: auto
-  name: 35|🔒 VM-WS-NA 🇨🇦 CA-141.195.112.5...
-  network: ws
-  port: '20022'
-  server: 141.195.112.53
-  tls: false
-  type: vmess
-  uuid: cfb611bf-c93e-413b-b04c-3090f4f7cbbb
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '35|🔒 VM-TCP-NA 🇨🇦 CA-99.199.73.53... #1'
-  network: tcp
-  port: '37333'
-  server: 99.199.73.53
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 8e32b5ce-ff24-405a-9932-48df5a59183d
-- alterId: 0
-  cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇨🇦 CA-99.199.83.48...
-  network: tcp
-  port: '33678'
-  server: 99.199.83.48
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0be9f568-4ef5-4288-8818-2034593ad6bd
-- alterId: 0
-  cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇨🇦 CA-51.79.86.182...
-  network: tcp
-  port: '42610'
-  server: 51.79.86.182
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e0957ca6-f613-4017-ff3c-effd1da8871a
-- alterId: 0
-  cipher: auto
-  name: '35|🔒 VM-TCP-NA 🇨🇦 CA-99.199.73.53... #2'
-  network: tcp
-  port: '33641'
-  server: 99.199.73.53
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f27a25c2-d4e4-4d0a-b75b-22e58c7784a8
-- alterId: 0
-  cipher: auto
-  name: '35|🔒 VM-TCP-NA 🇨🇦 CA-99.199.73.53... #3'
-  network: tcp
-  port: '33230'
-  server: 99.199.73.53
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 780ab182-b50d-462d-c027-38d9d69c1721
+  uuid: cc9b66b7-1de7-4aa9-9642-575a8ae3ff19
