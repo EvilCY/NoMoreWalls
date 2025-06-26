@@ -132,11 +132,14 @@ proxies:
   port: 989
   server: 62.100.205.48
   type: ss
-- cipher: aes-128-gcm
-  name: 23|🇬🇧GB-212.102.53.194-0077
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 23,36|未知139 18.2MB/s
   password: shadowsocks
   port: 443
   server: 212.102.53.194
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: aes-128-gcm
   name: 23|🇬🇧GB-212.102.53.80-0302
@@ -180,14 +183,11 @@ proxies:
   port: 443
   server: uk-dc1.yangon.club
   type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 23,36|未知31 14.5MB/s
+- cipher: aes-128-gcm
+  name: 23|🇬🇧GB-212.102.53.196-0325
   password: shadowsocks
   port: 443
   server: 212.102.53.196
-  skip-cert-verify: true
-  tls: true
   type: ss
 - cipher: aes-128-gcm
   name: 23|🇬🇧GB-212.102.53.78-0303
@@ -285,13 +285,6 @@ proxies:
   server: 18.132.37.93
   tls: false
   type: hysteria2
-- name: 30|🔒 HYSTERIA-UDP 🇬🇧 GB-185.85.24...
-  password: cf125f42-759d-4112-82c3-014d2ffcb1e7
-  port: 1443
-  server: 185.85.242.177
-  sni: gbr1.587458.xyz
-  tls: false
-  type: hysteria2
 - name: 30|🔒 HYSTERIA-UDP 🇬🇧 GB-130.162.1...
   password: nfsn666
   port: 8888
@@ -300,8 +293,52 @@ proxies:
   sni: ld-arm.nfsn666.gq
   tls: false
   type: hysteria2
+- name: 30|🔒 HYSTERIA-UDP 🇬🇧 GB-185.85.24...
+  password: cf125f42-759d-4112-82c3-014d2ffcb1e7
+  port: 1443
+  server: 185.85.242.177
+  sni: gbr1.587458.xyz
+  tls: false
+  type: hysteria2
 - client-fingerprint: chrome
   name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-217.179.91....
+  network: tcp
+  port: 34045
+  reality-opts:
+    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+    short-id: e8ab71d0
+  server: 217.179.91.152
+  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+  tls: false
+  type: vless
+  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: '%40Mehrdad_Zargar%2C%40Mehrdad_Zargar%2C%40Mehrdad_Zargar%2C%40Mehrdad_Zargar%2C%40Mehrdad_Zargar%2C%40Mehrdad_Zargar%2C%40Mehrdad_Zargar%2C%40Mehrdad_Zargar%2C%40Mehrdad_Zargar'
+  name: 31|🔒 VL-GRPC-RLT 🇬🇧 GB-64.227.45....
+  network: grpc
+  port: 7594
+  reality-opts:
+    public-key: 0m7yrv_Zk8kDTnWASROiBaYEO-SdlBJFBuUs6V3fcD0
+  server: 64.227.45.92
+  servername: dash.cloudflare.com
+  tls: false
+  type: vless
+  uuid: 5633011d-c084-49b1-833b-3ee0a82cc71d
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-138.68.119....
+  network: tcp
+  port: 2323
+  reality-opts:
+    public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
+  server: 138.68.119.73
+  servername: journalofbigdata.springeropen.com
+  tls: false
+  type: vless
+  uuid: 08052317-7036-4906-b7da-19934f8fe6e6
+- client-fingerprint: chrome
+  name: '31|🔒 VL-TCP-RLT 🇬🇧 GB-217.179.91.... #1'
   network: tcp
   port: 34045
   reality-opts:
@@ -313,29 +350,41 @@ proxies:
   type: vless
   uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-67.207.70.7...
-  network: tcp
-  port: 8989
+  name: 31|🔒 VL-GRPC-RLT 🇬🇧 GB-62.60.155....
+  network: grpc
+  port: 58631
   reality-opts:
-    public-key: TfbgQiZ2DOhCTDVLjx5Gwc5WHFSlQ_LXhyzKUEGR6mc
-  server: 67.207.70.79
-  servername: refersion.com
+    public-key: cx6wHcHc8u1hhMMHgDm44ZWGAovk64yohSiq4ZYVLSY
+    short-id: 4e2e
+  server: 62.60.155.182
+  servername: ftp.ipv6.debian.org
   tls: false
   type: vless
-  uuid: 409ef7ff-6449-4b9a-9db9-775927a1a925
+  uuid: 98f96e0d-dae6-45a4-deaf-70034986455e
 - client-fingerprint: firefox
-  name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-68.183.37.5...
+  name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-143.110.173...
   network: tcp
   port: 3030
   reality-opts:
     public-key: 2lSCiylMJ1t301KRhOIMVsSW-ou2zzyHz5IQMQNLr08
     short-id: 68026ce8ff891f42
-  server: 68.183.37.58
+  server: 143.110.173.109
   servername: refersion.com
   tls: false
   type: vless
   uuid: 5fc10e98-78f0-4ddd-918a-b26094e7ac72
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-159.65.83.1...
+  network: tcp
+  port: 8440
+  reality-opts:
+    public-key: y6JSkggQ__RA_nmCJpX1_ddSQC6vzDUPaN7KyvjVuic
+  server: 159.65.83.103
+  servername: refersion.com
+  tls: false
+  type: vless
+  uuid: 570f00ba-af38-44b9-955c-86f8272e0d3a
 - client-fingerprint: chrome
   name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-46.101.24.1...
   network: tcp
@@ -353,64 +402,16 @@ proxies:
       Host: '---@External_Net---@External_Net---@External_Net---@External_Net---@External_Net'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-138.68.119....
+  name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-67.207.70.7...
   network: tcp
-  port: 2323
+  port: 8989
   reality-opts:
-    public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
-  server: 138.68.119.73
-  servername: journalofbigdata.springeropen.com
-  tls: false
-  type: vless
-  uuid: 08052317-7036-4906-b7da-19934f8fe6e6
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-159.65.83.1...
-  network: tcp
-  port: 8440
-  reality-opts:
-    public-key: y6JSkggQ__RA_nmCJpX1_ddSQC6vzDUPaN7KyvjVuic
-  server: 159.65.83.103
+    public-key: TfbgQiZ2DOhCTDVLjx5Gwc5WHFSlQ_LXhyzKUEGR6mc
+  server: 67.207.70.79
   servername: refersion.com
   tls: false
   type: vless
-  uuid: 570f00ba-af38-44b9-955c-86f8272e0d3a
-- client-fingerprint: firefox
-  name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-143.110.173...
-  network: tcp
-  port: 3030
-  reality-opts:
-    public-key: 2lSCiylMJ1t301KRhOIMVsSW-ou2zzyHz5IQMQNLr08
-    short-id: 68026ce8ff891f42
-  server: 143.110.173.109
-  servername: refersion.com
-  tls: false
-  type: vless
-  uuid: 5fc10e98-78f0-4ddd-918a-b26094e7ac72
-- client-fingerprint: chrome
-  name: 31|🔒 VL-XHTTP-RLT 🇬🇧 GB-194.61.3....
-  network: xhttp
-  port: 2025
-  reality-opts:
-    public-key: DrKNKh2JJtFmwGd1BQn-egowwW2I43n-HKa7I27NeQc
-    short-id: 3b804328
-  server: 194.61.3.144
-  servername: refersion.com
-  tls: false
-  type: vless
-  uuid: 764f360b-3fdf-96b8-e197-f974380d1eb0
-- client-fingerprint: chrome
-  name: 31|🔒 VL-GRPC-RLT 🇬🇧 GB-62.60.155....
-  network: grpc
-  port: 58631
-  reality-opts:
-    public-key: cx6wHcHc8u1hhMMHgDm44ZWGAovk64yohSiq4ZYVLSY
-    short-id: 4e2e
-  server: 62.60.155.182
-  servername: ftp.ipv6.debian.org
-  tls: false
-  type: vless
-  uuid: 98f96e0d-dae6-45a4-deaf-70034986455e
+  uuid: 409ef7ff-6449-4b9a-9db9-775927a1a925
 - client-fingerprint: ios
   flow: xtls-rprx-vision
   name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-143.47.237....
@@ -425,18 +426,6 @@ proxies:
   type: vless
   uuid: f37ce9a9-2ff2-4bbe-9579-afe170049c8a
 - client-fingerprint: chrome
-  name: '31|🔒 VL-TCP-RLT 🇬🇧 GB-217.179.91.... #1'
-  network: tcp
-  port: 34045
-  reality-opts:
-    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
-    short-id: e8ab71d0
-  server: 217.179.91.152
-  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
-  tls: false
-  type: vless
-  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-- client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-31.220.111....
   network: tcp
@@ -444,10 +433,59 @@ proxies:
   reality-opts:
     public-key: 3txs8T2vU1k1XIfa5T4sxkoNk9BmYN2Ce76gY2RwgFk
   server: 31.220.111.160
+  servername: apple.com
+  tls: false
+  type: vless
+  uuid: f8bc4ba8-4af6-4f0a-8e68-2d736200203f
+- client-fingerprint: chrome
+  name: 31|🔒 VL-XHTTP-RLT 🇬🇧 GB-194.61.3....
+  network: xhttp
+  port: 2025
+  reality-opts:
+    public-key: DrKNKh2JJtFmwGd1BQn-egowwW2I43n-HKa7I27NeQc
+    short-id: 3b804328
+  server: 194.61.3.144
+  servername: refersion.com
+  tls: false
+  type: vless
+  uuid: 764f360b-3fdf-96b8-e197-f974380d1eb0
+- client-fingerprint: firefox
+  name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-68.183.37.5...
+  network: tcp
+  port: 3030
+  reality-opts:
+    public-key: 2lSCiylMJ1t301KRhOIMVsSW-ou2zzyHz5IQMQNLr08
+    short-id: 68026ce8ff891f42
+  server: 68.183.37.58
+  servername: refersion.com
+  tls: false
+  type: vless
+  uuid: 5fc10e98-78f0-4ddd-918a-b26094e7ac72
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-173.234.79....
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 4Z6zzKxmpXudictZw81_Kl-ZRpiqMRPdLudKG8Bi52g
+    short-id: d36caa39a4cffbeb
+  server: 173.234.79.83
+  servername: uk.kalagol.com
+  tls: false
+  type: vless
+  uuid: 3d52ba2c-b578-4b61-a02b-f0eec2ea933a
+- client-fingerprint: chrome
+  name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-185.33.24.2...
+  network: tcp
+  port: 28495
+  reality-opts:
+    public-key: KXMH8QzaRa66F6GxOR1CanBunO2uHdJvri2zCbar2RQ
+    short-id: 0ecc2c1392
+  server: 185.33.24.229
   servername: dl.google.com
   tls: false
   type: vless
-  uuid: 2910bf90-502e-47c6-a278-ba527e465100
+  uuid: 7e296434-2d17-48d3-928d-19eaa34aecb1
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-209.38.171....
@@ -488,44 +526,6 @@ proxies:
       Host: Join_Bade_Channel%40JOKERRVPN
 - client-fingerprint: chrome
   grpc-opts:
-    grpc-service-name: '%40Mehrdad_Zargar%2C%40Mehrdad_Zargar%2C%40Mehrdad_Zargar%2C%40Mehrdad_Zargar%2C%40Mehrdad_Zargar%2C%40Mehrdad_Zargar%2C%40Mehrdad_Zargar%2C%40Mehrdad_Zargar%2C%40Mehrdad_Zargar'
-  name: 31|🔒 VL-GRPC-RLT 🇬🇧 GB-64.227.45....
-  network: grpc
-  port: 7594
-  reality-opts:
-    public-key: 0m7yrv_Zk8kDTnWASROiBaYEO-SdlBJFBuUs6V3fcD0
-  server: 64.227.45.92
-  servername: dash.cloudflare.com
-  tls: false
-  type: vless
-  uuid: 5633011d-c084-49b1-833b-3ee0a82cc71d
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-173.234.79....
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 4Z6zzKxmpXudictZw81_Kl-ZRpiqMRPdLudKG8Bi52g
-    short-id: d36caa39a4cffbeb
-  server: 173.234.79.83
-  servername: uk.kalagol.com
-  tls: false
-  type: vless
-  uuid: 3d52ba2c-b578-4b61-a02b-f0eec2ea933a
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-147.45.179....
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: J0_Stw7IIr6naIGCtZ1ZB75HfD-KIITZMy84jQVufyU
-    short-id: 3303c7a5
-  server: 147.45.179.201
-  servername: mirror.yandex.ru
-  tls: false
-  type: vless
-  uuid: 9835fbea-cfb1-402a-bdc6-16ca140c6788
-- client-fingerprint: chrome
-  grpc-opts:
     grpc-service-name: 2086vless
   name: 31|🔒 VL-GRPC-RLT 🇬🇧 GB-165.22.116...
   network: grpc
@@ -538,22 +538,54 @@ proxies:
   tls: false
   type: vless
   uuid: 701a7842-79a2-4a48-882b-c563daad99c1
-- name: 33|🔒 TR-TCP-NA 🇬🇧 GB-217.163.76.8...
+- client-fingerprint: chrome
+  name: 31|🔒 VL-TCP-RLT 🇬🇧 GB-147.45.179....
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: J0_Stw7IIr6naIGCtZ1ZB75HfD-KIITZMy84jQVufyU
+    short-id: 3303c7a5
+  server: 147.45.179.201
+  servername: mirror.yandex.ru
+  tls: false
+  type: vless
+  uuid: 9835fbea-cfb1-402a-bdc6-16ca140c6788
+- name: 33|🔒 TR-WS-NA 🇬🇧 GB-217.163.76.23...
+  network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
-  server: 217.163.76.89
+  server: 217.163.76.237
   sni: icecream.955850.xyz
   type: trojan
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-51.38.71.17...
+  password: b640d791-ff83-4300-b509-c2a02f97f167
+  port: 80
+  server: 51.38.71.175
+  sni: uk1.trojanvh.xyz
+  type: trojan
 - alterId: 0
-  name: 33,36|未知149
-  password: juzi
+  name: 33,36|未知80
+  password: c28be7d4-25c8-4351-bc58-e1675855c8af
   port: 443
-  server: 18.135.188.86
+  server: 172.192.28.185
   skip-cert-verify: true
-  sni: juzi8186-sr1.pages.dev
+  sni: jp.lydurlclub.top
   tls: true
   type: trojan
   udp: true
+- name: 33|🔒 TR-WS-NA 🇬🇧 GB-217.163.76.25...
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 217.163.76.254
+  sni: icecream.955850.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
 - name: 33|🔒 TR-WS-TLS 🇬🇧 GB-217.163.76.2...
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
@@ -565,6 +597,34 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: '%2Fproxyip%3D217.163.76.227%3A443'
+- name: 33|🔒 TR-TCP-NA 🇬🇧 GB-185.139.7.55...
+  password: c443be95-725d-4da3-a60f-d35af5bfbff8
+  port: 17756
+  server: 185.139.7.55
+  skip-cert-verify: false
+  type: trojan
+- name: 33|🔒 TR-WS-NA 🇬🇧 GB-217.163.76.51...
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 217.163.76.51
+  sni: icecream.955850.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+- name: 33|🔒 TR-TCP-NA 🇬🇧 GB-57.129.137.2...
+  password: Aimer
+  port: 443
+  server: 57.129.137.242
+  sni: epccy.ambercc.filegear-sg.me
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇬🇧 GB-217.163.76.8...
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 217.163.76.89
+  sni: icecream.955850.xyz
+  type: trojan
 - name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-51.38.65.15...
   network: tcp
   password: ab052d70-48a0-11f0-bea4-1239d0255272
@@ -573,16 +633,17 @@ proxies:
   skip-cert-verify: true
   sni: uk1.test3.net
   type: trojan
-- name: 33|🔒 TR-TCP-NA 🇬🇧 GB-185.193.29.1...
-  password: NISHIKUITAN111
-  port: 443
-  server: 185.193.29.193
-  type: trojan
 - name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-161.35.34.4...
+  network: tcp
   password: 2cba4104747d49d18319e5ade1b93ab5
   port: 443
   server: 161.35.34.48
   sni: yourjobnavigator.online
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇬🇧 GB-185.193.29.1...
+  password: NISHIKUITAN111
+  port: 443
+  server: 185.193.29.193
   type: trojan
 - name: '33|🔒 TR-WS-TLS 🇬🇧 GB-217.163.76.2... #1'
   network: ws
@@ -595,52 +656,12 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: '%2FTelegram%40V2ray_Alpha%2F217.163.76.221%3A443'
-- name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-51.38.71.17...
-  password: b640d791-ff83-4300-b509-c2a02f97f167
-  port: 80
-  server: 51.38.71.175
-  sni: uk1.trojanvh.xyz
-  type: trojan
-- name: 33|🔒 TR-WS-NA 🇬🇧 GB-217.163.76.25...
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+- name: 33|🔒 TR-TCP-NA 🇬🇧 GB-18.135.188.8...
+  password: juzi
   port: 443
-  server: 217.163.76.254
-  sni: icecream.955850.xyz
+  server: 18.135.188.86
+  sni: juzi8186-sr1.pages.dev
   type: trojan
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-- alterId: 0
-  name: 33,36|未知143
-  password: Aimer
-  port: 443
-  server: 57.129.137.242
-  skip-cert-verify: true
-  sni: epccy.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
-- name: 33|🔒 TR-WS-NA 🇬🇧 GB-217.163.76.23...
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 217.163.76.237
-  sni: icecream.955850.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-- name: 33|🔒 TR-WS-NA 🇬🇧 GB-217.163.76.51...
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 217.163.76.51
-  sni: icecream.955850.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
 - name: 33|🔒 TR-WS-NA 🇬🇧 GB-91.193.58.0:4...
   network: ws
   password: trojan
@@ -651,19 +672,6 @@ proxies:
   ws-opts:
     headers:
       Host: wahaha.yingyangkuaixian.dpdns.org
-- name: 33|🔒 TR-TCP-NA 🇬🇧 GB-185.139.7.55...
-  password: c443be95-725d-4da3-a60f-d35af5bfbff8
-  port: 17756
-  server: 185.139.7.55
-  skip-cert-verify: false
-  type: trojan
-- name: 33|🔒 TR-TCP-NA 🇬🇧 GB-172.192.28.1...
-  password: c28be7d4-25c8-4351-bc58-e1675855c8af
-  port: 443
-  server: 172.192.28.185
-  skip-cert-verify: false
-  sni: jp.lydurlclub.top
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 35|🔒 VM-TCP-NA 🇬🇧 GB-5.180.30.146...
@@ -674,6 +682,46 @@ proxies:
   tls: false
   type: vmess
   uuid: b2347239-dd15-40b3-b683-50cc2ff19ae7
+- alterId: 0
+  cipher: auto
+  name: 35|🔒 VM-TCP-NA 🇬🇧 GB-5.180.30.85:...
+  network: tcp
+  port: '18598'
+  server: 5.180.30.85
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: bf26f2fb-9d2a-49b6-8527-82e8aba3a9a9
+- alterId: 0
+  cipher: auto
+  name: 35|🔒 VM-TCP-NA 🇬🇧 GB-46.250.243.5...
+  network: tcp
+  port: '50394'
+  server: 46.250.243.56
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a75f3f95-ad4e-4498-fc72-dd740dd02bfc
+- alterId: 0
+  cipher: auto
+  name: 35|🔒 VM-TCP-NA 🇬🇧 GB-5.180.30.110...
+  network: tcp
+  port: '51352'
+  server: 5.180.30.110
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: bcf86479-aab4-47cf-9d6e-34d353baa1a2
+- alterId: 0
+  cipher: auto
+  name: 35|🔒 VM-TCP-NA 🇬🇧 GB-51.38.64.209...
+  network: tcp
+  port: '44023'
+  server: 51.38.64.209
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7da457da-ed0f-437d-c81d-6c35885bbea3
 - alterId: 0
   cipher: auto
   name: 35|🔒 VM-WS-NA 🇬🇧 GB-102.177.189.2...
@@ -688,46 +736,6 @@ proxies:
     headers:
       Host: cyber.amir008.com
     path: /Cyberacss
-- alterId: 0
-  cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇬🇧 GB-5.180.30.85:...
-  network: tcp
-  port: '18598'
-  server: 5.180.30.85
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: bf26f2fb-9d2a-49b6-8527-82e8aba3a9a9
-- alterId: 0
-  cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇬🇧 GB-51.38.64.209...
-  network: tcp
-  port: '44023'
-  server: 51.38.64.209
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7da457da-ed0f-437d-c81d-6c35885bbea3
-- alterId: 0
-  cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇬🇧 GB-5.180.30.110...
-  network: tcp
-  port: '51352'
-  server: 5.180.30.110
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: bcf86479-aab4-47cf-9d6e-34d353baa1a2
-- alterId: 0
-  cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇬🇧 GB-46.250.243.5...
-  network: tcp
-  port: '50394'
-  server: 46.250.243.56
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a75f3f95-ad4e-4498-fc72-dd740dd02bfc
 - client-fingerprint: chrome
   name: '38,39|GB_speednode_0051 #1'
   network: ws
