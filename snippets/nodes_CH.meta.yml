@@ -1,170 +1,155 @@
 proxies:
+- name: 13|CH 1 → tg@nicevpn123
+  password: 55319b01-5d85-48a2-a40a-0b3fc1985755
+  port: 11005
+  server: 64.110.64.80
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 13|CH 2 → tg@nicevpn123
+  password: 55319b01-5d85-48a2-a40a-0b3fc1985755
+  port: 11007
+  server: 64.110.64.80
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 13|CH 3 → tg@nicevpn123
+  password: 55319b01-5d85-48a2-a40a-0b3fc1985755
+  port: 11006
+  server: 64.110.64.80
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 13|CH 4 → tg@nicevpn123
+  password: 55319b01-5d85-48a2-a40a-0b3fc1985755
+  port: 11004
+  server: 64.110.64.80
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 13|CH 5 → tg@nicevpn123
+  password: 55319b01-5d85-48a2-a40a-0b3fc1985755
+  port: 11000
+  server: 64.110.64.80
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - cipher: aes-128-gcm
-  name: 23|🇨🇭CH-156.146.62.161-0348
+  name: 23,24|🇨CH-156.146.62.161-0277
   password: shadowsocks
   port: 443
   server: 156.146.62.161
   type: ss
 - cipher: aes-128-gcm
-  name: 23|🇨🇭CH-156.146.62.163-0349
+  name: 23,24|🇨🇭CH-156.146.62.163-0273
   password: shadowsocks
   port: 443
   server: 156.146.62.163
   type: ss
 - cipher: aes-128-gcm
-  name: 23|🇨🇭CH-156.146.62.162-0364
+  name: 23,24|🇨CH-156.146.62.162-0281
   password: shadowsocks
   port: 443
   server: 156.146.62.162
   type: ss
-- cipher: aes-128-gcm
-  name: 23|🇨🇭CH-156.146.62.164-0346
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 23,24,36|未知89 2.2MB/s
   password: shadowsocks
   port: 443
   server: 156.146.62.164
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 23|🇨🇭CH-204.136.10.115-0418
+  name: 23,24|🇨🇭CH-204.136.10.115-0325
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 204.136.10.115
   type: ss
-- client-fingerprint: chrome
-  name: 31|🔒 VL-GRPC-RLT 🇨🇭 CH-193.168.14...
-  network: grpc
+- cipher: aes-256-cfb
+  name: 24|CH-185.126.116.125-0028
+  password: aLpQtfEZe445QyHk
+  port: 9098
+  server: 185.126.116.125
+  type: ss
+- name: 24|CH-152.67.71.149-2387
+  password: 8a03bc28-2a33-42c4-be59-30464dbb9954
+  port: 18818
+  server: ch12.yukiss.eu.org
+  skip-cert-verify: false
+  type: trojan
+- alterId: 1
+  cipher: auto
+  name: 24|CH-186.190.215.32-7175
+  network: ws
   port: 443
-  reality-opts:
-    public-key: rsoZpDByMW3Ukcj68I5vw_-k-CivE6CV6TPJxyPl6WY
-    short-id: 07a9a22b
-  server: 193.168.144.46
-  servername: mega.io
-  tls: false
-  type: vless
-  uuid: cdb38f5b-12c3-414b-eacd-a635dc633701
-- client-fingerprint: chrome
-  name: 31|🔒 VL-GRPC-RLT 🇨🇭 CH-195.15.243...
-  network: grpc
+  server: 186.190.215.32
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 186.190.215.32
+    path: linkvws
+- alterId: 1
+  cipher: auto
+  name: 24|🇭CH-186.190.215.75-7239
+  network: ws
   port: 443
-  reality-opts:
-    public-key: AuSGaWG-om5-wGU3rf2XGpUR66VzoR3M4asd0bRFDEc
-    short-id: 64d8
-  server: 195.15.243.142
-  servername: www.zula.ir
-  tls: false
-  type: vless
-  uuid: 68a57770-ffe8-43ba-b1b6-d2576271d13d
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: gsdhb34
-  name: 31|🔒 VL-GRPC-RLT 🇨🇭 CH-37.156.45....
-  network: grpc
-  port: 2027
-  reality-opts:
-    public-key: M3Bb9AhwmrKLNOkkGvYq-vUit4ZBc-JAR1uMLg7G8CM
-    short-id: 3538e61eb3634f
-  server: 37.156.45.217
-  servername: journalofbigdata.springeropen.com
-  tls: false
-  type: vless
-  uuid: da222d2a-a87b-495b-852d-3cd776b6f5fa
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇨🇭 CH-37.156.45.8...
-  network: tcp
-  port: 80
-  reality-opts:
-    public-key: DZzAtolzThTEwEjUnyLN5lzhvzMtKPOAvPA8K8luAhE
-    short-id: 7d2e829be0
-  server: 37.156.45.88
-  servername: refersion.com
-  tls: false
-  type: vless
-  uuid: 81447221-6548-60a1-a9d9-aac48e8c410b
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇨🇭 CH-83.228.192....
-  network: tcp
-  port: 26206
-  reality-opts:
-    public-key: 32un-BHwlOjLBwm_5k72oiLG2Q3LcU4SRf1bbfrJoXE
-    short-id: '8574'
-  server: 83.228.192.244
-  servername: cdn-download1.zula.ir
-  tls: false
-  type: vless
-  uuid: c1e2e26f-98e7-43b5-9bf0-ace939ed8ff2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 31|🔒 VL-TCP-RLT 🇨🇭 CH-195.15.215....
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: FpsSPBGXGa6c1mIGmCMmrnsdnVSHQAYnQNur-QMiDTw
-  server: 195.15.215.198
-  servername: www.samsung.com
-  tls: false
-  type: vless
-  uuid: 24e12701-6def-4040-8925-2a42839f8005
-- client-fingerprint: chrome
-  name: 31|🔒 VL-TCP-RLT 🇨🇭 CH-195.15.243....
-  network: tcp
-  port: 8080
-  reality-opts:
-    public-key: yZe84ZQWR5hcRp_Ly59f-T7bKo0QsmXf6aDU6YYrZ2c
-    short-id: '443631'
-  server: 195.15.243.142
-  servername: stackoverflow.com
-  tls: false
-  type: vless
-  uuid: 68a57770-ffe8-43ba-b1b6-d2576271d13d
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config
-  name: 31|🔒 VL-GRPC-RLT 🇨🇭 CH-141.227.13...
-  network: grpc
-  port: 1210
-  reality-opts:
-    public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
-    short-id: 7fe29733
-  server: 141.227.138.201
-  servername: ubuntu.com
-  tls: false
-  type: vless
-  uuid: c8a71f9b-692d-4916-ad73-f070ac00257f
-- client-fingerprint: randomized
-  name: 31|🔒 VL-GRPC-RLT 🇨🇭 CH-195.15.201...
-  network: grpc
-  port: 443
-  reality-opts:
-    public-key: c6D9SIzHXAiKHBkXLQgY5NiGt50Mj_PkiqI2B8eQi1A
-    short-id: 864702d02962387e
-  server: 195.15.201.22
-  servername: whatsapp.net
-  tls: false
-  type: vless
-  uuid: d6e651f4-8346-43cd-9cb9-581e92be4c17
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: xyz
-  name: 31|🔒 VL-GRPC-RLT 🇨🇭 CH-94.131.3.5...
-  network: grpc
-  port: 2053
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
-  server: 94.131.3.59
-  servername: sourceforge.net
-  tls: false
-  type: vless
-  uuid: 11a5b71e-4103-4152-8180-9ece3ec623c4
+  server: 186.190.215.75
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 186.190.215.75
+    path: linkvws
 - alterId: 0
   cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇨🇭 CH-23.166.88.18...
-  network: tcp
-  port: '22324'
-  server: 23.166.88.183
-  servername: ''
-  tls: false
+  name: 24|🇭CH-140.238.212.95-7252
+  network: ws
+  port: 443
+  server: 140.238.212.95
+  skip-cert-verify: false
+  tls: true
   type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
+    path: /
+- alterId: 1
+  cipher: auto
+  name: 24|🇭CH-23.166.88.27-7354
+  network: ws
+  port: 443
+  server: 23.166.88.27
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 23.166.88.27
+    path: /
+- alterId: 1
+  cipher: auto
+  name: 24|🇨🇭CH-186.190.215.149-7399
+  network: ws
+  port: 443
+  server: 186.190.215.149
+  servername: 186.190.215.149
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 186.190.215.149
+    path: linkvws
 - client-fingerprint: chrome
   name: '38,39|CH_speednode_0013 #1'
   network: ws
