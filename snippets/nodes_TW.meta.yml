@@ -1,4 +1,14 @@
 proxies:
+- client-fingerprint: chrome
+  name: 2|🇹🇼1 |  1.4MB/s|0%|Netflix|Yout...
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 1443
+  server: twmoon1-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  sni: twmoon1-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
 - alterId: 0
   cipher: auto
   name: '14,22,29|台湾v2|@ripaojiedian #2'
@@ -21,18 +31,17 @@ proxies:
   port: 64759
   server: 185.189.160.98
   type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 28|🇹🇼 台湾|@ripaojiedian
-  password: dwz1GtF7
-  port: 30015
-  server: 120.233.128.98
-  tfo: false
-  type: ss
 - name: 30|🔒 HYSTERIA-UDP 🇹🇼 TW-1.170.228...
   password: 4de5bc14-2c4d-4321-8d95-e6ff3bf0f91a
   port: 16666
   server: 1.170.228.14
+  skip-cert-verify: true
+  tls: false
+  type: hysteria2
+- name: 30|🔒 HYSTERIA-UDP 🇹🇼 TW-1.170.215...
+  password: 4de5bc14-2c4d-4321-8d95-e6ff3bf0f91a
+  port: 16666
+  server: 1.170.215.211
   skip-cert-verify: true
   tls: false
   type: hysteria2
@@ -58,13 +67,6 @@ proxies:
   sni: tw.bailian.uk
   tls: false
   type: hysteria2
-- name: 30|🔒 HYSTERIA-UDP 🇹🇼 TW-1.170.215...
-  password: 4de5bc14-2c4d-4321-8d95-e6ff3bf0f91a
-  port: 16666
-  server: 1.170.215.211
-  skip-cert-verify: true
-  tls: false
-  type: hysteria2
 - client-fingerprint: chrome
   name: 31|🔒 VL-TCP-RLT 🇹🇼 TW-103.137.247...
   network: tcp
@@ -77,34 +79,17 @@ proxies:
   tls: false
   type: vless
   uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-- name: 33|🔒 TR-WS-TLS 🇹🇼 TW-220.135.202....
-  network: ws
-  password: ttfang
-  port: 81
-  server: 220.135.202.250
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: '%2F'
-- name: 33|🔒 TR-TCP-NA 🇹🇼 TW-220.130.58.1...
-  password: 20cc1a99-a26e-4c6b-b0be-1ed331b0c271
-  port: 28507
-  server: 220.130.58.136
-  sni: green2.cdntencentmusic.com
+- name: 33|🔒 TR-TCP-NA 🇹🇼 TW-60.249.28.59...
+  password: 67eb147db1c0f8c5
+  port: 443
+  server: 60.249.28.59
+  sni: 007.com
   type: trojan
 - name: 33|🔒 TR-TCP-TLS 🇹🇼 TW-220.130.58....
   password: feac8d6d-8fcf-4ef1-9ad0-18833c9fca11
   port: 28505
   server: 220.130.58.136
   sni: green.cdntencentmusic.com
-  type: trojan
-- name: '33|🔒 TR-TCP-NA 🇹🇼 TW-220.130.58.1... #1'
-  password: 851418c5-a1f0-453c-b8f8-24664990bdf8
-  port: 28504
-  server: 220.130.58.136
-  sni: green2.cdntencentmusic.com
   type: trojan
 - name: 33|🔒 TR-WS-TLS 🇹🇼 TW-103.106.230....
   network: ws
@@ -118,11 +103,28 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: '%2F'
-- name: 33|🔒 TR-TCP-NA 🇹🇼 TW-60.249.28.59...
-  password: 67eb147db1c0f8c5
-  port: 443
-  server: 60.249.28.59
-  sni: 007.com
+- name: 33|🔒 TR-TCP-NA 🇹🇼 TW-220.130.58.1...
+  password: 20cc1a99-a26e-4c6b-b0be-1ed331b0c271
+  port: 28507
+  server: 220.130.58.136
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: 33|🔒 TR-WS-TLS 🇹🇼 TW-220.135.202....
+  network: ws
+  password: ttfang
+  port: 81
+  server: 220.135.202.250
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: '%2F'
+- name: '33|🔒 TR-TCP-NA 🇹🇼 TW-220.130.58.1... #1'
+  password: 851418c5-a1f0-453c-b8f8-24664990bdf8
+  port: 28504
+  server: 220.130.58.136
+  sni: green2.cdntencentmusic.com
   type: trojan
 - name: 33|🔒 TR-TCP-TLS 🇹🇼 TW-111.250.98....
   network: tcp
@@ -131,21 +133,3 @@ proxies:
   server: 111.250.98.104
   sni: tw40.453521.xyz
   type: trojan
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 36|TW
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 60.249.28.137
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 36|TW2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 60.249.28.136
-  skip-cert-verify: true
-  tls: true
-  type: ss
