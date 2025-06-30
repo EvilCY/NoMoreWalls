@@ -1,6 +1,6 @@
 proxies:
 - client-fingerprint: chrome
-  name: 2|🇹🇼1 |  1.4MB/s|0%|Netflix|Yout...
+  name: 1|🇹🇼1 |  1.4MB/s|0%|Netflix|Yout...
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 1443
   server: twmoon1-cdn-route.couldflare-cdn.com
@@ -9,16 +9,6 @@ proxies:
   tls: true
   type: http
   username: mrwdfNTD8M79LCukCieldrqZWqs=
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 12|aa055459de1040b2b5695b1196b528...
-  network: tcp
-  port: 443
-  server: 91.99.122.102
-  tls: false
-  type: vless
-  udp: false
-  uuid: 7b6eca4c-44ae-40c6-973a-4e3b29d30803
 - alterId: 0
   cipher: auto
   name: '14,22,29|台湾v2|@ripaojiedian #2'
@@ -58,20 +48,6 @@ proxies:
   sni: tw.bailian.uk
   tls: false
   type: hysteria2
-- name: 30|🔒 HYSTERIA-UDP 🇹🇼 TW-1.170.228...
-  password: 4de5bc14-2c4d-4321-8d95-e6ff3bf0f91a
-  port: 16666
-  server: 1.170.228.14
-  skip-cert-verify: true
-  tls: false
-  type: hysteria2
-- name: 30|🔒 HYSTERIA-UDP 🇹🇼 TW-1.170.215...
-  password: 4de5bc14-2c4d-4321-8d95-e6ff3bf0f91a
-  port: 16666
-  server: 1.170.215.211
-  skip-cert-verify: true
-  tls: false
-  type: hysteria2
 - name: 30|🔒 HYSTERIA-UDP 🇹🇼 TW-1.162.136...
   password: c5e6f43c-6f0e-4112-bb97-ed0dba4582d7
   port: 30001
@@ -87,6 +63,20 @@ proxies:
   sni: tw.akebi.cc
   tls: false
   type: hysteria2
+- name: 30|🔒 HYSTERIA-UDP 🇹🇼 TW-1.170.215...
+  password: 4de5bc14-2c4d-4321-8d95-e6ff3bf0f91a
+  port: 16666
+  server: 1.170.215.211
+  skip-cert-verify: true
+  tls: false
+  type: hysteria2
+- name: 30|🔒 HYSTERIA-UDP 🇹🇼 TW-1.170.228...
+  password: 4de5bc14-2c4d-4321-8d95-e6ff3bf0f91a
+  port: 16666
+  server: 1.170.228.14
+  skip-cert-verify: true
+  tls: false
+  type: hysteria2
 - client-fingerprint: chrome
   name: 31|🔒 VL-TCP-RLT 🇹🇼 TW-103.137.247...
   network: tcp
@@ -99,11 +89,17 @@ proxies:
   tls: false
   type: vless
   uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-- name: 33|🔒 TR-TCP-TLS 🇹🇼 TW-220.130.58....
-  password: feac8d6d-8fcf-4ef1-9ad0-18833c9fca11
-  port: 28505
+- name: 33|🔒 TR-TCP-NA 🇹🇼 TW-220.130.58.1...
+  password: 20cc1a99-a26e-4c6b-b0be-1ed331b0c271
+  port: 28507
   server: 220.130.58.136
-  sni: green.cdntencentmusic.com
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇹🇼 TW-220.130.58.1... #1'
+  password: 851418c5-a1f0-453c-b8f8-24664990bdf8
+  port: 28504
+  server: 220.130.58.136
+  sni: green2.cdntencentmusic.com
   type: trojan
 - name: 33|🔒 TR-TCP-NA 🇹🇼 TW-60.249.28.59...
   password: 67eb147db1c0f8c5
@@ -111,12 +107,23 @@ proxies:
   server: 60.249.28.59
   sni: 007.com
   type: trojan
-- name: 33|🔒 TR-TCP-NA 🇹🇼 TW-220.130.58.1...
-  password: 851418c5-a1f0-453c-b8f8-24664990bdf8
-  port: 28504
+- name: 33|🔒 TR-TCP-TLS 🇹🇼 TW-220.130.58....
+  password: feac8d6d-8fcf-4ef1-9ad0-18833c9fca11
+  port: 28505
   server: 220.130.58.136
-  sni: green2.cdntencentmusic.com
+  sni: green.cdntencentmusic.com
   type: trojan
+- alterId: 0
+  name: 33,36|TW3
+  network: tcp
+  password: a348278e-71ac-499c-8069-28b1af18c372
+  port: 3663
+  server: 111.250.98.104
+  skip-cert-verify: true
+  sni: tw40.453521.xyz
+  tls: true
+  type: trojan
+  udp: true
 - name: 33|🔒 TR-WS-TLS 🇹🇼 TW-220.135.202....
   network: ws
   password: ttfang
@@ -128,13 +135,6 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /
-- name: 33|🔒 TR-TCP-TLS 🇹🇼 TW-111.250.98....
-  network: tcp
-  password: a348278e-71ac-499c-8069-28b1af18c372
-  port: 3663
-  server: 111.250.98.104
-  sni: tw40.453521.xyz
-  type: trojan
 - name: 33|🔒 TR-WS-TLS 🇹🇼 TW-103.106.230....
   network: ws
   password: ttfang
@@ -147,9 +147,21 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: '%2F'
-- name: '33|🔒 TR-TCP-NA 🇹🇼 TW-220.130.58.1... #1'
-  password: 20cc1a99-a26e-4c6b-b0be-1ed331b0c271
-  port: 28507
-  server: 220.130.58.136
-  sni: green2.cdntencentmusic.com
-  type: trojan
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 36|TW
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 60.249.28.137
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 36|TW2
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: 2.58.241.42
+  skip-cert-verify: true
+  tls: true
+  type: ss
