@@ -424,27 +424,27 @@ proxies:
       Host: c01.ylkszy.eu.org
     path: /?ed=2560
 - cipher: aes-128-gcm
-  name: 23|🇨🇦CA-149.22.95.183-0237
+  name: 23|🇨🇦CA-149.22.95.183-0332
   password: shadowsocks
   port: 443
   server: 149.22.95.183
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 23|🇨🇦CA-142.4.216.225-0306
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 23|🇨🇦CA-142.4.216.225-0287
+  name: 23|🇨🇦CA-142.4.216.225-0418
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 23|🇨🇦CA-142.4.216.225-0395
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 23|🇨🇦CA-51.79.102.253-0936
+  name: 23|🇨🇦CA-51.79.102.253-0992
   network: ws
   port: 80
   server: 51.79.102.253
@@ -459,31 +459,15 @@ proxies:
 - name: 30|🔒 HYSTERIA-UDP 🇨🇦 CA-155.248.2...
   password: 2429bee3-e0c1-47dd-b420-75e6512b184b
   port: 30300
-  server: 155.248.219.28
+  server: 155.248.216.247
   skip-cert-verify: true
   sni: www.bing.com
   tls: false
   type: hysteria2
 - name: 30|🔒 HYSTERIA-UDP 🇨🇦 CA-129.153.5...
-  password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
-  port: 54530
-  server: 129.153.59.124
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
-- name: '30|🔒 HYSTERIA-UDP 🇨🇦 CA-129.153.5... #1'
   password: 2429bee3-e0c1-47dd-b420-75e6512b184b
   port: 30300
   server: 129.153.59.86
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
-- name: '30|🔒 HYSTERIA-UDP 🇨🇦 CA-155.248.2... #1'
-  password: 2429bee3-e0c1-47dd-b420-75e6512b184b
-  port: 30300
-  server: 155.248.216.247
   skip-cert-verify: true
   sni: www.bing.com
   tls: false
@@ -492,6 +476,30 @@ proxies:
   password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
   port: 45979
   server: 192.18.145.7
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: '30|🔒 HYSTERIA-UDP 🇨🇦 CA-155.248.2... #1'
+  password: 2429bee3-e0c1-47dd-b420-75e6512b184b
+  port: 30300
+  server: 155.248.219.28
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: 30|🔒 HYSTERIA-UDP 🇨🇦 CA-40.233.12...
+  password: 2429bee3-e0c1-47dd-b420-75e6512b184b
+  port: 30300
+  server: 40.233.121.211
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: '30|🔒 HYSTERIA-UDP 🇨🇦 CA-129.153.5... #1'
+  password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
+  port: 54530
+  server: 129.153.59.124
   skip-cert-verify: true
   sni: www.bing.com
   tls: false
@@ -528,23 +536,6 @@ proxies:
   tls: false
   type: vless
   uuid: 7e296434-2d17-48d3-928d-19eaa34aecb1
-- name: 33|🔒 TR-WS-TLS 🇨🇦 CA-23.227.38.33...
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 23.227.38.33
-  sni: icecream.955850.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-- name: 33|🔒 TR-TCP-TLS 🇨🇦 CA-23.227.60.8...
-  network: tcp
-  password: bpb-trojan
-  port: 443
-  server: 23.227.60.8
-  sni: 403b3611-99bc-43b7-88D7-26Ed5D0825A9-3.paGeS.dev
-  type: trojan
 - name: 33|🔒 TR-TCP-TLS 🇨🇦 CA-104.234.239...
   network: tcp
   password: Aimer
@@ -563,6 +554,23 @@ proxies:
   tls: true
   type: trojan
   udp: true
+- name: 33|🔒 TR-TCP-TLS 🇨🇦 CA-23.227.60.8...
+  network: tcp
+  password: bpb-trojan
+  port: 443
+  server: 23.227.60.8
+  sni: 403b3611-99bc-43b7-88D7-26Ed5D0825A9-3.paGeS.dev
+  type: trojan
+- name: 33|🔒 TR-WS-TLS 🇨🇦 CA-23.227.38.33...
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 23.227.38.33
+  sni: icecream.955850.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
 - alterId: 0
   cipher: auto
   name: 35|🔒 VM-WS-NA 🇨🇦 CA-158.69.48.14:...
