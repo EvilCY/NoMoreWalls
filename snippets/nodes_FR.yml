@@ -116,11 +116,14 @@ proxies:
   port: 8080
   server: 45.158.171.151
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 23|🇫🇷FR-45.158.171.146-0271
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 23,36|未知139 23.5MB/s
   password: QCXDxuDlTTMD7jtgHUjIoj
   port: 8080
   server: 45.158.171.146
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 23|🇫🇷FR-45.158.171.146-0254
@@ -196,22 +199,22 @@ proxies:
   server: 13.39.202.182
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: 33|🔒 TR-TCP-NA 🇫🇷 FR-162.19.66.30...
+- alterId: 0
+  name: 33,36|未知30
   password: Aimer
   port: 2053
   server: 162.19.66.30
-  sni: epmo.ambercc.filegear-sg.me
-  type: trojan
-- alterId: 0
-  name: 33,36|未命名
-  password: b8808043-6566-4923-9195-e66bfb553d57
-  port: 443
-  server: 51.38.99.96
   skip-cert-verify: true
-  sni: ba24.ir
+  sni: epmo.ambercc.filegear-sg.me
   tls: true
   type: trojan
   udp: true
+- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-51.38.99.96...
+  password: b8808043-6566-4923-9195-e66bfb553d57
+  port: 443
+  server: 51.38.99.96
+  sni: ba24.ir
+  type: trojan
 - name: 33|🔒 TR-TCP-NA 🇫🇷 FR-51.210.182.1...
   password: 884c5080-e9c2-11ef-8ad9-1239d0255272
   port: 443
@@ -258,23 +261,23 @@ proxies:
   server: 54.37.64.148
   sni: epmo.ambercc.filegear-sg.me
   type: trojan
-- name: 33|🔒 TR-TCP-TLS 🇫🇷 FR-38.180.240....
+- alterId: 0
+  name: 33,36|未知169
   network: tcp
   password: d2adff89-5143-4d67-921f-3478464de5bb
   port: 443
   server: 38.180.240.150
-  sni: fr.freeguard.org
-  type: trojan
-- alterId: 0
-  name: 33,36|未知9
-  password: Aimer
-  port: 443
-  server: 152.228.191.232
   skip-cert-verify: true
-  sni: epcca.ambercc.filegear-sg.me
+  sni: fr.freeguard.org
   tls: true
   type: trojan
   udp: true
+- name: 33|🔒 TR-TCP-NA 🇫🇷 FR-152.228.191....
+  password: Aimer
+  port: 443
+  server: 152.228.191.232
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
 - name: 33|🔒 TR-TCP-NA 🇫🇷 FR-57.128.176.3...
   password: Aimer
   port: 8443
@@ -330,3 +333,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 1be8eddb-4f8c-45d0-b2a1-e538eb3abd39
+- alterId: 0
+  name: 36|FR
+  password: Aimer
+  port: 8443
+  server: 141.11.203.191
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
+  tls: true
+  type: trojan
+  udp: true

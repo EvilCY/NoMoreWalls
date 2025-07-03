@@ -1,13 +1,4 @@
 proxies:
-- alterId: 64
-  cipher: auto
-  name: 14|中国 - 广州市 - China Mobile commun...
-  network: tcp
-  port: '50002'
-  server: 120.210.205.59
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: 14|🇨🇳_CN_中国_38
   network: ws
   port: 2053
@@ -20,12 +11,39 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
+- alterId: 0
+  cipher: auto
+  name: 14|中国 - 上海 - Hangzhou Alibaba Adv...
+  network: tcp
+  port: '50002'
+  server: 47.116.166.178
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: 14|广东省汕头市+移动
-  password: 6857f1bc-f27b-11ea-87ad-f23c913c8d2b
+  password: 03573f46-e944-11eb-a8bf-f23c91cfbbc9
   port: 27235
-  server: ef9fae4e-sytz40-tgzvop-hns7.cm5.cnkuaishou.com
-  sni: ef9fae4e-sytz40-tgzvop-hns7.cm5.cnkuaishou.com
+  server: 864a90fc-sytz40-tee612-2r82.cm5.cnkuaishou.com
+  skip-cert-verify: false
   type: trojan
+- alterId: 64
+  cipher: auto
+  name: 14|中国 - 青岛市 - Hangzhou Alibaba Ad...
+  network: tcp
+  port: '50002'
+  server: 47.104.186.133
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 14|中国 - 广州市 - China Mobile commun...
+  network: tcp
+  port: '50002'
+  server: 120.210.205.59
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 14|中国 - 北京 - Hangzhou Alibaba Adv...
@@ -35,12 +53,26 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: '14|广东省汕头市+移动 #1'
-  password: d6abdbda-fe9d-11ec-bb74-f23c9164ca5d
-  port: 15234
-  server: 8dec597f-sytz40-td95qh-1isea.cm5.cnkuaishou.com
-  sni: 8dec597f-sytz40-td95qh-1isea.cm5.cnkuaishou.com
-  type: trojan
+- alterId: 0
+  cipher: none
+  name: 14,35,36|未知50
+  network: tcp
+  port: 59003
+  server: 183.236.51.36
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 14|中国 - 杭州 - Hangzhou Alibaba Adv...
+  network: tcp
+  port: '50002'
+  server: 120.26.55.225
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 19|🇨🇳CN-139.227.223.3-049_1@49
@@ -708,13 +740,16 @@ proxies:
   ws-opts:
     headers:
       Host: zamim340.ggff.net
-- name: 33|🔒 TR-TCP-NA 🇨🇳 CN-163.177.58.1...
+- alterId: 0
+  name: 33,36|未知127
   password: 616F5C28-A1B2-D7C7-2F5D-46AC56436130
   port: 8306
   server: 163.177.58.129
   skip-cert-verify: true
   sni: cos.ap-guangzhou.myqcloud.com
+  tls: true
   type: trojan
+  udp: true
 - name: 33|🔒 TR-TCP-NA 🇨🇳 CN-120.241.226....
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
@@ -733,33 +768,19 @@ proxies:
   server: 120.241.226.93
   sni: 45.32.28.232
   type: trojan
-- alterId: 0
-  name: 33,36|未知21
+- name: 33|🔒 TR-TCP-TLS 🇨🇳 CN-42.236.73.7...
   network: tcp
   password: fuck
   port: 443
   server: 42.236.73.72
-  skip-cert-verify: true
   sni: www.zitian.cn
-  tls: true
   type: trojan
-  udp: true
 - alterId: 64
   cipher: auto
   name: 35|🔒 VM-RAW-NA 🇨🇳 CN-47.92.152.16...
   network: raw
   port: '50002'
   server: 47.92.152.169
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: none
-  name: 35|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
-  network: tcp
-  port: '59003'
-  server: 183.236.51.36
-  servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -802,13 +823,12 @@ proxies:
     path: /home
 - alterId: 0
   cipher: auto
-  name: 35,36|未知108
+  name: 35|🔒 VM-TCP-NA 🇨🇳 CN-112.132.215....
   network: tcp
-  port: 50007
+  port: '50007'
   server: 112.132.215.34
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0

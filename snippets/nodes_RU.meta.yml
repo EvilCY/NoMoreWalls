@@ -23,17 +23,6 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- alterId: 0
-  cipher: auto
-  name: 14|俄罗斯 莫斯科JustHost
-  network: ws
-  port: '20071'
-  server: 45.147.201.231
-  tls: false
-  type: vmess
-  uuid: 4b41312a-e40f-40c3-aa85-efc148060242
-  ws-opts:
-    path: /
 - name: 14|🇷🇺_RU_俄罗斯联邦_10
   network: ws
   port: 2087
@@ -98,14 +87,11 @@ proxies:
     headers:
       Host: lax1.ibgfw.top
     path: /xrenvws
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 23,36|未知121 3.0MB/s
+- cipher: chacha20-ietf-poly1305
+  name: 23|🇷🇺RU-45.139.24.24-5385
   password: 360e21d21977dc11
   port: 57456
   server: 45.139.24.24
-  skip-cert-verify: true
-  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 23|🇷🇺RU-45.151.62.54-5384
@@ -675,12 +661,16 @@ proxies:
     headers:
       Host: za.ylks.xyz
     path: /
-- name: 33|🔒 TR-TCP-NA 🇷🇺 RU-45.67.215.23...
+- alterId: 0
+  name: 33,36|未知46
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
   server: 45.67.215.234
+  skip-cert-verify: true
   sni: icecream.955850.xyz
+  tls: true
   type: trojan
+  udp: true
 - name: '33|🔒 TR-TCP-TLS 🇷🇺 RU-46.254.93.2... #1'
   network: tcp
   password: Aimer
@@ -852,12 +842,13 @@ proxies:
       Host: icecream.955850.xyz
 - alterId: 0
   cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇷🇺 RU-45.12.114.15...
+  name: 35,36|未知136 10.9MB/s
   network: tcp
-  port: '20779'
+  port: 20779
   server: 45.12.114.15
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 9dc5bff8-bcbb-4703-b0fe-4f91ba517402
 - alterId: 0
@@ -888,16 +879,6 @@ proxies:
     headers:
       Host: www.17336793.xyz
     path: /path/170733132233
-- alterId: 0
-  name: 36|🇺RU
-  password: Aimer
-  port: 2096
-  server: 5.182.85.255
-  skip-cert-verify: true
-  sni: epmk.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
 - client-fingerprint: chrome
   name: '38,39|RU_speednode_0100 #1'
   network: ws
