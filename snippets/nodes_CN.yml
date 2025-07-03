@@ -644,28 +644,6 @@ proxies:
   ws-headers:
     Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
-- name: 33|🔒 TR-TCP-NA 🇨🇳 CN-120.241.226....
-  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
-  port: 2053
-  server: 120.241.226.93
-  sni: 45.32.28.232
-  type: trojan
-- name: 33|🔒 TR-WS-TLS 🇨🇳 CN-101.69.122.1...
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 101.69.122.104
-  sni: zamim340.ggff.net
-  type: trojan
-  ws-opts:
-    headers:
-      Host: zamim340.ggff.net
-- name: '33|🔒 TR-TCP-NA 🇨🇳 CN-120.241.226.... #1'
-  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
-  port: 3462
-  server: 120.241.226.93
-  sni: 45.32.28.232
-  type: trojan
 - name: 33|🔒 TR-WS-TLS 🇨🇳 CN-27.36.125.2:...
   network: ws
   password: bpb-trojan
@@ -676,18 +654,40 @@ proxies:
   ws-opts:
     headers:
       Host: zamim340.ggff.net
-- name: '33|🔒 TR-TCP-NA 🇨🇳 CN-120.241.226.... #2'
-  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
-  port: 3462
-  server: 120.241.226.94
-  sni: 45.32.28.232
+- name: 33|🔒 TR-WS-TLS 🇨🇳 CN-101.69.122.1...
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 101.69.122.104
+  sni: zamim340.ggff.net
   type: trojan
+  ws-opts:
+    headers:
+      Host: zamim340.ggff.net
 - name: 33|🔒 TR-TCP-NA 🇨🇳 CN-163.177.58.1...
   password: 616F5C28-A1B2-D7C7-2F5D-46AC56436130
   port: 8306
   server: 163.177.58.129
   skip-cert-verify: true
   sni: cos.ap-guangzhou.myqcloud.com
+  type: trojan
+- name: 33|🔒 TR-TCP-NA 🇨🇳 CN-120.241.226....
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  port: 3462
+  server: 120.241.226.93
+  sni: 45.32.28.232
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇨🇳 CN-120.241.226.... #1'
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  port: 3462
+  server: 120.241.226.94
+  sni: 45.32.28.232
+  type: trojan
+- name: '33|🔒 TR-TCP-NA 🇨🇳 CN-120.241.226.... #2'
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  port: 2053
+  server: 120.241.226.93
+  sni: 45.32.28.232
   type: trojan
 - alterId: 0
   name: 33,36|未知21
@@ -700,6 +700,48 @@ proxies:
   tls: true
   type: trojan
   udp: true
+- alterId: 64
+  cipher: auto
+  name: 35|🔒 VM-RAW-NA 🇨🇳 CN-47.92.152.16...
+  network: raw
+  port: '50002'
+  server: 47.92.152.169
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: none
+  name: 35|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
+  network: tcp
+  port: '59003'
+  server: 183.236.51.36
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 35|🔒 VM-TCP-NA 🇨🇳 CN-219.151.20.6...
+  network: tcp
+  port: '42337'
+  server: 219.151.20.62
+  tls: false
+  type: vmess
+  uuid: 4381beae-45a6-4421-8547-65e312dd204a
+- alterId: 0
+  cipher: auto
+  name: 35|🔒 VM-WS-TLS 🇨🇳 CN-120.253.242....
+  network: ws
+  port: '35214'
+  server: 120.253.242.194
+  servername: jp4.g2.moonbase.life
+  tls: true
+  type: vmess
+  uuid: 46a539d2-d3ba-4a6e-aedb-b727d2fc60f8
+  ws-opts:
+    headers:
+      Host: web.xcjs.info
+    path: /home
 - alterId: 0
   cipher: auto
   name: 35|🔒 VM-WS-TLS 🇨🇳 CN-183.236.51.1...
@@ -716,25 +758,18 @@ proxies:
     path: /home
 - alterId: 0
   cipher: auto
-  name: 35|🔒 VM-TCP-NA 🇨🇳 CN-219.151.20.6...
+  name: 35,36|未知108
   network: tcp
-  port: '42337'
-  server: 219.151.20.62
-  tls: false
+  port: 50007
+  server: 112.132.215.34
+  servername: ''
+  skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: 4381beae-45a6-4421-8547-65e312dd204a
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '35|🔒 VM-TCP-NA 🇨🇳 CN-219.151.20.6... #1'
-  network: tcp
-  port: '42346'
-  server: 219.151.20.62
-  tls: false
-  type: vmess
-  uuid: 4381beae-45a6-4421-8547-65e312dd204a
-- alterId: 0
-  cipher: auto
-  name: 35|🔒 VM-WS-TLS 🇨🇳 CN-120.253.242....
+  name: '35|🔒 VM-WS-TLS 🇨🇳 CN-120.253.242.... #1'
   network: ws
   port: '35244'
   server: 120.253.242.194
@@ -747,34 +782,24 @@ proxies:
       Host: jp4.vip2.g2.moonbase.life
     path: /home
 - alterId: 0
-  cipher: none
-  name: 35|🔒 VM-TCP-NA 🇨🇳 CN-183.236.51.3...
-  network: tcp
-  port: '59003'
-  server: 183.236.51.36
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
   cipher: auto
-  name: '35|🔒 VM-WS-TLS 🇨🇳 CN-120.253.242.... #1'
+  name: '35|🔒 VM-WS-TLS 🇨🇳 CN-183.236.51.1... #1'
   network: ws
-  port: '35214'
-  server: 120.253.242.194
-  servername: jp4.g2.moonbase.life
+  port: '35111'
+  server: 183.236.51.131
+  servername: sg1.g2.moonbase.life
   tls: true
   type: vmess
-  uuid: 46a539d2-d3ba-4a6e-aedb-b727d2fc60f8
+  uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
   ws-opts:
     headers:
-      Host: web.xcjs.info
+      Host: sg1.g2.moonbase.life
     path: /home
 - alterId: 0
   cipher: auto
-  name: '35|🔒 VM-TCP-NA 🇨🇳 CN-219.151.20.6... #2'
+  name: '35|🔒 VM-TCP-NA 🇨🇳 CN-219.151.20.6... #1'
   network: tcp
-  port: '42301'
+  port: '42320'
   server: 219.151.20.62
   tls: false
   type: vmess
@@ -793,63 +818,38 @@ proxies:
     headers:
       Host: web.xcjs.info
     path: /home
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 35|🔒 VM-RAW-NA 🇨🇳 CN-47.92.152.16...
-  network: raw
-  port: '50002'
-  server: 47.92.152.169
+  name: '35|🔒 VM-TCP-NA 🇨🇳 CN-219.151.20.6... #2'
+  network: tcp
+  port: '42333'
+  server: 219.151.20.62
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 4381beae-45a6-4421-8547-65e312dd204a
 - alterId: 0
   cipher: auto
   name: '35|🔒 VM-TCP-NA 🇨🇳 CN-219.151.20.6... #3'
   network: tcp
-  port: '42324'
+  port: '42301'
   server: 219.151.20.62
   tls: false
   type: vmess
   uuid: 4381beae-45a6-4421-8547-65e312dd204a
-- alterId: 0
-  cipher: auto
-  name: '35|🔒 VM-WS-TLS 🇨🇳 CN-183.236.51.1... #1'
-  network: ws
-  port: '35111'
-  server: 183.236.51.131
-  servername: sg1.g2.moonbase.life
-  tls: true
-  type: vmess
-  uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
-  ws-opts:
-    headers:
-      Host: sg1.g2.moonbase.life
-    path: /home
 - alterId: 0
   cipher: auto
   name: '35|🔒 VM-TCP-NA 🇨🇳 CN-219.151.20.6... #4'
   network: tcp
-  port: '42320'
+  port: '42346'
   server: 219.151.20.62
   tls: false
   type: vmess
   uuid: 4381beae-45a6-4421-8547-65e312dd204a
 - alterId: 0
   cipher: auto
-  name: 35,36|未知108
-  network: tcp
-  port: 50007
-  server: 112.132.215.34
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
   name: '35|🔒 VM-TCP-NA 🇨🇳 CN-219.151.20.6... #5'
   network: tcp
-  port: '42333'
+  port: '42324'
   server: 219.151.20.62
   tls: false
   type: vmess
