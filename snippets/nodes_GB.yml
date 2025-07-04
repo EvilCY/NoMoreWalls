@@ -81,11 +81,14 @@ proxies:
   port: 443
   server: 212.102.53.79
   type: ss
-- cipher: aes-128-gcm
-  name: 23|🇬🇧GB-212.102.53.198-0397
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 23,36|未知95 3.8MB/s
   password: shadowsocks
   port: 443
   server: 212.102.53.198
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 23|🇬🇧GB-85.210.120.237-0383
@@ -105,11 +108,14 @@ proxies:
   port: 443
   server: uk-dc1.yangon.club
   type: ss
-- cipher: aes-128-gcm
-  name: 23|🇬🇧GB-212.102.53.81-0381
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 23,36|未知133 3.3MB/s
   password: shadowsocks
   port: 443
   server: 212.102.53.81
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 23|🇬🇧GB-74.177.180.247-0410
@@ -207,13 +213,16 @@ proxies:
   ws-opts:
     headers:
       Host: icecream.955850.xyz
-- name: 33|🔒 TR-TCP-NA 🇬🇧 GB-57.129.137.2...
+- alterId: 0
+  name: 33,36|未知105
   password: Aimer
   port: 443
   server: 57.129.137.242
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: epccy.ambercc.filegear-sg.me
+  tls: true
   type: trojan
+  udp: true
 - name: 33|🔒 TR-TCP-TLS 🇬🇧 GB-95.179.232....
   network: tcp
   password: Bw5Mz7QkVp
@@ -336,13 +345,12 @@ proxies:
   uuid: bcf86479-aab4-47cf-9d6e-34d353baa1a2
 - alterId: 0
   cipher: auto
-  name: 35,36|未知26 19.8MB/s
+  name: 35|🔒 VM-TCP-NA 🇬🇧 GB-5.180.30.146...
   network: tcp
-  port: 27773
+  port: '27773'
   server: 5.180.30.146
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: b2347239-dd15-40b3-b683-50cc2ff19ae7
 - alterId: 0
