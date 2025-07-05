@@ -26,7 +26,7 @@ proxies:
   uuid: dd0d30ae-a4d1-4d1e-8553-42bfff66fd27
 - alterId: 0
   cipher: auto
-  name: 14,22,29,35|🔒 VM-TCP-NA 🇭🇰 HK-43.247.134.2...
+  name: 14,22,35|🔒 VM-TCP-NA 🇭🇰 HK-43.247.134.2...
   network: tcp
   port: '59149'
   server: 43.247.134.201
@@ -34,8 +34,7 @@ proxies:
   tls: false
   type: vmess
   uuid: efbdabeb-68df-4cd0-959d-7d4f4b508609
-- client-fingerprint: chrome
-  name: '14,20,22,28,29|香港5|@ripaojiedian #2'
+- name: '14,20,22|12,13|香港5|@ripaojiedian #1'
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 51083
@@ -45,7 +44,8 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: '14,20,22,28|🇭🇰 香港4|@ripaojiedian #2'
+  name: '14,20,22,28,29|香港4|@ripaojiedian #2'
+  network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 9141
   server: 36.151.192.10
@@ -61,7 +61,7 @@ proxies:
   sni: hk.nfsn666.gq
   tls: false
   type: hysteria2
-- name: '14,20,22,29|香港4|@ripaojiedian #2'
+- name: '14,20,22|13|香港4|@ripaojiedian #1'
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 444
@@ -79,8 +79,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: '20,22,28|🇭🇰 香港3|@ripaojiedian #2'
+  name: '20,22|12|🇭🇰 香港3|@ripaojiedian #1'
   port: 59149
   server: 43.247.134.201
   skip-cert-verify: false
@@ -90,8 +89,7 @@ proxies:
   udp: true
   uuid: efbdabeb-68df-4cd0-959d-7d4f4b508609
 - cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: '20,22,28|🇭🇰 香港2|@ripaojiedian #2'
+  name: 20,22|12|🇭🇰 2|@ripaojiedian
   password: 23d03aa704c7
   plugin: v2ray-plugin
   plugin-opts:
@@ -1276,6 +1274,43 @@ proxies:
     headers:
       host: fe32008f-sv2sg0-t83wtx-2rrb.hk3.p5pv.com
     path: /
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: '28|🇭🇰 香港2|@ripaojiedian #2'
+  password: fd86b4005afd
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: hkxwv1-5.dsjsapi.com
+    mode: websocket
+    mux: true
+    path: /bxpuuxbqsxeb
+    skip-cert-verify: false
+    tls: true
+  port: 10349
+  server: 134.122.155.213
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: '28|🇭🇰 香港3|@ripaojiedian #2'
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)c47ab06:133288
+    mode: tls
+  port: 2377
+  server: 3ce8ee8.hb.gladns.com
+  tfo: false
+  type: ss
+- client-fingerprint: chrome
+  name: '28,29|香港5|@ripaojiedian #2'
+  network: tcp
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 50723
+  server: 36.151.251.24
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
 - name: 30|🔒 HYSTERIA-UDP 🇭🇰 HK-212.192.1...
   obfs: salamander
   obfs-password: M2UyNTc5OWUwYjkyM2Q2OQ%3D%3D
@@ -1987,7 +2022,7 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
-- name: '38,39|HK_speednode_0167 #1'
+- name: '38,39|HK_speednode_0165 #1'
   network: ws
   port: 8880
   server: 45.192.224.77
@@ -2001,10 +2036,10 @@ proxies:
     headers:
       Host: free.cfdns.online
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: '38,39|HK_speednode_0168 #1'
+- name: '38,39|HK_speednode_0166 #1'
   network: ws
   port: 8880
-  server: 154.211.8.77
+  server: 45.192.222.77
   servername: Telegram-channel-WangCai2
   skip-cert-verify: false
   tls: false
@@ -2015,10 +2050,10 @@ proxies:
     headers:
       Host: free.cfdns.online
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: '38,39|HK_speednode_0169 #1'
+- name: '38,39|HK_speednode_0167 #1'
   network: ws
   port: 8880
-  server: 45.192.222.77
+  server: 154.211.8.77
   servername: Telegram-channel-WangCai2
   skip-cert-verify: false
   tls: false
