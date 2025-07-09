@@ -1,7 +1,7 @@
 proxies:
 - alterId: 64
   cipher: auto
-  name: 2,15,21,23|0|1 |  1.8MB/s|54%|Youtube|Ope...
+  name: 3,15,21,23|1|1 |  1.8MB/s|54%|Youtube|Ope...
   network: ws
   port: 1443
   server: sslvpn.51job.com
@@ -16,11 +16,24 @@ proxies:
       Host: centos7
     path: /634c5c4f9782
 - alterId: 0
-  name: 15,21,23,37|JP
+  client-fingerprint: chrome
+  name: 15,23,29,30,37|🇵JP日本7
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 19577
-  server: 36.151.251.33
+  port: 53248
+  server: 36.151.192.27
+  skip-cert-verify: true
+  sni: www.baidu.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  client-fingerprint: chrome
+  name: 15,21,23,29,30,37|🇯🇵JP日本5
+  network: tcp
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 21829
+  server: 36.151.251.58
   skip-cert-verify: true
   sni: www.baidu.com
   tls: true
@@ -28,53 +41,14 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 15|日本 - Chiyoda - Asia Pacific Ne...
-  network: ws
-  port: '80'
-  server: nmone.hjdfghfc.asia
-  tls: false
-  type: vmess
-  uuid: 16f000d7-7805-459d-9130-200d00180b7c
-  ws-opts:
-    headers:
-      Host: nmone.hjdfghfc.asia
-    path: /market?ed=512
-- alterId: 0
-  cipher: auto
-  name: '15,23|13|日本v2|@ripaojiedian #1'
+  name: '15,23,30|日本v2|@ripaojiedian #2'
   network: kcp
-  port: '7965'
-  server: 47.91.19.216
+  port: '2389'
+  server: 8.211.145.146
   servername: ''
   tls: false
   type: vmess
-  uuid: 9a2e59c2-e8a1-4684-8df7-5a5ca5ae174a
-- alterId: 0
-  cipher: auto
-  name: '15|日本 - Chiyoda - Asia Pacific Ne... #1'
-  network: ws
-  port: '443'
-  server: nmtow.hjdfghfc.asia
-  tls: false
-  type: vmess
-  uuid: 16f000d7-7805-459d-9130-200d00180b7c
-  ws-opts:
-    headers:
-      Host: nmtow.hjdfghfc.asia
-    path: /market?ed=512
-- alterId: 0
-  cipher: auto
-  name: '15|日本 - Chiyoda - Asia Pacific Ne... #2'
-  network: ws
-  port: '19331'
-  server: nmtow.hjdfghfc.asia
-  tls: false
-  type: vmess
-  uuid: 16f000d7-7805-459d-9130-200d00180b7c
-  ws-opts:
-    headers:
-      Host: nmtow.hjdfghfc.asia
-    path: /market?ed=512
+  uuid: 9f9f395b-e9b2-4cfd-85b3-0425f0e11ad7
 - cipher: aes-256-cfb
   name: 20|🇯🇵JP-54.199.83.239-171_1@171
   password: doub.io
@@ -110,7 +84,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: aes-256-gcm
-  name: 21,37|🇵JP日本9
+  name: 21,37|🇵JP日本6
   password: 823e135ed103
   port: 636
   server: 137.220.191.40
@@ -119,29 +93,31 @@ proxies:
   type: ss
   udp: true
 - alterId: 0
-  cipher: aes-256-gcm
-  name: 21,23,37|🇵JP日本5
+  name: 21,37|🇯🇵JP日本4
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 19577
+  server: 36.151.251.33
+  skip-cert-verify: true
+  sni: www.baidu.com
+  tls: true
+  type: trojan
+  udp: true
+- cipher: aes-256-gcm
+  name: 21|🇯🇵 日本5|@ripaojiedian
   password: 0V80159CYIW98X9N
   port: 18013
   server: 8tv68qhq.slashdevslashnetslashtun.net
-  skip-cert-verify: true
-  tfo: false
-  tls: true
   type: ss
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 21,23,37|🇵JP日本8
+- cipher: chacha20-ietf-poly1305
+  name: 21|🇯🇵 日本6|@ripaojiedian
   password: 1a17b19d-4896-4531-af79-6e91d8ef8228
   port: 9898
   server: 52.192.64.50
-  skip-cert-verify: true
-  tfo: false
-  tls: true
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 21,23|12|🇵 |@ripaojiedian
+  name: 21|🇯🇵 日本|@ripaojiedian 2
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -149,7 +125,6 @@ proxies:
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
-  tfo: false
   type: ss
   udp: true
 - cipher: aes-256-gcm
@@ -181,44 +156,23 @@ proxies:
   port: 443
   server: 149.22.87.241
   type: ss
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: '29|🇯🇵 日本|@ripaojiedian #2'
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202507031938065-U5JTftURXP.download.microsoft.com
-    mode: http
-  port: 8766
-  server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
-- client-fingerprint: chrome
-  name: '29,30|日本4|@ripaojiedian #2'
-  network: tcp
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 53248
-  server: 36.151.192.27
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
 - alterId: 0
-  cipher: auto
-  name: '30|日本v2|@ripaojiedian #2'
-  network: kcp
-  port: '2389'
-  server: 8.211.145.146
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f9f395b-e9b2-4cfd-85b3-0425f0e11ad7
-- alterId: 0
-  name: 37|🇯🇵JP日本2
+  name: 37|JP
   password: Aimer
   port: 2083
-  server: 103.116.7.133
+  server: 103.116.7.103
   skip-cert-verify: true
-  sni: epmk.ambercc.filegear-sg.me
+  sni: epml.ambercc.filegear-sg.me
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|🇵JP日本2
+  password: Aimer
+  port: 2096
+  server: 103.116.7.220
+  skip-cert-verify: true
+  sni: epml.ambercc.filegear-sg.me
   tls: true
   type: trojan
   udp: true
@@ -226,29 +180,9 @@ proxies:
   name: 37|🇯🇵JP日本3
   password: Aimer
   port: 2083
-  server: 103.116.7.103
-  skip-cert-verify: true
-  sni: epmx.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|🇵JP日本4
-  password: Aimer
-  port: 2087
-  server: 103.116.7.100
+  server: 103.116.7.133
   skip-cert-verify: true
   sni: epmk.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|🇵JP日本7
-  password: Aimer
-  port: 2096
-  server: 103.116.7.220
-  skip-cert-verify: true
-  sni: epml.ambercc.filegear-sg.me
   tls: true
   type: trojan
   udp: true
