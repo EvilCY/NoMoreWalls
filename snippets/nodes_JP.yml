@@ -1,7 +1,7 @@
 proxies:
 - alterId: 64
   cipher: auto
-  name: 3,15,21,23|1|1 |  1.8MB/s|54%|Youtube|Ope...
+  name: 3,15,21,23|2|1 |  1.8MB/s|54%|Youtube|Ope...
   network: ws
   port: 1443
   server: sslvpn.51job.com
@@ -17,10 +17,10 @@ proxies:
     path: /634c5c4f9782
 - alterId: 0
   client-fingerprint: chrome
-  name: 15,21,23,25,29,30,37|🇵JP日本3
+  name: 15,21,23,25,29,30,37|🇯🇵JP日本2
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 4445
+  port: 41225
   server: 36.151.192.26
   skip-cert-verify: true
   sni: www.baidu.com
@@ -32,7 +32,7 @@ proxies:
   name: 15,21,23,25,29,30,37|JP
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 41225
+  port: 4445
   server: 36.151.192.26
   skip-cert-verify: true
   sni: www.baidu.com
@@ -50,7 +50,7 @@ proxies:
   type: vmess
   uuid: 9f9f395b-e9b2-4cfd-85b3-0425f0e11ad7
 - cipher: aes-256-cfb
-  name: 20,25|🇵JP-54.199.83.239-4845
+  name: 20,25|🇵JP-54.199.83.239-4820
   password: doub.io
   port: 2333
   server: 54.199.83.239
@@ -76,7 +76,7 @@ proxies:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
 - cipher: rc4-md5
-  name: 21,25|🇨🇳CN-163.177.46.157-0658
+  name: 21,25|🇨🇳CN-113.99.143.13-0666
   password: efanccyun
   port: 8766
   server: cn01.efan8867801.xyz
@@ -84,7 +84,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: aes-256-gcm
-  name: 21,25,37|🇵JP日本4
+  name: 21,25,37|🇯🇵JP日本3
   password: 823e135ed103
   port: 636
   server: 137.220.191.40
@@ -92,19 +92,15 @@ proxies:
   tls: true
   type: ss
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 21,23,25,37|🇯🇵JP日本2
+- cipher: chacha20-ietf-poly1305
+  name: 21,25|🇵JP-57.180.63.92-0670
   password: 1a17b19d-4896-4531-af79-6e91d8ef8228
   port: 9898
   server: 57.180.63.92
-  skip-cert-verify: true
-  tfo: false
-  tls: true
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 21,23|11|🇵 |@ripaojiedian
+  name: 21|🇯🇵 日本|@ripaojiedian 2
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -112,7 +108,6 @@ proxies:
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
-  tfo: false
   type: ss
   udp: true
 - cipher: aes-256-gcm
@@ -133,25 +128,97 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 24,25|🇵JP-149.22.87.204-0296
+  name: 24,25|🇵JP-149.22.87.204-0271
   password: shadowsocks
   port: 443
   server: 149.22.87.204
   type: ss
 - cipher: aes-128-gcm
-  name: 24,25|🇵JP-149.22.87.241-0299
+  name: 24,25|🇵JP-149.22.87.241-0274
   password: shadowsocks
   port: 443
   server: 149.22.87.241
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 25|JP-152.69.206.209-0029
+  network: ws
+  port: 1212
+  server: 152.69.206.209
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: fb908160-9697-4bfd-f5b7-f1fbc53e60fa
+  ws-opts:
+    headers:
+      Host: YouTube-aweikeji
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 25|🇯🇵JP-152.69.193.245-0030
+  network: ws
+  port: 80
+  server: 152.69.193.245
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 6697776b-d009-413b-8708-822ee2e02515
+  ws-opts:
+    headers:
+      Host: 152.69.193.245
+    path: /
 - cipher: chacha20-ietf-poly1305
-  name: 25|JP-89.31.126.150-0122
+  name: 25|🇯🇵JP-89.31.126.171-0036
+  password: G!yBwPWH3Vao
+  port: 800
+  server: 89.31.126.171
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 25|🇵JP-152.69.206.209-0053
+  network: ws
+  port: 1212
+  server: 152.69.206.209
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: fb908160-9697-4bfd-f5b7-f1fbc53e60fa
+  ws-opts:
+    headers:
+      Host: 152.69.206.209
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 25|🇯🇵JP-152.69.193.245-0054
+  network: ws
+  port: 80
+  server: 152.69.193.245
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 6697776b-d009-413b-8708-822ee2e02515
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 25|🇵JP-152.69.206.209-0095
+  network: ws
+  port: 1212
+  server: 152.69.206.209
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: fb908160-9697-4bfd-f5b7-f1fbc53e60fa
+  ws-opts:
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 25|🇵JP-89.31.126.150-0122
   password: G!yBwPWH3Vao
   port: 802
   server: 89.31.126.150
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 25|🇵JP-89.31.126.150-0125
+  name: 25|🇯🇵JP-89.31.126.150-0125
   password: G!yBwPWH3Vao
   port: 812
   server: 89.31.126.150
@@ -169,16 +236,10 @@ proxies:
   server: 185.160.24.217
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 25|🇯🇵JP-185.160.24.217-0129
+  name: 25|🇵JP-185.160.24.217-0129
   password: G!yBwPWH3Vao
   port: 811
   server: 185.160.24.217
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 25|🇯🇵JP-89.31.126.171-0133
-  password: G!yBwPWH3Vao
-  port: 800
-  server: 89.31.126.171
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 25|🇯🇵JP-185.160.24.217-0136
@@ -193,7 +254,7 @@ proxies:
   server: 185.160.24.217
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 25|🇯🇵JP-185.160.24.217-0139
+  name: 25|🇵JP-185.160.24.217-0139
   password: G!yBwPWH3Vao
   port: 803
   server: 185.160.24.217
@@ -235,14 +296,14 @@ proxies:
       Host: suzhihan.eu.org
     path: /roewesu
 - cipher: aes-256-gcm
-  name: 25|🇯🇵JP-20.210.122.21-0551
+  name: 25|🇯🇵JP-20.210.122.21-0558
   password: 233blog.com
   port: 443
   server: 20.210.122.21
   type: ss
 - alterId: 0
   cipher: auto
-  name: 25|🇵JP-172.105.219.18-0563
+  name: 25|🇵JP-172.105.219.18-0570
   network: ws
   port: 443
   server: 172.105.219.18
@@ -254,7 +315,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 25|🇯🇵JP-139.162.117.173-0688
+  name: 25|🇯🇵JP-139.162.117.173-0696
   network: ws
   port: 443
   server: 139.162.117.173
@@ -264,7 +325,7 @@ proxies:
   uuid: 927094d3-d678-4763-8591-e240d0bcae87
   ws-opts:
     path: /chat
-- name: 25|🇵JP-168.138.44.176-3201
+- name: 25|🇵JP-168.138.44.176-3176
   password: 8d2d5953-d649-4034-94f2-72f2df2623da
   port: 443
   server: 168.138.44.176
@@ -272,7 +333,7 @@ proxies:
   type: trojan
 - alterId: 64
   cipher: auto
-  name: 25|JP-152.70.103.195-0862
+  name: 25|JP-152.70.103.195-0870
   network: ws
   port: 37206
   server: 152.70.103.195
@@ -286,7 +347,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 25|🇯🇵JP-138.2.52.176-0867
+  name: 25|🇯🇵JP-138.2.52.176-0875
   network: ws
   port: 24429
   server: 138.2.52.176
@@ -300,7 +361,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 25|JP-140.83.84.209-1366
+  name: 25|JP-140.83.84.209-1344
   network: ws
   port: 1234
   server: 140.83.84.209
@@ -311,14 +372,14 @@ proxies:
   ws-opts:
     path: /1234
 - cipher: aes-256-cfb
-  name: 25|🇵JP-43.207.166.104-1475
+  name: 25|🇵JP-43.207.166.104-1453
   password: amazonskr05
   port: 443
   server: 43.207.166.104
   type: ss
 - alterId: 0
   cipher: auto
-  name: 25|🇵JP-52.196.144.61-1501
+  name: 25|🇵JP-52.196.144.61-1479
   network: ws
   port: 3331
   server: f1f3227.u1.glados-config.net
@@ -333,7 +394,7 @@ proxies:
     path: /s/f1f3227.fm.apple.com:111548
 - alterId: 0
   cipher: auto
-  name: 25|🇵JP-35.72.161.88-1557
+  name: 25|🇵JP-35.72.161.88-1535
   network: ws
   port: 22356
   server: 001.AP.POP.node-for-smallairport.win
@@ -348,7 +409,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 25|🇵JP-152.69.197.74-1575
+  name: 25|🇵JP-152.69.197.74-1553
   network: ws
   port: 12345
   server: 152.69.197.74
@@ -358,7 +419,7 @@ proxies:
   uuid: b8a6bf58-485a-4046-b386-b3661bf65eff
   ws-opts:
     path: /bb
-- name: 25|🇵JP-138.2.45.89-1587
+- name: 25|🇵JP-138.2.45.89-1565
   password: 6d64570c-81d4-30fa-b2e2-dce73e1a2702
   port: 44301
   server: 138.2.45.89
@@ -367,7 +428,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 25|🇵JP-172.104.78.98-1660
+  name: 25|🇵JP-172.104.78.98-1638
   network: ws
   port: 443
   server: 172.104.78.98
@@ -378,18 +439,18 @@ proxies:
   ws-opts:
     path: /chat
 - cipher: aes-256-cfb
-  name: 25|🇵JP-43.207.153.185-1673
+  name: 25|🇵JP-43.207.153.185-1651
   password: amazonskr05
   port: 443
   server: 43.207.153.185
   type: ss
 - cipher: aes-256-cfb
-  name: 25|🇵JP-175.41.205.247-1695
+  name: 25|🇵JP-175.41.205.247-1673
   password: amazonskr05
   port: 443
   server: 175.41.205.247
   type: ss
-- name: 25|🇵JP-23.145.24.30-1715
+- name: 25|🇵JP-23.145.24.30-1693
   password: 265f092f-418b-30c9-a479-4800fd44dd19mielink
   port: 443
   server: 23.145.24.30
@@ -397,7 +458,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 25|🇵JP-138.2.45.89-1748
+  name: 25|🇵JP-138.2.45.89-1726
   network: ws
   port: 4430
   server: 138.2.45.89
@@ -408,14 +469,14 @@ proxies:
   ws-opts:
     path: /osav101
 - cipher: aes-256-cfb
-  name: 25|🇵JP-54.178.60.213-1776
+  name: 25|🇵JP-54.178.60.213-1754
   password: amazonskr05
   port: 443
   server: 54.178.60.213
   type: ss
 - alterId: 0
   cipher: auto
-  name: 25|🇵JP-43.128.225.220-1778
+  name: 25|🇵JP-43.128.225.220-1756
   network: ws
   port: 80
   server: 43.128.225.220
@@ -427,7 +488,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 25|🇵JP-138.2.39.67-1797
+  name: 25|🇵JP-138.2.39.67-1775
   network: ws
   port: 80
   server: 138.2.39.67
@@ -439,7 +500,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 25|🇯🇵JP-141.147.181.219-1800
+  name: 25|🇯🇵JP-141.147.181.219-1778
   network: ws
   port: 443
   server: 141.147.181.219
@@ -451,7 +512,7 @@ proxies:
     path: /roewesu
 - alterId: 0
   cipher: auto
-  name: 25|🇯🇵JP-3.112.210.227-1804
+  name: 25|🇯🇵JP-3.112.210.227-1782
   network: ws
   port: 23245
   server: jp04.170203.xyz
@@ -465,7 +526,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 25|🇵JP-161.129.34.126-1834
+  name: 25|🇵JP-161.129.34.126-1812
   network: ws
   port: 443
   server: 161.129.34.126
@@ -476,7 +537,7 @@ proxies:
   uuid: a0b1fb66-ed41-4077-86a9-a61c143d3777
   ws-opts:
     path: /a0b1fb66-ed41-4077-86a9-a61c143d3777
-- name: 25|🇵JP-52.196.144.61-1839
+- name: 25|🇵JP-52.196.144.61-1817
   password: 0c6a3341e8d5ab17
   port: 3389
   server: f5465c4.pg.gladns.com
@@ -484,7 +545,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 25|🇵JP-140.83.35.62-1843
+  name: 25|🇵JP-140.83.35.62-1821
   network: ws
   port: 443
   server: jp-amd1.018999.xyz
@@ -496,21 +557,21 @@ proxies:
     headers:
       Host: jp-amd1.018999.xyz
     path: /65e619e7-0bf1-4f5b-a390-5735b01a3713
-- name: 25|🇯🇵JP-157.254.193.251-1868
+- name: 25|🇯🇵JP-157.254.193.251-1846
   password: b57f94c6-7385-47f7-9c8a-55de6098bd2b
   port: 20220
   server: zzjp01.fuqiangren.com
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
-  name: 25|🇯🇵JP-43.207.82.53-1881
+  name: 25|🇯🇵JP-43.207.82.53-1859
   password: amazonskr05
   port: 443
   server: 43.207.82.53
   type: ss
 - alterId: 0
   cipher: auto
-  name: 25|🇵JP-161.129.34.102-1963
+  name: 25|🇵JP-161.129.34.102-1938
   network: ws
   port: 443
   server: 161.129.34.102
@@ -523,30 +584,30 @@ proxies:
       Host: 161.129.34.102
     path: /
 - cipher: aes-256-cfb
-  name: 25|🇵JP-43.207.68.169-2237
+  name: 25|🇵JP-43.207.68.169-2212
   password: amazonskr05
   port: 443
   server: 43.207.68.169
   type: ss
 - cipher: aes-256-cfb
-  name: 25|🇵JP-43.207.1.14-2334
+  name: 25|🇵JP-43.207.1.14-2309
   password: amazonskr05
   port: 443
   server: 43.207.1.14
   type: ss
 - cipher: aes-256-cfb
-  name: 25|🇵JP-43.206.221.164-2394
+  name: 25|🇵JP-43.206.221.164-2369
   password: amazonskr05
   port: 443
   server: 43.206.221.164
   type: ss
-- name: 25|🇵JP-140.227.54.4-2463
+- name: 25|🇵JP-140.227.54.4-2438
   password: 7a566d21dfcd0f12490275fd3dd3cfc4
   port: 443
   server: trs09.bolab.net
   skip-cert-verify: false
   type: trojan
-- name: 25|🇵JP-138.2.45.243-2474
+- name: 25|🇵JP-138.2.45.243-2449
   password: c19d1432-8b3e-4818-8837-3d160cf65908
   port: 443
   server: 138.2.45.243
@@ -554,7 +615,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: 25|🇵JP-153.122.173.53-2498
+  name: 25|🇵JP-153.122.173.53-2473
   network: ws
   port: 32407
   server: 153.122.173.53
@@ -564,43 +625,49 @@ proxies:
   uuid: 26c5fdc7-b3be-3482-9a45-d97b958a889a
   ws-opts:
     path: /v2ray
-- name: 25|🇵JP-49.212.221.47-2505
+- name: 25|🇵JP-49.212.221.47-2480
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 2053
   server: 49.212.221.47
   skip-cert-verify: false
   type: trojan
-- name: 25|🇯🇵JP-155.248.172.87-2510
+- name: 25|🇯🇵JP-155.248.172.87-2485
   password: 750a29bf-0a40-437f-b120-38de74ae7eaf
   port: 28443
   server: 155.248.172.87
   skip-cert-verify: false
   type: trojan
-- name: 25|🇵JP-153.127.215.49-2523
+- name: 25|🇵JP-172.207.174.78-2486
+  password: cd41b9d7-df15-46ad-a778-257b0851525a
+  port: 443
+  server: us01.trojanyyds.xyz
+  skip-cert-verify: false
+  type: trojan
+- name: 25|🇵JP-153.127.215.49-2498
   password: 40c89b10235c40321e7a3cef82b53a03
   port: 22
   server: trs16.bolab.net
   skip-cert-verify: false
   type: trojan
-- name: 25|🇯🇵JP-153.127.203.108-2541
+- name: 25|🇯🇵JP-153.127.203.108-2516
   password: 40c89b10235c40321e7a3cef82b53a03
   port: 22
   server: trs17.bolab.net
   skip-cert-verify: false
   type: trojan
-- name: 25|🇵JP-168.138.43.89-2543
+- name: 25|🇵JP-168.138.43.89-2518
   password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2
   port: 443
   server: 168.138.43.89
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
-  name: 25|🇯🇵JP-43.206.219.140-2558
+  name: 25|🇯🇵JP-43.206.219.140-2533
   password: amazonskr05
   port: 443
   server: 43.206.219.140
   type: ss
-- name: 25|🇵JP-133.167.100.203-2631
+- name: 25|🇯🇵JP-133.167.100.203-2606
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 2053
   server: 133.167.100.203
@@ -608,7 +675,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 25|🇯🇵JP-161.129.34.102-3146
+  name: 25|🇯🇵JP-161.129.34.102-3121
   network: ws
   port: 443
   server: 161.129.34.102
@@ -618,43 +685,43 @@ proxies:
   uuid: ec736482-173e-3eff-9114-b49df8056e7d
   ws-opts:
     path: /
-- name: 25|🇵JP-133.242.146.108-2648
+- name: 25|🇵JP-133.242.146.108-2623
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 65011
   server: jp01a.roc-taiwan.net.ua
   skip-cert-verify: false
   type: trojan
-- name: 25|🇵JP-160.16.145.107-2671
+- name: 25|🇵JP-160.16.145.107-2646
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 2053
   server: 160.16.145.107
   skip-cert-verify: false
   type: trojan
-- name: 25|🇵JP-150.230.217.213-2696
+- name: 25|🇵JP-150.230.217.213-2671
   password: c09eb137-bf68-4658-84e0-102d94b74168
   port: 443
   server: 150.230.217.213
   skip-cert-verify: false
   type: trojan
-- name: 25|🇯🇵JP-133.242.205.220-2698
+- name: 25|🇯🇵JP-133.242.205.220-2673
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 65012
   server: jp02a.roc-taiwan.net.ua
   skip-cert-verify: false
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 25|🇯🇵JP-185.160.26.91-2720
+  name: 25|🇯🇵JP-185.160.26.91-2695
   password: Xs9ORT4j65b8HreZrg0p
   port: 1664
   server: 185.160.26.91
   type: ss
-- name: 25|🇵JP-133.125.42.51-2748
+- name: 25|🇵JP-133.125.42.51-2723
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 65015
   server: jp05a.roc-taiwan.org.ua
   skip-cert-verify: false
   type: trojan
-- name: 25|🇵JP-153.127.8.129-2784
+- name: 25|🇵JP-153.127.8.129-2759
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 65014
   server: jp04a.roc-taiwan.net.ua
@@ -662,7 +729,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 25|🇵JP-138.2.49.230-2799
+  name: 25|🇵JP-138.2.49.230-2774
   network: ws
   port: 10021
   server: 138.2.49.230
@@ -672,73 +739,79 @@ proxies:
   uuid: a12e496e-f89a-434a-8011-108846f0e412
   ws-opts:
     path: /
-- name: 25|🇵JP-150.230.96.103-2827
+- name: 25|🇵JP-150.230.96.103-2802
   password: da777aae-defb-41d0-a183-2c27da2b4677
   port: 443
   server: 150.230.96.103
   skip-cert-verify: false
   type: trojan
-- name: 25|🇵JP-153.127.47.114-2829
+- name: 25|🇵JP-153.127.47.114-2804
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 65018
   server: jp08a.roc-taiwan.org.ua
   skip-cert-verify: false
   type: trojan
-- name: 25|🇵JP-133.242.210.166-2857
+- name: 25|🇵JP-133.242.210.166-2832
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 65017
   server: jp07a.roc-taiwan.org.ua
   skip-cert-verify: false
   type: trojan
-- name: 25|🇵JP-153.125.148.41-2872
+- name: 25|🇵JP-153.125.148.41-2847
   password: 40c89b10235c40321e7a3cef82b53a03
   port: 22
   server: trs12.bolab.net
   skip-cert-verify: false
   type: trojan
-- name: 25|🇯🇵JP-153.120.4.221-2909
+- name: 25|🇯🇵JP-153.120.4.221-2884
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 65016
   server: jp06a.roc-taiwan.org.ua
   skip-cert-verify: false
   type: trojan
-- name: 25|🇵JP-219.94.250.108-2933
+- name: 25|🇵JP-219.94.250.108-2908
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 2053
   server: 219.94.250.108
   skip-cert-verify: false
   type: trojan
-- name: 25|🇵JP-172.207.174.78-2939
+- name: 25|🇵JP-172.207.174.78-2914
   password: cd41b9d7-df15-46ad-a778-257b0851525a
   port: 443
   server: uk01.trojanyyds.xyz
   skip-cert-verify: false
   type: trojan
-- name: 25|🇵JP-133.242.134.182-2978
+- name: 25|🇵JP-133.242.134.182-2953
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 65013
   server: jp03a.roc-taiwan.net.ua
   skip-cert-verify: false
   type: trojan
-- name: 25|🇯🇵JP-153.121.74.146-2984
+- name: 25|🇯🇵JP-153.121.74.146-2959
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 2053
   server: 153.121.74.146
   skip-cert-verify: false
   type: trojan
-- name: 25|🇯🇵JP-141.147.191.85-2991
+- name: 25|🇯🇵JP-141.147.191.85-2966
   password: 750a29bf-0a40-437f-b120-38de74ae7eaf
   port: 28443
   server: 141.147.191.85
   skip-cert-verify: false
   type: trojan
+- name: 25|🇯🇵JP-172.207.174.78-2968
+  password: cd41b9d7-df15-46ad-a778-257b0851525a
+  port: 443
+  server: jp01.trojanyyds.xyz
+  skip-cert-verify: false
+  type: trojan
 - cipher: aes-256-cfb
-  name: 25|🇯🇵JP-3.112.193.151-3690
+  name: 25|🇯🇵JP-3.112.193.151-3665
   password: amazonskr05
   port: 443
   server: 3.112.193.151
   type: ss
-- name: 25|🇵JP-153.125.148.41-4175
+- name: 25|🇵JP-153.125.148.41-4150
   password: 14bdba6dede262387ebdebaa706e1c90
   port: 443
   server: trs12.bolab.net
@@ -746,7 +819,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 25|🇵JP-172.105.223.136-4419
+  name: 25|🇵JP-172.105.223.136-4394
   network: ws
   port: 443
   server: 172.105.223.136
@@ -758,13 +831,13 @@ proxies:
     headers:
       Host: www.microsoft.com
     path: /
-- name: 25|🇵JP-106.180.225.69-4423
+- name: 25|🇵JP-106.180.225.69-4398
   password: 7x42LetRa0
   port: 1443
   server: 106.180.225.69
   skip-cert-verify: false
   type: trojan
-- name: 25|🇵JP-132.226.5.246-4424
+- name: 25|🇵JP-132.226.5.246-4399
   password: 4f7dc540-d244-4e64-af21-4b5bb300add3
   port: 443
   server: 132.226.5.246
@@ -773,7 +846,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 25|🇯🇵JP-52.196.144.61-4428
+  name: 25|🇯🇵JP-52.196.144.61-4403
   network: ws
   port: 3331
   server: f1f3227.v1.glados-config.net
@@ -785,21 +858,21 @@ proxies:
     headers:
       Host: f1f3227.v1.glados-config.net
     path: /s/f1f3227.fm.apple.com:111548
-- name: 25|🇵JP-43.206.67.76-4462
+- name: 25|🇵JP-43.206.67.76-4437
   password: 1b5eff5a-f36b-4149-8001-7c8c0c4ed2eb
   port: 36306
   server: 43.206.67.76
   skip-cert-verify: false
   sni: sunmoon02.abzoones.xyz
   type: trojan
-- name: 25|🇯🇵JP-150.230.201.192-4463
+- name: 25|🇯🇵JP-150.230.201.192-4438
   password: f42e1a2e-e650-44f4-8d17-bcb68663da18
   port: 443
   server: 150.230.201.192
   skip-cert-verify: false
   sni: www.seetheworldjp.ga
   type: trojan
-- name: 25|🇯🇵JP-15.168.28.231-4466
+- name: 25|🇯🇵JP-15.168.28.231-4441
   password: c51d3975-a40c-4a5b-929b-c8595ed87850
   port: 443
   server: 15.168.28.231
@@ -808,19 +881,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 25|🇯🇵JP-152.69.193.245-4536
-  network: ws
-  port: 80
-  server: 152.69.193.245
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 6697776b-d009-413b-8708-822ee2e02515
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 25|🇵JP-147.78.244.7-4581
+  name: 25|🇵JP-147.78.244.7-4556
   network: ws
   port: 443
   server: 147.78.244.7
@@ -834,7 +895,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 25|🇯🇵JP-124.156.225.184-4610
+  name: 25|🇵JP-124.156.225.184-4585
   network: ws
   port: 443
   server: 124.156.225.184
@@ -847,20 +908,20 @@ proxies:
       Host: azjp.pengui.xyz
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 25|🇵JP-193.38.139.204-4796
+  name: 25|🇵JP-193.38.139.204-4771
   password: G!yBwPWH3Vao
   port: 806
   server: 193.38.139.204
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 25|🇵JP-193.38.139.204-4799
+  name: 25|🇵JP-193.38.139.204-4774
   password: G!yBwPWH3Vao
   port: 809
   server: 193.38.139.204
   type: ss
 - alterId: 4
   cipher: auto
-  name: 25|🇵JP-157.254.193.68-4825
+  name: 25|🇵JP-157.254.193.68-4800
   network: ws
   port: 10020
   server: 157.254.193.68
@@ -872,7 +933,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 25|🇵JP-107.148.6.68-5009
+  name: 25|🇵JP-107.148.6.68-5003
   network: ws
   port: 30001
   server: 107.148.6.68
@@ -885,7 +946,7 @@ proxies:
     path: /path/170733132233
 - alterId: 64
   cipher: auto
-  name: 25|🇯🇵JP-107.148.6.67-5011
+  name: 25|🇵JP-107.148.6.67-5005
   network: ws
   port: 30001
   server: 107.148.6.67
@@ -898,22 +959,7 @@ proxies:
     path: /path/170733132233
 - alterId: 0
   cipher: auto
-  name: 25|🇵JP-13.113.237.106-5113
-  network: ws
-  port: 40405
-  server: tls.84.node-for-bigairport.win
-  servername: tls.84.node-for-bigairport.win
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c69374da-2208-4cbd-b81e-cdf88b5e7f53
-  ws-opts:
-    headers:
-      Host: tls.84.node-for-bigairport.win
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 25|JP-138.2.52.244-6852
+  name: 25|JP-138.2.52.244-6871
   network: ws
   port: 443
   server: 138.2.52.244
@@ -926,7 +972,7 @@ proxies:
     path: /ray
 - alterId: 64
   cipher: auto
-  name: 25|🇵JP-107.148.6.67-6885
+  name: 25|🇵JP-107.148.6.67-6899
   network: ws
   port: 30001
   server: 107.148.6.67
@@ -940,7 +986,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 25|JP-134.122.139.79-7276
+  name: 25|JP-134.122.139.79-7296
   network: ws
   port: 443
   server: 134.122.139.79
@@ -954,7 +1000,7 @@ proxies:
     path: /path/011410073331
 - alterId: 0
   cipher: auto
-  name: 25|🇵JP-131.186.57.111-7323
+  name: 25|🇵JP-131.186.57.111-7343
   network: ws
   port: 443
   server: 131.186.57.111
@@ -968,7 +1014,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 25|🇵JP-107.148.1.118-7413
+  name: 25|🇵JP-107.148.1.118-7433
   network: ws
   port: 443
   server: 107.148.1.118
@@ -983,7 +1029,7 @@ proxies:
     path: /path/351212081517
 - alterId: 0
   cipher: auto
-  name: 25|🇵JP-172.234.94.163-7477
+  name: 25|🇵JP-172.234.94.163-7497
   network: ws
   port: 443
   server: 172.234.94.163
@@ -998,7 +1044,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 25|🇯🇵JP-172.234.88.187-7487
+  name: 25|🇯🇵JP-172.234.88.187-7507
   network: ws
   port: 443
   server: 172.234.88.187
@@ -1013,7 +1059,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 25|🇵JP-172.233.92.155-7491
+  name: 25|🇵JP-172.233.92.155-7511
   network: ws
   port: 443
   server: 172.233.92.155
@@ -1028,7 +1074,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 25|🇯🇵JP-172.234.86.166-7494
+  name: 25|🇯🇵JP-172.234.86.166-7514
   network: ws
   port: 12000
   server: 172.234.86.166
@@ -1043,7 +1089,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 25|🇯🇵JP-183.181.36.194-7500
+  name: 25|🇯🇵JP-183.181.36.194-7520
   network: ws
   port: 41597
   server: 183.181.36.194
@@ -1055,7 +1101,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 25|🇯🇵JP-212.50.254.55-7519
+  name: 25|🇯🇵JP-212.50.254.55-7539
   network: ws
   port: 56893
   server: 212.50.254.55
@@ -1067,7 +1113,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 25|🇵JP-167.88.184.129-7735
+  name: 25|🇵JP-167.88.184.129-7755
   network: ws
   port: 49232
   server: 167.88.184.129
@@ -1078,44 +1124,32 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-256-cfb
-  name: 25|🇵JP-43.207.83.221-8109
+  name: 25|🇵JP-43.207.83.221-8128
   password: amazonskr05
   port: 443
   server: 43.207.83.221
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 25|🇵JP-185.172.113.182-8337
+  name: 25|🇵JP-185.172.113.182-8356
   password: G!yBwPWH3Vao
   port: 811
   server: 185.172.113.182
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 25|🇵JP-185.172.113.182-8338
+  name: 25|🇵JP-185.172.113.182-8357
   password: G!yBwPWH3Vao
   port: 800
   server: 185.172.113.182
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 25|🇯🇵JP-185.172.113.182-8339
+  name: 25|🇯🇵JP-185.172.113.182-8358
   password: G!yBwPWH3Vao
   port: 804
   server: 185.172.113.182
   type: ss
 - cipher: aes-256-cfb
-  name: 25|JP-103.75.118.27-8893
+  name: 25|JP-103.75.118.27-8912
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 103.75.118.27
-  type: ss
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: '29|🇯🇵 日本|@ripaojiedian #2'
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202507121073737-BbgY2abS77.download.microsoft.com
-    mode: http
-  port: 8766
-  server: cn01.efan8867801.xyz
-  tfo: false
   type: ss
