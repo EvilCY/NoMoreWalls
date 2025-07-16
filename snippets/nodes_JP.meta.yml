@@ -1,7 +1,7 @@
 proxies:
 - alterId: 64
   cipher: auto
-  name: 1,14,20,22|2|1 |  1.8MB/s|54%|Youtube|Ope...
+  name: 3,15,21,23|1|1 |  1.8MB/s|54%|Youtube|Ope...
   network: ws
   port: 1443
   server: sslvpn.51job.com
@@ -15,17 +15,18 @@ proxies:
     headers:
       Host: centos7
     path: /634c5c4f9782
-- name: 14,15|🇯🇵日本东京2
-  password: 5d110f18-5a37-4db3-8cf6-f0bced38a1ae
-  port: 443
-  server: 154.85.18.233
+- client-fingerprint: chrome
+  name: '15,23,29,30|日本3|@ripaojiedian #2'
+  network: tcp
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 53248
+  server: 36.151.251.48
   skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
+  sni: www.baidu.com
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: '14,22,29|日本v2|@ripaojiedian #2'
+  name: '15,23,30|日本v2|@ripaojiedian #2'
   network: kcp
   port: '56428'
   server: 8.211.136.249
@@ -34,36 +35,24 @@ proxies:
   type: vmess
   uuid: 2a37eb45-4cdd-4c2e-914e-ed2f972e4003
 - alterId: 0
-  name: 14,20,22,36|🇵JP日本4
+  cipher: auto
+  name: 15|日本 - 东京 - CTG Server Ltd. - 4
   network: tcp
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 4445
-  server: 36.151.192.26
-  skip-cert-verify: true
-  sni: www.baidu.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 14,20,22,36|🇯🇵JP日本2
+  port: '40180'
+  server: 120.198.71.213
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- client-fingerprint: chrome
+  name: '15,23,29,30|日本4|@ripaojiedian #2'
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 41225
-  server: 36.151.192.26
+  server: 36.151.251.48
   skip-cert-verify: true
   sni: www.baidu.com
-  tls: true
   type: trojan
-  udp: true
-- name: 14|8|🇯🇵日本
-  password: 2a9b85bd-27cc-4e3b-b77d-54dbe5bc23af
-  port: 443
-  server: aws-linkhy17.liangxin1.xyz
-  skip-cert-verify: true
-  sni: www.apple.com.cn
-  tls: false
-  type: hysteria2
-- name: 14,15|🇯🇵日本东京
+- name: 15,16|🇯🇵日本东京
   password: b866d83a-d301-4270-b699-40f322bf52fb
   port: 443
   server: 154.85.19.63
@@ -72,12 +61,12 @@ proxies:
   tls: false
   type: hysteria2
 - cipher: aes-256-cfb
-  name: 19|🇯🇵JP-54.199.83.239-171_1@171
+  name: 20|🇯🇵JP-54.199.83.239-171_1@171
   password: doub.io
   port: 2333
   server: 54.199.83.239
   type: ss
-- name: 19|🇯🇵JP-3.112.192.169-188_1@188
+- name: 20|🇯🇵JP-3.112.192.169-188_1@188
   password: umis0GDWL5RQ
   port: 16717
   server: 3.112.192.169
@@ -86,7 +75,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 19|🇯🇵 节点日期：04-02_8@0
+  name: 20|🇯🇵 节点日期：04-02_8@0
   network: ws
   port: 2052
   server: cfcdn1.sanfencdn9.com
@@ -98,24 +87,37 @@ proxies:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
 - cipher: rc4-md5
-  name: '20|🇯🇵 日本|@ripaojiedian #1'
+  name: '21|🇯🇵 日本|@ripaojiedian #1'
   password: efanccyun
   port: 8766
   server: cn01.efan8867801.xyz
   type: ss
   udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 20,36|🇯🇵JP日本3
+- cipher: aes-256-gcm
+  name: '21|🇯🇵 日本2|@ripaojiedian #1'
   password: 823e135ed103
   port: 636
   server: 137.220.191.40
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
+- name: 21|🇯🇵 日本3|@ripaojiedian
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 41225
+  server: 36.151.192.26
+  skip-cert-verify: false
+  sni: www.baidu.com
+  type: trojan
+  udp: true
+- name: 21|🇯🇵 日本4|@ripaojiedian
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 4445
+  server: 36.151.192.26
+  skip-cert-verify: false
+  sni: www.baidu.com
+  type: trojan
+  udp: true
 - cipher: rc4-md5
-  name: 20,22|12|🇵 |@ripaojiedian
+  name: 21|🇯🇵 日本|@ripaojiedian 2
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -123,12 +125,11 @@ proxies:
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
-  tfo: false
   type: ss
   udp: true
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '20,22,28|🇯🇵 日本2|@ripaojiedian #2'
+  name: '21,23,29|🇯🇵 日本2|@ripaojiedian #2'
   password: 823e135ed103
   plugin: v2ray-plugin
   plugin-opts:
@@ -144,7 +145,7 @@ proxies:
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: 21|日本 006
+  name: 22|日本 006
   network: ws
   port: 2095
   server: 156.238.18.163
@@ -157,7 +158,7 @@ proxies:
       Host: redw.pooriam.ir
     path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
 - client-fingerprint: chrome
-  name: 21|日本 007
+  name: 22|日本 007
   network: ws
   port: 2052
   server: 156.238.18.165
@@ -170,59 +171,19 @@ proxies:
       Host: redw.pooriam.ir
     path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
 - cipher: aes-128-gcm
-  name: 23|🇯🇵JP-149.22.87.204-0427
+  name: 24|🇯🇵JP-149.22.87.204-0427
   password: shadowsocks
   port: 443
   server: 149.22.87.204
   type: ss
 - cipher: aes-128-gcm
-  name: 23|🇯🇵JP-149.22.87.241-0430
+  name: 24|🇯🇵JP-149.22.87.241-0430
   password: shadowsocks
   port: 443
   server: 149.22.87.241
   type: ss
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: '28|🇯🇵 日本|@ripaojiedian #2'
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202507121073737-EWj4WqPxg0.download.microsoft.com
-    mode: http
-  port: 8766
-  server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
 - client-fingerprint: chrome
-  name: '28,29|日本3|@ripaojiedian #2'
-  network: tcp
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 53248
-  server: 36.151.251.48
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- client-fingerprint: chrome
-  name: '28,29|日本4|@ripaojiedian #2'
-  network: tcp
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 41225
-  server: 36.151.251.48
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- alterId: 0
-  name: 36|JP
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2096
-  server: 156.238.19.69
-  skip-cert-verify: true
-  sni: vle.amclubdns.dpdns.org
-  tls: true
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: '38,39|JP_speednode_0063 #1'
+  name: '39,40|JP_speednode_0063 #1'
   network: ws
   port: 8880
   server: 103.116.7.177
@@ -236,7 +197,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- name: '38,39|JP_speednode_0064 #1'
+- name: '39,40|JP_speednode_0064 #1'
   network: ws
   port: 8880
   server: 103.116.7.186
