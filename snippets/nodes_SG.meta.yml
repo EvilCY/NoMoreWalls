@@ -1,7 +1,7 @@
 proxies:
 - alterId: 64
   cipher: auto
-  name: 3,21,23|2|1 |  1.0MB/s|0%|Netflix|Disn...
+  name: 3,21,23|1|1 |  1.0MB/s|0%|Netflix|Disn...
   port: 49291
   server: 183.236.51.38
   skip-cert-verify: false
@@ -37,6 +37,14 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
+- name: 15,16|新加坡
+  password: vlJbyJEtcNjHvV6dnkZ1Z4VjpI
+  port: 10264
+  server: 13.212.75.22
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
 - client-fingerprint: chrome
   name: '15,21,23,29,30|新加坡2|@ripaojiedian #2'
   network: tcp
@@ -47,18 +55,32 @@ proxies:
   sni: www.baidu.com
   type: trojan
   udp: true
-- name: 15|🇸🇬_SG_新加坡_2
-  network: ws
-  port: 8443
-  server: 27.50.49.232
-  servername: juzibaipiao.5112233.xyz
-  tls: true
-  type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: '%2f%3fed%3d2048'
+- client-fingerprint: chrome
+  name: '15,21,23,29,30|新加坡|@ripaojiedian #2'
+  network: tcp
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 44123
+  server: 36.151.251.48
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+  udp: true
+- name: '15,28|Channel id: @ShadowProxy66🇸🇬 #1'
+  password: 9FmazX8AAPpM8TQcNyI2zvBDF5o
+  port: 28264
+  server: 92.112.23.216
+  skip-cert-verify: true
+  tls: false
+  type: hysteria2
+- alterId: 64
+  cipher: auto
+  name: 15|2|🇸🇬1 |  1.0MB/s|0%|Netflix|Di...
+  network: tcp
+  port: 49291
+  server: 183.236.51.38
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: 15|🇸🇬_SG_新加坡_37
   network: ws
   port: 443
@@ -71,32 +93,20 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
-- alterId: 64
-  cipher: auto
-  name: 15|1|🇸🇬1 |  1.0MB/s|0%|Netflix|Di...
-  network: tcp
-  port: 49291
-  server: 183.236.51.38
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: '15,28|Channel id: @ShadowProxy66🇸🇬 #1'
-  password: 9FmazX8AAPpM8TQcNyI2zvBDF5o
-  port: 28264
-  server: 92.112.23.216
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '15,39,40|SG_speednode_0152 #2'
+  port: 443
+  server: free.server.techsonic.cloud
+  servername: aka.ms
   skip-cert-verify: true
-  tls: false
-  type: hysteria2
-- client-fingerprint: chrome
-  name: '15,21,23,29,30|新加坡|@ripaojiedian #2'
-  network: tcp
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 44123
-  server: 36.151.251.48
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
+  tls: true
+  type: vless
   udp: true
+  uuid: 37ad654f-4d3b-4593-8b1b-7a5b3fcc5b84
 - name: 15|🇸🇬_SG_新加坡_7
   network: ws
   port: 443
@@ -109,14 +119,18 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
-- name: 15,16|新加坡
-  password: vlJbyJEtcNjHvV6dnkZ1Z4VjpI
-  port: 10264
-  server: 13.212.75.22
-  skip-cert-verify: true
-  sni: bing.com
-  tls: false
-  type: hysteria2
+- name: 15|🇸🇬_SG_新加坡_2
+  network: ws
+  port: 8443
+  server: 27.50.49.232
+  servername: juzibaipiao.5112233.xyz
+  tls: true
+  type: vless
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: '%2f%3fed%3d2048'
 - cipher: aes-256-cfb
   name: 20|🇸🇬SG-13.213.46.196-170_1@170
   password: amazonskr05
@@ -249,17 +263,3 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: '39,40|SG_speednode_0152 #1'
-  port: 443
-  server: free.server.techsonic.cloud
-  servername: aka.ms
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 37ad654f-4d3b-4593-8b1b-7a5b3fcc5b84
