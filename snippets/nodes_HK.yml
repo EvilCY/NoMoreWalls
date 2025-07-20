@@ -23,16 +23,48 @@ proxies:
   tls: false
   type: vmess
   uuid: 0596d1ea-8de9-4005-b075-d679a27a7b44
-- alterId: 0
+- alterId: 2
   cipher: auto
-  name: '15,23,30|香港v2|@ripaojiedian #2'
-  network: kcp
-  port: '63101'
-  server: 47.76.160.154
-  servername: ''
+  name: 15|香港 电讯盈科有限公司
+  network: ws
+  port: 30807
+  server: v10.heduian.link
   tls: false
   type: vmess
-  uuid: ba47c516-0c18-49d5-9548-6370c835e163
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  name: '15,23,29,30|香港|@ripaojiedian #2'
+  network: ws
+  port: '30809'
+  server: v9.heduian.link
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
+- alterId: 0
+  client-fingerprint: chrome
+  name: 15,23,29,30,37|🇰HK香港2
+  network: tcp
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 2078
+  server: 36.151.192.62
+  skip-cert-verify: true
+  sni: www.baidu.com
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   client-fingerprint: chrome
   name: 15,23,29,30,37|HK
@@ -46,17 +78,15 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  client-fingerprint: chrome
-  name: 15,23,29,30,37|🇰HK香港2
-  network: tcp
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 2078
-  server: 36.151.192.62
-  skip-cert-verify: true
-  sni: www.baidu.com
-  tls: true
-  type: trojan
-  udp: true
+  cipher: auto
+  name: '15,23,30|香港v2|@ripaojiedian #2'
+  network: kcp
+  port: '63101'
+  server: 47.76.160.154
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ba47c516-0c18-49d5-9548-6370c835e163
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: '23,29|🇭🇰 香港2|@ripaojiedian #1'
@@ -84,33 +114,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 0596d1ea-8de9-4005-b075-d679a27a7b44
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: 24|🇭🇰HK-1.65.250.198-1074
-  network: ws
-  port: 30807
-  server: v7.heduian.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v7.heduian.link
-    path: /oooo
-- cipher: chacha20-ietf
-  name: 24|🇭🇰HK-103.149.182.191-5180
-  password: asd123456
-  port: 8388
-  server: 103.149.182.191
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇭🇰HK-203.23.128.33-5183
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
 - alterId: 0
   cipher: aes-256-gcm
   name: 37|🇰HK香港3
