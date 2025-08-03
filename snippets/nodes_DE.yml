@@ -3,7 +3,7 @@ proxies:
   cipher: auto
   grpc-opts:
     grpc-service-name: vmess-grpc
-  name: 3,15,23,27|国5 | ⬇️ 1.4MB/s|0%|Youtube|...
+  name: 3,15,21,23,27|国5 | ⬇️ 1.4MB/s|0%|Youtube|...
   network: grpc
   port: 443
   server: de.vmess.comnpmjs.com
@@ -11,6 +11,7 @@ proxies:
   skip-cert-verify: false
   tls: true
   type: vmess
+  udp: true
   uuid: ceaaf653-9874-58c6-b100-092c01a1f73d
 - alterId: 0
   cipher: auto
@@ -23,15 +24,6 @@ proxies:
   uuid: dc9b7c08-029e-4e53-985f-8d3d84300394
 - alterId: 0
   cipher: auto
-  name: 15|德国 - 兰河畔林堡 - OVH SAS - 2
-  network: tcp
-  port: '56701'
-  server: fast17.new1gold.com
-  tls: false
-  type: vmess
-  uuid: 1d350e55-cd4e-4c93-9f8b-f8684aa5b8dc
-- alterId: 0
-  cipher: auto
   name: 15|德国 - Falkenstein - Hetzner Onl...
   network: tcp
   port: '14090'
@@ -39,6 +31,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 37fc85cf-30d6-4f25-a19b-cfa5732ff6ca
+- alterId: 0
+  cipher: auto
+  name: 15|德国 - 兰河畔林堡 - OVH SAS - 2
+  network: tcp
+  port: '56701'
+  server: fast17.new1gold.com
+  tls: false
+  type: vmess
+  uuid: 1d350e55-cd4e-4c93-9f8b-f8684aa5b8dc
 - name: 20|🇩🇪DE-52.58.179.46-180_1@180
   password: telegram-id-privatevpns
   port: 22222
@@ -92,11 +93,14 @@ proxies:
   port: 8080
   server: 193.108.119.230
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇩🇪DE-185.177.229.245-0296
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 24,37|🇺AU 4.2MB/s
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 185.177.229.245
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -113,3 +117,39 @@ proxies:
     headers:
       host: de2.v4vmess.xyz
     path: /
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|DE国
+  password: DKyRdoqQIebdKZVYs5GzW8
+  port: 14628
+  server: 45.150.32.13
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|🇩🇪DE德国2 680.9KB/s
+  password: 9RviNa4tscjcmCB408vLSg
+  port: 44354
+  server: 46.101.245.131
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|🇩🇪DE德国3 11.1MB/s
+  password: LiHQX9cDbdooBHlIg0eiqQ
+  port: 34803
+  server: 45.144.54.33
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|🇩🇪DE德国4 14.3MB/s
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 147.45.178.200
+  skip-cert-verify: true
+  tls: true
+  type: ss
