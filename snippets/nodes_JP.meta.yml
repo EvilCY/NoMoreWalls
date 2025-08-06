@@ -1,7 +1,7 @@
 proxies:
 - alterId: 64
   cipher: auto
-  name: 3,15,21,23|1|1 |  1.8MB/s|54%|Youtube|Ope...
+  name: 3,15,21,23,27|1 |  1.8MB/s|54%|Youtube...
   network: ws
   port: 1443
   server: sslvpn.51job.com
@@ -15,6 +15,14 @@ proxies:
     headers:
       Host: centos7
     path: /634c5c4f9782
+- name: '15,23,27|日本3|@ripaojiedian #1'
+  network: tcp
+  password: 02491ccf-e969-4200-9ebd-5e0da4eff308
+  port: 23007
+  server: okanc.iepl.cac.cab
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
 - name: '15,16|🇯🇵日本东京 #1'
   password: b866d83a-d301-4270-b699-40f322bf52fb
   port: 443
@@ -23,17 +31,9 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: '15,16|🇯🇵日本 #1'
-  password: 2a9b85bd-27cc-4e3b-b77d-54dbe5bc23af
-  port: 443
-  server: aws-linkhy17.liangxin1.xyz
-  skip-cert-verify: true
-  sni: www.apple.com.cn
-  tls: false
-  type: hysteria2
 - alterId: 0
   cipher: auto
-  name: '15,23,30|日本v2|@ripaojiedian #2'
+  name: '15,23,27,30|日本v2|@ripaojiedian #3'
   network: kcp
   port: '37257'
   server: 47.74.57.10
@@ -41,31 +41,19 @@ proxies:
   tls: false
   type: vmess
   uuid: cb774883-1c2f-4b8a-8637-828f356e0c76
-- alterId: 0
-  client-fingerprint: chrome
-  name: 15,21,23,29,30,37|🇯🇵JP日本2
-  network: tcp
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 461
-  server: 36.156.102.125
+- name: '15,16|日本Hy2-3 #1'
+  password: 1c473b13-502d-47eb-8cf8-70a38d56c5bd
+  port: 443
+  server: jp1.interld123456789.com
   skip-cert-verify: true
-  sni: www.baidu.com
-  tls: true
-  type: trojan
-  udp: true
+  sni: 1231231.1234567890spcloud.com
+  tls: false
+  type: hysteria2
 - name: '15,16|Channel id: @ShadowProxy66🇯🇵 #3'
   password: wl4HYN9PPKs8d8IzGIt4yKqt0
   port: 53348
   server: 47.74.34.102
   skip-cert-verify: true
-  tls: false
-  type: hysteria2
-- name: '15,16|🇯🇵日本东京2 #1'
-  password: 5d110f18-5a37-4db3-8cf6-f0bced38a1ae
-  port: 443
-  server: 154.85.18.233
-  skip-cert-verify: true
-  sni: www.bing.com
   tls: false
   type: hysteria2
 - name: '15,16|Channel id: @ShadowProxy66🇯🇵 #1'
@@ -76,23 +64,12 @@ proxies:
   sni: www.microsoft.com
   tls: false
   type: hysteria2
-- alterId: 0
-  name: 15,21,23,37|JP
-  network: tcp
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 181
-  server: 36.156.102.125
-  skip-cert-verify: true
-  sni: www.baidu.com
-  tls: true
-  type: trojan
-  udp: true
-- name: '15,16|日本Hy2-3 #1'
-  password: 1c473b13-502d-47eb-8cf8-70a38d56c5bd
+- name: '15,16|🇯🇵日本东京2 #1'
+  password: 5d110f18-5a37-4db3-8cf6-f0bced38a1ae
   port: 443
-  server: jp1.interld123456789.com
+  server: 154.85.18.233
   skip-cert-verify: true
-  sni: 1231231.1234567890spcloud.com
+  sni: www.bing.com
   tls: false
   type: hysteria2
 - name: '15,16|Channel id: @ShadowProxy66🇯🇵 #2'
@@ -101,6 +78,24 @@ proxies:
   server: 45.11.1.62
   skip-cert-verify: true
   sni: www.microsoft.com
+  tls: false
+  type: hysteria2
+- client-fingerprint: chrome
+  name: '15,21,23,27,29,30|日本4|@ripaojiedian #3'
+  network: tcp
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 461
+  server: 36.156.102.125
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+  udp: true
+- name: '15,16|🇯🇵日本 #1'
+  password: 2a9b85bd-27cc-4e3b-b77d-54dbe5bc23af
+  port: 443
+  server: aws-linkhy17.liangxin1.xyz
+  skip-cert-verify: true
+  sni: www.apple.com.cn
   tls: false
   type: hysteria2
 - cipher: aes-256-cfb
@@ -136,19 +131,24 @@ proxies:
   server: cn01.efan8867801.xyz
   type: ss
   udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 21,37|🇵JP日本3
+- cipher: aes-256-gcm
+  name: '21|🇯🇵 日本2|@ripaojiedian #1'
   password: 823e135ed103
   port: 636
   server: 137.220.191.40
-  skip-cert-verify: true
-  tls: true
   type: ss
+  udp: true
+- name: 21|🇯🇵 日本3|@ripaojiedian
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 181
+  server: 36.156.102.125
+  skip-cert-verify: false
+  sni: www.baidu.com
+  type: trojan
   udp: true
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '21,23,29|🇯🇵 日本2|@ripaojiedian #2'
+  name: '21,23,27,29|🇯🇵 日本2|@ripaojiedian #2'
   password: 823e135ed103
   plugin: v2ray-plugin
   plugin-opts:
@@ -164,7 +164,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 21,23|11|🇵 |@ripaojiedian
+  name: 21|🇯🇵 日本|@ripaojiedian 2
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -172,7 +172,6 @@ proxies:
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
-  tfo: false
   type: ss
   udp: true
 - client-fingerprint: chrome
@@ -228,24 +227,3 @@ proxies:
     headers:
       host: ''
     path: /
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: '29|🇯🇵 日本|@ripaojiedian #2'
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202507282137611-RCmbvsdXhz.download.microsoft.com
-    mode: http
-  port: 8766
-  server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
-- client-fingerprint: chrome
-  name: '29,30|日本3|@ripaojiedian #2'
-  network: tcp
-  password: 02491ccf-e969-4200-9ebd-5e0da4eff308
-  port: 23007
-  server: okanc.iepl.cac.cab
-  skip-cert-verify: true
-  sni: www.bilibili.com
-  type: trojan
