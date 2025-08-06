@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 3,15,21,23,27|🇰1 | ⬇️ 1.8MB/s|15%|Disney|...
+  name: 2,15,21,23,27|🇰1 | ⬇️ 1.8MB/s|15%|Disney|...
   network: ws
   port: 8080
   server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
@@ -40,14 +40,16 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- client-fingerprint: chrome
-  name: '15,21,23,27,29,30|香港4|@ripaojiedian #3'
+- alterId: 0
+  client-fingerprint: chrome
+  name: 15,21,23,27,29,30,37|🇰HK香港2
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 447
   server: 36.156.102.125
   skip-cert-verify: true
   sni: www.baidu.com
+  tls: true
   type: trojan
   udp: true
 - alterId: 2
@@ -270,13 +272,16 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- name: 15|香港5|@ripaojiedian
+- alterId: 0
+  name: 15,37|🇰HK香港3
   password: 02491ccf-e969-4200-9ebd-5e0da4eff308
   port: 23003
   server: okanc.iepl.cac.cab
   skip-cert-verify: true
   sni: www.bilibili.com
+  tls: true
   type: trojan
+  udp: true
 - alterId: 2
   cipher: auto
   name: '15|香港 电讯盈科有限公司 #16'
@@ -316,14 +321,16 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- client-fingerprint: chrome
-  name: '15,21,23,27,29,30|香港6|@ripaojiedian #3'
+- alterId: 0
+  client-fingerprint: chrome
+  name: 15,21,23,27,29,30,37|🇰HK香港4
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 444
   server: 36.156.102.125
   skip-cert-verify: true
   sni: www.ithome.com
+  tls: true
   type: trojan
   udp: true
 - alterId: 2
@@ -573,51 +580,28 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- cipher: aes-256-gcm
-  name: '21|🇭🇰 香港2|@ripaojiedian #1'
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 21,37|🇰HK
   password: 9bfdde71b4c0
   port: 636
   server: 103.103.245.158
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
-- alterId: 2
+- alterId: 0
   cipher: auto
-  name: '21|🇭🇰 香港3|@ripaojiedian #1'
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
+  client-fingerprint: chrome
+  name: '21,23,27,29|🇭🇰 香港3|@ripaojiedian #3'
+  port: 51527
+  server: 38.147.188.109
   skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
   udp: true
-  uuid: 6d4abac0-86e6-11ef-83cc-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- name: 21|🇭🇰 香港5|@ripaojiedian
-  password: dfd4867b-26c6-4e49-9b96-ef4dbbb3f31f
-  port: 12221
-  server: gz-43e866.kaiqsz.com
-  skip-cert-verify: false
-  sni: mmbiz.redapricotcloud.com
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 21|🇭🇰 香港7|@ripaojiedian
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ca506e08-ce3d-5e5a-c128-6358caca15e5
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
+  uuid: 861a3fbe-e925-4163-9c28-2413abd580af
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: '21,23,27,29|🇭🇰 香港2|@ripaojiedian #3'
@@ -635,17 +619,6 @@ proxies:
   tfo: false
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: '23,27,29|🇭🇰 香港3|@ripaojiedian #3'
-  port: 51527
-  server: 38.147.188.109
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 861a3fbe-e925-4163-9c28-2413abd580af
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
