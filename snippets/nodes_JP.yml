@@ -1,7 +1,7 @@
 proxies:
 - alterId: 64
   cipher: auto
-  name: 2,14,22,26|1 |  1.8MB/s|54%|Youtube...
+  name: 2,14,22|2|1 |  1.8MB/s|54%|Youtube|Ope...
   network: ws
   port: 1443
   server: sslvpn.51job.com
@@ -17,7 +17,7 @@ proxies:
     path: /634c5c4f9782
 - alterId: 0
   cipher: auto
-  name: '14,22,26,29|日本v2|@ripaojiedian #3'
+  name: '14,22,29|日本v2|@ripaojiedian #2'
   network: kcp
   port: '37257'
   server: 47.74.57.10
@@ -26,8 +26,7 @@ proxies:
   type: vmess
   uuid: cb774883-1c2f-4b8a-8637-828f356e0c76
 - alterId: 0
-  client-fingerprint: chrome
-  name: 14,22,26,28,29,36|🇯🇵JP日本2
+  name: 14,22,36|🇯🇵JP日本2
   network: tcp
   password: 6b5b43c9-05bd-471e-b502-d52c0dbd55fd
   port: 23008
@@ -37,7 +36,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '14,22,26,29|日本4|@ripaojiedian #3'
+- name: '14,22|13|日本4|@ripaojiedian #1'
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 461
@@ -47,7 +46,8 @@ proxies:
   type: trojan
 - alterId: 0
   client-fingerprint: chrome
-  name: 14,22,26,28,36|JP
+  name: 14,22,28,29,36|JP
+  network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 461
   server: 36.156.102.125
@@ -84,7 +84,7 @@ proxies:
     path: /video/GQ2qE5Us9g
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '22,26,28|🇯🇵 日本2|@ripaojiedian #1'
+  name: '22,28|🇯🇵 日本2|@ripaojiedian #1'
   password: 823e135ed103
   plugin: v2ray-plugin
   plugin-opts:
@@ -110,6 +110,36 @@ proxies:
   port: 443
   server: 149.22.87.241
   type: ss
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: '28|🇯🇵 日本|@ripaojiedian #1'
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202507282137611-Ibej7QBdUa.download.microsoft.com
+    mode: http
+  port: 8766
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
+- client-fingerprint: chrome
+  name: '28,29|日本3|@ripaojiedian #2'
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 443
+  server: 157.120.32.122
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- client-fingerprint: chrome
+  name: 28,29|日本5|@ripaojiedian
+  network: tcp
+  password: 6bc1c915-2fee-469b-b0e2-01968be45bf6
+  port: 23007
+  server: okanc.iepl.cac.cab
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
 - alterId: 0
   cipher: aes-256-gcm
   name: 36|🇵JP日本3
