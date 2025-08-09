@@ -1,7 +1,7 @@
 proxies:
 - alterId: 64
   cipher: auto
-  name: 3,23,27|1 | ⬇️ 1.0MB/s|0%|Netflix...
+  name: 2,23,27|1 | ⬇️ 1.0MB/s|0%|Netflix...
   port: 49291
   server: 183.236.51.38
   skip-cert-verify: false
@@ -21,27 +21,6 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 64
-  cipher: auto
-  name: 15|🇸🇬新加坡1 | ⬇️ 1.0MB/s|0%|Netflix...
-  network: tcp
-  port: 49291
-  server: 183.236.51.38
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  client-fingerprint: chrome
-  name: 15,23,27,29,30,37|🇬SG新加坡2
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 406
-  server: 36.156.102.125
-  skip-cert-verify: true
-  sni: www.baidu.com
-  tls: true
-  type: trojan
-  udp: true
 - alterId: 0
   client-fingerprint: chrome
   name: 15,23,27,29,30,37|SG
@@ -54,6 +33,27 @@ proxies:
   tls: true
   type: trojan
   udp: true
+- alterId: 0
+  client-fingerprint: chrome
+  name: 15,23,27,29,30,37|🇬SG新加坡2
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 406
+  server: 36.156.102.125
+  skip-cert-verify: true
+  sni: www.baidu.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 64
+  cipher: auto
+  name: 15|2|🇸🇬1 |  1.0MB/s|0%|Netflix|Di...
+  network: tcp
+  port: 49291
+  server: 183.236.51.38
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-256-cfb
   name: 20|🇸🇬SG-13.213.46.196-170_1@170
   password: amazonskr05
@@ -119,10 +119,16 @@ proxies:
     headers:
       Host: sg1.pkyun.website
     path: /sg1
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇸🇬SG-188.166.220.70-0317
+  password: 24Wk2NSszrfHn22zem1lYV
+  port: 37708
+  server: 188.166.220.70
+  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 24|🇸🇬SG-47.84.62.1-5301
+  name: 24|🇸🇬SG-47.84.62.1-0320
   network: ws
   port: 20086
   server: 47.84.62.1
@@ -134,9 +140,3 @@ proxies:
     headers:
       host: ''
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇸🇬SG-188.166.220.70-0262
-  password: 24Wk2NSszrfHn22zem1lYV
-  port: 37708
-  server: 188.166.220.70
-  type: ss
