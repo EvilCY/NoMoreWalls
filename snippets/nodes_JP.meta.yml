@@ -42,7 +42,7 @@ proxies:
   tls: false
   type: hysteria2
 - alterId: 0
-  name: 15,23,27,29,30,37|🇵JP日本2
+  name: 15,23,37|🇵JP日本2
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 193
@@ -53,6 +53,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
+  client-fingerprint: chrome
   name: 15,23,27,29,30,37|🇯🇵JP日本3
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -105,7 +106,7 @@ proxies:
   type: hysteria2
 - alterId: 2
   cipher: auto
-  name: '15,23,27,29|🇯🇵 日本5|@ripaojiedian #2'
+  name: '15,23|12|🇯🇵 日本5|@ripaojiedian #1'
   network: ws
   port: 30806
   server: v6.heduian.link
@@ -178,6 +179,7 @@ proxies:
       Host: redw.pooriam.ir
     path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
 - cipher: aes-256-gcm
+  client-fingerprint: chrome
   name: '23,27,29|🇯🇵 日本2|@ripaojiedian #1'
   password: 823e135ed103
   plugin: v2ray-plugin
@@ -190,10 +192,11 @@ proxies:
     tls: true
   port: 636
   server: 137.220.191.40
+  tfo: false
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 23,27,29,37|🇯🇵JP日本4
+  name: 23,37|🇯🇵JP日本4
   password: 1a17b19d-4896-4531-af79-6e91d8ef8228
   port: 9898
   server: 52.199.211.144
@@ -232,6 +235,27 @@ proxies:
   port: 443
   server: 149.22.87.204
   type: ss
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: '27,29|🇯🇵 日本|@ripaojiedian #2'
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202507282137611-oza3DJO8nv.download.microsoft.com
+    mode: http
+  port: 8766
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
+- client-fingerprint: chrome
+  name: '27,29,30|日本3|@ripaojiedian #3'
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 409
+  server: 36.156.102.78
+  skip-cert-verify: true
+  sni: 1-dy.ixigua.com
+  type: trojan
 - alterId: 0
   cipher: aes-256-gcm
   name: '37|JP #4'
