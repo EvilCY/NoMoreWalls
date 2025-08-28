@@ -12,22 +12,21 @@ proxies:
   uuid: 88888888-8888-8888-8888-888888888888
 - alterId: 0
   cipher: auto
-  fingerprint: ''
-  name: 4,13|ca0c4c1fd3004ff994dc9909bd6861...
+  name: 4|🅼🅴🅷🅳🅸
   network: ws
-  port: 8443
+  port: '8443'
   server: 2.188.219.43
   servername: ''
   tls: false
   type: vmess
-  udp: false
   uuid: b2e38621-035b-43f8-84a5-e92160762fc3
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
-  fingerprint: ''
-  name: 4,13,37|未知6
+  name: 4,37|未知6
   network: ws
   port: 15924
   server: 47.79.41.14
@@ -35,7 +34,6 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: vmess
-  udp: false
   uuid: f50628ed-e568-4cde-eda8-3dce15edc1c1
   ws-opts:
     path: /f50628ed
@@ -69,8 +67,7 @@ proxies:
     path: /920f9840-4d0f-11f0-a948-6a75f667b472?ed=2048
 - alterId: 0
   cipher: auto
-  fingerprint: ''
-  name: 4,13,37|未知9
+  name: 4,37|未知9
   network: ws
   port: 42717
   server: 210.3.159.150
@@ -78,22 +75,9 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: vmess
-  udp: false
   uuid: b5803d74-c6f8-415f-e1e6-ebc9e4269b86
   ws-opts:
     path: /
-- name: 4,25|🏁RELAY-172.64.80.1-1045
-  network: ws
-  password: f282b878-8711-45a1-8c69-5564172123c1
-  port: 443
-  server: aio.zipzap.biz.id
-  skip-cert-verify: false
-  sni: aio.zipzap.biz.id
-  type: trojan
-  ws-opts:
-    headers:
-      Host: aio.zipzap.biz.id
-    path: '%2Faioproxybot%2F129.150.49.58-18650'
 - name: 4|🅼🅴🅷🅳🅸```
   network: ws
   password: f282b878-8711-45a1-8c69-5564172123c1
@@ -144,16 +128,15 @@ proxies:
   tfo: false
   type: ss
 - alterId: 0
-  name: 12,15,21,25,37|🇰HK香港5
-  network: tcp
-  password: 0042a837-cf5e-4d00-b31a-460677e68b6f
-  port: 12221
-  server: hxkad246454.nkrpjj.cn
-  skip-cert-verify: true
-  sni: nkrpjj.cn
-  tls: true
-  type: trojan
-  udp: true
+  cipher: auto
+  name: '12,21,23,29|🇭🇰 香港3|@ripaojiedian #1'
+  port: 31552
+  server: 38.147.189.37
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 07048eb8-af77-407f-9426-af79a45d2bb1
 - alterId: 0
   name: 12,15,21,23,25,29,30,37|🇭🇰HK香港4
   network: tcp
@@ -165,44 +148,59 @@ proxies:
   tls: true
   type: trojan
   udp: true
+- alterId: 2
+  cipher: auto
+  name: '12,15,21,23,25,29,30|香港5|@ripaojiedian #1'
+  network: ws
+  port: '80'
+  server: hkt.gotochinatown.net
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: hkt.gotochinatown.net
+    path: /
 - alterId: 0
-  name: 12,15,21,22,25,37|🇰HK香港2
+  name: '12,15,21,23,25,29,30,37|HK #4'
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 443
-  server: 3.112.225.166
+  server: 42.2.237.179
   skip-cert-verify: true
   sni: www.baidu.com
   tls: true
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 12,25|TW-36.232.83.98-0724
-  password: 9c148944-7bca-4ed3-96a4-514d874226e8
-  port: 10149
-  server: 36.232.83.98
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 12,21,23,25,29,37|TW
+  password: 72ba05a3-632e-490b-ad00-158578664c18
+  port: 10032
+  server: 125.230.12.246
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 12,25|🇼TW-125.228.34.244-0725
-  password: b12d7bef-dbe6-4eca-bc40-9a2333dcf918
-  port: 10105
-  server: 125.228.34.244
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 12,21,23,25,29,37|🇹🇼TW台湾2
+  password: befbdd4b-0cb5-42f1-9aad-7aae3ba11ed9
+  port: 10121
+  server: 125.229.88.58
+  skip-cert-verify: true
   tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 12,25|🇹🇼TW-1.165.98.202-0726
-  password: ad14ac91-6101-4888-9d17-ca11150d823e
-  port: 10034
-  server: 1.165.98.202
-  tfo: false
+  tls: true
   type: ss
 - cipher: rc4-md5
-  name: 12,21|[SS] 🇯🇵 日本|@ripaojiedian 2
+  name: '12,21,23,29|🇯🇵 日本|@ripaojiedian #1'
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202508150964186-fU2HxC1HnE.download.microsoft.com
+    host: 202508150964186-1Vi6U9m87m.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
@@ -224,59 +222,49 @@ proxies:
   tfo: false
   type: ss
 - alterId: 0
-  name: 12,15,21,25,37|🇵JP日本2
+  name: '12,15,21,23,25,29,30,37|JP #6'
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 3270
+  server: 36.150.215.203
+  skip-cert-verify: true
+  sni: www.baidu.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 12,15,21,23,25,29,30,37|🇵JP日本3
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 40950
-  server: 43.199.63.145
+  server: 36.150.215.203
   skip-cert-verify: true
   sni: www.baidu.com
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: 12,15,21,25,37|🇯🇵JP日本6
+  name: 12,15,21,23,25,29,30,37|🇬SG新加坡3
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 13345
-  server: 43.199.63.145
+  port: 3043
+  server: 36.150.215.203
   skip-cert-verify: true
   sni: www.baidu.com
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: 12,15,21,25,37|🇬SG新加坡4
+  name: '12,15,21,23,25,29,30,37|SG #10'
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 8116
-  server: 43.199.63.145
+  port: 4397
+  server: 36.150.215.203
   skip-cert-verify: true
   sni: www.baidu.com
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  name: 12,15,21,25,37|🇬SG新加坡2
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 2045
-  server: 43.199.63.145
-  skip-cert-verify: true
-  sni: www.baidu.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 12,25,37|🇸🇬SG新加坡5 958.1KB/s
-  password: GhYEufnq9M9yvgAc1ylvfq
-  port: 18336
-  server: 165.22.61.177
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: ss
 - alterId: 0
   cipher: auto
   name: '12,15,21,22,23,25,29,30|美国|@ripaojiedian #2'
@@ -294,38 +282,48 @@ proxies:
       Host: ssssssssssssfffffffgh.2032.pp.ua
     path: /6We3U9Df1WGxgFnoFPw1
 - cipher: rc4-md5
-  name: 12,21|[SS] 🇺🇸 美国2|@ripaojiedian 2
+  name: '12,21,23,29|🇺🇸 美国2|@ripaojiedian #1'
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202508150964186-fU2HxC1HnE.download.microsoft.com
+    host: 202508150964186-1Vi6U9m87m.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
 - alterId: 0
-  name: 12,15,21,25,37|US国
+  name: 12,15,21,23,25,29,30,37|🇺🇸US美国3
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 4801
-  server: 43.199.63.145
+  server: 36.150.215.203
   skip-cert-verify: true
   sni: 36.156.102.116
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: 12,15,21,25,37|🇺🇸US美国5
+  name: 12,15,21,23,25,29,30,37|🇺🇸US美国8
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 5343
-  server: 43.199.63.145
+  port: 7177
+  server: 36.150.215.203
   skip-cert-verify: true
   sni: www.baidu.com
   tls: true
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: '12,15,23,30|香港3|@ripaojiedian #2'
+  network: tcp
+  port: '31552'
+  server: 38.147.189.37
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 07048eb8-af77-407f-9426-af79a45d2bb1
 - alterId: 0
   cipher: auto
   name: '12,15,23,30|香港v2|@ripaojiedian #2'
@@ -503,336 +501,6 @@ proxies:
   uuid: 88888888-8888-8888-8888-888888888888
 - alterId: 0
   cipher: auto
-  name: '12,21,23,29|🇭🇰 香港3|@ripaojiedian #1'
-  port: 31552
-  server: 38.147.189.37
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 07048eb8-af77-407f-9426-af79a45d2bb1
-- alterId: 2
-  cipher: auto
-  name: '12,15,21,23,25,29,30|香港5|@ripaojiedian #1'
-  network: ws
-  port: '80'
-  server: hkt.gotochinatown.net
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: hkt.gotochinatown.net
-    path: /
-- alterId: 0
-  name: '12,15,21,23,25,29,30,37|HK #4'
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 443
-  server: 42.2.237.179
-  skip-cert-verify: true
-  sni: www.baidu.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 12,21,23,25,29,37|TW
-  password: 72ba05a3-632e-490b-ad00-158578664c18
-  port: 10032
-  server: 125.230.12.246
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 12,21,23,25,29,37|🇹🇼TW台湾2
-  password: befbdd4b-0cb5-42f1-9aad-7aae3ba11ed9
-  port: 10121
-  server: 125.229.88.58
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: ss
-- cipher: rc4-md5
-  name: '12,23,29|🇯🇵 日本|@ripaojiedian #1'
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202508150964186-1Vi6U9m87m.download.microsoft.com
-    mode: http
-  port: 8766
-  server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
-- alterId: 0
-  name: '12,15,21,23,25,29,30,37|JP #6'
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 3270
-  server: 36.150.215.203
-  skip-cert-verify: true
-  sni: www.baidu.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 12,15,21,23,25,29,30,37|🇵JP日本3
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 40950
-  server: 36.150.215.203
-  skip-cert-verify: true
-  sni: www.baidu.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 12,15,21,23,25,29,30,37|🇬SG新加坡3
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 3043
-  server: 36.150.215.203
-  skip-cert-verify: true
-  sni: www.baidu.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: '12,15,21,23,25,29,30,37|SG #10'
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 4397
-  server: 36.150.215.203
-  skip-cert-verify: true
-  sni: www.baidu.com
-  tls: true
-  type: trojan
-  udp: true
-- cipher: rc4-md5
-  name: '12,23,29|🇺🇸 美国2|@ripaojiedian #1'
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202508150964186-1Vi6U9m87m.download.microsoft.com
-    mode: http
-  port: 8774
-  server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
-- alterId: 0
-  name: 12,15,21,23,25,29,30,37|🇺🇸US美国3
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 4801
-  server: 36.150.215.203
-  skip-cert-verify: true
-  sni: 36.156.102.116
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 12,15,21,23,25,29,30,37|🇺🇸US美国8
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 7177
-  server: 36.150.215.203
-  skip-cert-verify: true
-  sni: www.baidu.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: 13|ac8d0e8c76f448f18c050b5f5de11b...
-  network: grpc
-  port: 443
-  server: meli_proxyy.vip-plan.org
-  tls: true
-  type: vmess
-  udp: false
-  uuid: 2ed80266-0b0a-478c-86fd-278ffb84cd44
-- name: 13|64e06becfd8c4ababc8d6d7e099a7b...
-  password: d6b6ea41-0950-4611-8246-224583e4ed1e
-  port: 443
-  server: 151.101.194.228
-  type: trojan
-- name: 13|8f0ea0c51cf844d889ca9598d24347...
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 104.16.192.1
-  type: trojan
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: 13|60523e576a494b3b8b9fe092dff6c2...
-  network: ws
-  port: 6969
-  server: 5.39.252.182
-  tls: false
-  type: vmess
-  udp: false
-  uuid: dfd159f3-051d-4836-80fd-5bcc05e8f258
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: 13|8e40e5ee2eaa4ddda05eb2c590ac84...
-  network: ws
-  port: 5128
-  server: 103.136.68.92
-  tls: false
-  type: vmess
-  udp: false
-  uuid: 59e5bf3b-8600-43ae-96c4-c13cb62c75f1
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: 13|c19426308cca46b8a1617affca7feb...
-  network: ws
-  port: 8880
-  server: 104.21.238.194
-  tls: false
-  type: vmess
-  udp: false
-  uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-  ws-opts:
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: 13|e06861cd43ab4c0695aec0454f26a3...
-  network: ws
-  port: 6969
-  server: 5.39.252.182
-  tls: false
-  type: vmess
-  udp: false
-  uuid: bafa804f-9eed-4b4b-a553-ebaca8b7f477
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: 13|68eaadd10d874d1eb46330cde89644...
-  network: ws
-  port: 2083
-  server: www.meter.net
-  tls: true
-  type: vmess
-  udp: false
-  uuid: d218dfe5-fae6-408e-b615-8666df7f0924
-  ws-opts:
-    path: /wssss
-- alterId: 1
-  cipher: auto
-  fingerprint: ''
-  name: 13|5d0436baddfc4ab2bf2a025d8d663c...
-  network: ws
-  port: 443
-  server: d.ritchier.info
-  servername: d.ritchier.info
-  tls: true
-  type: vmess
-  udp: false
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      host: d.ritchier.info
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: 13|66336dfbc6e240bba1e2a10bee2d5b...
-  network: ws
-  port: 8443
-  server: 104.17.121.140
-  tls: true
-  type: vmess
-  udp: false
-  uuid: 3da5d27f-08d0-4078-f890-cf950ecb1708
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: 13|fb350da9f5cd4601bffd05e9406343...
-  network: ws
-  port: 37122
-  server: 103.38.83.253
-  tls: false
-  type: vmess
-  udp: false
-  uuid: edc493ca-b939-4097-e0c3-c8fee243eac6
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: 13|33c5e2ba2d9740afa07033212e546f...
-  network: ws
-  port: 20521
-  server: 118.43.158.220
-  tls: false
-  type: vmess
-  udp: false
-  uuid: ab6dde08-ce0d-4c3d-b708-da53af1a862d
-  ws-opts:
-    path: /
-- name: 13|13e1edcbad23456eae5f4477da1a9c...
-  password: f282b878-8711-45a1-8c69-5564172123c1
-  port: 443
-  server: aio.zipzap.biz.id
-  type: trojan
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: 13,37|未知3
-  network: ws
-  port: 443
-  server: 104.25.174.85
-  servername: 920f9840-4d0f-11f0-a948-6a75f667b472.ShomaParvazRoYadetonNist-BypassIsHere.lat
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: false
-  uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
-  ws-opts:
-    headers:
-      host: 920f9840-4d0f-11f0-a948-6a75f667b472.ShomaParvazRoYadetonNist-BypassIsHere.lat
-    path: /920f9840-4d0f-11f0-a948-6a75f667b472?ed=2048
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: 13,37|未知8
-  network: ws
-  port: 443
-  server: 141.101.113.6
-  servername: 920f9840-4d0f-11f0-a948-6a75f667b472.ShomaParvazRoYadetonNist-BypassIsHere.lat
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: false
-  uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
-  ws-opts:
-    headers:
-      host: 920f9840-4d0f-11f0-a948-6a75f667b472.ShomaParvazRoYadetonNist-BypassIsHere.lat
-    path: /920f9840-4d0f-11f0-a948-6a75f667b472?ed=2048
-- name: 13|6dec527a3f7f423c9b2ed974e7d91a...
-  password: f282b878-8711-45a1-8c69-5564172123c1
-  port: 443
-  server: 172.67.181.173
-  type: trojan
-- alterId: 0
-  cipher: auto
   name: 15|俄罗斯 V2CROSS.COM
   network: tcp
   port: 100
@@ -840,6 +508,26 @@ proxies:
   tls: false
   type: vmess
   uuid: 0888adea-086c-4783-9989-85df86819c1f
+- alterId: 0
+  name: 15,25,37|🇰HK香港5
+  password: 0042a837-cf5e-4d00-b31a-460677e68b6f
+  port: 12221
+  server: hxkad246454.nkrpjj.cn
+  skip-cert-verify: true
+  sni: nkrpjj.cn
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 15,25,37|🇬SG新加坡2
+  password: 253bc477d4e43c209f2d427272968280
+  port: 2045
+  server: 43.199.63.145
+  skip-cert-verify: true
+  sni: www.baidu.com
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 1
   cipher: auto
   name: 15|日本 - 东京 - Amazon Technologies ...
@@ -849,6 +537,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 2b30da31-c82a-3c2a-bb35-e9e2bb142781
+- alterId: 0
+  name: 15,25,37|🇬SG新加坡4
+  password: 253bc477d4e43c209f2d427272968280
+  port: 8116
+  server: 43.199.63.145
+  skip-cert-verify: true
+  sni: www.baidu.com
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 2
   cipher: auto
   name: 15|中国 - 香港 - PCCW IMS Limited - 8
@@ -877,6 +575,16 @@ proxies:
       Host: aflzzul.meiquankongjian.com
     path: /564dfa20/
 - alterId: 0
+  name: 15,25,37|🇵JP日本2
+  password: 253bc477d4e43c209f2d427272968280
+  port: 40950
+  server: 43.199.63.145
+  skip-cert-verify: true
+  sni: www.baidu.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
   cipher: auto
   name: 15|美国 - 旧金山 - Newserverlife LLC -...
   network: ws
@@ -900,16 +608,6 @@ proxies:
   uuid: 2b30da31-c82a-3c2a-bb35-e9e2bb142781
 - alterId: 0
   cipher: auto
-  name: '15,23,30|香港3|@ripaojiedian #2'
-  network: tcp
-  port: '31552'
-  server: 38.147.189.37
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 07048eb8-af77-407f-9426-af79a45d2bb1
-- alterId: 0
-  cipher: auto
   name: '15|甘肃省兰州市 移动 #1'
   network: ws
   port: 52512
@@ -921,6 +619,16 @@ proxies:
     headers:
       Host: aflzzul.meiquankongjian.com
     path: /564dfa20/
+- alterId: 0
+  name: 15,25,37|US国
+  password: 253bc477d4e43c209f2d427272968280
+  port: 4801
+  server: 43.199.63.145
+  skip-cert-verify: true
+  sni: 36.156.102.116
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 15|美国 - 洛杉矶 - IT7 Networks Inc - ...
@@ -971,6 +679,16 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
+  name: 15,25,37|🇺🇸US美国5
+  password: 253bc477d4e43c209f2d427272968280
+  port: 5343
+  server: 43.199.63.145
+  skip-cert-verify: true
+  sni: www.baidu.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
   cipher: auto
   name: 15|中国 - 惠州市 - China Mobile - 6
   network: tcp
@@ -1014,6 +732,27 @@ proxies:
     headers:
       Host: screen-imperial-caps-tmp.trycloudflare.com
     path: /vmess-argo
+- alterId: 0
+  name: 15,25,37|🇯🇵JP日本6
+  password: 253bc477d4e43c209f2d427272968280
+  port: 13345
+  server: 43.199.63.145
+  skip-cert-verify: true
+  sni: www.baidu.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 15,22,25,37|🇰HK香港2
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 443
+  server: 3.112.225.166
+  skip-cert-verify: true
+  sni: www.baidu.com
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 15|美国 - 亨德森 - Cloudflare, Inc. - ...
@@ -9859,6 +9598,33 @@ proxies:
   uuid: 36793d2c-0d5a-4a84-8862-f9c93e9af5b5
   ws-opts:
     path: /4ba99a39b90faa/
+- cipher: chacha20-ietf-poly1305
+  name: 25|TW-36.232.83.98-0724
+  password: 9c148944-7bca-4ed3-96a4-514d874226e8
+  port: 10149
+  server: 36.232.83.98
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 25|🇼TW-125.228.34.244-0725
+  password: b12d7bef-dbe6-4eca-bc40-9a2333dcf918
+  port: 10105
+  server: 125.228.34.244
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 25|🇹🇼TW-1.165.98.202-0726
+  password: ad14ac91-6101-4888-9d17-ca11150d823e
+  port: 10034
+  server: 1.165.98.202
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 25,37|🇸🇬SG新加坡5 958.1KB/s
+  password: GhYEufnq9M9yvgAc1ylvfq
+  port: 18336
+  server: 165.22.61.177
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - alterId: 2
   cipher: auto
   name: 25|🇳CN-36.151.194.29-0748
@@ -12414,6 +12180,18 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: '%2FTelegram'
+- name: 25|🏁RELAY-172.64.80.1-1045
+  network: ws
+  password: f282b878-8711-45a1-8c69-5564172123c1
+  port: 443
+  server: aio.zipzap.biz.id
+  skip-cert-verify: false
+  sni: aio.zipzap.biz.id
+  type: trojan
+  ws-opts:
+    headers:
+      Host: aio.zipzap.biz.id
+    path: '%2Faioproxybot%2F129.150.49.58-18650'
 - name: 25|🏁RELAY-172.67.181.173-1046
   network: ws
   password: f282b878-8711-45a1-8c69-5564172123c1
@@ -50322,6 +50100,20 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
+  cipher: auto
+  name: 37|未知3
+  network: ws
+  port: 443
+  server: 104.25.174.85
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
+  ws-opts:
+    headers:
+      host: 920f9840-4d0f-11f0-a948-6a75f667b472.ShomaParvazRoYadetonNist-BypassIsHere.lat
+    path: /920f9840-4d0f-11f0-a948-6a75f667b472?ed=2048
+- alterId: 0
   name: 37|🇧GB英国2
   password: ttfang
   port: 2096
@@ -50394,6 +50186,20 @@ proxies:
   tls: true
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 37|未知8
+  network: ws
+  port: 443
+  server: 141.101.113.6
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
+  ws-opts:
+    headers:
+      host: 920f9840-4d0f-11f0-a948-6a75f667b472.ShomaParvazRoYadetonNist-BypassIsHere.lat
+    path: /920f9840-4d0f-11f0-a948-6a75f667b472?ed=2048
 - alterId: 0
   name: 37|US2
   network: ws
