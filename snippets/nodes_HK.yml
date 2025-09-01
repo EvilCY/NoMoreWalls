@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 11,20,22|10|🇭🇰 香港3|@ripaojiedian
+  name: 11|Hong Kong_None_vmess_104
   port: 51571
   server: 38.147.188.96
   skip-cert-verify: false
@@ -11,7 +11,7 @@ proxies:
   uuid: 740ec514-d2bd-45bb-b410-7ea5a05cdd87
 - alterId: 0
   cipher: auto
-  name: 11,14,22|11|香港3|@ripaojiedian
+  name: 11|Hong Kong_None_vmess_1023
   network: tcp
   port: '51571'
   server: 38.147.188.96
@@ -32,7 +32,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '11,28|🇭🇰 香港3|@ripaojiedian #1'
+  name: '11,20,22,28|🇭🇰 香港3|@ripaojiedian #1'
   port: 25013
   server: 38.147.188.160
   skip-cert-verify: false
@@ -42,7 +42,7 @@ proxies:
   uuid: e90bfc71-1a0a-43e8-9272-6be036e9d88e
 - alterId: 0
   cipher: auto
-  name: '11,29|香港3|@ripaojiedian #2'
+  name: '11,14,22,29|香港3|@ripaojiedian #2'
   network: tcp
   port: '25013'
   server: 38.147.188.160
@@ -52,8 +52,43 @@ proxies:
   uuid: e90bfc71-1a0a-43e8-9272-6be036e9d88e
 - alterId: 2
   cipher: auto
+  name: 14|香港 电讯盈科有限公司
+  network: ws
+  port: '30807'
+  server: v10.heduian.link
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: '14|香港 电讯盈科有限公司 #1'
+  network: ws
+  port: '80'
+  server: hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: hkt.gotochinatown.net
+    path: /
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 20,36|🇰HK香港2
+  password: 9969db7a2f51
+  port: 443
+  server: 156.251.179.135
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 2
+  cipher: auto
   client-fingerprint: chrome
-  name: 14,23|🇭🇰HK-116.49.109.153-0280
+  name: 23|🇭🇰HK-116.49.109.153-0280
   network: ws
   port: 80
   server: hkt.gotochinatown.net
@@ -65,15 +100,6 @@ proxies:
     headers:
       host: hkt.gotochinatown.net
     path: /
-- alterId: 0
-  cipher: aes-256-gcm
-  name: '20,36|HK #4'
-  password: 9969db7a2f51
-  port: 443
-  server: 156.251.179.135
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
@@ -103,4 +129,39 @@ proxies:
   ws-opts:
     headers:
       host: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 38|HK_speednode_0009
+  port: 24229
+  server: 203.184.246.7
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 50b9297e-c728-46c0-de4b-36ddf8948007
+- alterId: 0
+  cipher: auto
+  name: 38|HK_speednode_0010
+  port: 51043
+  server: 203.184.246.211
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c05b241c-0de2-4959-b3a0-ec3df5bfda99
+- alterId: 0
+  cipher: auto
+  name: 38|HK_speednode_0011
+  network: ws
+  port: 80
+  server: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
     path: /
