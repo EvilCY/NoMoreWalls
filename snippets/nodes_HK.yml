@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 10,19,21|11|🇭🇰 香港3|@ripaojiedian
+  name: 11|Hong Kong_None_vmess_104
   port: 25013
   server: 38.147.188.160
   skip-cert-verify: false
@@ -11,7 +11,7 @@ proxies:
   uuid: e90bfc71-1a0a-43e8-9272-6be036e9d88e
 - alterId: 0
   cipher: auto
-  name: 10,13,21|12|香港3|@ripaojiedian
+  name: 11|Hong Kong_None_vmess_1021
   network: tcp
   port: '25013'
   server: 38.147.188.160
@@ -21,7 +21,7 @@ proxies:
   uuid: e90bfc71-1a0a-43e8-9272-6be036e9d88e
 - alterId: 0
   cipher: auto
-  name: '10,13,21,28|香港v2|@ripaojiedian #2'
+  name: '11,14,22,29|香港v2|@ripaojiedian #2'
   network: kcp
   port: '28590'
   server: 47.239.183.87
@@ -30,7 +30,7 @@ proxies:
   type: vmess
   uuid: d75481c7-b5c8-40a9-811a-02b709e74816
 - client-fingerprint: chrome
-  name: '10,27,28|香港4|@ripaojiedian #2'
+  name: '11,14,20,22,28,29|香港4|@ripaojiedian #2'
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 443
@@ -41,22 +41,23 @@ proxies:
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: '10,27,28|香港5|@ripaojiedian #2'
+  name: 11,14,20,22,28,29,38|HK_speednode_0016
   network: ws
-  port: '80'
+  port: 80
   server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-  servername: ''
+  servername: broadcastlv.chat.bilibili.com
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
+  udp: true
   uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
   ws-opts:
     headers:
       Host: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
     path: /
 - client-fingerprint: chrome
-  name: '10,20,27,28|香港6|@ripaojiedian #2'
+  name: '11,14,20,21,22,28,29|香港6|@ripaojiedian #2'
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 443
@@ -66,21 +67,30 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: 13|香港 电讯盈科有限公司
+  name: 14|香港 电讯盈科有限公司
   network: ws
-  port: 30807
-  server: v10.heduian.link
+  port: 80
+  server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
   tls: false
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
   ws-opts:
     headers:
-      Host: ''
-    path: /oooo
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 20,36|🇰HK香港3
+  password: 9969db7a2f51
+  port: 443
+  server: 156.251.179.135
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 13,22|🇭🇰HK-116.49.109.153-0280
+  name: 23|🇭🇰HK-116.49.109.153-0280
   network: ws
   port: 80
   server: hkt.gotochinatown.net
@@ -92,16 +102,10 @@ proxies:
     headers:
       host: hkt.gotochinatown.net
     path: /
-- cipher: aes-256-gcm
-  name: 19|[SS] 🇭🇰 香港2|@ripaojiedian
-  password: 9969db7a2f51
-  port: 443
-  server: 156.251.179.135
-  type: ss
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 22|🇭🇰HK-1.65.139.81-0273
+  name: 23|🇭🇰HK-1.65.139.81-0273
   network: ws
   port: 80
   server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
@@ -116,7 +120,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 22|🇭🇰HK-1.36.223.95-0284
+  name: 23|🇭🇰HK-1.36.223.95-0284
   network: ws
   port: 80
   server: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
@@ -128,18 +132,18 @@ proxies:
     headers:
       host: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
     path: /
-- alterId: 2
+- alterId: 0
   cipher: auto
-  name: 37|HK_speednode_0008
-  network: ws
-  port: 80
-  server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 38|HK_speednode_0015
+  network: http
+  port: 30397
+  server: 43.247.135.17
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
+  uuid: 7364bf26-0eb6-40cc-b7e6-fb1a4b6bf69c
