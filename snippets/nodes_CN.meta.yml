@@ -1,7 +1,6 @@
 proxies:
 - alterId: 2
   cipher: auto
-  client-fingerprint: chrome
   name: '12,15,21,23,29,30|香港|@ripaojiedian #2'
   network: ws
   port: '30809'
@@ -17,7 +16,6 @@ proxies:
       Host: baidu.com
     path: /oooo
 - cipher: aes-256-gcm
-  client-fingerprint: chrome
   name: '12,21,23,29|🇭🇰 香港2|@ripaojiedian #1'
   password: 2b5fad3874e5
   plugin: v2ray-plugin
@@ -33,7 +31,7 @@ proxies:
   tfo: false
   type: ss
 - cipher: rc4-md5
-  name: '12,21,23|12| |@ripaojiedian #1'
+  name: 12|China_Shenzhen_ss_1010
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -45,7 +43,6 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  client-fingerprint: chrome
   name: '12,15,21,23,29,30|新加坡3|@ripaojiedian #2'
   network: ws
   port: '30839'
@@ -61,7 +58,7 @@ proxies:
       Host: baidu.com
     path: /oooo
 - cipher: rc4-md5
-  name: 12,21,23|12| 2|@ripaojiedian
+  name: 12|China_Shenzhen_ss_1016
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -72,8 +69,7 @@ proxies:
   tfo: false
   type: ss
 - cipher: rc4-md5
-  client-fingerprint: chrome
-  name: '12,29|🇯🇵 日本|@ripaojiedian #1'
+  name: 12,21|[SS] 🇯🇵 日本|@ripaojiedian 2
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -83,27 +79,30 @@ proxies:
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: '12,29,30|日本4|@ripaojiedian #2'
+- alterId: 0
+  name: 12,15,21,23,29,30,37|🇵JP日本3
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 1924
   server: 36.156.102.77
   skip-cert-verify: true
   sni: 23.45.86.28
+  tls: true
   type: trojan
-- client-fingerprint: chrome
-  name: '12,29,30|新加坡2|@ripaojiedian #2'
+  udp: true
+- alterId: 0
+  name: 12,15,21,23,29,30,37|🇬SG新加坡2
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 9160
   server: 36.156.102.77
   skip-cert-verify: true
   sni: 23.45.86.28
+  tls: true
   type: trojan
+  udp: true
 - cipher: rc4-md5
-  client-fingerprint: chrome
-  name: '12,29|🇺🇸 美国2|@ripaojiedian #1'
+  name: 12,21|[SS] 🇺🇸 美国2|@ripaojiedian 2
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -113,27 +112,39 @@ proxies:
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
+- name: 15|🇨🇳_CN_中国_38
+  network: ws
+  port: 2053
+  server: 103.184.44.62
+  servername: juzibaipiao.5112233.xyz
+  tls: true
+  type: vless
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: '%2f%3fed%3d2048'
 - alterId: 64
   cipher: auto
-  name: 15|中国 - 北京 - Hangzhou Alibaba Adv...
+  name: 15|中国 - 广州市 - China Mobile commun...
   network: tcp
   port: '50002'
-  server: 39.100.81.215
+  server: 120.210.205.59
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 15|中国 - 上海 - Hangzhou Alibaba Adv...
+  network: tcp
+  port: '50002'
+  server: 106.14.75.114
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 15|中国 - 水寨 - Hytron Network Servi...
-  network: tcp
-  port: '15112'
-  server: hkt-detour-12.grabgo.pro
-  tls: false
-  type: vmess
-  uuid: d673e01d-e157-4c99-9421-c9fdf63cf870
-- alterId: 0
-  cipher: auto
-  name: '15|中国 - 水寨 - Hytron Network Servi... #1'
   network: tcp
   port: '15105'
   server: hkt-detour-05.grabgo.pro
@@ -151,34 +162,22 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 15|中国 - 广州市 - China Mobile commun...
+  name: 15|中国 - 北京 - Hangzhou Alibaba Adv...
   network: tcp
-  port: '50002'
-  server: 120.210.205.59
+  port: '30302'
+  server: 39.107.155.11
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '15|中国 - 水寨 - Hytron Network Servi... #2'
+  name: '15|中国 - 水寨 - Hytron Network Servi... #1'
   network: tcp
-  port: '15106'
-  server: hkt-detour-06.grabgo.pro
+  port: '15112'
+  server: hkt-detour-12.grabgo.pro
   tls: false
   type: vmess
   uuid: d673e01d-e157-4c99-9421-c9fdf63cf870
-- name: 15|🇨🇳_CN_中国_38
-  network: ws
-  port: 2053
-  server: 103.184.44.62
-  servername: juzibaipiao.5112233.xyz
-  tls: true
-  type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: '%2f%3fed%3d2048'
 - alterId: 0
   cipher: auto
   name: 15|中国 - 臺北市 - Global Communicatio...
@@ -188,12 +187,21 @@ proxies:
   tls: false
   type: vmess
   uuid: 35ce6e3a-4ddc-472c-9e9f-a34362c194e7
+- alterId: 0
+  cipher: auto
+  name: '15|中国 - 水寨 - Hytron Network Servi... #2'
+  network: tcp
+  port: '15106'
+  server: hkt-detour-06.grabgo.pro
+  tls: false
+  type: vmess
+  uuid: d673e01d-e157-4c99-9421-c9fdf63cf870
 - alterId: 64
   cipher: auto
   name: '15|中国 - 北京 - Hangzhou Alibaba Adv... #1'
   network: tcp
-  port: '30302'
-  server: 39.107.155.11
+  port: '50002'
+  server: 39.100.81.215
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -206,15 +214,6 @@ proxies:
   tls: false
   type: vmess
   uuid: d673e01d-e157-4c99-9421-c9fdf63cf870
-- alterId: 64
-  cipher: auto
-  name: 15|中国 - 上海 - Hangzhou Alibaba Adv...
-  network: tcp
-  port: '50002'
-  server: 106.14.75.114
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 20|🇨🇳CN-139.227.223.3-049_1@49
