@@ -34,7 +34,7 @@ proxies:
   type: ss
 - alterId: 0
   client-fingerprint: chrome
-  name: 12,15,21,23,29,30,37|🇰HK香港2
+  name: 12,15,21,23,29,30,37|🇭🇰HK香港2
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 391
@@ -44,18 +44,15 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 12,21,23,37|🇰HK香港4
+- cipher: aes-256-gcm
+  name: 12|China_Guangzhou_ss_108
   password: RGl5M0p1UHhZSExJM3VwNGFsd3l1WHpmWTVheVRHVWM=
   port: 50803
   server: 8.138.9.184
-  skip-cert-verify: true
   tfo: false
-  tls: true
   type: ss
 - cipher: rc4-md5
-  name: 12,21,23|12| |@ripaojiedian
+  name: 12|China_None_ss_109
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -66,7 +63,7 @@ proxies:
   tfo: false
   type: ss
 - alterId: 0
-  name: 12,15,21,23,37|🇯🇵JP日本4
+  name: 12,37|🇯🇵JP日本5
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 1924
@@ -78,7 +75,7 @@ proxies:
   udp: true
 - alterId: 0
   client-fingerprint: chrome
-  name: 12,15,21,23,29,30,37|🇬SG加
+  name: 12,15,21,23,29,30,37|🇬SG新加坡2
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 9160
@@ -107,7 +104,7 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: '12,15,21,23|12,13||@ripaojiedian #2'
+  name: 12|China_None_vmess_1017
   network: ws
   port: '30829'
   server: v29.heduian.link
@@ -122,7 +119,7 @@ proxies:
       Host: ocbc.com
     path: /oooo
 - cipher: rc4-md5
-  name: 12,21,23|12| 美国2|@ripaojiedian
+  name: 12|China_None_ss_1018
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -132,17 +129,20 @@ proxies:
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '12,29|🇭🇰 香港7|@ripaojiedian #1'
+  name: 12,21,23,29,37|🇭🇰HK香港6
   password: cb9d4649-57e9-422b-9154-c53ca65a543c
   port: 4772
   server: shenzhen99.fkfkd.cn
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: '12,29|🇯🇵 日本|@ripaojiedian #1'
+  name: '12,21,23,29|🇯🇵 日本|@ripaojiedian #1'
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -152,17 +152,20 @@ proxies:
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 12,29|🇺🇸 美国|@ripaojiedian
+  name: 12,21,23,29,37|🇸US美国2
   password: bb0fe0fa-ef19-4dfe-bd0a-92843756a148
   port: 17713
   server: shenzhen99.fkfkd.cn
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: '12,29|🇺🇸 美国2|@ripaojiedian #1'
+  name: '12,21,23,29|🇺🇸 美国2|@ripaojiedian #1'
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -172,6 +175,41 @@ proxies:
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 15|中国 - 广州市 - Shenzhen Tencent Co...
+  network: ws
+  port: '11399'
+  server: 119.29.98.43
+  tls: false
+  type: vmess
+  uuid: 4d53cd6c-31f5-4b3b-bb11-fb012c8d9648
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '15|中国 - 广州市 - Shenzhen Tencent Co... #1'
+  network: ws
+  port: '56532'
+  server: 119.29.98.43
+  tls: false
+  type: vmess
+  uuid: b20b5fcd-23f5-4f70-ba49-898d78296abf
+  ws-opts:
+    headers:
+      Host: ''
+    path: /arki?ed=2048
+- alterId: 64
+  cipher: auto
+  name: 15|中国 - 北京 - Hangzhou Alibaba Adv...
+  network: tcp
+  port: '50002'
+  server: 39.100.81.215
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
   name: 15|中国 - 青岛市 - Hangzhou Alibaba Ad...
@@ -192,13 +230,13 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 15|中国 - 广州市 - Shenzhen Tencent Co...
+  name: '15|中国 - 广州市 - Shenzhen Tencent Co... #2'
   network: ws
-  port: '11399'
+  port: '48536'
   server: 119.29.98.43
   tls: false
   type: vmess
-  uuid: 4d53cd6c-31f5-4b3b-bb11-fb012c8d9648
+  uuid: 057caba1-2237-41e6-a54d-ec03509898a5
   ws-opts:
     headers:
       Host: ''
@@ -212,41 +250,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '15|中国 - 广州市 - Shenzhen Tencent Co... #1'
-  network: ws
-  port: '56532'
-  server: 119.29.98.43
-  tls: false
-  type: vmess
-  uuid: b20b5fcd-23f5-4f70-ba49-898d78296abf
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
-- alterId: 64
-  cipher: auto
-  name: 15|中国 - 北京 - Hangzhou Alibaba Adv...
-  network: tcp
-  port: '30302'
-  server: 39.107.155.11
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: '15|中国 - 广州市 - Shenzhen Tencent Co... #2'
-  network: ws
-  port: '48536'
-  server: 119.29.98.43
-  tls: false
-  type: vmess
-  uuid: 057caba1-2237-41e6-a54d-ec03509898a5
-  ws-opts:
-    headers:
-      Host: ''
-    path: /arki?ed=2048
 - name: 15|🇨🇳_CN_中国_38
   network: ws
   port: 2053
@@ -261,19 +264,19 @@ proxies:
     path: '%2f%3fed%3d2048'
 - alterId: 64
   cipher: auto
-  name: 15|中国 - 惠州市 - China Mobile - 1
+  name: '15|中国 - 北京 - Hangzhou Alibaba Adv... #1'
   network: tcp
-  port: '59003'
-  server: 183.236.51.36
+  port: '30302'
+  server: 39.107.155.11
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '15|中国 - 北京 - Hangzhou Alibaba Adv... #1'
+  name: 15|中国 - 惠州市 - China Mobile - 1
   network: tcp
-  port: '50002'
-  server: 39.100.81.215
+  port: '59003'
+  server: 183.236.51.36
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
