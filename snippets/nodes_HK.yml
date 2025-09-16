@@ -10,23 +10,29 @@ proxies:
   tls: false
   type: vmess
   uuid: e43b6c20-2f61-4e8c-a692-c737fa5cfa0d
-- cipher: aes-256-gcm
+- alterId: 0
+  cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '12,21,23,29|🇭🇰 香港5|@ripaojiedian #1'
+  name: 12,21,23,29,37|🇭🇰HK香港4
   password: amazongreatvpn
   port: 16888
   server: 43.199.87.121
+  skip-cert-verify: true
   tfo: false
+  tls: true
   type: ss
-- client-fingerprint: chrome
-  name: '12,15,21,23,29,30|香港6|@ripaojiedian #2'
+- alterId: 0
+  client-fingerprint: chrome
+  name: 12,15,21,23,29,30,37|🇰HK香港2
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 443
   server: 203.218.158.70
   skip-cert-verify: true
   sni: fe2.update.microsoft.com
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '12,15,23,30|香港3|@ripaojiedian #2'
@@ -57,29 +63,23 @@ proxies:
   tls: false
   type: vmess
   uuid: 0f6e3f70-d64d-4825-aa04-1ead22e96b8b
-- alterId: 0
-  name: 15,37|🇭🇰HK香港5
+- name: '15|香港4|@ripaojiedian #1'
   password: 253bc477d4e43c209f2d427272968280
   port: 391
   server: 36.156.102.77
   skip-cert-verify: true
   sni: www.baidu.com
-  tls: true
   type: trojan
-  udp: true
-- alterId: 0
-  name: 15,37|🇭🇰HK香港4
+- name: '15|香港6|@ripaojiedian #1'
   password: 253bc477d4e43c209f2d427272968280
   port: 391
   server: 36.150.215.200
   skip-cert-verify: true
   sni: www.baidu.com
-  tls: true
   type: trojan
-  udp: true
 - alterId: 0
   cipher: aes-256-gcm
-  name: 21,37|🇰HK香港2
+  name: 21,37|🇭🇰HK香港3
   password: 2b5fad3874e5
   port: 443
   server: 156.251.179.135
@@ -131,21 +131,3 @@ proxies:
     headers:
       host: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
     path: /
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 37|HK
-  password: 2cf69d5f-0293-4ddb-bbfc-145de8dfc570
-  port: 4772
-  server: shenzhen99.fkfkd.cn
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 37|🇰HK香港3
-  password: amazongreatvpn
-  port: 16888
-  server: 16.162.87.199
-  skip-cert-verify: true
-  tls: true
-  type: ss
