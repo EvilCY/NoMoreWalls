@@ -1,7 +1,6 @@
 proxies:
 - cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: '12,21,23,29|🇯🇵 日本2|@ripaojiedian #1'
+  name: 11,20,22|10|🇵 日本2|@ripaojiedian
   password: 8a6ca14c0936
   plugin: v2ray-plugin
   plugin-opts:
@@ -17,8 +16,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 12,21,23,29,37|🇵JP日本5
+  name: 11,20,22,36|🇵JP日本5
   password: amazongreatvpn
   port: 16888
   server: 57.181.174.7
@@ -28,7 +26,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '12,15,23,30|日本v2|@ripaojiedian #2'
+  name: '11,14,22,29|日本v2|@ripaojiedian #2'
   network: kcp
   port: '34933'
   server: 8.209.211.236
@@ -37,7 +35,7 @@ proxies:
   type: vmess
   uuid: 8a9150bc-b9c8-40ac-be83-aaec45176a81
 - auth: fabd2b79-693a-4a37-827c-6d299e8813b1
-  name: '15,16,21|[Hysteria2] Channel id: @Shado...'
+  name: '14,15,20|[Hysteria2] Channel id: @Shado...'
   password: fabd2b79-693a-4a37-827c-6d299e8813b1
   port: 443
   server: 133.18.163.202
@@ -46,8 +44,7 @@ proxies:
   tls: false
   type: hysteria2
 - alterId: 0
-  name: 15,22,37|🇯🇵JP日本4
-  network: tcp
+  name: 14,36|🇯🇵JP日本4
   password: 253bc477d4e43c209f2d427272968280
   port: 2966
   server: xingxing.jiasu123.org
@@ -57,12 +54,12 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: 20|🇯🇵JP-54.199.83.239-171_1@171
+  name: 19|🇯🇵JP-54.199.83.239-171_1@171
   password: doub.io
   port: 2333
   server: 54.199.83.239
   type: ss
-- name: 20|🇯🇵JP-3.112.192.169-188_1@188
+- name: 19|🇯🇵JP-3.112.192.169-188_1@188
   password: umis0GDWL5RQ
   port: 16717
   server: 3.112.192.169
@@ -71,7 +68,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 20|🇯🇵 节点日期：04-02_8@0
+  name: 19|🇯🇵 节点日期：04-02_8@0
   network: ws
   port: 2052
   server: cfcdn1.sanfencdn9.com
@@ -83,37 +80,96 @@ proxies:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
 - cipher: rc4-md5
-  name: 21|[SS] 🇯🇵 日本|@ripaojiedian
+  name: 20|[SS] 🇯🇵 日本|@ripaojiedian
   password: efanccyun
   port: 8766
   server: cn01.efan8867801.xyz
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
-  name: 21,37|🇯🇵JP日本3
+  name: 20,36|🇯🇵JP日本3
   password: 8a6ca14c0936
   port: 443
   server: 137.220.142.150
   skip-cert-verify: true
   tls: true
   type: ss
-- name: 22|日本 001
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 18233
-  server: 13.231.37.82
-  skip-cert-verify: true
-  sni: 23.45.86.28
-  type: trojan
+- name: 21|日本 001
+  network: ws
+  port: 80
+  server: 103.116.7.255
+  skip-cert-verify: false
+  type: vless
+  uuid: da8aa1d1-5fd7-4085-85c1-3d5cbfdbfc5c
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: myvps.nilphreakz.me
+    max-early-data: 2560
+    path: /Telegram🇨🇳
 - cipher: aes-128-gcm
-  name: 24|🇯🇵JP-149.22.87.204-0216
+  name: 23|🇯🇵JP-149.22.87.204-0216
   password: shadowsocks
   port: 443
   server: 149.22.87.204
   type: ss
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: '28|🇯🇵 日本|@ripaojiedian #1'
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202509121565513-hDcp24etDx.download.microsoft.com
+    mode: http
+  port: 8766
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: '28|🇯🇵 日本2|@ripaojiedian #1'
+  password: 8808e9f11454
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp5v1.lingjfjkm002.com
+    mode: websocket
+    mux: false
+    path: /nvcnjrmkggoy
+    skip-cert-verify: false
+    tls: true
+  port: 443
+  server: 137.220.142.139
+  tfo: false
+  type: ss
+- client-fingerprint: chrome
+  name: '28,29|日本3|@ripaojiedian #2'
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 133
+  server: xingxing.jiasu123.org
+  skip-cert-verify: true
+  sni: 23.45.86.28
+  type: trojan
+- client-fingerprint: chrome
+  name: '28,29|日本4|@ripaojiedian #2'
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 1806
+  server: 36.150.215.200
+  skip-cert-verify: true
+  sni: 23.45.86.28
+  type: trojan
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: '28|🇯🇵 日本5|@ripaojiedian #1'
+  password: amazongreatvpn
+  port: 16888
+  server: 57.183.17.7
+  tfo: false
+  type: ss
 - alterId: 1
   cipher: auto
-  name: 39|JP_speednode_0009
+  name: 38|JP_speednode_0009
   port: 21585
   server: gv9gq-g05.jp01-nn-vm0.entry.fr0528.art
   servername: gv9gq-g05.jp01-nn-vm0.entry.fr0528.art
@@ -124,7 +180,7 @@ proxies:
   uuid: bb63465f-65f8-3257-b6b3-93aea60c14b3
 - alterId: 1
   cipher: auto
-  name: 39|JP_speednode_0010
+  name: 38|JP_speednode_0010
   port: 21585
   server: kk5wh-g05.jp01-nn-vm0.entry.fr0528.art
   servername: kk5wh-g05.jp01-nn-vm0.entry.fr0528.art
