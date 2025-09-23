@@ -105,7 +105,7 @@ proxies:
   port: 35276
   server: 51.140.34.50
   type: ss
-- name: 21|[Vless] GB_speednode_0010
+- name: 21|[Vless] GB_speednode_0025
   network: ws
   port: 9931
   server: 132.145.65.20
@@ -118,6 +118,20 @@ proxies:
     headers:
       Host: kejiland.freewarp.eu.org
     path: /snippets/ip=proxyip.fxxk.dedyn.io:443security=tlssecurity=tls
+- name: '21,39,40|GB_speednode_0025 #1'
+  network: ws
+  port: 9931
+  server: 132.145.65.20
+  servername: kejiland.freewarp.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io:443security=tls
 - alterId: 0
   cipher: auto
   name: 22|英国 001
@@ -135,11 +149,14 @@ proxies:
   port: 443
   server: 212.102.53.194
   type: ss
-- cipher: aes-128-gcm
-  name: 24|🇬🇧GB-212.102.53.81-0255
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 24,37|🇹IT 21.1MB/s
   password: shadowsocks
   port: 443
   server: 212.102.53.81
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: aes-128-gcm
   name: 24|🇬🇧GB-212.102.53.195-0246
@@ -195,11 +212,14 @@ proxies:
   port: 443
   server: 212.102.53.79
   type: ss
-- cipher: aes-128-gcm
-  name: 24|🇬🇧GB-212.102.53.196-0250
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 24,37|🇮🇹IT意大利2 18.0MB/s
   password: shadowsocks
   port: 443
   server: 212.102.53.196
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: aes-128-gcm
   name: 24|🇬🇧GB-141.98.101.178-0281
@@ -233,20 +253,6 @@ proxies:
   type: vless
   udp: true
   uuid: dca511f0-f98c-45d3-a0ff-1ba61c651374
-- name: '39,40|GB_speednode_0025 #1'
-  network: ws
-  port: 9931
-  server: 132.145.65.20
-  servername: kejiland.freewarp.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-  ws-opts:
-    headers:
-      Host: kejiland.freewarp.eu.org
-    path: /snippets/ip=proxyip.fxxk.dedyn.io:443security=tls
 - name: '39,40|GB_speednode_0026 #1'
   network: ws
   port: 9931
