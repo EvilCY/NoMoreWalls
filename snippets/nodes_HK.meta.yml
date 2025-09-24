@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '12,21,23|12|🇭🇰 香港3|@ripaojiedian #1'
+  name: 12|Hong Kong_None_vmess_104
   port: 57405
   server: 103.224.80.73
   skip-cert-verify: false
@@ -11,7 +11,7 @@ proxies:
   uuid: 282bc2b9-8aaf-400a-86eb-1cf981a8a1da
 - alterId: 0
   cipher: auto
-  name: '12,15,23|13|香港3|@ripaojiedian #1'
+  name: 12|Hong Kong_None_vmess_1020
   network: tcp
   port: '57405'
   server: 103.224.80.73
@@ -21,7 +21,7 @@ proxies:
   uuid: 282bc2b9-8aaf-400a-86eb-1cf981a8a1da
 - alterId: 0
   cipher: auto
-  name: '12,15,23|13|香港v2|@ripaojiedian #1'
+  name: 12|Hong Kong_Hong Kong_vmess_1021
   network: kcp
   port: '21523'
   server: 47.242.215.154
@@ -29,18 +29,21 @@ proxies:
   tls: false
   type: vmess
   uuid: f6c894a3-f326-4807-9270-f236da4120c1
-- client-fingerprint: chrome
-  name: 12,22,29,30|台湾|@ripaojiedian
+- alterId: 0
+  client-fingerprint: chrome
+  name: 12,15,21,22,23,29,30,37|TW
   network: tcp
   password: 90f45c05-917f-3b1b-a582-899cfe4cf7b3
   port: 16327
   server: auto.wgnmdgfw.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: eplcgame.com
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: '12,30|香港v2|@ripaojiedian #2'
+  name: '12,15,23,30|香港v2|@ripaojiedian #2'
   network: kcp
   port: '5043'
   server: 47.242.186.1
@@ -50,7 +53,7 @@ proxies:
   uuid: 93c35277-ee3f-4ab2-9d9e-462b97a8795f
 - alterId: 0
   cipher: auto
-  name: 12,22,30|香港HK|@ripaojiedian
+  name: '12,15,22,23,30|香港HK|@ripaojiedian #2'
   network: tcp
   port: '24939'
   server: 38.147.188.112
@@ -59,48 +62,73 @@ proxies:
   type: vmess
   uuid: 928408df-3114-4b57-b852-f8d120ce056c
 - alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 15,23,29|🇭🇰 香港HK|@ripaojiedian
+  network: http
+  port: 24939
+  server: 38.147.188.112
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 928408df-3114-4b57-b852-f8d120ce056c
+- alterId: 0
   cipher: aes-256-gcm
-  name: 21,37|🇰HK香港2
+  name: 21,37|🇰HK香港3
   password: 2b5fad3874e5
   port: 443
   server: 156.251.179.135
   skip-cert-verify: true
   tls: true
   type: ss
-- name: 21|[Vless] HK_speednode_0008
+- alterId: 0
+  cipher: auto
+  name: 21|[VMess] 🇭🇰 香港HK|@ripaojiedian
+  port: 24939
+  server: 38.147.188.112
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 928408df-3114-4b57-b852-f8d120ce056c
+- name: '21,39,40|HK_speednode_0016 #1'
   network: ws
   port: 2083
   server: 45.207.158.29
   servername: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
   skip-cert-verify: false
-  tls: false
+  tls: true
   type: vless
+  udp: true
   uuid: 019931aa-8cba-3a74-6c77-cb288ae52f2a
   ws-opts:
     headers:
       Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
     path: /snippetssecurity=tls
-- name: 21|[Vless] HK_speednode_0009
+- name: '21,39,40|HK_speednode_0017 #1'
   network: ws
   port: 2096
   server: 154.211.8.220
   servername: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
-  skip-cert-verify: false
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vless
+  udp: true
   uuid: 019931aa-8cba-3a74-6c77-cb288ae52f2a
   ws-opts:
     headers:
       Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
     path: /snippetssecurity=tls
-- name: 21|[Vless] HK_speednode_0010
+- name: '21,39,40|HK_speednode_0019 #1'
   network: ws
   port: 2083
   server: 154.211.8.18
   servername: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
-  skip-cert-verify: false
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vless
+  udp: true
   uuid: 019931aa-8cba-3a74-6c77-cb288ae52f2a
   ws-opts:
     headers:
@@ -151,34 +179,7 @@ proxies:
     headers:
       host: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
     path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 29|🇭🇰 香港HK|@ripaojiedian
-  network: http
-  port: 24939
-  server: 38.147.188.112
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 928408df-3114-4b57-b852-f8d120ce056c
-- name: '39,40|HK_speednode_0008 #1'
-  network: ws
-  port: 2083
-  server: 45.207.158.29
-  servername: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 019931aa-8cba-3a74-6c77-cb288ae52f2a
-  ws-opts:
-    headers:
-      Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
-    path: /snippets
-- name: '39,40|HK_speednode_0009 #1'
+- name: '39,40|HK_speednode_0018 #1'
   network: ws
   port: 2096
   server: 154.211.8.220
@@ -192,7 +193,7 @@ proxies:
     headers:
       Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
     path: /snippets
-- name: '39,40|HK_speednode_0010 #1'
+- name: '39,40|HK_speednode_0020 #1'
   network: ws
   port: 2083
   server: 154.211.8.18
