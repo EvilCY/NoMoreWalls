@@ -11,7 +11,7 @@ proxies:
   type: vmess
   uuid: 3bff49e6-b2e2-44ce-801f-06eab407e8bd
 - alterId: 0
-  name: 12,15,21,22,23,37|TW
+  name: 12,22,37|TW
   network: tcp
   password: 90f45c05-917f-3b1b-a582-899cfe4cf7b3
   port: 16327
@@ -43,7 +43,7 @@ proxies:
   uuid: 93c35277-ee3f-4ab2-9d9e-462b97a8795f
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '12,29|🇭🇰 香港2|@ripaojiedian #1'
+  name: '12,21,23,29|🇭🇰 香港2|@ripaojiedian #1'
   password: ccf426f1fe78
   plugin: v2ray-plugin
   plugin-opts:
@@ -57,25 +57,27 @@ proxies:
   server: 103.103.245.158
   tfo: false
   type: ss
-- alterId: 0
+- alterId: 2
   cipher: auto
-  name: 15|香港 电讯盈科有限公司
+  client-fingerprint: chrome
+  name: 15,24|🇭🇰HK-116.49.109.153-0280
   network: ws
   port: 80
-  server: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
+  server: hkt.gotochinatown.net
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
   ws-opts:
     headers:
-      Host: broadcastlv.chat.bilibili.com
+      host: hkt.gotochinatown.net
     path: /
 - alterId: 0
   cipher: aes-256-gcm
-  name: 21,37|HK
-  password: 2b5fad3874e5
+  name: 21,37|🇰HK香港4
+  password: ccf426f1fe78
   port: 443
-  server: 156.251.179.135
+  server: 103.103.245.158
   skip-cert-verify: true
   tls: true
   type: ss
@@ -105,15 +107,14 @@ proxies:
     headers:
       Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
     path: /snippetssecurity=tlssecurity=tls
-- name: '21,39,40|HK_speednode_0017 #1'
+- name: 21|[Vless] HK_speednode_0018
   network: ws
   port: 2096
   server: 154.211.8.220
   servername: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
-  skip-cert-verify: true
-  tls: true
+  skip-cert-verify: false
+  tls: false
   type: vless
-  udp: true
   uuid: 019931aa-8cba-3a74-6c77-cb288ae52f2a
   ws-opts:
     headers:
@@ -132,35 +133,19 @@ proxies:
     headers:
       Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
     path: /snippetssecurity=tlssecurity=tls
-- name: '21,39,40|HK_speednode_0019 #1'
+- name: 21|[Vless] HK_speednode_0020
   network: ws
   port: 2083
   server: 154.211.8.18
   servername: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
-  skip-cert-verify: true
-  tls: true
+  skip-cert-verify: false
+  tls: false
   type: vless
-  udp: true
   uuid: 019931aa-8cba-3a74-6c77-cb288ae52f2a
   ws-opts:
     headers:
       Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
     path: /snippetssecurity=tls
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: 24|🇭🇰HK-116.49.109.153-0280
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      host: hkt.gotochinatown.net
-    path: /
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
@@ -191,45 +176,12 @@ proxies:
     headers:
       host: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
     path: /
-- name: '39,40|HK_speednode_0016 #1'
-  network: ws
-  port: 2083
-  server: 45.207.158.29
-  servername: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 019931aa-8cba-3a74-6c77-cb288ae52f2a
-  ws-opts:
-    headers:
-      Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
-    path: /snippetssecurity=tls
-- name: '39,40|HK_speednode_0018 #1'
-  network: ws
-  port: 2096
-  server: 154.211.8.220
-  servername: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 37|🇰HK香港2
+  password: 2b5fad3874e5
+  port: 443
+  server: 156.251.179.135
   skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: 019931aa-8cba-3a74-6c77-cb288ae52f2a
-  ws-opts:
-    headers:
-      Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
-    path: /snippets
-- name: '39,40|HK_speednode_0020 #1'
-  network: ws
-  port: 2083
-  server: 154.211.8.18
-  servername: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 019931aa-8cba-3a74-6c77-cb288ae52f2a
-  ws-opts:
-    headers:
-      Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
-    path: /snippets
+  type: ss

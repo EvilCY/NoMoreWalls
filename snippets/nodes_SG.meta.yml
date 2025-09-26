@@ -19,7 +19,7 @@ proxies:
   servername: google.com
   tls: false
   type: vless
-  uuid: 7b3396cc-e2b9-49e6-98ba-e7c92b3133fe
+  uuid: 0fd372c5-ec07-4018-9928-02ba9dbab032
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '4|VPNKEY-Singapore #1'
@@ -31,11 +31,23 @@ proxies:
   servername: google.com
   tls: false
   type: vless
-  uuid: ed219f85-ccd1-48f5-9fae-fc513d0e93d2
-- name: 15|🇸🇬_SG_新加坡_2
-  network: ws
+  uuid: 7b3396cc-e2b9-49e6-98ba-e7c92b3133fe
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '4|VPNKEY-Singapore #2'
+  network: tcp
   port: 8443
-  server: 27.50.49.232
+  reality-opts:
+    public-key: 1-2fy8f8XeOHzmdFmCENHV1mr_tzJX1M9UXp42mUIiM
+  server: 91.242.241.45
+  servername: google.com
+  tls: false
+  type: vless
+  uuid: ed219f85-ccd1-48f5-9fae-fc513d0e93d2
+- name: 15|🇸🇬_SG_新加坡_37
+  network: ws
+  port: 443
+  server: 27.50.48.222
   servername: juzibaipiao.5112233.xyz
   tls: true
   type: vless
@@ -44,10 +56,10 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
-- name: 15|🇸🇬_SG_新加坡_37
+- name: 15|🇸🇬_SG_新加坡_2
   network: ws
-  port: 443
-  server: 27.50.48.222
+  port: 8443
+  server: 27.50.49.232
   servername: juzibaipiao.5112233.xyz
   tls: true
   type: vless
@@ -133,15 +145,14 @@ proxies:
     headers:
       Host: sg1.pkyun.website
     path: /sg1
-- name: '21,39,40|SG_speednode_0051 #1'
+- name: 21|[Vless] SG_speednode_0050
   network: ws
   port: 2087
   server: 92.243.75.49
   servername: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
   skip-cert-verify: false
-  tls: true
+  tls: false
   type: vless
-  udp: true
   uuid: 019931aa-8cba-3a74-6c77-cb288ae52f2a
   ws-opts:
     headers:
@@ -400,17 +411,3 @@ proxies:
   port: 802
   server: 217.197.161.138
   type: ss
-- name: '39,40|SG_speednode_0050 #1'
-  network: ws
-  port: 2087
-  server: 92.243.75.49
-  servername: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 019931aa-8cba-3a74-6c77-cb288ae52f2a
-  ws-opts:
-    headers:
-      Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
-    path: /snippets
