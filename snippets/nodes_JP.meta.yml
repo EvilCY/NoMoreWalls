@@ -1,37 +1,13 @@
 proxies:
-- alterId: 0
-  name: 12,15,21,22,37|🇭🇰HK香港2
+- client-fingerprint: chrome
+  name: '12,15,21,23,29,30|日本2|@ripaojiedian #2'
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 443
-  server: 202.181.103.246
-  skip-cert-verify: true
+  port: 1331
+  server: 153.121.39.240
+  skip-cert-verify: false
   sni: www.nintendogames.net
-  tls: true
   type: trojan
-  udp: true
-- alterId: 0
-  name: 12,15,21,22,37|🇰HK香港3
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 443
-  server: 160.16.236.32
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 12,15,21,22,37|JP
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 3160
-  server: 160.16.68.250
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  tls: true
-  type: trojan
-  udp: true
 - alterId: 0
   client-fingerprint: chrome
   name: 12,15,21,22,23,29,30,37|🇯🇵JP日本2
@@ -124,6 +100,17 @@ proxies:
   tls: false
   type: vmess
   uuid: 7e368916-ff86-4758-b99e-31bbbb5917fc
+- alterId: 0
+  name: 15,22,37|JP
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 3160
+  server: 160.16.68.250
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  tls: true
+  type: trojan
+  udp: true
 - auth: fabd2b79-693a-4a37-827c-6d299e8813b1
   name: '15,16,21|[Hysteria2] Channel id: @Shado...'
   password: fabd2b79-693a-4a37-827c-6d299e8813b1
@@ -133,15 +120,20 @@ proxies:
   sni: www.microsoft.com
   tls: false
   type: hysteria2
-- client-fingerprint: chrome
-  name: '15,23,29,30|日本2|@ripaojiedian #2'
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 1331
-  server: 153.121.39.240
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 15|日本4|@ripaojiedian
+  network: ws
+  port: '41315'
+  server: a.lyazzz.online
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: bd64d2a3-76a1-407f-af7f-bdcdcb78d21e
+  ws-opts:
+    headers:
+      Host: img14.360buyimg.com
+    path: /obj
 - cipher: aes-256-cfb
   name: 20|🇯🇵JP-54.199.83.239-171_1@171
   password: doub.io
@@ -262,31 +254,3 @@ proxies:
   port: 443
   server: 149.22.87.204
   type: ss
-- name: '39,40|JP_speednode_0022 #1'
-  network: ws
-  port: 51037
-  server: 141.147.161.249
-  servername: kejiland.freewarp.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-  ws-opts:
-    headers:
-      Host: kejiland.freewarp.eu.org
-    path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560
-- name: '39,40|JP_speednode_0023 #1'
-  network: ws
-  port: 43257
-  server: 132.226.8.109
-  servername: kejiland.freewarp.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 01996549-6892-dbf0-0453-f700236936bd
-  ws-opts:
-    headers:
-      Host: kejiland.freewarp.eu.org
-    path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560
