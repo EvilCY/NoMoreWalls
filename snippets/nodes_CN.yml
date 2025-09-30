@@ -40,6 +40,14 @@ proxies:
   tls: true
   type: trojan
   udp: true
+- name: '15,23,39,40|CN_speednode_0016 #1'
+  password: 2fd0d127-266d-4d0b-b453-f94659a132fc
+  port: 12000
+  server: 106.75.134.1
+  skip-cert-verify: true
+  sni: aliyun.com
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 20|🇨🇳CN-139.227.223.3-049_1@49
@@ -655,6 +663,14 @@ proxies:
   ws-headers:
     Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
+- name: 22|中国 002
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 443
+  server: 203.198.123.174
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
 - name: 22|中国 005
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -797,21 +813,6 @@ proxies:
   ws-opts:
     headers:
       Host: download.cloud.189.cn
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 22,39|HK_speednode_0016
-  network: ws
-  port: 80
-  server: eb362f92-svukg0-t12cnj-1ol97.hk.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: eb362f92-svukg0-t12cnj-1ol97.hk.p5pv.com
     path: /
 - alterId: 64
   cipher: auto
@@ -1104,19 +1105,6 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- alterId: 2
-  cipher: auto
-  name: 22|中国 054
-  network: ws
-  port: 30808
-  server: v8.heduian.link
-  skip-cert-verify: true
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v8.heduian.link
-    path: /oooo
 - alterId: 0
   cipher: auto
   name: 22|中国 055
@@ -1195,29 +1183,9 @@ proxies:
   uuid: 3a4271fb-2718-4489-da78-80a8e7701aa5
 - alterId: 0
   cipher: auto
-  name: 39|CN_speednode_0001
+  name: 39|CN_speednode_0003
   port: 6001
   server: cn01.365cloud8754.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5af37c85-67d9-4955-ac57-1d682855d0ed
-- alterId: 0
-  cipher: auto
-  name: 39|CN_speednode_0002
-  port: 6004
-  server: cn01.365cloud8754.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5af37c85-67d9-4955-ac57-1d682855d0ed
-- alterId: 0
-  cipher: auto
-  name: 39|CN_speednode_0003
-  port: 6004
-  server: cn01.efan8867801.xyz
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -1236,7 +1204,7 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 39|CN_speednode_0005
-  port: 6018
+  port: 6004
   server: cn01.365cloud8754.com
   skip-cert-verify: false
   tls: false
@@ -1246,8 +1214,8 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 39|CN_speednode_0006
-  port: 6041
-  server: efan8998.efan-dns78655.com
+  port: 6004
+  server: cn01.efan8867801.xyz
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -1256,26 +1224,6 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 39|CN_speednode_0007
-  port: 6007
-  server: cn01.365cloud8754.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5af37c85-67d9-4955-ac57-1d682855d0ed
-- alterId: 0
-  cipher: auto
-  name: 39|CN_speednode_0008
-  port: 6021
-  server: cn01.365cloud8754.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5af37c85-67d9-4955-ac57-1d682855d0ed
-- alterId: 0
-  cipher: auto
-  name: 39|CN_speednode_0009
   port: 6001
   server: efan8998.efan-dns78655.com
   skip-cert-verify: false
@@ -1285,8 +1233,28 @@ proxies:
   uuid: 5af37c85-67d9-4955-ac57-1d682855d0ed
 - alterId: 0
   cipher: auto
+  name: 39|CN_speednode_0008
+  port: 6004
+  server: efan8998.efan-dns78655.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5af37c85-67d9-4955-ac57-1d682855d0ed
+- alterId: 0
+  cipher: auto
+  name: 39|CN_speednode_0009
+  port: 6018
+  server: cn01.365cloud8754.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5af37c85-67d9-4955-ac57-1d682855d0ed
+- alterId: 0
+  cipher: auto
   name: 39|CN_speednode_0010
-  port: 6007
+  port: 6015
   server: cn01.efan8867801.xyz
   skip-cert-verify: false
   tls: false
@@ -1296,17 +1264,7 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 39|CN_speednode_0011
-  port: 6021
-  server: cn01.efan8867801.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5af37c85-67d9-4955-ac57-1d682855d0ed
-- alterId: 0
-  cipher: auto
-  name: 39|CN_speednode_0012
-  port: 6041
+  port: 6015
   server: cn01.365cloud8754.com
   skip-cert-verify: false
   tls: false
@@ -1315,8 +1273,18 @@ proxies:
   uuid: 5af37c85-67d9-4955-ac57-1d682855d0ed
 - alterId: 0
   cipher: auto
+  name: 39|CN_speednode_0012
+  port: 6015
+  server: efan8998.efan-dns78655.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5af37c85-67d9-4955-ac57-1d682855d0ed
+- alterId: 0
+  cipher: auto
   name: 39|CN_speednode_0013
-  port: 6007
+  port: 6018
   server: efan8998.efan-dns78655.com
   skip-cert-verify: false
   tls: false
@@ -1326,6 +1294,26 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 39|CN_speednode_0014
+  port: 6041
+  server: cn01.365cloud8754.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5af37c85-67d9-4955-ac57-1d682855d0ed
+- alterId: 0
+  cipher: auto
+  name: 39|CN_speednode_0015
+  port: 6007
+  server: efan8998.efan-dns78655.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5af37c85-67d9-4955-ac57-1d682855d0ed
+- alterId: 0
+  cipher: auto
+  name: 39|CN_speednode_0017
   port: 6021
   server: efan8998.efan-dns78655.com
   skip-cert-verify: false
@@ -1335,8 +1323,8 @@ proxies:
   uuid: 5af37c85-67d9-4955-ac57-1d682855d0ed
 - alterId: 0
   cipher: auto
-  name: 39|CN_speednode_0015
-  port: 6041
+  name: 39|CN_speednode_0018
+  port: 6007
   server: cn01.efan8867801.xyz
   skip-cert-verify: false
   tls: false
