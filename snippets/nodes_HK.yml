@@ -1,7 +1,7 @@
 proxies:
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 12,21,23,29|🇭🇰 香港2|@ripaojiedian
+  name: '12,21,23,29|🇭🇰 香港2|@ripaojiedian #1'
   password: ccf426f1fe78
   plugin: v2ray-plugin
   plugin-opts:
@@ -15,24 +15,48 @@ proxies:
   server: 103.103.245.158
   tfo: false
   type: ss
+- client-fingerprint: chrome
+  name: '15,23,29,30|香港4|@ripaojiedian #2'
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 444
+  server: 221.128.195.217
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- client-fingerprint: chrome
+  name: '15,23,29,30|香港6|@ripaojiedian #2'
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 443
+  server: 58.152.25.156
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
 - alterId: 2
   cipher: auto
-  name: 15|香港 电讯盈科有限公司
+  name: 15,22,39|HK_speednode_0010
   network: ws
-  port: '30807'
-  server: v10.heduian.link
+  port: 80
+  server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+  skip-cert-verify: true
+  tfo: false
   tls: false
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  udp: true
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
   ws-opts:
     headers:
-      Host: baidu.com
-    path: /oooo
-- cipher: aes-256-gcm
-  name: 21|[SS] 🇭🇰 香港2|@ripaojiedian
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 21,37|🇰HK香港2
   password: ccf426f1fe78
   port: 443
   server: 103.103.245.158
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 2
   cipher: auto
@@ -79,21 +103,34 @@ proxies:
     headers:
       host: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
     path: /
-- client-fingerprint: chrome
-  name: '29,30|香港4|@ripaojiedian #1'
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 444
-  server: 221.128.195.217
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- client-fingerprint: chrome
-  name: '29,30|香港6|@ripaojiedian #1'
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 443
-  server: 58.152.25.156
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 39|HK_speednode_0007
+  network: http
+  port: 31212
+  server: 47.242.90.210
   skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3a4271fb-2718-4489-da78-80a8e7701aa5
+- alterId: 2
+  cipher: auto
+  name: 39|HK_speednode_0009
+  network: ws
+  port: 80
+  server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+    path: /
