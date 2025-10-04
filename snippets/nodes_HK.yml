@@ -17,7 +17,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 11,20,22|10|🇭🇰 香港3|@ripaojiedian
+  name: 11,20|[VMess] 🇭🇰 香港3|@ripaojiedian 2
   port: 12114
   server: 103.224.80.49
   skip-cert-verify: false
@@ -25,22 +25,19 @@ proxies:
   tls: false
   type: vmess
   uuid: aa92855a-9932-4e87-b5c2-4aed159c7c78
-- alterId: 0
-  name: 11,14,20,21,22,36|🇰HK香港2 473.1KB/s
+- name: 11,14,20,21|中国 003
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 443
   server: 58.152.25.156
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.nintendogames.net
-  tls: true
   type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 11,14,22|11|香港3|@ripaojiedian
+  name: 11,14|🇭🇰 香港3|@ripaojiedian
   network: tcp
-  port: '12114'
+  port: 12114
   server: 103.224.80.49
   servername: ''
   tls: false
@@ -48,30 +45,44 @@ proxies:
   uuid: aa92855a-9932-4e87-b5c2-4aed159c7c78
 - alterId: 2
   cipher: auto
-  name: 14|香港 电讯盈科有限公司
+  client-fingerprint: chrome
+  name: '14,21,22,28,29|香港5|@ripaojiedian #1'
   network: ws
-  port: 30807
-  server: v10.heduian.link
+  port: '80'
+  server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
   ws-opts:
     headers:
-      Host: baidu.com
-    path: /oooo
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 20,36|HK
-  password: ccf426f1fe78
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- client-fingerprint: chrome
+  name: '14,22,28,29|香港6|@ripaojiedian #2'
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
   port: 443
-  server: 103.103.245.158
-  skip-cert-verify: true
-  tls: true
-  type: ss
+  server: 160.16.63.16
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '14,22,29|香港3|@ripaojiedian #2'
+  network: tcp
+  port: '18366'
+  server: 43.247.134.213
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ccc37b1b-4ef0-430c-b1e1-20bf96fcff8c
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 23|🇭🇰HK-116.49.109.153-0280
+  name: 14,23|🇭🇰HK-116.49.109.153-0280
   network: ws
   port: 80
   server: hkt.gotochinatown.net
@@ -83,6 +94,32 @@ proxies:
     headers:
       host: hkt.gotochinatown.net
     path: /
+- client-fingerprint: chrome
+  name: '14,21,22,28,29|香港4|@ripaojiedian #2'
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 443
+  server: 221.128.195.217
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- cipher: aes-256-gcm
+  name: 20|[SS] 🇭🇰 香港2|@ripaojiedian
+  password: ccf426f1fe78
+  port: 443
+  server: 103.103.245.158
+  type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '22,28|🇭🇰 香港3|@ripaojiedian #1'
+  port: 18366
+  server: 43.247.134.213
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: ccc37b1b-4ef0-430c-b1e1-20bf96fcff8c
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
@@ -113,33 +150,3 @@ proxies:
     headers:
       host: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
     path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: '28|🇭🇰 香港3|@ripaojiedian #1'
-  port: 18366
-  server: 43.247.134.213
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: ccc37b1b-4ef0-430c-b1e1-20bf96fcff8c
-- client-fingerprint: chrome
-  name: '28,29|香港6|@ripaojiedian #2'
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 443
-  server: 160.16.63.16
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '29|香港3|@ripaojiedian #2'
-  network: tcp
-  port: '18366'
-  server: 43.247.134.213
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ccc37b1b-4ef0-430c-b1e1-20bf96fcff8c
