@@ -22,10 +22,22 @@ proxies:
   servername: google.com
   tls: false
   type: vless
-  uuid: a30796b4-6a92-41d8-a933-9a495d164a43
+  uuid: 78ca9bfd-8920-423c-a6a9-9e9a3afe84df
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '4|VPNKEY-Germany #2'
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: WuV0Uu4BXukDeBYQR2OtDgb_aKjs3u0tU-ENHSjtTmY
+  server: 95.164.68.37
+  servername: google.com
+  tls: false
+  type: vless
+  uuid: a30796b4-6a92-41d8-a933-9a495d164a43
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '4|VPNKEY-Germany #3'
   network: tcp
   port: 8443
   reality-opts:
@@ -41,6 +53,14 @@ proxies:
   port: 24568
   server: fra-nb-01.linlujs.pw
   skip-cert-verify: false
+  tls: false
+  type: hysteria2
+- name: 15,17|@Daily_Configs
+  password: 2b67ONZROv+fRVMxB94BSw==
+  port: 443
+  server: 5.231.70.79
+  skip-cert-verify: true
+  sni: bing.com
   tls: false
   type: hysteria2
 - client-fingerprint: chrome
@@ -69,14 +89,6 @@ proxies:
   type: vless
   udp: true
   uuid: bcc560e0-173b-4c49-a4ce-742c3fae0028
-- name: '15,17|@Daily_Configs #1'
-  password: 2b67ONZROv+fRVMxB94BSw==
-  port: 443
-  server: 5.231.70.79
-  skip-cert-verify: true
-  sni: bing.com
-  tls: false
-  type: hysteria2
 - name: 20|🇩🇪DE-52.58.179.46-180_1@180
   password: telegram-id-privatevpns
   port: 22222
@@ -1119,7 +1131,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 24,37|🇺AU 1.2MB/s
+  name: 24,37|🇺AU 4.3MB/s
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 185.177.229.245
@@ -1128,7 +1140,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 24,37|🇩🇪DE德国3
+  name: 24,37|🇩🇪DE德国4
   password: 9RviNa4tscjcmCB408vLSg
   port: 44354
   server: 46.101.245.131
@@ -1137,16 +1149,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 37|DE
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 147.45.178.200
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 37|🇩🇪DE德国2
+  name: 37|DE国
   password: LiHQX9cDbdooBHlIg0eiqQ
   port: 34803
   server: 45.144.54.33
@@ -1155,10 +1158,19 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 37|🇪DE德国4
+  name: 37|🇩🇪DE德国2
   password: DKyRdoqQIebdKZVYs5GzW8
   port: 14628
   server: 45.150.32.13
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|🇩🇪DE德国3
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 147.45.178.200
   skip-cert-verify: true
   tls: true
   type: ss
