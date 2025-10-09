@@ -443,6 +443,21 @@ proxies:
   tls: false
   type: vless
   uuid: 4eff2388-2092-4b0a-aa74-0e464889ffaf
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: ''
+  name: 4|@v2box_Phonex-|||کانفینگ رایگا...
+  network: ws
+  port: 55877
+  server: www.wodophonex.blog
+  tls: true
+  type: vless
+  uuid: 53b581f3-0bc8-4f4f-a4a2-c3011f773715
+  ws-opts:
+    headers:
+      Host: ''
+    path: '%2F'
 - name: '4|@v2Meli #9'
   network: httpupgrade
   port: 8880
@@ -814,21 +829,6 @@ proxies:
   tls: false
   type: vless
   uuid: f4d8b865-a620-4e1d-802a-6bcf5a48c49e
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: ''
-  name: 4|@v2box_Phonex-|||کانفینگ رایگا...
-  network: ws
-  port: 55877
-  server: www.wodophonex.blog
-  tls: true
-  type: vless
-  uuid: f911d96e-0d6a-41bf-9997-04011d0f4f62
-  ws-opts:
-    headers:
-      Host: ''
-    path: '%2F'
 - alpn:
   - h3
   auth-str: dongtaiwang.com
@@ -1361,7 +1361,7 @@ proxies:
   udp: true
   uuid: 81e9e522-2efd-4709-996d-74e46f4edaf8
 - auth: c232f411-96b5-4b07-b2f7-66a434725ffb
-  name: 15,17,21|[Hysteria2] @FreakConfig 2
+  name: 15,17,21|[Hysteria2] @FreakConfig 3
   password: c232f411-96b5-4b07-b2f7-66a434725ffb
   port: 23891
   server: 108.165.213.197
@@ -1633,12 +1633,11 @@ proxies:
   sni: YAPC-1.afshin.ir
   tls: false
   type: hysteria2
-- auth: 1a8588b6-9700-4ff6-80e6-64e18f2e5336
-  name: 15,21|[Hysteria2] @sunflowerplato🌻
+- name: 15|@sunflowerplato🌻
   password: 1a8588b6-9700-4ff6-80e6-64e18f2e5336
   port: 43836
   server: de1.jueduibupao.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: de1.jueduibupao.top
   tls: false
   type: hysteria2
@@ -1661,14 +1660,13 @@ proxies:
   sni: drhystuichdfy.samanidempire.org
   tls: false
   type: hysteria2
-- auth: 8864aa9f-7517-4fd5-aef1-32050eb3095d
-  name: '15,21|[Hysteria2] @sunflowerplato🌻 #...'
+- name: '15|10|@sunflowerplato🌻 #1'
   obfs: salamander
   obfs-password: GdQ4bgvT8RFwuWi2
   password: 8864aa9f-7517-4fd5-aef1-32050eb3095d
   port: 30205
   server: 185.92.220.240
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: net2025.afsharidempire.uk
   tls: false
   type: hysteria2
@@ -2226,7 +2224,7 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - auth: c3054d61-c708-4594-9797-f50acd24de2a
-  name: '15,17,21|[Hysteria2] @sunflowerplato🌻 #... #1'
+  name: 15,17,21|[Hysteria2] @sunflowerplato🌻
   password: c3054d61-c708-4594-9797-f50acd24de2a
   port: 443
   server: qing-kz.mxtn.net
@@ -2648,19 +2646,21 @@ proxies:
   skip-cert-verify: false
   tls: false
   type: hysteria2
-- name: 17|🇩🇪@FreakConfig
+- auth: 571ec94e-613c-430a-93de-397d3d237475
+  name: 17,21|[Hysteria2] @FreakConfig 2
   password: 571ec94e-613c-430a-93de-397d3d237475
   port: 22155
   server: hsdg.huasuan666.top
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: hsdg.huasuan666.top
   tls: false
   type: hysteria2
-- name: '17|🇲@FreakConfig #1'
+- auth: c6bccea3-2f03-4f3e-80f4-d6757f1f3f46
+  name: '17,21|[Hysteria2] @FreakConfig #1 2'
   password: c6bccea3-2f03-4f3e-80f4-d6757f1f3f46
   port: 41951
   server: 192.3.60.176
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.bing.com
   tls: false
   type: hysteria2
@@ -6161,7 +6161,7 @@ proxies:
   sni: hl.dport.top
   type: hysteria2
 - auth: Telegram--%3E%40Ln2Ray
-  name: '21|[Hysteria2] @FreakConfig #3'
+  name: '21|[Hysteria2] @FreakConfig #2'
   obfs: salamander
   obfs-password: Telegram-->@Ln2Ray
   password: Telegram--%3E%40Ln2Ray
