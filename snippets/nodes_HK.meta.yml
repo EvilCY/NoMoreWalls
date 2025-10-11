@@ -1,17 +1,7 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 11|Hong Kong_None_vmess_1113
-  port: 55238
-  server: 103.224.80.122
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: f6771d73-462f-488e-8419-a133f34d051a
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '11,22,28|🇭🇰 香港2|@ripaojiedian #1'
+  name: '11,20,22,28|🇭🇰 香港2|@ripaojiedian #1'
   password: ccf426f1fe78
   plugin: v2ray-plugin
   plugin-opts:
@@ -25,27 +15,8 @@ proxies:
   server: 103.103.245.158
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 11,14|香港3|@ripaojiedian
-  network: tcp
-  port: '55238'
-  server: 103.224.80.122
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f6771d73-462f-488e-8419-a133f34d051a
 - client-fingerprint: chrome
-  name: '14,22,28,29|香港6|@ripaojiedian #2'
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 4400
-  server: 221.128.195.220
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- client-fingerprint: chrome
-  name: '14,22,28,29|香港4|@ripaojiedian #2'
+  name: '11,14,20,22,28,29|香港4|@ripaojiedian #2'
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 443
@@ -53,6 +24,27 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
+- alterId: 0
+  name: 14,21,36|HK 838.0KB/s
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 4400
+  server: 221.128.195.219
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 14|香港3|@ripaojiedian
+  network: tcp
+  port: '55238'
+  server: 103.224.80.122
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f6771d73-462f-488e-8419-a133f34d051a
 - alterId: 2
   cipher: auto
   name: 14|香港 电讯盈科有限公司
@@ -76,6 +68,39 @@ proxies:
   tls: true
   type: vmess
   uuid: 665d9b8f-153d-4907-adac-de12afd9c851
+- alterId: 0
+  name: 14,21,36|🇰HK香港2
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 443
+  server: 60.84.23.102
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 20,36|🇰HK香港3
+  password: ccf426f1fe78
+  port: 443
+  server: 103.103.245.158
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- name: 20|[Vless] HK_speednode_0044
+  network: ws
+  port: 2096
+  server: 45.192.223.44
+  servername: kejiland.freewarp.eu.org
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 12345678-1234-1234-1234-123456789123
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippetssecurity=tls
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
@@ -122,25 +147,17 @@ proxies:
       host: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
     path: /
 - alterId: 0
-  cipher: aes-256-gcm
-  name: 36|🇰HK香港3
-  password: ccf426f1fe78
-  port: 443
-  server: 103.103.245.158
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- name: '38,39|HK_speednode_0044 #1'
-  network: ws
-  port: 2096
-  server: 45.192.223.44
-  servername: kejiland.freewarp.eu.org
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 38|HK_speednode_0009
+  network: http
+  port: 31212
+  server: 47.242.90.210
   skip-cert-verify: false
-  tls: true
-  type: vless
+  tls: false
+  type: vmess
   udp: true
-  uuid: 12345678-1234-1234-1234-123456789123
-  ws-opts:
-    headers:
-      Host: kejiland.freewarp.eu.org
-    path: /snippets
+  uuid: 3a4271fb-2718-4489-da78-80a8e7701aa5
