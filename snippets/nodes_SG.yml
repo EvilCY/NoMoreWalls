@@ -1,9 +1,9 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 12,15,21,23|12,13|新加坡3|@ripaojiedian
+  name: 12,15,21|[VMess] 🇸🇬 新加坡3|@ripaojiedian
   network: ws
-  port: '443'
+  port: 443
   server: node4.rtxconfigz.com
   servername: node4.rtxconfigz.com
   skip-cert-verify: false
@@ -38,6 +38,24 @@ proxies:
   tls: true
   type: trojan
   udp: true
+- client-fingerprint: chrome
+  name: '15,23,29,30|新加坡2|@ripaojiedian #2'
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 5321
+  server: 36.156.102.84
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- client-fingerprint: chrome
+  name: '15,23,29,30|新加坡|@ripaojiedian #2'
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 2173
+  server: 36.156.102.84
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
 - cipher: aes-256-cfb
   name: 20|🇸🇬SG-13.213.46.196-170_1@170
   password: amazonskr05
@@ -207,6 +225,18 @@ proxies:
     headers:
       Host: download.windowsupdate.com
     path: /download
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 23,29|🇸🇬 新加坡3|@ripaojiedian
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @ripaojiedian)32cf132:178330
+    mode: tls
+  port: 2377
+  server: 5.44.249.43
+  tfo: false
+  type: ss
 - alterId: 4
   cipher: auto
   client-fingerprint: chrome
@@ -446,36 +476,6 @@ proxies:
   password: G!yBwPWH3Vao
   port: 802
   server: 217.197.161.138
-  type: ss
-- client-fingerprint: chrome
-  name: '29,30|新加坡|@ripaojiedian #2'
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 2173
-  server: 36.156.102.84
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- client-fingerprint: chrome
-  name: '29,30|新加坡2|@ripaojiedian #2'
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 5321
-  server: 36.156.102.84
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 29|🇸🇬 新加坡3|@ripaojiedian
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: (TG @ripaojiedian)32cf132:178330
-    mode: tls
-  port: 2377
-  server: 5.44.249.43
-  tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 39|SG_speednode_0019
