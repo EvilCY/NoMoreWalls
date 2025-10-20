@@ -1,7 +1,7 @@
 proxies:
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '11,20,22,28|🇭🇰 香港2|@ripaojiedian #1'
+  name: '12,21,23,29|🇭🇰 香港2|@ripaojiedian #1'
   password: ccf426f1fe78
   plugin: v2ray-plugin
   plugin-opts:
@@ -17,7 +17,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '11,20,22|12|🇭🇰 香港3|@ripaojiedian #1'
+  name: 12,21|[VMess] 🇭🇰 香港3|@ripaojiedian 2
   port: 45939
   server: 103.224.80.118
   skip-cert-verify: false
@@ -25,20 +25,17 @@ proxies:
   tls: false
   type: vmess
   uuid: 0ab56c46-8bee-42fe-9ec1-a2da8b264bb8
-- alterId: 0
-  name: 11,14,20,21,22,36|🇭🇰HK香港2
+- name: 12,15,21,22|中国 002
   network: tcp
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 443
   server: 203.198.122.28
   skip-cert-verify: true
   sni: fe2.update.microsoft.com
-  tls: true
   type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
-  name: '11,14,22|13|香港3|@ripaojiedian #1'
+  name: '12,15|香港3|@ripaojiedian #1'
   network: tcp
   port: '45939'
   server: 103.224.80.118
@@ -47,18 +44,75 @@ proxies:
   type: vmess
   uuid: 0ab56c46-8bee-42fe-9ec1-a2da8b264bb8
 - alterId: 0
-  cipher: aes-256-gcm
-  name: 20,36|🇰HK香港3
+  cipher: auto
+  name: '15,23,30|香港3|@ripaojiedian #2'
+  network: tcp
+  port: '58509'
+  server: 43.247.134.213
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7f75e117-5cfe-40b9-b18f-d46fa6add969
+- alterId: 2
+  cipher: auto
+  name: 15|香港 电讯盈科有限公司
+  network: ws
+  port: 30807
+  server: v10.heduian.link
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: '15|香港 电讯盈科有限公司 #1'
+  network: ws
+  port: 80
+  server: d9864c5f-sv6hs0-sv75lj-1swf9.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 2bb1edc8-fa5d-11ef-9dd9-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '15|香港 电讯盈科有限公司 #2'
+  network: ws
+  port: 80
+  server: 4b718efc-sv2sg0-t65a3e-tqgz.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 88da0d21-b25d-11ec-b9f7-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- cipher: aes-256-gcm
+  name: 21|[SS] 🇭🇰 香港2|@ripaojiedian
   password: ccf426f1fe78
   port: 443
   server: 103.103.245.158
-  skip-cert-verify: true
-  tls: true
   type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '23,29|🇭🇰 香港3|@ripaojiedian #1'
+  port: 58509
+  server: 43.247.134.213
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 7f75e117-5cfe-40b9-b18f-d46fa6add969
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 23|🇭🇰HK-116.49.109.153-0280
+  name: 24|🇭🇰HK-116.49.109.153-0280
   network: ws
   port: 80
   server: hkt.gotochinatown.net
@@ -73,7 +127,7 @@ proxies:
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 23|🇭🇰HK-1.65.139.81-0273
+  name: 24|🇭🇰HK-1.65.139.81-0273
   network: ws
   port: 80
   server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
@@ -88,7 +142,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 23|🇭🇰HK-1.36.223.95-0284
+  name: 24|🇭🇰HK-1.36.223.95-0284
   network: ws
   port: 80
   server: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
@@ -100,33 +154,3 @@ proxies:
     headers:
       host: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
     path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: '28|🇭🇰 香港3|@ripaojiedian #1'
-  port: 58509
-  server: 43.247.134.213
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 7f75e117-5cfe-40b9-b18f-d46fa6add969
-- client-fingerprint: chrome
-  name: '28,29|美国|@ripaojiedian #2'
-  network: tcp
-  password: c53647f3153f784b3c695ffbe5fb43c0
-  port: 2381
-  server: 202.181.103.235
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '29|香港3|@ripaojiedian #2'
-  network: tcp
-  port: '58509'
-  server: 43.247.134.213
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7f75e117-5cfe-40b9-b18f-d46fa6add969
