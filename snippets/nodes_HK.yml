@@ -1,7 +1,7 @@
 proxies:
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: '12,21,23,29|🇭🇰 香港2|@ripaojiedian #1'
+  name: '11,20,22,28|🇭🇰 香港2|@ripaojiedian #1'
   password: ccf426f1fe78
   plugin: v2ray-plugin
   plugin-opts:
@@ -15,32 +15,42 @@ proxies:
   server: 103.103.245.158
   tfo: false
   type: ss
+- client-fingerprint: chrome
+  name: '11,14,20,22,28,29|香港5|@ripaojiedian #2'
+  network: tcp
+  password: BxceQaOe
+  port: 443
+  server: 58.152.53.3
+  skip-cert-verify: true
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 12,21|[VMess] 🇭🇰 香港3|@ripaojiedian 2
-  port: 59516
-  server: 43.247.134.213
+  client-fingerprint: chrome
+  name: 11,20,22,28|🇭🇰 香港6|@ripaojiedian
+  port: 54804
+  server: 43.247.135.64
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 2906e19e-c99f-456e-bcb3-c5472fd594e5
-- name: 12,15,21|[Trojan] 🇭🇰 香港5|@ripaojiedian
+  uuid: 4f8db425-47ac-420e-b2d7-6e85bbc25562
+- alterId: 0
+  cipher: auto
+  name: '11,14,22,29|香港6|@ripaojiedian #2'
   network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 58.152.46.98
-  skip-cert-verify: false
-  type: trojan
+  port: '54804'
+  server: 43.247.135.64
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4f8db425-47ac-420e-b2d7-6e85bbc25562
 - alterId: 2
   cipher: auto
-  name: 12,15,21|[VMess] 🇭🇰 香港7|@ripaojiedian
+  name: 14|香港7|@ripaojiedian
   network: ws
-  port: 80
+  port: '80'
   server: 9438890c-t4whs0-t6blpv-1ldl3.hk.p5pv.com
   servername: ''
-  skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
   uuid: fd224a6c-addc-11ed-a8bf-f23c91cfbbc9
@@ -50,7 +60,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 12,15|香港3|@ripaojiedian
+  name: 14|香港3|@ripaojiedian
   network: tcp
   port: '59516'
   server: 43.247.134.213
@@ -58,35 +68,22 @@ proxies:
   tls: false
   type: vmess
   uuid: 2906e19e-c99f-456e-bcb3-c5472fd594e5
-- alterId: 0
-  cipher: auto
-  name: '15,23,30|香港6|@ripaojiedian #2'
-  network: tcp
-  port: '54804'
-  server: 43.247.135.64
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4f8db425-47ac-420e-b2d7-6e85bbc25562
-- client-fingerprint: chrome
-  name: '15,23,29,30|香港4|@ripaojiedian #1'
-  network: tcp
-  password: BxceQaOe
-  port: 194
-  server: 36.156.102.72
-  skip-cert-verify: true
-  type: trojan
-- client-fingerprint: chrome
-  name: '15,23,29,30|香港5|@ripaojiedian #2'
-  network: tcp
+- name: 14|香港5|@ripaojiedian
   password: BxceQaOe
   port: 443
-  server: 58.152.53.3
+  server: 58.152.46.98
   skip-cert-verify: true
+  type: trojan
+- name: 14|香港6|@ripaojiedian
+  password: adbac894-90b9-4913-b77e-a715a8d4ebc8
+  port: 20021
+  server: oss-cn-shanghai.letssepub.com
+  skip-cert-verify: false
+  sni: dingding-doc.com
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 15|香港 Cloudie数据中心
+  name: 14|香港 Cloudie数据中心
   network: tcp
   port: '8080'
   server: 103.243.26.209
@@ -94,26 +91,15 @@ proxies:
   type: vmess
   uuid: bc7e6840-ab83-4570-eaae-d9aff1e2da09
 - cipher: aes-256-gcm
-  name: 21|[SS] 🇭🇰 香港2|@ripaojiedian
+  name: 20|[SS] 🇭🇰 香港2|@ripaojiedian
   password: ccf426f1fe78
   port: 443
   server: 103.103.245.158
   type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 23,29|🇭🇰 香港6|@ripaojiedian
-  port: 54804
-  server: 43.247.135.64
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 4f8db425-47ac-420e-b2d7-6e85bbc25562
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 24|🇭🇰HK-116.49.109.153-0280
+  name: 23|🇭🇰HK-116.49.109.153-0280
   network: ws
   port: 80
   server: hkt.gotochinatown.net
@@ -128,7 +114,7 @@ proxies:
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 24|🇭🇰HK-1.65.139.81-0273
+  name: 23|🇭🇰HK-1.65.139.81-0273
   network: ws
   port: 80
   server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
@@ -143,7 +129,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 24|🇭🇰HK-1.36.223.95-0284
+  name: 23|🇭🇰HK-1.36.223.95-0284
   network: ws
   port: 80
   server: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
