@@ -1,6 +1,6 @@
 proxies:
 - alterId: 0
-  name: 12,15,21,23,37|🇵JP日本2
+  name: 12,37|🇵JP日本5
   network: tcp
   password: bca467b8c15211d189008a93c7519d3b
   port: 4452
@@ -11,7 +11,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 12,15,21,23,37|🇯🇵JP日本3
+  name: 12,37|🇵JP日本2
   network: tcp
   password: bca467b8c15211d189008a93c7519d3b
   port: 3161
@@ -23,7 +23,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 12,29|🇯🇵 日本4|@ripaojiedian
+  name: '12,21,23,29|🇯🇵 日本4|@ripaojiedian #1'
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
@@ -33,15 +33,27 @@ proxies:
   server: 54.64.148.82
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: '12,29,30|新加坡2|@ripaojiedian #1'
+- alterId: 0
+  client-fingerprint: chrome
+  name: 12,15,21,23,29,30,37|🇬SG新加坡4 3.4MB/s
   network: tcp
   password: bca467b8c15211d189008a93c7519d3b
   port: 5048
   server: 160.16.107.37
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
+  udp: true
+- alterId: 1
+  cipher: auto
+  name: 15|日本 东京Amazon数据中心
+  network: tcp
+  port: '449'
+  server: zrjfw-g06.jp04-1d-vm0.entry.fr0528.art
+  tls: false
+  type: vmess
+  uuid: 95062dc1-df89-3922-ae56-4ccffc712ed2
 - cipher: aes-256-cfb
   name: 20|🇯🇵JP-54.199.83.239-171_1@171
   password: doub.io
@@ -68,6 +80,15 @@ proxies:
     headers:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 21,37|🇯🇵JP日本4
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 54.64.148.82
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - name: 22|日本 001
   network: tcp
   password: c53647f3153f784b3c695ffbe5fb43c0
@@ -1343,3 +1364,13 @@ proxies:
   port: 443
   server: 149.22.87.204
   type: ss
+- alterId: 0
+  name: 37|🇵JP日本7
+  password: adbac894-90b9-4913-b77e-a715a8d4ebc8
+  port: 20021
+  server: oss-cn-shanghai.letssepub.com
+  skip-cert-verify: true
+  sni: dingding-doc.com
+  tls: true
+  type: trojan
+  udp: true
