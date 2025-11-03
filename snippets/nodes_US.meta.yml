@@ -22,7 +22,7 @@ proxies:
   type: hysteria2
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '15,39,40|US_speednode_0060 #2'
+  name: '15,39,40|US_speednode_0028 #1'
   port: 443
   reality-opts:
     public-key: 9VgEU9n4XfImCSwSdLXEAqotO7zVvZRSaolrtxJKEns
@@ -48,18 +48,12 @@ proxies:
     path: '%2f%3fed%3d2048'
 - alterId: 0
   cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 15,39|US_speednode_0042
+  name: 15|美国 - 圣克拉拉 - HostPapa - 2
   network: http
-  port: 32301
+  port: '32301'
   server: 104.168.94.41
-  skip-cert-verify: false
   tls: false
   type: vmess
-  udp: true
   uuid: a2235b72-fd9c-404f-be5a-53b2de0cb798
 - name: 15|🇺🇸_US_美国_21
   network: ws
@@ -169,6 +163,15 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
+- auth: af7ddbb2-3567-11ec-bd7c-f23c913c8d2b
+  name: '16,21|[Hysteria2] Channel id: @Shado...'
+  password: af7ddbb2-3567-11ec-bd7c-f23c913c8d2b
+  port: 443
+  server: 97cc76e9-t53wg0-tiqsce-t6fv.us.hyhuawei.com
+  skip-cert-verify: false
+  sni: 97cc76e9-t53wg0-tiqsce-t6fv.us.hyhuawei.com
+  tls: false
+  type: hysteria2
 - alterId: 0
   cipher: auto
   name: 20|🇺🇸_US_美国_0@37
@@ -866,14 +869,6 @@ proxies:
     headers:
       Host: pcs-referenced-camera-concerns.trycloudflare.com
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
-- auth: af7ddbb2-3567-11ec-bd7c-f23c913c8d2b
-  name: '21|[Hysteria2] Channel id: @Shado...'
-  password: af7ddbb2-3567-11ec-bd7c-f23c913c8d2b
-  port: 443
-  server: 97cc76e9-t53wg0-tiqsce-t6fv.us.hyhuawei.com
-  skip-cert-verify: false
-  sni: 97cc76e9-t53wg0-tiqsce-t6fv.us.hyhuawei.com
-  type: hysteria2
 - alpn:
   - h2%2Chttp/1.1
   name: 21|[Vless] US_speednode_0056
@@ -982,6 +977,21 @@ proxies:
     headers:
       Host: joss.krikkrik.xyz
     path: /Free-VPN-CF-Geo-Project/AE5
+- alterId: 1
+  cipher: auto
+  name: 22|美国 002
+  network: ws
+  port: 443
+  server: seribus.org
+  skip-cert-verify: true
+  tfo: true
+  type: vmess
+  udp: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: seribus.org
+    path: linkvws
 - alterId: 0
   cipher: auto
   name: 22|美国 003
@@ -17108,124 +17118,70 @@ proxies:
     headers:
       host: v2ray.codefyinc.com
     path: /
-- alterId: 1
-  cipher: auto
-  name: 39|US_speednode_0045
-  port: 21583
-  server: 5tzjp-g03.jp01-nn-vm0.entry.fr0528.art
-  servername: 5tzjp-g03.jp01-nn-vm0.entry.fr0528.art
+- alterId: 0
+  name: 37|🇺🇸US美国2
+  password: d0298536-d670-4045-bbb1-ddd5ea68683e
+  port: 2087
+  server: 104.25.254.4
   skip-cert-verify: true
+  sni: azadnet-bdr.pages.dev
   tls: true
-  type: vmess
+  type: trojan
   udp: true
-  uuid: 339cf625-ef70-3be4-8965-5a1e3f384d9f
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: '39,40|US_speednode_0056 #1'
-  network: ws
-  port: 443
-  server: 172.66.44.183
-  servername: a-4km.pages.dev
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: c3975f60-60d4-4f14-9780-070ce18c1dda
-  ws-opts:
-    headers:
-      Host: a-4km.pages.dev
-    path: /doa9bvfjd83ix3v9?ed=2560
-- client-fingerprint: randomized
-  name: '39,40|US_speednode_0057 #1'
-  network: ws
-  port: 8443
-  server: www.speedtest.net
-  servername: 0HvsNO270bvRxG6EKbY8uMsQn-6941Fa.paGeS.dEV
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: b1addf1e-6c1d-4410-bfa5-cf26328319d9
-  ws-opts:
-    headers:
-      Host: 0HvsNO270bvRxG6EKbY8uMsQn-6941Fa.paGeS.dEV
-    path: /CmxkS1704Zcx8p3M?ed=2560
-- client-fingerprint: random
-  name: '39,40|US_speednode_0058 #1'
-  network: ws
+- alterId: 0
+  name: 37|🇺🇸US美国3
+  password: trojan
   port: 8443
   server: www.visa.com.sg
-  servername: azadnet-2f7.pages.dev
-  skip-cert-verify: false
+  skip-cert-verify: true
+  sni: pangpi.pages.dev
   tls: true
-  type: vless
+  type: trojan
   udp: true
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  ws-opts:
-    headers:
-      Host: azadnet-2f7.pages.dev
-    path: /?ed=2560
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: '39,40|US_speednode_0059 #1'
-  network: ws
-  port: 443
-  server: aliakb3435.pages.dev
-  servername: aliakb3435.pages.dev
-  skip-cert-verify: false
+- alterId: 0
+  name: 37|🇸US美国4
+  password: trojan
+  port: 8443
+  server: ip.sb
+  skip-cert-verify: true
+  sni: fofang.pages.dev
   tls: true
-  type: vless
+  type: trojan
   udp: true
-  uuid: 97c4550f-8ecc-42fa-ae66-3b550c986cd2
-  ws-opts:
-    headers:
-      Host: aliakb3435.pages.dev
-    path: /
-- name: '39,40|US_speednode_0061 #1'
-  network: ws
-  port: 443
-  server: 69.84.182.18
-  servername: cdn-node-oss-63.paofu.de
-  skip-cert-verify: false
+- alterId: 0
+  name: 37|🇸US美国6
+  password: trojan
+  port: 8443
+  server: 104.26.12.31
+  skip-cert-verify: true
+  sni: fofang.pages.dev
   tls: true
-  type: vless
+  type: trojan
   udp: true
-  uuid: a25ff90c-964c-485a-b72a-858864a27dc0
-  ws-opts:
-    headers:
-      Host: cdn-node-oss-63.paofu.de
-    path: /profile/sharenode
-- client-fingerprint: random
-  name: '39,40|US_speednode_0062 #1'
-  network: ws
+- alterId: 0
+  name: 37|🇺🇸US美国7
+  password: er668
   port: 443
-  server: freev2.cloudflare.182682.xyz
-  servername: do-sgp1.862400.xyz
+  server: kfjdi.pages.dev
   skip-cert-verify: true
   tls: true
-  type: vless
+  type: trojan
   udp: true
-  uuid: bda91ce0-d0d7-4d6a-a6e2-10860f655cf5
-  ws-opts:
-    headers:
-      Host: do-sgp1.862400.xyz
-    path: /announcement
-- client-fingerprint: random
-  name: '39,40|US_speednode_0063 #1'
-  network: ws
-  port: 443
-  server: ct.877774.xyz
-  servername: do-lon1.862400.xyz
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|🇺🇸US美国8
+  password: 360e21d21977dc11
+  port: 57456
+  server: 104.167.197.25
   skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: bda91ce0-d0d7-4d6a-a6e2-10860f655cf5
-  ws-opts:
-    headers:
-      Host: do-lon1.862400.xyz
-    path: /announcement
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|🇸US美国9
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 172.233.128.126
+  skip-cert-verify: true
+  tls: true
+  type: ss
