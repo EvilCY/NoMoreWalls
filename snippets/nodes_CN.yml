@@ -46,7 +46,7 @@ proxies:
   sni: t.me%2Fripaojiedian
   type: trojan
 - alterId: 0
-  name: 12,15,21,23,37|🇵JP日本3
+  name: 12,15,21,37|🇯🇵JP日本3
   network: tcp
   password: 1b57001bd214304027025a740b6cf1ac
   port: 316
@@ -57,7 +57,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 12,15,21,23,37|JP
+  name: 12,15,21,37|JP
   network: tcp
   password: e4e262d453466988575c397a30562337
   port: 1332
@@ -68,7 +68,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 12,15,21,23,37|SG
+  name: 12,15,21,37|🇬SG新加坡3
   network: tcp
   password: e4e262d453466988575c397a30562337
   port: 2283
@@ -79,7 +79,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 12,15,21,23,37|🇸🇬SG新加坡3
+  name: 12,15,21,37|🇬SG
   network: tcp
   password: e4e262d453466988575c397a30562337
   port: 2173
@@ -99,7 +99,7 @@ proxies:
   sni: t.me%2Fripaojiedian
   type: trojan
 - alterId: 0
-  name: 12,15,21,23,37|🇺🇸US美国9
+  name: 12,15,21,37|US国
   network: tcp
   password: e4e262d453466988575c397a30562337
   port: 4553
@@ -128,17 +128,14 @@ proxies:
   tls: false
   type: vmess
   uuid: de32752c-0661-467e-82d3-35bc740a787f
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: 15,22|中国 039
+  name: 15|中国 - 杭州 - Hangzhou Alibaba Adv...
   network: tcp
-  port: 30302
-  server: 39.107.155.11
-  skip-cert-verify: true
-  tfo: true
+  port: '50002'
+  server: 120.26.137.112
   tls: false
   type: vmess
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
@@ -151,24 +148,6 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 15|中国 - 佛山市 - China Mobile - 2
-  network: tcp
-  port: '59003'
-  server: 183.236.51.36
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 15|中国 - 杭州 - Hangzhou Alibaba Adv...
-  network: tcp
-  port: '50002'
-  server: 120.26.137.112
-  tls: false
-  type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
@@ -1110,6 +1089,17 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 22|中国 039
+  network: tcp
+  port: 30302
+  server: 39.107.155.11
+  skip-cert-verify: true
+  tfo: true
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: 22|中国 040
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -2019,16 +2009,7 @@ proxies:
   type: vmess
   uuid: 38117bbc-49f6-48f8-b39e-f41b94841793
 - alterId: 0
-  name: 37|CN
-  password: BxceQaOe
-  port: 24392
-  server: 36.150.215.239
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|🇨🇳CN中国2
+  name: 37|🇳CN国
   password: BxceQaOe
   port: 4556
   server: 36.151.192.242
@@ -2037,11 +2018,40 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 37|🇳CN中国3
+  cipher: aes-128-gcm
+  name: 37,39|CN_speednode_0005
+  password: I1qrYxOXxPYCOkhT
+  port: 50339
+  server: kr2.web3sp.com
+  skip-cert-verify: true
+  tls: true
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 37|🇳广东2
+  password: I1qrYxOXxPYCOkhT
+  port: 50529
+  server: us1.web3sp.com
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 37|🇳CN中国2
   password: BxceQaOe
-  port: 53743
+  port: 24392
   server: 36.150.215.239
   skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|🇳CN中国3
+  password: adbac894-90b9-4913-b77e-a715a8d4ebc8
+  port: 20021
+  server: oss-cn-shanghai.letssepub.com
+  skip-cert-verify: true
+  sni: dingding-doc.com
   tls: true
   type: trojan
   udp: true
@@ -2056,11 +2066,10 @@ proxies:
   udp: true
 - alterId: 0
   name: 37|🇳CN中国5
-  password: adbac894-90b9-4913-b77e-a715a8d4ebc8
-  port: 20021
-  server: oss-cn-shanghai.letssepub.com
+  password: BxceQaOe
+  port: 53743
+  server: 36.150.215.239
   skip-cert-verify: true
-  sni: dingding-doc.com
   tls: true
   type: trojan
   udp: true
@@ -2090,13 +2099,6 @@ proxies:
   password: I1qrYxOXxPYCOkhT
   port: 50619
   server: in2.web3sp.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 39|CN_speednode_0005
-  password: I1qrYxOXxPYCOkhT
-  port: 50339
-  server: kr2.web3sp.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
