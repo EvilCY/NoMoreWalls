@@ -1,15 +1,4 @@
 proxies:
-- name: 4|@v2FreeHub 🇬🇧
-  network: ws
-  password: 6b5b50ff-7798-40dc-9888-b4dd581e5435
-  port: 44004
-  server: 51.89.128.93
-  sni: joss.dus.biz.id
-  type: trojan
-  ws-opts:
-    headers:
-      Host: joss.dus.biz.id
-    path: '%2FFree-VPN-CF-Geo-Project%2F51.89.128.93%3D44004'
 - name: 4,22|法国 113
   network: grpc
   port: 8880
@@ -691,8 +680,17 @@ proxies:
   server: 141.98.101.178
   type: ss
 - alterId: 0
-  cipher: aes-128-gcm
+  cipher: chacha20-ietf-poly1305
   name: 37|GB国
+  password: c40641c1f89e7acb
+  port: 57456
+  server: 46.226.163.225
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 37|🇧GB英国2
   password: 57bc0c04-8184-48f5-906b-897d095ed445
   port: 17459
   server: liubu9.singdns.com
@@ -701,19 +699,10 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 37|🇧GB英国2
+  name: 37|🇧GB英国3
   password: DaiJfYM6WoCXmBbF69QFR0
   port: 11746
   server: 195.66.27.81
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 37|🇧GB英国3
-  password: c40641c1f89e7acb
-  port: 57456
-  server: 46.226.163.225
   skip-cert-verify: true
   tls: true
   type: ss
