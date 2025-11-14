@@ -1,34 +1,32 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 4|🇭🇰 Hong Kong هنگ کنگ
+  name: 3,36|未知34
   network: ws
-  port: '54809'
+  port: 54809
   server: 8.210.140.23
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: fde73daf-cc67-42f3-9935-35b132b01abd
   ws-opts:
-    headers:
-      Host: ''
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: 4|🇭🇰 Hong Kong
+  name: 3,36|未知26
   network: ws
-  port: '36968'
+  port: 36968
   server: 47.83.18.10
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 176bf1dd-647f-4c09-892e-5f9223dc8617
   ws-opts:
-    headers:
-      Host: ''
     path: /arki?ed=2048
 - cipher: aes-256-gcm
-  name: '12,21,23,29|🇭🇰 香港2|@ripaojiedian #1'
+  name: '11,20,22,28|🇭🇰 香港2|@ripaojiedian #1'
   password: ccf426f1fe78
   plugin: v2ray-plugin
   plugin-opts:
@@ -41,15 +39,18 @@ proxies:
   port: 443
   server: 103.103.245.158
   type: ss
-- name: '12,15,21,23,29,30|香港3|@ripaojiedian #2'
+- alterId: 0
+  name: 11,14,20,22,28,29,36|🇭🇰HK香港5
   network: tcp
   password: 2274c52572e721086f8bd8f88984643c
   port: 443
   server: 58.152.110.9
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
-- name: '12,15,21,23,29,30|香港4|@ripaojiedian #2'
+  udp: true
+- name: '11,14,20,22,28,29|香港4|@ripaojiedian #2'
   network: tcp
   password: BxceQaOe
   port: 443
@@ -57,7 +58,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '12,15,21,23,29,30|香港5|@ripaojiedian #2'
+- name: '11,14,20,22,28,29|香港5|@ripaojiedian #2'
   network: tcp
   password: BxceQaOe
   port: 443
@@ -66,12 +67,12 @@ proxies:
   sni: t.me%2Fripaojiedian
   type: trojan
 - cipher: chacha20-ietf
-  name: '12,21,23,29|🇭🇰 香港6|@ripaojiedian #1'
+  name: '11,20,22,28|🇭🇰 香港6|@ripaojiedian #1'
   password: asd123456
   port: 8388
   server: 103.149.182.158
   type: ss
-- name: '12,15,21,23,29,30|新加坡3|@ripaojiedian #2'
+- name: '11,14,20,22,28,29|新加坡3|@ripaojiedian #2'
   network: tcp
   password: BxceQaOe
   port: 2753
@@ -79,7 +80,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '12,15,21,23,29,30|美国3|@ripaojiedian #2'
+- name: '11,14,20,22,28,29|美国3|@ripaojiedian #2'
   network: tcp
   password: BxceQaOe
   port: 4094
@@ -87,41 +88,50 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '12,15,21,23,39,40|HK_speednode_0019 #2'
+- alterId: 0
+  name: '11,14,20,22,36,38,39|HK_speednode_0019 #2'
   password: BxceQaOe
   port: 443
   server: 203.198.122.97
   skip-cert-verify: true
   sni: t.me/ripaojiedian
+  tls: true
   type: trojan
   udp: true
-- name: 15|香港+电讯盈科有限公司
+- alterId: 0
+  name: 14,36|HK
   password: BxceQaOe
   port: 443
   server: 203.198.122.129
+  skip-cert-verify: true
+  tls: true
   type: trojan
-- name: '15|香港+电讯盈科有限公司 #1'
+  udp: true
+- name: '14|香港+电讯盈科有限公司 #1'
   password: BxceQaOe
   port: 4094
   server: 116.49.237.130
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '15|香港+电讯盈科有限公司 #2'
+- name: '14|香港+电讯盈科有限公司 #2'
   password: BxceQaOe
   port: 443
   server: 203.198.122.97
   sni: t.me%252Fripaojiedian
   type: trojan
-- cipher: aes-256-gcm
-  name: 21|[SS] 🇭🇰 香港2|@ripaojiedian
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 20,36|🇰HK香港3
   password: ccf426f1fe78
   port: 443
   server: 103.103.245.158
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 24|🇭🇰HK-116.49.109.153-0280
+  name: 23|🇭🇰HK-116.49.109.153-0280
   network: ws
   port: 80
   server: hkt.gotochinatown.net
@@ -136,7 +146,7 @@ proxies:
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 24|🇭🇰HK-1.65.139.81-0273
+  name: 23|🇭🇰HK-1.65.139.81-0273
   network: ws
   port: 80
   server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
@@ -151,7 +161,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 24|🇭🇰HK-1.36.223.95-0284
+  name: 23|🇭🇰HK-1.36.223.95-0284
   network: ws
   port: 80
   server: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
@@ -163,3 +173,13 @@ proxies:
     headers:
       host: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
     path: /
+- alterId: 0
+  name: 36|🇭🇰HK香港2
+  password: BxceQaOe
+  port: 443
+  server: 219.77.239.35
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  tls: true
+  type: trojan
+  udp: true
