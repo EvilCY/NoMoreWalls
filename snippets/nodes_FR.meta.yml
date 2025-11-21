@@ -85,6 +85,36 @@ proxies:
   type: vless
   udp: true
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 13|46bdcf755dac4bba9494a935af7805...
+  network: ws
+  port: 443
+  server: sky.ns.cloudflare.com
+  servername: 638992008112154761.jimny-amsib.info
+  tls: true
+  type: vless
+  udp: false
+  uuid: 87acaa42-a6dc-4240-a490-bb99b44454f1
+  ws-opts:
+    headers:
+      host: 638992008112154761.jimny-amsib.info
+    path: /tgysufws
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 13|fd90ca95ae024a6982e0edbe983c58...
+  network: ws
+  port: 443
+  server: sky.ns.cloudflare.com
+  servername: 638991995737738113.swift-amsib.info
+  tls: true
+  type: vless
+  udp: false
+  uuid: 1fe1b7e2-e3ec-44ba-b440-c038ddcee40d
+  ws-opts:
+    headers:
+      host: 638991995737738113.swift-amsib.info
+    path: /ahkthyws
 - cipher: aes-256-gcm
   name: 20|🇫🇷FR-193.243.147.128-160_1@160
   password: 7BcLdsO1WweoGD0X
@@ -1776,11 +1806,14 @@ proxies:
   port: 8080
   server: 45.158.171.110
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇫🇷FR-81.19.137.222-0266
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 24,37|🇫🇷FR法国2
   password: a58fa62b4944ddbf
   port: 57456
   server: 81.19.137.222
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 24|🇫🇷FR-77.105.166.12-0296
@@ -1811,4 +1844,13 @@ proxies:
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 45.158.171.60
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|FR国
+  password: WDavBimDmH2QLxljf5PSO1
+  port: 443
+  server: 62.210.88.22
+  skip-cert-verify: true
+  tls: true
   type: ss
