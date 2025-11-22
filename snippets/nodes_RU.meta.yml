@@ -11,20 +11,6 @@ proxies:
       Host: joss.gpj1.web.id
     path: '%2FFree-VPN-CF-Geo-Project%2F193.233.114.58%3D8443'
 - flow: xtls-rprx-vision
-  name: 4|@Filter_breaker-5
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: jSx3_X_tBAcNgp7SrKSfZnr5WN0cTN2ShEJv4rHceQU
-  server: 121.127.37.173
-  servername: www.microsoft.com
-  tls: false
-  type: vless
-  uuid: 5713fee0-2f51-4453-9502-b7fd38a657b6
-  ws-opts:
-    headers:
-      Host: '%2F%3FBIA_TELEGRAM%40MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI'
-- flow: xtls-rprx-vision
   name: 4|🇳🇱🇷🇺 NL - Russia
   network: tcp
   port: 443
@@ -48,7 +34,7 @@ proxies:
   tls: false
   type: vless
   uuid: 8e6acce9-8b56-7190-d491-7d84f8189e26
-- name: '12,23,39,40|RU_speednode_0044 #1'
+- name: '12,21,23,39,40|RU_speednode_0044 #1'
   network: ws
   password: d78d48df-b788-4a95-9e9f-77c9b2f69822
   port: 8443
@@ -61,6 +47,20 @@ proxies:
     headers:
       Host: joss.gpj1.web.id
     path: /Free-VPN-CF-Geo-Project/193.233.114.58=8443
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '15,39,40|RU_speednode_0042 #2'
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: 193.233.244.196
+  servername: ign.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d42c146e-2ded-4b4a-8592-6459ac636910
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '15,39,40|RU_speednode_0043 #2'
@@ -123,6 +123,19 @@ proxies:
   sni: 004282c1-sbdj40-sdlngq-1n7jq.ru.z7zi.com
   type: trojan
   udp: false
+- name: 21|[Vless] RU_speednode_0040
+  network: ws
+  port: 1443
+  server: 81.161.98.228
+  servername: cdn.filterai.ru
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 00f02ab2-6f2d-449f-a089-d182a2fac59a
+  ws-opts:
+    headers:
+      Host: cdn.filterai.ru
+    path: /websocketplsecurity=tls
 - name: 22|俄罗斯 001
   network: ws
   password: wb6368
