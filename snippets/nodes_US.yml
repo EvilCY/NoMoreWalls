@@ -1,24 +1,32 @@
 proxies:
-- alterId: 0
+- alterId: 1
   cipher: auto
-  name: '4,12,15,23,30|美国4|@ripaojiedian #2'
-  network: tcp
-  port: '180'
-  server: 82.198.246.97
-  servername: ''
-  tls: false
+  name: 4,22|法国 001
+  network: ws
+  port: 443
+  server: serkat.org
+  servername: serkat.org
+  skip-cert-verify: true
+  tfo: true
+  tls: true
   type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: '4|👉🆔@v2ray_configs_pool📡🇺🇸®️Unit... #1'
-  network: tcp
-  port: '8881'
-  server: 167.172.158.100
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: db5afae4-ac23-41a6-8378-f307a9a47436
+  udp: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: serkat.org
+    path: linkvws
+- name: 4|@v2FreeHub 🇺🇸
+  network: ws
+  password: abb96ae5-8337-4719-b300-fc3b2efbd14d
+  port: 21575
+  server: 47.89.150.45
+  sni: joss.gpj1.web.id
+  type: trojan
+  ws-opts:
+    headers:
+      Host: joss.gpj1.web.id
+    path: '%2FFree-VPN-CF-Geo-Project%2F47.89.150.45%3D21575'
 - alterId: 2
   cipher: auto
   name: 15|美国 - 洛杉矶 - Datacamp Limited - ...
@@ -28,21 +36,32 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '15,23,29,30|美国2|@ripaojiedian #2'
-  network: tcp
-  password: 2cf6d686799e6fa95316394064f26c0a
-  port: 4054
-  server: 160.16.63.16
+- alterId: 0
+  name: 15,37|US
+  password: dd2f25b4c70689de8bc0f7fa9d6591cb
+  port: 2890
+  server: 160.16.81.84
   skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
-- name: '15,23,29,30|美国|@ripaojiedian #2'
-  network: tcp
-  password: 2cf6d686799e6fa95316394064f26c0a
-  port: 2890
-  server: 3.113.21.213
-  skip-cert-verify: false
+  udp: true
+- alterId: 0
+  name: 15,37|🇸US美国8
+  password: dd2f25b4c70689de8bc0f7fa9d6591cb
+  port: 702
+  server: 160.16.81.84
+  skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
+  type: trojan
+  udp: true
+- name: 15|美国3|@ripaojiedian
+  password: BxceQaOe
+  port: 2773
+  server: 95.40.7.3
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
   type: trojan
 - alterId: 0
   cipher: auto
@@ -57,14 +76,6 @@ proxies:
     headers:
       Host: ''
     path: /grqf
-- name: '15,23,29,30|美国3|@ripaojiedian #2'
-  network: tcp
-  password: BxceQaOe
-  port: 2569
-  server: 18.162.97.46
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 20|🇺🇸_US_美国_0@37
