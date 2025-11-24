@@ -1,4 +1,31 @@
 proxies:
+- alterId: 2
+  cipher: auto
+  name: '4,15|中国 - 香港 - Hong Kong Telecommun... #2'
+  network: ws
+  port: '80'
+  server: hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 25b2699a-e18e-11ec-8e69-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: hkt.gotochinatown.net
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '4|👉🆔@v2ray_configs_pool📡🇭🇰®️Hong... #1'
+  network: ws
+  port: '3721'
+  server: 8.218.17.136
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 33755eb3-5c12-4ca7-b86e-6f1aa6e7ce27
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - cipher: aes-256-gcm
   name: '12,21,23,29|🇭🇰 香港2|@ripaojiedian #1'
   password: ccf426f1fe78
@@ -14,7 +41,7 @@ proxies:
   server: 103.103.245.158
   type: ss
 - alterId: 0
-  name: '12,15,21,23,37,39,40|HK_speednode_0019 #1'
+  name: '12,15,21,23,37,39,40|HK_speednode_0019 #2'
   network: tcp
   password: dd2f25b4c70689de8bc0f7fa9d6591cb
   port: 443
@@ -42,7 +69,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: aes-256-gcm
-  name: 12,21,23,37|🇰HK香港3
+  name: 12,21,37|🇰HK香港4 61.3KB/s
   password: g5MeD6Ft3CWlJId
   port: 5003
   server: 188.116.22.96
@@ -61,19 +88,22 @@ proxies:
   password: BxceQaOe
   port: 443
   server: 58.152.25.241
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
+  sni: t.me%252Fripaojiedian
   type: trojan
-- alterId: 0
-  name: 15,37|HK
-  password: BxceQaOe
+- name: '15,23,29,30|香港3|@ripaojiedian #1'
+  network: tcp
+  password: 2cf6d686799e6fa95316394064f26c0a
   port: 443
-  server: 58.152.25.241
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  tls: true
+  server: 58.152.110.92
+  skip-cert-verify: false
+  sni: www.nintendogames.net
   type: trojan
-  udp: true
+- name: 15|香港+Amazon数据中心
+  password: BxceQaOe
+  port: 2569
+  server: 18.162.97.46
+  sni: t.me%252Fripaojiedian
+  type: trojan
 - alterId: 0
   cipher: aes-256-gcm
   name: 21,37|🇰HK香港2
@@ -128,29 +158,41 @@ proxies:
     headers:
       host: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
     path: /
-- name: '29,30|香港3|@ripaojiedian #2'
-  network: tcp
-  password: 2cf6d686799e6fa95316394064f26c0a
-  port: 443
-  server: 58.152.110.92
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
 - alterId: 0
-  name: 37|🇭🇰HK香港4
+  name: 37|HK
   password: BxceQaOe
   port: 443
-  server: 58.152.53.22
+  server: 58.152.25.241
   skip-cert-verify: true
   sni: t.me/ripaojiedian
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: 37|🇰HK香港5
+  name: 37|🇭🇰HK香港5
+  password: 22367c45-f6c4-4ca8-1d52-d9787d7bbe91
+  port: 8443
+  server: time.is
+  skip-cert-verify: true
+  sni: cm3-bpg.filegear-sg.me
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|🇭🇰HK香港6
   password: BxceQaOe
   port: 443
   server: 58.152.18.95
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|🇭🇰HK香港7
+  password: BxceQaOe
+  port: 443
+  server: 58.152.53.22
   skip-cert-verify: true
   sni: t.me/ripaojiedian
   tls: true
