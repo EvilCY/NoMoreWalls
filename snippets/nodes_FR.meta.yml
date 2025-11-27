@@ -1,4 +1,21 @@
 proxies:
+- alterId: 1
+  cipher: auto
+  name: 4,22|比利时 007
+  network: ws
+  port: 443
+  server: fapeng.org
+  servername: fapeng.org
+  skip-cert-verify: true
+  tfo: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: fapeng.org
+    path: linkvws
 - alpn:
   - h3
   - h2
@@ -127,6 +144,37 @@ proxies:
   port: 6379
   server: 149.202.82.172
   type: ss
+- alpn:
+  - http%2F1.1
+  name: 21|[Trojan] 🇫🇷 FR TROJAN-02@free-...
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.44.152.34
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http%2F1.1
+  name: 21|[Trojan] 🇫🇷 FR TROJAN-03@free-...
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.39.186.144
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- client-fingerprint: chrome
+  name: 21|[Vless] 🇫🇷 FR VLESS-67@free-no...
+  network: tcp
+  port: 2066
+  reality-opts:
+    public-key: -Z0BnqW2MHBXjDsB2a8-KPfg8GqTO1uIPXriHQAMhSY
+    short-id: 6b245ab1
+  server: 185.193.17.80
+  servername: yahoo.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 44830663-914e-4127-a9b3-412406f59cbe
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
@@ -1739,7 +1787,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 24,37|🇷FR法国3
+  name: 24,37|🇫🇷FR法国2
   password: a58fa62b4944ddbf
   port: 57456
   server: 81.19.137.222
@@ -1777,18 +1825,8 @@ proxies:
   server: 45.158.171.60
   type: ss
 - alterId: 0
-  name: 37|🇷FR国
-  password: be94cd60-8e91-4cd6-9c53-26ee1314edfd
-  port: 2053
-  server: 178.33.161.196
-  skip-cert-verify: true
-  sni: joss.gpj1.web.id
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 37|🇷FR法国2
+  name: 37|🇷FR国
   password: WDavBimDmH2QLxljf5PSO1
   port: 443
   server: 62.210.88.22
