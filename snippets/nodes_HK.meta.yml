@@ -1,17 +1,16 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 4|🇭🇰 Hong Kong هنگ کنگ
+  name: 4,37|未知32
   network: ws
-  port: '54809'
+  port: 54809
   server: 8.210.140.23
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: fde73daf-cc67-42f3-9935-35b132b01abd
   ws-opts:
-    headers:
-      Host: ''
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
@@ -41,14 +40,17 @@ proxies:
   port: 443
   server: 103.103.245.158
   type: ss
-- name: '12,15,21,23|12,13|香港3|@ripaojiedian #1'
+- alterId: 0
+  name: 12,15,21,37|HK
   network: tcp
   password: 2cf6d686799e6fa95316394064f26c0a
   port: 443
   server: 58.152.110.120
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
+  udp: true
 - name: '12,15,21,23,29,30|香港4|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
@@ -75,7 +77,7 @@ proxies:
   type: trojan
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 13|8337a97531e446d18282359bfb19e7...
+  name: 13|fdfaadfb5f764376b96cce468b4489...
   network: ws
   port: 443
   server: 20.239.233.43
@@ -92,7 +94,7 @@ proxies:
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 13|cdc300f4ba144f92ac1fe4acc636a8...
+  name: 13|c10a56b84841428c93e378f18ab00f...
   network: ws
   port: 6192
   server: 8.218.113.19
@@ -102,6 +104,14 @@ proxies:
   uuid: 406d5be6-101c-46f7-9e10-be222a9f5a1b
   ws-opts:
     path: /arki?ed=2048
+- name: '15,23,29,30|香港3|@ripaojiedian #1'
+  network: tcp
+  password: 2cf6d686799e6fa95316394064f26c0a
+  port: 443
+  server: 58.152.18.55
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
 - name: 15|HK VLESS-101@free-nodes
   network: ws
   port: 443
@@ -114,6 +124,12 @@ proxies:
     headers:
       Host: dabaius2.sylu.net
     path: '%2Fdb10240eb751d6ab'
+- name: 15|HK VLESS-05@free-nodes
+  port: 10001
+  server: 156.224.78.8
+  tls: false
+  type: vless
+  uuid: 9c79aceb-4649-44ea-9698-b5e9ecf6d6da
 - name: 15|HK VLESS-33@free-nodes
   network: ws
   port: 443
@@ -126,12 +142,6 @@ proxies:
     headers:
       Host: n1761184283.74qxv.top
     path: '%2F2ebf5fe9-8cb1-4095-bd91-9b06991fb52f'
-- name: 15|HK VLESS-05@free-nodes
-  port: 10001
-  server: 156.224.78.8
-  tls: false
-  type: vless
-  uuid: 9c79aceb-4649-44ea-9698-b5e9ecf6d6da
 - name: 21|[Vless] 🇭🇰 HK VLESS-33@free-no...
   network: ws
   port: 443
@@ -223,11 +233,3 @@ proxies:
     headers:
       host: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
     path: /
-- name: '29,30|香港3|@ripaojiedian #1'
-  network: tcp
-  password: 2cf6d686799e6fa95316394064f26c0a
-  port: 443
-  server: 58.152.18.55
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
