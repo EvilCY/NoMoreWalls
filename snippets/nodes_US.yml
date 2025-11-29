@@ -5,12 +5,14 @@ proxies:
   port: 443
   server: 63.180.254.10
   type: ss
-- name: '12,15,21,23,39,40|US_speednode_0043 #1'
+- alterId: 0
+  name: '12,15,21,23,37,39,40|US_speednode_0043 #1'
   password: telegram-id-privatevpns
   port: 22222
   server: 51.45.12.251
   skip-cert-verify: true
   sni: trojan.burgerip.co.uk
+  tls: true
   type: trojan
   udp: true
 - name: '12,15,21,23,39,40|US_speednode_0044 #1'
@@ -21,6 +23,15 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 15|英国 V2CROSS.COM
+  network: tcp
+  port: 180
+  server: 82.198.246.97
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 2
   cipher: auto
   name: 15|美国 - 阿什本 - HostPapa - 5
@@ -30,15 +41,6 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: 15|英国 V2CROSS.COM
-  network: tcp
-  port: '180'
-  server: 82.198.246.97
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
   name: 20|🇺🇸_US_美国_0@37
@@ -738,7 +740,7 @@ proxies:
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - alterId: 0
   cipher: aes-256-gcm
-  name: 21,37|US 66.0KB/s
+  name: 21,37|US2 2.4MB/s
   password: 8JCsPssfgS8tiRwiMlhARg==
   port: 12000
   server: 15.204.247.49
@@ -751,11 +753,14 @@ proxies:
   port: 990
   server: 173.234.29.2
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 21|[SS] 🇺🇸 US SS-132@free-nodes
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 21,37|US 177.0MB/s
   password: 8tmnvX5zYuWGVIDP2jglZw
   port: 1080
   server: 5.78.51.123
+  skip-cert-verify: true
+  tls: true
   type: ss
 - name: 22|美国 001
   network: ws
@@ -5367,10 +5372,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 37|🇺🇸US美国2
-  password: RFK38Cg7APneSB5cWDcpbm
-  port: 443
-  server: switcher-nick-croquet.freesocks.work
+  name: 37|🇸US美国3
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 172.233.128.126
   skip-cert-verify: true
   tls: true
   type: ss
