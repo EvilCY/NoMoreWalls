@@ -1,15 +1,4 @@
 proxies:
-- name: 4|@v2FreeHub 🇷🇺
-  network: ws
-  password: 1bd66fff-fca0-4028-aaa5-f83bbb9e5c2c
-  port: 443
-  server: 109.120.187.55
-  sni: joss.gpj.web.id
-  type: trojan
-  ws-opts:
-    headers:
-      Host: joss.gpj.web.id
-    path: '%2FFree-VPN-CF-Geo-Project%2F109.120.187.55%3D443'
 - flow: xtls-rprx-vision
   name: 4|🇳🇱🇷🇺 NL - Russia
   network: tcp
@@ -56,6 +45,22 @@ proxies:
   tls: true
   type: vless
   uuid: bca5cfe1-3d2a-45dc-b66a-96298e0051f5
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: xyz
+  name: 15,21|[Vless] 🇷🇺 RU VLESS-11@free-no...
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: FCg2XiFJrpH-2XlELSSSyEC7zkeW29HOgp4rfrqXEAI
+    short-id: 123abc
+  server: 51.250.28.39
+  servername: cloudflare.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 4a6de183-2ad3-456c-b420-feeac81f6257
 - alterId: 0
   cipher: auto
   name: 15|俄罗斯 V2CROSS.COM
