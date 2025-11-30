@@ -63,31 +63,6 @@ proxies:
   type: vless
   udp: true
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: 15|FR VLESS-38@free-nodes
-  port: 443
-  server: cosmin.ns.cloudflare.com
-  tls: false
-  type: vless
-  uuid: f956952d-dde1-4bc6-861e-22a9dc4554c4
-- client-fingerprint: chrome
-  name: 15,21|[Vless] 🇫🇷 FR VLESS-67@free-no...
-  network: tcp
-  port: 2066
-  reality-opts:
-    public-key: -Z0BnqW2MHBXjDsB2a8-KPfg8GqTO1uIPXriHQAMhSY
-    short-id: 6b245ab1
-  server: 185.193.17.80
-  servername: yahoo.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 44830663-914e-4127-a9b3-412406f59cbe
-- name: 15|FR VLESS-88@free-nodes
-  port: 443
-  server: brenna.ns.cloudflare.com
-  tls: false
-  type: vless
-  uuid: 65a9530f-4a4e-4db1-9689-9213385e9dfb
 - alpn:
   - http/1.1
   name: 15|FR TROJAN-02@free-nodes
@@ -97,6 +72,12 @@ proxies:
   server: 51.44.152.34
   sni: trojan.burgerip.co.uk
   type: trojan
+- name: 15|FR VLESS-38@free-nodes
+  port: 443
+  server: cosmin.ns.cloudflare.com
+  tls: false
+  type: vless
+  uuid: f956952d-dde1-4bc6-861e-22a9dc4554c4
 - alpn:
   - http/1.1
   name: 15|FR TROJAN-03@free-nodes
@@ -114,6 +95,25 @@ proxies:
   tls: false
   type: vless
   uuid: be72cd92-92d2-4543-9bef-1673fcd03b45
+- client-fingerprint: chrome
+  name: 15,21|[Vless] 🇫🇷 FR VLESS-67@free-no...
+  network: tcp
+  port: 2066
+  reality-opts:
+    public-key: -Z0BnqW2MHBXjDsB2a8-KPfg8GqTO1uIPXriHQAMhSY
+    short-id: 6b245ab1
+  server: 185.193.17.80
+  servername: yahoo.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 44830663-914e-4127-a9b3-412406f59cbe
+- name: 15|FR VLESS-37@free-nodes
+  port: 443
+  server: 173.212.209.56
+  tls: false
+  type: vless
+  uuid: 8062ddd7-fdee-485d-8948-c6e5df168fe9
 - alterId: 0
   cipher: auto
   name: 15|法国 - 格拉沃利讷 - OVH SAS - 1
@@ -127,21 +127,12 @@ proxies:
     headers:
       Host: ''
     path: linkvws
-- name: 15|FR VLESS-37@free-nodes
+- name: 15|FR VLESS-88@free-nodes
   port: 443
-  server: 173.212.209.56
+  server: brenna.ns.cloudflare.com
   tls: false
   type: vless
-  uuid: 8062ddd7-fdee-485d-8948-c6e5df168fe9
-- alterId: 2
-  cipher: auto
-  name: 15|法国 - 斯特拉斯堡 - velia.net Interne...
-  network: tcp
-  port: '30835'
-  server: v35.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  uuid: 65a9530f-4a4e-4db1-9689-9213385e9dfb
 - cipher: aes-256-gcm
   name: 20|🇫🇷FR-193.243.147.128-160_1@160
   password: 7BcLdsO1WweoGD0X
@@ -1851,11 +1842,14 @@ proxies:
   port: 8080
   server: 45.158.171.110
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇫🇷FR-81.19.137.222-0266
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 24,37|FR
   password: a58fa62b4944ddbf
   port: 57456
   server: 81.19.137.222
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 24|🇫🇷FR-77.105.166.12-0296
@@ -1886,13 +1880,4 @@ proxies:
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 45.158.171.60
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 37|FR
-  password: WDavBimDmH2QLxljf5PSO1
-  port: 443
-  server: 62.210.88.22
-  skip-cert-verify: true
-  tls: true
   type: ss
