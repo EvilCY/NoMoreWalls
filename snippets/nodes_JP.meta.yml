@@ -56,35 +56,26 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 15,21|[Vless] 🇯🇵 JP VLESS-46@free-no...
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: xx7kFsgSVU_ovUPxmnKruzMKAs6oSUO8SvcvTRs6GnY
+    short-id: aea7080e57
+  server: 147.45.49.152
+  servername: ameba.jp
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: b127d2d2-277a-491e-bf80-2e8688fa85e2
 - name: 15|JP VLESS-30@free-nodes
   port: 8080
   server: 46.3.46.40
   tls: false
   type: vless
   uuid: 1e503e46-5ab8-4f79-8cd1-73bac4bcd102
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 15|14|JP_speednode_0005
-  port: 443
-  server: 202.182.124.55
-  servername: cn.ubuntu.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 58807a72-9bf7-4c8e-a0de-e6c455a8e23e
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 15,21|[Vless] 🇯🇵 JP VLESS-106@free-n...
-  network: tcp
-  port: 39735
-  reality-opts:
-    public-key: 9rx7JwMO-KRZZEM9TQBO19BOAmmGjJyjN86ll2J7uVc
-  server: 178.239.125.31
-  servername: www.yahoo.co.jp
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 60e7e018-ee6a-48b1-9625-c4d4276935b3
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 15,21|[Vless] 🇯🇵 JP VLESS-129@free-n...
@@ -101,18 +92,40 @@ proxies:
   uuid: d706bf16-124a-417b-aaa0-0d6d5efd58fd
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 15,21|[Vless] 🇯🇵 JP VLESS-46@free-no...
+  name: 15,21|[Vless] 🇯🇵 JP VLESS-106@free-n...
   network: tcp
-  port: 443
+  port: 39735
   reality-opts:
-    public-key: xx7kFsgSVU_ovUPxmnKruzMKAs6oSUO8SvcvTRs6GnY
-    short-id: aea7080e57
-  server: 147.45.49.152
-  servername: ameba.jp
+    public-key: 9rx7JwMO-KRZZEM9TQBO19BOAmmGjJyjN86ll2J7uVc
+  server: 178.239.125.31
+  servername: www.yahoo.co.jp
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: b127d2d2-277a-491e-bf80-2e8688fa85e2
+  uuid: 60e7e018-ee6a-48b1-9625-c4d4276935b3
+- alterId: 0
+  cipher: auto
+  name: 15|日本 福岛县白河市IDC Frontier东日本软银(Sof...
+  network: ws
+  port: 443
+  server: w12.luoli.de
+  tls: true
+  type: vmess
+  uuid: 42a99644-b90b-3627-8809-a2d6c4078b59
+  ws-opts:
+    headers:
+      Host: w12.luoli.de
+    path: /v2ws
+- alterId: 0
+  name: 15,21,37|未知163 15.5KB/s
+  password: FDIypSwe64a3DA7un2R8DFjYXZO3NS05gKZTTOC8SxO0Fy3cqYg3EaFDA3ABaEYKNx39D
+  port: 443
+  server: kuame.missionsec.us
+  skip-cert-verify: true
+  sni: kuame.missionsec.us
+  tls: true
+  type: trojan
+  udp: true
 - cipher: aes-256-cfb
   name: 20|🇯🇵JP-54.199.83.239-171_1@171
   password: doub.io
