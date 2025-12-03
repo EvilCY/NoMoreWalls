@@ -1,39 +1,4 @@
 proxies:
-- name: 4|@v2FreeHub 🇷🇺
-  network: ws
-  password: e0a8e825-f800-4ec5-a2f3-ca8264911cf8
-  port: 2053
-  server: 82.97.254.184
-  sni: joss.gpj4.web.id
-  type: trojan
-  ws-opts:
-    headers:
-      Host: joss.gpj4.web.id
-    path: '%2FFree-VPN-CF-Geo-Project%2F82.97.254.184%3D2053'
-- name: '4|@v2FreeHub 🇷🇺 #1'
-  network: ws
-  password: a8f62dd9-4d44-4c10-bbe6-f23466f6afc7
-  port: 443
-  server: 89.22.228.125
-  sni: joss.gpj4.web.id
-  type: trojan
-  ws-opts:
-    headers:
-      Host: joss.gpj4.web.id
-    path: '%2FFree-VPN-CF-Geo-Project%2F89.22.228.125%3D443'
-- client-fingerprint: randomized
-  name: '4|@v2FreeHub 🇷🇺 #2'
-  network: ws
-  port: 2053
-  server: 77.73.68.234
-  servername: joss.gpj4.web.id
-  tls: true
-  type: vless
-  uuid: 82add2f2-4624-4ab7-a0f3-532a37575429
-  ws-opts:
-    headers:
-      Host: joss.gpj4.web.id
-    path: '%2FFree-VPN-CF-Geo-Project%2F77.73.68.234%3D2053'
 - flow: xtls-rprx-vision
   name: 4|🇳🇱🇷🇺 NL - Russia
   network: tcp
@@ -64,27 +29,34 @@ proxies:
   tls: false
   type: vless
   uuid: 6184fcfb-52e0-40bb-a271-bbd097b70a8e
+- name: 15|🇷🇺_RU_俄罗斯联邦_10
+  network: ws
+  port: 2087
+  server: 185.176.24.140
+  servername: juzibaipiao.5112233.xyz
+  tls: true
+  type: vless
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: '%2f%3fed%3d2048'
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 15,21|[Vless] 🇷🇺 RU VLESS-74@free-no...
-  network: tcp
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: xyz
+  name: 15,21|[Vless] 🇷🇺 RU VLESS-11@free-no...
+  network: grpc
   port: 443
   reality-opts:
-    public-key: g0EvKBte8zYrEc8oF0VNhxvIqqUvNXCp54UWYekc60k
-    short-id: e4
-  server: 212.233.75.107
-  servername: bit-site.ru
+    public-key: FCg2XiFJrpH-2XlELSSSyEC7zkeW29HOgp4rfrqXEAI
+    short-id: 123abc
+  server: 51.250.28.39
+  servername: cloudflare.com
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: bca5cfe1-3d2a-45dc-b66a-96298e0051f5
-- name: 15,21|[Trojan] 🇷🇺 RU TROJAN-60@free-...
-  password: Qzy7tgpRhu
-  port: 443
-  server: 37.18.14.33
-  skip-cert-verify: false
-  sni: m.vk.com
-  type: trojan
+  uuid: 4a6de183-2ad3-456c-b420-feeac81f6257
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 15,21|[Vless] 🇷🇺 RU VLESS-27@free-no...
@@ -99,18 +71,27 @@ proxies:
   tls: true
   type: vless
   uuid: b127d2d2-277a-491e-bf80-2e8688fa85e2
-- name: 15|🇷🇺_RU_俄罗斯联邦_10
-  network: ws
-  port: 2087
-  server: 185.176.24.140
-  servername: juzibaipiao.5112233.xyz
+- name: 15,21|[Trojan] 🇷🇺 RU TROJAN-60@free-...
+  password: Qzy7tgpRhu
+  port: 443
+  server: 37.18.14.33
+  skip-cert-verify: false
+  sni: m.vk.com
+  type: trojan
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 15,21|[Vless] 🇷🇺 RU VLESS-74@free-no...
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: g0EvKBte8zYrEc8oF0VNhxvIqqUvNXCp54UWYekc60k
+    short-id: e4
+  server: 212.233.75.107
+  servername: bit-site.ru
+  skip-cert-verify: false
   tls: true
   type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: '%2f%3fed%3d2048'
+  uuid: bca5cfe1-3d2a-45dc-b66a-96298e0051f5
 - name: 20|🇷🇺RU-176.32.35.167-210_1@209
   password: 85bce006-4885-11ee-8792-f23c9164ca5d
   port: 1007
