@@ -58,7 +58,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '12,15,23,29,30|香港4|@ripaojiedian #1'
+- name: '12,15,21,23,29,30|香港4|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
   port: 443
@@ -66,7 +66,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '12,15,21,23,29,30,39,40|HK_speednode_0009 #1'
+- name: '12,15,21,23,29,30|香港5|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
   port: 443
@@ -108,16 +108,36 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '12,15,21,23,39,40|HK_speednode_0008 #1'
+- name: 12,15,21|[Trojan] 未知 TROJAN-1749 | free...
   password: BxceQaOe
   port: 443
   server: 112.118.116.66
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: t.me%2Fripaojiedian
   type: trojan
   udp: true
+- name: 15,21|[Trojan] 未知 TROJAN-1761 | free...
+  password: BxceQaOe
+  port: 443
+  server: 58.152.25.20
+  skip-cert-verify: false
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: 15,21|[Trojan] 未知 TROJAN-1823 | free...
+  password: BxceQaOe
+  port: 443
+  server: 58.152.53.8
+  skip-cert-verify: false
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: '15|香港+电讯盈科有限公司 #1'
+  password: BxceQaOe
+  port: 443
+  server: 58.152.30.120
+  sni: t.me%25252Fripaojiedian
+  type: trojan
 - client-fingerprint: chrome
-  name: 15|HK VLESS-49 | free-nodes
+  name: 15|HK VLESS-38 | free-nodes
   network: ws
   port: 443
   server: n1761184282.74qxv.top
@@ -130,12 +150,39 @@ proxies:
     headers:
       Host: n1761184282.74qxv.top
     path: '%2F824dc1b1-e35b-4121-ad73-9acaf13d6410'
-- name: 15|香港+电讯盈科有限公司
-  password: BxceQaOe
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: 15,21|[Vless] 🇭🇰 HK VLESS-44 | free-...
+  network: tcp
   port: 443
-  server: 58.152.25.20
-  sni: t.me%252Fripaojiedian
-  type: trojan
+  reality-opts:
+    public-key: FscaEWx0paNBzL7GWHj4Fll7Xc-KxdhKgTthBAnByWI
+  server: 62.60.232.108
+  servername: pingless.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 669be00c-67b4-4b87-b08f-311c45abced2
+- name: 15|HK VLESS-132 | free-nodes
+  port: 10001
+  server: 156.224.78.8
+  tls: false
+  type: vless
+  uuid: 9c79aceb-4649-44ea-9698-b5e9ecf6d6da
+- client-fingerprint: chrome
+  name: 21|[Vless] 🇭🇰 HK VLESS-38 | free-...
+  network: ws
+  port: 443
+  server: n1761184282.74qxv.top
+  servername: n1761184282.74qxv.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 824dc1b1-e35b-4121-ad73-9acaf13d6410
+  ws-opts:
+    headers:
+      Host: n1761184282.74qxv.top
+    path: /824dc1b1-e35b-4121-ad73-9acaf13d6410
 - name: 21,22|美国 210
   network: ws
   password: vip
@@ -203,16 +250,6 @@ proxies:
   server: www.visa.com.hk
   skip-cert-verify: true
   sni: heihu880.pages.dev
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|HK2
-  password: BxceQaOe
-  port: 443
-  server: 58.152.30.175
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
   tls: true
   type: trojan
   udp: true
