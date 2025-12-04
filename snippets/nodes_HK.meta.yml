@@ -1,20 +1,21 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 4,37|未知100
+  name: 4|🇭🇰 Hong Kong هنگ کنگ
   network: ws
-  port: 54809
+  port: '54809'
   server: 8.210.140.23
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: fde73daf-cc67-42f3-9935-35b132b01abd
   ws-opts:
+    headers:
+      Host: ''
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: 4,37|未知110
+  name: 4,37|未知173
   network: ws
   port: 36968
   server: 47.83.18.10
@@ -48,26 +49,26 @@ proxies:
   port: 443
   server: 103.103.245.158
   type: ss
-- name: '12,15,23|12,13|香港3|@ripaojiedian #1'
+- alterId: 0
+  name: 12,15,21,37|未知79
   network: tcp
   password: 79314e99f0a473fe86efc7827942ad00
   port: 443
   server: 58.152.18.192
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
-- alterId: 0
-  name: '12,15,23,37|HK #1'
+  udp: true
+- name: 12,15,21|[Trojan] 未知 TROJAN-1025 | free...
   network: tcp
   password: BxceQaOe
   port: 443
   server: 58.152.25.20
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: t.me%2Fripaojiedian
-  tls: true
   type: trojan
-  udp: true
-- name: '12,15,23,29,30,39,40|HK_speednode_0009 #1'
+- name: '12,15,21,23,29,30,39,40|HK_speednode_0009 #1'
   network: tcp
   password: BxceQaOe
   port: 443
@@ -78,7 +79,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '12,23|12|🇭🇰 香港6|@ripaojiedian #1'
+  name: 12|Hong Kong_Hong Kong_vmess_107
   port: 31904
   server: 47.243.69.126
   skip-cert-verify: false
@@ -87,7 +88,7 @@ proxies:
   uuid: 22550b74-3ebf-49b5-ea36-3078b5d47ed9
 - alterId: 2
   cipher: auto
-  name: '12,15,23|12,13|香港7|@ripaojiedian #1'
+  name: 12|Hong Kong_Central_vmess_108
   network: ws
   port: '80'
   server: a48b0e7b-t6ngg0-t8tsp0-1szmi.hk3.p5pv.com
@@ -100,7 +101,7 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- name: '12,15,23|12,13|新加坡3|@ripaojiedian #1'
+- name: 12|Hong Kong_None_trojan_1014
   network: tcp
   password: BxceQaOe
   port: 2752
@@ -120,7 +121,7 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
-  name: '12,15,23|13|香港6|@ripaojiedian #1'
+  name: 12|Hong Kong_Hong Kong_vmess_1020
   network: tcp
   port: '31904'
   server: 47.243.69.126
@@ -128,7 +129,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 22550b74-3ebf-49b5-ea36-3078b5d47ed9
-- name: '12,15,23,39,40|HK_speednode_0008 #1'
+- name: '12,15,21,23,39,40|HK_speednode_0008 #1'
   password: BxceQaOe
   port: 443
   server: 112.118.116.66
@@ -136,7 +137,7 @@ proxies:
   sni: t.me%2Fripaojiedian
   type: trojan
   udp: true
-- name: '12,29,30|香港3|@ripaojiedian #1'
+- name: '12,15,23,29,30|香港3|@ripaojiedian #1'
   network: tcp
   password: 79314e99f0a473fe86efc7827942ad00
   port: 443
@@ -144,7 +145,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '12,29,30|香港4|@ripaojiedian #1'
+- name: '12,15,23,29,30|香港4|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
   port: 443
@@ -152,7 +153,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '12,29,30|美国|@ripaojiedian #1'
+- name: '12,15,23,29,30|美国|@ripaojiedian #1'
   network: tcp
   password: 79314e99f0a473fe86efc7827942ad00
   port: 4054
@@ -162,7 +163,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: '12,29,30|香港6|@ripaojiedian #1'
+  name: '12,15,23,29,30|香港6|@ripaojiedian #1'
   network: ws
   port: '80'
   server: 0e7f1016-sva740-te0v28-1mh67.hk3.p5pv.com
@@ -175,71 +176,40 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- name: 15|HK VLESS-101@free-nodes
+- client-fingerprint: chrome
+  name: 15|HK VLESS-49 | free-nodes
   network: ws
   port: 443
-  server: 104.26.0.221
-  servername: dabaius2.sylu.net
-  tls: true
-  type: vless
-  uuid: 3f9c8463-8610-3ed8-86c8-a26713067825
-  ws-opts:
-    headers:
-      Host: dabaius2.sylu.net
-    path: '%2Fdb10240eb751d6ab'
-- name: 15|HK VLESS-05@free-nodes
-  port: 10001
-  server: 156.224.78.8
-  tls: false
-  type: vless
-  uuid: 9c79aceb-4649-44ea-9698-b5e9ecf6d6da
-- name: 15|HK VLESS-33@free-nodes
-  network: ws
-  port: 443
-  server: n1761184283.74qxv.top
-  servername: n1761184283.74qxv.top
-  tls: true
-  type: vless
-  uuid: 2ebf5fe9-8cb1-4095-bd91-9b06991fb52f
-  ws-opts:
-    headers:
-      Host: n1761184283.74qxv.top
-    path: '%2F2ebf5fe9-8cb1-4095-bd91-9b06991fb52f'
-- name: 21|[Vless] 🇭🇰 HK VLESS-33@free-no...
-  network: ws
-  port: 443
-  server: n1761184283.74qxv.top
-  servername: n1761184283.74qxv.top
+  server: n1761184282.74qxv.top
+  servername: n1761184282.74qxv.top
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 2ebf5fe9-8cb1-4095-bd91-9b06991fb52f
+  uuid: 824dc1b1-e35b-4121-ad73-9acaf13d6410
   ws-opts:
     headers:
-      Host: n1761184283.74qxv.top
-    path: /2ebf5fe9-8cb1-4095-bd91-9b06991fb52f
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 21,37|HK
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 188.116.22.96
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- name: 21|[Vless] 🇭🇰 HK VLESS-101@free-n...
+      Host: n1761184282.74qxv.top
+    path: '%2F824dc1b1-e35b-4121-ad73-9acaf13d6410'
+- name: 15|香港+电讯盈科有限公司
+  password: BxceQaOe
+  port: 443
+  server: 58.152.25.20
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- client-fingerprint: chrome
+  name: 21|[Vless] 🇭🇰 HK VLESS-49 | free-...
   network: ws
   port: 443
-  server: 104.26.0.221
-  servername: dabaius2.sylu.net
+  server: n1761184282.74qxv.top
+  servername: n1761184282.74qxv.top
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 3f9c8463-8610-3ed8-86c8-a26713067825
+  uuid: 824dc1b1-e35b-4121-ad73-9acaf13d6410
   ws-opts:
     headers:
-      Host: dabaius2.sylu.net
-    path: /db10240eb751d6ab
+      Host: n1761184282.74qxv.top
+    path: /824dc1b1-e35b-4121-ad73-9acaf13d6410
 - name: 21,22|美国 210
   network: ws
   password: vip
@@ -300,20 +270,10 @@ proxies:
       host: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
     path: /
 - alterId: 0
-  name: 37|HK2
+  name: 37|HK
   password: BxceQaOe
   port: 443
-  server: 112.120.31.179
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|HK3
-  password: BxceQaOe
-  port: 443
-  server: 58.152.53.8
+  server: 58.152.25.20
   skip-cert-verify: true
   sni: t.me/ripaojiedian
   tls: true
