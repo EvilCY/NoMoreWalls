@@ -63,19 +63,26 @@ proxies:
   sni: 004282c1-sbdj40-sdlngq-1n7jq.ru.z7zi.com
   type: trojan
   udp: false
-- name: 22|俄罗斯 001
-  network: ws
-  password: wb6368
-  port: 2087
-  server: 92.243.75.49
+- cipher: chacha20-ietf-poly1305
+  name: 21|[SS] 🇷🇺 RU SS-102 | free-nodes
+  password: qFAJdBEqsI71jaSML67nHoPBCGhX94uk
+  port: 443
+  server: 45.138.157.162
+  type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 21|[Vless] 🇷🇺 RU VLESS-120 | free...
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: xdNyDss0OLTu3z6kcdg8X2wfTOLtmDTobE2on3vKe34
+    short-id: ab1cd2
+  server: russia.whitenet.online
+  servername: vk.com
   skip-cert-verify: false
-  sni: hsdgbuys.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: hsdgbuys.pages.dev
-    path: /
+  tls: true
+  type: vless
+  uuid: 4ce38652-b84c-5aab-8b2c-f897a217b41b
 - client-fingerprint: chrome
   grpc-opts: {}
   name: 22|俄罗斯 002
