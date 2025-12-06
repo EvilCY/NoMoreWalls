@@ -1,5 +1,5 @@
 proxies:
-- name: '15,23,29,30|日本2|@ripaojiedian #1'
+- name: '15,21,23,29,30|日本2|@ripaojiedian #1'
   network: tcp
   password: 79314e99f0a473fe86efc7827942ad00
   port: 3169
@@ -24,7 +24,7 @@ proxies:
   tls: true
   type: vmess
   uuid: b0e1254b-6ac6-3d12-bd6e-bd719eaab486
-- name: '15,23,29,30|日本3|@ripaojiedian #1'
+- name: '15,21,23,29,30|日本3|@ripaojiedian #1'
   network: tcp
   password: 79314e99f0a473fe86efc7827942ad00
   port: 3093
@@ -58,11 +58,14 @@ proxies:
     headers:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
-- cipher: chacha20-ietf-poly1305
-  name: 21|[SS] 🇯🇵 JP SS-141 | free-nodes
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 21,37|未知122 2.3MB/s
   password: XLOrvLWkCBBBxLqSEe9S8lnC5PLsNfRh
   port: 443
   server: 103.75.118.125
+  skip-cert-verify: true
+  tls: true
   type: ss
 - name: 22|日本 002
   network: tcp
@@ -85,6 +88,14 @@ proxies:
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 2381
   server: 160.16.106.144
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- name: 22|日本 020
+  network: tcp
+  password: c53647f3153f784b3c695ffbe5fb43c0
+  port: 1331
+  server: 160.16.144.208
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
@@ -147,14 +158,6 @@ proxies:
   tls: false
   type: vmess
   uuid: dc2fd6a5-36fe-4b06-8b31-a5c5d26add98
-- name: 22|日本 061
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 443
-  server: 126.116.225.149
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
 - name: 22|日本 073
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -181,14 +184,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 1cc84891-1657-4f71-97d0-287df565820e
-- name: 22|日本 081
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 443
-  server: 160.16.236.32
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
 - name: 22|日本 082
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -433,3 +428,13 @@ proxies:
   port: 443
   server: 149.22.87.204
   type: ss
+- alterId: 0
+  name: 37|JP
+  password: BxceQaOe
+  port: 4012
+  server: jp.baidu.com
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  tls: true
+  type: trojan
+  udp: true
