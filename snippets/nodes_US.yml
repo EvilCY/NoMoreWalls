@@ -1,42 +1,27 @@
 proxies:
+- grpc-opts:
+    grpc-service-name: db
+  name: 15,21|[Trojan] 未知 TROJAN-1427 | free...
+  network: grpc
+  password: 3c4e10af98c30972
+  port: 443
+  server: 23.247.137.64
+  skip-cert-verify: false
+  sni: n2.gladns.com
+  type: trojan
 - alterId: 0
-  cipher: auto
-  name: 4|@𝑽2_𝑴𝑶𝑫_𝑺𝑯𝑶𝑷 - 🇺🇸 ⚡ |
-  network: ws
-  port: '443'
-  server: 0g0ub8.zeeoomboom.de
-  servername: 0g0ub8.zeeoomboom.de
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: 0g0ub8.zeeoomboom.de
-    path: /video/z7xqpktt.m3u8
-- alterId: 0
-  cipher: auto
-  name: 4|🇺🇸
-  network: ws
-  port: '443'
-  server: k01kwy.zeeoomboom.de
-  servername: k01kwy.zeeoomboom.de
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: k01kwy.zeeoomboom.de
-    path: /video/e99jt8.m3u8
-- name: '15,23,29,30|美国|@ripaojiedian #1'
+  name: 15,21,23,29,30,37|未知182 94.1KB/s
   network: tcp
   password: 79314e99f0a473fe86efc7827942ad00
   port: 4054
   server: 153.121.39.240
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
-  name: 15,21,23,29,30,37|US 2.5MB/s
+  name: 15,21,23,29,30,37|未知111 141.3KB/s
   network: tcp
   password: 79314e99f0a473fe86efc7827942ad00
   port: 2890
@@ -59,16 +44,13 @@ proxies:
     headers:
       Host: ''
     path: /speedtest
-- alterId: 0
-  name: 15,21,37|未知191 15.9KB/s
+- name: 15,21|[Trojan] 🇺🇸 US TROJAN-1639 | f...
   password: FDIypSwe64a3DA7un2R8DFjYXZO3NS05gKZTTOC8SxO0Fy3cqYg3EaFDA3ABaEYKNx39D
   port: 443
   server: kuame.missionsec.us
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kuame.missionsec.us
-  tls: true
   type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 20|🇺🇸_US_美国_0@37
@@ -766,14 +748,17 @@ proxies:
     headers:
       Host: pcs-referenced-camera-concerns.trycloudflare.com
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
-- cipher: aes-256-gcm
-  name: 21|[SS] 🇺🇸 US SS-57 | free-nodes
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 21,37|US 280.2KB/s
   password: 8JCsPssfgS8tiRwiMlhARg==
   port: 12000
   server: 15.204.247.49
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 21|[SS] 🇺🇸 US SS-105 | free-nodes
+  name: 21|[SS] 🇺🇸 US SS-127 | free-nodes
   password: pQmnC03JObbPhdh5FBJHgD6jnTLchsRA
   port: 443
   server: 95.164.116.33
@@ -1081,17 +1066,6 @@ proxies:
     headers:
       Host: ggggbbhyuuui.999834.xyz
     path: /ODznTT5fgkUw3VH0GJ
-- name: 22|美国 068
-  network: ws
-  password: f282b878-8711-45a1-8c69-5564172123c1
-  port: 443
-  server: 172.67.156.25
-  sni: aio.zipzap.biz.id
-  type: trojan
-  ws-opts:
-    headers:
-      Host: aio.zipzap.biz.id
-    path: /aioproxybot/129.150.49.58-18650
 - name: 22|美国 070
   network: ws
   password: 61374417-9218-4065-909b-ad1e3b50aa83
@@ -1380,19 +1354,19 @@ proxies:
   type: vmess
   udp: true
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- name: 22|美国 214
+- name: 22|美国 204
   network: ws
-  password: vip
-  port: 443
-  server: www.gov.ua
+  password: trojan
+  port: 8443
+  server: www.visa.com.sg
   skip-cert-verify: true
-  sni: heihu880.pages.dev
+  sni: pangpi.pages.dev
   tfo: true
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: heihu880.pages.dev
+      Host: pangpi.pages.dev
     path: /?ed=2560
 - name: 22|美国 215
   network: ws
@@ -1436,6 +1410,20 @@ proxies:
     headers:
       Host: top-azx.pages.dev
     path: /Az1.vpn.33.TOP/?ed=2560
+- name: 22|美国 230
+  network: ws
+  password: vip
+  port: 443
+  server: www.pcmag.com
+  skip-cert-verify: true
+  sni: heihu880.pages.dev
+  tfo: true
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: heihu880.pages.dev
+    path: /?ed=2560
 - name: 22|美国 232
   network: ws
   password: vip
@@ -5204,10 +5192,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 37|🇺🇸US美国2 31.1KB/s
-  password: p78naCf2EfOlRSLTX0wFVx
-  port: 443
-  server: pupas-shirting-unsung.freesocks.work
+  name: 37|US
+  password: qFvn2fNEvBgM5knffrN96q
+  port: 9483
+  server: 92.118.112.101
   skip-cert-verify: true
   tls: true
   type: ss
