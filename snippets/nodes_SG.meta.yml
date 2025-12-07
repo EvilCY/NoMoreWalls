@@ -31,7 +31,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 15,21|[Trojan] 未知 TROJAN-1785 | free...
+- name: 15,21|[Trojan] 未知 TROJAN-1765 | free...
   password: 79314e99f0a473fe86efc7827942ad00
   port: 1596
   server: 160.16.150.76
@@ -139,7 +139,7 @@ proxies:
     headers:
       Host: sg1.pkyun.website
     path: /sg1
-- name: 21|[Vless] 🇸🇬 SG VLESS-39 | free-...
+- name: 21|[Vless] 🇸🇬 SG VLESS-43 | free-...
   network: ws
   port: 8443
   server: news.zoom.us
@@ -152,12 +152,20 @@ proxies:
     headers:
       Host: premium.vkehi.shop
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 21|[SS] 🇸🇬 SG SS-136 | free-nodes
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 38.89.142.56
-  type: ss
+- name: 21,22|美国 204
+  network: ws
+  password: trojan
+  port: 8443
+  server: www.visa.com.sg
+  skip-cert-verify: true
+  sni: pangpi.pages.dev
+  tfo: true
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: pangpi.pages.dev
+    path: /?ed=2560
 - alterId: 0
   cipher: auto
   name: 22|新加坡 001

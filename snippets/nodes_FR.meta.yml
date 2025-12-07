@@ -18,7 +18,7 @@ proxies:
     path: linkvws
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 4,15|FR VLESS-59 | free-nodes
+  name: 4,15,21|[Vless] 🇫🇷 FR VLESS-64 | free-...
   network: tcp
   port: 6013
   reality-opts:
@@ -26,7 +26,8 @@ proxies:
     short-id: 16562e6057229b7a
   server: hitrafa.top
   servername: dropbox.com
-  tls: false
+  skip-cert-verify: false
+  tls: true
   type: vless
   uuid: c1a46bb0-029b-4a4e-bdc0-26ee9993f750
   ws-opts:
@@ -160,7 +161,25 @@ proxies:
   port: 6379
   server: 149.202.82.172
   type: ss
-- name: 21|[Vless] 🇫🇷 FR VLESS-38 | free-...
+- alpn:
+  - http%2F1.1
+  name: 21|[Trojan] 🇫🇷 FR TROJAN-03 | fre...
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.37.144.126
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alpn:
+  - http%2F1.1
+  name: 21|[Trojan] 🇫🇷 FR TROJAN-04 | fre...
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 15.236.214.251
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 21|[Vless] 🇫🇷 FR VLESS-42 | free-...
   network: ws
   port: 443
   server: 69.84.182.13
@@ -1819,14 +1838,6 @@ proxies:
   port: 8080
   server: 45.158.171.60
   type: ss
-- name: '39,40|FR_speednode_0008 #1'
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 15.236.214.251
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
 - name: '39,40|FR_speednode_0009 #1'
   password: 31676725-b0fd-fed2-c857-2da8ce5a6e4f
   port: 8443
