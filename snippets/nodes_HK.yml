@@ -1,20 +1,21 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 4,37|未知131
+  name: 4|🇭🇰 Hong Kong هنگ کنگ
   network: ws
-  port: 54809
+  port: '54809'
   server: 8.210.140.23
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: fde73daf-cc67-42f3-9935-35b132b01abd
   ws-opts:
+    headers:
+      Host: ''
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: 4,37|未知110
+  name: 4,37|未知144
   network: ws
   port: 36968
   server: 47.83.18.10
@@ -80,7 +81,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '12,15,21,23,29,30|美国3|@ripaojiedian #1'
+- name: '12,15,23,29,30|美国3|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
   port: 1866
@@ -98,30 +99,20 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  name: 15,21,37|HK2
+- name: 15,21|[Trojan] 未知 TROJAN-632 | free-...
   password: BxceQaOe
   port: 443
   server: 58.152.30.120
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: t.me/ripaojiedian
-  tls: true
   type: trojan
-  udp: true
-- name: 21,22|美国 210
-  network: ws
-  password: vip
-  port: 8443
-  server: www.visa.com.hk
-  skip-cert-verify: true
-  sni: heihu880.pages.dev
-  tfo: true
+- name: 21|[Trojan] 🇭🇰 HK TROJAN-111 | fr...
+  password: BxceQaOe
+  port: 443
+  server: 219.79.186.107
+  skip-cert-verify: false
+  sni: t.me/ripaojiedian
   type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: heihu880.pages.dev
-    path: /?ed=2560
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
@@ -167,6 +158,15 @@ proxies:
     headers:
       host: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
     path: /
+- alterId: 0
+  cipher: aes-256-gcm
+  name: '37|HK #3'
+  password: ccf426f1fe78
+  port: 443
+  server: 103.103.245.158
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - alterId: 2
   cipher: auto
   name: 39|HK_speednode_0012
