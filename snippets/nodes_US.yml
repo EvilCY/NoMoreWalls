@@ -17,24 +17,24 @@ proxies:
   server: 172.237.6.53
   type: ss
   udp: true
-- alterId: 0
-  name: 15,21,37|US 2.8MB/s
+- name: 15,21|[Trojan] 🇺🇸 US TROJAN-1821 | f...
   password: FDIypSwe64a3DA7un2R8DFjYXZO3NS05gKZTTOC8SxO0Fy3cqYg3EaFDA3ABaEYKNx39D
   port: 443
   server: kuame.missionsec.us
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kuame.missionsec.us
-  tls: true
   type: trojan
-  udp: true
-- name: 15,21|[Trojan] 未知 TROJAN-1429 | free...
+- alterId: 0
+  name: 15,21,37|未知144
   network: grpc
   password: FodSUXysuS
   port: 23274
   server: 180.131.145.161
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: cloudflare.com
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 20|🇺🇸_US_美国_0@37
@@ -724,11 +724,14 @@ proxies:
     headers:
       Host: pcs-referenced-camera-concerns.trycloudflare.com
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
-- cipher: aes-256-gcm
-  name: 21|[SS] 🇺🇸 US SS-101 | free-nodes
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 21,37|US2 1.4MB/s
   password: 8JCsPssfgS8tiRwiMlhARg==
   port: 12000
   server: 15.204.247.49
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 1
   cipher: auto
@@ -1033,6 +1036,17 @@ proxies:
     headers:
       Host: ggggbbhyuuui.999834.xyz
     path: /ODznTT5fgkUw3VH0GJ
+- name: 22|美国 068
+  network: ws
+  password: f282b878-8711-45a1-8c69-5564172123c1
+  port: 443
+  server: 172.67.156.25
+  sni: aio.zipzap.biz.id
+  type: trojan
+  ws-opts:
+    headers:
+      Host: aio.zipzap.biz.id
+    path: /aioproxybot/129.150.49.58-18650
 - alterId: 0
   cipher: auto
   name: 22|美国 138
@@ -1380,20 +1394,6 @@ proxies:
     headers:
       Host: redfree8-p1.pooriashop.ir
     path: /trTelegram
-- name: 22|美国 229
-  network: ws
-  password: vip
-  port: 443
-  server: 104.18.27.94
-  skip-cert-verify: true
-  sni: heihu880.pages.dev
-  tfo: true
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: heihu880.pages.dev
-    path: /?ed=2560
 - name: 22|美国 230
   network: ws
   password: vip
@@ -5161,10 +5161,19 @@ proxies:
     path: /
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 37|US 120.5KB/s
+  name: 37|US 162.1KB/s
   password: p78naCf2EfOlRSLTX0wFVx
   port: 443
   server: 71.19.148.143
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|🇺🇸US美国2 620.7KB/s
+  password: NS8BriBL9gcPEHTXiN66aT
+  port: 5223
+  server: 45.83.22.118
   skip-cert-verify: true
   tls: true
   type: ss

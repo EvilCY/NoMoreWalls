@@ -8,12 +8,15 @@ proxies:
   server: 3.64.121.249
   sni: trojan.burgerip.co.uk
   type: trojan
-- name: 15,21|[Trojan] 未知 TROJAN-1493 | free...
+- alterId: 0
+  name: 15,21,37|未知8
   password: telegram-id-privatevpns
   port: 22222
   server: 52.57.238.174
-  skip-cert-verify: false
+  skip-cert-verify: true
+  tls: true
   type: trojan
+  udp: true
 - alpn:
   - http/1.1
   name: 15|DE TROJAN-15 | free-nodes
@@ -40,15 +43,18 @@ proxies:
   tls: false
   type: vmess
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
-- cipher: aes-256-gcm
-  name: 21|[SS] 🇩🇪 DE SS-06 | free-nodes
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 21,37|未知16
   password: 8JCsPssfgS8tiRwiMlhARg==
   port: 12000
   server: 57.128.214.100
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alpn:
   - http%2F1.1
-  name: 21|[Trojan] 🇩🇪 DE TROJAN-20 | fre...
+  name: 21|[Trojan] 未知 TROJAN-825 | free-...
   password: telegram-id-privatevpns
   port: 22222
   server: 3.123.83.170
@@ -57,7 +63,7 @@ proxies:
   type: trojan
 - alpn:
   - http%2F1.1
-  name: 21|[Trojan] 🇩🇪 DE TROJAN-21 | fre...
+  name: 21|[Trojan] 未知 TROJAN-348 | free-...
   password: telegram-id-privatevpns
   port: 22222
   server: 3.64.121.249
@@ -65,7 +71,7 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 21|[SS] 🇩🇪 DE SS-100 | free-nodes
+  name: 21|[SS] 🇩🇪 DE SS-116 | free-nodes
   password: JGv616hMWdjfuZ00jYfq7XkBHJZrOBrg
   port: 443
   server: 87.121.162.249
@@ -85,17 +91,6 @@ proxies:
     headers:
       Host: jamekk.org
     path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 22|德国 007
-  network: tcp
-  port: 28011
-  server: 62.146.235.193
-  skip-cert-verify: true
-  tfo: true
-  type: vmess
-  udp: true
-  uuid: cfc5a87f-3c13-4e25-b556-176cdd6b5c6a
 - alterId: 0
   cipher: auto
   name: 22|德国 008

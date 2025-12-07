@@ -7,15 +7,18 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '12,15,23,29,30|日本2|@ripaojiedian #1'
+- alterId: 0
+  name: 12,15,21,23,29,30,37|未知54
   network: tcp
   password: 79314e99f0a473fe86efc7827942ad00
   port: 1331
   server: 153.121.45.139
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
-- name: '12,15,23,29,30|日本3|@ripaojiedian #1'
+  udp: true
+- name: '12,15,21,23,29,30|日本3|@ripaojiedian #1'
   network: tcp
   password: 79314e99f0a473fe86efc7827942ad00
   port: 1331
@@ -31,18 +34,28 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '12,15,23,29,30|美国2|@ripaojiedian #1'
+- alterId: 0
+  name: 12,15,23,29,30,37|🇺🇸US美国3 134.3KB/s
   network: tcp
   password: 79314e99f0a473fe86efc7827942ad00
   port: 4054
   server: 160.16.132.158
   skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
-- name: 15|JP VLESS-25 | free-nodes
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 15,21|[Vless] 🇯🇵 JP VLESS-47 | free-...
+  network: tcp
   port: 38487
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
   server: 138.2.50.155
-  tls: false
+  servername: icloud.cdn-apple.com
+  skip-cert-verify: false
+  tls: true
   type: vless
   uuid: bc9a8522-d884-41cd-de9c-9a29812b55ef
 - cipher: aes-256-cfb
@@ -71,25 +84,39 @@ proxies:
     headers:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 21|[Vless] 🇯🇵 JP VLESS-16 | free-...
+  network: tcp
+  port: 1443
+  reality-opts:
+    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
+    short-id: 1a
+  server: t25.qifei.app
+  servername: www.amazon.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
 - cipher: chacha20-ietf-poly1305
-  name: 21|[SS] 🇯🇵 JP SS-25 | free-nodes
+  name: 21|[SS] 🇯🇵 JP SS-43 | free-nodes
   password: xgoOsyyBv2Yn4w0hSqjsNqf5IGbIETZ6
   port: 443
   server: 5.253.41.46
   type: ss
-- name: 22|日本 008
-  network: tcp
-  password: c53647f3153f784b3c695ffbe5fb43c0
-  port: 316
-  server: 160.16.131.243
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
 - name: 22|日本 017
   network: tcp
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 2381
   server: 160.16.106.144
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- name: 22|日本 024
+  network: tcp
+  password: c53647f3153f784b3c695ffbe5fb43c0
+  port: 24673
+  server: 160.16.124.55
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
@@ -257,22 +284,6 @@ proxies:
   type: vmess
   udp: true
   uuid: a9024f1d-77a1-4c56-87c7-eeee5398667e
-- name: 22|日本 057
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 3160
-  server: 160.16.124.55
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 22|日本 058
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 2173
-  server: 160.16.72.33
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 22|日本 060
@@ -308,17 +319,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 1cc84891-1657-4f71-97d0-287df565820e
-- alterId: 0
-  name: 22,37|未知155
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 443
-  server: 160.16.236.32
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  tls: true
-  type: trojan
-  udp: true
 - name: 22|日本 082
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
