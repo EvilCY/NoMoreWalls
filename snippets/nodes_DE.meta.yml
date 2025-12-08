@@ -188,10 +188,18 @@ proxies:
   tls: false
   type: vless
   uuid: 2ee2a715-d541-416a-8713-d66567448c2e
-- name: 15|DE VLESS-04 | free-nodes
-  network: tcp
+- http-opts:
+    headers:
+      Host:
+      - varzesh3.ir
+    method: GET
+    path:
+    - /
+  name: 15,21|[Vless] 🇩🇪 DE VLESS-13 | free-...
+  network: http
   port: 33801
   server: m37a.vip784.com
+  skip-cert-verify: false
   tls: false
   type: vless
   uuid: 0a06d540-6fdd-416c-bdc3-54686f1f3659
@@ -602,29 +610,23 @@ proxies:
   tls: false
   type: vmess
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
-- cipher: aes-256-gcm
-  name: 21|[SS] 🇩🇪 DE SS-10 | free-nodes
-  password: 8JCsPssfgS8tiRwiMlhARg==
-  port: 12000
-  server: 57.128.214.100
-  type: ss
-- name: 21|[Vless] 🇩🇪 DE VLESS-43 | free-...
-  network: ws
-  port: 443
-  server: betty.ns.cloudflare.com
-  servername: 639006317625115663.forester-amsiu.info
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 21|[Vless] 🇩🇪 DE VLESS-06 | free-...
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  server: v2202509298505379663.supersrv.de
+  servername: cdn.discordapp.com
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: d543fcf5-56ab-43a3-9e01-6cb71a36f950
-  ws-opts:
-    headers:
-      Host: 639006317625115663.forester-amsiu.info
-    path: /dxgtdzws
+  uuid: 62b0e46b-d2a5-423d-8457-95bde707fc19
 - grpc-opts:
     grpc-mode: gun
     grpc-service-name: /
-  name: 21|[Vless] 🇩🇪 DE VLESS-44 | free-...
+  name: 21|[Vless] 🇩🇪 DE VLESS-46 | free-...
   network: grpc
   port: 41647
   server: 91.107.179.81
@@ -635,7 +637,7 @@ proxies:
 - grpc-opts:
     grpc-mode: gun
     grpc-service-name: /
-  name: 21|[Vless] 🇩🇪 DE VLESS-45 | free-...
+  name: 21|[Vless] 🇩🇪 DE VLESS-47 | free-...
   network: grpc
   port: 443
   server: 91.99.82.11
@@ -646,7 +648,7 @@ proxies:
 - grpc-opts:
     grpc-mode: gun
     grpc-service-name: /
-  name: 21|[Vless] 🇩🇪 DE VLESS-47 | free-...
+  name: 21|[Vless] 🇩🇪 DE VLESS-49 | free-...
   network: grpc
   port: 41647
   server: 91.107.178.246
@@ -657,7 +659,7 @@ proxies:
 - grpc-opts:
     grpc-mode: gun
     grpc-service-name: /
-  name: 21|[Vless] 🇩🇪 DE VLESS-48 | free-...
+  name: 21|[Vless] 🇩🇪 DE VLESS-50 | free-...
   network: grpc
   port: 41647
   server: 91.107.169.78
@@ -665,37 +667,24 @@ proxies:
   tls: false
   type: vless
   uuid: e50fa46f-20c6-4c0d-fa0e-d9ffd92df36f
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 21|[Vless] 🇩🇪 DE VLESS-54 | free-...
-  network: ws
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 21|[Vless] 🇩🇪 DE VLESS-59 | free-...
+  network: tcp
   port: 443
-  server: Alfpha.yas-nowin.ir
-  servername: Alfpha.yas-nowin.ir
+  reality-opts:
+    public-key: 0_FWbcTe6tvBuSZ7_7PrMaNmg44a8VxYRXPKjZuERwQ
+    short-id: a150dff4
+  server: node2.svoy.run
+  servername: www.cloudflare.com
   skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 2262a35d-a6c7-4621-f957-5a7f1d330e16
-  ws-opts:
-    headers:
-      Host: Alfpha.yas-nowin.ir
-    path: /@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config?ed=443?ed=443
-- grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: /
-  name: 21|[Vless] 🇩🇪 DE VLESS-97 | free-...
-  network: grpc
-  port: 41647
-  server: 91.107.130.76
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: e50fa46f-20c6-4c0d-fa0e-d9ffd92df36f
+  uuid: 7e281f58-63b0-4e9a-a3fe-537e33e374b9
 - grpc-opts:
     grpc-mode: gun
     grpc-service-name: '%40MaSTeRSeRVeR1--%40MaSTeRSeRVeR1--%40MaSTeRSeRVeR1--%40MaSTeRSeRVeR1--%40MaSTeRSeRVeR1--%40MaSTeRSeRVeR1--%40MaSTeRSeRVeR1--%40MaSTeRSeRVeR1--%40MaSTeRSeRVeR1--%40MaSTeRSeRVeR1'
-  name: 21|[Vless] 🇩🇪 DE VLESS-110 | free...
+  name: 21|[Vless] 🇩🇪 DE VLESS-114 | free...
   network: grpc
   port: 6423
   server: masterserver1.heloisfood.ir
@@ -706,7 +695,7 @@ proxies:
 - grpc-opts:
     grpc-mode: gun
     grpc-service-name: /
-  name: 21|[Vless] 🇩🇪 DE VLESS-111 | free...
+  name: 21|[Vless] 🇩🇪 DE VLESS-115 | free...
   network: grpc
   port: 443
   server: 91.99.27.92
@@ -715,15 +704,28 @@ proxies:
   type: vless
   uuid: 2ee2a715-d541-416a-8713-d66567448c2e
 - cipher: chacha20-ietf-poly1305
-  name: 21|[SS] 🇩🇪 DE SS-119 | free-nodes
+  name: 21|[SS] 🇩🇪 DE SS-123 | free-nodes
   password: JGv616hMWdjfuZ00jYfq7XkBHJZrOBrg
   port: 443
   server: 87.121.162.249
   type: ss
+- name: 21|[Vless] 🇩🇪 DE VLESS-139 | free...
+  network: ws
+  port: 443
+  server: www.speedtest.net
+  servername: kalam.mrconfigur.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 88538870-5626-4cd7-9cda-1e0b6253c9ce
+  ws-opts:
+    headers:
+      Host: kalam.mrconfigur.site
+    path: /
 - grpc-opts:
     grpc-mode: gun
     grpc-service-name: /
-  name: 21|[Vless] 🇩🇪 DE VLESS-133 | free...
+  name: 21|[Vless] 🇩🇪 DE VLESS-140 | free...
   network: grpc
   port: 443
   server: 91.99.190.62
