@@ -15,16 +15,13 @@ proxies:
   port: 2377
   server: 172.237.6.53
   type: ss
-- alterId: 0
-  name: '15,21,37|US #1'
+- name: 15,21|[Trojan] 🇺🇸 US TROJAN-1752 | f...
   password: FDIypSwe64a3DA7un2R8DFjYXZO3NS05gKZTTOC8SxO0Fy3cqYg3EaFDA3ABaEYKNx39D
   port: 443
   server: kuame.missionsec.us
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: kuame.missionsec.us
-  tls: true
   type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 20|🇺🇸_US_美国_0@37
@@ -714,12 +711,30 @@ proxies:
     headers:
       Host: pcs-referenced-camera-concerns.trycloudflare.com
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
-- cipher: aes-256-gcm
-  name: 21|[SS] 🇺🇸 US SS-125 | free-nodes
+- cipher: chacha20-ietf-poly1305
+  name: 21|[SS] 🇺🇸 US SS-85 | free-nodes
+  password: zwBLM6bBE5YxvwvnKgxAq3ErXpqMYv20
+  port: 443
+  server: 185.193.48.157
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 21,37|US 184.1KB/s
   password: 8JCsPssfgS8tiRwiMlhARg==
   port: 12000
   server: 15.204.247.49
+  skip-cert-verify: true
+  tls: true
   type: ss
+- alterId: 0
+  name: 21,37|US3
+  password: FodSUXysuS
+  port: 23274
+  server: 180.131.145.161
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 1
   cipher: auto
   name: 22|美国 002
@@ -1336,19 +1351,19 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 22|美国 209
+- name: 22|美国 210
   network: ws
-  password: auto
-  port: 443
-  server: dcf741e8.epeius-2gy.pages.dev
+  password: vip
+  port: 8443
+  server: www.visa.com.hk
   skip-cert-verify: true
-  sni: dcf741e8.epeius-2gy.pages.dev
+  sni: heihu880.pages.dev
   tfo: true
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: dcf741e8.epeius-2gy.pages.dev
+      Host: heihu880.pages.dev
     path: /?ed=2560
 - name: 22|美国 213
   network: ws
@@ -1392,20 +1407,20 @@ proxies:
     headers:
       Host: top-azx.pages.dev
     path: /Az1.vpn.33.TOP/?ed=2560
-- name: 22|美国 225
+- name: 22|美国 224
   network: ws
-  password: redfree8
+  password: vip
   port: 443
-  server: 104.17.148.22
+  server: singapore.com
   skip-cert-verify: true
-  sni: redfree8-p1.pooriashop.ir
+  sni: heihu880.pages.dev
   tfo: true
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: redfree8-p1.pooriashop.ir
-    path: /trTelegram
+      Host: heihu880.pages.dev
+    path: /?ed=2560
 - name: 22|美国 238
   network: ws
   password: vip
@@ -5157,3 +5172,12 @@ proxies:
     headers:
       host: v2ray.codefyinc.com
     path: /
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|🇺🇸US美国3 66.7KB/s
+  password: p78naCf2EfOlRSLTX0wFVx
+  port: 443
+  server: pupas-shirting-unsung.freesocks.work
+  skip-cert-verify: true
+  tls: true
+  type: ss
