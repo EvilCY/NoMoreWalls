@@ -111,7 +111,7 @@ proxies:
   uuid: 2a2a6062-003c-0005-b293-ee0d0416afee
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 15|RU VLESS-46 | free-nodes
+  name: 15,21|[Vless] 🇷🇺 RU VLESS-53 | free-...
   network: tcp
   port: 443
   reality-opts:
@@ -119,7 +119,8 @@ proxies:
     short-id: 5540e44a53c3d01c
   server: 217.16.24.170
   servername: api-maps.yandex.ru
-  tls: false
+  skip-cert-verify: false
+  tls: true
   type: vless
   uuid: a91e64f0-9295-499d-bf4a-661ad99d4938
 - name: 15,16| - RU - @freeOnlineVPN
@@ -202,7 +203,7 @@ proxies:
   uuid: b148ea58-3fc7-4f27-8d8b-2b8e007e59fc
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 15,21|[Vless] 🇷🇺 RU VLESS-11 | free-...
+  name: 15|RU VLESS-02 | free-nodes
   network: tcp
   port: 2443
   reality-opts:
@@ -210,8 +211,7 @@ proxies:
     short-id: c84a28bb05989ff4
   server: 158.160.175.98
   servername: yandex.ru
-  skip-cert-verify: false
-  tls: true
+  tls: false
   type: vless
   uuid: 62b0e46b-d2a5-423d-8457-95bde707fc19
 - client-fingerprint: chrome
@@ -279,10 +279,16 @@ proxies:
   type: trojan
   udp: false
 - cipher: chacha20-ietf-poly1305
-  name: 21|[SS] 🇷🇺 RU SS-46 | free-nodes
+  name: 21|[SS] 🇷🇺 RU SS-52 | free-nodes
   password: '!!str 907560230'
   port: 17846
   server: clr.ducks.tel
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 21|[SS] 🇷🇺 RU SS-70 | free-nodes
+  password: AqZbt1QCs3ngEfXo1p7T-w
+  port: 1080
+  server: 81.200.158.206
   type: ss
 - client-fingerprint: chrome
   grpc-opts: {}
@@ -655,6 +661,20 @@ proxies:
   type: vless
   udp: true
   uuid: e4824193-4f54-453b-d037-88368e85ef0e
+- name: 22|俄罗斯 039
+  network: ws
+  password: vpn
+  port: 2025
+  server: 109.120.132.80
+  skip-cert-verify: true
+  sni: vkvd127.mycdn.me
+  tfo: true
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vkvd127.mycdn.me
+    path: /
 - alterId: 0
   cipher: auto
   name: 22|俄罗斯 040
