@@ -55,7 +55,7 @@ proxies:
   type: vless
   uuid: 6bb4d50a-56f9-47d5-8ce8-d8b7fe9aa474
 - client-fingerprint: chrome
-  name: 4,15|US VLESS-106 | free-nodes
+  name: 4,15|US VLESS-123 | free-nodes
   network: ws
   port: 8443
   server: 104.21.3.219
@@ -143,6 +143,16 @@ proxies:
   port: 21166
   server: 209.74.81.149
   type: ss
+- alterId: 0
+  name: '15,21,37|US #2'
+  password: FDIypSwe64a3DA7un2R8DFjYXZO3NS05gKZTTOC8SxO0Fy3cqYg3EaFDA3ABaEYKNx39D
+  port: 443
+  server: kuame.missionsec.us
+  skip-cert-verify: true
+  sni: kuame.missionsec.us
+  tls: true
+  type: trojan
+  udp: true
 - name: 15,16|🇺🇸h@oneclickvpnkeys
   password: dongtaiwang.com
   port: 22222
@@ -151,23 +161,30 @@ proxies:
   sni: sberbank.ru
   tls: false
   type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 15|US VLESS-61 | free-nodes
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
-    short-id: 1a
-  server: t18.qifei.app
-  servername: www.amazon.com
-  tls: false
-  type: vless
-  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
-- name: 15|🇺🇸_US_美国_29
+- name: 15|🇺🇸_US_美国_21
   network: ws
-  port: 2053
-  server: 216.116.134.43
+  port: 8443
+  server: 45.159.218.162
+  servername: juzibaipiao.5112233.xyz
+  tls: true
+  type: vless
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: '%2f%3fed%3d2048'
+- name: 15,16|US
+  password: peEduuHzbExjK7UQHzazXwqgA
+  port: 27704
+  server: 166.88.164.9
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- name: 15|🇺🇸_US_美国_28
+  network: ws
+  port: 443
+  server: 170.114.45.25
   servername: juzibaipiao.5112233.xyz
   tls: true
   type: vless
@@ -184,76 +201,6 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: 15|🇺🇸_US_美国_34
-  network: ws
-  port: 2053
-  server: 89.116.180.130
-  servername: juzibaipiao.5112233.xyz
-  tls: true
-  type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: '%2f%3fed%3d2048'
-- name: 15|🇺🇸_US_美国_20
-  network: ws
-  port: 2087
-  server: 140.99.233.156
-  servername: juzibaipiao.5112233.xyz
-  tls: true
-  type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: '%2f%3fed%3d2048'
-- name: '15,17|All--@IRAN_V2RAY1🇺🇸 #4'
-  password: df7bed3c-06eb-11f0-8ebc-f23c93141fad
-  port: 1743
-  server: e10829f0-t4un40-t9lb2a-1glq.la.shifen.uk
-  skip-cert-verify: false
-  sni: e10829f0-t4un40-t9lb2a-1glq.la.shifen.uk
-  tls: false
-  type: hysteria2
-- name: 15,16|美国
-  password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
-  port: 2056
-  server: mg1.mangshe.xyz
-  skip-cert-verify: true
-  sni: mg1.mangshe.xyz
-  tls: false
-  type: hysteria2
-- name: 15|🇺🇸_US_美国_28
-  network: ws
-  port: 443
-  server: 170.114.45.25
-  servername: juzibaipiao.5112233.xyz
-  tls: true
-  type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: '%2f%3fed%3d2048'
-- name: 15|US VLESS-129 | free-nodes
-  port: 8443
-  server: 216.106.176.106
-  tls: false
-  type: vless
-  uuid: f7af49ea-f51f-4c71-9e12-0c2f3085f3b8
-- name: 15|🇺🇸_US_美国_32
-  network: ws
-  port: 8443
-  server: 167.68.5.90
-  servername: juzibaipiao.5112233.xyz
-  tls: true
-  type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: '%2f%3fed%3d2048'
 - name: 15|🇺🇸_US_美国_4
   network: ws
   port: 2083
@@ -266,28 +213,10 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
-- alterId: 0
-  name: '15,21,37|US #2'
-  password: FDIypSwe64a3DA7un2R8DFjYXZO3NS05gKZTTOC8SxO0Fy3cqYg3EaFDA3ABaEYKNx39D
-  port: 443
-  server: kuame.missionsec.us
-  skip-cert-verify: true
-  sni: kuame.missionsec.us
-  tls: true
-  type: trojan
-  udp: true
-- name: 15,16|US
-  password: peEduuHzbExjK7UQHzazXwqgA
-  port: 27704
-  server: 166.88.164.9
-  skip-cert-verify: true
-  sni: bing.com
-  tls: false
-  type: hysteria2
-- name: 15|🇺🇸_US_美国_3
+- name: 15|🇺🇸_US_美国_18
   network: ws
   port: 8443
-  server: 185.148.105.225
+  server: 89.116.161.250
   servername: juzibaipiao.5112233.xyz
   tls: true
   type: vless
@@ -296,30 +225,10 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
-- name: 15|🇺🇸_US_美国_35
+- name: 15|🇺🇸_US_美国_34
   network: ws
-  port: 443
-  server: 199.181.197.39
-  servername: juzibaipiao.5112233.xyz
-  tls: true
-  type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: '%2f%3fed%3d2048'
-- name: 15,16|美国2
-  password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
-  port: 2056
-  server: mg2.mangshe.xyz
-  skip-cert-verify: true
-  sni: mg2.mangshe.xyz
-  tls: false
-  type: hysteria2
-- name: 15|🇺🇸_US_美国_21
-  network: ws
-  port: 8443
-  server: 45.159.218.162
+  port: 2053
+  server: 89.116.180.130
   servername: juzibaipiao.5112233.xyz
   tls: true
   type: vless
@@ -336,20 +245,26 @@ proxies:
   sni: 9b91d3c4-t53wg0-t6h87s-63bp.la.shifen.uk
   tls: false
   type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 15,21|[Vless] 🇺🇸 US VLESS-62 | free-...
-  network: tcp
-  port: 4443
-  reality-opts:
-    public-key: 5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE
-    short-id: aa7e96542880027a
-  server: 85.209.154.133
-  servername: github.com
-  skip-cert-verify: false
+- name: 15,16|美国
+  password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
+  port: 2056
+  server: mg1.mangshe.xyz
+  skip-cert-verify: true
+  sni: mg1.mangshe.xyz
+  tls: false
+  type: hysteria2
+- name: 15|🇺🇸_US_美国_20
+  network: ws
+  port: 2087
+  server: 140.99.233.156
+  servername: juzibaipiao.5112233.xyz
   tls: true
   type: vless
-  uuid: 3121850a-24aa-41f9-936d-dbdf10a3b31f
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: '%2f%3fed%3d2048'
 - name: 15|🇺🇸_US_美国_14
   network: ws
   port: 2096
@@ -362,10 +277,76 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
-- name: 15|🇺🇸_US_美国_18
+- name: 15|🇺🇸_US_美国_32
   network: ws
   port: 8443
-  server: 89.116.161.250
+  server: 167.68.5.90
+  servername: juzibaipiao.5112233.xyz
+  tls: true
+  type: vless
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: '%2f%3fed%3d2048'
+- name: 15,16|美国2
+  password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
+  port: 2056
+  server: mg2.mangshe.xyz
+  skip-cert-verify: true
+  sni: mg2.mangshe.xyz
+  tls: false
+  type: hysteria2
+- name: 15|🇺🇸_US_美国_35
+  network: ws
+  port: 443
+  server: 199.181.197.39
+  servername: juzibaipiao.5112233.xyz
+  tls: true
+  type: vless
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: '%2f%3fed%3d2048'
+- name: '15,17|All--@IRAN_V2RAY1🇺🇸 #4'
+  password: df7bed3c-06eb-11f0-8ebc-f23c93141fad
+  port: 1743
+  server: e10829f0-t4un40-t9lb2a-1glq.la.shifen.uk
+  skip-cert-verify: false
+  sni: e10829f0-t4un40-t9lb2a-1glq.la.shifen.uk
+  tls: false
+  type: hysteria2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 15,21|[Vless] 🇺🇸 US VLESS-63 | free-...
+  network: tcp
+  port: 4443
+  reality-opts:
+    public-key: 5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE
+    short-id: aa7e96542880027a
+  server: 85.209.154.133
+  servername: github.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 3121850a-24aa-41f9-936d-dbdf10a3b31f
+- name: 15|🇺🇸_US_美国_3
+  network: ws
+  port: 8443
+  server: 185.148.105.225
+  servername: juzibaipiao.5112233.xyz
+  tls: true
+  type: vless
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: '%2f%3fed%3d2048'
+- name: 15|🇺🇸_US_美国_29
+  network: ws
+  port: 2053
+  server: 216.116.134.43
   servername: juzibaipiao.5112233.xyz
   tls: true
   type: vless
@@ -515,14 +496,6 @@ proxies:
     headers:
       Host: uh-lawyers-instruments-kernel.trycloudflare.com
     path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
-- name: 20,21|[Trojan] 未知 TROJAN-1376 | free...
-  network: tcp
-  password: 27876_t7d7f4e3f
-  port: 443
-  server: 23.142.200.175
-  skip-cert-verify: false
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   country: US
@@ -1072,34 +1045,31 @@ proxies:
       Host: pcs-referenced-camera-concerns.trycloudflare.com
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - cipher: aes-256-gcm
-  name: 21|[SS] 🇺🇸 US SS-26 | free-nodes
+  name: 21|[SS] 🇺🇸 US SS-20 | free-nodes
   password: 8JCsPssfgS8tiRwiMlhARg==
   port: 12000
   server: 15.204.247.49
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 21|[SS] 🇺🇸 US SS-52 | free-nodes
+  name: 21|[SS] 🇺🇸 US SS-53 | free-nodes
   password: 245f2c1d-a317-45a8-b230-e420566a7f62
   port: 51004
   server: 69.30.251.122
   type: ss
 - client-fingerprint: chrome
-  name: 21,22|美国 040
+  encryption: none
+  name: 21,22|美国 073
   network: ws
   port: 8443
-  server: ovhwuxian.pai50288.uk
+  server: 104.21.3.219
   servername: ovhwuxian.pai50288.uk
-  skip-cert-verify: true
-  tfo: true
+  skip-cert-verify: false
   tls: true
   type: vless
-  udp: true
   uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
   ws-opts:
     headers:
       Host: ovhwuxian.pai50288.uk
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/120.0.0.0 Safari/537.36
     path: /57ba2ab1
 - alterId: 1
   cipher: auto
@@ -1634,6 +1604,24 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/120.0.0.0 Safari/537.36
     path: /wsv/0cc731b9-0375-4590-aeaa-7e2611a149fe
+- client-fingerprint: chrome
+  name: 22|美国 040
+  network: ws
+  port: 8443
+  server: ovhwuxian.pai50288.uk
+  servername: ovhwuxian.pai50288.uk
+  skip-cert-verify: true
+  tfo: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
+  ws-opts:
+    headers:
+      Host: ovhwuxian.pai50288.uk
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/120.0.0.0 Safari/537.36
+    path: /57ba2ab1
 - name: 22|美国 042
   network: ws
   password: iwangjie
@@ -2013,21 +2001,6 @@ proxies:
     headers:
       Host: 000091gm0s8g08211s2q.rjp.3jrlr9edbfkg.s0add.dl24k.ghz.krcipuw0kx.vztx9qx.1luaw5rro.4sztyya.guarx48okfdavgn0i245is5g86r359.neib.cn
     path: /snippets?ip=proxyip:port(443)&nat64=6to4
-- client-fingerprint: chrome
-  encryption: none
-  name: 22|美国 073
-  network: ws
-  port: 8443
-  server: 104.21.3.219
-  servername: ovhwuxian.pai50288.uk
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
-  ws-opts:
-    headers:
-      Host: ovhwuxian.pai50288.uk
-    path: /57ba2ab1
 - encryption: none
   name: 22|美国 074
   network: ws
@@ -2982,6 +2955,20 @@ proxies:
     headers:
       Host: serkat.org
     path: linkvws
+- name: 22|美国 145
+  network: ws
+  password: YwuvGJk36B
+  port: 2053
+  server: creativecommons.org
+  skip-cert-verify: true
+  sni: kotlet.arshiacomplus.dpdns.org
+  tfo: true
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: kotlet.arshiacomplus.dpdns.org
+    path: /yamtekodasayahhh
 - alterId: 0
   cipher: auto
   name: 22|美国 146
@@ -3728,20 +3715,6 @@ proxies:
     headers:
       Host: top-azx.pages.dev
     path: /Az1.vpn.33.TOP/?ed=2560
-- name: 22|美国 217
-  network: ws
-  password: vip
-  port: 443
-  server: www.ipaddress.my
-  skip-cert-verify: true
-  sni: heihu880.pages.dev
-  tfo: true
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: heihu880.pages.dev
-    path: /?ed=2560
 - name: 22|美国 218
   network: ws
   password: '!!str 123456'
@@ -3756,20 +3729,6 @@ proxies:
     headers:
       Host: top-azx.pages.dev
     path: /Az1.vpn.33.TOP/?ed=2560
-- name: 22|美国 220
-  network: ws
-  password: vip
-  port: 2087
-  server: time.is
-  skip-cert-verify: true
-  sni: heihu880.pages.dev
-  tfo: true
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: heihu880.pages.dev
-    path: /?ed=2560
 - name: 22|美国 223
   network: ws
   password: vip
@@ -3784,19 +3743,19 @@ proxies:
     headers:
       Host: heihu880.pages.dev
     path: /?ed=2560
-- name: 22|美国 230
+- name: 22|美国 236
   network: ws
-  password: vip
-  port: 443
-  server: www.pcmag.com
+  password: trojan
+  port: 10002
+  server: 38.207.133.204
   skip-cert-verify: true
-  sni: heihu880.pages.dev
+  sni: qingming-b08.pages.dev
   tfo: true
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: heihu880.pages.dev
+      Host: qingming-b08.pages.dev
     path: /?ed=2560
 - name: 22|美国 238
   network: ws
@@ -16763,7 +16722,7 @@ proxies:
   tls: true
   type: ss
 - client-fingerprint: chrome
-  name: '39,40|US_speednode_0036 #1'
+  name: '39,40|US_speednode_0009 #1'
   network: ws
   port: 443
   server: 69.84.182.13
@@ -16772,7 +16731,7 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: be52060e-7934-4bc6-89b3-0b6cf4cda789
+  uuid: 1347acec-0c12-46c0-9436-19603093d9ab
   ws-opts:
     headers:
       Host: fr-1-fr-1.aiopen.sbs
