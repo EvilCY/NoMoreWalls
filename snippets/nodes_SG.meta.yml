@@ -1,36 +1,4 @@
 proxies:
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 4|👉🆔 @v2ray_configs_pool 📡 🇸🇬SG ...
-  network: ws
-  port: 8443
-  server: news.zoom.us
-  servername: darknet-free.alexid.org
-  tls: true
-  type: vless
-  uuid: 39eb8c33-ee7f-4980-b3e5-684aaf390f56
-  ws-opts:
-    headers:
-      Host: darknet-free.alexid.org
-    path: '%2F'
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: '4|👉🆔 @v2ray_configs_pool 📡 🇸🇬SG ... #1'
-  network: ws
-  port: 8443
-  server: partner.zoom.us
-  servername: darknet-free.alexid.org
-  tls: true
-  type: vless
-  uuid: 39eb8c33-ee7f-4980-b3e5-684aaf390f56
-  ws-opts:
-    headers:
-      Host: darknet-free.alexid.org
-    path: '%2F'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 4|VPNKEY-Singapore
@@ -91,16 +59,13 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
-- alterId: 0
-  name: 15,21,37|未知175
+- name: 15,21|[Trojan] 🇸🇬 SG TROJAN-662 | fr...
   password: trojan
   port: 8443
   server: www.visa.com.sg
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: pangpi.pages.dev
-  tls: true
   type: trojan
-  udp: true
 - name: '15,16|SG #3'
   password: 5OiuCsPmULZ0lJwts89fegLJE
   port: 17193
@@ -252,17 +217,23 @@ proxies:
     headers:
       Host: sg1.pkyun.website
     path: /sg1
-- cipher: chacha20-ietf-poly1305
-  name: 21|[SS] 🇸🇬 SG SS-42 | free-nodes
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 21,37|未知86
   password: uA1rLP5m0mMOQ8FcxRXxgr
   port: 26515
   server: 209.74.82.227
+  skip-cert-verify: true
+  tls: true
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 21|[SS] 🇸🇬 SG SS-49 | free-nodes
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 21,37|未知152
   password: 8Ij4seif85QQHfLmR0zYkQ
   port: 48918
   server: 209.74.82.196
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 21|[SS] 🇸🇬 SG SS-74 | free-nodes
@@ -510,16 +481,6 @@ proxies:
   port: 802
   server: 217.197.161.138
   type: ss
-- alterId: 0
-  name: '37|SG #9'
-  password: BxceQaOe
-  port: 804
-  server: 52.195.5.65
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  tls: true
-  type: trojan
-  udp: true
 - name: '39,40|SG_speednode_0010 #1'
   port: 10808
   server: 213.35.126.34
