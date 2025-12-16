@@ -1,13 +1,17 @@
 proxies:
-- alterId: 0
-  cipher: auto
+- client-fingerprint: random
   name: 4|👉🆔 @v2ray_configs_pool 📡 🇺🇸US_...
-  network: tcp
-  port: '12056'
-  server: 47.253.197.26
-  tls: false
-  type: vmess
-  uuid: dd7be7f1-38ff-45e6-f1e5-b20c2190f527
+  network: ws
+  port: 2053
+  server: 193.124.18.108
+  servername: ak.suoni.nyc.mn
+  tls: true
+  type: vless
+  uuid: 78fc9ba9-9c68-4b49-891f-ea9e38bd3b56
+  ws-opts:
+    headers:
+      Host: ak.suoni.nyc.mn
+    path: '%2Fproxyip%3Dsjc.o00o.ooo'
 - name: 4|🇺🇸🦅 United States
   network: grpc
   port: 8880
@@ -116,7 +120,7 @@ proxies:
   server: 63.180.254.10
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 12,23,29|🇺🇸 美国4|@ripaojiedian
+  name: 12,23|12| 美国4|@ripaojiedian
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
@@ -151,6 +155,18 @@ proxies:
     headers:
       Host: cdn-node-oss-62.anycdn.de
     path: /profile/us2
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 13|7a9555b39a14494a9f513b86b52ebd...
+  network: ws
+  port: 443
+  server: 85.209.154.10
+  tls: true
+  type: vless
+  udp: false
+  uuid: 2045bbcd-0135-4e85-baf1-8c5a17fc77c8
+  ws-opts:
+    path: /sqqpucws
 - name: 15|🇺🇸_US_美国_29
   network: ws
   port: 2053
@@ -1329,6 +1345,46 @@ proxies:
     headers:
       host: v2ray.codefyinc.com
     path: /
+- name: '29,30|美国|@ripaojiedian #1'
+  network: tcp
+  password: e2722c0fb503f8a592436c12bce0509a
+  port: 4054
+  server: 202.181.103.246
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: '29,30|美国2|@ripaojiedian #1'
+  network: tcp
+  password: e2722c0fb503f8a592436c12bce0509a
+  port: 2890
+  server: 160.16.136.130
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: '29,30|美国3|@ripaojiedian #1'
+  network: tcp
+  password: BxceQaOe
+  port: 2173
+  server: 16.163.143.132
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- cipher: aes-128-gcm
+  name: 29|🇺🇸 美国4|@ripaojiedian
+  password: t6d26id0pjzdo3x5wtlf
+  port: 10878
+  server: 69.164.240.83
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 29|🇺🇸 美国5|@ripaojiedian
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: feb7fa9:154948
+    mode: tls
+  port: 2377
+  server: 88.210.36.107
+  type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 37|🇺🇸US美国2 8.8KB/s
