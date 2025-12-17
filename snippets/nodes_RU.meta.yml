@@ -1,23 +1,26 @@
 proxies:
-- client-fingerprint: chrome
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
   name: 4|👉🆔 @v2ray_configs_pool 📡 🇷🇺RU_...
-  network: tcp
-  port: 40921
-  reality-opts:
-    public-key: heCmtLzcbUCR7Y1ZSomzRZpc45p9Qie9p_2W6Xw333A
-    short-id: c42db93ba6c62c
-  server: 193.57.138.53
-  servername: yahoo.com
-  tls: false
+  network: ws
+  port: 2053
+  server: 172.67.155.231
+  servername: INDEX.Arcane509.Workers.DEV
+  tls: true
   type: vless
-  uuid: b042a503-3cb9-461f-994d-28a642133b5e
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  ws-opts:
+    headers:
+      Host: index.arcane509.workers.dev
+    path: '%2Fassets%3Fed%3D2048'
 - alpn:
   - http/1.1
   client-fingerprint: chrome
   name: '4|👉🆔 @v2ray_configs_pool 📡 🇷🇺RU_... #1'
   network: ws
-  port: 2053
-  server: 172.67.155.231
+  port: 443
+  server: 172.67.145.21
   servername: INDEX.Arcane509.Workers.DEV
   tls: true
   type: vless
@@ -50,21 +53,6 @@ proxies:
   tls: false
   type: vless
   uuid: 8e6acce9-8b56-7190-d491-7d84f8189e26
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 13|f5d8364141ed474d8429f5edbce742...
-  network: ws
-  port: 2053
-  server: 172.67.155.231
-  servername: INDEX.Arcane509.Workers.DEV
-  tls: true
-  type: vless
-  udp: false
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
-  ws-opts:
-    headers:
-      host: INDEX.Arcane509.Workers.DEV
-    path: /assets?ed=2048
 - name: 15|🇷🇺_RU_俄罗斯联邦_10
   network: ws
   port: 2087
