@@ -35,12 +35,13 @@ proxies:
     path: /
 - alterId: 0
   cipher: chacha20-poly1305
-  name: 4|💀😎 Project By ALIILAPRO
+  name: '4,37|未命名 #1'
   network: tcp
-  port: '433'
+  port: 433
   server: https://github.com/ALIILAPRO/v2rayNG-Config
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
 - alterId: 0
@@ -110,46 +111,42 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 4|🇭🇰 Hong Kong هنگ کنگ
+  name: 4,37|未知10
   network: ws
-  port: '54809'
+  port: 54809
   server: 8.210.140.23
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: fde73daf-cc67-42f3-9935-35b132b01abd
   ws-opts:
-    headers:
-      Host: ''
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: 4|🇭🇰 Hong Kong
+  name: 4,37|未知8
   network: ws
-  port: '36968'
+  port: 36968
   server: 47.83.18.10
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 176bf1dd-647f-4c09-892e-5f9223dc8617
   ws-opts:
-    headers:
-      Host: ''
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: 4,24|🇻🇳VN-161.248.30.3-0275
+  name: 4,24,37|未知2
   network: ws
   port: 20086
   server: 161.248.30.3
   servername: ''
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
   uuid: 1006a928-2021-4a3b-beb5-d5853c6281c5
   ws-opts:
-    headers:
-      host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -165,11 +162,14 @@ proxies:
     headers:
       Host: fapeng.org
     path: linkvws
-- name: 4|👉🆔 @v2ray_configs_pool 📡 🇩🇪DE_...
+- alpn:
+  - h2
+  - http/1.1
+  name: 4|👉🆔 @v2ray_configs_pool 📡 🇩🇪DE_...
   network: ws
   password: cf142ac0-4bae-4c4b-9882-21fc0550a661
   port: 443
-  server: 188.114.97.3
+  server: www.speedtest.net
   sni: red-dream-2d6c.xepis84786.workers.dev
   type: trojan
   ws-opts:
@@ -204,14 +204,17 @@ proxies:
     headers:
       Host: abfba8affeca9988664697aab83c3851.mobgslb.tbcache.com
     path: /
-- name: '12,15,23,29,30|香港3|@ripaojiedian #1'
+- alterId: 0
+  name: 12,15,23,29,30,37|HK
   network: tcp
   password: 44e660b0ee21cf3ac66aee2c08af85d2
   port: 443
   server: 112.118.116.8
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
+  udp: true
 - name: '12,15,23,29,30|香港4|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
@@ -220,14 +223,17 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '12,15,23,29,30|香港5|@ripaojiedian #1'
+- alterId: 0
+  name: 12,15,23,29,30,37|🇰HK香港3
   network: tcp
   password: BxceQaOe
   port: 443
   server: 58.152.26.107
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
+  tls: true
   type: trojan
+  udp: true
 - name: '12,15,23,29,30|日本|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
@@ -236,22 +242,28 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '12,15,23,29,30|日本2|@ripaojiedian #1'
+- alterId: 0
+  name: 12,15,23,29,30,37|🇵JP日本3
   network: tcp
   password: 44e660b0ee21cf3ac66aee2c08af85d2
   port: 3169
   server: 160.16.107.37
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
-- name: '12,15,23,29,30|日本3|@ripaojiedian #1'
+  udp: true
+- alterId: 0
+  name: 12,15,23,29,30,37|🇯🇵JP日本2 4.0MB/s
   network: tcp
   password: 44e660b0ee21cf3ac66aee2c08af85d2
   port: 3093
   server: 160.16.107.37
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
+  udp: true
 - alterId: 2
   cipher: auto
   name: 12,23,29|🇯🇵 日本4|@ripaojiedian
@@ -261,22 +273,28 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '12,15,23,29,30|新加坡|@ripaojiedian #1'
+- alterId: 0
+  name: 12,15,23,29,30,37|SG
   network: tcp
   password: 44e660b0ee21cf3ac66aee2c08af85d2
   port: 2760
   server: 160.16.116.227
   skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
-- name: '12,15,23,29,30|新加坡2|@ripaojiedian #1'
+  udp: true
+- alterId: 0
+  name: 12,15,23,29,30,37|🇸🇬SG新加坡2
   network: tcp
   password: 44e660b0ee21cf3ac66aee2c08af85d2
   port: 2760
   server: 160.16.57.238
   skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
+  udp: true
 - name: '12,15,23,29,30|新加坡3|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
@@ -285,22 +303,28 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '12,15,23,29,30|美国|@ripaojiedian #1'
+- alterId: 0
+  name: 12,15,23,29,30,37|🇸US美国22 175.4KB/s
   network: tcp
   password: 44e660b0ee21cf3ac66aee2c08af85d2
   port: 4054
   server: 160.16.116.227
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
-- name: '12,15,23,29,30|美国2|@ripaojiedian #1'
+  udp: true
+- alterId: 0
+  name: 12,15,23,29,30,37|🇸US美国20
   network: tcp
   password: 44e660b0ee21cf3ac66aee2c08af85d2
   port: 2890
   server: 160.16.204.136
   skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
+  udp: true
 - name: '12,15,23,29,30|美国3|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
@@ -468,7 +492,7 @@ proxies:
 - alterId: 0
   cipher: auto
   fingerprint: ''
-  name: 13|034cdf25072340e1981c4af8228dfc...
+  name: 13|84205d6576b74ad7ab17259d4bc84e...
   network: ws
   port: 80
   server: 104.26.15.148
@@ -481,7 +505,7 @@ proxies:
 - alterId: 0
   cipher: auto
   fingerprint: ''
-  name: 13|98baea4267714a5a898e75ae1789d7...
+  name: 13|2f3ae4f85b4041d8956d43b529e48b...
   network: ws
   port: 443
   server: sareikela.com
@@ -494,7 +518,7 @@ proxies:
 - alterId: 0
   cipher: none
   fingerprint: ''
-  name: 13|41769dc1530e45ab88aa208f7b192b...
+  name: 13|2254aa899a504f56adf585ac775029...
   network: ws
   port: 443
   server: 151.101.66.219
@@ -510,7 +534,7 @@ proxies:
 - alterId: 0
   cipher: auto
   fingerprint: ''
-  name: 13|3bc5e2a1ce654bdf8a20782d113976...
+  name: 13|db841c1936bd43e484ebcaf3fb295e...
   network: ws
   port: 443
   server: 172.67.204.84
@@ -526,7 +550,7 @@ proxies:
 - alterId: 0
   cipher: auto
   fingerprint: ''
-  name: 13|a93f1790de2046f79cb3fae5acb622...
+  name: 13|b831cc8b7c784881a2416d592a34d6...
   network: ws
   port: 2086
   server: 172.64.166.28
@@ -539,7 +563,7 @@ proxies:
 - alterId: 0
   cipher: auto
   fingerprint: ''
-  name: 13|2be2fd07d47c443a8995e94a8cccf2...
+  name: 13|0eef9a9dbf604260a9a1de527b9c77...
   network: ws
   port: 2086
   server: 172.64.167.5
@@ -552,7 +576,7 @@ proxies:
 - alterId: 0
   cipher: auto
   fingerprint: ''
-  name: 13|0fe7718e14b54f6d8f50265d352ae7...
+  name: 13|88fea8cdcaf94475bc44ea9315dccc...
   network: ws
   port: 443
   server: 172.66.40.99
@@ -568,7 +592,7 @@ proxies:
 - alterId: 0
   cipher: auto
   fingerprint: ''
-  name: 13|a1ba475ee56140acbb9187d504acf9...
+  name: 13|f8f54e7e4cdb4ebab2d669e47403fd...
   network: ws
   port: 100
   server: cpanel.navar2.ir
@@ -581,7 +605,7 @@ proxies:
 - alterId: 0
   cipher: auto
   fingerprint: ''
-  name: 13|2cb166c761684f9e92df117b42d51f...
+  name: 13|bdc377ca69794b30a8d683b35333ae...
   network: ws
   port: 2082
   server: 172.67.130.140
@@ -591,17 +615,17 @@ proxies:
   uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     path: /
-- name: 13|34bcafb4642c46d6b202babc795032...
+- name: 13|bd22fad901cd4157b22d7d4e6c52d4...
   password: cf142ac0-4bae-4c4b-9882-21fc0550a661
   port: 443
   server: 188.114.97.3
   type: trojan
-- name: 13|ba3113b3aafa401d9454e9044f77c7...
+- name: 13|e55a311edb4f4ac8969d9336b8f491...
   password: 951bbbc9-c5fd-441e-ac3d-c7fcfbf4a751
   port: 443
   server: 173.245.59.100
   type: trojan
-- name: 13|11fae82bfecd42039f5a3036544bd4...
+- name: 13|7401db2effe54e0a8c6da88ee88b21...
   password: 4aec4e7f8cf8454ea4613659822e1a61
   port: 443
   server: 104.16.159.112
@@ -609,16 +633,29 @@ proxies:
 - alterId: 0
   cipher: auto
   fingerprint: ''
-  name: 13|dd39d455379b4a14ad8f940eff0ad1...
+  name: 13,37|未知4
   network: ws
   port: 80
   server: 104.21.71.88
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   udp: false
   uuid: 2a8a10fb-9ca3-367e-a234-cf09f841be4f
   ws-opts:
+    headers:
+      host: us2e-20240116.v2freevpn.com
     path: /us2ekjds3nay
+- name: 13|036825144169449ea3fae4349ae0fe...
+  password: cf142ac0-4bae-4c4b-9882-21fc0550a661
+  port: 443
+  server: www.speedtest.net
+  type: trojan
+- name: 13|217b41289ff54694bd64f39735dba2...
+  password: b10f2914-0401-4eff-ac4f-e430aeda0c45
+  port: 443
+  server: 104.19.142.99
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 15|美国 - 洛杉矶 - Cogent Communicatio...
@@ -698,12 +735,16 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 15|台湾省台中市+中华电信
+- alterId: 0
+  name: 15,37|🇼TW台湾2
   password: 17d3bf89-d2f0-4827-bcd0-c199fe54cd2a
   port: 31102
   server: green2.cdntencentmusic.com
+  skip-cert-verify: true
   sni: green2.cdntencentmusic.com
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 15|中国 - 香港 - Alibaba.com LLC - 5
@@ -2234,11 +2275,14 @@ proxies:
   ws-headers:
     Host: 0320hk857.fans8.xyz
   ws-path: /ray
-- cipher: chacha20-ietf-poly1305
-  name: 20|🇳🇱NL-185.242.86.156-156_1@156
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 20,37|🇷🇺RU
   password: 36ZCHeabUSfKjfQEvJ4HDV
   port: 54170
   server: 185.242.86.156
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -4350,11 +4394,14 @@ proxies:
   port: 989
   server: 79.127.233.170
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇨🇦CA-79.127.233.170-0199
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 24,37|🇦CA加拿大3 100.6MB/s
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 79.127.233.170
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: aes-128-gcm
   name: 24|🇺🇸US-212.102.47.131-0274
@@ -5018,11 +5065,14 @@ proxies:
   port: 989
   server: 46.183.184.60
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇵🇷PR-185.47.255.22-5045
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 24,37|🇺🇸US美国25 19.0KB/s
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.47.255.22
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -5608,6 +5658,504 @@ proxies:
   port: 443
   server: 156.146.62.164
   type: ss
+- alterId: 0
+  name: 37|JP
+  password: BxceQaOe
+  port: 2762
+  server: 18.177.141.4
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|TW
+  password: ef76d08c-9841-47e8-92a6-5b74df5d58ac
+  port: 35502
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|US
+  password: 5a2c16f9
+  port: 443
+  server: 104.19.220.22
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|🇭🇰HK香港2
+  password: BxceQaOe
+  port: 443
+  server: 58.152.25.71
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|IR
+  password: 0eC4ZBvStOgQEzTpCYjWN5
+  port: 443
+  server: 217.60.249.112
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 37|🇺🇸US美国2
+  password: 5a2c16f9
+  port: 443
+  server: 162.159.24.131
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|🇸US美国3
+  password: 5a2c16f9
+  port: 443
+  server: one.cf.cdn.hyli.xyz
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|🇺🇸US美国4
+  password: 7418004a-0ecd-41c0-a062-42bf966d3fb2
+  port: 443
+  server: cf.877774.xyz
+  skip-cert-verify: true
+  sni: guang.bgm2024.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|未知3
+  password: OdgHycGphesfLmPMYolUF
+  port: 14051
+  server: 172.238.229.254
+  skip-cert-verify: true
+  sni: api.avito.ru
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 37|🇸US美国5
+  password: 8JCsPssfgS8tiRwiMlhARg==
+  port: 12000
+  server: 15.204.247.49
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|🇺🇸US美国6
+  password: p78naCf2EfOlRSLTX0wFVx
+  port: 443
+  server: pupas-shirting-unsung.freesocks.work
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|DE国 1.5MB/s
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 45.87.175.174
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 37|🇺🇸US美国7
+  password: 5a2c16f9
+  port: 443
+  server: freeyx.cloudflare88.eu.org
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|🇸US美国8
+  password: qFvn2fNEvBgM5knffrN96q
+  port: 9483
+  server: 92.118.112.101
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 37|🇺🇸US美国9
+  password: 5a2c16f9
+  port: 443
+  server: 104.17.162.3
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 37|未知5
+  network: ws
+  port: 443
+  server: fapeng.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      host: fapeng.org
+    path: linkvws
+- alterId: 0
+  name: 37|🇼TW台湾3
+  password: 04a6a322-b08e-4635-99af-219c01ade7dd
+  port: 31104
+  server: 220.130.58.138
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|NL
+  password: 7418004a-0ecd-41c0-a062-42bf966d3fb2
+  port: 443
+  server: cf.0sm.com
+  skip-cert-verify: true
+  sni: vd.vmy2024.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|🇺🇸US美国10 11.0KB/s
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.47.254.87
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 37|🇼TW台湾4
+  password: ef76d08c-9841-47e8-92a6-5b74df5d58ac
+  port: 31102
+  server: 220.130.58.138
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|CA加
+  password: 6pRjKQJ0CWyFtG.9
+  port: 12990
+  server: 198.57.27.27
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|🇺🇸US美国11
+  password: p78naCf2EfOlRSLTX0wFVx
+  port: 443
+  server: 71.19.148.143
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 37|未知6
+  network: ws
+  port: 443
+  server: 15.235.83.228
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      host: lammaland.org
+    path: linkvws
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|🇷KR国
+  password: VQhct3pJXkASHgKQcQcliw
+  port: 1080
+  server: 46.224.157.198
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 37|未知7
+  network: ws
+  password: cf142ac0-4bae-4c4b-9882-21fc0550a661
+  port: 443
+  server: www.speedtest.net
+  skip-cert-verify: true
+  sni: red-dream-2d6c.xepis84786.workers.dev
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|🇹🇼TW台湾5
+  password: a213e1a5-3c5a-40f2-b70e-98ffa63ffc8e
+  port: 35501
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|🇹🇼TW台湾6 44.6KB/s
+  password: c80870af-749e-406c-bdbd-7aafa46de71d
+  port: 31103
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|🇱NL荷兰2
+  password: Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q
+  port: 443
+  server: mfyousheng.nl.eu.org
+  skip-cert-verify: true
+  sni: mfyousheng.nl.eu.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|🇺🇸US美国12
+  password: 5a2c16f9
+  port: 443
+  server: 104.26.1.110
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|🇺🇸US美国13
+  password: BxceQaOe
+  port: 1112
+  server: 95.40.14.227
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|🇸US美国14
+  password: 5a2c16f9
+  port: 443
+  server: cf.130519.xyz
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|🇸US美国15
+  password: 5a2c16f9
+  port: 443
+  server: 777.ai7777777.xyz
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|TH国 222.8KB/s
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 119.59.98.58
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 37|CN国
+  password: BxceQaOe
+  port: 443
+  server: 219.79.214.159
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|🇸US美国16
+  password: wwzVn2ZnHfqYa6l8EWh3eY
+  port: 443
+  server: switcher-nick-croquet.freesocks.work
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 37|🇹🇼TW台湾7
+  password: 25a6f104-84d0-4a8b-9827-1937f8816a6e
+  port: 34411
+  server: 220.130.58.138
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|🇹🇼TW台湾8
+  password: 04a6a322-b08e-4635-99af-219c01ade7dd
+  port: 34411
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|🇬SG新加坡3
+  password: BxceQaOe
+  port: 804
+  server: 57.180.28.48
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 37|未知9
+  network: ws
+  port: 443
+  server: serkat.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      host: serkat.org
+    path: linkvws
+- alterId: 0
+  name: 37|🇺🇸US美国17
+  password: 5a2c16f9
+  port: 443
+  server: 104.19.55.205
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 37|🇺🇸US美国18
+  password: 57bc0c04-8184-48f5-906b-897d095ed445
+  port: 17459
+  server: liubu9.singdns.com
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 37|🇼TW台湾9 35.4KB/s
+  password: c80870af-749e-406c-bdbd-7aafa46de71d
+  port: 33301
+  server: green2.cdntencentmusic.com
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|🇸US美国19
+  password: 5a2c16f9
+  port: 443
+  server: 162.159.128.253
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 37|🇦CA加拿大2 630.2KB/s
+  password: 8JCsPssfgS8tiRwiMlhARg==
+  port: 12000
+  server: 144.217.164.29
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 37|未知11
+  network: ws
+  port: 2082
+  server: 5.196.29.123
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      host: google.com
+    path: /
+- alterId: 0
+  name: 37|🇺🇸US美国21
+  password: 5a2c16f9
+  port: 443
+  server: 104.17.167.134
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|🇺🇸US美国23
+  password: Aimer
+  port: 2053
+  server: 167.68.4.199
+  skip-cert-verify: true
+  sni: epge.muarua.filegear-sg.me
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|🇺🇸US美国24
+  password: 5a2c16f9
+  port: 443
+  server: 172.64.229.205
+  skip-cert-verify: true
+  sni: snippets.kkii.eu.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 37|未知12
+  network: ws
+  port: 443
+  server: yichueng.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      host: yichueng.org
+    path: linkvws
 - alterId: 0
   cipher: auto
   name: 39|CN_speednode_0006
