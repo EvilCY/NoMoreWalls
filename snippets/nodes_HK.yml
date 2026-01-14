@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 4,37|未知13
+  name: 4,37|未知5
   network: ws
   port: 54809
   server: 8.210.140.23
@@ -14,7 +14,7 @@ proxies:
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: 4,37|未知2
+  name: 4,37|未知3
   network: ws
   port: 36968
   server: 47.83.18.10
@@ -40,14 +40,17 @@ proxies:
   port: 8388
   server: 103.149.183.200
   type: ss
-- name: '12,15,23,29,30|香港3|@ripaojiedian #1'
+- alterId: 0
+  name: 12,15,23,29,30,37|🇭HK香港5
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 443
   server: 58.152.110.111
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
+  udp: true
 - name: '12,15,23,29,30|香港4|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
@@ -56,15 +59,13 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- alterId: 0
-  name: '12,15,23,29,30,37,39,40|HK_speednode_0017 #1'
+- name: '12,15,23,29,30|香港5|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
   port: 443
   server: 58.152.53.219
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
-  tls: true
   type: trojan
   udp: true
 - name: '12,15,23,29,30|新加坡3|@ripaojiedian #1'
@@ -1164,7 +1165,7 @@ proxies:
   sni: '%E9%A6%83%E6%95%80%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20783%20'
   type: trojan
 - alterId: 0
-  name: 12,37|🇰HK香港5
+  name: 12,37|🇰HK香港6
   password: 61d8077bfb174e171b8283f155a555ad
   port: 443
   server: 112.118.116.123
@@ -1350,12 +1351,30 @@ proxies:
   tls: false
   type: vmess
   uuid: 36b76373-7a4f-4669-9113-7d247bcf2704
-- name: 15|香港+电讯盈科有限公司
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 13|9c5c98379f0d43b483b9758741b1fe...
+  network: ws
+  port: 443
+  server: sv2.wy888.us
+  tls: true
+  type: vmess
+  udp: false
+  uuid: cda69512-ad1b-4f85-b547-b1d545e7cc90
+  ws-opts:
+    path: /vmess
+- alterId: 0
+  name: 15,37|🇰HK香港2
   password: BxceQaOe
   port: 443
   server: 58.152.53.219
+  skip-cert-verify: true
   sni: t.me%252Fripaojiedian
+  tls: true
   type: trojan
+  udp: true
 - name: '15|香港+电讯盈科有限公司 #1'
   password: BxceQaOe
   port: 443
@@ -1410,6 +1429,16 @@ proxies:
     path: /
 - alterId: 0
   name: 37|HK
+  password: BxceQaOe
+  port: 443
+  server: 58.152.25.130
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|🇰HK香港3
   password: e0e28234-f4cd-4583-922c-c97795cb6222
   port: 35502
   server: green2.cdntencentmusic.com
@@ -1419,22 +1448,12 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 37|🇰HK香港3
+  name: 37|🇭🇰HK香港4
   password: cde8eda2-9c2e-4fae-b308-2fed2cc33e4b
   port: 35501
   server: green2.cdntencentmusic.com
   skip-cert-verify: true
   sni: green2.cdntencentmusic.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|🇭🇰HK香港4
-  password: BxceQaOe
-  port: 443
-  server: 58.152.25.130
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
   tls: true
   type: trojan
   udp: true
