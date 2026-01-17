@@ -297,7 +297,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: '12,15,23,29,30|香港5|@ripaojiedian #1'
+- name: '12,15,23,29,30,39,40|HK_speednode_0014 #1'
   network: tcp
   password: BxceQaOe
   port: 443
@@ -305,6 +305,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
+  udp: true
 - name: '12,15,23,29,30|日本|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
@@ -411,7 +412,7 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '12,23,39,40|CA_speednode_0001 #1'
+- name: '12,15,23,39,40|CA_speednode_0001 #1'
   password: 30077070-596e-48ea-9400-14c8ed07bd97
   port: 443
   server: tuntro006.instconn.com
@@ -1065,7 +1066,7 @@ proxies:
   skip-cert-verify: true
   sni: cdnfire.xiaomispeed.com
   type: trojan
-- name: 12,15|台湾省台中市+中华电信
+- name: 12|Taiwan_Chiayi City_trojan_1167
   password: 3b6608c7-2217-4643-a387-f0937a9972ed
   port: 31102
   server: green2.cdntencentmusic.com
@@ -1170,7 +1171,7 @@ proxies:
   skip-cert-verify: true
   sni: green2.cdntencentmusic.com
   type: trojan
-- name: 12|Taiwan_Chiayi City_trojan_1182
+- name: 12,15|台湾省台中市+中华电信
   password: 505ab478-a7c5-413b-ac56-7cef17584a7c
   port: 31101
   server: green2.cdntencentmusic.com
@@ -1543,7 +1544,7 @@ proxies:
   uuid: fb48f737-c0d1-4db0-9f0d-c7d7cecad974
 - alterId: 0
   cipher: auto
-  name: 12|United Kingdom_None_vmess_1113...
+  name: 12,15|英国 V2CROSS.COM
   network: tcp
   port: '180'
   server: 82.198.246.97
@@ -1737,28 +1738,37 @@ proxies:
     headers:
       Host: baidu.com
     path: /
-- name: 15|14|US_speednode_0036
-  password: BxceQaOe
-  port: 3579
-  server: 54.46.50.46
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- name: 15|香港+电讯盈科有限公司
-  password: BxceQaOe
-  port: 443
-  server: 58.152.53.219
-  sni: t.me%2525252Fripaojiedian
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: 15|日本 - 东京 - Akile LTD - 5
+  name: 15|德国 - 兰河畔林堡 - OVH SAS - 1
+  network: ws
+  port: '8080'
+  server: zula.ir
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: ''
+    path: /nasnet/cdn?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 15|美国 V2CROSS.COM
+  network: none
+  port: 34460
+  server: 216.238.86.158
+  tls: false
+  type: vmess
+  uuid: 90be214d-048c-4ea2-a602-b8e4d4e51e36
+- alterId: 0
+  cipher: auto
+  name: 15|美国 - 芝加哥 - Zhejiang Aiyun Netw...
   network: tcp
-  port: '49303'
+  port: '49312'
   server: cees.owwoedu.com
   tls: false
   type: vmess
-  uuid: 5aa4437b-e03c-453e-a81f-0a3516eec742
+  uuid: fb3b9b15-9149-4fef-8812-3630601c40ed
 - alterId: 0
   cipher: auto
   name: 15|中国 - 香港 - Alibaba (US) Technol...
@@ -1774,38 +1784,13 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 15|美国 - 芝加哥 - Zhejiang Aiyun Netw...
+  name: 15|日本 - 东京 - Akile LTD - 5
   network: tcp
-  port: '49312'
+  port: '49303'
   server: cees.owwoedu.com
   tls: false
   type: vmess
-  uuid: fb3b9b15-9149-4fef-8812-3630601c40ed
-- alterId: 0
-  cipher: auto
-  name: 15|德国 - 兰河畔林堡 - OVH SAS - 1
-  network: ws
-  port: '8080'
-  server: zula.ir
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: ''
-    path: /nasnet/cdn?ed=2560
-- name: 15|14|US_speednode_0047
-  network: ws
-  password: Aimer
-  port: 2053
-  server: 167.68.4.199
-  skip-cert-verify: false
-  sni: epge.muarua.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: epge.muarua.filegear-sg.me
-    path: /
+  uuid: 5aa4437b-e03c-453e-a81f-0a3516eec742
 - alterId: 0
   cipher: auto
   name: 20|🇺🇸_US_美国->🇩🇪_DE_德国_1_0@0
@@ -6948,73 +6933,23 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: auto
   name: 39|CN_speednode_0002
-  password: aed6e687-58a9-4836-ba62-7d8184c94df4
-  port: 32061
-  server: hk13.network-cdn-gw-yd.net
-  type: ss
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 39|HK_speednode_0012
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: f860f2da-5035-11ed-bb74-f23c9164ca5d
-- alterId: 2
-  cipher: auto
-  name: 39|HK_speednode_0013
-  network: ws
-  port: 80
-  server: b4c044e6-t70f40-t9byd7-1jfvb.hkt.gotochinatown.net
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 06b2ac52-fcc6-11ec-bb74-f23c9164ca5d
-- alterId: 2
-  cipher: auto
-  name: 39|HK_speednode_0014
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 9141f048-0b70-11ef-9eb1-f23c91cfbbc9
-- alterId: 2
-  cipher: auto
-  name: 39|HK_speednode_0015
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  servername: hkt.gotochinatown.net
+  port: 47081
+  server: oss-4.qqa678.com
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 990e8f34-bd4f-11ef-bdb9-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: hkt.gotochinatown.net
-    path: /
-- alterId: 2
+  uuid: ef5a32e2-ec6f-4d8b-b084-9736f912432c
+- alterId: 0
   cipher: auto
-  name: 39|HK_speednode_0016
-  network: ws
-  port: 80
-  server: 5545a4de-t8lts0-tasors-1tdqt.hkt.gotochinatown.net
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
+  name: 39|CN_speednode_0003
+  port: 47081
+  server: tunnel1.qqa678.com
+  skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 167db97c-ee01-11ef-b737-f23c91cfbbc9
+  uuid: ef5a32e2-ec6f-4d8b-b084-9736f912432c
