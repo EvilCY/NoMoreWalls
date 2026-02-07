@@ -1,29 +1,31 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 4,37|未知8
+  name: 4|🇭🇰 Hong Kong هنگ کنگ
   network: ws
-  port: 54809
+  port: '54809'
   server: 8.210.140.23
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: fde73daf-cc67-42f3-9935-35b132b01abd
   ws-opts:
+    headers:
+      Host: ''
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: 4,37|未知6
+  name: 4|🇭🇰 Hong Kong
   network: ws
-  port: 36968
+  port: '36968'
   server: 47.83.18.10
   servername: ''
-  skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   uuid: 176bf1dd-647f-4c09-892e-5f9223dc8617
   ws-opts:
+    headers:
+      Host: ''
     path: /arki?ed=2048
 - alterId: 2
   cipher: auto
@@ -60,16 +62,13 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- alterId: 0
-  name: 12,37|HK
+- name: '12|Hong Kong_Tsim Sha Tsui_trojan... #1'
   password: BxceQaOe
   port: 443
   server: 219.76.135.98
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
-  tls: true
   type: trojan
-  udp: true
 - name: 12|Hong Kong_Man Kok_trojan_1115
   password: BxceQaOe
   port: 443
@@ -111,15 +110,47 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: 15|香港 阿里云
-  network: none
-  port: '43425'
-  server: 8.210.248.133
-  tls: false
-  type: vmess
-  uuid: aa10afb0-f913-4343-9c69-bc797fcba2db
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: '15,39,40|HK_speednode_0033 #1'
+  port: 443
+  reality-opts:
+    public-key: 4cfuj5otn8-uhPUe23OhB6KY8I42AxxJNt4lWIpg_AU
+  server: 2.hk.1.cdn-bilibili.cn
+  servername: www.icloud.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: fcfc091d-81a4-40b7-cbdc-8eb7683617a4
+- name: '15,23,39,40|HK_speednode_0031 #1'
+  password: BxceQaOe
+  port: 443
+  server: 112.120.31.36
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: '15,39,40|HK_speednode_0032 #1'
+  port: 443
+  reality-opts:
+    public-key: 4cfuj5otn8-uhPUe23OhB6KY8I42AxxJNt4lWIpg_AU
+  server: 2.hk.2.cdn-bilibili.cn
+  servername: www.icloud.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: fcfc091d-81a4-40b7-cbdc-8eb7683617a4
+- name: '15,23,39,40|HK_speednode_0030 #1'
+  password: BxceQaOe
+  port: 443
+  server: 112.120.31.36
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  type: trojan
+  udp: true
 - name: 15,16| HK
   password: a305ac08-d136-11ee-b6db-f23c91cfbbc9
   port: 443
@@ -172,56 +203,3 @@ proxies:
     headers:
       host: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
     path: /
-- alterId: 0
-  name: 37|🇭🇰HK香港3
-  password: BxceQaOe
-  port: 1820
-  server: 13.112.171.80
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: '37,39,40|HK_speednode_0030 #1'
-  password: BxceQaOe
-  port: 443
-  server: 112.120.31.36
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  tls: true
-  type: trojan
-  udp: true
-- name: '39,40|HK_speednode_0031 #1'
-  password: BxceQaOe
-  port: 443
-  server: 112.120.31.36
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: '39,40|HK_speednode_0032 #1'
-  port: 443
-  reality-opts:
-    public-key: 4cfuj5otn8-uhPUe23OhB6KY8I42AxxJNt4lWIpg_AU
-  server: 2.hk.2.cdn-bilibili.cn
-  servername: www.icloud.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: fcfc091d-81a4-40b7-cbdc-8eb7683617a4
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: '39,40|HK_speednode_0033 #1'
-  port: 443
-  reality-opts:
-    public-key: 4cfuj5otn8-uhPUe23OhB6KY8I42AxxJNt4lWIpg_AU
-  server: 2.hk.1.cdn-bilibili.cn
-  servername: www.icloud.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: fcfc091d-81a4-40b7-cbdc-8eb7683617a4
