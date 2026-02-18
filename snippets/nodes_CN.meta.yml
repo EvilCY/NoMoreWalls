@@ -5,14 +5,17 @@ proxies:
   port: 10015
   server: assets-cfnode67.cloudflarecdn-edge.rfsconfig.com
   type: ss
-- name: '12,15,23,29,30|台湾|@ripaojiedian #1'
+- alterId: 0
+  name: '12,15,23,29,30,37|TW #1'
   network: tcp
   password: 736cd94d-7b94-3e44-8106-3419f64eaf09
   port: 3462
   server: a12.taipeicitygovernment.org.ua
   skip-cert-verify: true
   sni: 45.32.28.232
+  tls: true
   type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 12,23,29|🇸🇬 新加坡4|@ripaojiedian
   password: 049d354a-2cf1-4956-b6d8-d04aa4969b64
@@ -697,10 +700,19 @@ proxies:
   ws-path: /debian
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 37|🇳广东2
+  name: 37|🇨🇳广东2
   password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
-  port: 10589
+  port: 43076
   server: ldu.izenny.com
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 37|🇨🇳广东3
+  password: JVrsLLN1tkN8oXZO
+  port: 13223
+  server: chengbai02.ascwt179.com
   skip-cert-verify: true
   tls: true
   type: ss
