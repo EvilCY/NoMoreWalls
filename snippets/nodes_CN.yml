@@ -24,16 +24,37 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: 12|China_None_vmess_1111
+  name: 12|China_None_vmess_1112
   network: tcp
   port: '30824'
   server: v24.hdacd.com
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  name: 12|China_None_vmess_1116
+  network: ws
+  port: '12883'
+  server: 183.240.138.169
+  tls: false
+  type: vmess
+  uuid: 3ac9d436-f213-421d-9644-a94686ee9fba
+  ws-opts:
+    headers:
+      Host: gtm1.ktmwan.net
+    path: /
+- name: 12|China_None_trojan_1118
+  network: tcp
+  password: 736cd94d-7b94-3e44-8106-3419f64eaf09
+  port: 3462
+  server: a12.taipeicitygovernment.org.ua
+  skip-cert-verify: true
+  sni: a12.taipeicitygovernment.org.ua
+  type: trojan
 - alterId: 2
   cipher: auto
-  name: 12|China_None_vmess_1114
+  name: 12|China_None_vmess_1121
   network: tcp
   port: '30804'
   server: v4.hdacd.com
@@ -42,35 +63,13 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
-  name: 12|China_None_vmess_1115
+  name: 12|China_None_vmess_1125
   network: tcp
   port: '30835'
   server: v35.hdacd.com
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: 12|China_None_vmess_1122
-  network: tcp
-  port: '30830'
-  server: v30.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: 12|China_Shenzhen_vmess_1123
-  network: ws
-  port: '80'
-  server: hn.xn--wlqw1swrj04ju56d.com
-  tls: false
-  type: vmess
-  uuid: f9ddefc5-d121-486f-9e2f-0c2cd1a3decc
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
 - alterId: 0
   cipher: auto
   name: 15|中国 V2CROSS.COM
@@ -697,17 +696,36 @@ proxies:
     Host: data-jp-v1.usabooks.com.cn
   ws-path: /debian
 - alterId: 0
+  cipher: auto
+  name: 37|🇳CN国
+  network: tcp
+  port: 30830
+  server: v30.hdacd.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 37|🇨🇳广东2
+  name: 37|🇳广东2
   password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
-  port: 43076
+  port: 10589
+  server: ldu.izenny.com
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 37|🇳广东3
+  password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  port: 18148
   server: ldu.izenny.com
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
   cipher: aes-128-gcm
-  name: 37|🇨🇳广东3
+  name: 37|🇨广东4
   password: JVrsLLN1tkN8oXZO
   port: 13223
   server: chengbai02.ascwt179.com
