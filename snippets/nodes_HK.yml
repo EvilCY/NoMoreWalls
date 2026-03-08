@@ -46,13 +46,37 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 12|Hong Kong_None_trojan_1137
+- name: '12,15,23,29,30|香港3|@ripaojiedian #1'
+  network: tcp
+  password: f7dbed8b1ca85124e793ba6c0bcfd0db
+  port: 443
+  server: 58.152.18.2
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: '12,15,23,29,30|香港4|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
-  port: 2960
-  server: 43.198.86.230
+  port: 1792
+  server: 18.162.54.136
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
+  type: trojan
+- name: '12,15,23,29,30|香港5|@ripaojiedian #1'
+  network: tcp
+  password: BxceQaOe
+  port: 443
+  server: 58.152.25.253
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: '12,15,23,29,30|新加坡3|@ripaojiedian #1'
+  network: tcp
+  password: BxceQaOe
+  port: 41973
+  server: 18.162.54.136
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
   type: trojan
 - alterId: 2
   cipher: auto
@@ -81,7 +105,7 @@ proxies:
   cipher: auto
   grpc-opts:
     grpc-service-name: '12306'
-  name: 12|Hong Kong_Kowloon_vmess_1115
+  name: 12|Hong Kong_Central_vmess_1115
   network: grpc
   port: '443'
   server: hk02.653ebeeb-5f60-4be5-958d-7bf4839cdccd.ef6616fd-5b06-482f-9d64-183745659cbf.byteprivatelink.com
@@ -89,30 +113,6 @@ proxies:
   tls: true
   type: vmess
   uuid: d5359b9e-4f4f-49e4-ab8b-f6a0d19bce28
-- name: '15,23,29,30|香港4|@ripaojiedian #1'
-  network: tcp
-  password: BxceQaOe
-  port: 1792
-  server: 18.162.54.136
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: '15,23,29,30|香港5|@ripaojiedian #1'
-  network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 58.152.25.253
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: '15,23,29,30|香港3|@ripaojiedian #1'
-  network: tcp
-  password: f7dbed8b1ca85124e793ba6c0bcfd0db
-  port: 443
-  server: 58.152.18.2
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
@@ -174,6 +174,16 @@ proxies:
   server: 13.112.192.191
   skip-cert-verify: true
   sni: t.me/ripaojiedian
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|🇭🇰HK香港3
+  password: f7dbed8b1ca85124e793ba6c0bcfd0db
+  port: 921
+  server: 54.250.4.226
+  skip-cert-verify: true
+  sni: www.nintendogames.net
   tls: true
   type: trojan
   udp: true
