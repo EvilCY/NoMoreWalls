@@ -1162,12 +1162,13 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
-  name: 11,22,28|🇭🇰 香港2|@ripaojiedian
+  name: 11,22,28,38|CN_speednode_0008
   port: 6001
   server: cn01.365cloud8754.com
   skip-cert-verify: false
   tls: false
   type: vmess
+  udp: true
   uuid: db75bc92-4e32-48dd-b792-d7a8b707626c
 - alterId: 0
   name: 11,14,22,28,29,36|HK
@@ -1287,11 +1288,12 @@ proxies:
   sni: t.me%2Fripaojiedian
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 11,22,28|🇹🇼 台湾|@ripaojiedian
+  name: 11,22,28,38|CN_speednode_0014
   password: dd9e4541-9be2-4c3f-9c49-7dde77c3480b
   port: 38239
   server: stream-cdn-asia-06.silver-line.digital
   type: ss
+  udp: true
 - alterId: 2
   cipher: auto
   name: '11,14,22,29|香港|@ripaojiedian #1'
@@ -1313,16 +1315,16 @@ proxies:
   type: vmess
   uuid: db75bc92-4e32-48dd-b792-d7a8b707626c
 - alterId: 0
-  name: '11,14,22,36,38,39|GB_speednode_0004 #1'
+  name: 11,14,36|GB 33.2KB/s
   password: IL37892054
   port: 443
   server: upright-rhino.rooster465.autos
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: upright-rhino.rooster465.autos
   tls: true
   type: trojan
   udp: true
-- name: '11,14,22,38,39|LU_speednode_0006 #1'
+- name: 11,14|14|LU_speednode_0006
   password: IL37892054
   port: 443
   server: apt-magpie.rooster465.autos
@@ -1420,36 +1422,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
-- alterId: 0
-  name: 14,36|🇬BG加
-  password: MeaDiUmPlkWbZJ2BON8tz
-  port: 28259
-  server: 78.159.131.12
-  skip-cert-verify: true
-  sni: ads.x5.ru
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 14,36|未知34
-  network: tcp
-  port: 51556
-  server: 103.181.164.145
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: '14|亚太地区 V2CROSS.COM #1'
-  network: tcp
-  port: '54022'
-  server: 103.181.164.145
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 2
   cipher: auto
   name: 14|美国 - 华盛顿特区 - 2
@@ -1461,28 +1433,41 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
+  name: 14|英国 V2CROSS.COM
+  network: tcp
+  port: '180'
+  server: 82.198.246.97
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
   name: 14,36|CN国
   network: tcp
   port: 30812
   server: v12.hdacd.com
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 14|俄罗斯+V2CROSS.COM
+  password: ZblhWr0mqMakCPg.N
+  port: 36158
+  server: 212.193.18.144
+  sni: ya.ru
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 14|美国 CloudFlare节点
-  network: ws
-  port: 443
-  server: cf.090227.xyz
-  servername: sgal.dagrate.eu.org
+  name: 14,36|未知34
+  network: tcp
+  port: 51556
+  server: 103.181.164.145
+  skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
-  ws-opts:
-    headers:
-      Host: sgal.dagrate.eu.org
-    path: /
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 19|🇺🇸_US_美国->🇩🇪_DE_德国_1_0@0
@@ -4961,6 +4946,34 @@ proxies:
   port: 35276
   server: 51.140.34.50
   type: ss
+- name: '22,38,39|AU_speednode_0002 #1'
+  password: IL37892054
+  port: 443
+  server: engaged-ram.rooster465.autos
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- name: '22,38,39|KR_speednode_0024 #1'
+  network: ws
+  password: trojan
+  port: 11000
+  server: 220.92.22.170
+  skip-cert-verify: true
+  sni: jflsjlaf.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: jflsjlaf.pages.dev
+    path: /
+- name: '22,38,39|PL_speednode_0026 #1'
+  password: IL37892054
+  port: 443
+  server: outgoing-ladybird.rooster465.autos
+  skip-cert-verify: false
+  sni: outgoing-ladybird.rooster465.autos
+  type: trojan
+  udp: true
 - cipher: aes-128-gcm
   name: 23|🇺🇸US-37.19.198.243-0224
   password: shadowsocks
@@ -6429,6 +6442,16 @@ proxies:
       host: fapeng.org
     path: linkvws
 - alterId: 0
+  name: 36|🇬BG加
+  password: MeaDiUmPlkWbZJ2BON8tz
+  port: 28259
+  server: 78.159.131.12
+  skip-cert-verify: true
+  sni: ads.x5.ru
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
   cipher: aes-256-gcm
   name: 36|🇦CA加拿大2 5.3MB/s
   password: 8JCsPssfgS8tiRwiMlhARg==
@@ -6769,20 +6792,9 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 2
-  cipher: auto
-  name: 38|CN_speednode_0001
-  port: 30833
-  server: v33.hdacd.com
-  servername: v33.hdacd.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
-  name: 38|CN_speednode_0002
+  name: 38|CN_speednode_0003
   port: 30812
   server: v12.hdacd.com
   skip-cert-verify: false
@@ -6792,9 +6804,9 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
-  name: 38|CN_speednode_0003
+  name: 38|CN_speednode_0005
   network: ws
-  port: 16618
+  port: 16617
   server: m.cnmjin.net
   skip-cert-verify: false
   tls: false
@@ -6807,9 +6819,159 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 38|GB_speednode_0005
+  name: 38|CN_speednode_0006
+  network: ws
+  port: 16626
+  server: planb.mojcn.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: dbe3102c-5e26-4b5f-82eb-493ae07e758c
+  ws-opts:
+    headers:
+      Host: 437dfed94cb7943bb6f7f93ccf00a561.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 38|CN_speednode_0007
+  network: ws
+  port: 16616
+  server: planb.mojcn.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: dbe3102c-5e26-4b5f-82eb-493ae07e758c
+  ws-opts:
+    headers:
+      Host: 437dfed94cb7943bb6f7f93ccf00a561.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 38|CN_speednode_0009
   network: ws
   port: 16618
+  server: planb.mojcn.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4907a8e9-79c6-4690-a68b-2dfb971861f4
+  ws-opts:
+    headers:
+      Host: 90a15d418d18111ebdc80196ca0cd72d.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 38|CN_speednode_0010
+  network: ws
+  port: 16632
+  server: m.cnmjin.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
+  ws-opts:
+    headers:
+      Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 38|CN_speednode_0011
+  network: ws
+  port: 16632
+  server: planb.mojcn.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
+  ws-opts:
+    headers:
+      Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 38|CN_speednode_0012
+  network: ws
+  port: 16617
+  server: planb.mojcn.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
+  ws-opts:
+    headers:
+      Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 38|CN_speednode_0013
+  network: ws
+  port: 16626
+  server: planb.mojcn.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
+  ws-opts:
+    headers:
+      Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 38|CN_speednode_0015
+  network: ws
+  port: 16617
+  server: m.cnmjin.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
+  ws-opts:
+    headers:
+      Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 38|CN_speednode_0016
+  network: ws
+  port: 16622
+  server: m.cnmjin.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: dbe3102c-5e26-4b5f-82eb-493ae07e758c
+  ws-opts:
+    headers:
+      Host: 437dfed94cb7943bb6f7f93ccf00a561.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 38|GB_speednode_0018
+  network: ws
+  port: 16618
+  server: t.cnmjcn.cyou
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4907a8e9-79c6-4690-a68b-2dfb971861f4
+  ws-opts:
+    headers:
+      Host: 90a15d418d18111ebdc80196ca0cd72d.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 38|GB_speednode_0019
+  network: ws
+  port: 16632
   server: t.cnmjcn.cyou
   skip-cert-verify: false
   tls: false
@@ -6822,52 +6984,16 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 38|TW_speednode_0007
+  name: 38|GB_speednode_0020
   network: ws
-  port: 80
-  server: abm96f00fby3.jkhkgj.xyz
-  skip-cert-verify: true
+  port: 16632
+  server: t.cnmjcn.cyou
+  skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 0f868002-5230-45fb-be23-0fd0ed9bbdc4
+  uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
   ws-opts:
     headers:
-      Host: tms.dingtalk.com
-    path: /market/jp1
-- cipher: chacha20-ietf-poly1305
-  name: 38|US_speednode_0008
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 817aa69.default.nintendo.com:112719
-    mode: tls
-    tls: false
-  port: 2377
-  server: 88.210.36.108
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 38|US_speednode_0009
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 817aa69.default.nintendo.com:112719
-    mode: tls
-    tls: false
-  port: 2377
-  server: 88.210.36.106
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 38|US_speednode_0010
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 817aa69.default.nintendo.com:112719
-    mode: tls
-    tls: false
-  port: 2377
-  server: 88.210.36.109
-  type: ss
-  udp: true
+      Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
+    path: /
