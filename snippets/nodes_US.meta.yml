@@ -208,7 +208,7 @@ proxies:
   server: 63.180.254.10
   type: ss
 - alterId: 0
-  name: 12,15,23,25,29,30,37|HK
+  name: 12,15,23,25,29,30,37|🇭🇰HK香港4
   network: tcp
   password: 9f7d5cb76d1645101994d9b25891e3b7
   port: 921
@@ -1826,7 +1826,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 14,25,37|🇧GB英国2 2.2MB/s
+  name: 14,25,37|🇧GB英国7 11.8MB/s
   password: W74XFALLLuw6m5IA
   port: 443
   server: series-a1.samanehha.co
@@ -23482,11 +23482,12 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 15|美国 - 洛杉矶 - 1
+  name: 15,37|🇬🇧GB英国5 19.1MB/s
   network: tcp
-  port: '180'
+  port: 180
   server: 82.198.246.46
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - name: 15|🇺🇸_US_美国_3
@@ -23575,7 +23576,7 @@ proxies:
     path: '%2f%3fed%3d2048'
 - alterId: 0
   cipher: auto
-  name: 15,37|🇬🇧GB英国4 210.8MB/s
+  name: 15,37|🇧GB英国4 690.3KB/s
   network: tcp
   port: 180
   server: 82.198.246.250
@@ -24693,7 +24694,7 @@ proxies:
     path: /cctv13/hd.m3u8
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 25,37|🇸US美国14 2.4MB/s
+  name: 25,37|🇺🇸US美国11 698.4KB/s
   password: hbGrpfvNrJsUmKmPbR3iY2
   port: 443
   server: tinkered-pennies-puppies.freesocks.work
@@ -24726,16 +24727,13 @@ proxies:
   port: 990
   server: 173.234.29.2
   type: ss
-- alterId: 0
-  name: 25,37|🇺🇸US美国12 122.8MB/s
+- name: 25|🇺🇸US-104.238.162.6-0193
   password: WwipNOSqUh49CEapMmIrv6m6AZLf-EC0+T
   port: 13109
   server: 104.238.162.6
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: ord2.edge-command.click
-  tls: true
   type: trojan
-  udp: true
 - cipher: aes-128-gcm
   name: 25|🇺🇸US-173.244.56.6-0196
   password: shadowsocks
@@ -24784,13 +24782,16 @@ proxies:
     headers:
       Host: v2ray.codefyinc.com
     path: /
-- name: 25|🇸US-166.88.197.60-0291
+- alterId: 0
+  name: 25,37|🇺🇸US美国16 1.1MB/s
   password: UNWA6USASAb6=uAAZeZMFd+2uKB4.d5KOm
   port: 26650
   server: 166.88.197.60
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: sea9.firewallcontract.click
+  tls: true
   type: trojan
+  udp: true
 - cipher: aes-256-gcm
   name: 25|🇺🇸US-38.114.114.67-0353
   password: TEzjfAYq2IjtuoS
@@ -25109,7 +25110,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 25,37|🇺🇸US美国17
+  name: 25,37|🇺🇸US美国6
   password: p78naCf2EfOlRSLTX0wFVx
   port: 443
   server: 71.19.148.143
@@ -25130,7 +25131,7 @@ proxies:
     path: /test
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 25,37|🇺🇸US美国4
+  name: 25,37|🇺🇸US美国9
   password: qFvn2fNEvBgM5knffrN96q
   port: 9483
   server: 92.118.112.101
@@ -25139,7 +25140,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-256-gcm
-  name: 25,37|🇺🇸US美国9
+  name: 25,37|🇸US美国8
   password: 8JCsPssfgS8tiRwiMlhARg==
   port: 12000
   server: 15.204.247.49
@@ -25148,7 +25149,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 25,37|US国
+  name: 25,37|🇸US美国13
   password: p78naCf2EfOlRSLTX0wFVx
   port: 443
   server: pupas-shirting-unsung.freesocks.work
@@ -36054,57 +36055,7 @@ proxies:
   ws-opts:
     path: /path/243535322906
 - alterId: 0
-  name: 37|🇺🇸US美国2
-  password: trojan
-  port: 8444
-  server: 152.53.60.198
-  skip-cert-verify: true
-  sni: jflsjlaf.pages.dev
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|🇸US美国3
-  password: 5027e2a4-c4d2-463a-9508-83a2c7d1ad83
-  port: 443
-  server: 216.24.57.250
-  skip-cert-verify: true
-  sni: afrcloud1.mmv.kr
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|🇸US美国5
-  password: trojan
-  port: 8888
-  server: 152.53.45.251
-  skip-cert-verify: true
-  sni: jflsjlaf.pages.dev
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|🇸US美国6
-  password: trojan
-  port: 8444
-  server: 152.53.200.98
-  skip-cert-verify: true
-  sni: jflsjlaf.pages.dev
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|🇺🇸US美国11
-  password: trojan
-  port: 8444
-  server: 152.53.200.167
-  skip-cert-verify: true
-  sni: jflsjlaf.pages.dev
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 37|🇸US美国13
+  name: 37|US
   password: BxceQaOe
   port: 44386
   server: 43.198.248.119
@@ -36114,12 +36065,62 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 37|🇺🇸US美国16
+  name: 37|🇺🇸US美国3
+  password: trojan
+  port: 8888
+  server: 152.53.45.251
+  skip-cert-verify: true
+  sni: jflsjlaf.pages.dev
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|🇸US美国4
+  password: trojan
+  port: 8444
+  server: 152.53.200.98
+  skip-cert-verify: true
+  sni: jflsjlaf.pages.dev
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|🇸US美国7
+  password: trojan
+  port: 8444
+  server: 152.53.60.198
+  skip-cert-verify: true
+  sni: jflsjlaf.pages.dev
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|🇸US美国10
   password: trojan
   port: 29999
   server: 59.20.121.139
   skip-cert-verify: true
   sni: jflsjlaf.pages.dev
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|🇸US美国12
+  password: trojan
+  port: 8444
+  server: 152.53.200.167
+  skip-cert-verify: true
+  sni: jflsjlaf.pages.dev
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 37|🇸US美国14
+  password: 5027e2a4-c4d2-463a-9508-83a2c7d1ad83
+  port: 443
+  server: 216.24.57.250
+  skip-cert-verify: true
+  sni: afrcloud1.mmv.kr
   tls: true
   type: trojan
   udp: true
