@@ -282,34 +282,55 @@ proxies:
   uuid: 14eba471-4623-4ed1-b937-f5b2206749bf
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 12|84f5a5d8b59a44c88def90a31b341f...
+  name: 12|21923dac8fd9420892d12cc87e7368...
   network: ws
-  port: 80
-  server: de.vpnbase.net
-  tls: false
-  type: vless
-  udp: false
-  uuid: dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51
-  ws-opts:
-    path: /http
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 12|fddaea1e50344562818345145fd4a2...
-  network: ws
-  port: 8443
-  server: ov-germany2.09vpn.com
+  port: 2087
+  server: 176.96.138.17
+  servername: sni.111000.indevs.in
   tls: true
   type: vless
   udp: false
-  uuid: 77f6ccab-99e7-4a31-833e-fcd7ebe82f5f
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
-    path: /vless/
+    headers:
+      host: sni.111000.indevs.in
+    path: /
 - client-fingerprint: chrome
   fingerprint: ''
-  name: 12|b20828071ff0418e8ceb021d43ff71...
+  name: 12|17ff0b941f47496ab618ccc394a708...
+  network: ws
+  port: 8443
+  server: 57.129.47.14
+  servername: sni.111000.indevs.in
+  tls: true
+  type: vless
+  udp: false
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      host: sni.111000.indevs.in
+    path: /
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 12|4f0cc6f746624db0abcbfc8ce560ba...
+  network: ws
+  port: 2053
+  server: 57.129.63.42
+  servername: sni.111000.v6.navy
+  tls: true
+  type: vless
+  udp: false
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      host: sni.111000.v6.navy
+    path: /
+- client-fingerprint: chrome
+  fingerprint: ''
+  name: 12|ae5796784de9443f83f31658550332...
   network: ws
   port: 22224
-  server: 18.193.18.163
+  server: 52.58.102.35
   servername: trojan.burgerip.co.uk
   tls: true
   type: vless
@@ -319,66 +340,6 @@ proxies:
     headers:
       host: trojan.burgerip.co.uk
     path: /telegram-channel-vlessconfig
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 12|67d03292de2e4ca49d77786607259f...
-  network: ws
-  port: 8443
-  server: 57.129.63.133
-  servername: sni.111000.dynv6.net
-  tls: true
-  type: vless
-  udp: false
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      host: sni.111000.dynv6.net
-    path: /
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 12|b9698610e1054f2092a549ec4cc470...
-  network: ws
-  port: 8443
-  server: 57.129.63.145
-  servername: sni.111000.indevs.in
-  tls: true
-  type: vless
-  udp: false
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      host: sni.111000.indevs.in
-    path: /
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 12|7476191915a94c1ca559517275ac2f...
-  network: ws
-  port: 2053
-  server: 141.95.127.132
-  servername: sni.111000.indevs.in
-  tls: true
-  type: vless
-  udp: false
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      host: sni.111000.indevs.in
-    path: /
-- client-fingerprint: chrome
-  fingerprint: ''
-  name: 12|9618778790034a718ab0b0bde868be...
-  network: ws
-  port: 2053
-  server: 57.129.47.58
-  servername: sni.111000.indevs.in
-  tls: true
-  type: vless
-  udp: false
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      host: sni.111000.indevs.in
-    path: /
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 13,19,24,36|🇺RU俄罗斯2
@@ -2490,27 +2451,7 @@ proxies:
   sni: frtgrpc.mainssh.xyz
   type: trojan
 - alterId: 0
-  name: 36|DE
-  password: trojan
-  port: 8444
-  server: 152.53.60.198
-  skip-cert-verify: true
-  sni: jflsjlaf.pages.dev
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 36|🇩🇪DE德国2
-  password: trojan
-  port: 8444
-  server: 152.53.200.167
-  skip-cert-verify: true
-  sni: jflsjlaf.pages.dev
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 36|🇩🇪DE德国3
+  name: 36|DE国
   password: trojan
   port: 8888
   server: 152.53.45.251
@@ -2520,10 +2461,30 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 36|🇪DE德国4
+  name: 36|🇪DE德国2
   password: trojan
   port: 8444
   server: 152.53.200.98
+  skip-cert-verify: true
+  sni: jflsjlaf.pages.dev
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 36|🇪DE德国3
+  password: trojan
+  port: 8444
+  server: 152.53.60.198
+  skip-cert-verify: true
+  sni: jflsjlaf.pages.dev
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 36|🇪DE德国4
+  password: trojan
+  port: 8444
+  server: 152.53.200.167
   skip-cert-verify: true
   sni: jflsjlaf.pages.dev
   tls: true
