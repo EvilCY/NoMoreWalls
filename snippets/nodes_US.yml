@@ -15,7 +15,7 @@ proxies:
     path: /f08369d1-5ee7-4b16-d786-30bce12fc33c
 - alterId: 0
   cipher: auto
-  name: 3,36|未知34
+  name: 3,36|未知4
   network: tcp
   port: 14102
   server: 172.233.229.91
@@ -1664,11 +1664,14 @@ proxies:
   server: 23.134.94.175
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 13|🇺🇸 US 1127 → tg@nicevpn123
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 13,36|🇧GB英国3 4.0MB/s
   password: W74XFALLLuw6m5IA
   port: 443
   server: series-a1.samanehha.co
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: aes-256-gcm
@@ -23311,18 +23314,40 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 14|美国 CloudFlare节点
-  network: ws
-  port: 8443
-  server: 162.159.152.4
-  servername: frsys.fl-dl.com
-  tls: true
+  name: '14|英国 V2CROSS.COM #1'
+  network: tcp
+  port: '180'
+  server: 82.198.246.46
+  tls: false
   type: vmess
-  uuid: 19e52bf4-1b7d-4bd4-ae66-6ca024436c17
-  ws-opts:
-    headers:
-      Host: ''
-    path: /gbt
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 14|荷兰 - 阿姆斯特丹 - 1
+  network: tcp
+  port: '30830'
+  server: v30.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 2
+  cipher: auto
+  name: 14|美国 - 华盛顿特区 - 6
+  network: tcp
+  port: '30804'
+  server: v4.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  name: 14|美国 - 洛杉矶 - 5
+  network: tcp
+  port: '180'
+  server: 82.198.246.250
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
   name: 19|🇺🇸_US_美国_0@37
@@ -24194,18 +24219,17 @@ proxies:
       host: v2ray.codefyinc.com
     path: /
 - alterId: 0
+  cipher: aes-256-gcm
   name: 36|US
-  password: trojan
-  port: 8443
-  server: 109.234.211.66
+  password: 8JCsPssfgS8tiRwiMlhARg==
+  port: 12000
+  server: 15.204.247.49
   skip-cert-verify: true
-  sni: store.timimi.dpdns.org
   tls: true
-  type: trojan
-  udp: true
+  type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 36|🇺🇸US美国3
+  name: 36|🇺🇸US美国2
   password: p78naCf2EfOlRSLTX0wFVx
   port: 443
   server: 71.19.148.143
@@ -24213,36 +24237,7 @@ proxies:
   tls: true
   type: ss
 - alterId: 0
-  name: 36|🇺🇸US美国4
-  password: trojan
-  port: 2087
-  server: 109.234.211.66
-  skip-cert-verify: true
-  sni: store.timimi.dpdns.org
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 36|🇺🇸US美国6 2.3MB/s
-  password: e136d465-0558-43b9-b50c-b1f45d4cb2c2
-  port: 24534
-  server: jp2-8sb.6121999.dpdns.org
-  skip-cert-verify: true
-  sni: jp2-8sb.6121999.dpdns.org
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 36|🇺🇸US美国7
-  password: qFvn2fNEvBgM5knffrN96q
-  port: 9483
-  server: 92.118.112.101
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 36|🇺🇸US美国8
+  name: 36|🇸US美国3
   password: 5027e2a4-c4d2-463a-9508-83a2c7d1ad83
   port: 443
   server: 216.24.57.250
@@ -24253,16 +24248,16 @@ proxies:
   udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 36|🇺🇸US美国9 820.8KB/s
-  password: 1kVr0KATIJI7mwOF
-  port: 443
-  server: 40.120.41.82
+  name: 36|🇺🇸US美国4
+  password: qFvn2fNEvBgM5knffrN96q
+  port: 9483
+  server: 92.118.112.101
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 36|🇺🇸US美国10
+  name: 36|🇺🇸US美国7
   password: p78naCf2EfOlRSLTX0wFVx
   port: 443
   server: pupas-shirting-unsung.freesocks.work
@@ -24271,53 +24266,15 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 36|🇺🇸US美国11 1.1MB/s
-  password: 1kVr0KATIJI7mwOF
+  name: 36|🇺🇸US美国8
+  password: W74XFALLLuw6m5IA
   port: 443
-  server: admin.c1.havij.co
+  server: 40.120.41.82
   skip-cert-verify: true
   tls: true
   type: ss
 - alterId: 0
-  name: 36|🇸US美国12 1012.0KB/s
-  password: UNWA6USASAb6=uAAZeZMFd+2uKB4.d5KOm
-  port: 26650
-  server: 166.88.197.60
-  skip-cert-verify: true
-  sni: sea9.firewallcontract.click
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 36|🇺🇸US美国13
-  password: 8JCsPssfgS8tiRwiMlhARg==
-  port: 12000
-  server: 15.204.247.49
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 36|🇸US美国14
-  password: trojan
-  port: 8443
-  server: 45.192.222.112
-  skip-cert-verify: true
-  sni: store.timimi.dpdns.org
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 36|🇸US美国15 242.3KB/s
-  password: hbGrpfvNrJsUmKmPbR3iY2
-  port: 443
-  server: tinkered-pennies-puppies.freesocks.work
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 36|🇸US美国16
+  name: 36|🇺🇸US美国9
   password: BxceQaOe
   port: 49534
   server: 43.199.41.136
