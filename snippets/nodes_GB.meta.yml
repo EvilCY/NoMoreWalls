@@ -93,7 +93,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 13,24|🇵JP-185.172.113.182-8321
+  name: 13,24|🇵JP-185.172.113.182-8372
   password: G!yBwPWH3Vao
   port: 811
   server: 185.172.113.182
@@ -186,7 +186,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 13,24|🇧GB-51.68.206.229-8007
+  name: 13,24|🇧GB-51.68.206.229-8058
   password: KixLvKzwjekG00rm
   port: 8080
   server: 51.68.206.229
@@ -229,7 +229,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 13,24|🇯🇵JP-185.172.113.182-8323
+  name: 13,24|🇯🇵JP-185.172.113.182-8374
   password: G!yBwPWH3Vao
   port: 804
   server: 185.172.113.182
@@ -250,7 +250,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 13,24|🇵JP-185.172.113.182-8322
+  name: 13,24|🇵JP-185.172.113.182-8373
   password: G!yBwPWH3Vao
   port: 800
   server: 185.172.113.182
@@ -374,7 +374,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: 13,24|🇬🇧GB-77.72.5.150-7967
+  name: 13,24|🇬🇧GB-77.72.5.150-8018
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 77.72.5.150
@@ -430,6 +430,18 @@ proxies:
   server: 141.11.189.205
   type: ss
   udp: true
+- name: 14|🇬🇧_GB_英国_11
+  network: ws
+  port: 2053
+  server: 91.193.59.37
+  servername: juzibaipiao.5112233.xyz
+  tls: true
+  type: vless
+  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: '%2f%3fed%3d2048'
 - name: 14|🇬🇧_GB_英国_19
   network: ws
   port: 2096
@@ -442,24 +454,15 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
-- name: 14,24|🇧GB-82.26.155.121-0242
-  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-  port: 10369
-  server: 82.26.155.121
-  skip-cert-verify: false
-  sni: fra33.chasem2026sud.com
-  type: trojan
 - alterId: 0
-  name: 14,36|🇧GB英国2 588.5KB/s
+  cipher: auto
+  name: '14|英国 V2CROSS.COM #1'
   network: tcp
-  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-  port: 10369
-  server: 82.26.155.199
-  skip-cert-verify: true
-  sni: fra4.chasem2026sud.com
-  tls: true
-  type: trojan
-  udp: true
+  port: 180
+  server: 82.198.246.233
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - name: 14|🇬🇧_GB_英国_26
   network: ws
   port: 443
@@ -484,6 +487,16 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
+- alterId: 0
+  name: 14,24,36|🇧GB英国4
+  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
+  port: 10369
+  server: 82.26.155.121
+  skip-cert-verify: true
+  sni: fra33.chasem2026sud.com
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 2
   cipher: auto
   name: 14|英国 - 伦敦 - 1
@@ -517,18 +530,6 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
-- name: 14|🇬🇧_GB_英国_11
-  network: ws
-  port: 2053
-  server: 91.193.59.37
-  servername: juzibaipiao.5112233.xyz
-  tls: true
-  type: vless
-  uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-  ws-opts:
-    headers:
-      Host: juzibaipiao.5112233.xyz
-    path: '%2f%3fed%3d2048'
 - name: 19|🇬🇧GB-3.9.164.189-194_1@194
   password: E6r93XCOsyM9
   port: 16733
@@ -545,7 +546,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 19,24|🏁RELAY-185.162.228.230-0688
+  name: 19,24|🏁RELAY-185.162.228.230-0716
   network: ws
   port: 443
   server: 185.162.228.230
@@ -564,13 +565,13 @@ proxies:
   server: 51.140.34.50
   type: ss
 - cipher: aes-128-gcm
-  name: 23,24|GB-212.102.53.194-0039
+  name: 23,24|GB-212.102.53.194-0068
   password: shadowsocks
   port: 443
   server: 212.102.53.194
   type: ss
 - cipher: aes-128-gcm
-  name: 23,24|🇧GB-212.102.53.81-4452
+  name: 23,24|🇧GB-212.102.53.81-4485
   password: shadowsocks
   port: 443
   server: 212.102.53.81
@@ -582,13 +583,13 @@ proxies:
   server: 212.102.53.195
   type: ss
 - cipher: aes-128-gcm
-  name: 23,24|🇬🇧GB-212.102.53.78-3905
+  name: 23,24|🇬🇧GB-212.102.53.78-3938
   password: shadowsocks
   port: 443
   server: 212.102.53.78
   type: ss
 - cipher: aes-128-gcm
-  name: 23,24|🇬🇧GB-212.102.53.197-4453
+  name: 23,24|🇬🇧GB-212.102.53.197-4486
   password: shadowsocks
   port: 443
   server: 212.102.53.197
@@ -612,7 +613,7 @@ proxies:
   server: 85.210.120.237
   type: ss
 - cipher: aes-128-gcm
-  name: 23,24|🇬🇧GB-212.102.53.80-1719
+  name: 23,24|GB-212.102.53.80-1752
   password: shadowsocks
   port: 443
   server: 212.102.53.80
@@ -630,196 +631,154 @@ proxies:
   server: 212.102.53.79
   type: ss
 - cipher: aes-128-gcm
-  name: 23,24|🇬🇧GB-212.102.53.196-8234
+  name: 23,24|🇬🇧GB-212.102.53.196-8285
   password: shadowsocks
   port: 443
   server: 212.102.53.196
   type: ss
 - cipher: aes-128-gcm
-  name: 23,24|🇬🇧GB-141.98.101.178-0231
+  name: 23,24|🇧GB-141.98.101.178-0260
   password: shadowsocks
   port: 443
   server: 141.98.101.178
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇬🇧GB-45.66.134.176-0062
+  name: 24|🇬🇧GB-45.66.134.176-0091
   password: G!yBwPWH3Vao
   port: 809
   server: 45.66.134.176
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇬🇧GB-45.66.134.176-0063
+  name: 24|🇬🇧GB-45.66.134.176-0092
   password: G!yBwPWH3Vao
   port: 806
   server: 45.66.134.176
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇧GB-45.66.134.176-0067
+  name: 24|🇧GB-45.66.134.176-0096
   password: G!yBwPWH3Vao
   port: 810
   server: 45.66.134.176
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇬🇧GB-45.66.134.176-0069
+  name: 24|🇬🇧GB-45.66.134.176-0098
   password: G!yBwPWH3Vao
   port: 811
   server: 45.66.134.176
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇬🇧GB-45.66.134.176-0070
+  name: 24|🇬🇧GB-45.66.134.176-0099
   password: G!yBwPWH3Vao
   port: 802
   server: 45.66.134.176
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇬🇧GB-45.66.134.176-0071
+  name: 24|🇬🇧GB-45.66.134.176-0100
   password: G!yBwPWH3Vao
   port: 807
   server: 45.66.134.176
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇧GB-45.66.134.176-0073
+  name: 24|🇧GB-45.66.134.176-0102
   password: G!yBwPWH3Vao
   port: 801
   server: 45.66.134.176
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇬🇧GB-45.66.134.176-0074
+  name: 24|🇬🇧GB-45.66.134.176-0103
   password: G!yBwPWH3Vao
   port: 805
   server: 45.66.134.176
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇬🇧GB-45.66.134.176-0077
+  name: 24|🇬🇧GB-45.66.134.176-0106
   password: G!yBwPWH3Vao
   port: 803
   server: 45.66.134.176
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇧GB-82.38.31.62-0153
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.62
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇬🇧GB-82.38.31.217-0155
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.217
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇬🇧GB-82.38.31.214-0156
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.214
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇬🇧GB-82.38.31.124-0158
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.124
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇬🇧GB-82.38.31.189-0160
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.189
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇬🇧GB-82.38.31.148-0161
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.148
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇧GB-82.38.31.202-0163
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.202
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇬🇧GB-82.38.31.205-0164
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.205
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇬🇧GB-82.38.31.69-0165
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.69
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇬🇧GB-82.38.31.194-0166
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.194
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇬🇧GB-82.38.31.122-0167
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.122
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇬🇧GB-82.38.31.218-0171
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.218
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇬🇧GB-82.38.31.66-0172
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.66
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇬🇧GB-82.38.31.210-0173
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.210
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇬🇧GB-82.38.31.61-0174
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.61
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇬🇧GB-82.38.31.103-0175
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.103
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇬🇧GB-82.38.31.176-0176
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.176
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇬🇧GB-82.38.31.208-0177
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.208
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇬🇧GB-82.38.31.146-0178
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.146
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇧GB-82.38.31.99-0180
+  name: 24|🇬🇧GB-82.38.31.99-0183
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 82.38.31.99
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇬🇧GB-82.38.31.187-0181
+  name: 24|🇬🇧GB-82.38.31.205-0184
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
-  server: 82.38.31.187
+  server: 82.38.31.205
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇬🇧GB-82.38.31.189-0185
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.189
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇬🇧GB-82.38.31.122-0186
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.122
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇬🇧GB-82.38.31.69-0188
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.69
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇬🇧GB-82.38.31.35-0189
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.35
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇬🇧GB-82.38.31.124-0190
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.124
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇬🇧GB-82.38.31.176-0191
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.176
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇧GB-82.38.31.148-0193
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.148
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇬🇧GB-82.38.31.82-0194
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.82
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇬🇧GB-82.38.31.202-0197
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.202
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇬🇧GB-82.38.31.217-0198
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.217
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇬🇧GB-82.38.31.66-0199
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.66
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇬🇧GB-82.38.31.210-0201
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.210
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 24,38|GB_speednode_0074
@@ -828,42 +787,93 @@ proxies:
   server: 82.38.31.89
   type: ss
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 24,36|🇸US美国45 2.6MB/s
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇧GB-82.38.31.214-0204
+  password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
-  server: 82.38.31.82
-  skip-cert-verify: true
-  tls: true
+  server: 82.38.31.214
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇬🇧GB-82.38.31.101-0185
+  name: 24|🇬🇧GB-82.38.31.101-0206
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 82.38.31.101
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇧GB-82.38.31.35-0187
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  name: 24|🇬🇧GB-82.38.31.187-0207
+  password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
-  server: 82.38.31.35
+  server: 82.38.31.187
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇧GB-82.38.31.191-0192
+  name: 24|🇬🇧GB-82.38.31.146-0208
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.146
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇬🇧GB-82.38.31.208-0209
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.208
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇬🇧GB-82.38.31.62-0212
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.62
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇬🇧GB-82.38.31.103-0213
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.103
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇬🇧GB-82.38.31.61-0215
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.61
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇬🇧GB-82.38.31.194-0217
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.194
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇬🇧GB-82.38.31.218-0218
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.218
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇬🇧GB-82.38.31.191-0219
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.191
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇬🇧GB-20.108.8.159-0207
+  name: 24|🇬🇧GB-138.68.153.223-0234
+  password: idMvoewrSyLLvEvP03k9zR
+  port: 46576
+  server: 138.68.153.223
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇬🇧GB-51.132.238.109-0235
+  password: 1kVr0KATIJI7mwOF
+  port: 443
+  server: admin.c1.havij.co
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇬🇧GB-51.132.238.109-0236
   password: W74XFALLLuw6m5IA
   port: 443
   server: admin.c1.webramz.co
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 24,36|🇺🇸US美国11 987.9KB/s
+  name: 24,36|🇺🇸US美国33 3.7MB/s
   password: W74XFALLLuw6m5IA
   port: 443
   server: series-a2.samanehha.co
@@ -872,65 +882,98 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 24,36|🇺🇸US美国14 1.0MB/s
-  password: 1kVr0KATIJI7mwOF
+  name: 24,36|🇺🇸US美国58
+  password: W74XFALLLuw6m5IA
   port: 443
-  server: admin.c1.havij.co
+  server: 20.108.152.161
   skip-cert-verify: true
   tls: true
   type: ss
+- name: 24|🇧GB-82.26.155.237-0272
+  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
+  port: 10369
+  server: 82.26.155.237
+  skip-cert-verify: false
+  sni: fra5.chasem2026sud.com
+  type: trojan
+- alterId: 0
+  name: 24,36|🇧GB英国5
+  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
+  port: 10369
+  server: 82.26.155.105
+  skip-cert-verify: true
+  sni: fra32.chasem2026sud.com
+  tls: true
+  type: trojan
+  udp: true
+- name: 24|🇬🇧GB-82.26.155.199-0274
+  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
+  port: 10369
+  server: 82.26.155.199
+  skip-cert-verify: false
+  sni: fra4.chasem2026sud.com
+  type: trojan
+- alterId: 0
+  name: 24,36|🇧GB英国2 417.2KB/s
+  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
+  port: 10369
+  server: 82.26.155.20
+  skip-cert-verify: true
+  sni: fra35.chasem2026sud.com
+  tls: true
+  type: trojan
+  udp: true
 - cipher: aes-128-gcm
-  name: 24|🇬🇧GB-141.98.101.182-0212
+  name: 24|🇬🇧GB-141.98.101.182-0289
   password: shadowsocks
   port: 443
   server: 141.98.101.182
   type: ss
-- name: 24|🇬🇧GB-82.26.155.105-0243
-  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-  port: 10369
-  server: 82.26.155.105
-  skip-cert-verify: false
-  sni: fra32.chasem2026sud.com
-  type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇬🇧GB-82.38.31.199-0266
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.199
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇬🇧GB-82.38.31.179-0270
+  name: 24|🇬🇧GB-82.38.31.179-0292
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.179
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇧GB-82.38.31.184-0275
+  name: 24|🇬🇧GB-82.38.31.199-0314
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.199
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇬🇧GB-82.38.31.184-0319
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.184
   type: ss
+- cipher: rc4-md5
+  name: 24|🇧GB-146.70.61.37-0340
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 146.70.61.37
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇧GB-78.129.253.9-0357
+  name: 24|🇧GB-78.129.253.9-0386
   password: G!yBwPWH3Vao
   port: 809
   server: 78.129.253.9
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.39-0378
+  name: 24|🇧GB-172.99.190.39-0407
   password: KixLvKzwjekG00rm
   port: 5500
   server: 172.99.190.39
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.39-0380
+  name: 24|🇧GB-172.99.190.39-0409
   password: g5MeD6Ft3CWlJId
   port: 5003
   server: 172.99.190.39
   type: ss
 - alterId: 0
   cipher: auto
-  name: 24|🇧GB-51.89.138.147-0427
+  name: 24|🇧GB-51.89.138.147-0456
   network: ws
   port: 80
   server: 51.89.138.147
@@ -943,7 +986,7 @@ proxies:
     path: /vmess
 - alterId: 64
   cipher: auto
-  name: 24|🇧GB-83.142.225.59-0515
+  name: 24|🇧GB-83.142.225.59-0544
   network: ws
   port: 443
   server: 83.142.225.59
@@ -953,61 +996,32 @@ proxies:
   uuid: 5267ca71-97e6-44c8-8fb5-9fe4afe0954e
   ws-opts:
     path: /
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 24,36|🇺🇸US美国32 1.1MB/s
-  password: W74XFALLLuw6m5IA
-  port: 443
-  server: 20.108.152.161
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 24,36|GB国 560.5KB/s
-  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-  port: 10369
-  server: 82.26.155.20
-  skip-cert-verify: true
-  sni: fra35.chasem2026sud.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 24,36|🇧GB英国5
-  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-  port: 10369
-  server: 82.26.155.3
-  skip-cert-verify: true
-  sni: fra34.chasem2026sud.com
-  tls: true
-  type: trojan
-  udp: true
 - cipher: aes-256-gcm
-  name: 24|🇧GB-185.108.105.129-0819
+  name: 24|🇧GB-185.108.105.129-0848
   password: WCuz7yrfZSCQQXSNrtGPz2HT
   port: 50168
   server: 185.108.105.129
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-86.106.136.125-0821
+  name: 24|🇧GB-86.106.136.125-0850
   password: WCuz7yrfZSCQQXSNrtGPz2HT
   port: 50168
   server: 86.106.136.125
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇧GB-167.99.192.30-0858
+  name: 24|🇧GB-167.99.192.30-0887
   password: HGBdOKdcIer5
   port: 3567
   server: 167.99.192.30
   type: ss
-- name: 24|GB-35.177.137.88-1199
+- name: 24|GB-35.177.137.88-1228
   password: telegram-id-privatevpns
   port: 22222
   server: 35.177.137.88
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: 24|GB-185.49.33.47-1429
+- name: 24|GB-185.49.33.47-1458
   password: shenmegui
   port: 8461
   server: 185.49.33.47
@@ -1015,33 +1029,33 @@ proxies:
   sni: $jp.swiftfalcon.app
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇧GB-3.10.20.47-1537
+  name: 24|🇧GB-3.10.20.47-1566
   password: G!yBwPWH3Vao
   port: 806
   server: 3.10.20.47
   type: ss
-- name: 24|🇧GB-138.124.183.222-1808
+- name: 24|🇧GB-138.124.183.222-1841
   password: xxoo
   port: 443
   server: 138.124.183.222
   skip-cert-verify: false
   sni: 138.124.183.222
   type: trojan
-- name: 24|🇧GB-140.238.123.200-2155
+- name: 24|🇧GB-140.238.123.200-2188
   password: 8a03bc28-2a33-42c4-be59-30464dbb9954
   port: 18818
   server: london11.yukiss.eu.org
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-gcm
-  name: 24|🇬🇧GB-172.99.190.39-2180
+  name: 24|🇬🇧GB-172.99.190.39-2213
   password: FoOiGlkAA9yPEGP
   port: 7307
   server: 172.99.190.39
   type: ss
 - alterId: 0
   cipher: auto
-  name: 24|🇧GB-198.244.232.39-2868
+  name: 24|🇧GB-198.244.232.39-2901
   network: ws
   port: 2096
   server: 198.244.232.39
@@ -1051,81 +1065,81 @@ proxies:
   uuid: df46384b-1ad5-40a6-812e-48d60fb80283
   ws-opts:
     path: /
-- name: 24|🇧GB-138.124.183.216-2205
+- name: 24|🇧GB-138.124.183.216-2238
   password: xxoo
   port: 443
   server: 138.124.183.216
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-gcm
-  name: 24|🇬🇧GB-172.99.190.39-2227
+  name: 24|🇧GB-172.99.190.39-2260
   password: PCnnH6SQSnfoS27
   port: 8091
   server: 172.99.190.39
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇬🇧GB-172.99.190.39-2250
+  name: 24|🇬🇧GB-172.99.190.39-2283
   password: faBAoD54k87UJG7
   port: 2376
   server: 172.99.190.39
   type: ss
-- name: 24|🇧GB-146.19.230.241-2251
+- name: 24|🇧GB-146.19.230.241-2284
   password: xxoo
   port: 443
   server: 146.19.230.241
   skip-cert-verify: false
   type: trojan
-- name: 24|🇧GB-138.124.183.226-2294
+- name: 24|🇧GB-138.124.183.226-2327
   password: xxoo
   port: 443
   server: 138.124.183.226
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.39-2295
+  name: 24|🇧GB-172.99.190.39-2328
   password: PCnnH6SQSnfoS27
   port: 8090
   server: 172.99.190.39
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.7-2332
+  name: 24|🇧GB-172.99.190.7-2365
   password: faBAoD54k87UJG7
   port: 2376
   server: 172.99.190.7
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.7-2339
+  name: 24|🇧GB-172.99.190.7-2372
   password: PCnnH6SQSnfoS27
   port: 8090
   server: 172.99.190.7
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.39-2372
+  name: 24|🇧GB-172.99.190.39-2405
   password: FoOiGlkAA9yPEGP
   port: 7306
   server: 172.99.190.39
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇬🇧GB-172.99.190.39-2382
+  name: 24|🇬🇧GB-172.99.190.39-2415
   password: KixLvKzwjekG00rm
   port: 8080
   server: 172.99.190.39
   type: ss
-- name: 24|🇬🇧GB-132.145.51.172-2396
+- name: 24|🇬🇧GB-132.145.51.172-2429
   password: 02e653c9-7c93-46a9-999d-11834bd0c577
   port: 443
   server: 132.145.51.172
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-gcm
-  name: 24|🇬🇧GB-172.99.190.7-2502
+  name: 24|🇬🇧GB-172.99.190.7-2535
   password: FoOiGlkAA9yPEGP
   port: 7307
   server: 172.99.190.7
   type: ss
 - alterId: 0
   cipher: auto
-  name: 24|🇬🇧GB-51.75.160.126-3721
+  name: 24|🇬🇧GB-51.75.160.126-3754
   network: ws
   port: 80
   server: 51.75.160.126
@@ -1136,66 +1150,66 @@ proxies:
   ws-opts:
     path: /vmess
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇧GB-78.129.253.9-3725
+  name: 24|🇧GB-78.129.253.9-3758
   password: G!yBwPWH3Vao
   port: 810
   server: 78.129.253.9
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇧GB-78.129.253.9-3726
+  name: 24|🇧GB-78.129.253.9-3759
   password: G!yBwPWH3Vao
   port: 811
   server: 78.129.253.9
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇧GB-78.129.253.9-3736
+  name: 24|🇧GB-78.129.253.9-3769
   password: G!yBwPWH3Vao
   port: 802
   server: 78.129.253.9
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇧GB-78.129.253.9-3737
+  name: 24|🇧GB-78.129.253.9-3770
   password: G!yBwPWH3Vao
   port: 805
   server: 78.129.253.9
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇧GB-78.129.253.9-3738
+  name: 24|🇧GB-78.129.253.9-3771
   password: G!yBwPWH3Vao
   port: 808
   server: 78.129.253.9
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇧GB-78.129.253.9-3748
+  name: 24|🇧GB-78.129.253.9-3781
   password: G!yBwPWH3Vao
   port: 807
   server: 78.129.253.9
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇬🇧GB-78.129.253.9-3770
+  name: 24|🇬🇧GB-78.129.253.9-3803
   password: G!yBwPWH3Vao
   port: 804
   server: 78.129.253.9
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇬🇧GB-178.62.16.161-3969
+  name: 24|🇬🇧GB-178.62.16.161-4002
   password: Ultr@r00t_2017
   port: 811
   server: 178.62.16.161
   type: ss
-- name: 24|🇧GB-45.66.134.219-4119
+- name: 24|🇧GB-45.66.134.219-4152
   password: 28d98f761aca9d636f44db62544628eb
   port: 443
   server: 45.66.134.219
   skip-cert-verify: false
   type: trojan
-- name: 24|🇬🇧GB-185.44.76.188-4189
+- name: 24|🇬🇧GB-185.44.76.188-4222
   password: 8697fe6b-1lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272
   port: 443
   server: 185.44.76.188
   skip-cert-verify: false
   type: trojan
-- name: 24|🇬🇧GB-51.89.22.228-4192
+- name: 24|🇬🇧GB-51.89.22.228-4225
   password: 67e200f1-4ff5-42ca-8425-3f16f7986c29
   port: 443
   server: 51.89.22.228
@@ -1204,7 +1218,7 @@ proxies:
   type: trojan
 - alterId: 4
   cipher: auto
-  name: 24|🇧GB-146.70.46.68-4251
+  name: 24|🇧GB-146.70.46.68-4284
   network: ws
   port: 443
   server: 146.70.46.68
@@ -1219,7 +1233,7 @@ proxies:
     path: /ws
 - alterId: 4
   cipher: auto
-  name: 24|🇧GB-165.227.231.254-4477
+  name: 24|🇧GB-165.227.231.254-4510
   network: ws
   port: 8080
   server: 165.227.231.254
@@ -1229,453 +1243,447 @@ proxies:
   uuid: 0c7caa09-5c69-42dc-8048-8e8b0d7efd4a
   ws-opts:
     path: /cctv13/hd.m3u8
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇬🇧GB-138.68.153.223-4536
-  password: idMvoewrSyLLvEvP03k9zR
-  port: 46576
-  server: 138.68.153.223
-  type: ss
 - cipher: aes-256-gcm
-  name: 24|GB-172.99.190.87-5499
+  name: 24|GB-172.99.190.87-5550
   password: KixLvKzwjekG00rm
   port: 8080
   server: 172.99.190.87
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.87-5500
+  name: 24|🇧GB-172.99.190.87-5551
   password: cdBIDV42DCwnfIN
   port: 8118
   server: 172.99.190.87
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.7-5502
+  name: 24|🇧GB-172.99.190.7-5553
   password: FoOiGlkAA9yPEGP
   port: 7306
   server: 172.99.190.7
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.87-5503
+  name: 24|🇧GB-172.99.190.87-5554
   password: Y6R9pAtvxxzmGC
   port: 5000
   server: 172.99.190.87
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.87-5504
+  name: 24|🇧GB-172.99.190.87-5555
   password: Y6R9pAtvxxzmGC
   port: 3389
   server: 172.99.190.87
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.149-5505
+  name: 24|🇧GB-172.99.190.149-5556
   password: e4FCWrgpkji3QY
   port: 9101
   server: 172.99.190.149
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.87-5506
+  name: 24|🇧GB-172.99.190.87-5557
   password: g5MeD6Ft3CWlJId
   port: 5004
   server: 172.99.190.87
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇬🇧GB-172.99.190.149-5518
+  name: 24|🇬🇧GB-172.99.190.149-5569
   password: pKEW8JPByTVTLtM
   port: 443
   server: 172.99.190.149
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.87-5519
+  name: 24|🇧GB-172.99.190.87-5570
   password: RexnBgU7EV5ADxG
   port: 7002
   server: 172.99.190.87
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.87-5520
+  name: 24|🇧GB-172.99.190.87-5571
   password: TEzjfAYq2IjtuoS
   port: 6679
   server: 172.99.190.87
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.149-5526
+  name: 24|🇧GB-172.99.190.149-5577
   password: g5MeD6Ft3CWlJId
   port: 5004
   server: 172.99.190.149
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.149-5554
+  name: 24|🇧GB-172.99.190.149-5605
   password: Y6R9pAtvxxzmGC
   port: 5601
   server: 172.99.190.149
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇬🇧GB-172.99.190.39-5793
+  name: 24|🇬🇧GB-172.99.190.39-5844
   password: RexnBgU7EV5ADxG
   port: 7001
   server: 172.99.190.39
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇬🇧GB-172.99.190.61-5800
+  name: 24|🇬🇧GB-172.99.190.61-5851
   password: TEzjfAYq2IjtuoS
   port: 6697
   server: 172.99.190.61
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.61-5841
+  name: 24|🇧GB-172.99.190.61-5892
   password: RexnBgU7EV5ADxG
   port: 7002
   server: 172.99.190.61
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇬🇧GB-172.99.190.39-5860
+  name: 24|🇬🇧GB-172.99.190.39-5911
   password: Y6R9pAtvxxzmGC
   port: 5601
   server: 172.99.190.39
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.149-5877
+  name: 24|🇧GB-172.99.190.149-5928
   password: Y6R9pAtvxxzmGC
   port: 3389
   server: 172.99.190.149
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇬🇧GB-172.99.190.39-5913
+  name: 24|🇬🇧GB-172.99.190.39-5964
   password: Y6R9pAtvxxzmGC
   port: 3306
   server: 172.99.190.39
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.87-5920
+  name: 24|🇧GB-172.99.190.87-5971
   password: XKFKl2rULjIp74
   port: 8008
   server: 172.99.190.87
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.39-5921
+  name: 24|🇧GB-172.99.190.39-5972
   password: g5MeD6Ft3CWlJId
   port: 5004
   server: 172.99.190.39
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.61-5930
+  name: 24|🇧GB-172.99.190.61-5981
   password: faBAoD54k87UJG7
   port: 2376
   server: 172.99.190.61
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.61-5932
+  name: 24|🇧GB-172.99.190.61-5983
   password: g5MeD6Ft3CWlJId
   port: 5003
   server: 172.99.190.61
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.39-5935
+  name: 24|🇧GB-172.99.190.39-5986
   password: TEzjfAYq2IjtuoS
   port: 6697
   server: 172.99.190.39
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇬🇧GB-172.99.190.39-5944
+  name: 24|🇬🇧GB-172.99.190.39-5995
   password: Y6R9pAtvxxzmGC
   port: 5600
   server: 172.99.190.39
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.87-5955
+  name: 24|🇧GB-172.99.190.87-6006
   password: FoOiGlkAA9yPEGP
   port: 7306
   server: 172.99.190.87
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.149-5983
+  name: 24|🇧GB-172.99.190.149-6034
   password: faBAoD54k87UJG7
   port: 2376
   server: 172.99.190.149
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇬🇧GB-172.99.190.87-5992
+  name: 24|🇬🇧GB-172.99.190.87-6043
   password: Y6R9pAtvxxzmGC
   port: 3306
   server: 172.99.190.87
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇬🇧GB-172.99.190.87-6005
+  name: 24|🇬🇧GB-172.99.190.87-6056
   password: KixLvKzwjekG00rm
   port: 8000
   server: 172.99.190.87
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.39-6012
+  name: 24|🇬🇧GB-172.99.190.39-6063
   password: Y6R9pAtvxxzmGC
   port: 3389
   server: 172.99.190.39
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇬🇧GB-172.99.190.39-6054
+  name: 24|🇬🇧GB-172.99.190.39-6105
   password: Y6R9pAtvxxzmGC
   port: 5001
   server: 172.99.190.39
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇬🇧GB-172.99.190.149-6110
+  name: 24|🇬🇧GB-172.99.190.149-6161
   password: KixLvKzwjekG00rm
   port: 8080
   server: 172.99.190.149
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇬🇧GB-172.99.190.61-6125
+  name: 24|🇬🇧GB-172.99.190.61-6176
   password: Y6R9pAtvxxzmGC
   port: 5600
   server: 172.99.190.61
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.149-6156
+  name: 24|🇧GB-172.99.190.149-6207
   password: Y6R9pAtvxxzmGC
   port: 5001
   server: 172.99.190.149
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.61-6166
+  name: 24|🇧GB-172.99.190.61-6217
   password: zDNVedRFPQexG9v
   port: 6379
   server: 172.99.190.61
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇬🇧GB-172.99.190.87-6167
+  name: 24|🇬🇧GB-172.99.190.87-6218
   password: e4FCWrgpkji3QY
   port: 9101
   server: 172.99.190.87
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.7-6179
+  name: 24|🇧GB-172.99.190.7-6230
   password: PCnnH6SQSnfoS27
   port: 8091
   server: 172.99.190.7
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.61-6180
+  name: 24|🇧GB-172.99.190.61-6231
   password: g5MeD6Ft3CWlJId
   port: 5004
   server: 172.99.190.61
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.149-6183
+  name: 24|🇧GB-172.99.190.149-6234
   password: PCnnH6SQSnfoS27
   port: 8090
   server: 172.99.190.149
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.61-6190
+  name: 24|🇧GB-172.99.190.61-6241
   password: Y6R9pAtvxxzmGC
   port: 5000
   server: 172.99.190.61
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.39-6192
+  name: 24|🇧GB-172.99.190.39-6243
   password: KixLvKzwjekG00rm
   port: 8000
   server: 172.99.190.39
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇬🇧GB-172.99.190.39-6214
+  name: 24|🇬🇧GB-172.99.190.39-6265
   password: kDWvXYZoTBcGkC4
   port: 8881
   server: 172.99.190.39
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.61-6218
+  name: 24|🇧GB-172.99.190.61-6269
   password: pKEW8JPByTVTLtM
   port: 443
   server: 172.99.190.61
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇬🇧GB-172.99.190.61-6227
+  name: 24|🇬🇧GB-172.99.190.61-6278
   password: Y6R9pAtvxxzmGC
   port: 5001
   server: 172.99.190.61
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.39-6228
+  name: 24|🇧GB-172.99.190.39-6279
   password: pKEW8JPByTVTLtM
   port: 443
   server: 172.99.190.39
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.149-6233
+  name: 24|🇧GB-172.99.190.149-6284
   password: FoOiGlkAA9yPEGP
   port: 7306
   server: 172.99.190.149
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.61-6247
+  name: 24|🇧GB-172.99.190.61-6298
   password: faBAoD54k87UJG7
   port: 2375
   server: 172.99.190.61
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇬🇧GB-172.99.190.149-6255
+  name: 24|🇬🇧GB-172.99.190.149-6306
   password: faBAoD54k87UJG7
   port: 2375
   server: 172.99.190.149
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.87-6285
+  name: 24|🇧GB-172.99.190.87-6336
   password: faBAoD54k87UJG7
   port: 2375
   server: 172.99.190.87
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.39-6345
+  name: 24|🇧GB-172.99.190.39-6396
   password: TEzjfAYq2IjtuoS
   port: 6679
   server: 172.99.190.39
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇬🇧GB-172.99.190.39-6378
+  name: 24|🇬🇧GB-172.99.190.39-6429
   password: cdBIDV42DCwnfIN
   port: 8118
   server: 172.99.190.39
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.61-6380
+  name: 24|🇧GB-172.99.190.61-6431
   password: Y6R9pAtvxxzmGC
   port: 5601
   server: 172.99.190.61
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.39-6382
+  name: 24|🇧GB-172.99.190.39-6433
   password: Y6R9pAtvxxzmGC
   port: 5000
   server: 172.99.190.39
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇬🇧GB-172.99.190.39-6398
+  name: 24|🇬🇧GB-172.99.190.39-6449
   password: e4FCWrgpkji3QY
   port: 9101
   server: 172.99.190.39
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.149-6400
+  name: 24|🇧GB-172.99.190.149-6451
   password: g5MeD6Ft3CWlJId
   port: 5003
   server: 172.99.190.149
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇬🇧GB-172.99.190.149-6401
+  name: 24|🇬🇧GB-172.99.190.149-6452
   password: FoOiGlkAA9yPEGP
   port: 7307
   server: 172.99.190.149
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇬🇧GB-172.99.190.87-6423
+  name: 24|🇬🇧GB-172.99.190.87-6474
   password: kDWvXYZoTBcGkC4
   port: 8881
   server: 172.99.190.87
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.61-6448
+  name: 24|🇧GB-172.99.190.61-6499
   password: kDWvXYZoTBcGkC4
   port: 8881
   server: 172.99.190.61
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.61-6540
+  name: 24|🇧GB-172.99.190.61-6591
   password: TEzjfAYq2IjtuoS
   port: 6679
   server: 172.99.190.61
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.87-6553
+  name: 24|🇧GB-172.99.190.87-6604
   password: Y6R9pAtvxxzmGC
   port: 5601
   server: 172.99.190.87
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.61-6563
+  name: 24|🇬🇧GB-172.99.190.61-6614
   password: KixLvKzwjekG00rm
   port: 5500
   server: 172.99.190.61
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.61-6576
+  name: 24|🇧GB-172.99.190.61-6627
   password: PCnnH6SQSnfoS27
   port: 8090
   server: 172.99.190.61
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.87-6579
+  name: 24|🇧GB-172.99.190.87-6630
   password: faBAoD54k87UJG7
   port: 2376
   server: 172.99.190.87
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇬🇧GB-172.99.190.7-6580
+  name: 24|🇬🇧GB-172.99.190.7-6631
   password: Y6R9pAtvxxzmGC
   port: 5601
   server: 172.99.190.7
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.39-6593
+  name: 24|🇧GB-172.99.190.39-6644
   password: faBAoD54k87UJG7
   port: 2375
   server: 172.99.190.39
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.39-6594
+  name: 24|🇧GB-172.99.190.39-6645
   password: e4FCWrgpkji3QY
   port: 9102
   server: 172.99.190.39
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.61-6595
+  name: 24|🇧GB-172.99.190.61-6646
   password: Y6R9pAtvxxzmGC
   port: 3389
   server: 172.99.190.61
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.149-6622
+  name: 24|🇧GB-172.99.190.149-6673
   password: PCnnH6SQSnfoS27
   port: 8091
   server: 172.99.190.149
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.61-6627
+  name: 24|🇧GB-172.99.190.61-6678
   password: kDWvXYZoTBcGkC4
   port: 8882
   server: 172.99.190.61
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇬🇧GB-172.99.190.149-6644
+  name: 24|🇬🇧GB-172.99.190.149-6695
   password: Y6R9pAtvxxzmGC
   port: 3306
   server: 172.99.190.149
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇧GB-172.99.190.39-6697
+  name: 24|🇧GB-172.99.190.39-6748
   password: XKFKl2rULjIp74
   port: 8009
   server: 172.99.190.39
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇬🇧GB-172.99.190.39-6710
+  name: 24|🇬🇧GB-172.99.190.39-6761
   password: XKFKl2rULjIp74
   port: 8008
   server: 172.99.190.39
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇬🇧GB-172.99.190.61-6715
+  name: 24|🇬🇧GB-172.99.190.61-6766
   password: Y6R9pAtvxxzmGC
   port: 3306
   server: 172.99.190.61
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇬🇧GB-172.99.190.39-6734
+  name: 24|🇬🇧GB-172.99.190.39-6785
   password: kDWvXYZoTBcGkC4
   port: 8882
   server: 172.99.190.39
   type: ss
 - alterId: 0
   cipher: auto
-  name: 24|🇧GB-198.244.148.214-6830
+  name: 24|🇧GB-198.244.148.214-6881
   network: ws
   port: 443
   server: 198.244.148.214
@@ -1688,7 +1696,7 @@ proxies:
     path: /wmzmvws
 - alterId: 0
   cipher: auto
-  name: 24|🇧GB-198.244.148.214-6832
+  name: 24|🇧GB-198.244.148.214-6883
   network: ws
   port: 443
   server: 198.244.148.214
@@ -1701,7 +1709,7 @@ proxies:
     path: /ray
 - alterId: 0
   cipher: auto
-  name: 24|🇧GB-18.168.124.58-6933
+  name: 24|🇧GB-18.168.124.58-6984
   network: ws
   port: 80
   server: 18.168.124.58
@@ -1713,7 +1721,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24|GB-68.168.31.196-7425
+  name: 24|GB-68.168.31.196-7476
   network: ws
   port: 443
   server: 68.168.31.196
@@ -1727,7 +1735,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24|🇬🇧GB-149.7.16.248-7504
+  name: 24|🇬🇧GB-149.7.16.248-7555
   network: ws
   port: 443
   server: 149.7.16.248
@@ -1741,7 +1749,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24|🇧GB-68.168.31.242-7545
+  name: 24|🇧GB-68.168.31.242-7596
   network: ws
   port: 443
   server: 68.168.31.242
@@ -1755,7 +1763,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24|🇧GB-172.99.190.209-7550
+  name: 24|🇧GB-172.99.190.209-7601
   network: ws
   port: 443
   server: 172.99.190.209
@@ -1769,7 +1777,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24|🇬🇧GB-172.99.190.50-7551
+  name: 24|🇬🇧GB-172.99.190.50-7602
   network: ws
   port: 443
   server: 172.99.190.50
@@ -1783,7 +1791,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24|🇧GB-149.7.16.188-7553
+  name: 24|🇧GB-149.7.16.188-7604
   network: ws
   port: 443
   server: 149.7.16.188
@@ -1797,7 +1805,7 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: 24|🇧GB-149.7.16.194-7565
+  name: 24|🇧GB-149.7.16.194-7616
   network: ws
   port: 443
   server: 149.7.16.194
@@ -1809,7 +1817,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24|🇧GB-149.7.16.75-7570
+  name: 24|🇧GB-149.7.16.75-7621
   network: ws
   port: 443
   server: 149.7.16.75
@@ -1824,7 +1832,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 24|🇬🇧GB-149.7.16.174-7572
+  name: 24|🇬🇧GB-149.7.16.174-7623
   network: ws
   port: 443
   server: 149.7.16.174
@@ -1836,7 +1844,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 24|🇬🇧GB-149.7.16.73-7573
+  name: 24|🇬🇧GB-149.7.16.73-7624
   network: ws
   port: 443
   server: 149.7.16.73
@@ -1848,7 +1856,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24|🇬🇧GB-172.99.190.206-7591
+  name: 24|🇬🇧GB-172.99.190.206-7642
   network: ws
   port: 443
   server: 172.99.190.206
@@ -1860,7 +1868,7 @@ proxies:
     path: /linkvws
 - alterId: 64
   cipher: auto
-  name: 24|🇧GB-51.89.78.48-7609
+  name: 24|🇧GB-51.89.78.48-7660
   network: ws
   port: 30008
   server: 51.89.78.48
@@ -1875,7 +1883,7 @@ proxies:
     path: /path/240811062813
 - alterId: 0
   cipher: auto
-  name: 24|🇬🇧GB-149.7.16.102-7628
+  name: 24|🇬🇧GB-149.7.16.102-7679
   network: ws
   port: 443
   server: 149.7.16.102
@@ -1890,7 +1898,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 24|🇧GB-217.163.76.147-7720
+  name: 24|🇧GB-217.163.76.147-7771
   network: ws
   port: 443
   server: 217.163.76.147
@@ -1904,7 +1912,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24|🇧GB-8.208.30.41-7966
+  name: 24|🇧GB-8.208.30.41-8017
   network: ws
   port: 443
   server: 8.208.30.41
@@ -1914,7 +1922,7 @@ proxies:
   uuid: 3e9165fe-9145-4ff2-a058-56678d85ca6b
   ws-opts:
     path: /swoole
-- name: 24|🇧GB-51.38.71.175-8009
+- name: 24|🇧GB-51.38.71.175-8060
   password: b640d791-ff83-4300-b509-c2a02f97f167
   port: 80
   server: 51.38.71.175
@@ -1923,7 +1931,7 @@ proxies:
   type: trojan
 - alterId: 64
   cipher: auto
-  name: 24|🇧GB-45.86.8.6-8067
+  name: 24|🇧GB-45.86.8.6-8118
   network: ws
   port: 443
   server: 45.86.8.6
@@ -1935,7 +1943,7 @@ proxies:
     path: /path/1689935243027
 - alterId: 64
   cipher: auto
-  name: 24|🇬🇧GB-45.86.8.117-8068
+  name: 24|🇬🇧GB-45.86.8.117-8119
   network: ws
   port: 443
   server: 45.86.8.117
@@ -1947,7 +1955,7 @@ proxies:
     path: /path/1689935243027
 - alterId: 64
   cipher: auto
-  name: 24|🇬🇧GB-45.86.8.117-8069
+  name: 24|🇬🇧GB-45.86.8.117-8120
   network: ws
   port: 443
   server: 45.86.8.117
@@ -1957,42 +1965,42 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts:
     path: /path/1689767805929
-- name: 24|🇧GB-3.8.123.26-8146
+- name: 24|🇧GB-3.8.123.26-8197
   password: telegram-id-privatevpns
   port: 22222
   server: 3.8.123.26
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: 24|🇬🇧GB-18.135.6.102-8354
+- name: 24|🇬🇧GB-18.135.6.102-8405
   password: telegram-id-privatevpns
   port: 22222
   server: 18.135.6.102
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: 24|🇬🇧GB-18.132.35.140-8360
+- name: 24|🇬🇧GB-18.132.35.140-8411
   password: telegram-id-privatevpns
   port: 22222
   server: 18.132.35.140
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: 24|🇧GB-18.130.204.79-8363
+- name: 24|🇧GB-18.130.204.79-8414
   password: telegram-id-directvpn
   port: 22222
   server: 18.130.204.79
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: 24|GB-146.19.230.241-8613
+- name: 24|GB-146.19.230.241-8664
   password: xxoo
   port: 443
   server: 146.19.230.241
   skip-cert-verify: false
   sni: loader.tapsell.ir
   type: trojan
-- name: 24|🇬🇧GB-146.19.230.241-8617
+- name: 24|🇬🇧GB-146.19.230.241-8668
   password: xxoo
   port: 443
   server: 146.19.230.241
@@ -2001,7 +2009,7 @@ proxies:
   type: trojan
 - alterId: 64
   cipher: auto
-  name: 24|🇧GB-140.99.128.86-8637
+  name: 24|🇧GB-140.99.128.86-8688
   network: ws
   port: 443
   server: 140.99.128.86
@@ -2013,7 +2021,7 @@ proxies:
     path: /path/1689673828070
 - alterId: 64
   cipher: auto
-  name: 24|🇧GB-140.99.128.125-8639
+  name: 24|🇧GB-140.99.128.125-8690
   network: ws
   port: 443
   server: 140.99.128.125
@@ -2025,7 +2033,7 @@ proxies:
     path: /path/1689849487190
 - alterId: 64
   cipher: auto
-  name: 24|🇧GB-140.99.120.187-8640
+  name: 24|🇧GB-140.99.120.187-8691
   network: ws
   port: 443
   server: 140.99.120.187
@@ -2037,7 +2045,7 @@ proxies:
     path: /path/1689935243027
 - alterId: 64
   cipher: auto
-  name: 24|🇬🇧GB-140.99.120.182-8641
+  name: 24|🇬🇧GB-140.99.120.182-8692
   network: ws
   port: 443
   server: 140.99.120.182
@@ -2047,7 +2055,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts:
     path: /path/1685613581032
-- name: 24|🇬🇧GB-13.40.3.71-8687
+- name: 24|🇬🇧GB-13.40.3.71-8738
   password: telegram-id-directvpn
   port: 22222
   server: 13.40.3.71
@@ -2055,7 +2063,7 @@ proxies:
   sni: trj.rollingnext.co.uk
   type: trojan
 - alterId: 0
-  name: 36|🇧GB英国3
+  name: 36|🇬GB国
   password: '!!str 1234567890'
   port: 8443
   server: 144.31.213.59
@@ -2065,7 +2073,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 36|🇧GB英国4
+  name: 36|🇧GB英国3
   password: '!!str 1234567890'
   port: 443
   server: 77.239.127.77
