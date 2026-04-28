@@ -1,4 +1,30 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts:
+    method: GET
+    path:
+    - /ABCDE
+  name: 11|Taiwan_None_vmess_1111
+  network: http
+  port: 54291
+  server: 103.127.243.66
+  type: vmess
+  uuid: c5856e0b-5ca6-49bf-8525-d02af9c37cf5
+- alterId: 0
+  cipher: auto
+  http-opts:
+    headers: {}
+    path:
+    - /ABCDE
+  name: 11|Taiwan_None_vmess_1112
+  network: http
+  port: 55386
+  server: 103.127.243.60
+  tls: false
+  type: vmess
+  uuid: 22d4ef9c-b269-4f82-9f59-6c2c0d8ce16d
 - cipher: aes-256-cfb
   name: 23|🇹🇼TW-154.223.20.79-0356
   password: f8f7aCzcPKbsF8p3
@@ -36,18 +62,15 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /ABCDE
-  name: 38|TW_speednode_0096
-  network: http
-  port: 53229
-  server: 103.127.243.54
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+- cipher: chacha20-ietf-poly1305
+  name: 38|TW_speednode_0013
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: 403880e.default.epicgames.com:164892
+    mode: tls
+    tls: false
+  port: 2377
+  server: 403880e.k4.gladns.com
+  type: ss
   udp: true
-  uuid: 2f50f5ef-1a3a-4585-a3c9-3a860d37b134
