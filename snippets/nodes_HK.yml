@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 3,36|未知22
+  name: 3,36|未知23
   network: ws
   port: 54809
   server: 8.210.140.23
@@ -14,7 +14,7 @@ proxies:
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: 3,36|未知14
+  name: 3,36|未知11
   network: ws
   port: 36968
   server: 47.83.18.10
@@ -46,7 +46,7 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '11,14,22|11,12|香港5|@ripaojiedian #1'
+- name: 11|Hong Kong_None_trojan_1129
   network: tcp
   password: BxceQaOe
   port: 9211
@@ -55,7 +55,7 @@ proxies:
   sni: t.me%2Fripaojiedian
   type: trojan
 - alterId: 0
-  name: 11,14,22,36|🇯🇵JP日本3
+  name: 11,36|🇯🇵JP日本4
   network: tcp
   password: 69ecb45889d99f31b8ccc10bf8f76a72
   port: 9201
@@ -75,7 +75,7 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '11,28,29|美国2|@ripaojiedian #1'
+- name: '11,14,22,28,29|美国2|@ripaojiedian #1'
   network: tcp
   password: 69ecb45889d99f31b8ccc10bf8f76a72
   port: 4019
@@ -83,7 +83,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: '11,28,29|美国3|@ripaojiedian #1'
+- name: '11,14,22,28,29|美国3|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
   port: 38692
@@ -245,7 +245,17 @@ proxies:
       host: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
     path: /
 - alterId: 0
-  name: 36|HK
+  name: 36|🇭🇰HK香港2
+  password: BxceQaOe
+  port: 9211
+  server: 16.162.22.95
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 36|🇭🇰HK香港3
   password: BxceQaOe
   port: 50612
   server: 95.40.57.109
@@ -255,12 +265,17 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 36|🇭🇰HK香港3
-  password: BxceQaOe
-  port: 9211
-  server: 16.162.22.95
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  tls: true
-  type: trojan
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 38|HK_speednode_0065
+  network: http
+  port: 15079
+  server: 38.22.93.20
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
+  uuid: 66e12acd-4f93-4e35-e229-5f93e2f379e1
