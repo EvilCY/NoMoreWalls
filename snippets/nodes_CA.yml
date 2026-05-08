@@ -1415,11 +1415,14 @@ proxies:
   port: 989
   server: 79.127.233.170
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 23,24|🇦CA-79.127.233.170-0802
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 23,24,36|🇨CA加
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 79.127.233.170
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 23|🇨🇦CA-38.180.211.126-0268
@@ -1623,11 +1626,14 @@ proxies:
   protocol-param: ''
   server: z0115.security-cloudfront-cdn.com
   type: ssr
-- cipher: aes-256-gcm
-  name: 24|🇦CA-144.217.164.29-0788
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 24,36|🇨🇦CA加拿大2
   password: 8JCsPssfgS8tiRwiMlhARg==
   port: 12000
   server: 144.217.164.29
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -2698,3 +2704,13 @@ proxies:
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
+- alterId: 0
+  name: 36|🇨🇦CA加拿大3
+  password: 63752727-d49d-4975-a741-485ca9f4d995
+  port: 443
+  server: 23.227.38.43
+  skip-cert-verify: true
+  sni: 0o3vr2n5k2.bpuk2026.top
+  tls: true
+  type: trojan
+  udp: true
