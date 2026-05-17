@@ -1,12 +1,17 @@
 proxies:
-- alterId: 2
-  cipher: auto
-  name: 11|Taiwan_Kaohsiung City_vmess_11...
-  port: 30811
-  server: v11.zgtfqs.click
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 11|Taiwan_Taipei_trojan_1125
+- alpn:
+  - h2
+  grpc-opts:
+    grpc-service-name: db
+  name: 11|Taiwan_Taichung_trojan_1122
+  network: grpc
+  password: 0a9f1f5a397bd427
+  port: 443
+  server: 125.227.86.47
+  skip-cert-verify: true
+  sni: TG.freecodes
+  type: trojan
+- name: 11|Taiwan_Taipei_trojan_1123
   network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 16443
@@ -17,16 +22,9 @@ proxies:
   type: trojan
   ws-opts:
     path: /trTelegram🇨🇳 @WangCai2
-- name: 11|Taiwan_Taipei_trojan_1126
-  password: 60207953-ef79-4f8f-8062-63c281f34c6b
-  port: 8080
-  server: tw4.453521.xyz
-  sni: tw4.453521.xyz
-  tls: true
-  type: trojan
 - grpc-opts:
     grpc-service-name: db
-  name: 11|Taiwan_Taichung_trojan_1127
+  name: 11|Taiwan_Taichung_trojan_1124
   network: grpc
   password: 3f5bc61547b1f0d9
   port: 443
@@ -35,18 +33,32 @@ proxies:
   sni: TG.freecodes
   tls: true
   type: trojan
-- name: 11|Taiwan_Taipei_trojan_1128
-  password: 68077ffe-3368-4755-98d0-9367aa1ad6f2
-  port: 8080
-  server: tw4.453521.xyz
-  sni: tw4.453521.xyz
-  tls: true
-  type: trojan
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 11,24|🇵JP-103.127.243.55-1670
+  network: http
+  port: 58051
+  server: 103.127.243.55
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 8e5b521a-4a56-4bd7-baf1-bfcdf55d6cf1
+- cipher: chacha20-ietf-poly1305
+  name: 11,24|🇼TW-111.248.87.48-4555
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  port: 50099
+  server: r3mrcg007117fb8.cybervena.com
+  type: ss
+  udp: true
 - alpn:
   - h2
   grpc-opts:
     grpc-service-name: db
-  name: 11|Taiwan_Taichung_trojan_1129
+  name: 11|Taiwan_Taichung_trojan_11118
   network: grpc
   password: 3f5bc61547b1f0d9
   port: 443
@@ -54,58 +66,8 @@ proxies:
   skip-cert-verify: true
   sni: TG.freecodes
   type: trojan
-- alpn:
-  - h2
-  grpc-opts:
-    grpc-service-name: db
-  name: 11|Taiwan_Taichung_trojan_1130
-  network: grpc
-  password: 3f5bc61547b1f0d9
-  port: 443
-  server: 125.227.86.48
-  skip-cert-verify: true
-  sni: TG.freecodes
-  type: trojan
-- alpn:
-  - h2
-  grpc-opts:
-    grpc-service-name: db
-  name: 11|Taiwan_Taichung_trojan_1131
-  network: grpc
-  password: 0a9f1f5a397bd427
-  port: 443
-  server: 125.227.86.45
-  skip-cert-verify: true
-  sni: TG.freecodes
-  type: trojan
-- alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /ABCDE
-  name: 11|Taiwan_None_vmess_1133
-  network: http
-  port: 58051
-  server: 103.127.243.55
-  tls: false
-  type: vmess
-  uuid: 8e5b521a-4a56-4bd7-baf1-bfcdf55d6cf1
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts:
-    method: GET
-    path:
-    - /ABCDE
-  name: 11|Taiwan_None_vmess_1147
-  network: http
-  port: 54291
-  server: 103.127.243.66
-  type: vmess
-  uuid: c5856e0b-5ca6-49bf-8525-d02af9c37cf5
 - cipher: aes-256-cfb
-  name: 23,24|🇨SC-154.223.20.79-0194
+  name: 23,24|🇨SC-154.223.20.79-0219
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.20.79
@@ -119,7 +81,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 23,24|🇼TW-103.61.139.137-6969
+  name: 23,24|🇼TW-103.61.139.137-7095
   network: ws
   port: 20521
   server: 103.61.139.137
@@ -129,74 +91,68 @@ proxies:
   uuid: f8d93cfb-3d5d-447c-a697-16496dd74697
   ws-opts:
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 24|TW-111.248.76.47-0159
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  port: 50099
+  server: r3mrcg0011499tl.cybervena.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇼TW-36.230.16.58-0161
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  port: 50099
+  server: r3mrcg001269pz2.cybervena.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇹🇼TW-36.224.143.36-0163
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  port: 50099
+  server: r3mrcg00129437x.cybervena.com
+  type: ss
 - cipher: aes-256-cfb
-  name: 24|TW-185.189.160.105-0139
+  name: 24|🇼TW-185.189.160.105-0164
   password: qwerREWQ@@
   port: 41632
   server: 185.189.160.105
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇹🇼TW-36.224.132.218-0141
+  name: 24|🇼TW-36.224.132.218-0170
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   port: 50099
   server: r3mrcg001286ek2.cybervena.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇼TW-114.25.5.11-0142
+  name: 24|🇼TW-36.224.171.19-0171
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   port: 50099
   server: r3mrcg001287h3p.cybervena.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇼TW-111.248.69.4-0144
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  port: 50099
-  server: r3mrcg007134n4g.cybervena.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇼TW-111.248.87.102-0145
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  port: 50099
-  server: r3mrcg007147vhp.cybervena.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇼TW-114.25.5.11-0146
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  port: 50099
-  server: 114.25.5.11
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇼TW-36.224.143.36-0148
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  port: 50099
-  server: r3mrcg00129437x.cybervena.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇼TW-36.228.143.33-0155
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  port: 50099
-  server: nbmrcg0034686rw.cybervena.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇹🇼TW-111.248.87.102-0157
+  name: 24|🇹🇼TW-111.248.87.102-0172
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   port: 50099
   server: 111.248.87.102
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇼TW-111.248.87.48-0159
+  name: 24|🇼TW-111.248.95.242-0176
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   port: 50099
-  server: r3mrcg007117fb8.cybervena.com
+  server: r3mrcg007147vhp.cybervena.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇹🇼TW-111.248.76.47-0165
+  name: 24|🇹🇼TW-36.228.133.47-0177
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   port: 50099
-  server: r3mrcg0011499tl.cybervena.com
+  server: nbmrcg0034686rw.cybervena.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇼TW-114.25.5.11-0200
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  port: 50099
+  server: 114.25.5.11
   type: ss
 - cipher: aes-256-cfb
-  name: 24|🇼TW-223.165.4.173-0208
+  name: 24|🇼TW-223.165.4.173-0232
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 223.165.4.173
@@ -207,7 +163,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 24|TW-45.121.51.103-0601
+  name: 24|TW-45.121.51.103-0630
   network: http
   port: 20715
   server: 45.121.51.103
@@ -217,7 +173,7 @@ proxies:
   uuid: f6406b6d-5487-46da-f793-46611269a306
 - alterId: 0
   cipher: auto
-  name: 24|TW-165.154.246.71-0928
+  name: 24|TW-165.154.246.71-1057
   network: ws
   port: 80
   server: 165.154.246.71
@@ -231,7 +187,7 @@ proxies:
     path: ?ed=2048
 - alterId: 1
   cipher: auto
-  name: 24|🇼TW-1.161.186.146-1140
+  name: 24|🇼TW-1.161.186.146-1269
   network: ws
   port: 64443
   server: 1.161.186.146
@@ -241,35 +197,42 @@ proxies:
   uuid: cb7001c7-e495-41ac-b942-f25f60523414
   ws-opts:
     path: /clientarea
-- name: 24|TW-114.32.9.249-1531
+- name: 24|TW-114.32.9.249-1662
   password: 8r%3C%5B9%27l6hAO%238ZQi
   port: 16443
   server: 114.32.9.249
   skip-cert-verify: false
   sni: Koma-YT.PAGeS.Dev
   type: trojan
-- name: 24|🇼TW-125.227.86.47-1532
-  password: 0a9f1f5a397bd427
+- name: 24|🇼TW-36.231.108.76-1663
+  password: 60207953-ef79-4f8f-8062-63c281f34c6b
+  port: 8080
+  server: tw4.453521.xyz
+  skip-cert-verify: false
+  sni: tw4.453521.xyz
+  type: trojan
+- name: 24|🇹🇼TW-125.227.86.47-1664
+  password: 3f5bc61547b1f0d9
   port: 443
   server: 125.227.86.47
   skip-cert-verify: false
   sni: TG.freecodes
   type: trojan
-- name: 24|🇹🇼TW-125.227.86.48-1533
-  password: 3f5bc61547b1f0d9
-  port: 443
-  server: 125.227.86.48
-  skip-cert-verify: false
-  sni: TG.freecodes
-  type: trojan
-- name: 24|🇹🇼TW-125.227.86.46-1534
+- name: 24|🇹🇼TW-125.227.86.46-1666
   password: 3f5bc61547b1f0d9
   port: 443
   server: 125.227.86.46
   skip-cert-verify: false
   sni: TG.freecodes
   type: trojan
-- name: 24|🇹🇼TW-125.227.86.45-1535
+- name: 24|🇹🇼TW-125.227.86.48-1667
+  password: 3f5bc61547b1f0d9
+  port: 443
+  server: 125.227.86.48
+  skip-cert-verify: false
+  sni: TG.freecodes
+  type: trojan
+- name: 24|🇹🇼TW-125.227.86.45-1668
   password: 0a9f1f5a397bd427
   port: 443
   server: 125.227.86.45
@@ -278,7 +241,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 24|🇼TW-61.222.202.140-1646
+  name: 24|🇼TW-61.222.202.140-1770
   network: ws
   port: 33792
   server: 61.222.202.140
@@ -288,157 +251,157 @@ proxies:
   uuid: e55cd182-01b0-4fb7-a510-363701a491c5
   ws-opts:
     path: /
-- name: 24|TW-211.72.35.155-2120
+- name: 24|TW-211.72.35.155-2244
   password: b09d2aaa443af97a
   port: 3389
   server: 211.72.35.155
   skip-cert-verify: false
   type: trojan
-- name: 24|🇼TW-60.249.3.125-2149
+- name: 24|🇼TW-60.249.3.125-2273
   password: 3febb05ea76a940f
   port: 3389
   server: 60.249.3.125
   skip-cert-verify: false
   type: trojan
-- name: 24|🇼TW-211.72.35.152-3236
+- name: 24|🇼TW-211.72.35.152-3360
   password: b84d16a244460e09
   port: 3389
   server: 211.72.35.152
   skip-cert-verify: false
   type: trojan
-- name: 24|🇼TW-211.20.245.140-2180
+- name: 24|🇼TW-60.248.240.224-2304
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 8443
   server: official.taipeicitygovernment.co.ua
   skip-cert-verify: false
   type: trojan
-- name: 24|🇼TW-211.72.35.158-2203
+- name: 24|🇼TW-211.72.35.158-2327
   password: 7b06d22a8a7c764f
   port: 3389
   server: 211.72.35.158
   skip-cert-verify: false
   type: trojan
-- name: 24|🇹🇼TW-60.249.3.227-2226
+- name: 24|🇹🇼TW-60.249.3.227-2350
   password: 7ac49a893e0bd10c
   port: 3389
   server: 60.249.3.227
   skip-cert-verify: false
   type: trojan
-- name: 24|🇼TW-60.249.3.231-2246
+- name: 24|🇼TW-60.249.3.231-2370
   password: 0cc6b4268dea0ba8
   port: 3389
   server: 60.249.3.231
   skip-cert-verify: false
   type: trojan
-- name: 24|🇼TW-60.250.152.209-2249
+- name: 24|🇼TW-59.125.131.165-2373
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 8443
   server: official.taipeicitygovernment.kiev.ua
   skip-cert-verify: false
   type: trojan
-- name: 24|🇼TW-59.125.131.165-2294
+- name: 24|🇼TW-60.250.152.209-2418
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 8443
   server: official.taipeicitygovernment.if.ua
   skip-cert-verify: false
   type: trojan
-- name: 24|🇹🇼TW-60.250.152.209-2316
+- name: 24|🇹🇼TW-211.20.245.140-2440
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 8443
   server: official.taipeicitygovernment.org.ua
   skip-cert-verify: false
   type: trojan
-- name: 24|🇼TW-60.249.3.230-2328
+- name: 24|🇼TW-60.249.3.230-2452
   password: 182228812d1e0f23
   port: 3389
   server: 60.249.3.230
   skip-cert-verify: false
   type: trojan
-- name: 24|🇼TW-211.72.35.154-2342
+- name: 24|🇼TW-211.72.35.154-2466
   password: 7b06d22a8a7c764f
   port: 3389
   server: 211.72.35.154
   skip-cert-verify: false
   type: trojan
-- name: 24|🇼TW-60.249.3.226-2354
+- name: 24|🇼TW-60.249.3.226-2478
   password: 7ac49a893e0bd10c
   port: 3389
   server: 60.249.3.226
   skip-cert-verify: false
   type: trojan
-- name: 24|🇼TW-60.249.3.228-2359
+- name: 24|🇼TW-60.249.3.228-2483
   password: 7ac49a893e0bd10c
   port: 3389
   server: 60.249.3.228
   skip-cert-verify: false
   type: trojan
-- name: 24|🇼TW-211.20.245.140-2372
+- name: 24|🇼TW-211.20.245.140-2496
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 8443
   server: official.taipeicitygovernment.kyiv.ua
   skip-cert-verify: false
   type: trojan
-- name: 24|🇹🇼TW-60.250.152.209-2374
+- name: 24|🇹🇼TW-59.125.131.165-2498
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 8443
   server: official.taipeicitygovernment.dp.ua
   skip-cert-verify: false
   type: trojan
-- name: 24|🇹🇼TW-60.249.3.229-2385
+- name: 24|🇹🇼TW-60.249.3.229-2509
   password: 182228812d1e0f23
   port: 3389
   server: 60.249.3.229
   skip-cert-verify: false
   type: trojan
-- name: 24|🇹🇼TW-60.250.152.209-2418
+- name: 24|🇹🇼TW-60.250.152.229-2542
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 8443
   server: official.taipeicitygovernment.ivano-frankivsk.ua
   skip-cert-verify: false
   type: trojan
-- name: 24|🇹🇼TW-211.72.35.153-2421
+- name: 24|🇹🇼TW-211.72.35.153-2545
   password: 7b06d22a8a7c764f
   port: 3389
   server: 211.72.35.153
   skip-cert-verify: false
   type: trojan
-- name: 24|🇼TW-211.72.35.156-2435
+- name: 24|🇼TW-211.72.35.156-2559
   password: 7b06d22a8a7c764f
   port: 3389
   server: 211.72.35.156
   skip-cert-verify: false
   type: trojan
-- name: 24|🇼TW-211.72.35.152-2493
+- name: 24|🇼TW-211.72.35.152-2617
   password: b09d2aaa443af97a
   port: 3389
   server: 211.72.35.152
   skip-cert-verify: false
   type: trojan
-- name: 24|🇹🇼TW-59.125.131.165-2530
+- name: 24|🇹🇼TW-211.20.245.140-2654
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 8443
   server: official.taipeicitygovernment.biz.ua
   skip-cert-verify: false
   type: trojan
-- name: 24|🇼TW-60.248.240.224-2569
+- name: 24|🇼TW-60.248.240.224-2693
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 8443
   server: official.taipeicitygovernment.cn.ua
   skip-cert-verify: false
   type: trojan
-- name: 24|🇹🇼TW-60.250.152.209-2588
+- name: 24|🇹🇼TW-60.248.240.224-2712
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 8443
   server: official.taipeicitygovernment.chernovtsy.ua
   skip-cert-verify: false
   type: trojan
-- name: 24|🇼TW-211.20.245.140-2591
+- name: 24|🇼TW-61.221.189.243-2715
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 8443
   server: official.taipeicitygovernment.net.ua
   skip-cert-verify: false
   type: trojan
-- name: 24|🇼TW-60.248.240.224-2637
+- name: 24|🇼TW-59.125.131.165-2761
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 8443
   server: official.taipeicitygovernment.com.ua
@@ -446,7 +409,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 24|🇼TW-211.72.35.110-3913
+  name: 24|🇼TW-211.72.35.110-4037
   network: ws
   port: 443
   server: 211.72.35.110
@@ -461,7 +424,7 @@ proxies:
     path: /nishikata
 - alterId: 0
   cipher: auto
-  name: 24|🇹🇼TW-211.72.35.110-3914
+  name: 24|🇹🇼TW-211.72.35.110-4038
   network: ws
   port: 443
   server: 211.72.35.110
@@ -476,7 +439,7 @@ proxies:
     path: /nishikata
 - alterId: 0
   cipher: auto
-  name: 24|🇹🇼TW-211.72.35.110-3915
+  name: 24|🇹🇼TW-211.72.35.110-4039
   network: ws
   port: 443
   server: 211.72.35.110
@@ -491,7 +454,7 @@ proxies:
     path: /nishikata
 - alterId: 0
   cipher: auto
-  name: 24|🇹🇼TW-211.72.35.110-3916
+  name: 24|🇹🇼TW-211.72.35.110-4040
   network: ws
   port: 443
   server: 211.72.35.110
@@ -506,7 +469,7 @@ proxies:
     path: /nishikata3
 - alterId: 0
   cipher: auto
-  name: 24|🇹🇼TW-211.72.35.110-3917
+  name: 24|🇹🇼TW-211.72.35.110-4041
   network: ws
   port: 443
   server: 211.72.35.110
@@ -519,7 +482,7 @@ proxies:
     headers:
       Host: woidenca1.jsworld.eu.org
     path: /nishikata3
-- name: 24|🇼TW-2.58.242.43-3949
+- name: 24|🇼TW-2.58.242.43-4073
   password: YWVzLTI1Ni1nY206eHBRd3lWNFc1RmRBNk5NQU5KSng3M1VT
   port: 443
   server: 2.58.242.43
@@ -527,7 +490,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 24|🇹🇼TW-220.130.80.179-3956
+  name: 24|🇹🇼TW-220.130.80.179-4080
   network: ws
   port: 443
   server: 220.130.80.179
@@ -541,7 +504,7 @@ proxies:
     path: /howdy
 - alterId: 0
   cipher: auto
-  name: 24|🇹🇼TW-165.154.226.45-3958
+  name: 24|🇹🇼TW-165.154.226.45-4082
   network: ws
   port: 80
   server: 165.154.226.45
@@ -553,7 +516,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24|🇼TW-211.72.35.110-3959
+  name: 24|🇼TW-211.72.35.110-4083
   network: ws
   port: 443
   server: 211.72.35.110
@@ -567,7 +530,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24|🇼TW-165.154.253.35-3961
+  name: 24|🇼TW-165.154.253.35-4085
   network: ws
   port: 443
   server: tw-1.qwqjsq.top
@@ -581,7 +544,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 24|🇹🇼TW-61.216.85.68-3966
+  name: 24|🇹🇼TW-61.216.85.68-4090
   network: ws
   port: 443
   server: 61.216.85.68
@@ -595,7 +558,7 @@ proxies:
     path: /path/243535322906
 - alterId: 0
   cipher: auto
-  name: 24|🇹🇼TW-165.154.246.107-3969
+  name: 24|🇹🇼TW-165.154.246.107-4093
   network: ws
   port: 80
   server: 165.154.246.107
@@ -609,7 +572,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24|🇹🇼TW-114.25.14.94-3976
+  name: 24|🇹🇼TW-36.224.187.252-4100
   network: ws
   port: 11463
   server: tw4.594888.xyz
@@ -623,7 +586,7 @@ proxies:
     path: /v2ray
 - alterId: 0
   cipher: auto
-  name: 24|🇹🇼TW-61.224.69.230-3977
+  name: 24|🇹🇼TW-61.224.69.230-4101
   network: ws
   port: 25551
   server: tw3.594888.xyz
@@ -635,27 +598,27 @@ proxies:
     headers:
       Host: tw3.594888.xyz
     path: /v2ray
-- name: 24|TW-60.250.152.229-4351
+- name: 24|TW-61.221.189.243-4475
   password: 736cd94d-7b94-3e44-8106-3419f64eaf09
   port: 3462
   server: a12.taipeicitygovernment.org.ua
   skip-cert-verify: false
   type: trojan
-- name: 24|🇹🇼TW-85.237.207.189-4389
+- name: 24|🇼TW-85.237.207.189-4512
   password: 3ac6a6ca99f74941b1eaf892818e2ddb
   port: 443
   server: 85.237.207.189
   skip-cert-verify: false
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇼TW-36.230.16.58-4437
+  name: 24|🇼TW-111.248.69.4-4554
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   port: 50099
-  server: r3mrcg001269pz2.cybervena.com
+  server: r3mrcg007134n4g.cybervena.com
   type: ss
 - alterId: 0
   cipher: auto
-  name: 24|TW-103.229.127.212-6960
+  name: 24|TW-103.229.127.212-7086
   network: ws
   port: 32381
   server: 103.229.127.212
@@ -667,7 +630,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24|🇼TW-103.229.124.3-7047
+  name: 24|🇼TW-103.229.124.3-7173
   network: ws
   port: 20521
   server: 103.229.124.3
@@ -686,7 +649,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 24|TW-118.167.9.38-7431
+  name: 24|TW-118.167.9.38-7557
   network: http
   port: 1443
   server: tw2.sdklkd.org
@@ -696,7 +659,7 @@ proxies:
   type: vmess
   uuid: fa98714c-1d2b-3b60-81e0-f7151110e801
 - cipher: aes-256-cfb
-  name: 24|TW-61.220.130.70-7822
+  name: 24|TW-61.220.130.70-7948
   password: qwerREWQ@@
   port: 50701
   server: 61.220.130.70
