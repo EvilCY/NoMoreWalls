@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 3,36|未知36
+  name: 3,36|未知33
   network: ws
   port: 54809
   server: 8.210.140.23
@@ -14,7 +14,7 @@ proxies:
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: 3,36|未知9
+  name: 3,36|未知20
   network: ws
   port: 36968
   server: 47.83.18.10
@@ -59,14 +59,17 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '11,14,22,28,29|香港3|@ripaojiedian #1'
+- alterId: 0
+  name: 11,14,22,28,29,36|🇰HK香港6
   network: tcp
   password: a922dfbe65cf53c7bc225fcfeb6cedbc
   port: 2008
   server: 18.162.149.118
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
+  udp: true
 - name: '11,14,22,28,29|香港4|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
@@ -91,14 +94,17 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '11,14,22,28,29|美国|@ripaojiedian #1'
+- alterId: 0
+  name: 11,14,22,28,29,36|🇺🇸US美国10
   network: tcp
   password: a922dfbe65cf53c7bc225fcfeb6cedbc
   port: 3882
   server: 18.162.149.118
   skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
+  udp: true
 - name: '11,14,22,28,29|美国3|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
@@ -117,15 +123,18 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 11|Hong Kong_Wanchai_trojan_1113
+- name: 11|Hong Kong_None_trojan_1113
+  network: ws
   password: 8r<[9'l6hAO#8ZQi
-  port: 57537
-  server: 221.125.10.8
+  port: 443
+  server: 213.176.92.138
   skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
   tls: true
   type: trojan
-- name: 11|Hong Kong_Central_trojan_1114
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+- name: 11|Hong Kong_Central_trojan_1116
   network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 443
@@ -138,26 +147,6 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: /trTelegram🇨🇳 @WangCai2
-- name: 11|Hong Kong_Central_trojan_1115
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 219.76.13.177
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- name: 11|Hong Kong_Central_trojan_1116
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 443
-  server: 219.76.13.183
-  skip-cert-verify: false
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
 - name: 11|Hong Kong_Hong Kong_trojan_111...
   network: ws
   password: 8r<[9'l6hAO#8ZQi
@@ -171,31 +160,19 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: /trTelegram🇨🇳 @WangCai2
-- name: 11|Hong Kong_Central_trojan_1118
+- name: 11|Hong Kong_None_trojan_11153
   network: ws
   password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 219.76.13.167
+  port: 21123
+  server: 149.104.26.24
   skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
-  tls: true
   type: trojan
+  udp: true
   ws-opts:
     headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- name: 11|Hong Kong_Central_trojan_1119
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 219.76.13.169
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
+      User-Agent: Mozilla/5.0 (Linux; Android 5.1; A1601 Build/LMY47I) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36
     path: /trTelegram🇨🇳 @WangCai2
 - cipher: aes-128-gcm
   name: 13|🇭🇰 HK 1 → tg@nicevpn123
@@ -305,6 +282,14 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- name: 15|HK_@WangCai_8
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  port: 443
+  server: 202.146.222.30
+  skip-cert-verify: true
+  sni: https://t.me/WangCai2
+  tls: false
+  type: hysteria2
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
@@ -351,18 +336,28 @@ proxies:
       host: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
     path: /
 - alterId: 0
-  name: 36|HK
+  name: 36|🇰HK
   network: ws
   password: 8r%3C%5B9%27l6hAO%238ZQi
-  port: 443
-  server: 47.82.178.58
+  port: 8443
+  server: 47.82.155.79
   skip-cert-verify: true
   sni: Koma-YT.PAGeS.Dev
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: 36|🇰HK香港2
+  name: 36|🇭🇰HK香港2
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 443
+  server: 219.76.13.177
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 36|🇰HK香港3
   password: BxceQaOe
   port: 11233
   server: 18.162.145.230
@@ -372,22 +367,53 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 36|🇭🇰HK香港3
+  name: 36|🇰HK香港4
   password: BxceQaOe
-  port: 4327
-  server: 18.183.160.17
+  port: 3685
+  server: 16.163.95.49
   skip-cert-verify: true
   sni: t.me/ripaojiedian
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: 36|🇰HK香港4
-  password: a922dfbe65cf53c7bc225fcfeb6cedbc
-  port: 2008
-  server: 16.162.22.74
+  name: 36|🇰HK香港5
+  network: ws
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 443
+  server: 219.76.13.180
   skip-cert-verify: true
-  sni: www.nintendogames.net
+  sni: Koma-YT.PAGeS.Dev
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 36|🇭🇰HK香港7
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 443
+  server: 27.50.49.253
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 36|🇭🇰HK香港8
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 2053
+  server: 47.82.155.79
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 36|🇭🇰HK香港9
+  password: 8r%3C%5B9%27l6hAO%238ZQi
+  port: 443
+  server: 47.82.160.100
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
   tls: true
   type: trojan
   udp: true
