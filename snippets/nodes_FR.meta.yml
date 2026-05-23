@@ -486,16 +486,6 @@ proxies:
   server: 149.202.82.172
   type: ss
   udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 14|13|FR_speednode_0004
-  port: 20567
-  server: fr.gryaz-vpn.com
-  servername: cloudflare.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 40bf709c-4353-4552-ba26-406d2bf7821d
 - alterId: 2
   cipher: auto
   name: 14|法国 - 斯特拉斯堡 - 1
@@ -505,6 +495,18 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 14|法国+格拉沃利讷OVH数据中心
+  network: ws
+  port: 8443
+  server: 54.36.99.75
+  servername: sni.111000.v6.navy
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.v6.navy
 - alterId: 0
   cipher: auto
   name: 19|🇫🇷FR-213.32.63.176-186_1@186
@@ -579,13 +581,4 @@ proxies:
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 45.158.171.60
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 36|🇷FR国
-  password: RFK38Cg7APneSB5cWDcpbm
-  port: 443
-  server: switcher-nick-croquet.freesocks.work
-  skip-cert-verify: true
-  tls: true
   type: ss
