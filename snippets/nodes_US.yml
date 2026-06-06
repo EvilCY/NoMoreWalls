@@ -6,13 +6,88 @@ proxies:
   server: 63.180.254.10
   type: ss
 - name: 11,24|🇸US-155.117.198.87-1561
-  network: tcp
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 48697
   server: 155.117.198.87
   skip-cert-verify: false
   sni: gh.01.naiun.bilibili.com
   type: trojan
+  udp: true
+- name: 11|United States_None_trojan_1128
+  network: ws
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  port: 8443
+  server: 64.186.240.9
+  sni: dxy1h.twiladaphne.ndjp.net
+  type: trojan
+  ws-opts:
+    headers:
+      Host: dxy1h.twiladaphne.ndjp.net
+    path: /proxyip=104.168.132.123,172.104.53.198,85.121.50.16,151.242.125.226
+- cipher: aes-128-gcm
+  name: 11|United States_San Jose_ss_1129
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ss.hhyy.nn.kg
+    mode: websocket
+    mux: false
+    path: /proxyip=104.168.132.123\,172.104.53.198\,85.121.50.16\,151.242.125.226?enc=aes-128-gcm
+    skip-cert-verify: false
+    tls: true
+  port: 443
+  server: 154.26.181.85
+  skip-cert-verify: false
+  type: ss
+  udp: false
+- cipher: aes-128-gcm
+  name: 11|United States_None_ss_1130
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ss.hhyy.nn.kg
+    mode: websocket
+    mux: false
+    path: /proxyip=104.168.132.123\,172.104.53.198\,85.121.50.16\,151.242.125.226?enc=aes-128-gcm
+    skip-cert-verify: false
+    tls: true
+  port: 8443
+  server: 64.186.238.108
+  skip-cert-verify: false
+  type: ss
+  udp: false
+- cipher: aes-128-gcm
+  name: 11|United States_Los Angeles_ss_1...
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ss.hhyy.nn.kg
+    mode: websocket
+    mux: false
+    path: /proxyip=104.168.132.123\,172.104.53.198\,85.121.50.16\,151.242.125.226?enc=aes-128-gcm
+    skip-cert-verify: false
+    tls: true
+  port: 8443
+  server: 154.21.91.144
+  skip-cert-verify: false
+  type: ss
+  udp: false
+- cipher: aes-128-gcm
+  name: 11|United States_None_ss_1132
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ss.hhyy.nn.kg
+    mode: websocket
+    mux: false
+    path: /proxyip=104.168.132.123\,172.104.53.198\,85.121.50.16\,151.242.125.226?enc=aes-128-gcm
+    skip-cert-verify: false
+    tls: true
+  port: 443
+  server: cdn.9889888.xyz
+  skip-cert-verify: false
+  type: ss
+  udp: false
 - name: 13|🇺🇸 US 1 → tg@nicevpn123
   password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1
   port: 443
@@ -23283,17 +23358,14 @@ proxies:
   type: trojan
   ws-opts:
     path: /assignment
-- alterId: 0
-  name: 14,24,36|🇺🇸US美国18 530.4KB/s
+- name: 14,24|🇵JP-172.238.19.11-0133
   network: tcp
   password: E_hUHrn0+6VeZO=v9=fLgoPDXZWGfcrejg
   port: 443
   server: 172.238.19.11
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: 172.238.19.11
-  tls: true
   type: trojan
-  udp: true
 - alpn:
   - http/1.1
   name: 14|美国+洛杉矶
@@ -24411,16 +24483,13 @@ proxies:
     headers:
       Host: cn.zzv01.infonode.xyz
     path: /v2ray
-- alterId: 0
-  name: 24,36|🇸US美国15 674.9KB/s
+- name: 24|🇺🇸US-172.237.145.189-0062
   password: A3uIh_5NqMg3hFa.gDYWT.afz0UuJ6=VIM
   port: 443
   server: 172.237.145.189
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: 172.237.145.189
-  tls: true
   type: trojan
-  udp: true
 - cipher: aes-128-gcm
   name: 24|🇺🇸US-37.19.198.244-0067
   password: shadowsocks
@@ -24513,14 +24582,11 @@ proxies:
   port: 12012
   server: 62.146.231.112
   type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 24,36|🇺🇸US美国8 1.2MB/s
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇸US-147.90.234.133-0174
   password: hbGrpfvNrJsUmKmPbR3iY2
   port: 443
   server: tinkered-pennies-puppies.freesocks.work
-  skip-cert-verify: true
-  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 24|🇺🇸US-71.19.148.74-0179
@@ -24528,14 +24594,11 @@ proxies:
   port: 443
   server: 71.19.148.74
   type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 24,36|DE 128.0KB/s
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇸US-71.19.148.74-0180
   password: XUMTygEM1jVYIvysXKqA5T
   port: 443
   server: hackney-latest-strike.freesocks.work
-  skip-cert-verify: true
-  tls: true
   type: ss
 - cipher: aes-256-gcm
   name: 24|🇺🇸US-38.107.226.146-0185
@@ -24900,46 +24963,34 @@ proxies:
   port: 443
   server: 45.79.111.214
   type: ss
-- alterId: 0
-  name: 24,36|🇩🇪DE德国3
+- name: 24|🇸US-155.117.198.83-0401
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 46424
   server: 90081bb25c.node.tro.cac.cab
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: de.01.naiun.bilibili.com
-  tls: true
   type: trojan
-  udp: true
-- alterId: 0
-  name: 24,36|AZ
+- name: 24|🇸US-155.117.198.82-0405
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 41943
   server: 90081bb25c.node.tro.cac.cab
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: az.01.naiun.bilibili.com
-  tls: true
   type: trojan
-  udp: true
-- alterId: 0
-  name: 24,36|🇸IS
+- name: 24|🇸US-155.117.198.83-0406
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 47909
   server: 90081bb25c.node.tro.cac.cab
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: is.01.naiun.bilibili.com
-  tls: true
   type: trojan
-  udp: true
-- alterId: 0
-  name: 24,36|🇨CH
+- name: 24|🇸US-155.117.198.83-0409
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 45553
   server: 90081bb25c.node.tro.cac.cab
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: ch.01.naiun.bilibili.com
-  tls: true
   type: trojan
-  udp: true
 - cipher: aes-256-cfb
   name: 24|🇺🇸US-199.115.228.30-0417
   password: bwhskrskr05
@@ -25088,14 +25139,11 @@ proxies:
   port: 443
   server: 146.19.49.251
   type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 24,36|🇺🇸US美国19
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇸US-71.19.148.143-0687
   password: p78naCf2EfOlRSLTX0wFVx
   port: 443
   server: 71.19.148.143
-  skip-cert-verify: true
-  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -25109,32 +25157,23 @@ proxies:
   uuid: 23bdf6df-c482-46d0-c0f4-5a98d534ea11
   ws-opts:
     path: /test
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 24,36|🇺🇸US美国4
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇸US-92.118.112.101-0692
   password: qFvn2fNEvBgM5knffrN96q
   port: 9483
   server: 92.118.112.101
-  skip-cert-verify: true
-  tls: true
   type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 24,36|🇺🇸US美国10
+- cipher: aes-256-gcm
+  name: 24|🇺🇸US-15.204.247.49-0693
   password: 8JCsPssfgS8tiRwiMlhARg==
   port: 12000
   server: 15.204.247.49
-  skip-cert-verify: true
-  tls: true
   type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 24,36|🇺🇸US美国20
+- cipher: chacha20-ietf-poly1305
+  name: 24|🇸US-71.19.148.143-0694
   password: p78naCf2EfOlRSLTX0wFVx
   port: 443
   server: pupas-shirting-unsung.freesocks.work
-  skip-cert-verify: true
-  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 24|🇺🇸US-23.95.75.146-0697
@@ -35744,53 +35783,3 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts:
     path: /path/243535322906
-- alterId: 0
-  name: 36|US国
-  password: humanity
-  port: 443
-  server: 172.64.152.23
-  skip-cert-verify: true
-  sni: www.gossipglove.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 36|🇺🇸US美国2
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.36
-  skip-cert-verify: true
-  sni: www.ignitelimit.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 36|🇺🇸US美国6
-  password: BxceQaOe
-  port: 44265
-  server: 95.40.40.218
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 36|🇸US美国7 1.4MB/s
-  password: s_WEN9lMmufG+qDIsn-4C7JOVAnDdbS3Ui
-  port: 443
-  server: 172.236.220.10
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 36|🇸US美国14
-  password: BxceQaOe
-  port: 17801
-  server: 95.40.68.192
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  tls: true
-  type: trojan
-  udp: true
