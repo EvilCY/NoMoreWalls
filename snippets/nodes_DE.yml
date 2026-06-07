@@ -7,11 +7,14 @@ proxies:
   sni: de-1.hysteria.ltd
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 13,19,24|🇩MD-185.242.86.156-0814
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 13,19,24,36|RU
   password: 36ZCHeabUSfKjfQEvJ4HDV
   port: 54170
   server: 185.242.86.156
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - name: 13|🇩🇪 DE 10 → tg@nicevpn123
@@ -509,19 +512,25 @@ proxies:
   port: 7001
   server: 213.202.208.199
   type: ss
-- name: 24|🇪DE-172.238.120.124-0122
+- alterId: 0
+  name: 24,36|🇸US美国2 3.8MB/s
   password: r-_YbwF.j0TtHVewoFIppramjAnmSfqYzJ
   port: 443
   server: 172.238.120.124
-  skip-cert-verify: false
+  skip-cert-verify: true
+  tls: true
   type: trojan
-- name: 24|🇩🇪DE-185.137.157.254-0123
+  udp: true
+- alterId: 0
+  name: 24,36|RO
   password: hxn2jK9Uzezogua0oHuq9Y8viN=UCe.2Jd
   port: 443
   server: 185.137.157.254
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.directorypipeline.click
+  tls: true
   type: trojan
+  udp: true
 - name: 24|🇪DE-172.236.220.10-0125
   password: s_WEN9lMmufG+qDIsn-4C7JOVAnDdbS3Ui
   port: 443
@@ -529,13 +538,16 @@ proxies:
   skip-cert-verify: false
   sni: 172.236.220.10
   type: trojan
-- name: 24|🇪DE-91.233.8.138-0173
+- alterId: 0
+  name: 24,36|🇪DE德国2
   password: qDVh0NalwefxyZlHh3Ni2JSlhErcuC3Wiq
   port: 443
   server: 91.233.8.138
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.homelywebs.click
+  tls: true
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 24|🇩🇪DE-91.195.240.123-0218
