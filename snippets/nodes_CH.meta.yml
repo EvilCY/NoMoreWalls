@@ -34,19 +34,17 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 14|瑞士+V2CROSS.COM
-  network: tcp
-  port: 5457
-  reality-opts:
-    public-key: 8Ct9wBZLha-ePZMWbSau9ViKgbwlCgEsbGMjNnoVDzw
-    short-id: 9da3779ceafd
-  server: 1.sdwan.realm-sync.com
-  servername: swcdn.apple.com
+- name: 14|瑞士+V2CROSS.COM
+  network: ws
+  port: 8080
+  server: 169.40.32.242
   tls: false
   type: vless
-  uuid: 8faf6e38-0531-4d63-91f0-2aba5b9ff864
+  uuid: 5a4ef156-7139-4922-9198-f88a9ccaf3dc
+  ws-opts:
+    headers:
+      Host: 169.40.32.242
+    path: /Path
 - cipher: aes-128-gcm
   name: 23|🇨🇭CH-156.146.62.161-0256
   password: shadowsocks
@@ -78,18 +76,18 @@ proxies:
   server: 156.146.62.164
   type: ss
 - cipher: aes-128-gcm
-  name: 24|CH-86.106.84.195-0252
+  name: 24|CH-86.106.84.195-0283
   password: kfuzkwdg4oynv495aywc
   port: 13262
   server: 86.106.84.195
   type: ss
 - cipher: aes-128-gcm
-  name: 24|🇭CH-86.106.84.198-0253
+  name: 24|🇭CH-86.106.84.198-0284
   password: phizo046s4oqsm33sfvm
   port: 13265
   server: 86.106.84.198
   type: ss
-- name: 24|CH-152.67.71.149-2190
+- name: 24|CH-152.67.71.149-2183
   password: 8a03bc28-2a33-42c4-be59-30464dbb9954
   port: 18818
   server: ch12.yukiss.eu.org
@@ -97,7 +95,7 @@ proxies:
   type: trojan
 - alterId: 1
   cipher: auto
-  name: 24|CH-186.190.215.32-7155
+  name: 24|CH-186.190.215.32-7145
   network: ws
   port: 443
   server: 186.190.215.32
@@ -111,7 +109,7 @@ proxies:
     path: linkvws
 - alterId: 1
   cipher: auto
-  name: 24|🇭CH-186.190.215.75-7219
+  name: 24|🇭CH-186.190.215.75-7209
   network: ws
   port: 443
   server: 186.190.215.75
@@ -125,7 +123,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 24|🇭CH-140.238.212.95-7232
+  name: 24|🇭CH-140.238.212.95-7222
   network: ws
   port: 443
   server: 140.238.212.95
