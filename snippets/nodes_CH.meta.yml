@@ -48,68 +48,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 21,24|🇷KR-64.110.66.235-0508
-  network: ws
-  port: 8080
-  server: 64.110.66.235
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
-  ws-opts:
-    headers:
-      Host: download.windowsupdate.com
-    path: /download
-- name: 21,24|CH-83.228.224.161-0506
-  network: tcp
-  password: SoftNetConnect
-  port: 42549
-  server: 83.228.224.161
-  skip-cert-verify: false
-  sni: www.speedtest.net
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 21,24|🇭CH-140.238.212.95-7389
-  network: ws
-  port: 443
-  server: 140.238.212.95
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 21|瑞士 004
-  network: tcp
-  port: 1514
-  server: sinavip.cnavippanel.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 0aca35ee-b845-45d7-9b52-379a2984378a
-- name: 21|瑞士 005
-  network: ws
-  port: 443
-  server: media-us.frdmhere.com
-  servername: media-us.frdmhere.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: df666979-d7ce-4e34-ae23-05ac01bd2476
-  ws-opts:
-    headers:
-      Host: media-us.frdmhere.com
-    path: /mp3/all/us/
 - cipher: aes-128-gcm
   name: 23|🇨🇭CH-156.146.62.161-0256
   password: shadowsocks
@@ -140,9 +78,13 @@ proxies:
   port: 443
   server: 156.146.62.164
   type: ss
-- name: 24|CH-152.67.71.149-2403
-  password: 8a03bc28-2a33-42c4-be59-30464dbb9954
-  port: 18818
-  server: ch12.yukiss.eu.org
-  skip-cert-verify: false
+- alterId: 0
+  name: 36|🇨CH
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 45553
+  server: 90081bb25c.node.tro.cac.cab
+  skip-cert-verify: true
+  sni: ch.01.naiun.bilibili.com
+  tls: true
   type: trojan
+  udp: true
