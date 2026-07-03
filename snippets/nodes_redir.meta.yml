@@ -1,4 +1,18 @@
 proxies:
+- alpn:
+  - http/1.1
+  name: 3|Join tel -> @NetFlowTools
+  network: ws
+  password: MiTiVPN
+  port: 443
+  server: 91.193.58.201
+  skip-cert-verify: false
+  sni: fl.App-Cloud.ir
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Fl.App-Cloud.ir
+    path: '%2FMiTiVPN%3DfL'
 - grpc-opts:
     grpc-service-name: 443trojan
   name: 19|🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦_0@28
