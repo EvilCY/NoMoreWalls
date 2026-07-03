@@ -1,27 +1,18 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 3|DE 🇩🇪 | @Raydikalx | 424
+  name: 3,36|未知37 657.4KB/s
   network: tcp
-  port: '1020'
+  port: 1020
   server: nlt.reata.ir
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 6244c41a-f4c1-4733-a654-c38f7729b13c
 - alterId: 0
   cipher: auto
-  name: 3|DE 🇩🇪 | @Raydikalx | 439
-  network: tcp
-  port: '1050'
-  server: spt.reata.ir
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b5b183b6-a4f0-41ad-a015-ba9f000ad7ed
-- alterId: 0
-  cipher: auto
-  name: 3|DE 🇩🇪 | @Raydikalx | 2588
+  name: 3|DE 🇩🇪 | @Raydikalx | 2610
   network: ws
   port: 40444
   server: panel.riziro.ir
@@ -35,37 +26,43 @@ proxies:
     path: /vlesswebs1546877
 - alterId: 0
   cipher: auto
-  name: 3|DE 🇩🇪 | @Raydikalx | 2640
+  name: 3,36|未知68
   network: tcp
-  port: '2053'
+  port: 2053
   server: 57.129.121.230
   servername: ''
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 3d358ea5-465b-46ac-a2df-98ca1555194f
 - alterId: 0
   cipher: auto
-  name: 3|DE 🇩🇪 | @Raydikalx | 2646
+  name: 3,36|未知52 54.7MB/s
   network: tcp
-  port: '180'
+  port: 180
   server: 82.198.246.97
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
-  name: 3|DE 🇩🇪 | @Raydikalx | 2647
-  network: tcp
-  port: '180'
-  server: 82.198.246.9
-  servername: ''
-  tls: false
+  name: 3|DE 🇩🇪 | @Raydikalx | 2672
+  network: ws
+  port: '443'
+  server: 104.17.121.43
+  servername: omkuzygiv.com
+  tls: true
   type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  uuid: e9947b42-27ed-401e-b75e-c9ebd357c0f3
+  ws-opts:
+    headers:
+      Host: omkuzygiv.com
+    path: /
 - alterId: 0
   cipher: auto
-  name: 3|DE 🇩🇪 | @Raydikalx | 2667
+  name: 3|DE 🇩🇪 | @Raydikalx | 2686
   network: ws
   port: '443'
   server: vip1314.vip
@@ -420,6 +417,16 @@ proxies:
     headers:
       Host: arshia.lezzatArshia.ir
     path: '%2F'
+- name: 3|🆔ar14n24b 🔓 VL-TCP-N/A 🇩🇪 DE 1...
+  network: tcp
+  port: 58748
+  server: 145.239.137.250
+  tls: false
+  type: vless
+  uuid: 21e22226-0b96-4b4e-9a91-5c7f9e3f1760
+  ws-opts:
+    headers:
+      Host: e1roj9ul.divarcdn.com%2Ce1roj9ul.alibaba.ir%2Ce1roj9ul.splus.ir%2Ce1roj9ul.cafebazaar.ir%2Ce1roj9ul.yjc.ir
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 3|🆔ar14n24b 🔒 VL-TCP- 🇩🇪 DE 107m...
@@ -507,11 +514,14 @@ proxies:
     headers:
       Host: cdn7-pro.postshup.ir
     path: '%2F%3Fed%3DTELEGRAM-vpnserverrr_vpnserverrr_vpnserverrr_vpnserverrr_vpnserverrr%3Fed%3D2048'
-- cipher: chacha20-ietf-poly1305
-  name: 13,19|🇳🇱NL-185.242.86.156-156_1@156
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 13,19,36|🇷RU罗
   password: 36ZCHeabUSfKjfQEvJ4HDV
   port: 54170
   server: 185.242.86.156
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - name: 13|🇩🇪 DE 10 → tg@nicevpn123
@@ -956,16 +966,6 @@ proxies:
   sni: ger1.riziro.ir
   tls: false
   type: hysteria2
-- alpn:
-  - h3
-  fingerprint: chrome
-  name: 14,16|🇩🇪💎hysteria-@hollowcon
-  password: hk6ah4vgb0qp2koh
-  port: 4526
-  server: panel.riziro.ir
-  sni: ger1.riziro.ir
-  tls: false
-  type: hysteria2
 - name: 14,15|DE
   password: a084933d-0b41-4571-ae0c-7163b8c71ed1
   port: 2056
@@ -974,12 +974,14 @@ proxies:
   sni: de.eyucdn.xyz
   tls: false
   type: hysteria2
-- name: 14,16|🇪@V2raybazi
-  password: zhangyang
-  port: 6443
-  server: 130.61.50.75
-  skip-cert-verify: true
-  sni: https://www.calmloud.com
+- alpn:
+  - h3
+  fingerprint: chrome
+  name: 14,16|🇩🇪💎hysteria-@hollowcon
+  password: hk6ah4vgb0qp2koh
+  port: 4526
+  server: panel.riziro.ir
+  sni: ger1.riziro.ir
   tls: false
   type: hysteria2
 - name: 19|🇩🇪DE-52.58.179.46-180_1@180
