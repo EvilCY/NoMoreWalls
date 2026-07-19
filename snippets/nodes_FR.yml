@@ -1,7 +1,22 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 2,20|美国 440
+  network: ws
+  port: 8443
+  server: tg.hrmp.kdns.fr
+  servername: tg.hrmp.kdns.fr
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: af1ccd89-b66b-44e8-99b8-0d945078c04b
+  ws-opts:
+    headers:
+      Host: tg.hrmp.kdns.fr
+    path: /tirexvmess
 - alterId: 2
   cipher: auto
-  name: 2,20,35|未知20
+  name: 2,20,35|未知62
   network: tcp
   port: 30835
   server: v35.hdacd.com
@@ -12,19 +27,18 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
-  name: 2,20|美国 435
+  name: 2|FR 🇫🇷 | @Raydikalx | 3637
   network: ws
-  port: 2087
-  server: de5.taskflowhub.org
-  servername: de5.taskflowhub.org
-  skip-cert-verify: true
-  tls: true
+  port: '12899'
+  server: gtm1.ktmwan.net
+  servername: ''
+  tls: false
   type: vmess
-  uuid: 01ccfa7a-8de7-451d-bd41-1957acaba15f
+  uuid: 4941aa8d-07d2-408c-be2c-117debecba30
   ws-opts:
     headers:
-      Host: de5.taskflowhub.org
-    path: /realtime
+      Host: ''
+    path: ''
 - alterId: 0
   cipher: auto
   name: 2,20|其他 015
@@ -268,11 +282,15 @@ proxies:
     headers:
       Host: www.ignitelimit.com
     path: '%2Fassignment'
-- name: '2|>>@oneclickvpnkeys::FR #16'
+- alterId: 0
+  name: 2,35|未知71 1.3MB/s
   password: NQ26071394
   port: 443
   server: chief-cricket.rooster465.autos
+  skip-cert-verify: true
+  tls: true
   type: trojan
+  udp: true
 - name: '2|>>@oneclickvpnkeys::FR #17'
   network: ws
   password: humanity
@@ -752,22 +770,3 @@ proxies:
     headers:
       Host: a.baradiha.com
     path: /
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 35|🇫FR
-  password: Vr06rU_v1vFPYeXq9zbsAA
-  port: 1080
-  server: 156.146.40.84
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 35|🇫🇷FR法国2
-  password: rYuChHcwQZskq9E0zdoR
-  port: 443
-  server: ip4.vpean2.qzz.io
-  skip-cert-verify: true
-  sni: vpn5.rnmcnm.com
-  tls: true
-  type: trojan
-  udp: true
