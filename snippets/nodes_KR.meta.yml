@@ -1,14 +1,15 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 2|KR 🇰🇷 | @Raydikalx | 4264
-  network: tcp
-  port: 8888
-  server: 146.56.112.110
-  servername: ''
+  name: 2|KR 🇰🇷 | @Raydikalx | 3948
+  network: ws
+  port: '443'
+  server: 152.67.218.38
   tls: false
   type: vmess
-  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
+  uuid: b5e9480a-b7aa-40a4-f9a7-5299b5e363b4
+  ws-opts:
+    path: /
 - alterId: 0
   cipher: auto
   name: 2,20|韩国 001
@@ -24,20 +25,26 @@ proxies:
     headers:
       Host: kr02.a0a.xyz
     path: /cctv13.m3u8
-- alterId: 0
-  cipher: auto
-  name: 2|KR 🇰🇷 | @Raydikalx | 4400
-  network: ws
-  port: 80
-  server: 132.145.80.230
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  ws-opts:
-    headers:
-      Host: ''
-    path: /cctv13.m3u8
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 13|12|KR_speednode_0017
+  port: 443
+  server: 154.193.55.183
+  servername: storage.yandex.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 13|12|KR_speednode_0019
+  port: 443
+  server: 154.193.55.183
+  servername: storage.yandex.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 11e57eeb-ffdf-4983-a9fa-ad352dea7253
 - alterId: 1
   cipher: auto
   name: 20|韩国 002
@@ -191,7 +198,7 @@ proxies:
       Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
     path: /
 - alterId: 0
-  name: 35|🇷KR国 596.5KB/s
+  name: 35|🇷KR国 583.6KB/s
   password: JT80563429
   port: 443
   server: touching-pigeon.rooster465.autos
