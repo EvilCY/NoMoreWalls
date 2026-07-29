@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 2,35|未知4
+  name: 2,35|HK3
   network: ws
   port: 36968
   server: 47.83.18.10
@@ -14,7 +14,7 @@ proxies:
     path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: 2,35|未知2
+  name: 2,35|HK4
   network: ws
   port: 54809
   server: 8.210.140.23
@@ -25,6 +25,17 @@ proxies:
   uuid: fde73daf-cc67-42f3-9935-35b132b01abd
   ws-opts:
     path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 2|HK 🇭🇰 | @Raydikalx | 9BD604
+  network: ws
+  port: 443
+  server: u2frxj0g13vdi0wo.v.3dns.vip
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    path: /ws-vmess
 - alterId: 2
   cipher: auto
   name: '2,10,13,21,28|香港|@ripaojiedian #1'
@@ -37,14 +48,37 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
-  name: 2,13|中国 - 香港 - 1
+  name: 2,13,35|HK5
   network: tcp
-  port: '30809'
+  port: 30809
   server: v9.hdacd.com
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  name: 2|HK 🇭🇰 | @Raydikalx | 64937B
+  network: ws
+  port: 443
+  server: wwafj5lhl6bi8au9.v.3dns.vip
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: 2|HK 🇭🇰 | @Raydikalx | D48452
+  network: ws
+  port: 443
+  server: zudssgtmrqg9lpvi.v.3dns.vip
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    path: /ws-vmess
 - alterId: 0
   cipher: auto
   name: 2|HK 🇭🇰 | @Raydikalx | D6A221
@@ -194,12 +228,13 @@ proxies:
     path: /ws-vmess
 - alterId: 0
   cipher: auto
-  name: 2|HK 🇭🇰 | @Raydikalx | 4FF852
+  name: 2,35|HK 45.2KB/s
   network: tcp
-  port: '800'
+  port: 800
   server: 47.86.167.194
   servername: ''
-  tls: false
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: f2c67cae-c09d-4739-947d-f5302d87a3c0
 - alterId: 0
@@ -280,14 +315,17 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '10,21,27,28|香港3|@ripaojiedian #1'
+- alterId: 0
+  name: 10,21,27,28,35|🇰HK香港2
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
   port: 13118
   server: 16.162.55.106
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
+  udp: true
 - name: '10,21,27,28|香港5|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
@@ -304,31 +342,39 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '10,21,27,28,37,38|HK_speednode_0029 #1'
+- alterId: 0
+  name: '10,21,27,28,35,37,38|HK_speednode_0029 #1'
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
   port: 38937
   server: 18.163.111.105
   skip-cert-verify: false
   sni: www.nintendogames.net
+  tls: true
   type: trojan
   udp: true
-- name: '10,21,27,28|日本3|@ripaojiedian #1'
+- alterId: 0
+  name: 10,21,27,28,35|🇯🇵JP日本2
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
   port: 4099
   server: 18.167.12.183
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
-- name: '10,21,27,28|新加坡|@ripaojiedian #1'
+  udp: true
+- alterId: 0
+  name: 10,21,27,28,35|SG
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
   port: 6357
   server: 16.162.55.106
   skip-cert-verify: true
   sni: www.nintendogames.net
+  tls: true
   type: trojan
+  udp: true
 - name: '10,21,27,28|新加坡3|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
@@ -345,125 +391,14 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- cipher: aes-128-gcm
-  name: 12|🇭🇰 HK 1 → tg@nicevpn123
-  password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: ''
-    mode: websocket
-    mux: false
-    path: ''
-    skip-cert-verify: true
-    tls: false
-  port: 443
-  server: 1.65.223.223
-  type: ss
-  udp: true
-- name: 12|🇭🇰 HK 10 → tg@nicevpn123
-  password: 507ca9a0-2d8e-4b65-8763-82dfbdbd599f
-  port: 443
-  server: chjs.lydurlclub.top
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 12,20|中国 035
-  network: ws
-  port: 80
-  server: 182.16.1.194
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-opts:
-    headers:
-      Host: 182.16.1.194
-    path: /opt/video/images
-- name: 12|🇭🇰 HK 2 → tg@nicevpn123
-  password: 2b38ff78-05bb-4261-895c-440950cf0dbd
-  port: 42030
-  server: 210.17.253.122
-  skip-cert-verify: true
-  sni: hkg01.service.nahidacloud.top
-  type: trojan
-  udp: true
-- cipher: aes-128-gcm
-  name: 12|🇭🇰 HK 3 → tg@nicevpn123
-  password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: ''
-    mode: websocket
-    mux: false
-    path: ''
-    skip-cert-verify: true
-    tls: false
-  port: 443
-  server: 1.65.139.54
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 12|🇭🇰 HK 4 → tg@nicevpn123
-  network: ws
-  port: 55576
-  server: 202.81.231.30
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 32daf1ff-4b08-4c22-b997-1c24ff34c43a
-  ws-opts:
-    path: /
-- alterId: 32
-  cipher: auto
-  name: 12|🇭🇰 HK 8 → tg@nicevpn123
-  network: ws
-  port: 80
-  server: hrgdvpn.flycdnedc55.vip
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-opts:
-    headers:
-      Host: hrgdvpn.flycdnedc55.vip
-    path: /opt/video/images
-- alterId: 0
-  cipher: auto
-  name: 12|🇭🇰 HK 6 → tg@nicevpn123
-  network: ws
-  port: 80
-  server: 182.16.1.194
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-opts:
-    path: /opt/video/images
-- name: 12|🇭🇰 HK 9 → tg@nicevpn123
-  password: 507ca9a0-2d8e-4b65-8763-82dfbdbd599f
-  port: 443
-  server: hkjs.lydurlclub.top
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 13,20,35|🇭🇰HK香港4
+- name: 13,20|美国 001
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
   port: 13118
   server: 18.163.118.58
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.nintendogames.net
-  tls: true
   type: trojan
-  udp: true
 - name: 13,20|波兰 001
   network: tcp
   password: BxceQaOe
@@ -483,39 +418,72 @@ proxies:
 - alterId: 0
   name: 35|HK
   password: BxceQaOe
-  port: 27161
-  server: 43.199.34.153
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 35|🇰HK香港2
-  password: 65fQmPHHbPcBCfvSHt
-  port: 443
-  server: au-4.tr202605.com
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 35|🇰HK香港3
-  password: b490740312aedb5f9f6b84c7aebd08c0
-  port: 47867
-  server: 18.162.155.166
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 35|🇭🇰HK香港5
-  password: BxceQaOe
   port: 11035
-  server: 95.40.61.23
+  server: 16.162.34.239
   skip-cert-verify: true
   sni: t.me/ripaojiedian
   tls: true
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 35|HK2 55.7KB/s
+  network: ws
+  port: 443
+  server: 7timuei1uufoixbf.v.3dns.vip
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      host: 7tImuei1uuFOiXbf.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  name: 35|🇭🇰HK香港3 356.9KB/s
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  port: 20068
+  server: oplosgru-c.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 35|🇭🇰HK香港4
+  password: BxceQaOe
+  port: 27161
+  server: 54.46.75.237
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 35|HK6
+  network: ws
+  port: 26925
+  server: 38.207.164.31
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
+  ws-opts:
+    headers:
+      host: cfhk.393930.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 35|HK7
+  network: ws
+  port: 33410
+  server: yd4.ainivp.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 9301afcd-025e-781f-1abc-c10efabd1211
+  ws-opts:
+    headers:
+      host: yd4.ainivp.com
+    path: /ray
