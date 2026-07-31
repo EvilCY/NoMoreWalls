@@ -1,4 +1,55 @@
 proxies:
+- flow: xtls-rprx-vision
+  name: 2|🇳🇱🇷🇺 NL - Russia
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: J_jQq9-SWQZjiMhuPaFV7V2MaJ4pkKgVRaz7x6tmvy8
+    short-id: 16895459a2c7768d
+  server: 94.26.228.10
+  servername: ru.sfasti.ru
+  tls: false
+  type: vless
+  uuid: 1a6fe500-59da-4598-8576-256f06765ffb
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇷🇺 Russia X
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: YNGotlyAx3ELUmi4lxOUjiEDmibqf1pPUTE9o3YYT2Y
+  server: 5.181.171.2
+  servername: speed.cloudflare.com
+  tls: false
+  type: vless
+  uuid: 8e6acce9-8b56-7190-d491-7d84f8189e26
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 2|🆔configfa 🔒 VL-TCP- 🇷🇺 RU 146m...
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: M9_R2DX7bxoMJpkF4RcyJ0oJ8ZuGsxWrjuREKi6Ol0w
+  server: 94.126.205.65
+  servername: apple.com
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: d6dc1358-1bb5-4a9d-92fd-3e255567e3fc
+- alpn:
+  - http/1.1
+  name: 2|🆔ar14n24b 🔒 VL-WS-N/A 🇷🇺 RU 28...
+  network: ws
+  port: 10065
+  server: 178.248.238.133
+  servername: stream-1.kinograd.online
+  tls: true
+  type: vless
+  uuid: 3744b567-6e95-4eb9-a739-4461e6c093b8
+  ws-opts:
+    headers:
+      Host: stream-1.kinograd.online
+    path: '%2Flive%2Fstream%3Fmodule%3Dvideo-cdn%26app_client_id%3Dcc8c59b8-7c86-417b-a522-b0cc29fcc2f8'
 - name: 13|🇷🇺_RU_俄罗斯联邦_10
   network: ws
   port: 2087
@@ -89,20 +140,6 @@ proxies:
   type: vless
   udp: true
   uuid: eadcacfa-ef1a-4901-a28b-8815fa1962a5
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: '37,38|RU_speednode_0091 #1'
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: m_Xgh5XeqmN9JaDxkct4yTup2YPVxCV5fGnUnMZ3pWE
-  server: 94.139.251.189
-  servername: apple.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 64b6f905-94d5-4745-8f92-cafa107b7c16
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '37,38|RU_speednode_0092 #1'
