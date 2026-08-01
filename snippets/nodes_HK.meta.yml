@@ -9,7 +9,7 @@ proxies:
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
-  name: 10,13,21,27,28,35|HK2
+  name: 10,13,20,21,27,28,35|HK2
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
   port: 14684
@@ -20,7 +20,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 10,13,21,27,28,35|🇯🇵JP日本2
+  name: 10,13,20,21,27,28,35|🇯🇵JP日本2
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
   port: 44229
@@ -31,7 +31,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 10,13,21,27,28,35|🇯🇵JP日本4
+  name: 10,13,20,21,27,28,35|🇯🇵JP日本4
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
   port: 44229
@@ -42,7 +42,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: 10,13,21,27,28,35|SG
+  name: 10,13,20,21,27,28,35|SG
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
   port: 32434
@@ -52,7 +52,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '10,13,21,27,28|新加坡3|@ripaojiedian #1'
+- name: '10,13,20,21,27,28|新加坡3|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
   port: 45744
@@ -61,7 +61,7 @@ proxies:
   sni: t.me%252Fripaojiedian
   type: trojan
 - alterId: 0
-  name: 10,13,21,27,28,35|🇺🇸US美国3
+  name: 10,13,20,21,27,28,35|🇺🇸US美国3
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
   port: 12680
@@ -82,7 +82,7 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '10,13,21,27,28,37,38|HK_speednode_0023 #1'
+- name: '10,13,20,21,27,28,37,38|HK_speednode_0023 #1'
   network: tcp
   password: BxceQaOe
   port: 35966
@@ -111,15 +111,121 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: 13,20|美国 007
-  network: tcp
+- cipher: aes-128-gcm
+  name: 12|🇭🇰 HK 1 → tg@nicevpn123
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    mux: false
+    path: ''
+    skip-cert-verify: true
+    tls: false
+  port: 443
+  server: 1.65.223.223
+  type: ss
+  udp: true
+- name: 12|🇭🇰 HK 10 → tg@nicevpn123
+  password: 507ca9a0-2d8e-4b65-8763-82dfbdbd599f
+  port: 443
+  server: chjs.lydurlclub.top
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 12,20|中国 042
+  network: ws
+  port: 80
+  server: 182.16.1.194
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    headers:
+      Host: 182.16.1.194
+    path: /opt/video/images
+- name: 12|🇭🇰 HK 2 → tg@nicevpn123
+  password: 2b38ff78-05bb-4261-895c-440950cf0dbd
+  port: 42030
+  server: 210.17.253.122
+  skip-cert-verify: true
+  sni: hkg01.service.nahidacloud.top
+  type: trojan
+  udp: true
+- cipher: aes-128-gcm
+  name: 12|🇭🇰 HK 3 → tg@nicevpn123
+  password: a-wym4ovY4Yw
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    mux: false
+    path: ''
+    skip-cert-verify: true
+    tls: false
+  port: 443
+  server: 1.65.139.54
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 12|🇭🇰 HK 4 → tg@nicevpn123
+  network: ws
+  port: 55576
+  server: 202.81.231.30
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 32daf1ff-4b08-4c22-b997-1c24ff34c43a
+  ws-opts:
+    path: /
+- alterId: 32
+  cipher: auto
+  name: 12|🇭🇰 HK 8 → tg@nicevpn123
+  network: ws
+  port: 80
+  server: hrgdvpn.flycdnedc55.vip
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    headers:
+      Host: hrgdvpn.flycdnedc55.vip
+    path: /opt/video/images
+- alterId: 0
+  cipher: auto
+  name: 12|🇭🇰 HK 6 → tg@nicevpn123
+  network: ws
+  port: 80
+  server: 182.16.1.194
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    path: /opt/video/images
+- name: 12|🇭🇰 HK 9 → tg@nicevpn123
+  password: 507ca9a0-2d8e-4b65-8763-82dfbdbd599f
+  port: 443
+  server: hkjs.lydurlclub.top
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 13|12|HK_speednode_0006
   password: d1960ba9f0f6353353994fa844cf817b
   port: 17005
   server: 18.167.20.3
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-  udp: true
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: 13|12|HK_speednode_0009
@@ -130,15 +236,13 @@ proxies:
   tls: true
   type: vless
   uuid: f75814f6-8f81-4847-b792-168c41f2dc85
-- name: 13,20|美国 005
-  network: tcp
+- name: 13|12|HK_speednode_0005
   password: d1960ba9f0f6353353994fa844cf817b
   port: 6357
   server: 18.167.20.3
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 13|12|HK_speednode_0008
@@ -177,6 +281,16 @@ proxies:
     headers:
       host: EX1oGt73NzPQKAc2.v.3dns.vip
     path: /ws-vmess
+- alterId: 0
+  name: 35|HK
+  password: BxceQaOe
+  port: 29443
+  server: 35.76.126.253
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 35|HK3
@@ -269,16 +383,6 @@ proxies:
     headers:
       host: NYcQg19zkwaCPM1B.v.3dns.vip
     path: /ws-vmess
-- alterId: 0
-  cipher: auto
-  name: 35|HK11 17.1KB/s
-  network: tcp
-  port: 52080
-  server: 154.37.223.56
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: f1ac5c82-00a4-400b-bb20-530c91b7c5bb
 - alterId: 0
   cipher: auto
   name: 35|HK12 19.3KB/s
