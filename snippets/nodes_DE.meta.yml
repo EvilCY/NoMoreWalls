@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 12,18,35|🇷🇺RU
+  name: 12,18,23,35|🇷🇺RU
   password: 36ZCHeabUSfKjfQEvJ4HDV
   port: 54170
   server: 185.242.86.156
@@ -146,11 +146,11 @@ proxies:
   uuid: 58531009-b664-445b-b896-7bb9026b744d
 - alterId: 0
   cipher: auto
-  name: 12,20|德国 021
+  name: 12,20,23|🇩🇪DE-91.195.240.94-0985
   network: ws
   port: 443
   server: de-full.privateip.net
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
@@ -161,11 +161,11 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
-  name: 12,20|德国 022
+  name: 12,20,23|🇩🇪DE-91.195.240.94-0986
   network: ws
   port: 443
   server: fr-full.privateip.net
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
@@ -324,11 +324,11 @@ proxies:
     path: /vmess/
 - alterId: 0
   cipher: auto
-  name: 12,20|德国 023
+  name: 12,20,23|🏁RELAY-185.135.9.208-0987
   network: ws
   port: 443
   server: 185.135.9.208
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
@@ -489,7 +489,7 @@ proxies:
   sni: www.refersion.com
   tls: false
   type: hysteria2
-- name: 13,15|🇩🇪 Telegram= V2RayyNGvpn 🇩🇪7
+- name: 13|8|🇩🇪 Telegram= V2RayyNGvpn 🇩🇪7
   obfs: salamander
   obfs-password: RedmEthIS-Join-V2RayyNGvpn-oBsPaHard183hgak
   password: hSKnm6Byp7
@@ -532,17 +532,7 @@ proxies:
   sni: assets.gateway-stream.com
   tls: false
   type: hysteria2
-- name: 15|🇪Telegram=V2RayyNGvpn⚡🇩🇪
-  obfs: salamander
-  obfs-password: RedmEthIS-Join-V2RayyNGvpn-oBsPaHard183hgak
-  password: HChdbj6duc
-  port: 443
-  server: 91.107.178.22
-  skip-cert-verify: true
-  sni: www.refersion.com
-  tls: false
-  type: hysteria2
-- name: '15|🇩🇪 t-me-V2RayyNGvpn '
+- name: 15|🇩🇪130569 | ⚡️Telegram = t.me/S...
   obfs: salamander
   obfs-password: RedmEthIS-Join-V2RayyNGvpn-oBsPaHard183hgak
   password: jeLq05gFPe
@@ -569,40 +559,34 @@ proxies:
   tls: false
   type: vmess
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
-- alterId: 0
-  cipher: auto
-  name: 20,35|未知81
-  network: tcp
-  port: 2053
-  server: de.connfull.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: f2ff4ae6-cf2d-4d15-9f0d-b6d9980df9aa
-- alterId: 0
-  cipher: auto
-  name: 20|德国 002
-  network: tcp
-  port: 4452
-  server: x2.mehradservice.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 389625c7-c891-4f61-9f98-478058744ada
-- alterId: 0
-  cipher: auto
-  name: 20|德国 003
+- client-fingerprint: chrome
+  name: '20,37,38|NL_speednode_0089 #1'
   network: ws
-  port: 80
-  server: 159.89.29.136
+  port: 443
+  server: 185.213.211.29
+  servername: sni.ehb.cc.cd
   skip-cert-verify: true
   tls: true
-  type: vmess
-  uuid: d20d6ede-433c-11ed-b81f-cfd905df9958
+  type: vless
+  udp: true
+  uuid: ef6c9625-62de-4b9d-b7e2-0d4a9f67a9b2
   ws-opts:
     headers:
-      Host: cx.com
-    path: /vmess
+      Host: sni.ehb.cc.cd
+    path: /proxyip=ProxyIP.CMLiussss.net
+- encryption: none
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 20|德国 002
+  network: http
+  port: 2214
+  server: best.athforce.ir
+  type: vless
+  udp: true
+  uuid: 0671a383-81d9-40d4-84f4-0e44ff30c2ca
+  xudp: true
 - alterId: 0
   cipher: auto
   name: 20,35|未知37
@@ -615,21 +599,35 @@ proxies:
   uuid: 6244c41a-f4c1-4733-a654-c38f7729b13c
 - alterId: 0
   cipher: auto
-  name: 20|德国 005
+  name: 20,23|🇪DE-159.89.29.136-0581
+  network: ws
+  port: 80
+  server: 159.89.29.136
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: d20d6ede-433c-11ed-b81f-cfd905df9958
+  ws-opts:
+    headers:
+      Host: cx.com
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 20,35|未知81
   network: tcp
-  port: 8585
-  server: 165.227.138.218
+  port: 2053
+  server: de.connfull.org
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: afedd970-62a2-46f5-88c4-e1f5305d3758
+  uuid: f2ff4ae6-cf2d-4d15-9f0d-b6d9980df9aa
 - alterId: 0
   cipher: auto
-  name: 20|德国 006
+  name: 20,23|🇩🇪DE-91.195.240.12-0458
   network: ws
   port: 443
   server: sgp.kapok.buzz
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: c1bac6b8-934a-44e2-9cf2-ee0db1fc1c85
@@ -639,11 +637,12 @@ proxies:
     path: /4befdd8a6/
 - alterId: 1
   cipher: auto
-  name: 20|德国 007
+  name: 20,23|🇪DE-130.61.253.111-0769
   network: ws
   port: 8080
   server: 130.61.253.111
-  skip-cert-verify: true
+  skip-cert-verify: false
+  tls: false
   type: vmess
   uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447
   ws-opts:
@@ -652,11 +651,12 @@ proxies:
     path: /download
 - alterId: 0
   cipher: auto
-  name: 20|德国 008
+  name: 20,23|🇷FR-185.16.110.212-0853
   network: ws
   port: 8880
   server: 185.16.110.212
-  skip-cert-verify: true
+  skip-cert-verify: false
+  tls: false
   type: vmess
   uuid: b209dfbf-6bb0-30b2-a77a-286e230466b5
   ws-opts:
@@ -665,11 +665,11 @@ proxies:
     path: /dabai
 - alterId: 0
   cipher: auto
-  name: 20|德国 009
+  name: 20,23|🇷FR-141.94.155.224-0887
   network: ws
   port: 443
   server: 141.94.155.224
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -679,11 +679,11 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 20|德国 010
+  name: 20,23|🇷FR-141.94.155.228-0888
   network: ws
   port: 443
   server: 141.94.155.228
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -693,11 +693,11 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 20|德国 011
+  name: 20,23|🇫🇷FR-141.94.155.229-0889
   network: ws
   port: 443
   server: 141.94.155.229
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -707,11 +707,11 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 20|德国 012
+  name: 20,23|🇫🇷FR-141.95.126.134-0890
   network: ws
   port: 443
   server: 141.95.126.134
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -721,11 +721,11 @@ proxies:
     path: linkvws
 - alterId: 64
   cipher: auto
-  name: 20|德国 034
+  name: 20,23|🇩🇪DE-89.163.247.25-1124
   network: ws
   port: 30001
   server: 89.163.247.25
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: b8aedf50-c4f5-4255-b73d-3779db661d70
@@ -735,11 +735,11 @@ proxies:
     path: /path/191019072927
 - alterId: 64
   cipher: auto
-  name: 20|德国 035
+  name: 20,23|🇱PL-194.15.196.172-1134
   network: ws
   port: 443
   server: 194.15.196.172
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 4d0247e0-d1da-444c-9cda-8cc20e4e4435
@@ -749,11 +749,11 @@ proxies:
     path: /path/191019072927
 - alterId: 0
   cipher: auto
-  name: 20|德国 036
+  name: 20,23|🇩🇪DE-139.162.178.95-1161
   network: ws
   port: 443
   server: 139.162.178.95
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 9072d339-3885-4fe1-b0bc-29fa7505410e
@@ -763,11 +763,11 @@ proxies:
     path: /linkwsd
 - alterId: 0
   cipher: auto
-  name: 20|德国 037
+  name: 20,23|🇩🇪DE-130.61.23.77-1171
   network: ws
   port: 443
   server: 130.61.23.77
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
@@ -777,11 +777,12 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 20|德国 038
+  name: 20,23|DE-138.68.90.231-1381
   network: ws
   port: 8080
   server: 138.68.90.231
-  skip-cert-verify: true
+  skip-cert-verify: false
+  tls: false
   type: vmess
   uuid: 294ffdc3-5942-45ae-a154-dc6c92eacf1d
   ws-opts:
@@ -790,92 +791,137 @@ proxies:
     path: /cctv13/hd.m3u8
 - alterId: 0
   cipher: auto
-  name: 20|德国 039
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 20,23|🇸US-5.161.106.72-3479
   network: http
   port: 40969
   server: 5.161.106.72
-  skip-cert-verify: true
+  skip-cert-verify: false
+  tls: false
   type: vmess
   uuid: 2fb9f60e-d4dc-458b-e3b2-d9b44f9bbd9e
 - alterId: 0
   cipher: auto
-  name: 20|德国 040
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 20,23|🇺🇸US-5.161.106.72-1394
   network: http
   port: 50978
   server: 5.161.106.72
-  skip-cert-verify: true
+  skip-cert-verify: false
+  tls: false
   type: vmess
   uuid: 89e6248b-0152-4317-a6ed-b6a0cf41f2cb
 - alterId: 0
   cipher: auto
-  name: 20|德国 041
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 20,23|🇩🇪DE-157.90.20.18-1403
   network: http
   port: 443
   server: 157.90.20.18
-  skip-cert-verify: true
+  skip-cert-verify: false
+  tls: false
   type: vmess
   uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
 - alterId: 0
   cipher: auto
-  name: 20|德国 042
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 20,23|🇪DE-5.75.168.155-1404
   network: http
   port: 443
   server: 5.75.168.155
-  skip-cert-verify: true
+  skip-cert-verify: false
+  tls: false
   type: vmess
   uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
 - alterId: 0
   cipher: auto
-  name: 20|德国 043
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 20,23|🇩🇪DE-94.130.25.155-1405
   network: http
   port: 443
   server: 94.130.25.155
-  skip-cert-verify: true
+  skip-cert-verify: false
+  tls: false
   type: vmess
   uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
 - alterId: 0
   cipher: auto
-  name: 20|德国 044
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 20,23|🇩🇪DE-167.235.136.155-1406
   network: http
   port: 443
   server: 167.235.136.155
-  skip-cert-verify: true
+  skip-cert-verify: false
+  tls: false
   type: vmess
   uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
 - alterId: 0
   cipher: auto
-  name: 20|德国 045
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 20,23|FI-65.21.240.108-1407
   network: http
   port: 443
   server: 65.21.240.108
-  skip-cert-verify: true
+  skip-cert-verify: false
+  tls: false
   type: vmess
   uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
 - alterId: 0
   cipher: auto
-  name: 20|德国 046
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 20,23|🇩🇪DE-5.75.247.192-1410
   network: http
   port: 443
   server: 5.75.247.192
-  skip-cert-verify: true
+  skip-cert-verify: false
+  tls: false
   type: vmess
   uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
 - alterId: 0
   cipher: auto
-  name: 20|德国 047
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 20,23|🇪DE-88.198.104.211-1411
   network: http
   port: 443
   server: 88.198.104.211
-  skip-cert-verify: true
+  skip-cert-verify: false
+  tls: false
   type: vmess
   uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
 - alterId: 4
   cipher: auto
-  name: 20|德国 048
+  name: 20,23|🇩🇪DE-146.0.42.87-1445
   network: ws
   port: 443
   server: 146.0.42.87
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
@@ -885,11 +931,11 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: 20|德国 049
+  name: 20,23|🇷FR-87.106.9.34-1493
   network: ws
   port: 443
   server: www.vpslook.com
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 4993f14e-5f9b-4249-dc43-99f4fdea84be
@@ -899,11 +945,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 20|德国 050
+  name: 20,23|🇪DE-132.145.232.171-1499
   network: ws
   port: 443
   server: 132.145.232.171
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
@@ -913,11 +959,11 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 20|德国 051
+  name: 20,23|🇩🇪DE-193.122.58.158-1503
   network: ws
   port: 443
   server: 193.122.58.158
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
@@ -927,11 +973,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 20|德国 052
+  name: 20,23|🏁RELAY-185.135.9.247-1505
   network: ws
   port: 2095
   server: 185.135.9.247
-  skip-cert-verify: true
+  skip-cert-verify: false
+  tls: false
   type: vmess
   uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
   ws-opts:
@@ -940,11 +987,12 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 20|德国 053
+  name: 20,23|🏁RELAY-185.135.9.19-1525
   network: ws
   port: 2095
   server: 185.135.9.19
-  skip-cert-verify: true
+  skip-cert-verify: false
+  tls: false
   type: vmess
   uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
   ws-opts:
@@ -953,11 +1001,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 20|德国 054
+  name: 20,23|DE-172.104.247.121-1681
   network: ws
   port: 443
   server: 172.104.247.121
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
@@ -967,11 +1015,11 @@ proxies:
     path: /linkws
 - alterId: 64
   cipher: auto
-  name: 20|德国 055
+  name: 20,23|🇪DE-89.163.231.19-1697
   network: ws
   port: 30005
   server: 89.163.231.19
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
@@ -981,11 +1029,11 @@ proxies:
     path: /path/240811062813
 - alterId: 0
   cipher: auto
-  name: 20|德国 056
+  name: 20,23|🇪DE-80.158.63.104-1753
   network: ws
   port: 443
   server: 80.158.63.104
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
@@ -995,34 +1043,21 @@ proxies:
     path: /obdii.cfd:443/linkws
 - alterId: 0
   cipher: auto
-  name: 20|德国 057
+  name: 20,23|🇸🇬SG-194.233.81.16-1925
   network: ws
   port: 80
   server: 194.233.81.16
-  skip-cert-verify: true
+  skip-cert-verify: false
+  tls: false
   type: vmess
   uuid: aaef05da-e8ce-4a7c-9dc8-5db3aa5fa309
   ws-opts:
     headers:
       Host: viettel.akamaized.net
     path: /
-- alterId: 64
-  cipher: auto
-  name: 20|德国 058
-  network: ws
-  port: 40444
-  server: panel.riziro.ir
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 3228b0ea-5421-4199-a099-f06b49602052
-  ws-opts:
-    headers:
-      Host: ger1.riziro.ir
-    path: /vlesswebs1546877
 - alterId: 0
   cipher: auto
-  name: 20|德国 059
+  name: 20|德国 058
   network: tcp
   port: 2053
   server: 178.63.237.158
@@ -1031,35 +1066,40 @@ proxies:
   uuid: 2d4dd672-180f-415c-9035-e2fc461dd95a
 - alterId: 0
   cipher: auto
-  name: 20|德国 060
+  name: 20|德国 059
   network: tcp
   port: 51459
   server: 91.107.139.186
   skip-cert-verify: true
   type: vmess
   uuid: 500cdc83-b189-4d79-b06b-139c7972a57f
+- name: 20|德国 060
+  network: tcp
+  port: 47116
+  server: 116.202.13.37
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 003825d0-502f-4948-bf4e-b2bedd6ba307
 - name: 20|德国 061
-  network: tcp
-  port: 440
-  server: 138.68.109.17
+  network: ws
+  port: 22222
+  server: 52.57.28.238
+  servername: telegram-channel-vlessconfig.sohala.uk
   skip-cert-verify: false
   tfo: false
   tls: true
   type: vless
   udp: true
-  uuid: 01dc2db8-364e-41be-b38c-d198fb779d8f
-- name: 20|德国 062
-  network: tcp
-  port: 440
-  server: 167.71.45.210
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 01dc2db8-364e-41be-b38c-d198fb779d8f
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    headers:
+      Host: telegram-channel-vlessconfig.sohala.uk
+    path: /telegram-channel-vlessconfig-ws
 - client-fingerprint: chrome
-  name: 20|德国 063
+  name: 20|德国 062
   network: ws
   port: 2053
   server: 194.76.173.6
@@ -1074,7 +1114,7 @@ proxies:
     headers:
       Host: vpn47.cc.cd
     path: /
-- name: 20|德国 064
+- name: 20|德国 063
   network: tcp
   port: 8080
   server: 78.47.87.195
@@ -1084,27 +1124,7 @@ proxies:
   type: vless
   udp: true
   uuid: 0a268813-7200-4d23-9851-74568928fc82
-- name: 20|德国 065
-  network: xhttp
-  port: 7000
-  server: 89.106.64.15
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0a715ede-593a-4018-8406-66e2c3b1169c
-- name: 20|德国 066
-  network: tcp
-  port: 27407
-  server: 46.101.216.241
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 138f0ef5-fc4d-43a1-bc40-bf297212196f
-- name: 20|德国 067
+- name: 20|德国 064
   network: tcp
   port: 1083
   server: 188.40.210.8
@@ -1114,37 +1134,7 @@ proxies:
   type: vless
   udp: true
   uuid: 179ddf63-c263-40ff-98a1-f53708573059
-- name: 20|德国 068
-  network: tcp
-  port: 443
-  server: 18.192.113.244
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 28c78331-fc50-4767-953c-7c9584ab6d3b
-- name: 20|德国 069
-  network: tcp
-  port: 440
-  server: 18.194.175.234
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 35495e54-3b92-4835-9f51-6cba41bacb5e
-- name: 20|德国 070
-  network: tcp
-  port: 440
-  server: 3.122.11.15
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 35495e54-3b92-4835-9f51-6cba41bacb5e
-- name: 20|德国 071
+- name: 20|德国 065
   network: tcp
   port: 57785
   server: 136.244.95.190
@@ -1154,17 +1144,7 @@ proxies:
   type: vless
   udp: true
   uuid: 399f7f1b-0f5e-43a1-b0b5-6f255367d778
-- name: 20|德国 072
-  network: tcp
-  port: 57785
-  server: 209.250.238.60
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 399f7f1b-0f5e-43a1-b0b5-6f255367d778
-- name: 20|德国 073
+- name: 20|德国 066
   network: tcp
   port: 1234
   server: 94.130.179.44
@@ -1174,7 +1154,7 @@ proxies:
   type: vless
   udp: true
   uuid: 3df14be0-009b-4316-ad4c-b5003800f3e6
-- name: 20|德国 074
+- name: 20|德国 067
   network: tcp
   port: 443
   server: 18.192.50.101
@@ -1184,27 +1164,7 @@ proxies:
   type: vless
   udp: true
   uuid: 3f3bb5cc-da8b-4551-8b76-ba223f1a5255
-- name: 20|德国 075
-  network: tcp
-  port: 57058
-  server: 178.128.194.156
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 456af4a7-c076-4369-b1cf-7aa95c69a482
-- name: 20|德国 076
-  network: tcp
-  port: 59077
-  server: 165.22.25.132
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 49e197be-99bc-4701-96f1-57678b6c3c5c
-- name: 20|德国 077
+- name: 20|德国 068
   network: tcp
   port: 36632
   server: 3.120.187.17
@@ -1214,7 +1174,7 @@ proxies:
   type: vless
   udp: true
   uuid: 4d259f79-e02b-4aa3-ebde-92c177df2d87
-- name: 20|德国 078
+- name: 20|德国 069
   network: tcp
   port: 50417
   server: 91.107.139.186
@@ -1224,7 +1184,27 @@ proxies:
   type: vless
   udp: true
   uuid: 500cdc83-b189-4d79-b06b-139c7972a57f
-- name: 20|德国 079
+- name: 20|德国 070
+  network: tcp
+  port: 1234
+  server: 159.69.192.171
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 60111042-2b80-4e11-9d02-82696ae4cabd
+- name: 20|德国 071
+  network: tcp
+  port: 1234
+  server: 167.233.47.127
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 60111042-2b80-4e11-9d02-82696ae4cabd
+- name: 20|德国 072
   network: ws
   port: 2096
   server: 185.16.110.238
@@ -1239,7 +1219,7 @@ proxies:
     headers:
       Host: sni.jpmj.dev
     path: /?ed=2560
-- name: 20|德国 080
+- name: 20|德国 073
   network: tcp
   port: 2053
   server: 185.231.115.48
@@ -1249,37 +1229,7 @@ proxies:
   type: vless
   udp: true
   uuid: 6263516e-13f4-4a29-8c6b-a999aafa438b
-- name: 20|德国 081
-  network: tcp
-  port: 1234
-  server: 159.69.193.221
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 716353f3-459f-4f1f-8a92-8525d9e517be
-- name: 20|德国 082
-  network: tcp
-  port: 440
-  server: 207.154.209.41
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7ca39bce-3794-44bb-8478-02a7b0c3ca2a
-- name: 20|德国 083
-  network: tcp
-  port: 440
-  server: 46.101.124.6
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7ca39bce-3794-44bb-8478-02a7b0c3ca2a
-- name: 20|德国 084
+- name: 20|德国 074
   network: tcp
   port: 24391
   server: 91.107.255.167
@@ -1289,7 +1239,7 @@ proxies:
   type: vless
   udp: true
   uuid: 7d8584e3-410b-4667-a9b3-9a6465d4f999
-- name: 20|德国 085
+- name: 20|德国 075
   network: tcp
   port: 1001
   server: 91.107.169.16
@@ -1299,17 +1249,17 @@ proxies:
   type: vless
   udp: true
   uuid: 8038f7de-9bba-4ebd-8352-556bc7316c11
-- name: 20|德国 086
+- name: 20|德国 076
   network: tcp
-  port: 440
-  server: 45.77.140.249
+  port: 33184
+  server: 116.202.13.37
   skip-cert-verify: false
   tfo: false
   tls: true
   type: vless
   udp: true
-  uuid: 85cd2659-7cef-4b2b-9206-f88d31bbcbc9
-- name: 20|德国 087
+  uuid: 8ea4ccf5-b568-41d4-815b-aaaf8de4e2eb
+- name: 20|德国 077
   network: tcp
   port: 8080
   server: 91.107.244.55
@@ -1319,27 +1269,27 @@ proxies:
   type: vless
   udp: true
   uuid: 92929b0d-a473-4ea2-bba5-f651ea263872
-- name: 20|德国 088
+- name: 20|德国 078
   network: tcp
-  port: 1234
-  server: 159.69.192.171
+  port: 80
+  server: 176.65.151.74
   skip-cert-verify: false
   tfo: false
   tls: true
   type: vless
   udp: true
-  uuid: 957797d5-1710-4e4a-bf41-9f5b641503e3
-- name: 20|德国 089
+  uuid: 88888888-8888-8888-8888-888888888888
+- name: 20|德国 079
   network: tcp
   port: 1234
-  server: 167.233.47.127
+  server: 159.69.193.221
   skip-cert-verify: false
   tfo: false
   tls: true
   type: vless
   udp: true
-  uuid: 957797d5-1710-4e4a-bf41-9f5b641503e3
-- name: 20|德国 090
+  uuid: a481265c-a4d8-4d1a-9ae1-48eb3f7fccb4
+- name: 20|德国 080
   network: tcp
   port: 15013
   server: 65.21.158.19
@@ -1350,7 +1300,7 @@ proxies:
   udp: true
   uuid: c33b6b74-1923-4ba3-bc2c-4e4bf9d8f2b2
 - flow: ''
-  name: 20|德国 091
+  name: 20|德国 081
   network: tcp
   port: 443
   server: 18.185.25.147
@@ -1360,27 +1310,7 @@ proxies:
   type: vless
   udp: true
   uuid: c430370a-4b00-4686-bfb9-36ef1b989dcd
-- name: 20|德国 092
-  network: tcp
-  port: 27945
-  server: 139.59.213.84
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: c65380dc-53d6-4a1b-88c6-f77c321410fc
-- name: 20|德国 093
-  network: tcp
-  port: 27945
-  server: 164.90.169.53
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: c65380dc-53d6-4a1b-88c6-f77c321410fc
-- name: 20|德国 094
+- name: 20|德国 082
   network: xhttp
   port: 29591
   server: 157.180.72.116
@@ -1390,62 +1320,53 @@ proxies:
   type: vless
   udp: true
   uuid: c85fa9c8-d3d2-47a4-ae31-ce150e074cdc
-- name: 20|德国 095
+- client-fingerprint: chrome
+  name: 20|德国 083
   network: ws
-  port: 443
-  server: 217.24.57.7
-  servername: hio-awx.pages.dev
+  port: 10000
+  server: 148.251.41.50
+  servername: 3byyf8q0.qnts33mtgi0ebq9tjd34.workers.dev
   skip-cert-verify: false
   tfo: false
   tls: true
   type: vless
   udp: true
-  uuid: d37a75db-76b6-4db8-b213-0d5b044d138d
+  uuid: d096c0b7-2205-478f-9e2f-0c8366e5a2b8
   ws-opts:
     headers:
-      Host: hio-awx.pages.dev
-    path: /?ed=2048
-- name: 20|德国 096
-  network: tcp
-  port: 22222
-  server: 18.198.140.62
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 20|德国 097
-  network: tcp
-  port: 22222
-  server: 18.198.145.152
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 20|德国 098
-  network: tcp
-  port: 22223
-  server: 18.198.145.152
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 20|德国 099
+      Host: 3byyf8q0.qnts33mtgi0ebq9tjd34.workers.dev
+    path: /
+- name: 20|德国 084
   network: tcp
   port: 22224
-  server: 18.198.145.152
+  server: 18.192.255.62
   skip-cert-verify: false
   tfo: false
   tls: true
   type: vless
   udp: true
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 20|德国 100
+- name: 20|德国 085
+  network: tcp
+  port: 22222
+  server: 18.193.252.106
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 20|德国 086
+  network: tcp
+  port: 22222
+  server: 18.195.139.42
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 20|德国 087
   network: tcp
   port: 22222
   server: 3.124.132.221
@@ -1455,7 +1376,7 @@ proxies:
   type: vless
   udp: true
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 20|德国 101
+- name: 20|德国 088
   network: tcp
   port: 22223
   server: 3.124.132.221
@@ -1465,7 +1386,7 @@ proxies:
   type: vless
   udp: true
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 20|德国 102
+- name: 20|德国 089
   network: tcp
   port: 22224
   server: 3.124.132.221
@@ -1475,7 +1396,7 @@ proxies:
   type: vless
   udp: true
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 20|德国 103
+- name: 20|德国 090
   network: tcp
   port: 47677
   server: 91.107.135.249
@@ -1485,7 +1406,17 @@ proxies:
   type: vless
   udp: true
   uuid: e4f851c2-69d6-4a8f-83c9-c1a9f78c0f98
-- name: 20|德国 104
+- name: 20|德国 091
+  network: tcp
+  port: 50420
+  server: 195.201.224.196
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee5cde73-5e72-4d3f-b95d-e493168e46cb
+- name: 20|德国 092
   network: tcp
   port: 443
   server: 3.126.31.60
@@ -1495,6 +1426,884 @@ proxies:
   type: vless
   udp: true
   uuid: fa12c1f5-24be-4119-8506-aad16f3bcd35
+- cipher: aes-256-gcm
+  name: 23|DE-145.239.1.100-0025
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: 23|🇩🇪DE-145.239.1.100-0037
+  password: RexnBgU7EV5ADxG
+  port: 7002
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: 23|🇪DE-145.239.1.100-0043
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 145.239.1.100
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 23|🇪DE-209.46.102.22-0137
+  password: 1hhrqrokj3ag
+  port: 8388
+  server: 209.46.102.22
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 23|🇪DE-93.186.201.124-0234
+  password: G!yBwPWH3Vao
+  port: 812
+  server: 93.186.201.124
+  type: ss
+- cipher: aes-256-gcm
+  name: 23|🇪DE-145.239.1.100-0237
+  password: g5MeD6Ft3CWlJId
+  port: 5004
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: 23|🇪DE-145.239.1.100-0314
+  password: Y6R9pAtvxxzmGC
+  port: 8888
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: 23|🇪DE-145.239.1.100-6937
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 145.239.1.100
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 23|🇪DE-52.58.249.78-0321
+  password: pryhyxya
+  port: 57824
+  server: 52.58.249.78
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 23|🇩🇪DE-5.75.154.136-0354
+  network: ws
+  port: 63456
+  server: 5.75.154.136
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: dab6ce8a-8059-4357-9083-c5283e1908b2
+  ws-opts:
+    path: /
+- alterId: 64
+  cipher: auto
+  name: 23|🇪DE-89.163.157.147-0460
+  network: ws
+  port: 443
+  server: 89.163.157.147
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: b8aedf50-c4f5-4255-b73d-3779db661d70
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 23|🇪DE-31.22.109.209-0480
+  network: ws
+  port: 443
+  server: 31.22.109.209
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 36793d2c-0d5a-4a84-8862-f9c93e9af5b5
+  ws-opts:
+    path: /4ba99a39b90faa/
+- cipher: chacha20-ietf-poly1305
+  name: 23|🇪DE-164.90.234.85-2462
+  password: fdRAl4scWDTg
+  port: 18492
+  server: 164.90.234.85
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 23|🇪DE-143.42.21.187-2674
+  network: ws
+  port: 443
+  server: 143.42.21.187
+  servername: 143.42.21.187
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 927094d3-d678-4763-8591-e240d0bcae87
+  ws-opts:
+    path: /chat
+- alterId: 64
+  cipher: auto
+  name: 23|🇩🇪DE-87.254.31.23-2743
+  network: ws
+  port: 41647
+  server: 87.254.31.23
+  servername: uk.linkeden.co
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: aae02fcc-179b-4edc-aa69-6878ff29d01c
+  ws-opts:
+    path: /uk/getData
+- alterId: 0
+  cipher: auto
+  name: 23|🇪DE-91.195.240.94-2923
+  network: ws
+  port: 443
+  server: in-full.privateip.net
+  servername: in-full.privateip.net
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 07722fc6-a688-49fd-9896-fb9e1ca748d6
+  ws-opts:
+    headers:
+      Host: in-full.privateip.net
+    path: /racevpn
+- alterId: 0
+  cipher: auto
+  name: 23|🇪DE-89.163.213.20-2931
+  network: ws
+  port: 80
+  server: 89.163.213.20
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 5668ff97-631f-4602-a13f-b56552c67abe
+  ws-opts:
+    path: /vmess
+- name: 23|🇪DE-54.93.240.151-2989
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 54.93.240.151
+  skip-cert-verify: false
+  sni: trj.rollingnext.co.uk
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 23|🇩🇪DE-78.47.131.39-3030
+  network: ws
+  port: 8081
+  server: 78.47.131.39
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 822a646e-6f69-4758-9008-494e137e26ac
+  ws-opts:
+    path: /@hashmakvpn 🇩🇪
+- name: 23|🇪DE-45.80.190.66-3031
+  password: bs6KJkPBW9MP74uHEa
+  port: 443
+  server: 45.80.190.66
+  skip-cert-verify: false
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 23|🇪DE-91.107.166.231-3062
+  network: ws
+  port: 8081
+  server: 91.107.166.231
+  servername: snapp.ir
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 822a646e-6f69-4758-9008-494e137e26ac
+  ws-opts:
+    path: /@hashmakvpn 🇩🇪
+- name: 23|🇪DE-45.80.190.64-3078
+  password: bs6KJkPBW9MP74uHEa
+  port: 443
+  server: 45.80.190.64
+  skip-cert-verify: false
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 23|🇪DE-3.67.113.118-3150
+  password: G!yBwPWH3Vao
+  port: 810
+  server: 3.67.113.118
+  type: ss
+- name: 23|🇩🇪DE-31.76.11.46-3228
+  password: 32b2m2w7hsdd93z7
+  port: 443
+  server: 31.76.11.46.cdn-one.org
+  skip-cert-verify: false
+  type: trojan
+- cipher: aes-256-gcm
+  name: 23|🇪DE-193.108.118.34-3500
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 193.108.118.34
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 23|🇪DE-165.227.175.88-3718
+  network: ws
+  port: 28164
+  server: 165.227.175.88
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: eba8ccf5-5ab9-4b6b-de4b-83ab920c1005
+  ws-opts:
+    path: /
+- name: 23|🇪DE-130.162.230.82-3746
+  password: 8a03bc28-2a33-42c4-be59-30464dbb9954
+  port: 18818
+  server: fra13.yukiss.eu.org
+  skip-cert-verify: false
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 23|🇪DE-168.119.254.234-3756
+  network: ws
+  port: 80
+  server: 168.119.254.234
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 41990bdc-da75-496d-bad3-ae822ad8be5f
+  ws-opts:
+    path: /graphql
+- name: 23|🇪DE-51.75.76.22-3759
+  password: c60fbf90-4b55-11ed-b935-225401db9d57
+  port: 443
+  server: 51.75.76.22
+  skip-cert-verify: false
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 23|🇪DE-94.130.184.57-4081
+  network: ws
+  port: 80
+  server: 94.130.184.57
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: c5e523e7-da73-40af-a4a9-c638720c30e1
+  ws-opts:
+    path: /graphql
+- name: 23|🇪DE-89.163.220.99-3922
+  password: 750a29bf-0a40-437f-b120-38de74ae7eaf
+  port: 28443
+  server: 89.163.220.99
+  skip-cert-verify: false
+  type: trojan
+- name: 23|🇩🇪DE-181.214.99.54-4564
+  password: q9870219
+  port: 2035
+  server: 181.214.99.54
+  skip-cert-verify: false
+  sni: ht.lljllj.buzz
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 23|🇪DE-162.55.174.135-4181
+  network: ws
+  port: 80
+  server: 162.55.174.135
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4d9aa6db-705a-4bfa-b05b-8f442c839557
+  ws-opts:
+    path: /graphql
+- name: 23|🇪DE-188.40.251.19-4027
+  password: origin
+  port: 443
+  server: 188.40.251.19
+  skip-cert-verify: false
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 23|🇪DE-162.55.62.193-4141
+  network: ws
+  port: 80
+  server: 162.55.62.193
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 2aac77de-b3e4-4017-845c-ca1380f2e8d0
+  ws-opts:
+    path: /telegram-id-@privatevpns
+- alterId: 0
+  cipher: auto
+  name: 23|🇪DE-5.75.173.189-4161
+  network: ws
+  port: 80
+  server: 5.75.173.189
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 2aac77de-b3e4-4017-845c-ca1380f2e8d0
+  ws-opts:
+    path: /telegram-id-@privatevpns
+- alterId: 0
+  cipher: auto
+  name: 23|🇪DE-78.46.129.226-4197
+  network: ws
+  port: 80
+  server: 78.46.129.226
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 2aac77de-b3e4-4017-845c-ca1380f2e8d0
+  ws-opts:
+    path: /telegram-id-@privatevpns
+- alterId: 0
+  cipher: auto
+  name: 23|🇪DE-167.235.78.112-4239
+  network: ws
+  port: 80
+  server: 167.235.78.112
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 2aac77de-b3e4-4017-845c-ca1380f2e8d0
+  ws-opts:
+    path: /telegram-id-@privatevpns
+- alterId: 0
+  cipher: auto
+  name: 23|🇪DE-188.40.132.107-5089
+  network: ws
+  port: 80
+  server: 188.40.132.107
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4ddd24d6-d901-5e5f-9a7c-080015c2e246
+  ws-opts:
+    path: /p3573l6m92h1ham3q23t
+- alterId: 0
+  cipher: auto
+  name: 23|🇪DE-162.55.214.110-5308
+  network: ws
+  port: 51549
+  server: 162.55.214.110
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 6399ab58-b7ce-4d24-be9e-92c581c93b44
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 23|🇩🇪DE-150.230.149.55-5314
+  network: ws
+  port: 6374
+  server: 150.230.149.55
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 80f25361-877d-46d4-8404-f0dce1faf84f
+  ws-opts:
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 23|🇪DE-185.104.184.78-5328
+  password: G!yBwPWH3Vao
+  port: 802
+  server: 185.104.184.78
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 23|🇩🇪DE-185.104.184.78-5329
+  password: G!yBwPWH3Vao
+  port: 804
+  server: 185.104.184.78
+  type: ss
+- cipher: aes-256-cfb
+  name: 23|🇪DE-68.183.74.63-5340
+  obfs: http_simple
+  obfs-param: ''
+  password: 4369b96
+  port: 12928
+  protocol: origin
+  protocol-param: ''
+  server: 68.183.74.63
+  type: ssr
+- cipher: chacha20-ietf-poly1305
+  name: 23|🇩🇪DE-185.104.184.78-5342
+  password: G!yBwPWH3Vao
+  port: 811
+  server: 185.104.184.78
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 23|🇪DE-167.235.192.0-5348
+  network: ws
+  port: 25052
+  server: 167.235.192.0
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cbeff4ce-adcb-4e25-a42b-b4e5463b0d93
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 23|🇩🇪DE-159.223.30.153-5359
+  network: ws
+  port: 8081
+  server: 159.223.30.153
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: c2743f4a-9590-4406-dc78-6ac98c12004a
+  ws-opts:
+    path: /
+- name: 23|🇩🇪DE-51.77.71.131-5443
+  password: Sp3eDVp
+  port: 443
+  server: 51.77.71.131
+  skip-cert-verify: false
+  type: trojan
+- name: 23|🇪DE-51.77.71.134-5448
+  password: origin
+  port: 443
+  server: 51.77.71.134
+  skip-cert-verify: false
+  type: trojan
+- alterId: 4
+  cipher: auto
+  name: 23|DE-138.68.90.231-5936
+  network: ws
+  port: 8080
+  server: 138.68.90.231
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 826b8d0a-e0d3-407a-927d-19953c170779
+  ws-opts:
+    path: /cctv13/hd.m3u8
+- name: 23|🇪DE-54.93.209.134-5999
+  password: CF68213490
+  port: 443
+  server: alert-fish.rooster465.autos
+  skip-cert-verify: false
+  type: trojan
+- name: 23|🇪DE-63.176.171.181-6076
+  password: IL37892054
+  port: 443
+  server: engaging-toucan.rooster465.autos
+  skip-cert-verify: false
+  type: trojan
+- name: 23|🇪DE-54.93.65.133-6115
+  password: CF68213490
+  port: 443
+  server: next-turkey.rooster465.autos
+  skip-cert-verify: false
+  type: trojan
+- name: 23|🇩🇪DE-3.79.7.150-6128
+  password: CF68213490
+  port: 443
+  server: moved-bluegill.rooster465.autos
+  skip-cert-verify: false
+  type: trojan
+- name: 23|🇪DE-35.159.21.7-6174
+  password: CF68213490
+  port: 443
+  server: summary-lemming.rooster465.autos
+  skip-cert-verify: false
+  type: trojan
+- name: 23|🇩🇪DE-3.64.59.246-6193
+  password: CF68213490
+  port: 443
+  server: gentle-raptor.rooster465.autos
+  skip-cert-verify: false
+  type: trojan
+- name: 23|🇪DE-18.198.41.154-6222
+  password: CF68213490
+  port: 443
+  server: bright-cicada.rooster465.autos
+  skip-cert-verify: false
+  type: trojan
+- cipher: aes-256-gcm
+  name: 23|🇪DE-193.108.117.75-6385
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 193.108.117.75
+  type: ss
+- cipher: aes-256-gcm
+  name: 23|🇪DE-193.108.117.75-6386
+  password: kDWvXYZoTBcGkC4
+  port: 8881
+  server: 193.108.117.75
+  type: ss
+- cipher: aes-256-gcm
+  name: 23|🇩🇪DE-193.108.117.75-6387
+  password: e4FCWrgpkji3QY
+  port: 9102
+  server: 193.108.117.75
+  type: ss
+- cipher: aes-256-gcm
+  name: 23|🇩🇪DE-193.108.117.75-6388
+  password: Y6R9pAtvxxzmGC
+  port: 5001
+  server: 193.108.117.75
+  type: ss
+- cipher: aes-256-gcm
+  name: 23|🇪DE-193.108.117.75-6389
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 193.108.117.75
+  type: ss
+- cipher: aes-256-gcm
+  name: 23|🇩🇪DE-193.108.117.75-6390
+  password: pKEW8JPByTVTLtM
+  port: 443
+  server: 193.108.117.75
+  type: ss
+- cipher: aes-256-gcm
+  name: 23|🇩🇪DE-193.108.117.75-6391
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 193.108.117.75
+  type: ss
+- cipher: aes-256-gcm
+  name: 23|🇩🇪DE-145.239.1.100-6559
+  password: cdBIDV42DCwnfIN
+  port: 8118
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: 23|🇩🇪DE-145.239.1.100-6561
+  password: cdBIDV42DCwnfIN
+  port: 8119
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: 23|🇪DE-145.239.1.100-6562
+  password: kDWvXYZoTBcGkC4
+  port: 8881
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: 23|🇩🇪DE-145.239.1.100-6564
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: 23|🇪DE-145.239.1.100-6565
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: 23|🇪DE-145.239.1.100-6568
+  password: FoOiGlkAA9yPEGP
+  port: 7306
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: 23|🇪DE-145.239.1.100-6570
+  password: zDNVedRFPQexG9v
+  port: 6379
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: 23|🇩🇪DE-145.239.1.100-6577
+  password: XKFKl2rULjIp74
+  port: 8009
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: 23|🇩🇪DE-145.239.1.100-6580
+  password: KixLvKzwjekG00rm
+  port: 8000
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: 23|🇩🇪DE-145.239.1.100-6581
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: 23|🇩🇪DE-145.239.1.100-6582
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: 23|🇪DE-145.239.1.100-6585
+  password: TEzjfAYq2IjtuoS
+  port: 6679
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: 23|🇪DE-145.239.1.100-6586
+  password: KixLvKzwjekG00rm
+  port: 5500
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: 23|🇩🇪DE-145.239.1.100-6587
+  password: RexnBgU7EV5ADxG
+  port: 7001
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: 23|🇪DE-145.239.1.100-6591
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 145.239.1.100
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 23|DE-161.35.69.20-7556
+  password: Ultr@r00t_2017
+  port: 811
+  server: 161.35.69.20
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 23|DE-51.75.70.34-7957
+  network: ws
+  port: 443
+  server: 51.75.70.34
+  servername: goodfamily19.site
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 572126f8-5301-83c2-0a26-c30ced3db7c4
+  ws-opts:
+    path: /wmzmvws
+- alterId: 0
+  cipher: auto
+  name: 23|🇩🇪DE-51.75.70.34-7959
+  network: ws
+  port: 443
+  server: 51.75.70.34
+  servername: lg30.cfcdn3.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
+  ws-opts:
+    path: /ray
+- alterId: 0
+  cipher: auto
+  name: 23|🇩🇪DE-170.187.185.37-8017
+  network: ws
+  port: 443
+  server: 170.187.185.37
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 927094d3-d678-4763-8591-e240d0bcae87
+  ws-opts:
+    path: /chat
+- grpc-opts:
+    grpc-service-name: trgrpc
+  name: 23|🇪DE-95.179.255.171-8242
+  network: grpc
+  password: 92902210-2eb5-11ee-b234-205c6d5f5d78
+  port: 2087
+  server: 95.179.255.171
+  skip-cert-verify: false
+  sni: asia.oceis.net
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 23|🇩🇪DE-95.179.254.20-8243
+  network: ws
+  port: 443
+  server: 95.179.254.20
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 068964e0-2e37-11ee-b733-205c6d5f5d78
+  ws-opts:
+    path: /@hopev2ray
+- grpc-opts:
+    grpc-service-name: trojangrpc
+  name: 23|🇩🇪DE-95.179.254.136-8244
+  network: grpc
+  password: mainssh-ddoejfv14
+  port: 443
+  server: 95.179.254.136
+  skip-cert-verify: false
+  sni: frtgrpc.mainssh.xyz
+  type: trojan
+- grpc-opts:
+    grpc-service-name: trojangrpc
+  name: 23|🇩🇪DE-95.179.246.122-8246
+  network: grpc
+  password: mainssh-niwrhf87
+  port: 443
+  server: 95.179.246.122
+  skip-cert-verify: false
+  sni: getgrpc.mainssh.xyz
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 23|🇪DE-91.107.189.98-8262
+  password: rIvzNCBP_t5odSW4DiMLDw
+  port: 1080
+  server: 91.107.189.98
+  type: ss
+- cipher: aes-256-cfb
+  name: 23|🇩🇪DE-89.163.140.153-8265
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 89.163.140.153
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 23|🇪DE-46.4.162.18-8360
+  password: f8f7aCzcPKbsF8p3
+  port: 30696
+  server: 46.4.162.18
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 23|🇪DE-45.76.88.37-8377
+  network: ws
+  port: 2053
+  server: 45.76.88.37
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4134efe7-d935-416c-c2cc-24943e4a80ca
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 23|🇩🇪DE-45.76.88.37-8378
+  network: ws
+  port: 2087
+  server: 45.76.88.37
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d5350465-ab63-4d30-ebda-5cbe0751cbd6
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 23|🇪DE-45.76.88.37-8379
+  network: ws
+  port: 8443
+  server: 45.76.88.37
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 3d0c8ee5-3329-4252-aa1c-65f3fdaa0343
+  ws-opts:
+    path: /
+- name: 23|🇪DE-35.156.35.238-8433
+  password: telegram-id-directvpn
+  port: 22222
+  server: 35.156.35.238
+  skip-cert-verify: false
+  sni: trj.rollingnext.co.uk
+  type: trojan
+- name: 23|🇪DE-3.123.22.69-8459
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.123.22.69
+  skip-cert-verify: false
+  sni: trj.rollingnext.co.uk
+  type: trojan
+- name: 23|🇩🇪DE-3.123.128.240-8464
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.123.128.240
+  skip-cert-verify: false
+  sni: trj.rollingnext.co.uk
+  type: trojan
+- name: 23|🇩🇪DE-3.120.187.229-8467
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.120.187.229
+  skip-cert-verify: false
+  sni: trj.rollingnext.co.uk
+  type: trojan
+- name: 23|🇪DE-209.250.236.93-8541
+  network: grpc
+  password: Cl150MQWlG
+  port: 443
+  server: 209.250.236.93
+  skip-cert-verify: false
+  sni: irancell-ir-4.mmdruby13.store
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 23|🇪DE-199.247.23.31-8573
+  network: ws
+  port: 443
+  server: 199.247.23.31
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: c13277ce-cda6-4d01-cedc-1e3605a0eb72
+  ws-opts:
+    path: /12796?ed=2048
+- name: 23|🇩🇪DE-18.196.127.24-8652
+  password: telegram-id-directvpn
+  port: 22222
+  server: 18.196.127.24
+  skip-cert-verify: false
+  sni: trj.rollingnext.co.uk
+  type: trojan
+- name: 23|🇩🇪DE-18.184.9.101-8654
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.184.9.101
+  skip-cert-verify: false
+  sni: trj.rollingnext.co.uk
+  type: trojan
+- grpc-opts:
+    grpc-service-name: trojangrpc
+  name: 23|🇪DE-140.82.38.103-8946
+  network: grpc
+  password: mainssh-ddoejfv14
+  port: 443
+  server: 140.82.38.103
+  skip-cert-verify: false
+  sni: frtgrpc.mainssh.xyz
+  type: trojan
+- grpc-opts:
+    grpc-service-name: trojangrpc
+  name: 23|🇩🇪DE-140.82.32.17-8948
+  network: grpc
+  password: mainssh-niwrhf87
+  port: 443
+  server: 140.82.32.17
+  skip-cert-verify: false
+  sni: getgrpc.mainssh.xyz
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 23|🇩🇪DE-130.162.47.123-8969
+  network: ws
+  port: 6854
+  server: 130.162.47.123
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: b5f7e932-f730-4ad2-b425-40977b9db332
+  ws-opts:
+    path: /zBLPou
+- grpc-opts:
+    grpc-service-name: trojangrpc
+  name: 23|🇪DE-108.61.171.167-9003
+  network: grpc
+  password: mainssh-niwrhf87
+  port: 443
+  server: 108.61.171.167
+  skip-cert-verify: false
+  sni: getgrpc.mainssh.xyz
+  type: trojan
+- grpc-opts:
+    grpc-service-name: trojangrpc
+  name: 23|🇪DE-108.61.170.104-9005
+  network: grpc
+  password: mainssh-ddoejfv14
+  port: 443
+  server: 108.61.170.104
+  skip-cert-verify: false
+  sni: frtgrpc.mainssh.xyz
+  type: trojan
 - client-fingerprint: chrome
   name: '37,38|DE_speednode_0017 #1'
   network: ws
