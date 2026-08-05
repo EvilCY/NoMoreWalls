@@ -1,12 +1,5 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 11|Japan_Tokyo_ss_1135
-  password: amazonskr05
-  port: 443
-  server: 13.231.227.228
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
   name: 13|🇯🇵 JP 1 → tg@nicevpn123
   password: amazonskr05
   port: 443
@@ -671,28 +664,19 @@ proxies:
   cipher: auto
   name: 21|日本 001
   network: ws
-  port: 443
-  server: fullaccesstojapannetsubnode1.azurewebsites.net
-  servername: 🇯🇵JP-40.74.100.129-0154 | 0.0MB
+  port: 2052
+  server: 146.56.118.227
   skip-cert-verify: false
-  tls: true
+  tls: false
   type: vmess
-  uuid: 274f11c6-f69b-40b9-8966-f39e06e97be7
+  uuid: 448a9087-28f3-4fe4-fa49-36c912e0f498
   ws-opts:
     headers:
-      Host: fullaccesstojapannetsubnode1.azurewebsites.net
+      Host: 146.56.118.227
     path: /
-- name: 21|日本 002
-  network: tcp
-  password: ND91608427
-  port: 443
-  server: becoming-hare.rooster465.autos
-  skip-cert-verify: true
-  sni: becoming-hare.rooster465.autos
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: 21|日本 003
+  name: 21|日本 002
   network: ws
   port: 80
   server: 61.245.11.60
@@ -704,6 +688,20 @@ proxies:
     headers:
       Host: 61.245.11.60
     path: /vmess/
+- alterId: 0
+  cipher: auto
+  name: 21|日本 003
+  network: ws
+  port: 443
+  server: fullaccesstojapannetsubnode1.azurewebsites.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 274f11c6-f69b-40b9-8966-f39e06e97be7
+  ws-opts:
+    headers:
+      Host: fullaccesstojapannetsubnode1.azurewebsites.net
+    path: /
 - alterId: 0
   cipher: auto
   name: 21|日本 004
