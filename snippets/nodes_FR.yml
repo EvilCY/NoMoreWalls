@@ -88,7 +88,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 13,21|美国 405
+  name: 13,21|美国 422
   network: http
   port: 3389
   server: 51.159.155.52
@@ -430,23 +430,17 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 21|法国 002
-  network: tcp
-  port: 27726
-  server: 195.133.193.18
-  skip-cert-verify: true
+  network: ws
+  port: 443
+  server: 192.248.181.2
+  skip-cert-verify: false
   tls: true
   type: vmess
-  uuid: 98e2be3c-8f84-4b85-996b-b68dcc2fbcb6
-- alterId: 0
-  cipher: auto
-  name: 21|法国 003
-  network: tcp
-  port: 27726
-  server: fj260204.freechatup.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 98e2be3c-8f84-4b85-996b-b68dcc2fbcb6
+  uuid: 611bbdbb-1138-4797-8d9f-f92f595b7c7e
+  ws-opts:
+    headers:
+      Host: mket.shoopcider.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 21,36|未知10
@@ -467,6 +461,16 @@ proxies:
   tls: true
   type: vmess
   uuid: 82447abf-dcb9-408a-9ca6-79e0a7698d08
+- alterId: 0
+  cipher: auto
+  name: 21,36|未知90
+  network: tcp
+  port: 27726
+  server: fj260205.freechatup.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 98e2be3c-8f84-4b85-996b-b68dcc2fbcb6
 - alterId: 0
   cipher: auto
   name: 21|法国 006
