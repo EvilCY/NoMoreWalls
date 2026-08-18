@@ -1,6 +1,17 @@
 proxies:
 - alterId: 0
   cipher: auto
+  name: 3,36|US10 24.0MB/s
+  network: tcp
+  port: 180
+  server: 82.198.246.97
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
   name: 3,24|🇩🇪DE-104.105.18.214-0445
   network: ws
   port: 2053
@@ -49,6 +60,20 @@ proxies:
   tls: true
   type: vmess
   uuid: b1211a37-ac2b-4cd0-9f3d-732028caa184
+- alterId: 0
+  cipher: auto
+  name: 3|DE 🇩🇪 | @Raydikalx | 6CC48B
+  network: ws
+  port: '16632'
+  server: 162.19.192.89
+  servername: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
+  tls: false
+  type: vmess
+  uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
+  ws-opts:
+    headers:
+      Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 3,36|未知4
@@ -353,19 +378,21 @@ proxies:
   uuid: 4d765598-33d4-4ef5-87d6-b3fa61918875
 - alterId: 0
   cipher: auto
-  name: 3,11,14,24|🇫🇷FR-162.19.192.89-0444
+  name: 3,11,14,21,24|🇫🇷FR-162.19.192.89-0444
   network: ws
   port: 16632
   server: planb.mojcn.com.linuxlh.xin
-  servername: ''
+  servername: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
   skip-cert-verify: false
   tls: false
   type: vmess
+  udp: true
   uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
   ws-opts:
     headers:
       Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
     path: /
+  xudp: true
 - alterId: 0
   cipher: auto
   name: 3,24|🇷FR-162.19.192.89-1224
@@ -412,6 +439,19 @@ proxies:
   tls: true
   type: vmess
   uuid: 389625c7-c891-4f61-9f98-478058744ada
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: 3|Server 19
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  server: 169.40.42.173
+  servername: yahoo.com
+  tls: false
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 3|🇩🇪 G
@@ -560,42 +600,38 @@ proxies:
   uuid: 92929b0d-a473-4ea2-bba5-f651ea263872
 - name: 3|🆔soskeynet 🔓 VL-TCP-N/A 🇩🇪 DE ...
   network: tcp
-  port: 22223
-  server: 3.74.36.201
+  port: 22222
+  server: 63.185.0.55
   tls: false
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
 - client-fingerprint: chrome
-  name: 3|🆔soskeynet 🔒 VL-TCP- 🇩🇪 DE 95m...
-  network: tcp
-  port: 2016
+  name: 3|🆔soskeynet 🔒 VL-XHTTP- 🇩🇪 DE d...
+  network: xhttp
+  port: 443
   reality-opts:
-    public-key: 8sqqUy5MYHyWgSa-qw_fEZyBEs94B0u18K-fN9Jfb1E
-    short-id: 589a08ab5f7d65c1
-  server: 185.113.10.44
-  servername: www.speedtest.net
+    public-key: v_s3GW5_7jvB081tdUeyoDUUTq6fZwqKbVS7CdvLFA0
+    short-id: 72cd47c079c0a3df
+  server: 194.5.65.36
+  servername: ya.ru
   tls: false
   type: vless
-  uuid: 4502c4e4-6632-49b8-a69f-282f0d5c0696
+  uuid: d49e6f64-2a62-4fc6-8dde-9ab1bdf12c02
   ws-opts:
-    headers:
-      Host: www.google.com
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 3|🆔configfa 🔒 VL-WS-N/A 🇩🇪 DE 2m...
-  network: ws
+    path: '%2F'
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 3|🆔soskeynet 🔒 VL-TCP- 🇩🇪 DE 119...
+  network: tcp
   port: 443
-  server: 45.80.111.7
-  servername: 2--ldej--MiTiVPN---MiTiVPN-o.KingNetwork.ir
-  tls: true
+  reality-opts:
+    public-key: xp7g5asMyVx4aI7vEwfZZPrpd57izUvnNzAOpBs4mh0
+    short-id: b9f8f9772217538f
+  server: 103.126.50.203
+  servername: ro.getvlessvpn.com
+  tls: false
   type: vless
-  uuid: 926bc4cd-709e-4e90-8aa7-78db75fbe86b
-  ws-opts:
-    headers:
-      Host: De2-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.KinGNetWork.iR
-    path: '%2F---%40MiTiVPN---%40MiTiVPN%2F---%40MiTiVPN---%40MiTiVPN%2F---%40MiTiVPN---%40MiTiVPN%2Fde2---%40MiTiVPN---%40MiTiVPN%2F---%40MiTiVPN---%40MiTiVPN%2F---%40MiTiVPN---%40MiTiVPN'
+  uuid: 76f6b7fe-5de8-4637-87a0-6ddd33d67b3e
 - name: 3|🆔capoit 🔓 VL-HTTPUPGRADE-N/A ❔...
   network: httpupgrade
   port: 8880
@@ -643,24 +679,13 @@ proxies:
 - name: 3|🆔ar14n24b 🔓 VL-HTTPUPGRADE-N/A...
   network: httpupgrade
   port: 2095
-  server: site6.awexaou.shop
+  server: site1.awextr.ir
   tls: false
   type: vless
   uuid: 00b41e07-68e6-46b0-928f-a02becd4e398
   ws-opts:
     headers:
-      Host: check-host.net
-    path: '%2F'
-- name: 3|🆔v2ray1_ng 🔓 VL-HTTPUPGRADE-N/...
-  network: httpupgrade
-  port: 2095
-  server: site2.awexaou.shop
-  tls: false
-  type: vless
-  uuid: 95b0fa1d-645a-4438-9d67-d7220eb93e7b
-  ws-opts:
-    headers:
-      Host: check-host.net
+      Host: www.varzesh3.com
     path: '%2F'
 - alterId: 0
   cipher: chacha20-ietf-poly1305
@@ -1101,14 +1126,14 @@ proxies:
   server: 217.182.198.219
   type: ss
   udp: true
-- name: 14,15|еҫ·еӣҪ
+- name: 14,15|德国
   password: d1224950-ffab-4b9a-8696-431b40a6cfbd
   port: 443
   server: bel-03.node.lumixnet.com
   sni: bel-03.node.lumixnet.com
   tls: false
   type: hysteria2
-- name: 14,15,16|рҹ©рҹҮӘ|DE|@wxgqlfx|182
+- name: 14,15,16|🇪|DE|@wxgqlfx|182
   password: dsfa_k0123WFzerrf_kZ3490VNb03J_m30_s
   port: 8443
   server: 194.180.188.21
@@ -1118,7 +1143,7 @@ proxies:
   type: hysteria2
 - alpn:
   - h3
-  name: 14,16|рҹҮ©рҹҮӘ|DE|@wxgqlfx|223
+  name: 14,16|🇩🇪|DE|@wxgqlfx|223
   password: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
   port: 443
   server: fr131.mechvpn.online
@@ -1126,7 +1151,7 @@ proxies:
   sni: fr131.mechvpn.online
   tls: false
   type: hysteria2
-- name: '14,16|рҹҮ©рҹҮӘ@FreakConfig #1'
+- name: '14,16|🇩🇪@FreakConfig #1'
   obfs: salamander
   obfs-password: AIbOe_791iQ4k6kPUgdsO7B9
   password: 9cc2113e-6b5b-4ced-9c46-70cf78d2c599
@@ -1138,7 +1163,7 @@ proxies:
   type: hysteria2
 - alpn:
   - h3
-  name: 14,16|рҹҮ©рҹҮӘ|DE|@wxgqlfx|213
+  name: 14,16|🇪|DE|@wxgqlfx|213
   password: umnDU7jgFYUjpVjVM2sW9HL0rRYLJNgzVwRu2HzWEhyZKkRx
   port: 443
   server: de.1.22.washing.help
@@ -1146,14 +1171,14 @@ proxies:
   sni: germany1.h2corp.local
   tls: false
   type: hysteria2
-- name: 14,16|рҹҮ©рҹҮӘ|DE|@wxgqlfx|208
+- name: 14,16|🇩🇪|DE|@wxgqlfx|208
   password: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
   port: 443
   server: de200.mechvpn.online
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: 14,16|рҹҮ©рҹҮӘ|DE|@wxgqlfx|220
+- name: 14,16|🇩🇪|DE|@wxgqlfx|220
   password: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
   port: 443
   server: de120.mechvpn.online
@@ -1178,82 +1203,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 06b02791-af50-46bd-8679-bc84b754f0aa
-- name: 21|德国 001
-  network: tcp
-  password: aR9EJWEB2Jp3m6xKJK=Ct7kLyqFSU-iDBR
-  port: 443
-  server: 92.119.35.120
-  skip-cert-verify: false
-  type: trojan
-- name: 21|德国 002
-  network: tcp
-  password: aR9EJWEB2Jp3m6xKJK=Ct7kLyqFSU-iDBR
-  port: 443
-  server: 92.119.35.130
-  skip-cert-verify: false
-  type: trojan
-- name: 21|德国 003
-  network: tcp
-  password: aR9EJWEB2Jp3m6xKJK=Ct7kLyqFSU-iDBR
-  port: 443
-  server: 92.119.35.127
-  skip-cert-verify: false
-  type: trojan
-- client-fingerprint: chrome
-  name: 21|德国 004
-  network: tcp
-  password: LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu
-  port: 9443
-  server: de-1.hysteria.ltd
-  skip-cert-verify: false
-  sni: de-1.hysteria.ltd
-  type: trojan
-- name: 21|德国 005
-  network: tcp
-  password: aR9EJWEB2Jp3m6xKJK=Ct7kLyqFSU-iDBR
-  port: 443
-  server: 92.119.35.125
-  skip-cert-verify: false
-  type: trojan
-- alterId: 0
-  cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 21|德国 006
-  network: tcp
-  port: 1234
-  server: 141.95.65.9
-  servername: supervpn.super.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-- encryption: none
-  name: 21|德国 007
-  network: tcp
-  packet-encoding: xudp
-  port: 8080
-  server: 91.107.252.109
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: fb37aadd-b957-4462-8738-80c55d77a52d
-- encryption: none
-  name: 21|德国 008
-  network: xhttp
-  packet-encoding: xudp
-  port: 7000
-  server: 89.106.64.15
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 0a715ede-593a-4018-8406-66e2c3b1169c
-  xhttp-opts:
-    host: a12.crowsvpn.shop
-    mode: stream-one
-    path: /
-    x-padding-bytes: 100-1000
 - cipher: chacha20-ietf-poly1305
   name: 24|DE-209.46.102.22-0135
   password: 1hhrqrokj3ag

@@ -1,4 +1,17 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 3|RU 🇷🇺 | @Raydikalx | 00FA89
+  network: ws
+  port: '2086'
+  server: admin.arzonhost.ir
+  tls: false
+  type: vmess
+  uuid: 7d93e992-48cf-42d4-84f8-75768e815a4c
+  ws-opts:
+    headers:
+      Host: admin.arzonhost.ir
+    path: /
 - flow: xtls-rprx-vision
   name: 3|🇳🇱🇷🇺 NL - Russia
   network: tcp
@@ -23,54 +36,6 @@ proxies:
   tls: false
   type: vless
   uuid: 8e6acce9-8b56-7190-d491-7d84f8189e26
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: 3|🆔soskeynet 🔒 VL-RAW- 🇷🇺 RU 126...
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: D0FqzTuVSzCF8IcFo64SFIpMsaGV47LW3el2GCCVoFY
-    short-id: c1a7e9b4711d5f60
-  server: 193.168.46.180
-  servername: rruu.persik.host
-  tls: false
-  type: vless
-  uuid: 393cf343-b4a2-42bc-b726-a8b8de887b7b
-- name: 3|🆔v2ray1_ng 🔓 VL-WS-N/A 🇷🇺 RU 1...
-  network: ws
-  port: 4100
-  server: 5.129.194.34
-  tls: false
-  type: vless
-  uuid: af325624-e28d-44fd-a8a7-058a439d128f
-  ws-opts:
-    path: '%2Fv1'
-- alpn:
-  - h2
-  grpc-opts:
-    grpc-service-name: ajv
-  name: 11|Russia_None_trojan_1125
-  network: grpc
-  password: HaZLUMP__fVySm7WzxFcnk7Nm8-f1CCK
-  port: 443
-  server: ru-5b7331.atlanta-games.com
-  skip-cert-verify: true
-  sni: ru-5b7331.atlanta-games.com
-  type: trojan
-  udp: true
-- alpn:
-  - h2
-  client-fingerprint: edge
-  grpc-opts:
-    grpc-service-name: ajv
-  name: 11|Russia_None_trojan_1143
-  network: grpc
-  password: HaZLUMP__fVySm7WzxFcnk7Nm8-f1CCK
-  port: '443'
-  server: ru-5b7331.atlanta-games.com
-  skip-cert-verify: false
-  type: trojan
-  udp: true
 - name: 13|🇷🇺 RU 1 → tg@nicevpn123
   password: 71ab3866-4c8b-4a0b-a4bd-a64f110afe0b
   port: 443
@@ -935,7 +900,7 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
-- name: 14,16|рҹҮрҹҮә|RU|@wxgqlfx|229
+- name: 14,16|🇺|RU|@wxgqlfx|229
   password: 921db318-1694-4408-9cc7-c93df39f7f8e
   port: 443
   server: ru-i-2.monkeyisland.xyz
@@ -972,96 +937,20 @@ proxies:
   sni: 004282c1-sbdj40-sdlngq-1n7jq.ru.z7zi.com
   type: trojan
   udp: false
-- client-fingerprint: edge
-  encryption: none
-  flow: xtls-rprx-vision
+- alterId: 0
+  cipher: auto
   name: 21|俄罗斯 001
-  network: tcp
-  packet-encoding: xudp
-  port: 22231
-  server: 85.234.114.53
-  servername: r1.mizulina.top
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-  xudp: true
-- client-fingerprint: edge
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 21|俄罗斯 002
-  network: tcp
-  packet-encoding: xudp
-  port: 443
-  server: 85.234.114.53
-  servername: r1.mizulina.top
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-  xudp: true
-- encryption: none
-  http-opts:
-    headers:
-      Host:
-      - fn.fifapes.monster
-    path:
-    - /
-  name: 21|俄罗斯 004
-  network: http
-  packet-encoding: xudp
-  port: 2090
-  server: fn.fifapes.monster
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
-- encryption: none
-  http-opts:
-    headers:
-      Host:
-      - it.fifapes.monster
-    path:
-    - /
-  name: 21|俄罗斯 005
-  network: http
-  packet-encoding: xudp
-  port: 29148
-  server: it.fifapes.monster
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
-- encryption: none
-  name: 21|俄罗斯 006
-  network: tcp
-  packet-encoding: xudp
-  port: 8888
-  server: 45.13.119.219
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: eb77be10-9d9e-527b-a78d-8caaf58992d6
-- encryption: none
-  name: 21|俄罗斯 007
   network: ws
-  packet-encoding: xudp
-  port: 443
-  server: 193.233.199.59
-  servername: wstg.datasynctrue.online
-  skip-cert-verify: false
+  port: 33026
+  server: socks5tobefree.ydns.eu
+  skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: ff0b6ba8-bed0-4c4d-bbc9-23af47582615
+  type: vmess
+  uuid: 06053cbe-a299-4934-bca6-0707e1416dc7
   ws-opts:
     headers:
-      Host: wstg.datasynctrue.online
-    path: /api/connect
+      Host: socks5tobefree.ydns.eu
+    path: /dangerzone
 - alterId: 0
   cipher: auto
   name: 24|🇺RU-45.11.92.100-0021
