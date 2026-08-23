@@ -700,7 +700,6 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   name: 11,14,22,24,28,36|🇰HK香港3
-  network: tcp
   password: d5517dedef425597a1b9fdbaad99544e
   port: 25982
   server: 43.198.107.164
@@ -710,7 +709,6 @@ proxies:
   type: trojan
   udp: true
 - name: 11,14,22,24,28|🇭🇰 香港4|@ripaojiedian
-  network: tcp
   password: BxceQaOe
   port: 1103
   server: 16.163.147.33
@@ -718,7 +716,6 @@ proxies:
   sni: t.me%2Fripaojiedian
   type: trojan
 - name: 11,14,22,24,28|🇭🇰 香港5|@ripaojiedian
-  network: tcp
   password: BxceQaOe
   port: 1103
   server: 18.163.180.82
@@ -726,7 +723,6 @@ proxies:
   sni: t.me%2Fripaojiedian
   type: trojan
 - name: 11,14,22,24,28|🇯🇵 日本|@ripaojiedian
-  network: tcp
   password: BxceQaOe
   port: 16691
   server: 18.163.180.82
@@ -735,7 +731,6 @@ proxies:
   type: trojan
 - alterId: 0
   name: '11,14,22,24,28,36|JP #1'
-  network: tcp
   password: d5517dedef425597a1b9fdbaad99544e
   port: 40136
   server: 16.162.109.29
@@ -746,7 +741,6 @@ proxies:
   udp: true
 - alterId: 0
   name: 11,14,22,24,28,36|🇵JP日本3
-  network: tcp
   password: d5517dedef425597a1b9fdbaad99544e
   port: 18617
   server: 18.163.126.92
@@ -756,7 +750,6 @@ proxies:
   type: trojan
   udp: true
 - name: 11,14,22,24,28|🇸🇬 新加坡2|@ripaojiedian
-  network: tcp
   password: d5517dedef425597a1b9fdbaad99544e
   port: 32434
   server: 16.162.192.182
@@ -764,7 +757,6 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
 - name: 11,14,22,24,28|🇸🇬 新加坡3|@ripaojiedian
-  network: tcp
   password: BxceQaOe
   port: 32434
   server: 43.199.155.17
@@ -773,7 +765,6 @@ proxies:
   type: trojan
 - alterId: 0
   name: 11,14,22,24,28,36|🇺🇸US美国10
-  network: tcp
   password: d5517dedef425597a1b9fdbaad99544e
   port: 34039
   server: 43.199.143.104
@@ -783,10 +774,39 @@ proxies:
   type: trojan
   udp: true
 - name: 11,14,22,24,28|🇺🇸 美国3|@ripaojiedian
-  network: tcp
   password: BxceQaOe
   port: 39024
   server: 43.199.155.17
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '11,22|12|香港3|@ripaojiedian #1'
+  network: ws
+  port: '443'
+  server: 3j41E63Msh9TgXvR.v.3dns.vip
+  servername: 3j41E63Msh9TgXvR.v.3dns.vip
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: 3j41E63Msh9TgXvR.v.3dns.vip
+    path: /ws-vmess
+- name: '11,14,22,24,29|日本|@ripaojiedian #1'
+  network: tcp
+  password: BxceQaOe
+  port: 44002
+  server: 43.199.64.95
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: '11,14,22,24,29|香港5|@ripaojiedian #1'
+  network: tcp
+  password: BxceQaOe
+  port: 1103
+  server: 18.163.79.248
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -898,50 +918,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: '14,22,24,29|香港5|@ripaojiedian #1'
-  network: tcp
-  password: BxceQaOe
-  port: 1103
-  server: 18.163.79.248
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: '14,22,24,29|香港4|@ripaojiedian #1'
-  network: tcp
-  password: BxceQaOe
-  port: 1103
-  server: 35.78.187.63
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: '22|12|香港2|@ripaojiedian #1'
-  network: ws
-  port: '443'
-  server: t245hvl0VMtlXR4v.v.3dns.vip
-  servername: t245hvl0VMtlXR4v.v.3dns.vip
-  tls: true
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: t245hvl0VMtlXR4v.v.3dns.vip
-    path: /ws-vmess
-- alterId: 0
-  cipher: auto
-  name: '22|12|香港3|@ripaojiedian #1'
-  network: ws
-  port: '443'
-  server: 3j41E63Msh9TgXvR.v.3dns.vip
-  servername: 3j41E63Msh9TgXvR.v.3dns.vip
-  tls: true
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: 3j41E63Msh9TgXvR.v.3dns.vip
-    path: /ws-vmess
 - alterId: 0
   cipher: auto
   name: 24|HK-18.167.20.169-0037
