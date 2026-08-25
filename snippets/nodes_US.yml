@@ -5,12 +5,15 @@ proxies:
   port: 443
   server: 63.180.254.10
   type: ss
-- cipher: aes-256-cfb
-  name: 11,24|🇧GB-13.135.252.176-0425
-  password: amazonskr05
-  port: 443
-  server: 13.135.252.176
-  type: ss
+- client-fingerprint: chrome
+  name: 11,21,24|🇸US-157.254.38.210-0426
+  network: tcp
+  password: a126f35c-e832-4115-8593-b723ade3f7be
+  port: 20085
+  server: kkvlvvq-a.catcat321.com
+  skip-cert-verify: false
+  sni: hk.catxstar.com
+  type: trojan
   udp: true
 - client-fingerprint: chrome
   name: 11,21,24|🇸US-157.254.38.210-0489
@@ -22,38 +25,22 @@ proxies:
   sni: hk.catxstar.com
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  name: 11,21,24|🇸US-157.254.38.210-0426
-  network: tcp
-  password: a126f35c-e832-4115-8593-b723ade3f7be
-  port: 20085
-  server: kkvlvvq-a.catcat321.com
+- alterId: 0
+  cipher: auto
+  name: 11,24|🇸US-23.158.72.131-2271
+  network: ws
+  port: 443
+  server: us-23.hihu.net
+  servername: us-23.hihu.net
   skip-cert-verify: false
-  sni: hk.catxstar.com
-  type: trojan
+  tls: true
+  type: vmess
   udp: true
-- alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 11|United States_San Gabriel_vmes...
-  network: http
-  port: 50269
-  server: 103.179.142.158
-  tls: false
-  type: vmess
-  uuid: 84f238f6-28eb-48df-a7bc-a9bd9cf4abba
-- alterId: 0
-  cipher: auto
-  name: 11|United States_Buffalo_vmess_11...
-  network: none
-  port: 15311
-  server: 107.173.254.27
-  tls: false
-  type: vmess
-  uuid: ad78d02b-873f-4cff-8d4a-673f53d6ce0f
+  uuid: e9674560-9d1a-11f1-b333-205c6d5f5d78
+  ws-opts:
+    headers:
+      Host: chatbuzzteam.ir
+    path: /ayve3q7z
 - name: 13|🇺🇸 US 1 → tg@nicevpn123
   password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1
   port: 443
@@ -23309,14 +23296,6 @@ proxies:
   sni: us-lala.zodport.com
   type: trojan
   udp: true
-- name: '14,22,24,28,29|美国3|@ripaojiedian #1'
-  network: tcp
-  password: BxceQaOe
-  port: 10418
-  server: 18.163.118.157
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
 - alpn:
   - h3
   - h2
@@ -23976,6 +23955,22 @@ proxies:
     headers:
       Host: pcs-referenced-camera-concerns.trycloudflare.com
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
+- name: 21,24|🇰HK-18.166.63.119-0485
+  network: tcp
+  password: BxceQaOe
+  port: 2944
+  server: 18.166.63.119
+  skip-cert-verify: false
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: 21,24|🇬SG-13.214.209.40-0486
+  network: tcp
+  password: BxceQaOe
+  port: 3878
+  server: 13.214.209.40
+  skip-cert-verify: false
+  sni: t.me%252Fripaojiedian
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 21,24|KZ-38.107.234.57-0193
@@ -30494,21 +30489,6 @@ proxies:
   port: 2375
   server: ak1342.free.www.outline.network
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 24|🇸US-23.158.72.131-2271
-  network: ws
-  port: 443
-  server: us-23.hihu.net
-  servername: us-23.hihu.net
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: e9674560-9d1a-11f1-b333-205c6d5f5d78
-  ws-opts:
-    headers:
-      Host: chatbuzzteam.ir
-    path: /ayve3q7z
 - name: 24|🇺🇸US-157.254.38.210-2283
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   port: 20041
@@ -36859,7 +36839,7 @@ proxies:
     path: /path/243535322906
 - alterId: 0
   cipher: auto
-  name: '36|US #1'
+  name: 36|US
   network: tcp
   port: 8881
   server: 209.97.154.241
@@ -36882,7 +36862,7 @@ proxies:
       host: xc163.meiziba5566.com
     path: /837279ad9b4a
 - alterId: 0
-  name: '36|US #2'
+  name: '36|US #1'
   password: humanity
   port: 443
   server: 104.16.174.101
