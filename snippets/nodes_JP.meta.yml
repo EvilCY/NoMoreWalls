@@ -6,7 +6,9 @@ proxies:
   server: 18.181.83.46
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
+  tls: true
   type: trojan
+  udp: true
 - name: '11,14,22,24,28,29|香港5|@ripaojiedian #1'
   network: tcp
   password: BxceQaOe
@@ -15,6 +17,16 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
+- client-fingerprint: chrome
+  name: 11|Japan_None_trojan_1132
+  network: raw
+  password: 6519a715da174466
+  port: '101'
+  server: jcnp178.pacemakere.com
+  skip-cert-verify: false
+  tls: true
+  type: trojan
+  udp: true
 - cipher: aes-256-cfb
   name: 13|🇯🇵 JP 1 → tg@nicevpn123
   password: amazonskr05
@@ -683,111 +695,6 @@ proxies:
     headers:
       Host: tw1bQiWSE4x.fzbqfrse.xyz
     path: /video/GQ2qE5Us9g
-- name: 21,24|🇯🇵JP-18.183.103.86-0484
-  network: tcp
-  password: BxceQaOe
-  port: 4117
-  server: 18.183.103.86
-  skip-cert-verify: false
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: 21,24|🇵JP-18.183.103.86-0487
-  network: tcp
-  password: BxceQaOe
-  port: 41421
-  server: 18.183.103.86
-  skip-cert-verify: false
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- client-fingerprint: ios
-  name: 21|日本 003
-  network: ws
-  port: 443
-  server: 146.56.173.99
-  servername: edgood.889876.xyz
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: edgood.889876.xyz
-    path: /?ed=2048
-- name: 21|日本 004
-  network: tcp
-  port: 10000
-  server: 14.137.238.40
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
-- flow: ''
-  name: 21|日本 005
-  network: tcp
-  port: 18233
-  server: 14.137.244.44
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 93cc16ff-60bd-4a48-8b4b-0ca1ce5f22ba
-- name: 21|日本 006
-  network: tcp
-  port: 443
-  server: 137.220.221.179
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-- name: 21|日本 007
-  network: ws
-  port: 443
-  server: 151.101.109.223
-  servername: pan1.global.ssl.fastly.net
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: c8541f02-4efd-401d-beb7-dc017b12ee94
-  ws-opts:
-    headers:
-      Host: pan1.global.ssl.fastly.net
-    path: /
-- client-fingerprint: chrome
-  name: 21|日本 008
-  network: xhttp
-  port: 2087
-  server: 91.193.58.201
-  servername: shop.xn--fjqyexxidv2znoe9rk1n8ada0532g6usa.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: cd09dc43-a55a-4f9d-920a-9e91e11e26fc
-- alterId: 0
-  cipher: auto
-  name: 21,24|🇵JP-40.74.100.129-0376
-  network: ws
-  port: 443
-  server: fullaccesstojapannetsubnode1.azurewebsites.net
-  servername: fullaccesstojapannetsubnode1.azurewebsites.net
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 274f11c6-f69b-40b9-8966-f39e06e97be7
-  ws-opts:
-    headers:
-      Host: fullaccesstojapannetsubnode1.azurewebsites.net
-    path: /ws
 - alterId: 0
   cipher: auto
   name: 21,24|🇩MD-103.35.188.226-0678
@@ -804,172 +711,22 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 21,24|🇭PH-61.245.11.60-0764
-  network: ws
-  port: 80
-  server: 3h-philippines1.09vpn.com
-  skip-cert-verify: false
-  tls: false
+  name: 21|日本 002
+  network: tcp
+  port: 49499
+  server: 139.162.125.97
+  skip-cert-verify: true
   type: vmess
-  uuid: 3fd35fa2-a0c6-4f0c-8310-c3c03a268155
-  ws-opts:
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    path: /vmess/
+  uuid: 3ce1d2e3-0e1b-4b00-921b-fcc0f8abe1f6
 - alterId: 0
   cipher: auto
-  name: 21,24|🇷KR-146.56.162.25-0797
-  network: ws
-  port: 443
-  server: 146.56.162.25
-  skip-cert-verify: false
-  tls: true
+  name: 21|日本 003
+  network: tcp
+  port: 14935
+  server: 167.179.111.237
+  skip-cert-verify: true
   type: vmess
-  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
-  ws-opts:
-    headers:
-      Host: lg30.cfcdn3.xyz
-    path: /ray
-- alterId: 0
-  cipher: auto
-  name: 21,24|🇯🇵JP-52.196.144.61-0958
-  network: ws
-  port: 3331
-  server: f1f3227.u1.glados-config.net
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
-  ws-opts:
-    headers:
-      Host: f1f3227.u1.glados-config.net
-    path: /s/f1f3227.fm.apple.com:111548
-- alterId: 0
-  cipher: auto
-  name: 21,24|🇸🇬SG-54.255.208.142-0962
-  network: ws
-  port: 5001
-  server: steam.dnspro.icu
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: d4c93465-70f0-30d5-ab5f-a8881f3f49e7
-  ws-opts:
-    headers:
-      Host: steam.dnspro.icu
-    path: /iso
-- alterId: 0
-  cipher: auto
-  name: 21,24|🇸🇬SG-54.255.208.142-0965
-  network: ws
-  port: 9111
-  server: st-1.dnspro.icu
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 13ef5f2c-d002-36a2-9e96-a13d5e3ae03b
-  ws-opts:
-    headers:
-      Host: st-1.dnspro.icu
-    path: /iso
-- alterId: 0
-  cipher: auto
-  name: 21,24|🇸🇬SG-54.255.208.142-0966
-  network: ws
-  port: 5100
-  server: st-2.dnspro.icu
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 13ef5f2c-d002-36a2-9e96-a13d5e3ae03b
-  ws-opts:
-    headers:
-      Host: st-2.dnspro.icu
-    path: /iso
-- alterId: 0
-  cipher: auto
-  name: 21,24|🇬SG-54.255.208.142-0968
-  network: ws
-  port: 20025
-  server: sh-cn-1.dnspro.icu
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 13ef5f2c-d002-36a2-9e96-a13d5e3ae03b
-  ws-opts:
-    headers:
-      Host: sh-cn-1.dnspro.icu
-    path: /iso
-- alterId: 0
-  cipher: auto
-  name: 21,24|🇰🇷KR-146.56.47.1-0990
-  network: ws
-  port: 443
-  server: kr-arm2.018999.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: e98fc1a0-9c52-4091-91a5-c159b0aa274e
-  ws-opts:
-    headers:
-      Host: kr-arm2.018999.xyz
-    path: /e98fc1a0-9c52-4091-91a5-c159b0aa274e
-- alterId: 0
-  cipher: auto
-  name: 21,24|🇯🇵JP-172.105.223.136-1059
-  network: ws
-  port: 443
-  server: 172.105.223.136
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 8964ea79-1422-460e-b6e2-a16e83a22aab
-  ws-opts:
-    headers:
-      Host: www.microsoft.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 21,24|🇵JP-52.196.144.61-1060
-  network: ws
-  port: 3331
-  server: f1f3227.v1.glados-config.net
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
-  ws-opts:
-    headers:
-      Host: f1f3227.v1.glados-config.net
-    path: /s/f1f3227.fm.apple.com:111548
-- alterId: 0
-  cipher: auto
-  name: 21,24|🇵JP-124.156.225.184-1090
-  network: ws
-  port: 443
-  server: 124.156.225.184
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 7a010436-7b4a-4e65-ade4-844ba074ad58
-  ws-opts:
-    headers:
-      Host: azjp.pengui.xyz
-    path: /
-- alterId: 4
-  cipher: auto
-  name: 21,24|🇸🇬SG-202.61.141.130-1096
-  network: ws
-  port: 443
-  server: 202.61.141.130
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
-  ws-opts:
-    headers:
-      Host: 202.61.141.130
-    path: /
+  uuid: e961894f-8e90-472f-98d3-09402e4be453
 - name: 24|JP-155.248.172.87-0055
   password: f033bd38-fe03-4705-883c-e45654eaa082
   port: 28443
@@ -1016,6 +773,20 @@ proxies:
   port: 443
   server: 149.22.87.241
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 24|🇯🇵JP-140.83.57.20-0169
+  network: ws
+  port: 13118
+  server: 140.83.57.20
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 1f01e389-fbcb-494c-e46a-210ec36329c2
+  ws-opts:
+    headers:
+      Host: sg.11160321.de5.net
+    path: /
 - name: 24|🇯🇵JP-104.238.160.138-0226
   password: 7f0dcf73-bc93-4038-b683-c4728f06e7d7
   port: 443
@@ -1224,6 +995,36 @@ proxies:
   port: 8097
   server: 172.104.123.158
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 24|🇵JP-40.74.100.129-0376
+  network: ws
+  port: 443
+  server: fullaccesstojapannetsubnode1.azurewebsites.net
+  servername: fullaccesstojapannetsubnode1.azurewebsites.net
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 274f11c6-f69b-40b9-8966-f39e06e97be7
+  ws-opts:
+    headers:
+      Host: fullaccesstojapannetsubnode1.azurewebsites.net
+    path: /ws
+- alterId: 0
+  cipher: auto
+  name: 24|🇵JP-168.138.203.232-0405
+  network: ws
+  port: 443
+  server: suzhihan.eu.org
+  servername: suzhihan.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 0b873cff-11ab-4716-c41a-04f886135091
+  ws-opts:
+    headers:
+      Host: suzhihan.eu.org
+    path: /roewesu
 - cipher: aes-256-gcm
   name: 24|🇯🇵JP-20.210.122.21-0438
   password: 233blog.com
@@ -1241,6 +1042,160 @@ proxies:
   type: vmess
   uuid: 927094d3-d678-4763-8591-e240d0bcae87
   ws-opts:
+    path: /
+- name: 24|🇯🇵JP-18.183.103.86-0484
+  password: BxceQaOe
+  port: 4117
+  server: 18.183.103.86
+  skip-cert-verify: false
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: 24|🇵JP-18.183.103.86-0487
+  password: BxceQaOe
+  port: 41421
+  server: 18.183.103.86
+  skip-cert-verify: false
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- alterId: 64
+  cipher: auto
+  name: 24|JP-152.70.103.195-0881
+  network: ws
+  port: 37206
+  server: 152.70.103.195
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: ff3fd078-99b5-46b6-8cd5-d48ff271719a
+  ws-opts:
+    headers:
+      Host: 152.70.103.195
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24|🇯🇵JP-138.2.52.176-0884
+  network: ws
+  port: 24429
+  server: 138.2.52.176
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 8d5ca59e-8e3e-4a10-e023-53cfcd87a72b
+  ws-opts:
+    headers:
+      Host: 138.2.52.176
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24|🇵JP-48.218.91.217-1427
+  network: ws
+  port: 36801
+  server: cindy50.ceoiii.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: a6ab6513-6ec3-327f-a068-b89fe72954b8
+  ws-opts:
+    headers:
+      Host: ajax.microsoft.com
+    path: /hls/cctv5phd.m3u8
+- alterId: 0
+  cipher: auto
+  name: 24|🇯🇵JP-52.196.144.61-0958
+  network: ws
+  port: 3331
+  server: f1f3227.u1.glados-config.net
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+  ws-opts:
+    headers:
+      Host: f1f3227.u1.glados-config.net
+    path: /s/f1f3227.fm.apple.com:111548
+- alterId: 0
+  cipher: auto
+  name: 24|🇯🇵JP-140.83.35.62-0991
+  network: ws
+  port: 443
+  server: jp-amd1.018999.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 65e619e7-0bf1-4f5b-a390-5735b01a3713
+  ws-opts:
+    headers:
+      Host: jp-amd1.018999.xyz
+    path: /65e619e7-0bf1-4f5b-a390-5735b01a3713
+- alterId: 0
+  cipher: auto
+  name: 24|🇯🇵JP-161.129.34.102-1013
+  network: ws
+  port: 443
+  server: 161.129.34.102
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: ec736482-173e-3eff-9114-b49df8056e7d
+  ws-opts:
+    headers:
+      Host: 161.129.34.102
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24|🇯🇵JP-172.105.223.136-1059
+  network: ws
+  port: 443
+  server: 172.105.223.136
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 8964ea79-1422-460e-b6e2-a16e83a22aab
+  ws-opts:
+    headers:
+      Host: www.microsoft.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24|🇵JP-52.196.144.61-1060
+  network: ws
+  port: 3331
+  server: f1f3227.v1.glados-config.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+  ws-opts:
+    headers:
+      Host: f1f3227.v1.glados-config.net
+    path: /s/f1f3227.fm.apple.com:111548
+- alterId: 0
+  cipher: auto
+  name: 24|🇵JP-147.78.244.7-1087
+  network: ws
+  port: 443
+  server: 147.78.244.7
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: c2907a9a-5024-41fd-be3c-30885585e3ef
+  ws-opts:
+    headers:
+      Host: virmach.qweasdzxc.gq
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 24|🇵JP-124.156.225.184-1090
+  network: ws
+  port: 443
+  server: 124.156.225.184
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 7a010436-7b4a-4e65-ade4-844ba074ad58
+  ws-opts:
+    headers:
+      Host: azjp.pengui.xyz
     path: /
 - alterId: 0
   cipher: auto
