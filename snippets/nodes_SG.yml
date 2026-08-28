@@ -1,4 +1,12 @@
 proxies:
+- name: '11,14,21,24,28,29|新加坡3|@ripaojiedian #2'
+  network: tcp
+  password: BxceQaOe
+  port: 41421
+  server: 54.255.201.71
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
 - name: 13|🇸🇬 SG 1 → tg@nicevpn123
   password: ISpGyFeSDr06
   port: 17418
@@ -164,7 +172,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: 13,19,24|🇬SG-54.251.168.143-5114
+  name: 13,19,24|🇬SG-54.251.168.143-5144
   password: amazonskr05
   port: 443
   server: 54.251.168.143
@@ -336,16 +344,26 @@ proxies:
   server: 139.59.119.251
   type: ss
   udp: true
-- name: '14,28,29|新加坡3|@ripaojiedian #2'
+- alterId: 0
+  cipher: auto
+  name: '14|A - 🇸🇬 SG 06 TG: @nodpai'
   network: tcp
-  password: BxceQaOe
-  port: 41421
-  server: 54.255.201.71
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
+  port: 6004
+  server: gtm-sg-cc54q7d1q01.365cloud0285.com
+  tls: false
+  type: vmess
+  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
+- alterId: 2
+  cipher: auto
+  name: '14|B - 🇸🇬 SG 16 TG: @nodpai'
+  network: tcp
+  port: 30845
+  server: v45.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - cipher: aes-256-cfb
-  name: 19,24|🇸🇬SG-13.213.46.196-5112
+  name: 19,24|🇸🇬SG-13.213.46.196-5142
   password: amazonskr05
   port: 443
   server: 13.213.46.196
@@ -405,21 +423,7 @@ proxies:
     path: /sg1
 - alterId: 0
   cipher: auto
-  name: 21,24|🇸🇬SG-139.180.211.152-0262
-  network: ws
-  port: 18063
-  server: 139.180.211.152
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 0d4f647b-0d96-4820-9de8-0186156185dd
-  ws-opts:
-    headers:
-      Host: m.zoom.us
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 21,24|🇬SG-139.162.9.79-0181
+  name: 21,24|🇬SG-139.162.9.79-0201
   network: ws
   port: 443
   server: v2ray1.udpgw.com
@@ -433,7 +437,21 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 21|新加坡 003
+  name: 21,24|🇬SG-139.180.211.152-0297
+  network: ws
+  port: 18063
+  server: 139.180.211.152
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 0d4f647b-0d96-4820-9de8-0186156185dd
+  ws-opts:
+    headers:
+      Host: m.zoom.us
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 21|新加坡 004
   network: tcp
   port: 47630
   server: 43.228.126.187
@@ -442,7 +460,7 @@ proxies:
   uuid: 9e5c6ebf-35f9-49a3-9f12-cba2b7cdbccb
 - alterId: 0
   cipher: auto
-  name: 21,24|SG-139.180.211.152-0686
+  name: 21,24|SG-139.180.211.152-0719
   network: ws
   port: 16737
   server: 139.180.211.152
@@ -456,7 +474,7 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: 21,24|SG-104.248.148.147-0881
+  name: 21,24|SG-104.248.148.147-0914
   network: ws
   port: 21888
   server: 104.248.148.147
@@ -470,7 +488,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 21,24|🇸🇬SG-139.99.61.154-0887
+  name: 21,24|🇸🇬SG-139.99.61.154-0920
   network: ws
   port: 80
   server: 139.99.61.154
@@ -484,7 +502,7 @@ proxies:
     path: /vmess
 - alterId: 4
   cipher: auto
-  name: 21,24|🇬SG-103.253.26.134-1034
+  name: 21,24|🇬SG-103.253.26.134-1066
   network: ws
   port: 443
   server: 103.253.26.134
@@ -498,7 +516,7 @@ proxies:
     path: /ws
 - alterId: 4
   cipher: auto
-  name: 21,24|🇸🇬SG-103.253.26.20-1038
+  name: 21,24|🇸🇬SG-103.253.26.20-1070
   network: ws
   port: 443
   server: 103.253.26.20
@@ -510,34 +528,26 @@ proxies:
     headers:
       Host: zecjk.com
     path: /ws
-- alterId: 0
-  cipher: auto
-  name: 24|SG-8.219.146.138-0003
-  network: ws
-  port: 23205
-  server: 8.219.146.138
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 442094b1-a2c2-422f-f3cf-7fc0bb134666
-  ws-opts:
-    headers:
-      Host: 8.219.146.138
-    path: /wss
-- name: 24|🇬SG-68.183.184.107-0182
+- name: 24|🇬SG-68.183.184.107-0202
   password: 1a205ae2-be41-42b0-abdf-795a2ea3df4e
   port: 443
   server: t1.gitvpn.eu.org
   skip-cert-verify: false
   type: trojan
-- name: 24|🇬SG-20.24.44.110-0229
+- cipher: chacha20-ietf
+  name: 24|🇬SG-103.36.91.32-0206
+  password: asd123456
+  port: 8388
+  server: 103.36.91.32
+  type: ss
+- name: 24|🇬SG-20.24.44.110-0251
   password: f033bd38-fe03-4705-883c-e45654eaa082
   port: 28443
   server: 20.24.44.110
   skip-cert-verify: false
   sni: www.download.windowsupdate1.com
   type: trojan
-- name: 24|🇸🇬SG-91.243.81.42-0230
+- name: 24|🇸🇬SG-91.243.81.42-0252
   password: f033bd38-fe03-4705-883c-e45654eaa082
   port: 28443
   server: 91.243.81.42
@@ -546,7 +556,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 24|🇬SG-8.214.33.158-0246
+  name: 24|🇬SG-8.214.33.158-0285
   network: ws
   port: 80
   server: 8.214.33.158
@@ -558,7 +568,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24|🇸🇬SG-139.99.61.53-0324
+  name: 24|🇸🇬SG-139.99.61.53-0342
   network: ws
   port: 80
   server: 139.99.61.53
@@ -571,7 +581,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 24|🇸🇬SG-15.235.147.186-0410
+  name: 24|🇬SG-15.235.147.186-0428
   network: ws
   port: 80
   server: 15.235.147.186
@@ -584,7 +594,7 @@ proxies:
     path: /sshkit/Ertusg86/635014638c264/
 - alterId: 0
   cipher: auto
-  name: 24|🇬SG-174.138.25.187-1303
+  name: 24|🇬SG-174.138.25.187-1349
   network: ws
   port: 8880
   server: 174.138.25.187
@@ -596,7 +606,7 @@ proxies:
     path: /hkaa0
 - alterId: 0
   cipher: auto
-  name: 24|🇬SG-139.99.61.53-1616
+  name: 24|🇬SG-139.99.61.53-1644
   network: ws
   port: 80
   server: 139.99.61.53
@@ -610,7 +620,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 24|🇬SG-202.79.172.53-1759
+  name: 24|🇬SG-202.79.172.53-1787
   network: ws
   port: 443
   server: 202.79.172.53
@@ -622,7 +632,7 @@ proxies:
     path: /path/220128071100
 - alterId: 0
   cipher: auto
-  name: 24|🇬SG-143.198.219.182-1775
+  name: 24|🇬SG-143.198.219.182-1803
   network: ws
   port: 80
   server: 143.198.219.182
@@ -634,7 +644,7 @@ proxies:
     path: /v2ray
 - alterId: 0
   cipher: auto
-  name: 24|🇬SG-146.190.82.241-1812
+  name: 24|🇬SG-146.190.82.241-1840
   network: ws
   port: 80
   server: 146.190.82.241
@@ -645,14 +655,14 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-256-cfb
-  name: 24|🇬SG-54.179.221.54-1837
+  name: 24|🇬SG-54.179.221.54-1865
   password: amazonskr05
   port: 443
   server: 54.179.221.54
   type: ss
 - alterId: 0
   cipher: auto
-  name: 24|🇸🇬SG-18.143.123.35-1848
+  name: 24|🇸🇬SG-18.143.123.35-1876
   network: ws
   port: 80
   server: 18.143.123.35
@@ -663,20 +673,20 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-256-cfb
-  name: 24|🇬SG-13.215.191.190-1875
+  name: 24|🇬SG-13.215.191.190-1903
   password: amazonskr05
   port: 443
   server: 13.215.191.190
   type: ss
 - cipher: aes-256-cfb
-  name: 24|🇬SG-13.215.177.216-2025
+  name: 24|🇬SG-13.215.177.216-2053
   password: amazonskr05
   port: 443
   server: 13.215.177.216
   type: ss
 - alterId: 0
   cipher: auto
-  name: 24|🇬SG-178.128.61.149-2042
+  name: 24|🇬SG-178.128.61.149-2070
   network: ws
   port: 50328
   server: 178.128.61.149
@@ -687,14 +697,14 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-256-cfb
-  name: 24|🇬SG-13.215.49.89-2170
+  name: 24|🇬SG-13.215.49.89-2198
   password: amazonskr05
   port: 443
   server: 13.215.49.89
   type: ss
 - alterId: 0
   cipher: auto
-  name: 24|🇸🇬SG-146.190.82.241-2225
+  name: 24|🇸🇬SG-146.190.82.241-2253
   network: ws
   port: 443
   server: 146.190.82.241
@@ -705,14 +715,14 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-256-cfb
-  name: 24|🇬SG-13.214.212.124-2465
+  name: 24|🇬SG-13.214.212.124-2495
   password: amazonskr05
   port: 443
   server: 13.214.212.124
   type: ss
 - alterId: 0
   cipher: auto
-  name: 24|🇸🇬SG-129.150.44.64-2839
+  name: 24|🇸🇬SG-129.150.44.64-2869
   network: ws
   port: 46075
   server: 129.150.44.64
@@ -724,7 +734,7 @@ proxies:
     path: /jhndsmlanj11223
 - alterId: 0
   cipher: auto
-  name: 24|🇬SG-15.235.184.36-2549
+  name: 24|🇬SG-15.235.184.36-2579
   network: ws
   port: 80
   server: 15.235.184.36
@@ -736,7 +746,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 24|🇬SG-139.99.61.154-2554
+  name: 24|🇬SG-139.99.61.154-2584
   network: ws
   port: 80
   server: 139.99.61.154
@@ -748,7 +758,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 24|🇬SG-109.123.237.41-2581
+  name: 24|🇬SG-109.123.237.41-2611
   network: ws
   port: 80
   server: 109.123.237.41
@@ -759,12 +769,12 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-256-cfb
-  name: 24|🇬SG-13.215.173.2-2625
+  name: 24|🇬SG-13.215.173.2-2655
   password: amazonskr05
   port: 443
   server: 13.215.173.2
   type: ss
-- name: 24|🇬SG-103.172.116.196-2653
+- name: 24|🇬SG-103.172.116.196-2683
   password: 0c6a3341e8d5ab17
   port: 3389
   server: 103.172.116.196
@@ -772,7 +782,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 24|🇬SG-109.123.237.41-2743
+  name: 24|🇬SG-109.123.237.41-2773
   network: ws
   port: 80
   server: 109.123.237.41
@@ -783,14 +793,14 @@ proxies:
   ws-opts:
     path: /fastssh
 - cipher: aes-256-cfb
-  name: 24|🇸🇬SG-13.215.163.54-2756
+  name: 24|🇸🇬SG-13.215.163.54-2786
   password: amazonskr05
   port: 443
   server: 13.215.163.54
   type: ss
 - alterId: 0
   cipher: auto
-  name: 24|🇬SG-15.235.192.196-2835
+  name: 24|🇬SG-15.235.192.196-2865
   network: ws
   port: 80
   server: 15.235.192.196
@@ -802,7 +812,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 24|🇬SG-157.230.36.235-2836
+  name: 24|🇬SG-157.230.36.235-2866
   network: ws
   port: 80
   server: 157.230.36.235
@@ -812,27 +822,27 @@ proxies:
   uuid: b484d576-b3e3-4ac5-b108-88a300dfe7e3
   ws-opts:
     path: /graphql
-- name: 24|🇸🇬SG-168.138.189.17-2857
+- name: 24|🇸🇬SG-168.138.189.17-2887
   password: 750a29bf-0a40-437f-b120-38de74ae7eaf
   port: 28443
   server: 168.138.189.17
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
-  name: 24|🇬SG-13.229.105.31-2883
+  name: 24|🇬SG-13.229.105.31-2913
   password: amazonskr05
   port: 443
   server: 13.229.105.31
   type: ss
 - cipher: aes-256-cfb
-  name: 24|🇸🇬SG-3.0.148.195-2930
+  name: 24|🇸🇬SG-3.0.148.195-2960
   password: amazonskr05
   port: 443
   server: 3.0.148.195
   type: ss
 - alterId: 64
   cipher: auto
-  name: 24|🇬SG-202.79.171.157-3004
+  name: 24|🇬SG-202.79.171.157-3034
   network: ws
   port: 443
   server: 202.79.171.157
@@ -843,62 +853,62 @@ proxies:
   ws-opts:
     path: /path/243535322906
 - cipher: aes-256-cfb
-  name: 24|🇬SG-54.254.199.122-3074
+  name: 24|🇬SG-54.254.199.122-3104
   password: amazonskr05
   port: 443
   server: 54.254.199.122
   type: ss
 - cipher: aes-256-cfb
-  name: 24|🇬SG-13.215.174.243-3369
+  name: 24|🇬SG-13.215.174.243-3399
   password: amazonskr05
   port: 443
   server: 13.215.174.243
   type: ss
-- name: 24|🇸🇬SG-139.162.45.139-3409
+- name: 24|🇸🇬SG-139.162.45.139-3439
   password: FLpONjB2Lb
   port: 443
   server: 139.162.45.139
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
-  name: 24|🇬SG-13.250.46.178-4098
+  name: 24|🇬SG-13.250.46.178-4128
   password: amazonskr05
   port: 443
   server: 13.250.46.178
   type: ss
 - cipher: aes-256-cfb
-  name: 24|🇬SG-13.213.2.160-4302
+  name: 24|🇬SG-13.213.2.160-4332
   password: amazonskr05
   port: 443
   server: 13.213.2.160
   type: ss
 - cipher: aes-256-cfb
-  name: 24|🇸🇬SG-18.141.183.204-4162
+  name: 24|🇸🇬SG-18.141.183.204-4192
   password: amazonskr05
   port: 443
   server: 18.141.183.204
   type: ss
 - cipher: aes-256-cfb
-  name: 24|🇬SG-13.250.54.18-4197
+  name: 24|🇬SG-13.250.54.18-4227
   password: amazonskr05
   port: 443
   server: 13.250.54.18
   type: ss
 - cipher: aes-256-cfb
-  name: 24|🇸🇬SG-13.215.200.86-4221
+  name: 24|🇸🇬SG-13.215.200.86-4251
   password: amazonskr05
   port: 443
   server: 13.215.200.86
   type: ss
 - cipher: aes-256-cfb
-  name: 24|🇬SG-18.142.183.235-4241
+  name: 24|🇬SG-18.142.183.235-4271
   password: amazonskr05
   port: 443
   server: 18.142.183.235
   type: ss
 - alterId: 0
   cipher: auto
-  name: 24|🇸🇬SG-8.219.58.58-4565
+  name: 24|🇸🇬SG-8.219.58.58-4595
   network: ws
   port: 443
   server: 8.219.58.58
@@ -910,7 +920,7 @@ proxies:
     path: /ray
 - alterId: 0
   cipher: auto
-  name: 24|🇬SG-180.215.130.123-4889
+  name: 24|🇬SG-180.215.130.123-4919
   network: ws
   port: 46452
   server: 180.215.130.123
@@ -922,7 +932,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24|🇬SG-139.99.61.53-4901
+  name: 24|🇬SG-139.99.61.53-4931
   network: ws
   port: 80
   server: 139.99.61.53
@@ -934,7 +944,7 @@ proxies:
     path: /
 - alterId: 4
   cipher: auto
-  name: 24|🇬SG-159.223.32.230-5085
+  name: 24|🇬SG-159.223.32.230-5115
   network: ws
   port: 8080
   server: 159.223.32.230
@@ -945,80 +955,80 @@ proxies:
   ws-opts:
     path: /cctv13/hd.m3u8
 - cipher: aes-256-gcm
-  name: 24|SG-139.99.68.21-5588
+  name: 24|SG-139.99.68.21-5618
   password: zDNVedRFPQexG9v
   port: 6379
   server: 139.99.68.21
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇬SG-81.90.189.41-5589
+  name: 24|🇬SG-81.90.189.41-5619
   password: G!yBwPWH3Vao
   port: 801
   server: 81.90.189.41
   type: ss
-- name: 24|🇬SG-172.104.51.247-5592
+- name: 24|🇬SG-172.104.51.247-5622
   password: affae2e0-e84b-11ec-b09f-1239d0255272
   port: 443
   server: trojan1.udpgw.com
   skip-cert-verify: false
   type: trojan
-- name: 24|🇬SG-18.141.8.87-5593
+- name: 24|🇬SG-18.141.8.87-5623
   password: iyinglong
   port: 443
   server: 18.141.8.87
   skip-cert-verify: false
   type: trojan
-- name: 24|🇸🇬SG-128.199.185.211-5594
+- name: 24|🇸🇬SG-128.199.185.211-5624
   password: 973ef350-f6a5-11ec-9274-1239d0255272
   port: 443
   server: trojan2.udpgw.com
   skip-cert-verify: false
   type: trojan
-- name: 24|🇸🇬SG-18.140.67.76-5595
+- name: 24|🇸🇬SG-18.140.67.76-5625
   password: iyinglong
   port: 443
   server: 18.140.67.76
   skip-cert-verify: false
   type: trojan
-- name: 24|🇸🇬SG-103.253.24.212-5597
+- name: 24|🇸🇬SG-103.253.24.212-5627
   password: 71086710-33eb-11ed-adce-1239d0255272
   port: 443
   server: sg1-trojan.bonds.id
   skip-cert-verify: false
   type: trojan
-- name: 24|🇸🇬SG-172.104.177.105-5599
+- name: 24|🇸🇬SG-172.104.177.105-5629
   password: 08964210-e7b8-11ec-95aa-1239d0255272
   port: 443
   server: w12.udpgw.com
   skip-cert-verify: false
   type: trojan
-- name: 24|🇸🇬SG-13.213.69.245-5688
+- name: 24|🇸🇬SG-13.213.69.245-5718
   password: iyinglong
   port: 443
   server: 13.213.69.245
   skip-cert-verify: false
   type: trojan
-- name: 24|🇸🇬SG-5.44.249.43-5716
+- name: 24|🇸🇬SG-5.44.249.43-5746
   password: cd39f62aed7b90f6
   port: 3389
   server: 5.44.249.43
   skip-cert-verify: false
   type: trojan
-- name: 24|🇬SG-5.44.249.43-5718
+- name: 24|🇬SG-5.44.249.43-5748
   password: 6f0a9d0fa39d65fa
   port: 3389
   server: 5.44.249.43
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-cfb
-  name: 24|🇬SG-165.232.169.142-6840
+  name: 24|🇬SG-165.232.169.142-6870
   password: 1e5111699c45496da84112f35db665c4
   port: 29332
   server: 165.232.169.142
   type: ss
 - alterId: 0
   cipher: auto
-  name: 24|🇬SG-8.219.120.168-6917
+  name: 24|🇬SG-8.219.120.168-6947
   network: ws
   port: 443
   server: 8.219.120.168
@@ -1031,7 +1041,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 24|🇬SG-8.219.214.221-6918
+  name: 24|🇬SG-8.219.214.221-6948
   network: ws
   port: 443
   server: 8.219.214.221
@@ -1044,7 +1054,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 24|🇸🇬SG-8.219.211.222-6921
+  name: 24|🇸🇬SG-8.219.211.222-6951
   network: ws
   port: 443
   server: 8.219.211.222
@@ -1056,68 +1066,68 @@ proxies:
   ws-opts:
     path: /vmess
 - cipher: aes-256-cfb
-  name: 24|🇬SG-103.172.116.6-6944
+  name: 24|🇬SG-103.172.116.6-6974
   password: UWZQeLRWnkqgkseq
   port: 9032
   server: 103.172.116.6
   type: ss
 - cipher: aes-256-cfb
-  name: 24|🇸🇬SG-103.172.116.5-6945
+  name: 24|🇸🇬SG-103.172.116.5-6975
   password: aLpQtfEZe445QyHk
   port: 9098
   server: 103.172.116.5
   type: ss
 - cipher: aes-256-cfb
-  name: 24|🇸🇬SG-103.172.116.5-6946
+  name: 24|🇸🇬SG-103.172.116.5-6976
   password: y9VURyNzJWNRYEGQ
   port: 9008
   server: 103.172.116.5
   type: ss
 - cipher: aes-256-cfb
-  name: 24|🇸🇬SG-103.172.116.6-6947
+  name: 24|🇸🇬SG-103.172.116.6-6977
   password: HSZuyJQcWe8dxNdF
   port: 9043
   server: 103.172.116.6
   type: ss
 - cipher: aes-256-cfb
-  name: 24|🇸🇬SG-103.172.116.6-6948
+  name: 24|🇸🇬SG-103.172.116.6-6978
   password: 9XwYyZsK8SNzQDtY
   port: 9059
   server: 103.172.116.6
   type: ss
 - cipher: aes-256-cfb
-  name: 24|🇬SG-103.172.116.6-6949
+  name: 24|🇬SG-103.172.116.6-6979
   password: KnJGad3FqTvjqbaX
   port: 9014
   server: 103.172.116.6
   type: ss
 - cipher: aes-256-cfb
-  name: 24|🇸🇬SG-103.172.116.5-6950
+  name: 24|🇸🇬SG-103.172.116.5-6980
   password: c3NtHJ5ujV2tGDfj
   port: 9084
   server: 103.172.116.5
   type: ss
 - cipher: aes-256-cfb
-  name: 24|🇸🇬SG-103.172.116.5-6951
+  name: 24|🇸🇬SG-103.172.116.5-6981
   password: UWZQeLRWnkqgkseq
   port: 9032
   server: 103.172.116.5
   type: ss
 - cipher: aes-256-cfb
-  name: 24|🇸🇬SG-103.172.116.5-6952
+  name: 24|🇸🇬SG-103.172.116.5-6982
   password: QWDDvVE9npNurQfA
   port: 9026
   server: 103.172.116.5
   type: ss
 - cipher: aes-256-cfb
-  name: 24|🇸🇬SG-103.172.116.6-6953
+  name: 24|🇸🇬SG-103.172.116.6-6983
   password: M3t2ZEQcMGRWBjRa
   port: 9011
   server: 103.172.116.6
   type: ss
 - alterId: 0
   cipher: auto
-  name: 24|🇬SG-8.222.222.64-7187
+  name: 24|🇬SG-8.222.222.64-7217
   network: ws
   port: 80
   server: 8.222.222.64
@@ -1129,7 +1139,7 @@ proxies:
     path: /2TokGE9A/
 - alterId: 0
   cipher: auto
-  name: 24|🇬SG-8.222.138.164-7188
+  name: 24|🇬SG-8.222.138.164-7218
   network: ws
   port: 80
   server: 8.222.138.164
@@ -1141,7 +1151,7 @@ proxies:
     path: /2TokGE9A/
 - alterId: 0
   cipher: auto
-  name: 24|🇸🇬SG-8.219.150.28-7189
+  name: 24|🇸🇬SG-8.219.150.28-7219
   network: ws
   port: 443
   server: 8.219.150.28
@@ -1153,7 +1163,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24|🇸🇬SG-8.219.123.35-7190
+  name: 24|🇸🇬SG-8.219.123.35-7220
   network: ws
   port: 80
   server: 8.219.123.35
@@ -1164,109 +1174,109 @@ proxies:
   ws-opts:
     path: /2TokGE9A/
 - cipher: aes-256-cfb
-  name: 24|🇸🇬SG-54.254.129.246-7213
+  name: 24|🇸🇬SG-54.254.129.246-7243
   password: amazonskr05
   port: 443
   server: 54.254.129.246
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇬SG-51.79.161.232-7229
+  name: 24|🇬SG-51.79.161.232-7259
   password: 4Hub2f9JyhECyAq2Opm0NS
   port: 443
   server: 51.79.161.232
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇸SG-217.197.161.138-7438
+  name: 24|🇸SG-217.197.161.138-7468
   password: G!yBwPWH3Vao
   port: 805
   server: 217.197.161.138
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇬SG-217.197.161.138-7439
+  name: 24|🇬SG-217.197.161.138-7469
   password: G!yBwPWH3Vao
   port: 811
   server: 217.197.161.138
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇸🇬SG-217.197.161.138-7440
+  name: 24|🇸🇬SG-217.197.161.138-7470
   password: G!yBwPWH3Vao
   port: 807
   server: 217.197.161.138
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇸🇬SG-217.197.161.138-7441
+  name: 24|🇸🇬SG-217.197.161.138-7471
   password: G!yBwPWH3Vao
   port: 802
   server: 217.197.161.138
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇸🇬SG-217.197.161.138-7442
+  name: 24|🇸🇬SG-217.197.161.138-7472
   password: G!yBwPWH3Vao
   port: 800
   server: 217.197.161.138
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇬SG-217.197.161.138-7443
+  name: 24|🇬SG-217.197.161.138-7473
   password: G!yBwPWH3Vao
   port: 804
   server: 217.197.161.138
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇬SG-217.197.161.136-7444
+  name: 24|🇬SG-217.197.161.136-7474
   password: G!yBwPWH3Vao
   port: 810
   server: 217.197.161.136
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇸🇬SG-217.197.161.136-7445
+  name: 24|🇸🇬SG-217.197.161.136-7475
   password: G!yBwPWH3Vao
   port: 803
   server: 217.197.161.136
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇸🇬SG-217.197.161.136-7446
+  name: 24|🇸🇬SG-217.197.161.136-7476
   password: G!yBwPWH3Vao
   port: 806
   server: 217.197.161.136
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇸🇬SG-217.197.161.136-7447
+  name: 24|🇸🇬SG-217.197.161.136-7477
   password: G!yBwPWH3Vao
   port: 808
   server: 217.197.161.136
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇸🇬SG-217.197.161.136-7448
+  name: 24|🇸🇬SG-217.197.161.136-7478
   password: G!yBwPWH3Vao
   port: 805
   server: 217.197.161.136
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇸🇬SG-217.197.161.136-7449
+  name: 24|🇸🇬SG-217.197.161.136-7479
   password: G!yBwPWH3Vao
   port: 809
   server: 217.197.161.136
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇸🇬SG-217.197.161.136-7450
+  name: 24|🇸🇬SG-217.197.161.136-7480
   password: G!yBwPWH3Vao
   port: 801
   server: 217.197.161.136
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇸🇬SG-217.197.161.136-7451
+  name: 24|🇸🇬SG-217.197.161.136-7481
   password: G!yBwPWH3Vao
   port: 807
   server: 217.197.161.136
   type: ss
-- name: 24|SG-15.235.197.4-7822
+- name: 24|SG-15.235.197.4-7852
   password: 16bcc187-a1a0-4b8a-8b69-627f38b7cc0d
   port: 80
   server: 15.235.197.4
   skip-cert-verify: false
   sni: 15.235.197.4
   type: trojan
-- name: 24|🇸🇬SG-15.235.197.4-7824
+- name: 24|🇸🇬SG-15.235.197.4-7854
   password: 16bcc187-a1a0-4b8a-8b69-627f38b7cc0d
   port: 80
   server: 15.235.197.4
@@ -1274,20 +1284,20 @@ proxies:
   sni: getandroid.com
   type: trojan
 - cipher: aes-256-cfb
-  name: 24|🇬SG-13.213.44.183-7916
+  name: 24|🇬SG-13.213.44.183-7946
   password: amazonskr05
   port: 443
   server: 13.213.44.183
   type: ss
 - cipher: aes-256-cfb
-  name: 24|🇸🇬SG-13.212.199.120-7917
+  name: 24|🇸🇬SG-13.212.199.120-7947
   password: amazonskr05
   port: 443
   server: 13.212.199.120
   type: ss
 - alterId: 64
   cipher: auto
-  name: 24|🇬SG-118.107.46.173-7922
+  name: 24|🇬SG-118.107.46.173-7952
   network: ws
   port: 443
   server: 118.107.46.173
@@ -1298,13 +1308,13 @@ proxies:
   ws-opts:
     path: /path/080712342310
 - cipher: aes-256-cfb
-  name: 24|SG-103.172.116.79-8131
+  name: 24|SG-103.172.116.79-8161
   password: KBGjZYcy4SyRShmA
   port: 9044
   server: 103.172.116.79
   type: ss
 - alterId: 0
-  name: '36|SG #2'
+  name: '36|SG #1'
   password: BxceQaOe
   port: 41421
   server: 3.115.9.60
