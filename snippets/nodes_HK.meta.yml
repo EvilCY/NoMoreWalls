@@ -8,14 +8,14 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '11,14,24,28|🇯🇵 日本|@ripaojiedian #1'
+- name: '11,14,28|🇯🇵 日本|@ripaojiedian #1'
   password: BxceQaOe
   port: 9408
   server: 18.163.11126
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: '11,14,21,24,28,29|美国3|@ripaojiedian #2'
+- name: '11,14,21,28,29|美国3|@ripaojiedian #2'
   network: tcp
   password: BxceQaOe
   port: 1431
@@ -33,7 +33,7 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: '11,14,21,24,29|日本|@ripaojiedian #2'
+- name: '11,14,21,29|日本|@ripaojiedian #2'
   network: tcp
   password: BxceQaOe
   port: 9408
@@ -41,119 +41,39 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- cipher: aes-128-gcm
-  name: 13|🇭🇰 HK 1 → tg@nicevpn123
-  password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: ''
-    mode: websocket
-    mux: false
-    path: ''
-    skip-cert-verify: true
-    tls: false
-  port: 443
-  server: 1.65.223.223
-  type: ss
-  udp: true
-- name: 13|🇭🇰 HK 10 → tg@nicevpn123
-  password: 507ca9a0-2d8e-4b65-8763-82dfbdbd599f
-  port: 443
-  server: chjs.lydurlclub.top
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 13|🇭🇰 HK 11 → tg@nicevpn123
-  network: ws
-  port: 80
-  server: 182.16.1.194
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-opts:
-    headers:
-      Host: 182.16.1.194
-    path: /opt/video/images
-- name: 13|🇭🇰 HK 2 → tg@nicevpn123
-  password: 2b38ff78-05bb-4261-895c-440950cf0dbd
-  port: 42030
-  server: 210.17.253.122
-  skip-cert-verify: true
-  sni: hkg01.service.nahidacloud.top
-  type: trojan
-  udp: true
-- cipher: aes-128-gcm
-  name: 13|🇭🇰 HK 3 → tg@nicevpn123
-  password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: ''
-    mode: websocket
-    mux: false
-    path: ''
-    skip-cert-verify: true
-    tls: false
-  port: 443
-  server: 1.65.139.54
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 13|🇭🇰 HK 4 → tg@nicevpn123
-  network: ws
-  port: 55576
-  server: 202.81.231.30
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 14|🇭🇰HK_3|1.2MB/s
+  port: 15003
+  server: nian.001.url111.kcloud02.top
+  servername: www.cloudflare.com
   skip-cert-verify: true
   tls: true
-  type: vmess
-  udp: true
-  uuid: 32daf1ff-4b08-4c22-b997-1c24ff34c43a
-  ws-opts:
-    path: /
-- alterId: 32
-  cipher: auto
-  name: 13|🇭🇰 HK 8 → tg@nicevpn123
-  network: ws
-  port: 80
-  server: hrgdvpn.flycdnedc55.vip
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-opts:
-    headers:
-      Host: hrgdvpn.flycdnedc55.vip
-    path: /opt/video/images
-- alterId: 0
-  cipher: auto
-  name: 13|🇭🇰 HK 6 → tg@nicevpn123
-  network: ws
-  port: 80
-  server: 182.16.1.194
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
-  ws-opts:
-    path: /opt/video/images
-- name: 13|🇭🇰 HK 9 → tg@nicevpn123
-  password: 507ca9a0-2d8e-4b65-8763-82dfbdbd599f
-  port: 443
-  server: hkjs.lydurlclub.top
-  skip-cert-verify: true
-  type: trojan
-  udp: true
+  type: vless
+  uuid: 399c4c9b-27e1-37f1-9dce-22ccc2727a86
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: update
+  name: 14|🇭🇰HK_2|4.8MB/s
+  network: grpc
+  port: 10127
+  server: hk2-r.link-t7.com
+  servername: s0.awsstatic.com
+  tls: true
+  type: vless
+  uuid: 690FC783-6CE9-4137-8559-40DBA8EDAD31
 - name: 14,15| HK
   password: f4927789e58bcd24b6f6
   port: 10444
   server: h.zz2233.cyou
   sni: h.zz2233.cyou
+  tls: false
+  type: hysteria2
+- name: 14|🇭🇰HK_1|4.5MB/s
+  password: dd1fd40d-7e11-43ee-8460-94a4170ccdc8
+  port: 1443
+  server: hk.mjhy2.com
+  skip-cert-verify: true
   tls: false
   type: hysteria2
 - name: 14,15|未命名
@@ -165,734 +85,18 @@ proxies:
   tls: false
   type: hysteria2
 - alterId: 0
-  cipher: auto
-  name: 24|HK-175.29.23.105-0027
-  network: ws
-  port: 10012
-  server: sg5-midpoint.kejibear.net
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 7bcd50fc-414b-3e8a-a1a2-d81bd7fc4586
-  ws-opts:
-    headers:
-      Host: sg5-midpoint.kejibear.net
-    path: /video
-- alterId: 0
-  cipher: auto
-  name: 24|🇭🇰HK-18.167.20.169-0030
-  network: ws
-  port: 8080
-  server: 18.167.20.169
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e1f97064-adcd-40d3-91a0-3f0bea035fca
-  ws-opts:
-    headers:
-      Host: 18.167.20.169
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 24|🇭🇰HK-18.167.20.169-0031
-  network: ws
-  port: 8080
-  server: 18.167.20.169
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e1f97064-adcd-40d3-91a0-3f0bea035fca
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 24|🇰HK-147.139.7.71-0063
-  network: ws
-  port: 888
-  server: 147.139.7.71
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 08d6729d-830e-4341-df76-62d3d12e75e8
-  ws-opts:
-    path: /
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇭🇰HK-95.40.120.162-0183
-  password: ljqdalu13..
-  port: 8319
-  server: 95.40.120.162
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 24|🇭🇰HK-47.244.120.197-0190
-  network: ws
-  port: 44867
-  server: 47.244.120.197
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 24|🇰HK-43.198.31.209-0225
-  network: ws
-  port: 24042
-  server: 43.198.31.209
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: d0af86dd-1987-4921-f220-a1c17cec32ce
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 24|🇰HK-47.244.120.197-0244
-  network: ws
-  port: 36703
-  server: 47.244.120.197
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 24|🇭🇰HK-156.245.232.239-0247
-  network: ws
-  port: 35043
-  server: 156.245.232.239
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
-  ws-opts:
-    path: /
-- name: 24|🇰HK-18.162.207.193-0261
-  password: f033bd38-fe03-4705-883c-e45654eaa082
-  port: 28443
-  server: 18.162.207.193
-  skip-cert-verify: false
-  sni: www.download.windowsupdate1.com
-  type: trojan
-- name: 24|🇭🇰HK-18.162.56.130-0262
-  password: f033bd38-fe03-4705-883c-e45654eaa082
-  port: 443
-  server: 18.162.56.130
-  skip-cert-verify: false
-  sni: www.download.windowsupdate1.com
-  type: trojan
-- cipher: aes-128-gcm
-  name: 24|🇭🇰HK-45.149.92.75-0279
-  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
-  port: 10937
-  server: mn.qwer-cn.org
-  type: ss
-- cipher: aes-128-gcm
-  name: 24|🇭🇰HK-45.149.92.75-0280
-  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
-  port: 10934
-  server: mn.qwer-cn.org
-  type: ss
-- cipher: aes-128-gcm
-  name: 24|🇭🇰HK-45.149.92.75-0285
-  password: adbc1e8c-184e-4d02-b0e0-f0cb70b377df
-  port: 10927
-  server: mn.qwer-cn.org
-  type: ss
-- name: 24|🇭🇰HK-185.244.208.13-0291
-  password: ND91608427
-  port: 443
-  server: ace-starling.rooster465.autos
-  skip-cert-verify: false
-  sni: ace-starling.rooster465.autos
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 24|🇭🇰HK-20.239.145.115-0442
-  network: ws
-  port: 443
-  server: 20.239.145.115
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 4893ed3e-8a5f-48dc-aa1e-bbc2e67a065b
-  ws-opts:
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 24|🇭🇰HK-165.154.244.100-0474
-  network: ws
-  port: 443
-  server: 165.154.244.100
-  skip-cert-verify: false
+  cipher: chacha20-poly1305
+  name: 36|HK
+  network: tcp
+  port: 9527
+  server: 43.132.192.16
+  skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a
-  ws-opts:
-    path: /
+  uuid: ae862e1d-3b8c-443a-027b-37c6c69ef43c
 - alterId: 0
   cipher: auto
-  name: 24|🇰HK-104.208.96.44-1149
-  network: ws
-  port: 80
-  server: 104.208.96.44
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 80e94af6-e42a-4dbc-8f4b-c5f99bf97d3d
-  ws-opts:
-    path: /zh-cn/download
-- cipher: aes-256-gcm
-  name: 24|🇰HK-212.192.13.91-1408
-  password: 7e1dd4c55bf85da5
-  port: 30129
-  server: 212.192.13.91
-  type: ss
-- name: 24|🇰HK-103.135.103.229-2189
-  password: 265f092f-418b-30c9-a479-4800fd44dd19mielink
-  port: 443
-  server: 103.135.103.229
-  skip-cert-verify: false
-  type: trojan
-- name: 24|🇰HK-43.154.172.79-2253
-  password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27
-  port: 10102
-  server: 43.154.172.79
-  skip-cert-verify: false
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 24|🇰HK-202.64.124.252-2293
-  network: ws
-  port: 80
-  server: 202.64.124.252
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 58d4ad2b-82d5-4847-b88c-889de4d38c19
-  ws-opts:
-    path: /
-- name: 24|🇰HK-103.103.245.125-2313
-  password: a70b39d1-62ea-4d9e-b681-9c5408352234
-  port: 50418
-  server: 103.103.245.125
-  skip-cert-verify: false
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇰HK-148.66.56.99-2914
-  password: G!yBwPWH3Vao
-  port: 802
-  server: 148.66.56.99
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇰HK-148.66.56.99-2919
-  password: G!yBwPWH3Vao
-  port: 800
-  server: 148.66.56.99
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇭🇰HK-148.66.56.99-2929
-  password: G!yBwPWH3Vao
-  port: 804
-  server: 148.66.56.99
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇰HK-148.66.56.99-2943
-  password: G!yBwPWH3Vao
-  port: 807
-  server: 148.66.56.99
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇭🇰HK-148.66.56.99-2951
-  password: G!yBwPWH3Vao
-  port: 806
-  server: 148.66.56.99
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇭🇰HK-148.66.56.99-2956
-  password: G!yBwPWH3Vao
-  port: 808
-  server: 148.66.56.99
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇰HK-148.66.56.99-2974
-  password: G!yBwPWH3Vao
-  port: 805
-  server: 148.66.56.99
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇰HK-148.66.56.99-3058
-  password: G!yBwPWH3Vao
-  port: 801
-  server: 148.66.56.99
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇰HK-148.66.56.99-3078
-  password: G!yBwPWH3Vao
-  port: 810
-  server: 148.66.56.99
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇰HK-148.66.56.99-3107
-  password: G!yBwPWH3Vao
-  port: 803
-  server: 148.66.56.99
-  type: ss
-- name: 24|🇰HK-45.11.104.94-3120
-  password: d4e41ff772c7fd45
-  port: 3389
-  server: 45.11.104.94
-  skip-cert-verify: false
-  sni: sbank.ir
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 24|🇭🇰HK-185.14.47.240-3180
-  network: ws
-  port: 2086
-  server: 185.14.47.240
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 7a8a19ec-94f5-4262-edbe-a308e1d0c66d
-  ws-opts:
-    path: /aries
-- alterId: 0
-  cipher: auto
-  name: 24|🇰HK-188.116.22.171-3200
-  network: ws
-  port: 443
-  server: 188.116.22.171
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 4b0289b0-a363-4cb5-8ca0-f0e7f92d75f3
-  ws-opts:
-    path: /vmess
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇰HK-148.66.56.99-3208
-  password: G!yBwPWH3Vao
-  port: 812
-  server: 148.66.56.99
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇰HK-148.66.56.99-3209
-  password: G!yBwPWH3Vao
-  port: 811
-  server: 148.66.56.99
-  type: ss
-- name: 24|🇰HK-210.0.158.220-3272
-  password: 750a29bf-0a40-437f-b120-38de74ae7eaf
-  port: 28443
-  server: 210.0.158.220
-  skip-cert-verify: false
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇰HK-148.66.56.99-3388
-  password: G!yBwPWH3Vao
-  port: 809
-  server: 148.66.56.99
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 24|🇰HK-188.116.22.171-4206
-  network: ws
-  port: 80
-  server: 188.116.22.171
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 3c6c608d-68c0-4782-86ac-98ea1ada3a25
-  ws-opts:
-    path: /vmess
-- cipher: chacha20-ietf-poly1305
-  name: 24|🇭🇰HK-148.66.56.98-4499
-  password: G!yBwPWH3Vao
-  port: 805
-  server: 148.66.56.98
-  type: ss
-- name: 24|🇰HK-8.217.195.68-4624
-  password: 8A613C3A-E24E-18C2-4B5E-CB104D83C88C
-  port: 20015
-  server: oss-cn-guangzhou.westdatacloud.xyz
-  skip-cert-verify: false
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 24|🇭🇰HK-18.167.121.42-4648
-  network: ws
-  port: 35781
-  server: 18.167.121.42
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: d3978bd0-dade-4181-81de-bae3091339f1
-  ws-opts:
-    path: /hk.wumaojichang.ml
-- name: 24|🇰HK-20.187.85.198-4720
-  password: b26e31e5-eac1-45b0-9069-83830bd69521
-  port: 443
-  server: 20.187.85.198
-  skip-cert-verify: false
-  sni: hkt.iamnotagoodman.com
-  type: trojan
-- name: 24|🇭🇰HK-104.208.100.101-4721
-  password: ceaea123-1b4b-469b-8358-bcd5f5529305
-  port: 443
-  server: 104.208.100.101
-  skip-cert-verify: false
-  sni: uk.liangyuandian.top
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 24|🇭🇰HK-20.239.179.251-4921
-  network: ws
-  port: 50045
-  server: 20.239.179.251
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 1617e875-e377-4e4f-85ef-dcf9e5e10df7
-  ws-opts:
-    path: /
-- cipher: chacha20-ietf
-  name: 24|🇰HK-43.255.119.21-5223
-  obfs: tls1.2_ticket_auth
-  obfs-param: 99e144391.douyin.com
-  password: di15PV
-  port: 39514
-  protocol: auth_aes128_md5
-  protocol-param: ''
-  server: api.meituan88.com
-  type: ssr
-- cipher: chacha20-ietf
-  name: 24|🇭🇰HK-43.255.119.21-5224
-  obfs: tls1.2_ticket_auth
-  obfs-param: 665203463.douyin.com
-  password: di15PV
-  port: 19623
-  protocol: auth_aes128_md5
-  protocol-param: ''
-  server: api.meituan88.com
-  type: ssr
-- cipher: aes-256-cfb
-  name: 24|🇭🇰HK-43.255.119.21-5225
-  obfs: tls1.2_ticket_auth
-  obfs-param: 87c276924.douyin.com
-  password: di15PV
-  port: 2103
-  protocol: auth_aes128_md5
-  protocol-param: ''
-  server: api.meituan88.com
-  type: ssr
-- cipher: chacha20-ietf
-  name: 24|🇭🇰HK-43.255.119.21-5226
-  obfs: tls1.2_ticket_auth
-  obfs-param: 99e144391.douyin.com
-  password: di15PV
-  port: 37398
-  protocol: auth_aes128_md5
-  protocol-param: ''
-  server: api.meituan88.com
-  type: ssr
-- cipher: rc4-md5
-  name: 24|🇭🇰HK-43.255.119.21-5227
-  obfs: tls1.2_ticket_auth
-  obfs-param: 665203463.douyin.com
-  password: di15PV
-  port: 28150
-  protocol: auth_aes128_md5
-  protocol-param: ''
-  server: api.meituan88.com
-  type: ssr
-- cipher: chacha20-ietf
-  name: 24|🇭🇰HK-43.255.119.21-5228
-  obfs: plain
-  obfs-param: 99e144391.douyin.com
-  password: di15PV
-  port: 2205
-  protocol: auth_aes128_md5
-  protocol-param: ''
-  server: api.meituan88.com
-  type: ssr
-- cipher: chacha20-ietf
-  name: 24|🇭🇰HK-43.255.119.21-5229
-  obfs: tls1.2_ticket_auth
-  obfs-param: 99e144391.douyin.com
-  password: di15PV
-  port: 59382
-  protocol: auth_aes128_md5
-  protocol-param: ''
-  server: api.meituan88.com
-  type: ssr
-- cipher: chacha20-ietf
-  name: 24|🇭🇰HK-43.255.119.21-5230
-  obfs: plain
-  obfs-param: 14e116735.douyin.com
-  password: di15PV
-  port: 14048
-  protocol: auth_aes128_md5
-  protocol-param: ''
-  server: api.meituan88.com
-  type: ssr
-- cipher: aes-256-cfb
-  name: 24|🇭🇰HK-43.255.119.21-5231
-  obfs: tls1.2_ticket_auth
-  obfs-param: 87c276924.douyin.com
-  password: di15PV
-  port: 2105
-  protocol: auth_aes128_md5
-  protocol-param: ''
-  server: api.meituan88.com
-  type: ssr
-- cipher: rc4-md5
-  name: 24|🇭🇰HK-43.255.119.21-5232
-  obfs: plain
-  obfs-param: 87c276924.douyin.com
-  password: di15PV
-  port: 53465
-  protocol: auth_aes128_md5
-  protocol-param: ''
-  server: api.meituan88.com
-  type: ssr
-- cipher: rc4-md5
-  name: 24|🇭🇰HK-43.255.119.21-5233
-  obfs: plain
-  obfs-param: 99e144391.douyin.com
-  password: di15PV
-  port: 32414
-  protocol: auth_aes128_md5
-  protocol-param: ''
-  server: api.meituan88.com
-  type: ssr
-- cipher: rc4-md5
-  name: 24|🇭🇰HK-43.255.119.21-5234
-  obfs: tls1.2_ticket_auth
-  obfs-param: 99e144391.douyin.com
-  password: di15PV
-  port: 41155
-  protocol: auth_aes128_md5
-  protocol-param: ''
-  server: api.meituan88.com
-  type: ssr
-- cipher: rc4-md5
-  name: 24|🇭🇰HK-43.255.119.21-5235
-  obfs: tls1.2_ticket_auth
-  obfs-param: 99e144391.douyin.com
-  password: di15PV
-  port: 17348
-  protocol: auth_aes128_md5
-  protocol-param: ''
-  server: api.meituan88.com
-  type: ssr
-- cipher: chacha20-ietf
-  name: 24|🇭🇰HK-43.255.119.21-5236
-  obfs: tls1.2_ticket_auth
-  obfs-param: 99e144391.douyin.com
-  password: di15PV
-  port: 59430
-  protocol: auth_aes128_md5
-  protocol-param: ''
-  server: api.meituan88.com
-  type: ssr
-- cipher: chacha20-ietf
-  name: 24|🇭🇰HK-43.255.119.21-5237
-  obfs: plain
-  obfs-param: 87c276924.douyin.com
-  password: di15PV
-  port: 2112
-  protocol: auth_aes128_md5
-  protocol-param: ''
-  server: api.meituan88.com
-  type: ssr
-- cipher: chacha20-ietf
-  name: 24|🇭🇰HK-43.255.119.21-5238
-  obfs: tls1.2_ticket_auth
-  obfs-param: 665203463.douyin.com
-  password: di15PV
-  port: 60213
-  protocol: auth_aes128_md5
-  protocol-param: ''
-  server: api.meituan88.com
-  type: ssr
-- cipher: aes-256-cfb
-  name: 24|🇭🇰HK-43.255.119.21-5239
-  obfs: tls1.2_ticket_auth
-  obfs-param: 87c276924.douyin.com
-  password: di15PV
-  port: 2107
-  protocol: auth_aes128_md5
-  protocol-param: ''
-  server: api.meituan88.com
-  type: ssr
-- cipher: chacha20-ietf
-  name: 24|🇭🇰HK-43.255.119.21-5240
-  obfs: plain
-  obfs-param: 665203463.douyin.com
-  password: di15PV
-  port: 41181
-  protocol: auth_aes128_md5
-  protocol-param: ''
-  server: api.meituan88.com
-  type: ssr
-- cipher: chacha20-ietf
-  name: 24|🇭🇰HK-43.255.119.21-5241
-  obfs: tls1.2_ticket_auth
-  obfs-param: 665203463.douyin.com
-  password: di15PV
-  port: 7004
-  protocol: auth_aes128_md5
-  protocol-param: ''
-  server: api.meituan88.com
-  type: ssr
-- alterId: 0
-  cipher: auto
-  name: 24|🇭🇰HK-47.244.120.197-5242
-  network: ws
-  port: 44867
-  server: 47.244.120.197
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-  ws-opts:
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 24|🇭🇰HK-47.244.120.197-5243
-  network: ws
-  port: 36703
-  server: 47.244.120.197
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
-  ws-opts:
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 24|🇰HK-8.218.140.111-5651
-  network: ws
-  port: 34193
-  server: 8.218.140.111
-  servername: 8.218.140.111
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 544bf832-7df2-4ce1-aafc-9258a28b7cfb
-  ws-opts:
-    path: /hk
-- name: 24|🇰HK-43.198.12.229-6935
-  password: ae7cc604-d970-4200-9a9b-eb45087b4fc1
-  port: 28443
-  server: 43.198.12.229
-  skip-cert-verify: false
-  sni: mzy.hruqoaw.cn
-  type: trojan
-- name: 24|🇰HK-119.247.119.212-6941
-  password: bb5b1337-fa9e-4e00-b8c6-1110e626171d
-  port: 443
-  server: 119.247.119.212
-  skip-cert-verify: false
-  sni: sg-01.tiktokcdn.top
-  type: trojan
-- name: 24|🇭🇰HK-219.76.13.181-6942
-  password: SyOxpKxC8u5jgNa3DCZ34y3D9CRenFcaABpYATEeqI2RSaXD76zS8YF0Owl3lZ
-  port: 443
-  server: 219.76.13.181
-  skip-cert-verify: false
-  sni: arbettp.freetrade.link
-  type: trojan
-- name: 24|🇭🇰HK-219.76.13.180-6943
-  password: F3CSSRxD8uljgF73IAn34C3aE9wSqAzZDp5ZOCpxDBRacNYelOYayKTe826Xy0
-  port: 443
-  server: 219.76.13.180
-  skip-cert-verify: false
-  sni: stutter.freetrade.link
-  type: trojan
-- name: 24|🇭🇰HK-47.52.101.237-6945
-  password: ZRYSly2IRuFlgpZCaep3Ey3DDXqTDczO04aeC8F36OjaYSCABnA573wN8xxK9S
-  port: 443
-  server: 47.52.101.237
-  skip-cert-verify: false
-  sni: httah.freetrade.link
-  type: trojan
-- name: 24|🇭🇰HK-219.76.13.175-6948
-  password: ZFYOpKqD8uEClpZ2ya83cyCDalwSOYz3F3eCxnBD4eSXNSR5R0aAATj7I3x69g
-  port: 443
-  server: 219.76.13.175
-  skip-cert-verify: false
-  sni: golang.protocolbuffer.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 24|🇭🇰HK-47.243.62.222-6987
-  network: ws
-  port: 443
-  server: 47.243.62.222
-  servername: lg30.cfcdn3.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
-  ws-opts:
-    path: /ray
-- name: 24|🇰HK-20.24.192.3-7003
-  password: ca2345ba-46e7-3991-b1b7-45d18954caf1
-  port: 20712
-  server: 20.24.192.3
-  skip-cert-verify: false
-  sni: ssl.ssl12.xyz
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 24|HK-218.255.149.45-7472
-  network: ws
-  port: 80
-  server: 218.255.149.45
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 4a75c3ba-f2e9-11ed-bf1b-f23c91369f2d
-  ws-opts:
-    path: /
-- alterId: 64
-  cipher: auto
-  name: 24|HK-156.225.67.81-7804
-  network: ws
-  port: 443
-  server: 156.225.67.81
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 3fd637ad-46fe-4f85-a6e8-86b00bca1122
-  ws-opts:
-    path: /path/1689767805929
-- alterId: 64
-  cipher: auto
-  name: 24|🇰HK-156.225.67.240-7805
-  network: ws
-  port: 443
-  server: 156.225.67.240
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 9c026efe-6af0-465f-b8c0-3f58c8c2d4c5
-  ws-opts:
-    path: /path/1690341237802
-- name: 24|HK-103.234.53.23-8163
-  password: 73658d71-be45-4495-bc3e-e69d36ce73b5
-  port: 50014
-  server: 103.234.53.23
-  skip-cert-verify: false
-  sni: telewebion.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 36|HK2
+  name: 36|HK2 27.5KB/s
   network: ws
   port: 443
   server: qtkdr8jxe3wefxjm.v.3dns.vip
@@ -918,20 +122,6 @@ proxies:
   cipher: auto
   name: 36|HK4
   network: ws
-  port: 13080
-  server: 182.160.14.145
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 3960f128-1163-40a3-8dd7-7c91176e14a5
-  ws-opts:
-    headers:
-      host: 01.appleid.bf
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 36|HK5
-  network: ws
   port: 443
   server: n1761296892.4u9ma.icu
   skip-cert-verify: true
@@ -944,14 +134,36 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 36|HK6 8.8KB/s
+  name: 36|HK5 5.5KB/s
   network: ws
-  port: 443
-  server: 8.218.184.4
+  port: 23026
+  server: 47.244.120.197
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  ws-opts:
+    path: /arki
+- alterId: 0
+  name: '36|HK #1'
+  password: humanity
+  port: 443
+  server: 104.16.174.101
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 36|HK6 934.5KB/s
+  network: ws
+  port: 443
+  server: nycqg19zkwacpm1b.v.3dns.vip
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   ws-opts:
     headers:
       host: NYcQg19zkwaCPM1B.v.3dns.vip
@@ -959,46 +171,6 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 36|HK7
-  network: ws
-  port: 26925
-  server: 38.207.164.31
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
-  ws-opts:
-    headers:
-      host: cfhk.393930.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|HK8
-  network: ws
-  port: 443
-  server: i2psm3knof5qjjix.v.3dns.vip
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    path: /ws-vmess
-- alterId: 0
-  cipher: auto
-  name: 36|HK9 10.1KB/s
-  network: ws
-  port: 443
-  server: nycqg19zkwacpm1b.v.3dns.vip
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      host: nycqg19zkwacpm1b.v.3dns.vip
-    path: /ws-vmess
-- alterId: 0
-  cipher: auto
-  name: 36|HK10
   network: ws
   port: 8443
   server: 20.2.218.142
@@ -1012,10 +184,122 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 36|HK12
+  name: 36|HK8
+  network: ws
+  port: 443
+  server: drbkg16egf3fzlm3.v.3dns.vip
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      host: DrBKg16eGf3FZlM3.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: 36|HK9
+  network: grpc
+  port: 443
+  server: hk01.653ebeeb-5f60-4be5-958d-7bf4839cdccd.ef6616fd-5b06-482f-9d64-183745659cbf.byteprivatelink.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f018361c-3d66-4635-80c9-22be36b70ac4
+- alterId: 0
+  cipher: auto
+  name: 36|HK10
+  network: ws
+  port: 26925
+  server: 38.207.164.31
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
+  ws-opts:
+    headers:
+      host: cfhk.393930.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|HK11
+  network: tcp
+  port: 29009
+  server: 366-1095.rabbitpro-in-3.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: e351d6d8-c167-3e07-8fda-3f2f4ec0760b
+- alterId: 0
+  cipher: auto
+  name: 36|HK12 941.1KB/s
+  network: ws
+  port: 443
+  server: vah4urdzl3jdx5r2.v.3dns.vip
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      host: vah4urdzl3jdx5r2.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: 36|HK13
+  network: ws
+  port: 13080
+  server: 182.160.14.145
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3960f128-1163-40a3-8dd7-7c91176e14a5
+  ws-opts:
+    headers:
+      host: 01.appleid.bf
+    path: /ws?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 36|HK15
   network: ws
   port: 443
   server: 47.83.19.148
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: 36|HK16 328.7KB/s
+  network: ws
+  port: 443
+  server: 8.218.184.4
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      host: NYcQg19zkwaCPM1B.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  name: 36|HK2
+  password: BxceQaOe
+  port: 25982
+  server: 52.195.148.119
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 36|HK17
+  network: ws
+  port: 443
+  server: 47.83.207.148
   skip-cert-verify: true
   tls: true
   type: vmess

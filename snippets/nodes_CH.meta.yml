@@ -1,39 +1,4 @@
 proxies:
-- name: 13|CH 1 → tg@nicevpn123
-  password: 55319b01-5d85-48a2-a40a-0b3fc1985755
-  port: 11005
-  server: 64.110.64.80
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 13|CH 2 → tg@nicevpn123
-  password: 55319b01-5d85-48a2-a40a-0b3fc1985755
-  port: 11007
-  server: 64.110.64.80
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 13|CH 3 → tg@nicevpn123
-  password: 55319b01-5d85-48a2-a40a-0b3fc1985755
-  port: 11006
-  server: 64.110.64.80
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 13|CH 4 → tg@nicevpn123
-  password: 55319b01-5d85-48a2-a40a-0b3fc1985755
-  port: 11004
-  server: 64.110.64.80
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 13|CH 5 → tg@nicevpn123
-  password: 55319b01-5d85-48a2-a40a-0b3fc1985755
-  port: 11000
-  server: 64.110.64.80
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - name: '14,15|未命名 #5'
   password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   port: 8080
@@ -41,9 +6,7 @@ proxies:
   sni: grape-turbo-fr.roxa.org
   tls: false
   type: hysteria2
-- alpn:
-  - h3
-  name: '14,16|کانال تلگرام : Free_VPN_CH@ #4'
+- name: '14,16|کانال تلگرام : Free_VPN_CH@ #5'
   obfs: salamander
   obfs-password: '@JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
   password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
@@ -53,7 +16,9 @@ proxies:
   sni: api.kermanshahi.org
   tls: false
   type: hysteria2
-- name: '14,16|کانال تلگرام : Free_VPN_CH@ #5'
+- alpn:
+  - h3
+  name: '14,16|کانال تلگرام : Free_VPN_CH@ #4'
   obfs: salamander
   obfs-password: '@JavidnamanIran-Javid-SHAH-KingRezaPahlavi'
   password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
@@ -75,11 +40,12 @@ proxies:
   type: hysteria2
 - alterId: 0
   cipher: auto
-  name: 21|瑞士 001
+  name: 21,36|未知93
   network: tcp
   port: 38998
   server: 178.83.45.29
   skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 48422300-458f-4dbb-b0f5-96f45450ab9f
 - client-fingerprint: chrome
@@ -95,12 +61,13 @@ proxies:
   type: vless
   udp: true
   uuid: 8787dd0a-095a-414e-804f-a7d16a1ae166
-- name: 21|瑞士 003
+- flow: ''
+  name: 21|瑞士 003
   network: ws
   port: 443
   server: 194.246.118.199
   servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-  skip-cert-verify: true
+  skip-cert-verify: false
   tfo: false
   tls: true
   type: vless
@@ -109,7 +76,7 @@ proxies:
   ws-opts:
     headers:
       Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-    path: /pg/10086-dfc816f117c49173
+    path: /pg/10086-dfc816f117c491730|
 - name: 21|瑞士 004
   network: tcp
   port: 64584
@@ -130,9 +97,3 @@ proxies:
   type: vless
   udp: true
   uuid: d8b42cd5-a149-4356-9e61-000000000000
-- name: 24|CH-152.67.71.149-2927
-  password: 8a03bc28-2a33-42c4-be59-30464dbb9954
-  port: 18818
-  server: ch12.yukiss.eu.org
-  skip-cert-verify: false
-  type: trojan
