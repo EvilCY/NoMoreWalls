@@ -1,9 +1,12 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 13,19,24|🇩MD-185.242.86.156-1413
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 13,19,24,36|🇺RU
   password: 36ZCHeabUSfKjfQEvJ4HDV
   port: 54170
   server: 185.242.86.156
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - name: 13|🇩🇪 DE 10 → tg@nicevpn123
@@ -454,7 +457,7 @@ proxies:
   sni: hopp-romania-new.roxa.org
   tls: false
   type: hysteria2
-- name: '14,15|德国 #9'
+- name: '14|德国 #4'
   password: a6cf4b28-ba72-4e8c-90f8-6a884107ab3c
   port: 443
   server: ndge4.whit3.net
@@ -470,7 +473,7 @@ proxies:
   sni: hopp-romania-new.roxa.org
   tls: false
   type: hysteria2
-- name: '14,16|🇩🇪All | @BigSmoke_Config #1'
+- name: '14,16|🇩🇪All | @BigSmoke_Config #2'
   password: jbmuokj7p4kg4h4s
   port: 52029
   server: giftcard.gateway-stream.com
@@ -495,7 +498,7 @@ proxies:
   sni: gift-catalog.aroonia.ir
   tls: false
   type: hysteria2
-- name: 14,16|1🪆@oneclickvpnkeys
+- name: 14|🇩🇪157666 | ⚡️Telegram = t.me/S...
   password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
   port: 8080
   server: 162.249.124.120
@@ -532,14 +535,14 @@ proxies:
     headers:
       Host: ''
     path: /8f2690e2d016
-- name: 14,16|🇩🇪All | @BigSmoke_Config
+- name: '14,16|🇩🇪All | @BigSmoke_Config #1'
   password: AstroVPN_official
   port: 36896
   server: ptserv.accuratenetworkchecker.ir
   sni: lms22.gelzaro.ir
   tls: false
   type: hysteria2
-- name: '14,15|德国 #10'
+- name: '14,15|德国 #9'
   password: umnDU7jgFYUjpVjVM2sW9HL0rRYLJNgzVwRu2HzWEhyZKkRx
   port: 443
   server: hold.wwwinternetvideo.click
@@ -547,6 +550,20 @@ proxies:
   sni: germany1.h2corp.local
   tls: false
   type: hysteria2
+- alterId: 0
+  cipher: auto
+  name: 14,24|🇪DE-78.31.249.175-2144
+  network: ws
+  port: 65531
+  server: 78.31.249.175
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 7aa3a024-e333-4b63-99a2-3db9d3b2054e
+  ws-opts:
+    headers:
+      Host: gw.alicdn.com
+    path: /
 - alpn:
   - http/1.1
   client-fingerprint: firefox
@@ -572,7 +589,19 @@ proxies:
   type: hysteria2
 - alpn:
   - h3
-  name: 16|-🇩🇪 @VConfing
+  name: 16|🇫🇮158099 | ⚡️Telegram = t.me/S...
+  obfs: salamander
+  obfs-password: fuw2k1ddrouwxr3u
+  password: 4savc5ig1n3549e4
+  port: 52021
+  server: giftcard.gateway-stream.com
+  skip-cert-verify: false
+  sni: giftcard.gateway-stream.com
+  tls: false
+  type: hysteria2
+- alpn:
+  - h3
+  name: '16|-🇩🇪 @VConfing #1'
   obfs: salamander
   obfs-password: fuw2k1ddrouwxr3u
   password: clz08qwil91241w7
@@ -582,20 +611,12 @@ proxies:
   sni: giftcard.gateway-stream.com
   tls: false
   type: hysteria2
-- name: 16|🇩🇪157896 | ⚡️Telegram = t.me/S...
-  password: hysteria2_fastlane_qn9oi6zlt
+- name: 16|71@oneclickvpnkeys
+  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
   port: 443
-  server: 2.27.28.106
-  skip-cert-verify: false
-  sni: de8.h.fastlanehosting.ru
-  tls: false
-  type: hysteria2
-- name: 16|26@oneclickvpnkeys
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  port: 443
-  server: 18.153.59.21
+  server: 91.196.32.163
   skip-cert-verify: true
-  sni: vpn-de-001.fastervpn.world
+  sni: germany3.h2corp.local
   tls: false
   type: hysteria2
 - name: 19|🇩🇪DE-52.58.179.46-180_1@180
@@ -649,11 +670,12 @@ proxies:
   uuid: 943961b8-4e27-4bdf-a048-c2f724f542fb
 - alterId: 0
   cipher: aes-128-gcm
-  name: 21|德国 004
+  name: 21,36|未知78
   network: tcp
   port: 443
   server: 46.183.187.73
   skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 92a048ec-a160-497e-8069-c2e902626d7a
 - alterId: 0
@@ -667,11 +689,12 @@ proxies:
   uuid: 15247720-17e1-4ea3-9150-b9350099d9fa
 - alterId: 0
   cipher: auto
-  name: 21|德国 006
+  name: 21,36|未知41
   network: tcp
   port: 80
   server: 128.140.109.232
   skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 05a178f9-e6ba-4006-93d7-3d980cdc3a76
 - client-fingerprint: chrome
