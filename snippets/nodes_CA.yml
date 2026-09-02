@@ -1,6 +1,13 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 11|Canada_Montreal_ss_1033
+  name: 11,24|🇦CA-35.182.226.121-0101
+  password: amazonskr05
+  port: 443
+  server: 35.182.226.121
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 11|Canada_Montreal_ss_1133
   password: amazonskr05
   port: 443
   server: 3.97.16.160
@@ -1078,7 +1085,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 19,24|🏁RELAY-172.67.145.166-0845
+  name: 19,21,24|🏁RELAY-172.67.145.166-0845
   network: ws
   port: 443
   server: 172.67.145.166
@@ -1092,7 +1099,7 @@ proxies:
     path: /AUIKN8AU
 - alterId: 0
   cipher: auto
-  name: 19,24|🏁RELAY-172.67.135.55-0857
+  name: 19,21,24|🏁RELAY-172.67.135.55-0857
   network: ws
   port: 443
   server: 172.67.135.55
@@ -1495,13 +1502,69 @@ proxies:
     path: /path/1704188270531
 - alterId: 0
   cipher: auto
-  name: 21|加拿大 012
+  name: 21,24|🇺🇸US-162.0.232.36-1068
+  network: ws
+  port: 443
+  server: hohm.microsoft.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c
+  ws-opts:
+    headers:
+      Host: hohm.microsoft.com
+    path: /9JZFDTKE
+- alterId: 0
+  cipher: auto
+  name: 21,24|TW-165.154.246.71-1090
+  network: ws
+  port: 80
+  server: 165.154.246.71
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 13581ae8-65c9-4fbe-9c78-77fac9ca503a
+  ws-opts:
+    headers:
+      Host: 165.154.246.71
+    path: ?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 21,24|🇼TW-165.154.253.35-4078
+  network: ws
+  port: 443
+  server: tw-1.qwqjsq.top
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: b0543a3b-d690-3ed9-9a81-f24f852e74f7
+  ws-opts:
+    headers:
+      Host: tw-1.qwqjsq.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 21,24|🇹🇼TW-165.154.246.107-4086
+  network: ws
+  port: 80
+  server: 165.154.246.107
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: fa0702f4-8ec9-48e5-9b53-a0afb7c3717e
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 21|加拿大 016
   network: tcp
-  port: 22324
-  server: 198.57.27.212
+  port: 35034
+  server: 165.154.195.38
   skip-cert-verify: true
   type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
 - cipher: chacha20-ietf-poly1305
   name: 24|🇨CA-108.181.118.10-0060
   password: G5p6ww4o67HB
@@ -1521,12 +1584,6 @@ proxies:
   server: 137.184.174.93
   type: ss
 - cipher: aes-256-cfb
-  name: 24|🇦CA-35.182.226.121-0101
-  password: amazonskr05
-  port: 443
-  server: 35.182.226.121
-  type: ss
-- cipher: aes-256-cfb
   name: 24|🇨🇦CA-35.182.250.193-0102
   password: amazonskr05
   port: 443
@@ -1544,20 +1601,6 @@ proxies:
   port: 8080
   server: 20.104.183.100
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 24|🇨🇦CA-134.195.198.147-0180
-  network: ws
-  port: 443
-  server: 134.195.198.147
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: vk.com
-    path: /
 - cipher: aes-256-gcm
   name: 24|🇦CA-20.104.96.194-0183
   password: d218e51a-258f-43d2-8ce3-c8872611bf28
