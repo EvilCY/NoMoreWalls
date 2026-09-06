@@ -197,19 +197,30 @@ proxies:
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - cipher: aes-256-cfb
-  name: 11,24|🇳CN-121.46.230.232-0198
+  name: 11,24|🇳CN-121.46.230.233-0197
   password: 7eadc6dbe2ae
   port: 65443
-  server: 121.46.230.232
+  server: 121.46.230.233
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 11,24|🇧GB-13.40.17.62-2089
-  password: amazonskr05
-  port: 443
-  server: 13.40.17.62
-  type: ss
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: 11|United States_None_trojan_1127
+  network: ws
+  password: humanity
+  port: '443'
+  server: join-telegram-channel.tirexnet.kdns.fr
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
   udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; A37fw Build/LMY47V) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
+    path: /assignment
 - cipher: aes-256-cfb
   name: 11,24|🇪IE-54.229.177.209-2090
   password: amazonskr05
@@ -217,14 +228,25 @@ proxies:
   server: 54.229.177.209
   type: ss
   udp: true
-- name: 11,14,24|🇸US-45.143.128.79-2091
-  network: tcp
-  password: 2EXii6JlhaDvgSiTsC
-  port: 8444
-  server: ggboy.ggboyz.online
-  skip-cert-verify: false
-  sni: ggboy.ggboyz.online
-  type: trojan
+- cipher: aes-256-cfb
+  name: 11|United Kingdom_London_ss_1129
+  password: amazonskr05
+  port: 443
+  server: 35.179.119.76
+  type: ss
+- cipher: aes-256-cfb
+  name: 11|United Kingdom_London_ss_1130
+  password: amazonskr05
+  port: '443'
+  server: 35.178.200.252
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 11|Ireland_Dublin_ss_1131
+  password: amazonskr05
+  port: '443'
+  server: 52.210.185.41
+  type: ss
   udp: true
 - cipher: aes-256-cfb
   name: 13,24|🇸SE-121.127.46.147-7879
@@ -38030,12 +38052,13 @@ proxies:
   sni: giftcard.gateway-stream.com
   tls: false
   type: hysteria2
-- name: 14|🩳70@oneclickvpnkeys
+- name: 14,16|🇩🇪ConfigV2RayNG
   obfs: salamander
   obfs-password: Telegram@vpnjey
   password: Telegram@vpnjey
   port: 37009
   server: 31.76.27.23
+  skip-cert-verify: false
   sni: de.vpnjey.store
   tls: false
   type: hysteria2
@@ -38249,6 +38272,13 @@ proxies:
   sni: bwdf2fnt.xn--e1aatfr8bwa.online
   tls: false
   type: hysteria2
+- name: 14,24|🇸US-45.143.128.79-2091
+  password: 2EXii6JlhaDvgSiTsC
+  port: 8444
+  server: ggboy.ggboyz.online
+  skip-cert-verify: false
+  sni: ggboy.ggboyz.online
+  type: trojan
 - name: 14|🇸🇬_SG_新加坡_2
   network: ws
   port: 8443
@@ -39297,6 +39327,57 @@ proxies:
     headers:
       Host: juzibaipiao.5112233.xyz
     path: '%2f%3fed%3d2048'
+- name: 16|🇩🇪@AZARBAYJAB1
+  obfs: salamander
+  obfs-password: fuw2k1ddrouwxr3u
+  password: 6mk75ho4jzef3uuj
+  port: 52022
+  server: giftcard.gateway-stream.com
+  skip-cert-verify: false
+  sni: giftcard.gateway-stream.com
+  tls: false
+  type: hysteria2
+- alpn:
+  - h3
+  name: 16|🇫🇮163236 | ⚡️Telegram = t.me/S...
+  obfs: salamander
+  obfs-password: fuw2k1ddrouwxr3u
+  password: 6mk75ho4jzef3uuj
+  port: 52026
+  server: giftcard.gateway-stream.com
+  skip-cert-verify: false
+  sni: giftcard.gateway-stream.com
+  tls: false
+  type: hysteria2
+- name: 16|🇫🇷@AZARBAYJAB1
+  obfs: salamander
+  obfs-password: fuw2k1ddrouwxr3u
+  password: 6mk75ho4jzef3uuj
+  port: 52030
+  server: giftcard.gateway-stream.com
+  skip-cert-verify: false
+  sni: giftcard.gateway-stream.com
+  tls: false
+  type: hysteria2
+- alpn:
+  - h3
+  name: 16|🇫🇮163237 | ⚡️Telegram = t.me/S...
+  obfs: salamander
+  obfs-password: fuw2k1ddrouwxr3u
+  password: 6mk75ho4jzef3uuj
+  port: 52057
+  server: giftcard.gateway-stream.com
+  skip-cert-verify: false
+  sni: giftcard.gateway-stream.com
+  tls: false
+  type: hysteria2
+- name: 16|163214 | ⚡️Telegram = t.me/SOS...
+  password: AstroVPN_official
+  port: 36896
+  server: ptserv.accuratenetworkchecker.ir
+  sni: lms22.gelzaro.ir
+  tls: false
+  type: hysteria2
 - name: 16|️37@oneclickvpnkeys
   password: BWAFlp8g53
   port: 443
@@ -39312,7 +39393,7 @@ proxies:
   sni: hopp-romania-new.roxa.org
   tls: false
   type: hysteria2
-- name: 16|🇩🇪163005 | ⚡️Telegram = t.me/S...
+- name: 16|5☺️@oneclickvpnkeys
   obfs: salamander
   obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
   password: cd74c0a406664a5bc0bac098220a2468
@@ -60875,10 +60956,10 @@ proxies:
   sni: glcvn150.hruqoaw.cn
   type: trojan
 - cipher: aes-256-cfb
-  name: 24|🇳CN-121.46.230.233-0197
+  name: 24|🇳CN-121.46.230.232-0198
   password: 7eadc6dbe2ae
   port: 65443
-  server: 121.46.230.233
+  server: 121.46.230.232
   type: ss
 - name: 24|🇷KR-144.24.69.60-0200
   password: ffcd5d19-d085-4ff1-b724-af203eaeea04
@@ -65833,6 +65914,12 @@ proxies:
   password: amazonskr05
   port: 443
   server: 43.207.82.53
+  type: ss
+- cipher: aes-256-cfb
+  name: 24|🇧GB-13.40.17.62-2089
+  password: amazonskr05
+  port: 443
+  server: 13.40.17.62
   type: ss
 - alterId: 0
   cipher: auto
