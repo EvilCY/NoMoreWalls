@@ -1,12 +1,9 @@
 proxies:
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 13,19,24,36|🇺RU
+- cipher: chacha20-ietf-poly1305
+  name: 13,19,24|🇩MD-185.242.86.156-1577
   password: 36ZCHeabUSfKjfQEvJ4HDV
   port: 54170
   server: 185.242.86.156
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - name: 13|🇩🇪 DE 10 → tg@nicevpn123
@@ -438,14 +435,43 @@ proxies:
   server: 217.182.198.219
   type: ss
   udp: true
-- name: 14|🇩🇪V2RayyNGvpn 🇩🇪
-  obfs: salamander
-  obfs-password: V2RayyNGvpn&Telegram
-  password: V2RayyNGvpn
+- name: '14,16|[ 🇩🇪 ] | @Cfox_SerVer #3'
+  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
   port: 443
-  server: 91.107.140.154
+  server: 162.249.125.133
+  sni: hy2-new.aspidnet.xyz
+  tls: false
+  type: hysteria2
+- name: '14,16|[ 🇩🇪 ] | @Cfox_SerVer #5'
+  obfs: salamander
+  obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
+  password: cd74c0a406664a5bc0bac098220a2468
+  port: 443
+  server: 2.27.59.206
+  skip-cert-verify: true
+  sni: de1.sferavpn.pro
+  tls: false
+  type: hysteria2
+- alpn:
+  - h3
+  fingerprint: chrome
+  name: '14|Telegram@VPNjey🇩🇪🇩🇪 #1'
+  obfs: salamander
+  obfs-password: 83v9muumcyikh5ch
+  password: TelegramVPNjey
+  port: 37003
+  server: 179.61.251.253
+  sni: de.jey.cc.cd
+  tls: false
+  type: hysteria2
+- name: 14,16|Telegram 🆔@cnetvpn 🇪
+  obfs: salamander
+  obfs-password: 6cmj1dymhm79hopl
+  password: 8z2e26xkqsa598s3
+  port: 52000
+  server: gift-catalog.aroonia.ir
   skip-cert-verify: false
-  sni: www.bing.com
+  sni: gift-catalog.aroonia.ir
   tls: false
   type: hysteria2
 - alpn:
@@ -460,104 +486,31 @@ proxies:
   sni: de.jey.cc.cd
   tls: false
   type: hysteria2
-- name: '14,15|DE #3'
-  obfs: salamander
-  obfs-password: f832485b7363626ee836f58576aad25f
-  password: f0098427ecce06a25089f5c18f4ac666
-  port: 443
-  server: 92.5.43.121
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: GrpcFuckRKN
-  name: '14|A - 🇩🇪 DE 04 TG: @nodpai'
-  network: grpc
-  port: 443
-  server: 194.58.41.65
-  servername: www.microsoft.com
-  tls: true
-  type: vless
-  uuid: afc941a0-b6b4-42d1-b284-d59a42f083fd
-- name: 14|德国
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  port: 8080
-  server: 85.204.107.178
-  skip-cert-verify: true
-  sni: hopp-romania-new.roxa.org
-  tls: false
-  type: hysteria2
-- name: '14|A - 🇩🇪 DE 02 TG: @nodpai'
-  port: 443
-  server: 136.244.94.171
-  tls: false
-  type: vless
-  uuid: 52516534-4986-4959-b30b-a89463eed9af
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '14|B - 🇩🇪 DE 07 TG: @nodpai'
-  port: 443
-  server: 84.21.189.197
-  servername: queuev4.vk.com
-  tls: true
-  type: vless
-  uuid: 3ea2d8f2-12c1-4189-8cc5-91d0ee9f5ca0
-- alpn:
-  - h3
-  fingerprint: chrome
-  name: '14|Telegram@VPNjey🇩🇪🇩🇪 #1'
-  obfs: salamander
-  obfs-password: 83v9muumcyikh5ch
-  password: TelegramVPNjey
-  port: 37003
-  server: 179.61.251.253
-  sni: de.jey.cc.cd
-  tls: false
-  type: hysteria2
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: GrpcFuckRKN
-  name: '14|A - 🇩🇪 DE 05 TG: @nodpai'
-  network: grpc
-  port: 443
-  server: 194.58.41.65-uhe66vr6.nike77prime.ru
-  servername: www.microsoft.com
-  tls: true
-  type: vless
-  uuid: afc941a0-b6b4-42d1-b284-d59a42f083fd
-- name: 14,16|Telegram 🆔@cnetvpn 🇪
-  obfs: salamander
-  obfs-password: 6cmj1dymhm79hopl
-  password: 8z2e26xkqsa598s3
-  port: 52000
-  server: gift-catalog.aroonia.ir
-  skip-cert-verify: false
-  sni: gift-catalog.aroonia.ir
-  tls: false
-  type: hysteria2
-- name: '14|A - 🇩🇪 DE 01 TG: @nodpai'
-  port: 10443
-  server: 136.244.94.171
-  tls: false
-  type: vless
-  uuid: a01e27df-a1f1-4b7f-a65b-50dd4b6ac10a
-- name: '14,16|🇩🇪@AZARBAYJAB1 #1'
-  obfs: salamander
-  obfs-password: fuw2k1ddrouwxr3u
-  password: vz86jgszv4zszchv
-  port: 52021
-  server: giftcard.gateway-stream.com
-  skip-cert-verify: false
-  sni: giftcard.gateway-stream.com
-  tls: false
-  type: hysteria2
 - name: '14,15|DE #2'
   password: dffb4c3d-1e84-4938-8881-cad917e8efb2
   port: 443
   server: de1.apexvpn.space
   sni: de1.apexvpn.space
+  tls: false
+  type: hysteria2
+- name: '14,16|[ 🇩🇪 ] | @Cfox_SerVer #4'
+  obfs: salamander
+  obfs-password: c1b4086fea89914496c7e10967a419216566
+  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
+  port: 443
+  server: 162.249.125.133
+  skip-cert-verify: false
+  sni: hy2-new.aspidnet.xyz
+  tls: false
+  type: hysteria2
+- name: 14|🇩🇪V2RayyNGvpn 🇩🇪
+  obfs: salamander
+  obfs-password: V2RayyNGvpn&Telegram
+  password: V2RayyNGvpn
+  port: 443
+  server: 91.107.140.154
+  skip-cert-verify: false
+  sni: www.bing.com
   tls: false
   type: hysteria2
 - alpn:
@@ -572,18 +525,37 @@ proxies:
   sni: giftcard.gateway-stream.com
   tls: false
   type: hysteria2
-- name: '14|A - 🇩🇪 DE 06 TG: @nodpai'
-  network: ws
-  port: 8880
-  server: 45.80.111.30
+- name: '14,15|DE #3'
+  obfs: salamander
+  obfs-password: f832485b7363626ee836f58576aad25f
+  password: f0098427ecce06a25089f5c18f4ac666
+  port: 443
+  server: 92.5.43.121
+  skip-cert-verify: true
+  sni: www.bing.com
   tls: false
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime52.workers.dev
-    path: /
-- name: 16|V2RayyNGvpn 🇩🇪
+  type: hysteria2
+- name: '14,16|🇩🇪@AZARBAYJAB1 #1'
+  obfs: salamander
+  obfs-password: fuw2k1ddrouwxr3u
+  password: vz86jgszv4zszchv
+  port: 52021
+  server: giftcard.gateway-stream.com
+  skip-cert-verify: false
+  sni: giftcard.gateway-stream.com
+  tls: false
+  type: hysteria2
+- name: 14|V2RayyNGvpn 🇩🇪
+  obfs: salamander
+  obfs-password: V2RayyNGvpn&Telegram
+  password: Ur0okuRxze
+  port: 443
+  server: 91.107.140.154
+  skip-cert-verify: false
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: '16|V2RayyNGvpn 🇩🇪 #1'
   obfs: salamander
   obfs-password: V2RayyNGvpn&Telegram
   password: Ur0okuRxze
@@ -601,14 +573,6 @@ proxies:
   server: 91.107.140.154
   skip-cert-verify: false
   sni: www.bing.com
-  tls: false
-  type: hysteria2
-- name: 16|🏀34@oneclickvpnkeys
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  port: 443
-  server: 91.196.32.163
-  skip-cert-verify: true
-  sni: germany3.h2corp.local
   tls: false
   type: hysteria2
 - name: 19|🇩🇪DE-52.58.179.46-180_1@180
@@ -640,7 +604,7 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
 - alterId: 0
   cipher: auto
-  name: 21,24|🇩🇪DE-85.215.41.19-0737
+  name: 21,24|🇪DE-85.215.41.19-0752
   network: ws
   port: 443
   server: 85.215.41.19
@@ -654,7 +618,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 21,24|🇩🇪DE-91.195.240.12-0709
+  name: 21,24|🇪DE-91.195.240.12-0666
   network: ws
   port: 443
   server: sgp.kapok.buzz
@@ -668,7 +632,7 @@ proxies:
     path: /4befdd8a6/
 - alterId: 0
   cipher: auto
-  name: 21,24|DE-138.68.90.231-1184
+  name: 21,24|DE-138.68.90.231-1142
   network: ws
   port: 8080
   server: 138.68.90.231
@@ -686,7 +650,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 21,24|🇸US-5.161.106.72-2622
+  name: 21,24|🇸US-5.161.106.72-2575
   network: http
   port: 40969
   server: 5.161.106.72
@@ -700,7 +664,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 21,24|🇺🇸US-5.161.106.72-1198
+  name: 21,24|🇺🇸US-5.161.106.72-1156
   network: http
   port: 50978
   server: 5.161.106.72
@@ -714,7 +678,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 21,24|🇩🇪DE-157.90.20.18-1208
+  name: 21,24|🇩🇪DE-157.90.20.18-1166
   network: http
   port: 443
   server: 157.90.20.18
@@ -728,7 +692,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 21,24|🇪DE-5.75.168.155-1209
+  name: 21,24|🇪DE-5.75.168.155-1167
   network: http
   port: 443
   server: 5.75.168.155
@@ -742,7 +706,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 21,24|🇩🇪DE-94.130.25.155-1210
+  name: 21,24|🇩🇪DE-94.130.25.155-1168
   network: http
   port: 443
   server: 94.130.25.155
@@ -756,7 +720,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 21,24|🇩🇪DE-167.235.136.155-1211
+  name: 21,24|🇩🇪DE-167.235.136.155-1169
   network: http
   port: 443
   server: 167.235.136.155
@@ -770,7 +734,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 21,24|FI-65.21.240.108-1212
+  name: 21,24|FI-65.21.240.108-1170
   network: http
   port: 443
   server: 65.21.240.108
@@ -784,7 +748,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 21,24|🇩🇪DE-5.75.247.192-1217
+  name: 21,24|🇩🇪DE-5.75.247.192-1175
   network: http
   port: 443
   server: 5.75.247.192
@@ -798,7 +762,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 21,24|🇪DE-88.198.104.211-1218
+  name: 21,24|🇪DE-88.198.104.211-1176
   network: http
   port: 443
   server: 88.198.104.211
@@ -808,7 +772,7 @@ proxies:
   uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
 - alterId: 4
   cipher: auto
-  name: 21,24|🇩🇪DE-146.0.42.87-1266
+  name: 21,24|🇩🇪DE-146.0.42.87-1224
   network: ws
   port: 443
   server: 146.0.42.87
@@ -821,13 +785,13 @@ proxies:
       Host: germany-dusseldorf.mah3Hoet.com
     path: /ws
 - cipher: chacha20-ietf-poly1305
-  name: 24|DE-209.46.102.22-0153
+  name: 24|DE-209.46.102.22-0157
   password: 1hhrqrokj3ag
   port: 8388
   server: 209.46.102.22
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇪DE-8.209.74.72-0161
+  name: 24|🇪DE-8.209.74.72-0165
   password: PWpjPo3tqhPN4yRZ
   port: 20001
   server: 8.209.74.72
@@ -840,8 +804,14 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   name: 24|🇪DE-145.239.1.100-0299
-  password: XKFKl2rULjIp74
-  port: 8009
+  password: Y6R9pAtvxxzmGC
+  port: 8888
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: 24|🇩🇪DE-145.239.1.100-0301
+  password: g5MeD6Ft3CWlJId
+  port: 5004
   server: 145.239.1.100
   type: ss
 - cipher: aes-256-gcm
@@ -851,26 +821,20 @@ proxies:
   server: 145.239.1.100
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇪DE-145.239.1.100-0324
-  password: Y6R9pAtvxxzmGC
-  port: 8888
-  server: 145.239.1.100
-  type: ss
-- cipher: aes-256-gcm
   name: 24|🇪DE-145.239.1.100-0327
   password: kDWvXYZoTBcGkC4
   port: 8882
   server: 145.239.1.100
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇩🇪DE-52.58.249.78-0331
+  name: 24|🇪DE-52.58.249.78-0331
   password: pryhyxya
   port: 57824
   server: 52.58.249.78
   type: ss
 - alterId: 0
   cipher: auto
-  name: 24|🇩🇪DE-5.75.154.136-0364
+  name: 24|🇪DE-5.75.154.136-0364
   network: ws
   port: 63456
   server: 5.75.154.136
@@ -880,10 +844,10 @@ proxies:
   uuid: dab6ce8a-8059-4357-9083-c5283e1908b2
   ws-opts:
     path: /
-- name: 24|🇪DE-149.36.50.1-0504
+- name: 24|🇪DE-87.249.132.97-0481
   password: None
   port: 443
-  server: 149.36.50.1
+  server: 87.249.132.97
   skip-cert-verify: false
   tls: true
   type: http
@@ -894,21 +858,9 @@ proxies:
   tls: false
   type: socks5
   udp: true
-- name: 24|🇪DE-88.198.82.150-0661
-  network: ws
-  password: humanity
-  port: 443
-  server: 88.198.82.150
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: /assignment
 - alterId: 64
   cipher: auto
-  name: 24|🇪DE-89.163.157.147-0711
+  name: 24|🇪DE-89.163.157.147-0668
   network: ws
   port: 443
   server: 89.163.157.147
@@ -920,7 +872,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24|🇪DE-31.22.109.209-0731
+  name: 24|🇪DE-31.22.109.209-0688
   network: ws
   port: 443
   server: 31.22.109.209
@@ -931,14 +883,14 @@ proxies:
   ws-opts:
     path: /4ba99a39b90faa/
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇪DE-164.90.234.85-1571
+  name: 24|🇪DE-164.90.234.85-1530
   password: fdRAl4scWDTg
   port: 18492
   server: 164.90.234.85
   type: ss
 - alterId: 0
   cipher: auto
-  name: 24|🇪DE-143.42.21.187-1783
+  name: 24|🇪DE-143.42.21.187-1742
   network: ws
   port: 443
   server: 143.42.21.187
@@ -951,7 +903,7 @@ proxies:
     path: /chat
 - alterId: 64
   cipher: auto
-  name: 24|🇩🇪DE-87.254.31.23-1852
+  name: 24|🇩🇪DE-87.254.31.23-1811
   network: ws
   port: 41647
   server: 87.254.31.23
@@ -964,7 +916,7 @@ proxies:
     path: /uk/getData
 - alterId: 0
   cipher: auto
-  name: 24|🇪DE-89.163.213.20-2040
+  name: 24|🇪DE-89.163.213.20-1999
   network: ws
   port: 80
   server: 89.163.213.20
@@ -974,7 +926,7 @@ proxies:
   uuid: 5668ff97-631f-4602-a13f-b56552c67abe
   ws-opts:
     path: /vmess
-- name: 24|🇪DE-54.93.240.151-2098
+- name: 24|🇪DE-54.93.240.151-2057
   password: telegram-id-privatevpns
   port: 22222
   server: 54.93.240.151
@@ -983,7 +935,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 24|🇩🇪DE-78.47.131.39-2139
+  name: 24|🇩🇪DE-78.47.131.39-2098
   network: ws
   port: 8081
   server: 78.47.131.39
@@ -993,7 +945,7 @@ proxies:
   uuid: 822a646e-6f69-4758-9008-494e137e26ac
   ws-opts:
     path: /@hashmakvpn 🇩🇪
-- name: 24|🇪DE-45.80.190.66-2140
+- name: 24|🇪DE-45.80.190.66-2099
   password: bs6KJkPBW9MP74uHEa
   port: 443
   server: 45.80.190.66
@@ -1001,7 +953,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 24|🇪DE-91.107.166.231-2171
+  name: 24|🇪DE-91.107.166.231-2130
   network: ws
   port: 8081
   server: 91.107.166.231
@@ -1012,57 +964,39 @@ proxies:
   uuid: 822a646e-6f69-4758-9008-494e137e26ac
   ws-opts:
     path: /@hashmakvpn 🇩🇪
-- name: 24|🇩🇪DE-45.80.190.64-2187
+- name: 24|🇩🇪DE-45.80.190.64-2146
   password: bs6KJkPBW9MP74uHEa
   port: 443
   server: 45.80.190.64
   skip-cert-verify: false
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇪DE-3.67.113.118-2259
+  name: 24|🇪DE-3.67.113.118-2218
   password: G!yBwPWH3Vao
   port: 810
   server: 3.67.113.118
   type: ss
-- name: 24|🇩🇪DE-185.137.157.254-2378
+- name: 24|🇩🇪DE-185.137.157.254-2331
   password: hxn2jK9Uzezogua0oHuq9Y8viN%3DUCe.2Jd
   port: 443
   server: 185.137.157.254
   skip-cert-verify: false
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇪DE-57.129.121.230-2380
+  name: 24|🇪DE-57.129.121.230-2333
   password: uROuEqsL8IUMMVb4wDwnGU
   port: 10443
   server: 57.129.121.230
   type: ss
-- name: 24|🇪DE-185.53.179.128-2640
-  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
-  port: 8443
-  server: 43-153-30-20.ipv4.rush.ml
-  skip-cert-verify: false
-  type: trojan
 - cipher: aes-256-gcm
-  name: 24|🇪DE-193.108.118.34-2643
+  name: 24|🇪DE-193.108.118.34-2596
   password: faBAoD54k87UJG7
   port: 2376
   server: 193.108.118.34
   type: ss
-- name: 24|🇪DE-185.53.179.128-2653
-  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
-  port: 8443
-  server: 43-153-34-170.ipv4.rush.ml
-  skip-cert-verify: false
-  type: trojan
-- name: 24|🇪DE-185.53.179.128-2751
-  password: cf4295378e209e70d12c5bdd017144dfd1c772d3
-  port: 8443
-  server: 20-66-19-98.ipv4.rush.ml
-  skip-cert-verify: false
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: 24|🇪DE-165.227.175.88-2861
+  name: 24|🇪DE-165.227.175.88-2814
   network: ws
   port: 28164
   server: 165.227.175.88
@@ -1072,7 +1006,7 @@ proxies:
   uuid: eba8ccf5-5ab9-4b6b-de4b-83ab920c1005
   ws-opts:
     path: /
-- name: 24|🇪DE-130.162.230.82-2889
+- name: 24|🇪DE-130.162.230.82-2842
   password: 8a03bc28-2a33-42c4-be59-30464dbb9954
   port: 18818
   server: fra13.yukiss.eu.org
@@ -1080,7 +1014,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 24|🇪DE-168.119.254.234-2899
+  name: 24|🇪DE-168.119.254.234-2852
   network: ws
   port: 80
   server: 168.119.254.234
@@ -1090,7 +1024,7 @@ proxies:
   uuid: 41990bdc-da75-496d-bad3-ae822ad8be5f
   ws-opts:
     path: /graphql
-- name: 24|🇪DE-51.75.76.22-2902
+- name: 24|🇪DE-51.75.76.22-2855
   password: c60fbf90-4b55-11ed-b935-225401db9d57
   port: 443
   server: 51.75.76.22
@@ -1098,7 +1032,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 24|🇪DE-94.130.184.57-3224
+  name: 24|🇪DE-94.130.184.57-3177
   network: ws
   port: 80
   server: 94.130.184.57
@@ -1108,13 +1042,13 @@ proxies:
   uuid: c5e523e7-da73-40af-a4a9-c638720c30e1
   ws-opts:
     path: /graphql
-- name: 24|🇪DE-89.163.220.99-3065
+- name: 24|🇪DE-89.163.220.99-3018
   password: 750a29bf-0a40-437f-b120-38de74ae7eaf
   port: 28443
   server: 89.163.220.99
   skip-cert-verify: false
   type: trojan
-- name: 24|🇪DE-181.214.99.54-3080
+- name: 24|🇪DE-181.214.99.54-3033
   password: q9870219
   port: 2035
   server: 181.214.99.54
@@ -1123,7 +1057,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 24|🇪DE-162.55.174.135-3324
+  name: 24|🇪DE-162.55.174.135-3277
   network: ws
   port: 80
   server: 162.55.174.135
@@ -1133,7 +1067,7 @@ proxies:
   uuid: 4d9aa6db-705a-4bfa-b05b-8f442c839557
   ws-opts:
     path: /graphql
-- name: 24|🇪DE-188.40.251.19-3170
+- name: 24|🇪DE-188.40.251.19-3123
   password: origin
   port: 443
   server: 188.40.251.19
@@ -1141,7 +1075,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 24|🇪DE-162.55.62.193-3284
+  name: 24|🇪DE-162.55.62.193-3237
   network: ws
   port: 80
   server: 162.55.62.193
@@ -1153,7 +1087,7 @@ proxies:
     path: /telegram-id-@privatevpns
 - alterId: 0
   cipher: auto
-  name: 24|🇪DE-5.75.173.189-3304
+  name: 24|🇪DE-5.75.173.189-3257
   network: ws
   port: 80
   server: 5.75.173.189
@@ -1165,7 +1099,7 @@ proxies:
     path: /telegram-id-@privatevpns
 - alterId: 0
   cipher: auto
-  name: 24|🇪DE-78.46.129.226-3340
+  name: 24|🇪DE-78.46.129.226-3293
   network: ws
   port: 80
   server: 78.46.129.226
@@ -1177,7 +1111,7 @@ proxies:
     path: /telegram-id-@privatevpns
 - alterId: 0
   cipher: auto
-  name: 24|🇪DE-167.235.78.112-3382
+  name: 24|🇩🇪DE-167.235.78.112-3335
   network: ws
   port: 80
   server: 167.235.78.112
@@ -1189,7 +1123,7 @@ proxies:
     path: /telegram-id-@privatevpns
 - alterId: 0
   cipher: auto
-  name: 24|🇪DE-188.40.132.107-4232
+  name: 24|🇪DE-188.40.132.107-4185
   network: ws
   port: 80
   server: 188.40.132.107
@@ -1201,7 +1135,7 @@ proxies:
     path: /p3573l6m92h1ham3q23t
 - alterId: 0
   cipher: auto
-  name: 24|🇪DE-162.55.214.110-4451
+  name: 24|🇪DE-162.55.214.110-4404
   network: ws
   port: 51549
   server: 162.55.214.110
@@ -1213,7 +1147,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24|🇩🇪DE-150.230.149.55-4457
+  name: 24|🇩🇪DE-150.230.149.55-4410
   network: ws
   port: 6374
   server: 150.230.149.55
@@ -1224,19 +1158,19 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇪DE-185.104.184.78-4471
+  name: 24|🇪DE-185.104.184.78-4424
   password: G!yBwPWH3Vao
   port: 802
   server: 185.104.184.78
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇩🇪DE-185.104.184.78-4472
+  name: 24|🇩🇪DE-185.104.184.78-4425
   password: G!yBwPWH3Vao
   port: 804
   server: 185.104.184.78
   type: ss
 - cipher: aes-256-cfb
-  name: 24|🇪DE-68.183.74.63-4483
+  name: 24|🇪DE-68.183.74.63-4436
   obfs: http_simple
   obfs-param: ''
   password: 4369b96
@@ -1246,14 +1180,14 @@ proxies:
   server: 68.183.74.63
   type: ssr
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇩🇪DE-185.104.184.78-4485
+  name: 24|🇩🇪DE-185.104.184.78-4438
   password: G!yBwPWH3Vao
   port: 811
   server: 185.104.184.78
   type: ss
 - alterId: 0
   cipher: auto
-  name: 24|🇪DE-167.235.192.0-4491
+  name: 24|🇪DE-167.235.192.0-4444
   network: ws
   port: 25052
   server: 167.235.192.0
@@ -1265,7 +1199,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24|🇩🇪DE-159.223.30.153-4502
+  name: 24|🇩🇪DE-159.223.30.153-4455
   network: ws
   port: 8081
   server: 159.223.30.153
@@ -1275,13 +1209,13 @@ proxies:
   uuid: c2743f4a-9590-4406-dc78-6ac98c12004a
   ws-opts:
     path: /
-- name: 24|🇩🇪DE-51.77.71.131-4586
+- name: 24|🇩🇪DE-51.77.71.131-4539
   password: Sp3eDVp
   port: 443
   server: 51.77.71.131
   skip-cert-verify: false
   type: trojan
-- name: 24|🇩🇪DE-51.77.71.134-4591
+- name: 24|🇩🇪DE-51.77.71.134-4544
   password: origin
   port: 443
   server: 51.77.71.134
@@ -1289,7 +1223,7 @@ proxies:
   type: trojan
 - alterId: 4
   cipher: auto
-  name: 24|DE-138.68.90.231-5112
+  name: 24|DE-138.68.90.231-5065
   network: ws
   port: 8080
   server: 138.68.90.231
@@ -1299,165 +1233,165 @@ proxies:
   uuid: 826b8d0a-e0d3-407a-927d-19953c170779
   ws-opts:
     path: /cctv13/hd.m3u8
-- name: 24|🇪DE-3.126.50.169-5213
+- name: 24|🇪DE-3.126.50.169-5166
   password: PD07395842
   port: 443
   server: key-pony.rooster465.autos
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-gcm
-  name: 24|🇪DE-193.108.117.75-5373
+  name: 24|🇪DE-193.108.117.75-5326
   password: PCnnH6SQSnfoS27
   port: 8090
   server: 193.108.117.75
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇪DE-193.108.117.75-5374
+  name: 24|🇪DE-193.108.117.75-5327
   password: kDWvXYZoTBcGkC4
   port: 8881
   server: 193.108.117.75
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇪DE-193.108.117.75-5375
+  name: 24|🇪DE-193.108.117.75-5328
   password: e4FCWrgpkji3QY
   port: 9102
   server: 193.108.117.75
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇪DE-193.108.117.75-5376
+  name: 24|🇪DE-193.108.117.75-5329
   password: Y6R9pAtvxxzmGC
   port: 5001
   server: 193.108.117.75
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇪DE-193.108.117.75-5377
+  name: 24|🇪DE-193.108.117.75-5330
   password: faBAoD54k87UJG7
   port: 2376
   server: 193.108.117.75
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇪DE-193.108.117.75-5378
+  name: 24|🇪DE-193.108.117.75-5331
   password: pKEW8JPByTVTLtM
   port: 443
   server: 193.108.117.75
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇪DE-193.108.117.75-5379
+  name: 24|🇪DE-193.108.117.75-5332
   password: KixLvKzwjekG00rm
   port: 8080
   server: 193.108.117.75
   type: ss
-- name: 24|🇩🇪DE-91.195.240.94-5543
+- name: 24|🇩🇪DE-91.195.240.94-5496
   password: ED177480-E516-11EA-8B44-BBC4E882BA0B
   port: 20261
   server: js04.balala2016.xyz
   skip-cert-verify: false
   type: trojan
 - cipher: aes-256-gcm
-  name: 24|🇩🇪DE-145.239.1.100-5547
+  name: 24|🇩🇪DE-145.239.1.100-5500
   password: cdBIDV42DCwnfIN
   port: 8118
   server: 145.239.1.100
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇩🇪DE-145.239.1.100-5549
+  name: 24|🇩🇪DE-145.239.1.100-5502
   password: cdBIDV42DCwnfIN
   port: 8119
   server: 145.239.1.100
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇪DE-145.239.1.100-5550
+  name: 24|🇪DE-145.239.1.100-5503
   password: kDWvXYZoTBcGkC4
   port: 8881
   server: 145.239.1.100
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇩🇪DE-145.239.1.100-5552
+  name: 24|🇩🇪DE-145.239.1.100-5505
   password: g5MeD6Ft3CWlJId
   port: 5003
   server: 145.239.1.100
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇪DE-145.239.1.100-5553
+  name: 24|🇪DE-145.239.1.100-5506
   password: faBAoD54k87UJG7
   port: 2376
   server: 145.239.1.100
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇪DE-145.239.1.100-5556
+  name: 24|🇪DE-145.239.1.100-5509
   password: FoOiGlkAA9yPEGP
   port: 7306
   server: 145.239.1.100
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇪DE-145.239.1.100-5558
+  name: 24|🇪DE-145.239.1.100-5511
   password: zDNVedRFPQexG9v
   port: 6379
   server: 145.239.1.100
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇩🇪DE-145.239.1.100-5568
+  name: 24|🇪DE-145.239.1.100-5518
+  password: XKFKl2rULjIp74
+  port: 8009
+  server: 145.239.1.100
+  type: ss
+- cipher: aes-256-gcm
+  name: 24|🇩🇪DE-145.239.1.100-5521
   password: KixLvKzwjekG00rm
   port: 8000
   server: 145.239.1.100
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇪DE-145.239.1.100-5569
+  name: 24|🇩🇪DE-145.239.1.100-5522
   password: XKFKl2rULjIp74
   port: 8008
   server: 145.239.1.100
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇪DE-145.239.1.100-5570
+  name: 24|🇪DE-145.239.1.100-5523
   password: PCnnH6SQSnfoS27
   port: 8090
   server: 145.239.1.100
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇪DE-145.239.1.100-5573
+  name: 24|🇪DE-145.239.1.100-5526
   password: TEzjfAYq2IjtuoS
   port: 6679
   server: 145.239.1.100
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇪DE-145.239.1.100-5574
+  name: 24|🇪DE-145.239.1.100-5527
   password: KixLvKzwjekG00rm
   port: 5500
   server: 145.239.1.100
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇩🇪DE-145.239.1.100-5575
+  name: 24|🇩🇪DE-145.239.1.100-5528
   password: RexnBgU7EV5ADxG
   port: 7001
   server: 145.239.1.100
   type: ss
 - cipher: aes-256-gcm
-  name: 24|🇩🇪DE-145.239.1.100-5577
-  password: g5MeD6Ft3CWlJId
-  port: 5004
-  server: 145.239.1.100
-  type: ss
-- cipher: aes-256-gcm
-  name: 24|🇪DE-145.239.1.100-5579
+  name: 24|🇪DE-145.239.1.100-5532
   password: TEzjfAYq2IjtuoS
   port: 6697
   server: 145.239.1.100
   type: ss
-- name: 24|🇪DE-91.195.240.94-5669
+- name: 24|🇪DE-91.195.240.94-5622
   password: ED177480-E516-11EA-8B44-BBC4E882BA0B
   port: 20261
   server: tw01.balala2016.xyz
   skip-cert-verify: false
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 24|DE-161.35.69.20-6544
+  name: 24|DE-161.35.69.20-6497
   password: Ultr@r00t_2017
   port: 811
   server: 161.35.69.20
   type: ss
 - alterId: 0
   cipher: auto
-  name: 24|DE-51.75.70.34-6945
+  name: 24|DE-51.75.70.34-6898
   network: ws
   port: 443
   server: 51.75.70.34
@@ -1470,7 +1404,7 @@ proxies:
     path: /wmzmvws
 - alterId: 0
   cipher: auto
-  name: 24|🇩🇪DE-51.75.70.34-6947
+  name: 24|🇩🇪DE-51.75.70.34-6900
   network: ws
   port: 443
   server: 51.75.70.34
@@ -1483,7 +1417,7 @@ proxies:
     path: /ray
 - alterId: 0
   cipher: auto
-  name: 24|🇩🇪DE-170.187.185.37-7005
+  name: 24|🇩🇪DE-170.187.185.37-6958
   network: ws
   port: 443
   server: 170.187.185.37
@@ -1495,7 +1429,7 @@ proxies:
     path: /chat
 - grpc-opts:
     grpc-service-name: trgrpc
-  name: 24|🇪DE-95.179.255.171-7230
+  name: 24|🇪DE-95.179.255.171-7183
   network: grpc
   password: 92902210-2eb5-11ee-b234-205c6d5f5d78
   port: 2087
@@ -1505,7 +1439,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 24|🇩🇪DE-95.179.254.20-7231
+  name: 24|🇩🇪DE-95.179.254.20-7184
   network: ws
   port: 443
   server: 95.179.254.20
@@ -1517,7 +1451,7 @@ proxies:
     path: /@hopev2ray
 - grpc-opts:
     grpc-service-name: trojangrpc
-  name: 24|🇩🇪DE-95.179.254.136-7232
+  name: 24|🇩🇪DE-95.179.254.136-7185
   network: grpc
   password: mainssh-ddoejfv14
   port: 443
@@ -1527,7 +1461,7 @@ proxies:
   type: trojan
 - grpc-opts:
     grpc-service-name: trojangrpc
-  name: 24|🇩🇪DE-95.179.246.122-7234
+  name: 24|🇩🇪DE-95.179.246.122-7187
   network: grpc
   password: mainssh-niwrhf87
   port: 443
@@ -1536,26 +1470,26 @@ proxies:
   sni: getgrpc.mainssh.xyz
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇪DE-91.107.189.98-7250
+  name: 24|🇪DE-91.107.189.98-7203
   password: rIvzNCBP_t5odSW4DiMLDw
   port: 1080
   server: 91.107.189.98
   type: ss
 - cipher: aes-256-cfb
-  name: 24|🇩🇪DE-89.163.140.153-7253
+  name: 24|🇩🇪DE-89.163.140.153-7206
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 89.163.140.153
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 24|🇪DE-46.4.162.18-7348
+  name: 24|🇪DE-46.4.162.18-7301
   password: f8f7aCzcPKbsF8p3
   port: 30696
   server: 46.4.162.18
   type: ss
 - alterId: 0
   cipher: auto
-  name: 24|🇪DE-45.76.88.37-7365
+  name: 24|🇪DE-45.76.88.37-7318
   network: ws
   port: 2053
   server: 45.76.88.37
@@ -1567,7 +1501,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24|🇩🇪DE-45.76.88.37-7366
+  name: 24|🇩🇪DE-45.76.88.37-7319
   network: ws
   port: 2087
   server: 45.76.88.37
@@ -1579,7 +1513,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 24|🇪DE-45.76.88.37-7367
+  name: 24|🇪DE-45.76.88.37-7320
   network: ws
   port: 8443
   server: 45.76.88.37
@@ -1589,35 +1523,35 @@ proxies:
   uuid: 3d0c8ee5-3329-4252-aa1c-65f3fdaa0343
   ws-opts:
     path: /
-- name: 24|🇪DE-35.156.35.238-7421
+- name: 24|🇪DE-35.156.35.238-7374
   password: telegram-id-directvpn
   port: 22222
   server: 35.156.35.238
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: 24|🇪DE-3.123.22.69-7447
+- name: 24|🇪DE-3.123.22.69-7400
   password: telegram-id-privatevpns
   port: 22222
   server: 3.123.22.69
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: 24|🇩🇪DE-3.123.128.240-7452
+- name: 24|🇩🇪DE-3.123.128.240-7405
   password: telegram-id-privatevpns
   port: 22222
   server: 3.123.128.240
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: 24|🇩🇪DE-3.120.187.229-7455
+- name: 24|🇩🇪DE-3.120.187.229-7408
   password: telegram-id-privatevpns
   port: 22222
   server: 3.120.187.229
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: 24|🇪DE-209.250.236.93-7529
+- name: 24|🇪DE-209.250.236.93-7482
   network: grpc
   password: Cl150MQWlG
   port: 443
@@ -1627,7 +1561,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 24|🇪DE-199.247.23.31-7561
+  name: 24|🇪DE-199.247.23.31-7514
   network: ws
   port: 443
   server: 199.247.23.31
@@ -1637,14 +1571,14 @@ proxies:
   uuid: c13277ce-cda6-4d01-cedc-1e3605a0eb72
   ws-opts:
     path: /12796?ed=2048
-- name: 24|🇩🇪DE-18.196.127.24-7640
+- name: 24|🇩🇪DE-18.196.127.24-7593
   password: telegram-id-directvpn
   port: 22222
   server: 18.196.127.24
   skip-cert-verify: false
   sni: trj.rollingnext.co.uk
   type: trojan
-- name: 24|🇩🇪DE-18.184.9.101-7642
+- name: 24|🇩🇪DE-18.184.9.101-7595
   password: telegram-id-privatevpns
   port: 22222
   server: 18.184.9.101
@@ -1653,7 +1587,7 @@ proxies:
   type: trojan
 - grpc-opts:
     grpc-service-name: trojangrpc
-  name: 24|🇪DE-140.82.38.103-7934
+  name: 24|🇪DE-140.82.38.103-7887
   network: grpc
   password: mainssh-ddoejfv14
   port: 443
@@ -1663,7 +1597,7 @@ proxies:
   type: trojan
 - grpc-opts:
     grpc-service-name: trojangrpc
-  name: 24|🇩🇪DE-140.82.32.17-7936
+  name: 24|🇩🇪DE-140.82.32.17-7889
   network: grpc
   password: mainssh-niwrhf87
   port: 443
@@ -1673,7 +1607,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 24|🇩🇪DE-130.162.47.123-7957
+  name: 24|🇩🇪DE-130.162.47.123-7910
   network: ws
   port: 6854
   server: 130.162.47.123
@@ -1685,7 +1619,7 @@ proxies:
     path: /zBLPou
 - grpc-opts:
     grpc-service-name: trojangrpc
-  name: 24|🇪DE-108.61.171.167-7991
+  name: 24|🇪DE-108.61.171.167-7944
   network: grpc
   password: mainssh-niwrhf87
   port: 443
@@ -1695,7 +1629,7 @@ proxies:
   type: trojan
 - grpc-opts:
     grpc-service-name: trojangrpc
-  name: 24|🇪DE-108.61.170.104-7993
+  name: 24|🇪DE-108.61.170.104-7946
   network: grpc
   password: mainssh-ddoejfv14
   port: 443
