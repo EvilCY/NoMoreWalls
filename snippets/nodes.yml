@@ -294,89 +294,38 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 11|None_None_trojan_1126
+  network: ws
+  password: humanity
+  port: '443'
+  server: 162.159.136.234
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/62.0.3202.94 Safari/537.36
+    path: /assignment
 - alpn:
-  - h3
-  - h2
   - http/1.1
-  name: 11|None_None_trojan_1026
+  - h2
+  - h3
+  name: 11|None_None_trojan_1127
   network: ws
   password: humanity
   port: '443'
-  server: 104.21.46.3
+  server: 198.41.223.96
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; BLL-L22 Build/HUAWEIBLL-L22) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/54.0.2840.99 Safari/537.36
     path: /assignment
-- name: 11|None_None_trojan_1027
-  network: ws
-  password: humanity
-  port: '443'
-  server: 104.26.15.137
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; de-DE) AppleWebKit/534.17
-        (KHTML, like Gecko) Chrome/10.0.649.0 Safari/534.17
-    path: /assignment
-- name: 11|None_None_trojan_1028
-  network: ws
-  password: humanity
-  port: '443'
-  server: www.speedtest.org
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/55.0.2883.87 Safari/537.36
-    path: /assignment
-- name: 11|United States_None_trojan_1029
-  network: ws
-  password: humanity
-  port: '443'
-  server: 172.67.188.109
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/40.0.2214.115 Safari/537.36
-    path: /assignment
-- alterId: 0
-  cipher: auto
-  name: 11,21|美国 007
-  network: ws
-  port: 2083
-  server: cdn.sfacg.uk
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  ws-opts:
-    headers:
-      Host: or3.sfacg.uk
-    path: /or3
-  xudp: true
-- cipher: aes-256-cfb
-  name: 11|United States_Ashburn_ss_1127
-  password: amazonskr05
-  port: 443
-  server: 54.234.217.115
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 19|🇺🇸_US_美国->🇩🇪_DE_德国_1_0@0
@@ -1790,11 +1739,14 @@ proxies:
   ws-headers:
     Host: 0320hk857.fans8.xyz
   ws-path: /ray
-- cipher: chacha20-ietf-poly1305
-  name: 19|🇳🇱NL-185.242.86.156-156_1@156
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 19,36|RU
   password: 36ZCHeabUSfKjfQEvJ4HDV
   port: 54170
   server: 185.242.86.156
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -3850,6 +3802,22 @@ proxies:
   port: 35276
   server: 51.140.34.50
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 21|美国 007
+  network: ws
+  port: 2083
+  server: cdn.sfacg.uk
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  ws-opts:
+    headers:
+      Host: or3.sfacg.uk
+    path: /or3
+  xudp: true
 - alterId: 0
   cipher: auto
   name: 21|美国 008
@@ -12398,12 +12366,11 @@ proxies:
   uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
 - alterId: 0
   cipher: auto
-  name: 21,36|US11
+  name: 21|英国 012
   network: tcp
   port: 180
   server: 82.198.246.97
   skip-cert-verify: true
-  tls: true
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
@@ -12417,16 +12384,17 @@ proxies:
   uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
 - alterId: 0
   cipher: auto
-  name: 21|英国 013
+  name: 21,36|US11
   network: tcp
   port: 180
   server: 82.198.246.233
   skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
-  name: 21,36|US23
+  name: 21,36|US13
   network: tcp
   port: 180
   server: 82.198.246.37
@@ -12470,14 +12438,13 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: 21,36|未知69
+  name: 21|中国 069
   network: tcp
   port: 50002
   server: 112.132.215.108
   skip-cert-verify: true
-  tls: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
@@ -12491,12 +12458,11 @@ proxies:
   uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
 - alterId: 0
   cipher: auto
-  name: 21,36|US24 21.0MB/s
+  name: 21|美国 422
   network: tcp
   port: 18000
   server: 67.220.95.3
   skip-cert-verify: true
-  tls: true
   type: vmess
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - alterId: 0
@@ -12555,7 +12521,7 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - alterId: 0
   cipher: auto
-  name: 21,36|未知46
+  name: 21,36|未知131
   network: tcp
   port: 33506
   server: 140.233.177.28
@@ -12593,22 +12559,20 @@ proxies:
   uuid: d2d8601b-c14b-42c6-b8ea-33889bce152a
 - alterId: 0
   cipher: auto
-  name: 21,36|未知102
+  name: 21|俄罗斯 007
   network: tcp
   port: 22324
   server: 5.188.190.252
   skip-cert-verify: true
-  tls: true
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
-  name: 21,36|US4
+  name: 21|英国 016
   network: tcp
   port: 180
   server: 82.198.246.250
   skip-cert-verify: true
-  tls: true
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
@@ -12685,7 +12649,7 @@ proxies:
   uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
 - alterId: 0
   cipher: auto
-  name: 21,36|未知113 799.9KB/s
+  name: 21,36|未知51 2.9MB/s
   network: tcp
   port: 22324
   server: 66.163.118.73
@@ -12713,16 +12677,17 @@ proxies:
   uuid: eafa523f-3472-4efc-f1c5-6ce25b3910a9
 - alterId: 0
   cipher: auto
-  name: 21|乌克兰 006
+  name: 21,36|未知9 1.9MB/s
   network: tcp
   port: 22324
   server: 85.90.217.42
   skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
-  name: 21,36|未知152
+  name: 21,36|未知113
   network: tcp
   port: 2083
   server: 87.120.106.63
@@ -12818,22 +12783,20 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 21,36|未知127 20.9MB/s
+  name: 21|美国 438
   network: tcp
   port: 22324
   server: 158.51.123.42
   skip-cert-verify: true
-  tls: true
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
-  cipher: auto
-  name: 21,36|US15
+  cipher: none
+  name: 21|美国 439
   network: tcp
   port: 443
   server: 165.140.217.53
   skip-cert-verify: true
-  tls: true
   type: vmess
   uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
 - alterId: 0
@@ -12846,13 +12809,12 @@ proxies:
   type: vmess
   uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
 - alterId: 0
-  cipher: auto
-  name: 21,36|US21
+  cipher: none
+  name: 21|美国 441
   network: tcp
   port: 443
   server: 165.140.217.11
   skip-cert-verify: true
-  tls: true
   type: vmess
   uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
 - alterId: 0
@@ -12874,12 +12836,13 @@ proxies:
   type: vmess
   uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
 - alterId: 0
-  cipher: none
-  name: 21|美国 444
+  cipher: auto
+  name: 21,36|US3
   network: tcp
   port: 443
   server: 165.140.217.141
   skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
 - alterId: 0
@@ -12911,12 +12874,11 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
-  name: 21,36|US12 3.3MB/s
+  name: 21|美国 448
   network: tcp
   port: 22324
   server: 167.88.63.59
   skip-cert-verify: true
-  tls: true
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
@@ -12957,7 +12919,7 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
-  name: 21,36|未知135
+  name: 21,36|未知3
   network: tcp
   port: 38998
   server: 178.83.45.29
@@ -12967,12 +12929,11 @@ proxies:
   uuid: 48422300-458f-4dbb-b0f5-96f45450ab9f
 - alterId: 0
   cipher: auto
-  name: 21,36|未知53
+  name: 21|法国 009
   network: tcp
   port: 26126
   server: 188.165.61.68
   skip-cert-verify: true
-  tls: true
   type: vmess
   uuid: b09b111e-f41c-4145-83c9-029027a5a745
 - alterId: 0
@@ -12986,16 +12947,17 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
-  name: 21|美国 454
+  name: 21,36|未知142 2.3MB/s
   network: tcp
   port: 22324
   server: 216.106.187.60
   skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
-  name: 21,36|未知149 8.0MB/s
+  name: 21,36|未知126 12.0MB/s
   network: tcp
   port: 22324
   server: 216.152.152.187
@@ -13218,1939 +13180,6 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 36|未命名
-  network: tcp
-  port: 8080
-  server: 7.bmi.ir.varzesh3.com.de
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 52230779-9708-4da7-a7af-ed9b7342ff54
-- alterId: 0
-  cipher: auto
-  name: 36|HK
-  network: ws
-  port: 443
-  server: 47.76.102.39
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      host: ex1ogt73nzpqkac2.v.3dns.vip
-    path: /ws-vmess
-- alterId: 0
-  cipher: auto
-  name: 36|未知2
-  network: ws
-  port: 443
-  server: f.khilei.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      host: f.khilei.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 36|未知3
-  network: tcp
-  port: 55699
-  server: 109.248.162.194
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 2c2fc6a8-6a3c-410c-868b-620f56a1d10b
-- alterId: 0
-  cipher: auto
-  name: 36|未知4
-  network: ws
-  port: 443
-  server: 142.132.178.99
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 5f72f180-b21b-4b7a-8484-240759012604
-  ws-opts:
-    headers:
-      host: apjhdggyx.com
-    path: /5f72f180-b21b-4b7a-8484-240759096785
-- alterId: 0
-  cipher: auto
-  name: 36|US
-  network: tcp
-  port: 8881
-  server: 165.227.65.158
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: db5afae4-ac23-41a6-8378-f307a9a47436
-- alterId: 0
-  cipher: auto
-  name: 36|未知5
-  network: ws
-  port: 2052
-  server: cfcdn2.sanfencdn9.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: cd0eb936-9e1e-4730-989e-be43e7fcaf3e
-  ws-opts:
-    headers:
-      host: zifstzamhk1.yofnhkfc.xyz
-    path: /video/VuDFdktz
-- alterId: 0
-  cipher: auto
-  name: 36|未知6
-  network: ws
-  port: 80
-  server: zula.ir
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
-  ws-opts:
-    headers:
-      host: rubika.ir.google.com.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.apaspeedtest.netrat.com.eu.com.sde103.ir.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.xn--g28h.dns-dynamic.net.
-    path: /T,E,L,E,G,R,A,M,X,V,2,R,A,Y
-- alterId: 0
-  cipher: auto
-  name: 36|HK2 7.0KB/s
-  network: ws
-  port: 35043
-  server: 156.245.232.239
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
-  ws-opts:
-    headers:
-      host: www.pubgmobile.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|US2
-  network: tcp
-  port: 8881
-  server: 209.97.154.241
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: db5afae4-ac23-41a6-8378-f307a9a47436
-- alterId: 0
-  cipher: auto
-  name: 36|未知7
-  network: tcp
-  port: 2087
-  server: 31.184.244.6
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 6b306661-93c7-4653-94d6-a8adb742b82f
-- alterId: 0
-  cipher: auto
-  name: 36|未知8
-  network: grpc
-  port: 2096
-  server: ca.connfull.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: f2d7f0d2-9520-4d5c-9714-58cc138513a8
-- alterId: 0
-  cipher: auto
-  name: 36|未知9
-  network: tcp
-  port: 2003
-  server: tun-1.veraspeed.ir
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 8605b8dd-5b4c-4f2f-96c1-a01495cbc37e
-- alterId: 0
-  cipher: auto
-  name: 36|未知10
-  network: tcp
-  port: 28111
-  server: 46.224.171.220
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 38b27114-7714-4748-b488-3c49d4c7dcab
-- alterId: 0
-  cipher: auto
-  name: 36|US3
-  network: tcp
-  port: 8881
-  server: 167.172.158.100
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: db5afae4-ac23-41a6-8378-f307a9a47436
-- alterId: 0
-  cipher: auto
-  name: 36|HK3
-  network: ws
-  port: 443
-  server: 6JDvArazgU3qQR6Q.v.3dns.vip
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  ws-opts:
-    path: /ws-vmess
-- alterId: 0
-  cipher: auto
-  name: 36|未知11
-  network: tcp
-  port: 5006
-  server: trf-nld.ip-static.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: de3aeea2-d8af-4fea-afdc-4d8a451f4d1f
-- alterId: 0
-  cipher: auto
-  name: 36|未知12
-  network: tcp
-  port: 8055
-  server: vip2.showtimeless.site
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: b641b4ab-13e6-4dd8-803f-1b891419c3d5
-- alterId: 0
-  cipher: auto
-  name: 36|未知13
-  network: tcp
-  port: 3667
-  server: trtr1.dfsah.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 7fce633b-3ef1-4f2e-9db1-b704bd4e0526
-- alterId: 0
-  cipher: none
-  name: 36|未知14
-  network: ws
-  port: 80
-  server: 108.162.192.188
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 2ac4e269-1576-4f41-8c0d-6242e3c5fd8c
-  ws-opts:
-    headers:
-      host: 1270.0.1.dl3..ycа.ль.urkel.烏克爾.wonkacapitano.buzz.
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 36|未知15
-  network: tcp
-  port: 47907
-  server: 212.224.88.117
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: dbbd9c3f-d4cf-48bb-8bb4-2912a04dc8d5
-- alterId: 0
-  cipher: auto
-  name: 36|HK4
-  network: ws
-  port: 443
-  server: 47.243.92.155
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  ws-opts:
-    headers:
-      host: mTCKUNDiGePwU3uP.v.3dns.vip
-    path: /ws-vmess
-- alterId: 0
-  cipher: auto
-  name: 36|未知16
-  network: tcp
-  port: 443
-  server: 91.108.146.32
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 1fcf7664-a923-4a71-90f6-ff212fbb062e
-- alterId: 0
-  cipher: auto
-  name: 36|未知17
-  network: tcp
-  port: 443
-  server: irc.jahannetwork.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 0069c10a-a224-49c5-8613-4cec5bb9e33d
-- alterId: 0
-  cipher: auto
-  name: 36|未知18
-  network: tcp
-  port: 61977
-  server: pl2.pi10.ir
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 113ae61b-d6da-4d08-9221-48595cb8436c
-- alterId: 0
-  cipher: auto
-  name: 36|未知19
-  network: ws
-  port: 443
-  server: 64.188.117.165
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  ws-opts:
-    headers:
-      host: renderer-stream-2-62.mirra.now
-    path: /api/v1/gpu-stream/socket
-- alterId: 0
-  cipher: auto
-  name: 36|未知20
-  network: ws
-  port: 80
-  server: 104.16.219.108
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
-  ws-opts:
-    headers:
-      host: rubika.ir.google.com.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.aparat.com.V2ray.com.shf2.ir.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.xn--g28h.dns-dynamic.net.
-    path: /Telegram/XV2ray
-- alterId: 0
-  cipher: auto
-  name: 36|未知21
-  network: httpupgrade
-  port: 8080
-  server: connecto3.kolman.com.de
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 5190813e-35e1-45dc-b915-189ab4bf46bf
-- alterId: 0
-  cipher: auto
-  name: 36|未知22
-  network: httpupgrade
-  port: 5060
-  server: 169.40.32.48
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: f54e93d1-cd8e-434f-8122-4887e62c97f5
-- alterId: 0
-  cipher: auto
-  name: 36|未知23
-  network: ws
-  port: 443
-  server: cf.iepl1.me
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 3960f128-1163-40a3-8dd7-7c91176e14a5
-  ws-opts:
-    headers:
-      host: 01.appleid.bf
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 36|未知24
-  network: ws
-  port: 80
-  server: 162.159.129.17
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
-  ws-opts:
-    headers:
-      host: rubika.ir.google.com.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.apaspeedtest.netrat.com.eu.com.shw102.ir.xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.xn--g28h.dns-dynamic.net.
-    path: /T,E,L,E,G,R,A,M,X,V,2,R,A,Y
-- alterId: 0
-  cipher: auto
-  name: 36|未知25
-  network: ws
-  port: 443
-  server: 185.36.143.71
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  ws-opts:
-    headers:
-      host: renderer-stream-2-62.mirra.now
-    path: /api/v1/gpu-stream/socket
-- alterId: 0
-  cipher: auto
-  name: 36|US5
-  network: ws
-  port: 52008
-  server: 38.95.119.243
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 5d7acc8e-f539-44e0-d255-41fc14cfc877
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: chacha20-poly1305
-  name: 36|HK5
-  network: tcp
-  port: 9527
-  server: 43.132.192.16
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: ae862e1d-3b8c-443a-027b-37c6c69ef43c
-- alterId: 0
-  cipher: auto
-  name: 36|未知26
-  network: ws
-  port: 443
-  server: 210.138.37.53
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      host: DrBKg16eGf3FZlM3.v.3dns.vip
-    path: /ws-vmess
-- alterId: 0
-  cipher: auto
-  name: 36|未知27
-  network: ws
-  port: 42034
-  server: 46.8.237.242
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 7d85828a-906b-43c4-8dc9-0785cd4801af
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|未知28
-  network: tcp
-  port: 80
-  server: ar.paydar.site
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 00104263-5b99-491f-85bd-5f296d8447df
-- alterId: 0
-  cipher: auto
-  name: 36|US6
-  network: tcp
-  port: 10028
-  server: us-nohessss.privnet.store
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: e7d4d923-c8f6-4b94-bf05-c5e07a83e2f6
-- alterId: 0
-  cipher: auto
-  name: 36|未知29
-  network: ws
-  port: 443
-  server: 193.180.211.155
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  ws-opts:
-    headers:
-      host: renderer-stream-2-62.mirra.now
-    path: /api/v1/gpu-stream/socket
-- alterId: 0
-  cipher: auto
-  name: 36|未知30
-  network: grpc
-  port: 8443
-  server: 85.159.229.8
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: afe57557-df24-43e5-9cea-5d2acc2cad08
-- alterId: 0
-  cipher: auto
-  name: 36|未知31
-  network: tcp
-  port: 51459
-  server: 91.107.139.186
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 500cdc83-b189-4d79-b06b-139c7972a57f
-- alterId: 0
-  name: '36|US #1'
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.229
-  skip-cert-verify: true
-  sni: www.ignitelimit.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 36|未知32
-  network: ws
-  port: 443
-  server: 185.99.2.175
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  ws-opts:
-    headers:
-      host: renderer-stream-2-62.mirra.now
-    path: /api/v1/gpu-stream/socket
-- alterId: 0
-  cipher: auto
-  name: 36|未知33 361.5KB/s
-  network: ws
-  port: 80
-  server: 3h-kazakhstan1.09vpn.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  ws-opts:
-    path: /vmess/
-- alterId: 0
-  cipher: none
-  name: 36|未知34
-  network: tcp
-  port: 41547
-  server: 82.40.62.115
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 60379c1b-7aee-475c-a5f3-ad10ee01a0d1
-- alterId: 0
-  cipher: auto
-  name: 36|未知35
-  network: ws
-  port: 443
-  server: 193.180.208.234
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  ws-opts:
-    headers:
-      host: renderer-stream-2-62.mirra.now
-    path: /api/v1/gpu-stream/socket
-- alterId: 0
-  cipher: auto
-  name: 36|未知36
-  network: tcp
-  port: 8443
-  server: 188.130.207.241
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: d65cd75f-27c9-4b79-86d4-7ca3e09bbe3f
-- alterId: 0
-  cipher: auto
-  name: 36|未知37
-  network: httpupgrade
-  port: 443
-  server: 193.148.253.210
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 3eb0669f-a5f4-45bd-8bf0-0b67791a6c50
-- alterId: 0
-  cipher: auto
-  name: 36|未知38
-  network: ws
-  port: 53267
-  server: 167.150.100.81
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 0a4e5d12-f804-4991-a3bf-e45dbfcb1201
-  ws-opts:
-    path: /gx5hemjvd8
-- alterId: 0
-  cipher: auto
-  name: 36|US7
-  network: ws
-  port: 443
-  server: 147.45.125.231
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  ws-opts:
-    headers:
-      host: renderer-stream-2-62.mirra.now
-    path: /api/v1/gpu-stream/socket
-- alterId: 0
-  cipher: auto
-  name: 36|未知39
-  network: tcp
-  port: 443
-  server: 167.235.70.202
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 7209d7ee-cfd0-46c0-a580-d92e2f0c801c
-- alterId: 0
-  cipher: auto
-  name: 36|HK6
-  network: tcp
-  port: 20143
-  server: 91.149.236.46
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 6785594d-31c8-48ff-c7ad-9f99c9483bf0
-- alterId: 0
-  cipher: auto
-  name: 36|未知40
-  network: ws
-  port: 2083
-  server: 104.16.61.8
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      host: 6ba6-sound-6ba6.siliy37818.workers.dev
-    path: /obdii.cfd/linkws
-- alterId: 0
-  cipher: auto
-  name: 36|未知41
-  network: ws
-  port: 443
-  server: 94.159.110.41
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  ws-opts:
-    headers:
-      host: renderer-stream-2-62.mirra.now
-    path: /api/v1/gpu-stream/socket
-- alterId: 0
-  cipher: auto
-  name: 36|未知42
-  network: ws
-  port: 443
-  server: a.baradiha.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      host: a.baradiha.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 36|未知43
-  network: httpupgrade
-  port: 8080
-  server: connecto1.kolman.com.de
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 5190813e-35e1-45dc-b915-189ab4bf46bf
-- alterId: 0
-  name: 36|🇺🇸US美国2
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.219
-  skip-cert-verify: true
-  sni: www.ignitelimit.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 36|未知44
-  network: tcp
-  port: 5388
-  server: dashboard.afracafe.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 130b0fbf-4f19-44d0-911f-95355e9632e4
-- alterId: 0
-  cipher: auto
-  name: 36|未知45
-  network: ws
-  port: 443
-  server: 95.164.90.133
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  ws-opts:
-    headers:
-      host: renderer-stream-2-62.mirra.now
-    path: /api/v1/gpu-stream/socket
-- alterId: 0
-  cipher: auto
-  name: 36|未知47
-  network: tcp
-  port: 22324
-  server: fi1.levikogjgfdd.ir
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alterId: 0
-  cipher: auto
-  name: 36|未知48
-  network: tcp
-  port: 51595
-  server: vspjj8w2.selqora.ir
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 961acd2b-37a6-4214-b055-63ba6bf4f425
-- alterId: 0
-  cipher: auto
-  name: 36|US8
-  network: tcp
-  port: 8881
-  server: 143.42.7.63
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: db5afae4-ac23-41a6-8378-f307a9a47436
-- alterId: 0
-  cipher: auto
-  name: 36|未知49
-  network: ws
-  port: 443
-  server: 64.188.106.254
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  ws-opts:
-    headers:
-      host: renderer-stream-2-62.mirra.now
-    path: /api/v1/gpu-stream/socket
-- alterId: 0
-  cipher: auto
-  name: 36|未知50
-  network: ws
-  port: 80
-  server: 151.101.193.57
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: b7dae211-7472-48bf-996c-57d6538d1ef4
-  ws-opts:
-    headers:
-      host: Dbdjhiw72ebsu272hs519j.com
-    path: ws/?ed=2048
-- alterId: 0
-  name: 36|🇺🇸US美国3
-  network: ws
-  password: MiTiVPN
-  port: 443
-  server: 151.101.56.7
-  skip-cert-verify: true
-  sni: ssl.fastly.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 36|未知51
-  network: ws
-  port: 4932
-  server: image.colorviolet.ir
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 6b8dbc66-ea40-444a-b93d-cb20c008af10
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|未知52
-  network: ws
-  port: 80
-  server: 104.16.53.5
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 5ea4a644-07e9-4ad0-860d-50bd9b6e7f94
-  ws-opts:
-    headers:
-      host: dl2..3.mалкцл..wonkacapitano.buzz.
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 36|未知54
-  network: ws
-  port: 28267
-  server: 176.65.140.210
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 18c1c45d-95bf-435b-ae4c-7eb96f793af4
-  ws-opts:
-    headers:
-      host: bobo.badrangteb.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|未知55
-  network: ws
-  port: 443
-  server: 158.51.121.63
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      host: seribus.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 36|未知56
-  network: tcp
-  port: 80
-  server: 178.105.210.96
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 78fb1a62-b276-4a13-ab57-f2b87d0f37a5
-- alterId: 0
-  cipher: auto
-  name: 36|未知57
-  network: ws
-  port: 443
-  server: 89.150.35.155
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 5f72f180-b21b-4b7a-8484-240759012604
-  ws-opts:
-    headers:
-      host: apjhdggyx.com
-    path: /5f72f180-b21b-4b7a-8484-240759096785
-- alterId: 0
-  cipher: auto
-  name: 36|未知58
-  network: tcp
-  port: 41501
-  server: dashboard.rozinhost.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 40bb1f02-e58b-455b-a29c-86d2983fb08b
-- alterId: 64
-  cipher: auto
-  name: 36|未知59
-  network: tcp
-  port: 41492
-  server: 120.232.242.126
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 36|未知60 167.7KB/s
-  network: ws
-  port: 8443
-  server: 172.64.80.1
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  ws-opts:
-    headers:
-      host: v2ray1.dozapp.xyz
-    path: /lMnsZUN4/
-- alterId: 0
-  cipher: auto
-  name: 36|未知61
-  network: ws
-  port: 80
-  server: 104.22.30.97
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 2ac4e269-1576-4f41-8c0d-6242e3c5fd8c
-  ws-opts:
-    headers:
-      host: 1270.0.1.dl3.烏克爾拯救聖誕老人電影.yркельпасаетcанту.фильм.urkel.烏克爾救援.wonkacapitano.buzz.
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 36|未知62
-  network: httpupgrade
-  port: 2095
-  server: cdn-cloudflare455.korvexe.ir
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 8000e374-6b7f-4bbf-b45f-2272657ed5f9
-- alterId: 0
-  cipher: auto
-  name: 36|未知63
-  network: xhttp
-  port: 8080
-  server: 46.8.100.213
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: cfd341d9-47d5-4dab-bb60-b588e643c778
-- alterId: 0
-  cipher: auto
-  name: 36|未知64
-  network: tcp
-  port: 38320
-  server: 124.151.45.60
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: d643d6ea-2e48-4ad5-b96e-d11b889cc6a6
-- alterId: 0
-  cipher: auto
-  name: 36|未知66
-  network: ws
-  port: 443
-  server: 212.95.34.195
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  ws-opts:
-    headers:
-      host: renderer-stream-2-62.mirra.now
-    path: /api/v1/gpu-stream/socket
-- alterId: 0
-  cipher: auto
-  name: 36|未知67
-  network: ws
-  port: 443
-  server: 57.129.28.64
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      host: serkat.org
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 36|未知68
-  network: tcp
-  port: 110
-  server: 94.156.170.102
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 8e9687fc-a3a7-414a-8676-8e2136797cfe
-- alterId: 0
-  cipher: auto
-  name: 36|未知70
-  network: tcp
-  port: 54102
-  server: de2.pi10.ir
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 113ae61b-d6da-4d08-9221-48595cb8436c
-- alterId: 0
-  cipher: auto
-  name: 36|HK7
-  network: ws
-  port: 443
-  server: drbkg16egf3fzlm3.v.3dns.vip
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      host: DrBKg16eGf3FZlM3.v.3dns.vip
-    path: /ws-vmess
-- alterId: 0
-  cipher: auto
-  name: 36|未知71
-  network: ws
-  port: 443
-  server: jahfkjha.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
-  ws-opts:
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 36|未知72
-  network: ws
-  port: 443
-  server: 132.243.22.80
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  ws-opts:
-    headers:
-      host: renderer-stream-2-62.mirra.now
-    path: /api/v1/gpu-stream/socket
-- alterId: 0
-  cipher: auto
-  name: 36|HK8
-  network: tcp
-  port: 16115
-  server: zfd-hkv2.kunlun01dns.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-- alterId: 0
-  cipher: auto
-  name: 36|未知73
-  network: tcp
-  port: 443
-  server: 31.15.16.37
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 2e547753-7f19-480e-b276-1d26af429b95
-- alterId: 0
-  cipher: auto
-  name: 36|未知74
-  network: tcp
-  port: 9119
-  server: GR1-Public-IR.g2gstore.ir
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: ae56511d-6b39-454b-847b-b711782d18cb
-- alterId: 0
-  cipher: auto
-  name: 36|未知75
-  network: tcp
-  port: 15910
-  server: netherland.zelnora.ir
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 349f2e04-aff6-44a6-8763-f5e7b56974ae
-- alterId: 0
-  cipher: auto
-  name: 36|未知76
-  network: tcp
-  port: 443
-  server: fast.jahancloud.space
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 1c2fd464-98e2-4f01-a635-d39f97170e69
-- alterId: 0
-  cipher: auto
-  name: 36|未知77
-  network: tcp
-  port: 2648
-  server: 150.242.244.116
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: aeff933f-0ae6-4465-85bf-12f1394f35af
-- alterId: 0
-  cipher: auto
-  name: 36|HK9
-  network: ws
-  port: 36703
-  server: 47.244.120.197
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
-  ws-opts:
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 36|未知78
-  network: tcp
-  port: 41501
-  server: dashboard.lunaramarket.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 1af1b7f5-eb1e-4176-ab60-c134fd283b6c
-- alterId: 0
-  cipher: auto
-  name: 36|未知79
-  network: tcp
-  port: 2082
-  server: s3.megaping.casa
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 13188d38-4aa1-4071-86b9-a246193e5d69
-- alterId: 0
-  cipher: auto
-  name: 36|US9
-  network: tcp
-  port: 8881
-  server: 159.65.44.98
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: db5afae4-ac23-41a6-8378-f307a9a47436
-- alterId: 0
-  cipher: auto
-  name: 36|未知80
-  network: ws
-  port: 6800
-  server: image.colorviolet.ir
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 6b8dbc66-ea40-444a-b93d-cb20c008af10
-  ws-opts:
-    path: /
-- alterId: 0
-  name: 36|🇺🇸US美国4
-  network: ws
-  password: humanity
-  port: 443
-  server: 172.67.221.242
-  skip-cert-verify: true
-  sni: www.ignitelimit.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 36|US10
-  network: xhttp
-  port: 80
-  server: live.theworldwidewolf.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 5675050a-a5b0-4748-be46-c4567e5d4d24
-- alterId: 0
-  cipher: auto
-  name: 36|未知81
-  network: tcp
-  port: 2083
-  server: xgr.goldnshop.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: beadd688-6285-4f0e-bb5e-d984570567a4
-- alterId: 0
-  cipher: auto
-  name: 36|未知82
-  network: tcp
-  port: 443
-  server: 46.8.100.213
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: cfd341d9-47d5-4dab-bb60-b588e643c778
-- alterId: 0
-  cipher: auto
-  name: 36|未知83
-  network: ws
-  port: 80
-  server: 152.67.8.205
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|未知84
-  network: ws
-  port: 443
-  server: me.kalakatha.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      host: me.kalakatha.org
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 36|未知85
-  network: tcp
-  port: 5381
-  server: dashboard.afrashop.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 130b0fbf-4f19-44d0-911f-95355e9632e4
-- alterId: 0
-  cipher: auto
-  name: 36|未知86
-  network: ws
-  port: 443
-  server: 212.80.218.89
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  ws-opts:
-    headers:
-      host: renderer-stream-2-62.mirra.now
-    path: /api/v1/gpu-stream/socket
-- alterId: 0
-  cipher: auto
-  name: 36|未知87
-  network: tcp
-  port: 33431
-  server: dl-g2.arashdownload.ir
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 4a049f0e-ba67-4a36-853f-a74df24368ec
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 36|未知88
-  network: tcp
-  port: 1007
-  server: s1.connect.labex.pro
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: d4c556a2-3d61-4b1d-9550-d6d010ff1d3f
-- alterId: 0
-  cipher: auto
-  name: 36|未知89
-  network: tcp
-  port: 13301
-  server: tr2.pi10.ir
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 113ae61b-d6da-4d08-9221-48595cb8436c
-- alterId: 0
-  cipher: auto
-  name: 36|未知90
-  network: tcp
-  port: 2086
-  server: mnl2.qjcm.ir
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 43c7c028-4309-41c8-99f2-0896766615f1
-- alterId: 0
-  cipher: auto
-  name: 36|未知91
-  network: ws
-  port: 80
-  server: tr1-smart.adelping.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
-  ws-opts:
-    headers:
-      host: TM_AZARBAYJAB1.new.99.workers.dev
-    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1/?de=2560
-- alterId: 0
-  cipher: auto
-  name: 36|未知92
-  network: tcp
-  port: 9992
-  server: ai.configfast.ir
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 67e2444b-e4f5-4b25-89af-e0f47cdc20fd
-- alterId: 0
-  cipher: auto
-  name: 36|未知93
-  network: tcp
-  port: 443
-  server: 167.235.28.242
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 6b7cbc41-fb80-41a8-8eb6-b5bdb0e86147
-- alterId: 0
-  cipher: auto
-  name: 36|未知94
-  network: ws
-  port: 44808
-  server: rma4.rmaaccshop.ir
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 0a6c6c12-d4bd-485e-9bf1-59acec564eef
-  ws-opts:
-    headers:
-      host: rma4.rmaaccshop.ir
-    path: /rma
-- alterId: 0
-  cipher: none
-  name: 36|未知95
-  network: ws
-  port: 80
-  server: 188.114.97.2
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: c53b8706-7a23-486c-89c5-4dac1209ef11
-  ws-opts:
-    headers:
-      host: Be2.vmess.site.
-    path: /vmess
-- alterId: 0
-  name: 36|🇺🇸US美国5
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.204
-  skip-cert-verify: true
-  sni: www.ignitelimit.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 36|未知96
-  network: ws
-  port: 443
-  server: 87.120.222.2
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  ws-opts:
-    headers:
-      host: renderer-stream-2-62.mirra.now
-    path: /api/v1/gpu-stream/socket
-- alterId: 0
-  cipher: auto
-  name: 36|未知97
-  network: ws
-  port: 80
-  server: 159.89.29.136
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: d20d6ede-433c-11ed-b81f-cfd905df9958
-  ws-opts:
-    headers:
-      host: cx.com
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 36|未知98
-  network: ws
-  port: 8103
-  server: 8103.shomaparvazroyadetonnist-bypassishere.lat
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
-  ws-opts:
-    headers:
-      host: ad80f8ec-4861-11f0-a948-6a75f667b472.ShomaParvazRoYadetonNist-BypassIsHere.lat
-    path: /ad80f8ec-4861-11f0-a948-6a75f667b472?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 36|US13
-  network: tcp
-  port: 2086
-  server: upg.appcity-download.ir
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 32bb3496-e089-4efe-8e73-e12fd0a60ca7
-- alterId: 0
-  cipher: auto
-  name: 36|未知99
-  network: ws
-  port: 443
-  server: us16-4.998998.best
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  ws-opts:
-    headers:
-      host: server1.9966338.xyz
-    path: /efrsdioy98wert
-- alterId: 0
-  cipher: auto
-  name: 36|US14
-  network: tcp
-  port: 8881
-  server: 138.197.1.222
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: db5afae4-ac23-41a6-8378-f307a9a47436
-- alterId: 0
-  cipher: auto
-  name: 36|未知100
-  network: tcp
-  port: 8080
-  server: 130.185.123.32
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: c6c03582-a4d2-4efe-9af1-83e730b11f9a
-- alterId: 0
-  cipher: auto
-  name: 36|HK10
-  network: ws
-  port: 443
-  server: 47.76.197.72
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      host: m01c7b2z26dtqgee.v.3dns.vip
-    path: /ws-vmess
-- alterId: 0
-  cipher: auto
-  name: 36|未知101
-  network: tcp
-  port: 443
-  server: guanwang.awsno.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-- alterId: 0
-  cipher: auto
-  name: 36|未知103
-  network: ws
-  port: 443
-  server: 89.127.218.61
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  ws-opts:
-    headers:
-      host: renderer-stream-2-62.mirra.now
-    path: /api/v1/gpu-stream/socket
-- alterId: 0
-  cipher: auto
-  name: 36|未知104
-  network: ws
-  port: 443
-  server: bamparda.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      host: bamparda.com
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 36|未知105
-  network: tcp
-  port: 10380
-  server: ho.duravexv.ir
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: b1b0fef2-b2fc-4265-9512-524c34d3700c
-- alterId: 0
-  cipher: auto
-  name: 36|未知106
-  network: tcp
-  port: 2053
-  server: node-uk.connectsuite.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 72f2cbe4-2874-45b7-b6aa-b93077c10c72
-- alterId: 0
-  cipher: auto
-  name: 36|未知107
-  network: tcp
-  port: 2083
-  server: 93.114.98.221
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 552ca1e2-d1d4-4d9d-b0ea-9fabd287ad14
-- alterId: 0
-  cipher: auto
-  name: 36|未知108
-  network: tcp
-  port: 2052
-  server: 51.195.235.71
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 59e28f78-c31b-4613-9d9f-1e6732a31f46
-- alterId: 0
-  cipher: auto
-  name: 36|未知109
-  network: tcp
-  port: 2086
-  server: 65.109.178.10
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
-- alterId: 0
-  cipher: auto
-  name: 36|未知110
-  network: tcp
-  port: 2002
-  server: tun-1.veraspeed.ir
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 8605b8dd-5b4c-4f2f-96c1-a01495cbc37e
-- alterId: 0
-  cipher: auto
-  name: 36|未知111
-  network: ws
-  port: 443
-  server: 95.85.233.138
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  ws-opts:
-    headers:
-      host: renderer-stream-2-62.mirra.now
-    path: /api/v1/gpu-stream/socket
-- alterId: 0
-  cipher: auto
-  name: 36|HK11
-  network: ws
-  port: 443
-  server: 8.217.229.155
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  ws-opts:
-    headers:
-      host: qTKDR8jXE3wEFxJM.v.3dns.vip
-    path: /ws-vmess
-- alterId: 0
-  cipher: auto
-  name: 36|未知112
-  network: ws
-  port: 2082
-  server: s10.tiiizshop.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 5aa3424e-b5c5-460c-bbf1-d6f6169d30f5
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|US16
-  network: ws
-  port: 443
-  server: 198.23.184.122
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 6910f78e-3c38-46a1-b287-837279ad9b4a
-  ws-opts:
-    headers:
-      host: xc163.meiziba5566.com
-    path: /837279ad9b4a
-- alterId: 0
-  cipher: auto
-  name: 36|未知114
-  network: tcp
-  port: 2086
-  server: 188.132.174.236
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
-- alterId: 0
-  cipher: auto
-  name: 36|未知115
-  network: tcp
-  port: 56755
-  server: FiNl1-ReAlIy.12l.iR
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 199951ee-5936-43f7-b183-273295263314
-- alterId: 0
-  cipher: auto
-  name: 36|HK12
-  network: ws
-  port: 443
-  server: 47.86.107.119
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      host: lcv8v9l7OyamxxfZ.v.3dns.vip
-    path: /ws-vmess
-- alterId: 0
-  cipher: auto
-  name: 36|未知116
-  network: tcp
-  port: 2086
-  server: nll.qjcm.ir
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 5ee10130-8810-44e1-bc3c-36a34ba9e121
-- alterId: 0
-  cipher: auto
-  name: 36|US17
-  network: ws
-  port: 15422
-  server: 142.93.176.61
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 40ec6644-4c68-4825-be1e-cf71c16942c7
-  ws-opts:
-    headers:
-      host: Play.google.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|未知117
-  network: tcp
-  port: 443
-  server: dl1.armd.fun
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: f6f54cb7-6a60-49cd-a871-f7b26064dce9
-- alterId: 0
-  cipher: auto
-  name: 36|未知118
-  network: tcp
-  port: 5001
-  server: trf-nld.ip-static.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03bda96d-604a-4839-a087-fea6749f2918
-- alterId: 0
-  cipher: auto
-  name: 36|未知119
-  network: ws
-  port: 80
-  server: 68.183.209.180
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: d5121154-ced6-460d-a9fd-5892027ab4a0
-  ws-opts:
-    path: /graphql
-- alterId: 0
-  cipher: auto
-  name: 36|未知120
-  network: tcp
-  port: 28966
-  server: iran1.danqela.ir
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 9de7119b-c407-4677-955b-2679567c72c8
-- alterId: 0
-  cipher: auto
-  name: 36|未知121
-  network: tcp
-  port: 5384
-  server: dashboard.aframarket.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 130b0fbf-4f19-44d0-911f-95355e9632e4
-- alterId: 0
-  cipher: auto
-  name: 36|未知122
-  network: ws
-  port: 443
-  server: 172.67.164.164
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: a1655f51-1e20-4a92-8a11-b7ca30a7a353
-  ws-opts:
-    headers:
-      host: afrhms07.xfixedfloat.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 36|未知123
-  network: ws
-  port: 443
-  server: 185.137.223.71
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  ws-opts:
-    headers:
-      host: renderer-stream-2-62.mirra.now
-    path: /api/v1/gpu-stream/socket
-- alterId: 0
-  cipher: auto
-  name: 36|未知124
-  network: httpupgrade
-  port: 443
-  server: 185.204.169.127
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 5fd0c433-efe8-466a-9fd7-233a448e8b58
-- alterId: 0
-  cipher: auto
-  name: 36|未知125
-  network: ws
-  port: 443
-  server: 95.81.126.119
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  ws-opts:
-    headers:
-      host: renderer-stream-2-62.mirra.now
-    path: /api/v1/gpu-stream/socket
-- alterId: 0
-  cipher: auto
-  name: 36|US18
-  network: tcp
-  port: 20728
-  server: usa.selqora.ir
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: ff96cb3b-4c7e-4f65-a69b-3f8670d3450c
-- alterId: 0
-  cipher: auto
-  name: 36|TW
-  network: ws
-  port: 443
-  server: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  ws-opts:
-    headers:
-      host: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|未知126
-  network: httpupgrade
-  port: 443
-  server: www.speedtest.net
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: c8b3fd38-cb60-434c-bd7e-63638226f4a8
-- alterId: 0
-  cipher: auto
-  name: 36|未知128
-  network: ws
-  port: 80
-  server: sacda.tr.snapeurop.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: a17be1ef-d5bc-41a1-aeac-b02345823f07
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|US19
-  network: tcp
-  port: 8881
-  server: 155.138.164.71
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: db5afae4-ac23-41a6-8378-f307a9a47436
-- alterId: 0
-  cipher: auto
-  name: 36|未知129
-  network: ws
-  port: 10000
-  server: 51.75.74.253
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 678a8a2c-aca8-11f1-b342-afa6288e22f8
-  ws-opts:
-    path: /vpnjantit
-- alterId: 0
-  cipher: auto
-  name: 36|未知130
-  network: ws
-  port: 443
-  server: 102.177.189.101
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
-  ws-opts:
-    headers:
-      host: 4fc128ce-4845-11f0-a948-6a75f667b472.ShomaParvazRoYadetonNist-BypassIsHere.lat
-    path: /4fc128ce-4845-11f0-a948-6a75f667b472?ed=2365
-- alterId: 0
-  cipher: auto
-  name: 36|未知131
-  network: ws
-  port: 8443
-  server: 104.19.47.20
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 39135a39-e6ca-43df-a360-d859eea58d86
-  ws-opts:
-    headers:
-      host: hk01.linkitnow.net
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 36|未知132
-  network: ws
-  port: 443
-  server: mci.mosi.mosipro.ml
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 3f197280-7b21-4f39-b763-4bb004e8021f
-  ws-opts:
-    headers:
-      host: Dusseldorf.kotick.site
-    path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: 36|未知133
-  network: tcp
-  port: 27501
-  server: 191.96.94.50
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 93842911-bc7f-47e9-a036-904d205b3d11
-- alterId: 0
-  cipher: auto
-  name: 36|未知134
-  network: grpc
-  port: 2087
-  server: 172.64.32.154
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 2a3263e2-891c-4446-b474-a8c63acb6e25
-- alterId: 0
-  cipher: auto
-  name: 36|未知136
-  network: tcp
-  port: 5385
-  server: dashboard.afrapay.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 76cefcd7-6b53-4c65-ad29-1a92734fc968
-- alterId: 0
-  cipher: auto
-  name: 36|未知137
-  network: tcp
-  port: 41925
-  server: 109.248.162.194
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: bd9b9eb5-2b21-4303-8bdb-21c6e71663fe
-- alterId: 0
-  cipher: auto
-  name: 36|未知138
-  network: ws
-  port: 443
-  server: 162.4.136.79
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  ws-opts:
-    headers:
-      host: renderer-stream-2-62.mirra.now
-    path: /api/v1/gpu-stream/socket
-- alterId: 0
-  cipher: auto
-  name: 36|未知139
-  network: ws
-  port: 8443
-  server: chatgpt.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  ws-opts:
-    headers:
-      host: v2ray1.dozapp.xyz
-    path: /lMnsZUN4/
-- alterId: 0
-  cipher: auto
-  name: 36|未知140
-  network: grpc
-  port: 8443
-  server: forward3.maryam1500.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: efdf1e4b-6bca-4bf9-8561-1af0e8d2cf85
-- alterId: 0
-  cipher: auto
-  name: 36|US20
-  network: tcp
-  port: 6718
-  server: frkonkor.velmor.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 1c46e7ee-ba01-4d3d-8625-7752253f70ac
-- alterId: 0
-  cipher: auto
-  name: 36|未知141
   network: ws
   port: 8080
   server: 185.143.232.178
@@ -15164,48 +13193,114 @@ proxies:
     path: /s2BSpP6uUOPQ499phpYH87TsXl
 - alterId: 0
   cipher: auto
-  name: 36|未知142
+  name: 36|未知2 207.2KB/s
   network: ws
-  port: 443
-  server: time.ir
+  port: 80
+  server: 168.138.43.75
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  ws-opts:
+    path: /cctv13.m3u8
+- alterId: 0
+  cipher: auto
+  name: 36|US
+  network: ws
+  port: 2086
+  server: 108.186.180.148
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: af24a0e4-f5a2-4b97-a678-992d45346147
   ws-opts:
     headers:
-      host: time.ir
+      host: www.bing.com
+    path: af24a0e4-f5a2-4b97-a678-992d45346147-vm
+- alterId: 0
+  cipher: auto
+  name: 36|HK
+  network: tcp
+  port: 30830
+  server: v30.hdacd.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  name: 36|未知4
+  network: tcp
+  port: 13701
+  server: 45.89.52.114
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 86a0c17d-1871-40e3-db65-2b9bf1a7650e
+- alterId: 0
+  cipher: auto
+  name: 36|未知5
+  network: ws
+  port: 8080
+  server: shahinnet-freenetcdn.melodyshopone2.ir
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 96588912-3bcb-491c-8ce3-7a965bbec07f
+  ws-opts:
+    headers:
+      host: sog.shahinnet.shop
     path: /
 - alterId: 0
   cipher: auto
-  name: 36|HK13
-  network: ws
-  port: 443
-  server: qtkdr8jxe3wefxjm.v.3dns.vip
+  name: 36|未知6
+  network: tcp
+  port: 2086
+  server: nll2.qjcm.ir
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
+  uuid: 43c7c028-4309-41c8-99f2-0896766615f1
+- alterId: 0
+  cipher: auto
+  name: 36|未知7
+  network: ws
+  port: 42034
+  server: 46.8.237.242
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 7d85828a-906b-43c4-8dc9-0785cd4801af
   ws-opts:
-    headers:
-      host: qTKDR8jXE3wEFxJM.v.3dns.vip
-    path: /ws-vmess
+    path: /
 - alterId: 0
   cipher: auto
-  name: 36|未知143
-  network: httpupgrade
-  port: 5071
-  server: 169.40.32.48
+  name: 36|未知8
+  network: tcp
+  port: 80
+  server: ar.paydar.site
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: f54e93d1-cd8e-434f-8122-4887e62c97f5
+  uuid: 00104263-5b99-491f-85bd-5f296d8447df
 - alterId: 0
   cipher: auto
-  name: 36|未知144
+  name: 36|未知10
+  network: ws
+  port: 27533
+  server: 166.88.35.128
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: ac3e705e-3713-40b0-c0fe-0342c328eed3
+  ws-opts:
+    path: /ac3e705e
+- alterId: 0
+  cipher: auto
+  name: 36|未知11
   network: ws
   port: 443
-  server: 82.139.242.5
+  server: 2.27.16.177
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -15216,29 +13311,39 @@ proxies:
     path: /api/v1/gpu-stream/socket
 - alterId: 0
   cipher: auto
-  name: 36|未知145
-  network: tcp
-  port: 26431
-  server: g2fjv8dg.danqela.ir
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 961acd2b-37a6-4214-b055-63ba6bf4f425
-- alterId: 0
-  cipher: auto
-  name: 36|未知146
+  name: 36|未知12
   network: ws
-  port: 14812
-  server: 130.94.93.63
+  port: 43063
+  server: 47.250.45.234
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 777d0ead-970a-4144-b8aa-e3aaf3a621f6
+  uuid: c77f48f5-4be3-4461-b52b-49998e7b897b
   ws-opts:
-    path: /777d0ead
+    path: /arki?ed=2048
 - alterId: 0
   cipher: auto
-  name: 36|未知147
+  name: 36|未知13
+  network: tcp
+  port: 2020
+  server: cdn-api.mrmtn.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 29c4a3bd-9d8c-4ac3-b279-8b201560c227
+- alterId: 0
+  cipher: auto
+  name: 36|未知14
+  network: tcp
+  port: 9443
+  server: plus.aparatratinfo.ir
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 499e36f4-e75a-4210-853f-8c849790d257
+- alterId: 0
+  cipher: auto
+  name: 36|未知15
   network: ws
   port: 443
   server: max.mankadmu.com
@@ -15252,60 +13357,636 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 36|未知148
+  name: 36|未知16
   network: tcp
-  port: 110
-  server: pori.cjlife.ir
+  port: 33120
+  server: 65.109.211.136
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 0accd97e-a16c-4d4f-b19a-883f7ea0f484
+  uuid: b2c6844f-d31f-411a-8ef1-7580718b9ec6
 - alterId: 0
   cipher: auto
-  name: 36|US22
+  name: 36|US2
   network: tcp
-  port: 8881
-  server: 108.61.205.144
+  port: 28997
+  server: star.starnick2031.ir
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: db5afae4-ac23-41a6-8378-f307a9a47436
+  uuid: e3c74528-9598-43e8-8185-fdab71ca0a9a
 - alterId: 0
   cipher: auto
-  name: 36|未知150
+  name: 36|未知17
+  network: tcp
+  port: 5006
+  server: trf-nld.ip-static.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: de3aeea2-d8af-4fea-afdc-4d8a451f4d1f
+- alterId: 0
+  cipher: auto
+  name: 36|未知18
+  network: ws
+  port: 443
+  server: f.khilei.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      host: f.khilei.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 36|未知19
   network: tcp
   port: 443
-  server: irc.jahanclick.sbs
+  server: guanwang.awsno.com
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 5316ff6b-a2ad-4a07-b7cf-20f314f335f4
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
 - alterId: 0
   cipher: auto
-  name: 36|未知151
-  network: httpupgrade
-  port: 8080
-  server: 104.18.32.47
+  name: 36|未知20
+  network: ws
+  port: 14812
+  server: 130.94.93.63
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 5ba0defa-bd3c-43b1-8800-1d61887a07c4
+  uuid: 777d0ead-970a-4144-b8aa-e3aaf3a621f6
+  ws-opts:
+    path: /777d0ead
 - alterId: 0
   cipher: auto
-  name: 36|未知153
+  name: 36|未知21
+  network: ws
+  port: 443
+  server: fapeng.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      host: fapeng.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 36|US4
+  network: tcp
+  port: 8880
+  server: 31.57.47.35
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 398e788b-8d4b-4652-920e-ce5906712afb
+- alterId: 0
+  cipher: auto
+  name: 36|未知22
+  network: tcp
+  port: 8888
+  server: 146.56.112.110
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
+- alterId: 0
+  cipher: auto
+  name: 36|未知23
+  network: ws
+  port: 80
+  server: 68.183.209.180
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: d5121154-ced6-460d-a9fd-5892027ab4a0
+  ws-opts:
+    path: /graphql
+- alterId: 0
+  cipher: auto
+  name: 36|未知24
   network: grpc
   port: 2087
-  server: elma.ns.cloudflare.com
+  server: 172.64.32.154
   skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 2a3263e2-891c-4446-b474-a8c63acb6e25
 - alterId: 0
   cipher: auto
-  name: 36|未知154
+  name: 36|TW
+  network: ws
+  port: 443
+  server: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|US5
+  network: tcp
+  port: 1233
+  server: p05.rghvf.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 9b6419f8-8120-442e-a48c-6bf52aef0abf
+- alterId: 0
+  cipher: none
+  name: 36|未知25
+  network: tcp
+  port: 41547
+  server: 82.40.62.115
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 60379c1b-7aee-475c-a5f3-ad10ee01a0d1
+- alterId: 0
+  cipher: auto
+  name: 36|未知26
+  network: ws
+  port: 2082
+  server: s1c.v2.v001sss.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|HK2
+  network: ws
+  port: 443
+  server: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+- alterId: 0
+  cipher: auto
+  name: 36|未知27
+  network: tcp
+  port: 919
+  server: 212.47.250.77
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: a3aabbed-7636-41a6-8263-c6aadd723d29
+- alterId: 0
+  cipher: auto
+  name: 36|未知28
+  network: ws
+  port: 20301
+  server: data-jp-v1.usabooks.com.cn
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      host: data-jp-v1.usabooks.com.cn
+    path: /debian
+- alterId: 0
+  cipher: auto
+  name: 36|未知29 880.1KB/s
+  network: ws
+  port: 443
+  server: w12.luoli.de
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 42a99644-b90b-3627-8809-a2d6c4078b59
+  ws-opts:
+    headers:
+      host: w12.luoli.de
+    path: /v2ws
+- alterId: 0
+  cipher: auto
+  name: 36|US6
+  network: ws
+  port: 8080
+  server: 185.227.252.204
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3b8687aa-e824-4a29-a6f7-d21297545c3f
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|未知30
+  network: ws
+  port: 80
+  server: 104.20.36.139
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 2d14e84b-226b-412a-9a3c-ffce70b02bdf
+  ws-opts:
+    headers:
+      host: 127.0.0.1.dl..mrarsha...и.wonkacapitano.buzz.
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 36|未知31
+  network: httpupgrade
+  port: 8080
+  server: 104.21.30.221
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3a630a4a-7986-4a87-b016-489c3824440a
+- alterId: 0
+  cipher: auto
+  name: 36|未知32
+  network: ws
+  port: 443
+  server: 15.235.83.228
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      host: lammaland.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 36|未知33 478.3KB/s
+  network: ws
+  port: 80
+  server: 38.107.234.57
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  ws-opts:
+    headers:
+      host: google.com
+    path: /vmess/
+- alterId: 0
+  cipher: auto
+  name: 36|未知34
+  network: ws
+  port: 80
+  server: 188.114.96.145
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+  ws-opts:
+    headers:
+      host: tr1-smart.adelping.com
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+- alterId: 0
+  cipher: auto
+  name: 36|未知35
+  network: httpupgrade
+  port: 8080
+  server: 172.66.44.97
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 4b9cee18-8a9c-45f2-be2b-8e585783c4b5
+- alterId: 0
+  cipher: auto
+  name: 36|未知36
+  network: tcp
+  port: 36864
+  server: 2.arzankadeh.cam
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 5f0c8c9f-4a4c-47ac-9ac1-1b2aec295b58
+- alterId: 0
+  cipher: auto
+  name: 36|未知37
+  network: ws
+  port: 8103
+  server: 8103.shomaparvazroyadetonnist-bypassishere.lat
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002
+  ws-opts:
+    headers:
+      host: ad80f8ec-4861-11f0-a948-6a75f667b472.ShomaParvazRoYadetonNist-BypassIsHere.lat
+    path: /ad80f8ec-4861-11f0-a948-6a75f667b472?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 36|未知38
+  network: tcp
+  port: 2087
+  server: 31.184.244.6
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 6b306661-93c7-4653-94d6-a8adb742b82f
+- alterId: 0
+  cipher: auto
+  name: 36|未知39
+  network: grpc
+  port: 2096
+  server: ca.connfull.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f2d7f0d2-9520-4d5c-9714-58cc138513a8
+- alterId: 0
+  cipher: auto
+  name: 36|未知40
+  network: ws
+  port: 443
+  server: 5.188.26.85
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  ws-opts:
+    headers:
+      host: renderer-stream-2-62.mirra.now
+    path: /api/v1/gpu-stream/socket
+- alterId: 0
+  cipher: auto
+  name: 36|未知41
+  network: httpupgrade
+  port: 5055
+  server: 169.40.32.48
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f54e93d1-cd8e-434f-8122-4887e62c97f5
+- alterId: 0
+  cipher: auto
+  name: 36|未知42
+  network: tcp
+  port: 2002
+  server: tun-1.veraspeed.ir
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 8605b8dd-5b4c-4f2f-96c1-a01495cbc37e
+- alterId: 0
+  cipher: auto
+  name: 36|未知43
+  network: ws
+  port: 23981
+  server: 176.65.140.210
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 18c1c45d-95bf-435b-ae4c-7eb96f793af4
+  ws-opts:
+    headers:
+      host: bobo.badrangteb.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|未知44
+  network: tcp
+  port: 5069
+  server: 91.107.162.148
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 9ef511af-41a3-4c92-afa6-3139016f8e93
+- alterId: 0
+  cipher: auto
+  name: 36|未知45 261.7KB/s
+  network: none
+  port: 37515
+  server: 119.46.51.45
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+- alterId: 0
+  cipher: auto
+  name: 36|未知46
+  network: tcp
+  port: 2096
+  server: free.diginoisb.ir
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: a3a02846-fc3d-461a-8cf5-69bd9fa958db
+- alterId: 0
+  cipher: auto
+  name: 36|未知47
+  network: tcp
+  port: 80
+  server: t.telewebion.ir.varzesh3.com.de
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 305b9563-9259-4528-81a0-782c72418f93
+- alterId: 0
+  cipher: auto
+  name: 36|未知48
+  network: ws
+  port: 443
+  server: 193.23.118.195
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  ws-opts:
+    headers:
+      host: renderer-stream-2-62.mirra.now
+    path: /api/v1/gpu-stream/socket
+- alterId: 0
+  cipher: auto
+  name: 36|TW2
+  network: tcp
+  port: 794
+  server: 2.27.174.110
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: fd2c3c77-1984-4f7c-befe-efba034e1f3c
+- alterId: 0
+  cipher: auto
+  name: 36|US7
+  network: tcp
+  port: 10028
+  server: us-nohessss.privnet.store
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: e7d4d923-c8f6-4b94-bf05-c5e07a83e2f6
+- alterId: 0
+  cipher: auto
+  name: 36|未知49
+  network: tcp
+  port: 38320
+  server: 124.151.45.60
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: d643d6ea-2e48-4ad5-b96e-d11b889cc6a6
+- alterId: 0
+  cipher: auto
+  name: 36|US8
+  network: grpc
+  port: 46994
+  server: 46.8.102.58
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 2aa81f1f-57e3-4490-9eb6-7415167cb99f
+- alterId: 0
+  cipher: auto
+  name: 36|US9
+  network: tcp
+  port: 443
+  server: 206.1.96.187
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 32c017e7-2fa6-4a43-98ef-b21bb63d92e6
+- alterId: 0
+  cipher: auto
+  name: 36|US10
+  network: ws
+  port: 443
+  server: 45.158.127.48
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  ws-opts:
+    headers:
+      host: renderer-stream-2-62.mirra.now
+    path: /api/v1/gpu-stream/socket
+- alterId: 0
+  cipher: auto
+  name: 36|未知50
+  network: ws
+  port: 443
+  server: 104.21.15.212
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  ws-opts:
+    headers:
+      host: glweidf.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 36|HK3
+  network: ws
+  port: 36968
+  server: 47.83.18.10
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 176bf1dd-647f-4c09-892e-5f9223dc8617
+  ws-opts:
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 36|HK4
+  network: ws
+  port: 443
+  server: 6JDvArazgU3qQR6Q.v.3dns.vip
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  ws-opts:
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: 36|未知52
+  network: tcp
+  port: 55699
+  server: 109.248.162.194
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 2c2fc6a8-6a3c-410c-868b-620f56a1d10b
+- alterId: 0
+  cipher: auto
+  name: 36|未知53
+  network: ws
+  port: 443
+  server: 80.240.252.241
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  ws-opts:
+    headers:
+      host: renderer-stream-2-62.mirra.now
+    path: /api/v1/gpu-stream/socket
+- alterId: 0
+  cipher: auto
+  name: 36|未知54
+  network: ws
+  port: 443
+  server: 104.21.94.64
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 39cec18f-a439-427c-9a4e-aeb6fcdf6f53
+  ws-opts:
+    headers:
+      host: linja05.hwcar.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 36|未知55
+  network: ws
+  port: 443
+  server: 89.150.35.155
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 5f72f180-b21b-4b7a-8484-240759012604
+  ws-opts:
+    headers:
+      host: apjhdggyx.com
+    path: /5f72f180-b21b-4b7a-8484-240759096785
+- alterId: 0
+  cipher: auto
+  name: 36|未知56
+  network: ws
+  port: 80
+  server: 45.15.170.237
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 820d4b4f-3357-4dc7-9381-6e5fd52b5f39
+  ws-opts:
+    headers:
+      host: pelang.org
+    path: /vmess/
+- alterId: 0
+  cipher: auto
+  name: 36|未知57
+  network: tcp
+  port: 2087
+  server: ezdqguqp7faf.dop69.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 6b306661-93c7-4653-94d6-a8adb742b82f
+- alterId: 0
+  cipher: auto
+  name: 36|未知58 472.1KB/s
   network: ws
   port: 8443
-  server: 104.21.57.84
+  server: 104.17.77.77
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -15316,7 +13997,817 @@ proxies:
     path: /lMnsZUN4/
 - alterId: 0
   cipher: auto
-  name: 36|US25
+  name: 36|未知59
+  network: ws
+  port: 443
+  server: 82.139.242.5
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  ws-opts:
+    headers:
+      host: renderer-stream-2-62.mirra.now
+    path: /api/v1/gpu-stream/socket
+- alterId: 0
+  cipher: auto
+  name: 36|HK5
+  network: tcp
+  port: 55314
+  server: 103.240.197.112
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: bdb68629-1c6a-4eed-8083-7d4379a2dd52
+- alterId: 0
+  cipher: auto
+  name: 36|未知60
+  network: tcp
+  port: 2648
+  server: 150.242.244.116
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: aeff933f-0ae6-4465-85bf-12f1394f35af
+- alterId: 0
+  cipher: auto
+  name: 36|未知61
+  network: ws
+  port: 443
+  server: 130.185.122.177
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f232d454-b014-4e00-a7ae-430341909db4
+  ws-opts:
+    headers:
+      host: 130.185.122.177
+    path: /
+- alterId: 0
+  cipher: chacha20-poly1305
+  name: 36|未知62
+  network: tcp
+  port: 443
+  server: ger1.ez0535.ir
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 6218633e-7f0f-42ba-bbce-0b641b8f796f
+- alterId: 0
+  cipher: auto
+  name: 36|未知63
+  network: ws
+  port: 443
+  server: gov.uk
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 77848824-93b7-4b89-ffd0-e91afff406ce
+  ws-opts:
+    headers:
+      host: zheshiscp.com
+    path: /77848824
+- alterId: 0
+  cipher: auto
+  name: 36|未知64
+  network: tcp
+  port: 9119
+  server: GR1-Public-IR.g2gstore.ir
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: ae56511d-6b39-454b-847b-b711782d18cb
+- alterId: 0
+  cipher: auto
+  name: 36|未知65
+  network: tcp
+  port: 11100
+  server: star.starnick2040.ir
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 0c265dc4-2a66-452a-a0d7-d57ec165f006
+- alterId: 0
+  cipher: auto
+  name: 36|未知66
+  network: tcp
+  port: 2053
+  server: uk.connfull.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: d8d43cb7-2c08-4e08-969b-a0766a34d59a
+- alterId: 0
+  cipher: auto
+  name: 36|TW3
+  network: ws
+  port: 443
+  server: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  ws-opts:
+    headers:
+      host: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|HK6 9.2KB/s
+  network: ws
+  port: 23026
+  server: 47.244.120.197
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  ws-opts:
+    path: /arki
+- alterId: 0
+  cipher: auto
+  name: 36|未知67
+  network: ws
+  port: 80
+  server: 6ernu3zmhsv7s95fm.lovebaipiao.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 8978b84c-6b95-4494-beb6-5246ec82e9ad
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|未知68
+  network: tcp
+  port: 28111
+  server: 62.238.46.61
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 95aaf72c-3e64-4b74-9e29-741f783720d7
+- alterId: 0
+  cipher: auto
+  name: 36|US12
+  network: tcp
+  port: 110
+  server: USA.SixMax.ir
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: cabf1c07-21c2-4fc7-865c-7c9ee5e36bc8
+- alterId: 64
+  cipher: auto
+  name: 36|未知69
+  network: tcp
+  port: 41492
+  server: 120.232.242.126
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 36|未知70
+  network: tcp
+  port: 51459
+  server: 91.107.139.186
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 500cdc83-b189-4d79-b06b-139c7972a57f
+- alterId: 0
+  cipher: auto
+  name: 36|TW4
+  network: ws
+  port: 443
+  server: 24864168545164.oylfmxz.cn
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  ws-opts:
+    headers:
+      host: 24864168545164.oylfmxz.cn
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|未知71 3.5MB/s
+  network: ws
+  port: 443
+  server: mygptagent.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      host: mygptagent.org
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 36|未知72
+  network: ws
+  port: 443
+  server: 111.88.74.167
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  ws-opts:
+    headers:
+      host: renderer-stream-2-62.mirra.now
+    path: /api/v1/gpu-stream/socket
+- alterId: 0
+  cipher: auto
+  name: 36|未知73
+  network: ws
+  port: 443
+  server: 185.4.73.45
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  ws-opts:
+    headers:
+      host: renderer-stream-2-62.mirra.now
+    path: /api/v1/gpu-stream/socket
+- alterId: 0
+  cipher: auto
+  name: 36|未知74
+  network: ws
+  port: 443
+  server: 64.188.97.153
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  ws-opts:
+    headers:
+      host: renderer-stream-2-62.mirra.now
+    path: /api/v1/gpu-stream/socket
+- alterId: 0
+  cipher: auto
+  name: 36|未知75
+  network: ws
+  port: 2053
+  server: 104.105.6.167
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 9a1a05d9-69be-45d3-e326-c6621edf7b31
+  ws-opts:
+    headers:
+      host: deapp.jisuyun.top
+    path: /devm
+- alterId: 0
+  cipher: auto
+  name: 36|未知76
+  network: ws
+  port: 8080
+  server: 8ggixlxj2bf9.dop69.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 2f28bb4b-5322-4cfd-9627-e52205c5e052
+  ws-opts:
+    headers:
+      host: rt.orvexa.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|未知77
+  network: tcp
+  port: 54102
+  server: de2.pi10.ir
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 113ae61b-d6da-4d08-9221-48595cb8436c
+- alterId: 0
+  cipher: auto
+  name: 36|未知78
+  network: tcp
+  port: 1819
+  server: 185.204.171.95
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: e7e1947d-a875-4be5-bd53-79c5a1837116
+- alterId: 0
+  cipher: auto
+  name: 36|HK7 24.9KB/s
+  network: ws
+  port: 443
+  server: 6jdvarazgu3qqr6q.v.3dns.vip
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  ws-opts:
+    headers:
+      host: 6JDvArazgU3qQR6Q.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: 36|未知79
+  network: ws
+  port: 443
+  server: time.ir
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      host: time.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|US14
+  network: tcp
+  port: 8881
+  server: 142.93.68.147
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: db5afae4-ac23-41a6-8378-f307a9a47436
+- alterId: 0
+  cipher: auto
+  name: 36|未知80
+  network: ws
+  port: 443
+  server: 193.180.208.234
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  ws-opts:
+    headers:
+      host: renderer-stream-2-62.mirra.now
+    path: /api/v1/gpu-stream/socket
+- alterId: 0
+  cipher: auto
+  name: 36|HK8 24.9KB/s
+  network: ws
+  port: 36703
+  server: 47.244.120.197
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+  ws-opts:
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 36|未知81
+  network: ws
+  port: 80
+  server: 104.21.228.40
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      host: a.prapt4.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|未知82
+  network: tcp
+  port: 2495
+  server: api.neexbyte.ir
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: b834f0c4-9562-4507-8b21-e616333ac27b
+- alterId: 0
+  cipher: auto
+  name: 36|未知83
+  network: tcp
+  port: 8853
+  server: de2.lion-lion.ir
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 31477bd9-a29c-490c-b29d-69328ec307f1
+- alterId: 0
+  cipher: auto
+  name: 36|未知84
+  network: ws
+  port: 443
+  server: denc36.xtooltech.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: b321fd5d-e6ec-4293-a644-164e3885f52e
+  ws-opts:
+    headers:
+      host: adenc36v.xtooltech.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 36|未知85
+  network: ws
+  port: 80
+  server: fr3.niekotin.de
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 59e29918-53b3-4fa2-becf-56a601f33998
+  ws-opts:
+    headers:
+      host: fr3.niekotin.de
+    path: /vmess
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 36|未知86
+  network: tcp
+  port: 1027
+  server: s1.connect.bloroxy.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: a8db1a30-f66a-428e-ad1d-4f17c76b57e3
+- alterId: 0
+  cipher: auto
+  name: 36|未知87
+  network: ws
+  port: 443
+  server: 185.36.143.71
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  ws-opts:
+    headers:
+      host: renderer-stream-2-62.mirra.now
+    path: /api/v1/gpu-stream/socket
+- alterId: 0
+  cipher: auto
+  name: 36|未知88
+  network: ws
+  port: 8080
+  server: t.degeristir.ir
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3280feeb-69d6-4b1a-927d-bcab6720bfbd
+  ws-opts:
+    headers:
+      host: aparat.zerossrz.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|US15
+  network: ws
+  port: 80
+  server: www.true.th
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: a150d554-e962-4632-829f-ee583ada3f95
+  ws-opts:
+    headers:
+      host: d7pu5mzr9c4b0.cloudfront.net
+    path: /htun
+- alterId: 0
+  cipher: auto
+  name: 36|未知89
+  network: tcp
+  port: 443
+  server: fast.jahancloud.space
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 1c2fd464-98e2-4f01-a635-d39f97170e69
+- alterId: 0
+  cipher: auto
+  name: 36|未知90
+  network: ws
+  port: 443
+  server: 62.171.228.179
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  ws-opts:
+    headers:
+      host: renderer-stream-2-62.mirra.now
+    path: /api/v1/gpu-stream/socket
+- alterId: 0
+  cipher: auto
+  name: 36|未知91
+  network: tcp
+  port: 64628
+  server: vpnhub.armanspeed.ir
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 38915005-5fe4-486e-b10b-be29f1d9ada2
+- alterId: 0
+  cipher: auto
+  name: 36|未知92
+  network: ws
+  port: 8080
+  server: cfd.ipa.monster
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: e608f1bb-e26d-4bc2-8f68-ac0e8a073c7f
+  ws-opts:
+    headers:
+      host: hkapper.a1t.top
+    path: /itdog?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 36|未知93
+  network: tcp
+  port: 4452
+  server: x2.mehradservice.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 389625c7-c891-4f61-9f98-478058744ada
+- alterId: 0
+  cipher: auto
+  name: 36|US16
+  network: tcp
+  port: 443
+  server: 165.140.216.142
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+- alterId: 0
+  cipher: auto
+  name: 36|US17
+  network: tcp
+  port: 8881
+  server: 209.97.154.241
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: db5afae4-ac23-41a6-8378-f307a9a47436
+- alterId: 0
+  cipher: auto
+  name: 36|未知94
+  network: tcp
+  port: 2082
+  server: s3.megaping.casa
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 13188d38-4aa1-4071-86b9-a246193e5d69
+- alterId: 0
+  cipher: auto
+  name: 36|未知95
+  network: ws
+  port: 443
+  server: 45.138.72.141
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  ws-opts:
+    headers:
+      host: renderer-stream-2-62.mirra.now
+    path: /api/v1/gpu-stream/socket
+- alterId: 0
+  cipher: auto
+  name: 36|TW5
+  network: ws
+  port: 443
+  server: dee2309db4944c248b6d4372c6641e25.oylfmxz.cn
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  ws-opts:
+    headers:
+      host: dee2309db4944c248b6d4372c6641e25.oylfmxz.cn
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|未知96
+  network: ws
+  port: 443
+  server: mute-math-d64e.0e503992ad7026.WOrKERs.deV
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      host: mute-math-d64e.0e503992ad7026.woRKERS.DeV
+    path: /aveiror.com:443/linkvws
+- alterId: 0
+  cipher: auto
+  name: 36|未知97
+  network: tcp
+  port: 3389
+  server: 139.59.24.215
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
+- alterId: 0
+  cipher: auto
+  name: 36|TW6
+  network: ws
+  port: 443
+  server: 654168416355441.oylfmxz.cn
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  ws-opts:
+    headers:
+      host: 654168416355441.oylfmxz.cn
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|未知98
+  network: tcp
+  port: 443
+  server: test-tun.armtech.ir
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: c4e24fd0-2194-44f5-a058-69df3dc035a0
+- alterId: 0
+  cipher: auto
+  name: 36|未知99
+  network: ws
+  port: 80
+  server: 185.104.189.38
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+  ws-opts:
+    headers:
+      host: 185.104.189.38
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1/?de=2560
+- alterId: 0
+  cipher: auto
+  name: 36|未知100
+  network: ws
+  port: 443
+  server: cake.capellare.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      host: cake.capellare.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 36|未知101
+  network: ws
+  port: 443
+  server: hms19.best-tizi.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
+  ws-opts:
+    headers:
+      host: hms19.best-tizi.top
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 36|未知102
+  network: ws
+  port: 2021
+  server: image.colorviolet.ir
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 6b8dbc66-ea40-444a-b93d-cb20c008af10
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|US18
+  network: ws
+  port: 443
+  server: web-pmapdcb-mabtu.up.railway.app
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: e5cc130a-c773-4c3c-beea-b55fee28ed72
+  ws-opts:
+    headers:
+      host: web-pmapdcb-mabtu.up.railway.app
+    path: /vm-ws
+- alterId: 0
+  cipher: auto
+  name: 36|未知103
+  network: ws
+  port: 2052
+  server: cfcdn3.sanfencdn9.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3c5046b4-1a9c-427c-8a55-e355846a9e4a
+  ws-opts:
+    headers:
+      host: kvjqqknzjp6.yofnhkfc.xyz
+    path: /video/Zo98PYfE
+- alterId: 0
+  cipher: auto
+  name: 36|US19
+  network: tcp
+  port: 180
+  server: 82.198.246.9
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 36|TW7
+  network: ws
+  port: 443
+  server: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|未知104
+  network: ws
+  port: 80
+  server: turk1.net.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+  ws-opts:
+    headers:
+      host: tr1-smart.adelping.com.
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1/?de=2560
+- alterId: 0
+  cipher: auto
+  name: 36|US20
+  network: ws
+  port: 443
+  server: web-production-0392e.up.railway.app
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: e4ea74dd-2663-43a1-b843-14443cf70ddb
+  ws-opts:
+    headers:
+      host: web-production-0392e.up.railway.app
+    path: /vm-ws
+- alterId: 0
+  cipher: auto
+  name: 36|未知105
+  network: tcp
+  port: 28111
+  server: 46.224.171.220
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 38b27114-7714-4748-b488-3c49d4c7dcab
+- alterId: 0
+  cipher: auto
+  name: 36|未知106
+  network: ws
+  port: 443
+  server: 82259754d625.oylfmxz.cn
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  ws-opts:
+    headers:
+      host: 82259754d625.oylfmxz.cn
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|未知107
+  network: ws
+  port: 443
+  server: 13.140.28.46
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  ws-opts:
+    headers:
+      host: renderer-stream-2-62.mirra.now
+    path: /api/v1/gpu-stream/socket
+- alterId: 0
+  cipher: auto
+  name: 36|US21
   network: tcp
   port: 8443
   server: 45.39.33.10
@@ -15326,28 +14817,620 @@ proxies:
   uuid: 4d6997cf-7856-4aab-85e5-f22169e56e65
 - alterId: 0
   cipher: auto
-  name: 36|未知155
+  name: 36|未知108
   network: ws
-  port: 2053
-  server: 130.185.121.30
+  port: 443
+  server: 212.43.156.143
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 1af18552-2473-4af0-8765-4dc383bcf320
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
   ws-opts:
     headers:
-      host: 130.185.121.30
+      host: renderer-stream-2-62.mirra.now
+    path: /api/v1/gpu-stream/socket
+- alterId: 0
+  cipher: auto
+  name: 36|未知109
+  network: ws
+  port: 443
+  server: 104.16.32.14
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 36|未知110
+  network: ws
+  port: 443
+  server: 5.255.109.47
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  ws-opts:
+    headers:
+      host: renderer-stream-2-62.mirra.now
+    path: /api/v1/gpu-stream/socket
+- alterId: 0
+  cipher: auto
+  name: 36|未知111
+  network: ws
+  port: 443
+  server: 109.172.93.20
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  ws-opts:
+    headers:
+      host: renderer-stream-2-62.mirra.now
+    path: /api/v1/gpu-stream/socket
+- alterId: 0
+  cipher: auto
+  name: 36|未知112 403.9KB/s
+  network: tcp
+  port: 18000
+  server: 149.88.23.202
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- alterId: 0
+  cipher: auto
+  name: 36|US22
+  network: tcp
+  port: 8881
+  server: 138.197.1.222
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: db5afae4-ac23-41a6-8378-f307a9a47436
+- alterId: 0
+  cipher: auto
+  name: 36|未知114
+  network: tcp
+  port: 2053
+  server: node-uk.connectsuite.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 72f2cbe4-2874-45b7-b6aa-b93077c10c72
+- alterId: 0
+  cipher: auto
+  name: 36|未知115
+  network: tcp
+  port: 110
+  server: 94.156.170.102
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 8e9687fc-a3a7-414a-8676-8e2136797cfe
+- alterId: 0
+  cipher: auto
+  name: 36|未知116
+  network: ws
+  port: 443
+  server: cdnjs.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 6b880b07-e952-4c0b-b4a3-6c9ac4cf9d3f
+  ws-opts:
+    headers:
+      host: hdfy1c3.iraniancpi.uk
+    path: /QvtvPdDXXIlSdZMqnuxG
+- alterId: 0
+  cipher: auto
+  name: 36|未知117
+  network: ws
+  port: 443
+  server: 108.165.236.142
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  ws-opts:
+    headers:
+      host: renderer-stream-2-62.mirra.now
+    path: /api/v1/gpu-stream/socket
+- alterId: 0
+  cipher: auto
+  name: 36|未知118 12.1KB/s
+  network: ws
+  port: 443
+  server: 20.235.220.189
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      host: 6JDvArazgU3qQR6Q.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: none
+  name: 36|未知119
+  network: ws
+  port: 80
+  server: 45.131.208.228
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f491cbe4-7548-446c-8d3e-64008e3b1325
+  ws-opts:
+    headers:
+      host: dl3.127.0.0.1.control..kо.cокаhоост..wonkacapitano.buzz.
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 36|未知120
+  network: ws
+  port: 80
+  server: cfcdn3.sanfencdn9.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: c712c725-149f-414a-a684-1e17d137fe4f
+  ws-opts:
+    headers:
+      host: agzbjszujp4.yofnhkfc.xyz
+    path: /video/ibCT6z55
+- alterId: 0
+  cipher: auto
+  name: 36|未知121
+  network: ws
+  port: 25025
+  server: superpanel.sobu.ir
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: ff2c2fe9-264c-4e6c-8daa-8ebfce7fef0e
+  ws-opts:
     path: /
+- alterId: 0
+  cipher: auto
+  name: 36|HK9 33.5KB/s
+  network: tcp
+  port: 52080
+  server: 154.37.223.56
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f1ac5c82-00a4-400b-bb20-530c91b7c5bb
+- alterId: 0
+  cipher: auto
+  name: 36|未知122
+  network: httpupgrade
+  port: 8080
+  server: www.speedtest.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 72f5bd85-6d92-4644-a1c4-542a92896a8b
+- alterId: 0
+  cipher: auto
+  name: 36|未知123
+  network: tcp
+  port: 2121
+  server: tokien.mrmtn.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 29c4a3bd-9d8c-4ac3-b279-8b201560c227
+- alterId: 0
+  cipher: auto
+  name: 36|未知124
+  network: ws
+  port: 443
+  server: renderer-stream-2-62.mirra.now
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+- alterId: 0
+  cipher: auto
+  name: 36|未知125
+  network: ws
+  port: 28267
+  server: 176.65.140.210
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 18c1c45d-95bf-435b-ae4c-7eb96f793af4
+  ws-opts:
+    headers:
+      host: bobo.badrangteb.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 36|未知127
+  network: ws
+  port: 8443
+  server: 172.67.161.144
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  ws-opts:
+    headers:
+      host: v2ray1.dozapp.xyz
+    path: /lMnsZUN4/
+- alterId: 0
+  cipher: auto
+  name: 36|未知128
+  network: ws
+  port: 443
+  server: 185.232.204.222
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  ws-opts:
+    headers:
+      host: renderer-stream-2-62.mirra.now
+    path: /api/v1/gpu-stream/socket
+- alterId: 0
+  cipher: auto
+  name: 36|US23
+  network: tcp
+  port: 22324
+  server: 38.99.82.160
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
+  name: 36|未知129
+  network: tcp
+  port: 8080
+  server: 130.185.123.32
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: c6c03582-a4d2-4efe-9af1-83e730b11f9a
+- alterId: 0
+  cipher: auto
+  name: 36|未知130
+  network: grpc
+  port: 8443
+  server: 85.159.229.8
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: afe57557-df24-43e5-9cea-5d2acc2cad08
+- alterId: 0
+  cipher: auto
+  name: 36|US24
+  network: tcp
+  port: 44518
+  server: altaria.proxy.rlwy.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 68528448-5c23-4adf-8b9f-c18fd88a41dd
+- alterId: 0
+  cipher: auto
+  name: 36|未知132
+  network: ws
+  port: 2052
+  server: cfcdn1.sanfencdn9.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: ab1ee1ac-884c-44dc-ab65-d533d32e2b1a
+  ws-opts:
+    headers:
+      host: tw1bQiWSE4x.fzbqfrse.xyz
+    path: /video/GQ2qE5Us9g
+- alterId: 0
+  cipher: auto
+  name: 36|HK10
+  network: grpc
+  port: 443
+  server: hk01.653ebeeb-5f60-4be5-958d-7bf4839cdccd.ef6616fd-5b06-482f-9d64-183745659cbf.byteprivatelink.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f018361c-3d66-4635-80c9-22be36b70ac4
+- alterId: 0
+  cipher: auto
+  name: 36|未知133
+  network: tcp
+  port: 2001
+  server: Iran-1.veraspeed.ir
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 2f703879-a9de-4550-85f4-70470b284d82
+- alterId: 0
+  cipher: auto
+  name: 36|未知134
+  network: tcp
+  port: 13301
+  server: tr2.pi10.ir
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 113ae61b-d6da-4d08-9221-48595cb8436c
+- alterId: 0
+  cipher: auto
+  name: 36|未知135
+  network: tcp
+  port: 55420
+  server: tr4.cinemafa98.ir
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 59be635b-fdc5-4252-b1b0-af1bd2c1053a
+- alterId: 0
+  cipher: auto
+  name: 36|未知136
+  network: ws
+  port: 8080
+  server: Snapp.ir
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 8a277356-dbd2-4492-b961-c760b7cf3dd1
+  ws-opts:
+    headers:
+      host: iran2.speedlrn.com
+    path: /secur
+- alterId: 0
+  cipher: auto
+  name: 36|未知137
+  network: tcp
+  port: 8055
+  server: vip2.showtimeless.site
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: b641b4ab-13e6-4dd8-803f-1b891419c3d5
+- alterId: 0
+  cipher: auto
+  name: 36|未知138
+  network: ws
+  port: 443
+  server: 104.17.197.31
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
+  ws-opts:
+    headers:
+      host: quiet-moon-132a.xetag42714.workers.dev
+    path: /ivideos.sbs/linkws
+- alterId: 0
+  cipher: auto
+  name: 36|未知139
+  network: ws
+  port: 2053
+  server: 172.238.96.215
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 9a1a05d9-69be-45d3-e326-c6621edf7b31
+  ws-opts:
+    headers:
+      host: deapp.jisuyun.top
+    path: /devm
+- alterId: 0
+  cipher: auto
+  name: 36|未知140
+  network: tcp
+  port: 27501
+  server: 191.96.94.50
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 93842911-bc7f-47e9-a036-904d205b3d11
+- alterId: 0
+  cipher: auto
+  name: 36|未知141
+  network: ws
+  port: 443
+  server: nomino.11hi8itbaf.workers.dev
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      host: nomino.11hi8itbaf.workers.dev
+    path: /rush-6it6b.teeopp.quest/
+- alterId: 0
+  cipher: auto
+  name: 36|未知143
+  network: ws
+  port: 443
+  server: 104.20.77.131
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 91a4ed1f-f693-4685-a6be-f0981d6f2613
+  ws-opts:
+    headers:
+      host: tree.blanku.me
+    path: /wss28885
+- alterId: 0
+  cipher: auto
+  name: 36|未知144
+  network: tcp
+  port: 44
+  server: z1.tekno3.ir
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: a0400faa-553c-4728-aefa-80c3c5188d96
+- alterId: 0
+  cipher: chacha20-poly1305
+  name: 36|未知145
+  network: tcp
+  port: 3586
+  server: max-ip.hiroman5445.ir
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: a663bbab-4e9e-4080-b8ab-edd59fe1fdce
+- alterId: 0
+  cipher: auto
+  name: 36|未知146
+  network: ws
+  port: 8443
+  server: 104.16.90.120
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 01c0530f-168d-4645-a74c-f2b3b015c217
+  ws-opts:
+    headers:
+      host: node-de-1.e4e3e2.top
+    path: /ws
+- alterId: 0
+  cipher: auto
+  name: 36|未知147
+  network: ws
+  port: 443
+  server: 2.189.59.2
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
+  ws-opts:
+    headers:
+      host: germany-linkws.pages.dev
+    path: /Telegram/XV2ray
+- alterId: 0
+  cipher: auto
+  name: 36|未知148
+  network: tcp
+  port: 443
+  server: 167.235.70.202
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 7209d7ee-cfd0-46c0-a580-d92e2f0c801c
+- alterId: 0
+  cipher: auto
+  name: 36|未知149
+  network: tcp
+  port: 921
+  server: 2.59.223.72
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 2bedbb99-acb2-4cfb-b381-b3cea5045cff
+- alterId: 0
+  cipher: auto
+  name: 36|未知150
+  network: ws
+  port: 80
+  server: 104.16.53.5
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 5ea4a644-07e9-4ad0-860d-50bd9b6e7f94
+  ws-opts:
+    headers:
+      host: dl2..3ка.mалкцл..wonkacapitano.buzz.
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 36|US25
+  network: tcp
+  port: 38808
+  server: 104.160.45.35
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: e619d224-0842-4576-a361-3ad2bf0c468c
+- alterId: 0
+  cipher: auto
+  name: 36|未知151
+  network: ws
+  port: 443
+  server: za-a-zzy.glnyhlgc.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 5583af50-f464-4df6-e2ef-34592311e5c6
+  ws-opts:
+    path: /about/7678
+- alterId: 0
+  cipher: auto
+  name: 36|未知152
+  network: tcp
+  port: 2095
+  server: ape.malwarewatch.info
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: e10b6c95-7923-471a-9967-73ee7cf26cea
+- alterId: 0
+  cipher: auto
+  name: 36|未知153
+  network: ws
+  port: 8443
+  server: chatgpt.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  ws-opts:
+    headers:
+      host: v2ray1.dozapp.xyz
+    path: /lMnsZUN4/
+- alterId: 0
+  cipher: auto
+  name: 36|未知154
+  network: tcp
+  port: 443
+  server: irc.jahancloud.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 24b73122-9c73-45ae-871d-1837e427a9bf
+- alterId: 0
+  cipher: auto
+  name: 36|未知155
+  network: tcp
+  port: 8443
+  server: 188.130.207.241
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: d65cd75f-27c9-4b79-86d4-7ca3e09bbe3f
 - alterId: 0
   cipher: auto
   name: 36|未知156
   network: tcp
-  port: 1001
-  server: tun-1.veraspeed.ir
+  port: 32153
+  server: 38.60.224.173
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 8605b8dd-5b4c-4f2f-96c1-a01495cbc37e
+  uuid: 5cf1f470-3f70-4589-a2a4-4657ea3a1edf
+- alterId: 0
+  cipher: none
+  name: 36|未知157
+  network: ws
+  port: 80
+  server: 188.114.98.40
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f491cbe4-7548-446c-8d3e-64008e3b1325
+  ws-opts:
+    headers:
+      host: dl3.127.0.0.1.control.控制.kонтроль.cводкаhовостей.農達懲罰.wonkacapitano.buzz.
+    path: /vmess
 - cipher: aes-256-cfb
   name: 38|CN_speednode_0001
   password: 7eadc6dbe2ae
