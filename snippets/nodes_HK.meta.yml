@@ -1,7 +1,13 @@
 proxies:
+- cipher: aes-128-gcm
+  name: 11|Hong Kong_Hong Kong_ss_1141
+  password: bKgENdAl@8Zx3lAc-HK-BD-20260622
+  port: 24443
+  server: 154.86.30.45
+  type: ss
 - alterId: 2
   cipher: auto
-  name: 11,28|🇭🇰 香港|@ripaojiedian
+  name: '11,28|🇭🇰 香港|@ripaojiedian #1'
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -70,7 +76,7 @@ proxies:
     path: /ws-vmess
 - alterId: 2
   cipher: auto
-  name: 11,29|香港|@ripaojiedian
+  name: '11,14,29|香港|@ripaojiedian #2'
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -78,9 +84,53 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 14|🇭🇰[www.v2nodes.com] vless-HK-1...
+  port: 443
+  server: china.letsconnectpoint.com
+  servername: china.letsconnectpoint.com
+  tls: true
+  type: vless
+  uuid: a368752a-32fc-42f3-980a-6b049218b23f
 - alterId: 0
   cipher: auto
-  name: 28|🇭🇰 香港3|@ripaojiedian
+  name: '14,28|🇭🇰 香港2|@ripaojiedian #1'
+  network: ws
+  port: 443
+  server: kBONDXW9liFCi4h4.v.3dns.vip
+  servername: kBONDXW9liFCi4h4.v.3dns.vip
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: kBONDXW9liFCi4h4.v.3dns.vip
+    path: /ws-vmess
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '14|🇭🇰[www.v2nodes.com] vless-HK-1... #1'
+  port: 11907
+  server: 195.58.144.56
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '14|🇭🇰[www.v2nodes.com] vless-HK-1... #2'
+  port: 13779
+  server: 47.239.6.251
+  servername: tesla.com
+  tls: true
+  type: vless
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+- alterId: 0
+  cipher: auto
+  name: '14,28|🇭🇰 香港3|@ripaojiedian #1'
   network: ws
   port: 443
   server: ADncdOvLHR4M1P36.v.3dns.vip
@@ -95,22 +145,7 @@ proxies:
     path: /ws-vmess
 - alterId: 0
   cipher: auto
-  name: 28|🇭🇰 香港2|@ripaojiedian
-  network: ws
-  port: 443
-  server: kBONDXW9liFCi4h4.v.3dns.vip
-  servername: kBONDXW9liFCi4h4.v.3dns.vip
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: kBONDXW9liFCi4h4.v.3dns.vip
-    path: /ws-vmess
-- alterId: 0
-  cipher: auto
-  name: 28|🇭🇰 香港4|@ripaojiedian
+  name: '14,28|🇭🇰 香港4|@ripaojiedian #1'
   network: ws
   port: 443
   server: aZW0eunYVdvRe73k.v.3dns.vip
@@ -125,7 +160,7 @@ proxies:
     path: /ws-vmess
 - alterId: 0
   cipher: auto
-  name: 28|🇭🇰 香港5|@ripaojiedian
+  name: '14,28|🇭🇰 香港5|@ripaojiedian #1'
   network: ws
   port: 443
   server: syJ2gGUgMwBwQwQx.v.3dns.vip
@@ -138,23 +173,51 @@ proxies:
     headers:
       Host: syJ2gGUgMwBwQwQx.v.3dns.vip
     path: /ws-vmess
+- client-fingerprint: chrome
+  name: '14|🇭🇰[www.v2nodes.com] vless-HK-1... #3'
+  port: 13779
+  server: 47.238.210.5
+  servername: tesla.com
+  tls: true
+  type: vless
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
 - alterId: 0
   cipher: auto
-  name: 36|HK 27.4KB/s
+  name: 36|HK
   network: ws
-  port: 35043
-  server: 156.245.232.239
+  port: 443
+  server: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
-  ws-opts:
-    headers:
-      host: www.pubgmobile.com
-    path: /
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
 - alterId: 0
   cipher: auto
   name: 36|HK2
+  network: ws
+  port: 443
+  server: 47.76.102.39
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      host: ex1ogt73nzpqkac2.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: 36|HK3
+  network: tcp
+  port: 55216
+  server: 206.237.20.44
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 154dbc39-0921-cf11-29bd-156c5000d763
+- alterId: 0
+  cipher: auto
+  name: 36|HK4
   network: ws
   port: 13080
   server: 182.160.14.145
@@ -168,85 +231,7 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 36|HK3 5.2KB/s
-  network: ws
-  port: 443
-  server: vah4urdzl3jdx5r2.v.3dns.vip
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  ws-opts:
-    headers:
-      host: VAH4URdZL3jDX5r2.v.3dns.vip
-    path: /ws-vmess
-- alterId: 0
-  cipher: auto
-  name: 36|HK4
-  network: ws
-  port: 54809
-  server: 8.210.140.23
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: fde73daf-cc67-42f3-9935-35b132b01abd
-  ws-opts:
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
   name: 36|HK5
-  network: ws
-  port: 36968
-  server: 47.83.18.10
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 176bf1dd-647f-4c09-892e-5f9223dc8617
-  ws-opts:
-    path: /arki?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 36|HK6
-  network: ws
-  port: 443
-  server: 47.243.92.155
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  ws-opts:
-    headers:
-      host: mTCKUNDiGePwU3uP.v.3dns.vip
-    path: /ws-vmess
-- alterId: 0
-  cipher: auto
-  name: 36|HK7
-  network: ws
-  port: 443
-  server: 47.76.44.32
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  ws-opts:
-    headers:
-      host: 93ucrn4i0pffuabk.v.3dns.vip
-    path: /ws-vmess
-- alterId: 0
-  cipher: auto
-  name: 36|HK8 407.9KB/s
-  network: ws
-  port: 443
-  server: 6JDvArazgU3qQR6Q.v.3dns.vip
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  ws-opts:
-    path: /ws-vmess
-- alterId: 0
-  cipher: auto
-  name: 36|HK9 15.5KB/s
   network: ws
   port: 443
   server: 47.83.207.148
@@ -260,59 +245,7 @@ proxies:
     path: /ws-vmess
 - alterId: 0
   cipher: auto
-  name: 36|HK10
-  network: ws
-  port: 443
-  server: 8.218.184.4
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      host: NYcQg19zkwaCPM1B.v.3dns.vip
-    path: /ws-vmess
-- alterId: 0
-  cipher: auto
-  name: 36|HK11
-  network: ws
-  port: 443
-  server: m01c7b2z26dtqgee.v.3dns.vip
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      host: M01c7B2z26DtQGEe.v.3dns.vip
-    path: /ws-vmess
-- alterId: 0
-  cipher: auto
-  name: 36|HK12
-  network: ws
-  port: 443
-  server: 47.86.107.119
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      host: lcv8v9l7OyamxxfZ.v.3dns.vip
-    path: /ws-vmess
-- alterId: 0
-  cipher: auto
-  name: 36|HK13 19.9KB/s
-  network: tcp
-  port: 52080
-  server: 154.37.223.56
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: f1ac5c82-00a4-400b-bb20-530c91b7c5bb
-- alterId: 0
-  cipher: auto
-  name: 36|HK14
+  name: 36|HK6
   network: ws
   port: 443
   server: 43.198.204.35
@@ -326,39 +259,131 @@ proxies:
     path: /ws-vmess
 - alterId: 0
   cipher: auto
-  name: 36|HK15
-  network: tcp
-  port: 55216
-  server: 206.237.20.44
+  name: 36|HK7
+  network: ws
+  port: 443
+  server: ex1ogt73nzpqkac2.v.3dns.vip
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 154dbc39-0921-cf11-29bd-156c5000d763
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  ws-opts:
+    headers:
+      host: EX1oGt73NzPQKAc2.v.3dns.vip
+    path: /ws-vmess
 - alterId: 0
   cipher: auto
-  name: 36|HK16 24.8KB/s
+  name: 36|HK8 3.2KB/s
   network: ws
   port: 443
-  server: 47.243.80.106
+  server: 6jdvarazgu3qqr6q.v.3dns.vip
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  ws-opts:
+    headers:
+      host: 6JDvArazgU3qQR6Q.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: 36|HK9
+  network: ws
+  port: 36968
+  server: 47.83.18.10
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 176bf1dd-647f-4c09-892e-5f9223dc8617
+  ws-opts:
+    path: /arki?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 36|HK10 147.3KB/s
+  network: tcp
+  port: 52080
+  server: 154.37.223.56
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f1ac5c82-00a4-400b-bb20-530c91b7c5bb
+- alterId: 0
+  cipher: auto
+  name: 36|HK11
+  network: ws
+  port: 443
+  server: 47.76.44.32
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  ws-opts:
+    headers:
+      host: 93ucrn4i0pffuabk.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: 36|HK12
+  network: ws
+  port: 443
+  server: 93ucrn4i0pffuabk.v.3dns.vip
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: 36|HK13
+  network: ws
+  port: 443
+  server: m01c7b2z26dtqgee.v.3dns.vip
   skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
   ws-opts:
     headers:
-      host: wwafj5LHl6bI8aU9.v.3dns.vip
+      host: M01c7B2z26DtQGEe.v.3dns.vip
     path: /ws-vmess
 - alterId: 0
   cipher: auto
-  name: 36|HK17
+  name: 36|HK14 24.7KB/s
   network: ws
-  port: 8443
-  server: 20.2.218.142
+  port: 23026
+  server: 47.244.120.197
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 3960f128-1163-40a3-8dd7-7c91176e14a5
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  ws-opts:
+    path: /arki
+- alterId: 0
+  cipher: auto
+  name: 36|HK15
+  network: ws
+  port: 443
+  server: 47.76.137.85
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
   ws-opts:
     headers:
-      host: 01.appleid.bf
-    path: /ws?ed=2048
+      host: I2PSm3Knof5qjjix.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: 36|HK16
+  network: ws
+  port: 443
+  server: 8.218.184.4
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      host: NYcQg19zkwaCPM1B.v.3dns.vip
+    path: /ws-vmess
