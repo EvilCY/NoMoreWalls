@@ -1,6 +1,19 @@
 proxies:
 - client-fingerprint: chrome
+  flow: xtls-rprx-vision
   name: 爱沙尼亚 001
+  network: tcp
+  port: 443
+  server: 5.45.120.3
+  servername: est2.god-sky.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3bad8c9f-ff41-428b-8ea2-1076b7a16067
+- client-fingerprint: chrome
+  name: 爱沙尼亚 002
   network: xhttp
   port: 443
   server: 165.231.177.114
@@ -11,7 +24,7 @@ proxies:
   type: vless
   udp: true
   uuid: 70ad3e9c-89e6-4ee3-91c3-7cb10a4e483a
-- name: 爱沙尼亚 002
+- name: 爱沙尼亚 003
   network: xhttp
   port: 443
   server: 165.231.177.50
@@ -33,32 +46,3 @@ proxies:
   type: vless
   udp: true
   uuid: 88888888-8888-8888-8888-888888888888
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: '🇪🇪[www.v2nodes.com] vless-EE-1... #2'
-  network: ws
-  port: 2083
-  server: 141.0.187.16
-  servername: crt.dodopanel.biz
-  tls: true
-  type: vless
-  uuid: fba73f98-777a-42a6-83c0-7d1f6f070e8d
-  ws-opts:
-    path: /vless-ws
-- alpn:
-  - http/1.1
-  encryption: none
-  name: 4Sarina-94be2214e1
-  network: ws
-  port: 8443
-  server: 77.72.85.246
-  servername: fdghyt.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
-  ws-opts:
-    headers:
-      Host: fdghyt.com
-    path: /vpn-wss/fluxor/59011/
